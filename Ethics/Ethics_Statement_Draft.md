@@ -28,5 +28,5 @@
 ### Commitments:
 1. Be decentralized and community driven
 2. Create a governance structure
-3. Align with the work of ethical experts, like the Algorithmic Justice League and Free Software Foundation
+3. Align with the work of ethical experts, like the Algorithmic Justice League and Free Software Foundation. Acknowledge that we aren't experts, and are interested in hearing the feedback of experts.
 4. Commit to regular check ins about ethical issues - be transparent about issues that arise and try to address them
