@@ -1,5 +1,8 @@
 # Ethics Statement Draft
 
+[![hackmd-github-sync-badge](https://hackmd.io/zg1uy7FWQNCn_Rb75JA1-Q/badge)](https://hackmd.io/zg1uy7FWQNCn_Rb75JA1-Q)
+
+
 ### Intro:
 1. Freemocap aims to empower the creation of high quality recordings of human, animal, and other movements in 3d.
 2. It packages existing open source tools and technologies in order to reduce the gap between what is technologically possible and what is accessible to non-experts.
