@@ -23,7 +23,7 @@
 3. Not to be used as a means of surveillance
 4. Not to be used to stalk or harrass someone
 5. We do no believe data from this software can be used to identify "biomarkers," and should not be used as evidence in courts of law
-6. In general, freemocap should be used to promote freedom and knowledge, not to control and produce harm.
+6. In general, freemocap should be used to promote freedom and knowledge, not to exert control or produce harm.
 
 ### Commitments:
 1. Be decentralized and community driven
