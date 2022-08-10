@@ -1,32 +1,86 @@
 # Ethics Statement Draft
 
-### Intro:
-1. Freemocap aims to empower the creation of high quality recordings of human, animal, and other movements in 3d.
-2. It packages existing open source tools and technologies in order to reduce the gap between what is technologically possible and what is accessible to non-experts.
-3. It is a core value of freemocap to make our tool accessible to disadvantaged populations so that they can understand new technologies before those technologies are used against them.
-4. Freemocap believes that education prevents harm: by making our software easy to understand, we empower users to control the technology rather than be controlled by it.
-5. By understanding how a technology works, people are able to protect themselves from nefarious uses of that technology.
-6. In considering the potential ethical repurcussions of this tool, we have identified ethical issues possible within the core use of freemocap outlined above, along with ethical issues related to downstream uses of the type of data freemocap creates.
+## Introduction:
 
-### Within Scope Ethics:
+1. The Freemocap Foundation is a 501(c)(3) organization that manages the open source software Freemocap, short for Free Motion Capture, which is a markerless motion capture system.
+2. Freemocap lets users create 3d movement recordings of human, animals, and objects.
+3. It packages existing open source tools and technologies in order to reduce the gap in markerless motion capture between what is technologically possible and what is accessible to non-experts.
+4. It is a core value of freemocap to make our tool accessible to disadvantaged populations so that they can understand new technologies before those technologies are used against them.
+5. Freemocap believes that **education prevents harm**: by making our software easy to understand, we empower users to control the technology rather than be controlled by it.
+6. By understanding how a technology works, people are able to protect themselves from nefarious uses of that technology.
+
+## Ethical concerns
+
+In considering the potential ethical repurcussions of this tool, we have identified two types of potential ethical issues: 
+
+1. The first are ethical concerns related to the software itself, including: 
+    - Data privacy and ownership
+    - Algorithmic bias
+    - Free and open source software principles
+2. The second are concerns related to how data created by freemocap is used, including:
+    - Surveillance
+    - Stalking or harrassing others
+    - Identifying "Biomarkers"
+    - As evidence in a court of law
+
+Both types of ethical concerns will be address in more detail in the sections below. 
+
+
+## Ethical concerns related to the freemocap software:
+
+### Data privacy and ownership
+
 1. Users own the data they generate (who is the user though? Recorder or subject or both?) - they may use their data for any purpose including commercial ones
 2. Freemocap doesn't own freemocap data, unless it has been donated with explicit consent
 3. Is there any special consent required for being a subject of freemocap? (use of freemocap, as the recorder and the subject, should be consensual and not coerced)
-4. Acknowledge bias within algorithms 
-    - 1st step is acknowledge it, helping users understand the limitations of the tool in terms of representation and effectiveness across different groups
-    - 2nd step is do something about it, with the goal of equal performance across skin types, body types, cultural appearances, either through usage of existing open source tools that have done the work, or through or own work with either additional training on existing models or our own model creation.
-5. Commit to keeping software free and open source. Software should be functional with minimal up front hardware cost and with no personal info required
 
-### Out of Scope Ethics:
-1. Reiterate freemocap thinks potential benefits of the tool outweigh the potential cons
-2. Code of conduct/community guidelines style appeal? ("By using this software, you agree to...")
-3. Not to be used as a means of surveillance
-4. Not to be used to stalk or harrass someone
-5. We do no believe data from this software can be used to identify "biomarkers," and should not be used as evidence in courts of law
-6. In general, freemocap should be used to promote freedom and knowledge, not to control and produce harm.
+### Algorithmic bias
 
-### Commitments:
-1. Be decentralized and community driven
-2. Create a governance structure
-3. Align with the work of ethical experts, like the Algorithmic Justice League and Free Software Foundation. Acknowledge that we aren't experts, and are interested in hearing the feedback of experts.
-4. Commit to regular check ins about ethical issues - be transparent about issues that arise and try to address them
+1. The Freemocap Foundation acknowledges that bias exists within the machine learning algorithms Freemocap uses, particularly in the 2d pose estimation step. 
+    - We acknowledge this bias, and aim to help users understand the limitations of Freemocap in terms of representation and effectiveness across different groups.
+    - We hope to do something about this bias, with the goal of equal performance across skin types, body types, and cultural appearances. This can be achieved  either through usage of existing open source tools that have done the work, or through potential work from Freemocap with either additional training on existing models or our own model creation.
+2. Freemocap currently uses Google's Mediapipe as its default 2 pose estimation algorithm. Google publishes bias evaluations for Mediapipe algorithms in it's model cards. The Mediapipe model cards contain geographical, skin tone, and gender evaluations. Mediapipe Holistic, which freemocap uses, makes use of the pose, hand, and face models, all of which have separate evaluations:
+    - [Mediapipe Pose Model Card](https://drive.google.com/file/d/10WlcTvrQnR_R2TdTmKw0nkyRLqrwNkWU/preview)
+    - [Mediapipe Hands Model Card](https://drive.google.com/file/d/1-rmIgTfuCbBPW_IFHkh3f0-U_lnGrWpg/preview)
+    - [Mediapipe Face Mesh Model Card](https://drive.google.com/file/d/1jpQt8TB1nMFQ49VSSBKdNEdQOygNRvCP/preview)
+
+
+### Free and open source principles
+
+1. Commit to keeping software free and open source. Software should be functional with minimal up front hardware cost and with no personal info required.
+2. By "free," we are referencing the [four essential freedoms](https://www.gnu.org/philosophy/free-sw.en.html#four-freedoms):
+
+- The freedom to run the program as you wish, for any purpose (freedom 0).
+- The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this.
+- The freedom to redistribute copies so you can help others (freedom 2).
+- The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.
+
+3. We break from the four essential freedoms only for freedom 0, as we restrict the use of the Freemocap software in certain cases where we believe harm is done. Those cases are [outlined below](#ethical-concerns-related-to-use-of-freemocap-data).
+
+### Open questions
+Need to fill this in...
+
+
+## Ethical concerns related to use of freemocap data:
+
+1. The Freemocap Foundation thinks the potential benefits of creating a free, open source markerless motion capture system outweigh the potential downsides.
+2. The Freemocap Foundation has come up with the following rules for using the Freemocap software:
+    1. Freemocap is not to be used as a means of surveillance
+    2. Freemocap is not to be used to stalk or harrass someone
+    3. We do no believe data from this software can be used to identify "biomarkers," and should not be used as evidence in courts of law
+3. In general, freemocap should be used to promote freedom and knowledge, not to exert control or produce harm.
+
+### Open questions:
+
+1. We are curious about how to best enforce these rules. 
+    1. One option is through the license agreement, with a statement like "By using this software, you agree to...". This has potential to be legally binding, but is also hard to enforce.
+    2. Another option is through a code of conduct or community guidelines document. This is even harder to enforce, but more likely to be read. 
+
+## Commitments:
+
+1. Freemocap is still in its starting phases, as we're currently working on transitioning into the Alpha phase of the project. Regardless, we want to be clear about the direction we're heading. 
+2. The Freemocap Foundation commits to work towards the following goals:
+    1. Ensure the Freemocap software is decentralized and community driven
+    2. Create a governance structure for the Freemocap software and the Freemocap Foundation
+    3. Align with the work of ethical experts, like the Algorithmic Justice League and Free Software Foundation. We acknowledge that we aren't experts, and commit to listening to the feedback of experts.
+    4. Publish regular check ins about ethical issues. We will be transparent about issues that arise and try to address them as best as we can. 
