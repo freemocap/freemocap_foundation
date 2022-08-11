@@ -1,5 +1,8 @@
 # Ethics Statement Draft
 
+[![hackmd-github-sync-badge](https://hackmd.io/zg1uy7FWQNCn_Rb75JA1-Q/badge)](https://hackmd.io/zg1uy7FWQNCn_Rb75JA1-Q)
+
+
 ## Introduction:
 
 1. The Freemocap Foundation is a 501(c)(3) organization that manages the open source software Freemocap, short for Free Motion Capture, which is a markerless motion capture system.
@@ -30,9 +33,11 @@ Both types of ethical concerns will be address in more detail in the sections be
 
 ### Data privacy and ownership
 
-1. Users own the data they generate (who is the user though? Recorder or subject or both?) - they may use their data for any purpose including commercial ones
-2. Freemocap doesn't own freemocap data, unless it has been donated with explicit consent
-3. Is there any special consent required for being a subject of freemocap? (use of freemocap, as the recorder and the subject, should be consensual and not coerced)
+1. Users own the data they generate - they may use their data for any purpose including commercial ones.
+2. Freemocap doesn't own freemocap data, unless it has been donated with explicit consent.
+3. Users own the data they generate, but not necessarily the products of that data. For example, a person may own the recording from a Freemocap session, but allow someone else to make an animation based on it - they do not automatically own the animation.
+4. Explicit consent is required from subjects. Consent should not be coerced.
+
 
 ### Algorithmic bias
 
@@ -57,8 +62,16 @@ Both types of ethical concerns will be address in more detail in the sections be
 
 3. We break from the four essential freedoms only for freedom 0, as we restrict the use of the Freemocap software in certain cases where we believe harm is done. Those cases are [outlined below](#ethical-concerns-related-to-use-of-freemocap-data).
 
+4. We are in the process of creating governance documentation to describe how development for the Freemocap project will proceed. The current contributing document can [be found here](https://github.com/freemocap/freemocap/blob/main/CONTRIBUTING.md).
+
 ### Open questions
-Need to fill this in...
+1. Who is the user? Recorder, subject, or both? 
+2. Who owns the data?
+    1. In photography, the photographer owns the photograph. While clearance from the subject is necessary for commercial use, photographers immediately own copyright to images they take [source](https://www.format.com/magazine/resources/photography/photography-copyright-law-guide). It is not necessarily the case that the laws for photography should carry over to 3d motion capture.
+    2. One prominent example of copyright and reuse discussion around human movement happened around Fortnite dance moves. Epic Games used famous dance moves in Fortnite without attribution, and allowed players to purchase those dance moves through microtransactions. This led to multiple copyright lawsuits, and serious controversy for Epic Games. While the actual copyright status of the dances depends on whether they are individual dance moves or full choreography, it sets a precedent for individuals owning their movements, and an ethical guideline [source](https://www.cla.co.uk/blog/higher-education/fortnite-dance-controversy).
+    3. The Freemocap Foundation reserves the right to disagree with either of these precedents, or copyright law (American or otherwise). They are mentioned as references to consider.
+3. Should an agreement of consent be part of the core software? For example, should the "record" screen say sometihng along the lines of: "By clicking record, you agree that all subjects explicitly consent to being recorded and having those recordings run through the Freemocap software."
+4. What steps can Freemocap take towards addressing bias within algorithms? Performance wise, we currently depend on other open source algorithms. Is it enough to be clear about potential limitations of those algorithms? Is an algorithmic bias algorithm appropriate?
 
 
 ## Ethical concerns related to use of freemocap data:
