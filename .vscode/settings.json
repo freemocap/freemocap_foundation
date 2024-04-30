@@ -1,0 +1,19 @@
+{
+    "files.autoSave": "afterDelay",
+    "workbench.preferredDarkColorTheme": "Green Beautiful",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "gitdoc.autoPull": "onPush",
+    "gitdoc.enabled": true,
+    "gitdoc.timeZone": "America/New_York",
+    "workbench.colorCustomizations": {
+        "sideBar.border": "#d400ff",
+        "editorGroup.border": "#00ff00",
+        "activityBar.border": "#0000ff",
+        "panel.border": "#ff00ff",
+        "terminal.background": "#0b1016",
+        "editor.background": "#062414",
+        "sideBar.background": "#020e07",
+        "activityBar.background": "#000201",
+    },
+    "liveServer.settings.port": 5501
+}
