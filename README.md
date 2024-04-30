@@ -8,3 +8,4 @@ mostly organizational repository for the FreeMoCap Foundation Inc
 - Install Latex Workshop VS Code extension
   - Follow their install instructions, e.g.
     - Install https://www.tug.org/texlive/
+- Optional - install TexLab extension (seems nice?)
