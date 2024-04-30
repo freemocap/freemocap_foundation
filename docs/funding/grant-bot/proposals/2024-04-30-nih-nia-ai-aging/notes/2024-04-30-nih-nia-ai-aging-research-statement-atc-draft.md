@@ -2,10 +2,7 @@
 og from  - https://docs.google.com/document/d/1XgyAbVcIVfFbkkZgCtBLMT25QkjJ5JWoTLaRjz3GVKo/edit
 ---
 
-
-
-
-1. Scientific Approach
+## 1. Scientific Approach
 
 Falls are a leading cause of injury among older adults, significantly impacting their health, independence, and quality of life<sup><a href="https://www.zotero.org/google-docs/?3dgvN7">1</a></sup>, with those suffering from Alheimer’s disease and related disorders (ADRD) at even higher risk<sup><a href="https://www.zotero.org/google-docs/?XdT4hT">2</a></sup>. Precise biomechanical data could significantly enhance clinicians' ability to predict and manage these risks. However, the technology that is capable of providing such data, including traditional motion capture systems, remains largely confined to laboratory settings. This confinement limits their routine use for continuous monitoring and restricts the collection of real-world data crucial for evaluating everyday intervention effectiveness. Consequently, there is a pressing need for a solution that offers laboratory-level biomechanical analysis in an accessible, in-home format. Such a system would allow for consistent monitoring and proactive interventions without disrupting the daily lives of elderly individuals.
 
