@@ -1,4 +1,4 @@
-\ProvidesClass{projectstatement}[2024/04/30 v1.0 NIH NIA AI Aging `Project Class' Document ]
+\ProvidesClass{project-statement}[2024/04/30 v1.0 NIH NIA AI Aging `Project Class' Document ]
 \LoadClass[11pt]{article} % Base class
 
 
