@@ -3,6 +3,11 @@
         "valentjn.vscode-ltex",
         "efoerster.texlab",
         "james-yu.latex-workshop",
-        "foam.foam-vscode"
+        "foam.foam-vscode",
+        "continue.continue",
+        "donjayamanne.git-extension-pack",
+        "felipecaputo.git-project-manager",
+        "vsls-contrib.gitdoc",
+        "eamodio.gitlens"
     ]
 }
