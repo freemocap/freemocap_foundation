@@ -1,8 +1,6 @@
-\ProvidesClass{projectstatement}[2023/09/30 v1.0 Project Statement Class for Applications]
+\ProvidesClass{projectstatement}[2024/04/30 v1.0 NIH NIA AI Aging `Project Class' Document ]
 \LoadClass[11pt]{article} % Base class
 
-\ProvidesClass{projectstatement}[2023/09/30 v1.0 Project Statement Class for Applications]
-\LoadClass[11pt]{article} % Base class
 
 % Margins
 \RequirePackage[margin=0.5in]{geometry}
