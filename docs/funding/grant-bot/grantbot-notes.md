@@ -9,7 +9,8 @@
 ## GrantBot Category Schema (e.g. `AWS Grant Assistant Bot`)
 ### `bot-instructions`
 - format: https://discord.com/channels/1190439326027362344/1197985463009554433/1197985553237413898
-- ```Summer Workshop Planning for FreeMoCap Software
+ ```
+  Summer Workshop Planning for FreeMoCap Software
     Purpose
         Teach FreeMoCap software usage
         Train on computer vision, open source software, kinematic analysis, animation
@@ -33,7 +34,8 @@
         Benefit to artistic, scientific, and software communities
         Community building
         Enhanced documentation
-        Revenue generation for project```
+        Revenue generation for project
+  ```
 - Use bot emoji 🤖
 - "In this server category, we're working on applying to the Blank AWS Grant."
 ### `general`
