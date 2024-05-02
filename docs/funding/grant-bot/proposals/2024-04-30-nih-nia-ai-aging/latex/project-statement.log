@@ -1,0 +1,412 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.30)  30 APR 2024 10:37
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/Users/jonma/github_repos/freemocap_organization/freemocap_foundation/docs/funding/grant-bot/proposals/2024-04-30-nih-nia-ai-aging/latex/project-statement.tex
+(c:/Users/jonma/github_repos/freemocap_organization/freemocap_foundation/docs/funding/grant-bot/proposals/2024-04-30-nih-nia-ai-aging/latex/project-statement.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-03-14>
+(./project-statement.cls
+Document Class: project-statement 2024/04/30 v1.0 NIH NIA AI Aging `Project Class' Document 
+(c:/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (c:/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (c:/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (c:/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count188
+\Gm@cntv=\count189
+\c@Gm@tempcnt=\count190
+\Gm@bindingoffset=\dimen140
+\Gm@wd@mp=\dimen141
+\Gm@odd@mp=\dimen142
+\Gm@even@mp=\dimen143
+\Gm@layoutwidth=\dimen144
+\Gm@layoutheight=\dimen145
+\Gm@layouthoffset=\dimen146
+\Gm@layoutvoffset=\dimen147
+\Gm@dimlist=\toks18
+
+
+c:/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty:1006: Package geometry Error: \paperwidth (0.0pt) too short.
+
+See the geometry package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1006 \Gm@process
+                  
+Set a paper type (e.g., `a4paper').
+
+
+c:/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty:1006: Package geometry Error: \paperheight (0.0pt) too short.
+
+See the geometry package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1006 \Gm@process
+                  
+Set a paper type (e.g., `a4paper').
+
+
+Package geometry Warning: `width' results in NEGATIVE (-72.26999pt).
+    `lmargin' or `rmargin' should be shortened in length.
+
+
+Package geometry Warning: `height' results in NEGATIVE (-72.26999pt).
+    `tmargin' or `bmargin' should be shortened in length.
+
+) (c:/texlive/2024/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
+) (c:/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+./project-statement.cls:10: Undefined control sequence.
+\setstretch ...ef \baselinestretch {#1}\@currsize 
+                                                  
+l.10 \setstretch{1.25}
+                       % Adjust spacing to meet the requirement of no more t...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+)
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 2.
+ (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
+) (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count191
+\l__pdf_internal_box=\box51
+) (./project-statement.aux)
+\openout1 = `project-statement.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+
+
+c:/Users/jonma/github_repos/freemocap_organization/freemocap_foundation/docs/funding/grant-bot/proposals/2024-04-30-nih-nia-ai-aging/latex/project-statement.tex:2: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \begin{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(36.135pt, -72.26999pt, 36.135pt)
+* v-part:(T,H,B)=(36.135pt, -72.26999pt, 36.135pt)
+* \paperwidth=0.0pt
+* \paperheight=0.0pt
+* \textwidth=-72.26999pt
+* \textheight=-72.26999pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-36.135pt
+* \headheight=0.0pt
+* \headsep=0.0pt
+* \topskip=10.0pt
+* \footskip=0.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=0.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 4.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+c:/Users/jonma/github_repos/freemocap_organization/freemocap_foundation/docs/funding/grant-bot/proposals/2024-04-30-nih-nia-ai-aging/latex/project-statement.tex:4: Undefined control sequence.
+\projectTitle #1->\section 
+                           *{#1}
+l.4 \projectTitle{Your Project Title Here}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (115.87973pt too wide) in paragraph at lines 4--5
+[]\OT1/phv/m/n/10 *Your
+ []
+
+
+Overfull \hbox (103.3896pt too wide) in paragraph at lines 4--5
+\OT1/phv/m/n/10 Project
+ []
+
+
+Overfull \hbox (83.9299pt too wide) in paragraph at lines 4--5
+\OT1/phv/m/n/10 Ti-
+ []
+
+
+Overfull \hbox (82.82979pt too wide) in paragraph at lines 4--5
+\OT1/phv/m/n/10 tle
+ []
+
+
+Overfull \hbox (93.93979pt too wide) in paragraph at lines 4--5
+\OT1/phv/m/n/10 Here 
+ []
+
+
+Overfull \vbox (82.26999pt too high) has occurred while \output is active []
+
+
+
+c:/Users/jonma/github_repos/freemocap_organization/freemocap_foundation/docs/funding/grant-bot/proposals/2024-04-30-nih-nia-ai-aging/latex/project-statement.tex:5: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 
+    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}]
+Overfull \vbox (82.26999pt too high) has occurred while \output is active []
+
+
+
+c:/Users/jonma/github_repos/freemocap_organization/freemocap_foundation/docs/funding/grant-bot/proposals/2024-04-30-nih-nia-ai-aging/latex/project-statement.tex:5: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 
+    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[2]
+Overfull \vbox (82.26999pt too high) has occurred while \output is active []
+
+
+
+c:/Users/jonma/github_repos/freemocap_organization/freemocap_foundation/docs/funding/grant-bot/proposals/2024-04-30-nih-nia-ai-aging/latex/project-statement.tex:5: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 
+    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[3]
+Overfull \vbox (82.26999pt too high) has occurred while \output is active []
+
+
+
+c:/Users/jonma/github_repos/freemocap_organization/freemocap_foundation/docs/funding/grant-bot/proposals/2024-04-30-nih-nia-ai-aging/latex/project-statement.tex:5: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 
+    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[4]
+Overfull \vbox (82.26999pt too high) has occurred while \output is active []
+
+
+
+c:/Users/jonma/github_repos/freemocap_organization/freemocap_foundation/docs/funding/grant-bot/proposals/2024-04-30-nih-nia-ai-aging/latex/project-statement.tex:6: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 b
+     lah blah wowowo
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[5]
+Overfull \hbox (110.96982pt too wide) in paragraph at lines 6--7
+[]\OT1/phv/m/n/10 blah
+ []
+
+
+Overfull \hbox (90.96982pt too wide) in paragraph at lines 6--7
+\OT1/phv/m/n/10 blah
+ []
+
+
+Overfull \hbox (110.00993pt too wide) in paragraph at lines 6--7
+\OT1/phv/m/n/10 wowowo 
+ []
+
+
+Overfull \vbox (82.26999pt too high) has occurred while \output is active []
+
+
+
+c:/Users/jonma/github_repos/freemocap_organization/freemocap_foundation/docs/funding/grant-bot/proposals/2024-04-30-nih-nia-ai-aging/latex/project-statement.tex:7: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 
+    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[6]
+Overfull \vbox (82.26999pt too high) has occurred while \output is active []
+
+
+
+c:/Users/jonma/github_repos/freemocap_organization/freemocap_foundation/docs/funding/grant-bot/proposals/2024-04-30-nih-nia-ai-aging/latex/project-statement.tex:7: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 
+    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[7]
+Overfull \vbox (82.26999pt too high) has occurred while \output is active []
+
+
+
+c:/Users/jonma/github_repos/freemocap_organization/freemocap_foundation/docs/funding/grant-bot/proposals/2024-04-30-nih-nia-ai-aging/latex/project-statement.tex:8: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \end{document}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[8]
+Overfull \vbox (72.26999pt too high) has occurred while \output is active []
+
+
+
+c:/Users/jonma/github_repos/freemocap_organization/freemocap_foundation/docs/funding/grant-bot/proposals/2024-04-30-nih-nia-ai-aging/latex/project-statement.tex:8: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \end{document}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[9
+
+]
+Overfull \vbox (10.0pt too high) has occurred while \output is active []
+
+ (./project-statement.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-03-14>
+ ***********
+
+Overfull \vbox (82.26999pt too high) has occurred while \output is active []
+
+
+
+c:/Users/jonma/github_repos/freemocap_organization/freemocap_foundation/docs/funding/grant-bot/proposals/2024-04-30-nih-nia-ai-aging/latex/project-statement.tex:8: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \end{document}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[10] ) 
+Here is how much of TeX's memory you used:
+ 958 strings out of 474104
+ 18223 string characters out of 5747496
+ 1925496 words of memory out of 5000000
+ 23386 multiletter control sequences out of 15000+600000
+ 559829 words of font info for 38 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,6n,79p,391b,112s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on project-statement.pdf (10 pages, 8310 bytes).
+PDF statistics:
+ 43 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
