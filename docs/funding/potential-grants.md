@@ -13,7 +13,18 @@ FOSS Sustainability Fund
  Next deadline: May 17, 2024
 
 https://aws.amazon.com/government-education/nonprofits/aws-imagine-grant-program/ 
+AWS IMAGINE Grant offers three distinct award categories for 501 (c) nonprofits based in the United States to receive support based on their organizational goals and the stage in their technology adoption journeys:
+- Momentum to Modernize
+- Go Further Faster
+- Pathfinder - Generative AI
 
 https://github.com/microsoft/foss-fund
 
 https://apply.opentech.fund/ 
+
+https://publicpolicy.google/article/AI-opportunity-fund/
+
+POSSIBLE BOT TEST GRANT: https://undergraduate.northeastern.edu/research/awards/peak-awards-overview/
+- Base Camp
+- Ascent
+
