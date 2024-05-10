@@ -12,7 +12,8 @@ https://apply.opentech.fund/
 FOSS Sustainability Fund
  Next deadline: May 17, 2024
 
-https://aws.amazon.com/government-education/nonprofits/aws-imagine-grant-program/ 
+https://aws.amazon.com/government-education/nonprofits/aws-imagine-grant-program/     
+Round One applications accepted: May 3 — June 3, 2024     
 AWS IMAGINE Grant offers three distinct award categories for 501 (c) nonprofits based in the United States to receive support based on their organizational goals and the stage in their technology adoption journeys:
 - Momentum to Modernize
 - Go Further Faster
