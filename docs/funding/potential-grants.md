@@ -3,7 +3,6 @@ https://publicpolicy.google/article/AI-opportunity-fund/
 Technology grants
 https://grants.gov/search-results-detail/352667
 
-
 Education
 https://grants.gov/search-results-detail/353826
 
@@ -21,6 +20,7 @@ AWS IMAGINE Grant offers three distinct award categories for 501 (c) nonprofits 
 - Pathfinder - Generative AI
 
 https://github.com/microsoft/foss-fund
+- Project nominations accepted quarterly
 
 POSSIBLE BOT TEST GRANT: https://undergraduate.northeastern.edu/research/awards/peak-awards-overview/
 - Base Camp
