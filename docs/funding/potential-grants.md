@@ -22,6 +22,11 @@ AWS IMAGINE Grant offers three distinct award categories for 501 (c) nonprofits 
 https://github.com/microsoft/foss-fund
 - Project nominations accepted quarterly
 
+https://www.legalzoom.com/fastbreakforsmallbusiness
+- Apply today for your chance at a $10,000 small business grant and/or up to $500 in LegalZoom products and services. Grant applications close on September 13, 2024 at 8 p.m. ET.
+
+---
+
 POSSIBLE BOT TEST GRANT: https://undergraduate.northeastern.edu/research/awards/peak-awards-overview/
 - Base Camp
 - Ascent
