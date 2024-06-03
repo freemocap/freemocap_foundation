@@ -32,17 +32,17 @@ Please note: this section is used to determine basic information about your orga
    - [ ] ,000 or more
 
 7. Proposal Contact (First and Last Name, Email Address, Phone Number)
-> Jon (?), JKL?
+>  JKL
 
 8. Project Lead (First and Last Name, Email Address, Phone Number)
-> Jon (?), JKL?
+>  JKL
 
 9. Role in Organization
     - [ ] President or CEO
     - [ ] Other C-Level of executive management
     - [ ] Vice president or equivalent
     - [ ] Board of Directors
-    - [ ] Director or equivalent
+    - [x] Director or equivalent
     - [ ] Manager or equivalent
     - [ ] Generalist, staff, associate, or equivalent
     - [ ] Other
