@@ -3,212 +3,113 @@
 
 [![hackmd-github-sync-badge](https://hackmd.io/Vl1LGFANQCW7JZctVkhXJg/badge)](https://hackmd.io/Vl1LGFANQCW7JZctVkhXJg)
 
-## Organizational Information
+## 2 - [project-info](project-info.md)
 
-Please note: this section is used to determine basic information about your organization and is not part of the selection criteria.
+### 2.2 What is your project and how does it relate to your organization’s mission? (200-350 words) 
 
-1. Full, Registered Organization Name
-> freemocap foundation
+We are developing an AI support system for our FreeMoCap software, which enables high-fidelity, 3D motion capture with minimal resources and maximum accessibility. Accessibility is a core value of the FreeMoCap project: free and open-source software that works with the majority of affordable cameras on most platforms.
 
-2. Tax ID
-> 87-4332677
- 
-3. Website URL
-> https://freemocap.org/ (or `freemocap_foundation.org?`)
+Our fundamental approach addresses the potential for getting overwhelmed. Many new users face challenges due to a lack of technical understanding, potential bugs, and unfamiliarity with open-source interfaces. By developing a new framework for onboarding and support, we can ensure our users avoid startup panic and discover the world of FreeMoCap by learning in a safe, effective, and comfortable environment. 
 
-4. Organization Full Address (Street, City, State, Zip Code)
-> [jons house]
+A strong onboarding process is one of the most overlooked vectors of free and open-source software. By integrating a well-trained, finely-tuned AI support system, we can address onboarding issues and provide a sustainable resource for continuous troubleshooting and guidance in the fast-paced climate of software in development. The support system has broad generalizability that could be applied not just to this specific software, but to any software application in any domain.
 
-5. Annual Organizational Revenue (most recent fiscal year's, in USD) [Select one]
-   - [x] Less than $50,000
-   - [ ] $50,000 - $999,999
-   - [ ] $1,000,000 - $4,999,999
-   - [ ] $5,000,000 - $9,999,999
-   - [ ] $10,000,000 - $99,999,999
-   - [ ] $100,000,000 or more
-   - [ ] Don’t know/Not sure
-6. Annual IT Budget (most recent fiscal year's expenses in USD)
-   - [x] Less than $10,000
-   - [ ] $10,000 - $50,000
-   - [ ] $50,000 - $150,000
-   - [ ] $150,000 - $500,000
-   - [ ] $500,000 or more
+Our datasets include hundreds of test user situations trained in university classrooms. Beyond this, our online community enjoys thousands of active international users, including over 2000 members in a close-knit, diverse group of dedicated students, engineers, researchers, artists, and many more. 
 
-7. Proposal Contact (First and Last Name, Email Address, Phone Number)
-> Jon (?), JKL?
-
-8. Project Lead (First and Last Name, Email Address, Phone Number)
-> Jon (?), JKL?
-
-9. Role in Organization
-    - [ ] President or CEO
-    - [ ] Other C-Level of executive management
-    - [ ] Vice president or equivalent
-    - [ ] Board of Directors
-    - [ ] Director or equivalent
-    - [ ] Manager or equivalent
-    - [ ] Generalist, staff, associate, or equivalent
-    - [ ] Other
-   
-10. Functional Area in Organization
-    - [ ] Leadership or overall management
-    - [ ] Program management
-    - [ ] Event management
-    - [ ] Fundraising/Development
-    - [ ] Community outreach
-    - [ ] Technology
-    - [ ] Human resources
-    - [ ] Marketing
-    - [ ] Finance
-    - [ ] Administration
-    - [ ] Other
-
-11. Primary Mission Area
-    - [ ] Arts, Culture, and Humanities
-    - [ ] Credit Union
-    - [x] Education
-    - [ ] Environment and Animals
-    - [ ] Health
-    - [ ] Human Services
-    - [ ] International, Foreign Affairs
-    - [ ] Public, Societal Benefit
-    - [ ] Religion Related
-    - [ ] Science, Technology & Social Science
-    - [ ] Youth Development
-    - [ ] Mutual/Membership Benefit
-    - [ ] Public Utilities
-    - [ ] Unknown, Unclassified
-
-12. Does your organization have an AWS account? 
-    - [ ] Yes
-    - [x] No
-        - If selected “Yes,” please provide your account ID (if your organization has multiple IDs, you can provide any one of them): 
-
-13. Have you applied for the IMAGINE Grant before? 
-    - [ ] Yes
-    - [x] No
-
-## Project Information
-
-1. Which AWS IMAGINE Grant category are you applying for? [select one]
-   - [ ] Momentum to Modernize award
-   - [ ] Go Further, Faster award
-   - [x] Pathfinder – Generative AI award
-
-2. What is your project and how does it relate to your organization’s mission? 
-> # [200 - 350 words]
-
-3. (For Pathfinder applicants only) How does generative AI fit into your overall project design? How will it strategically enhance your mission achievement? 
-> # [100 - 250 words]
-    - jkl?
-    - onboarding, support, education
-        - autogogical system
-
-4. (For Pathfinder applicants only) How is your organization using data to make decisions today? 
-> # [100 - 250 words]
-    - jkl?
-    - hosts of classroom data
-        - smooth brains stuffed with skeletons
-    - continuous picture of onboarding struggles  (mocap and AI)
-        - from classes
-        - from the discord server
-        - from sharing AI with friends and colleagues
-        - 
-
-5. What are the intended outcomes of your project? What new capabilities would it unlock for your organization? 
-> # [200 - 350 words]
-    - 
-
-6. What is driving the need for this specific project? Why now? 
-> # [200 - 350 words]
+However due to the complexity of the field, with combinations of things like complex linear algebra, high-density 3D tools, etc., users may not understand the full potential or usage of the rich data collected with the FreeMoCap tool. We believe that by integrating AI solutions, we can achieve our organization's goal of making motion capture software accessible to everyone.
 
 
-7. At what stage is your project currently? [Select one]
-   - [ ] Concept
-   - [ ] Planning
-   - [ ] Under development
-   - [ ] Currently running
-   
-8. What most closely aligns with what this project will enable your organization to do? [Select one]
-   - [ ] Migrate legacy IT systems, applications, and data centers to the cloud.
-   - [ ] -Increase productivity with modernized tools, applications, and databases.
-   - [ ] Increase cost efficiency with optimized IT infrastructure.
-   - [ ] Enable business continuity with archive, backup, and disaster recovery.
-   - [ ] Increase resilience, scaling, and availability of existing workloads and databases.
-   - [ ] Increase security and governance of data/ensure security compliance. (e.g., HIPAA, SOC)
-   - [ ] Inform better decision making by aggregating disparate data sources and applying analytics (e.g., visualization, AI/ML).
-   - [ ] Enable accurate forecasting based on past data with predictive analysis using machine learning.
-   - [ ] Better understand and engage members/donors/beneficiaries by creating a 360 view with constituent data.
-   - [ ] -Enhance digital content delivery for donors, members, beneficiaries, or other stakeholders (e.g., website, video, mobile app)
-   - [ ] Enable multichannel services for constituents and automate simple, clerical tasks for employees (e.g., chatbots, contact centers, GenAI-powered)
-   - [ ] Personalize and streamline communications for more effective donor/member/constituent engagement and fundraising.
-   - [ ] I don’t know how AWS fits into my project at this time, but I am interested in learning more.
-   - [ ] Other
+#### 2.2.1 How does generative AI fit into your overall project design? How will it strategically enhance your mission achievement? (100 - 250 words) 
 
-## Technical Design
+The FreeMoCap Foundation's mission can be summed up as "aggressive accessibility" to science and education. The integration of generative AI is a transformative addition toward this same goal: where FreeMoCap currently lowers the barrier to motion capture *tools* (free open-source software with support for consumer-grade cameras), generative AI lowers the barrier to motion capture *expertise*. Our approach treats the model as a **mentor**, offering individualized support and instruction to all users across the entire FreeMoCap ecosystem.
 
-1. Describe your project’s technical design at a high level. What does it do and how? 
-> # [200 - 350 words]
-    - Jon will pull from older fmc grants and `skellybot` writeups
+With the support of the AI mentor, our users will have instantaneous access to all of the following: 
+- [1] **onboarding / orientation**, helping users just getting started to better understand all of the processes and features involved in the FreeMoCap workflow; 
+- [2] **technical support**, helping established users navigate bugs or nuances of the interface; 
+- [3] and **further education**, when a user is experienced and prepared to learn more about more advanced techniques for specific applications, or tutoring on more advanced concepts in the realm motion capture.
 
-2. What type(s) of workload(s) will your project include? [Select all that apply]
-   - [ ] Digital content management (e.g., hosting and scaling websites)
-   - [ ] Digital content delivery (e.g., virtual events, virtual learning platform)
-   - [ ] Net-new application development (e.g., web app, mobile app, SaaS platform)
-   - [ ] Application integration (e.g., serverless, microservices, distributed systems)
-   - [ ] DevOps pipeline (e.g., CI/CD)
-   - [ ] Container orchestration and management
-   - [ ] Managed security services
-   - [ ] Content storage and backup (e.g., disaster recovery)
-   - [ ] Migration and optimization (e.g., systems, data, application)
-   - [ ] Virtual desktop
-   - [ ] Data lake
-   - [ ] Data warehouse
-   - [ ] Data analytics and visualization
-   - [ ] Managed AI/ML services (e.g., intelligent document processing, image recognition)
-   - [ ] AI/ML for research
-   - [ ] AI/ML for predictive modeling
-   - [ ] Generative AI
-   - [ ] Customer experience (e.g., call/contact center, virtual assistant)
-   - [ ] Internet of things (IoT)
-   - [ ] Blockchain
-   - [ ] Other. Please specify:
-   - [ ] None of the above
+The mentor will incorporate knowledge of individual users' skill levels and goals to create "curricular bridges" between their current capabilities and their goals, adapting on the fly as the user continues to interact with the app and in the community. In this way, the mentor will excel at providing deeply individualized support to every user, from the curious hobbyist home animator, to the highschooler with 0 experience, to the 20-year veteran of biomechanics research that now wants to learn about computer vision. 
 
-3. Describe the resources and technical skills you may need to complete the project successfully. Do you have these resources in-house? If no, what will be your plan to acquire the skills needed? 
-> # [200 - 350 words]
-    - Jon will do  
+#### 2.2.2 How is your organization using data to make decisions today? (100 - 250 words) 	
 
-4. To successfully complete your project, would you need support from a technology and/or implementation partner? (Hint: An AWS Partner is an external expert who leverages AWS to build solutions and services for customers. See a list of AWS Partners)
-   - [ ] Yes, and I already work with a partner/plan to work with a specific partner.
-     - [If selected] Please list partner:
-   - [ ] Yes, I do not have a partner identified but would like a recommendation.
-   - [ ] No, I do not plan to work with a partner/we plan to do the work in-house
-   - [ ] Other. Please explain:
+- Three iterations of using LLM-powered chatbots to teach 5 different University courses (e.g. https://github.com/freemocap/skellybot)
+    - On each iteration, data and experience in using the LLM bots was used to drive the development of the subsequent iteration
 
-5. Is your organization’s IT infrastructure currently: [Select one]
-   - [ ] On-premises
-   - [ ] On AWS
-   - [ ] With another provider
-   - [ ] Hybrid
+- Direct interaction with users in the community Discord has driven development of the core software. In addition to identifying bugs and quality of life issues, we use indications of confusion in new users to guide our documentation development and presentation of concepts within the UX/UI
+___
+### 2.3 What are the intended outcomes of your project? What new capabilities would it unlock for your organization? (200-350 words) 
 
-6. Is the IT infrastructure for the project you are proposing for this grant opportunity currently: [Select one]
-   - [ ] On-premises
-   - [x] On AWS
-   - [ ] Net-new to your organization
-   - [ ] With another provider
-   - [ ] Hybrid
+pnm combining with 2.4
+- Create an AI-mentor that is fine tuned based on the broad domain expertise encompassed by the `freemocap` project 
+    - Host this LLM on an AWS platform
+    - Use it for onboarding, support, and education for the freemocap community as a whole as well as for individual users 
+- Engage authentication so we can curate AI mentorship and guidance for each user individually, according to their backghround, experience level, and interest
+- Provide mechanism to onboard low-to-zero XP individuals from a diverse backgrounds and fascilitate their self directed exploration and education as they engage in voluntary self-directed exploration of the wide breadth of the technical, scientific, and artistic landscape comprising the basis of the freemocap software~~
 
-7. If you were to not receive funding or be awarded the full amount of funding for either award, would your organization still be able to implement this project?
-   - [ ] Yes
-   - [x] No
+---
 
+Universal design is a core tenet of the FreeMoCap Project, i.e. the idealized goal of creating a tool that is usable by every person regardless of their background, training, or expertise. The aspirational goal is to create a system that is simultaneously the best and most performant tool for world-class domain experts in fields that traditionally have used motion capture (e.g. clinical biomechanics, perceptuomotor neuroscience, 3d animation and video game design, etc.) while remaining accessible to high school students with no technical training and outside assistance. 
+
+The AI mentor will be hosted on an AWS platform and designed to assist with onboarding, support, and education for both the FreeMoCap community as a whole and individual users. This mentorship will be curated and personalized through user authentication, ensuring guidance is tailored to each user's background, experience level, and interests. By facilitating the onboarding of individuals with little to no experience from diverse backgrounds, we aim to promote self-directed exploration and education within the technical, scientific, and artistic domains of the FreeMoCap software.
+
+Through these efforts, we expect to unlock new capabilities for our organization, such as the ability to scale personalized support and education without being limited by human resources. The AI mentor will enable us to provide high-quality, individualized mentorship at scale, thereby enhancing user engagement, accelerating learning curves, and fostering a more inclusive community. Additionally, the continuous fine-tuning of the AI based on real user interactions will exponentially increase its educational impact over time, keeping pace with advancements in AI and LLM technologies.
+
+### 2.4 What is driving the need for this specific project? Why now? (200-350 words) 
+
+~~The FreeMoCap Project is structured around the concept of Universal Design, i.e. the idealized goal of creating a tool that is usable by every person regardless of their background, training, and expertise. The aspirational goal is to create a system that is simultaneously the best and most performant tool for world-class domain experts in fields that traditionally have used motion capture (i.e. clinical biomechanics, perceptuomotor neuroscience, 3d animation and video game design, etc) while still remaining accessible to high school students with no technical training and no outside assistance.~~
+~~In these early years of the FreeMoCap Project, we have made great strides towards this goal. We have a vibrant growing community of active users and open source contributors representing over 110 countries, with background ranging from high school students in Ohio to the director of a spinal biomechanics institute in Denmark.~~
+~~However, although we will continue to improve the usability of our basic system in line with our core mission, the fact is that the core technology and assocaited domains of the freemocap software are deeply nuanced and technical. At the moment, we work to bridge these gaps using traditional methods such as video tutorial, static site documentation, and direct human assistance in a community Discord server. However, all of these methods are limited in their own ways and may have problems scaling up as the project grows.~~
+~~The arrival of viable generative AI assistants provides an unprescedented opportunity to provide curated individualized AI-mentor ship for individual users from their first contact with the project, through the course of their onboarding and early technical development, and into their journey to develop expertise in the whatever technical and scientific domains they find most interesting.~~
+~~We have already built and deployed LLM based teaching tools (i.e. SkellyBot) that have been used in 5+ university classes. Our experience using AI in those settings establishes the potential power of creating a system for providing LLM/RAG mediated, individually tuned AI-mentorship for individuals learning to navigate an unfamiliar and complex domain of inquiry.~~
+~~
+
+The driving need for this project stems from the inherent complexity and technicality of the FreeMoCap software and the associated domains it covers. While we have made significant strides in making the software accessible, the traditional methods we currently use—such as video tutorials, static site documentation, and direct human assistance via a community Discord server—have their limitations. As the project grows, these methods may not be scalable or sufficient to meet the diverse needs of our expanding user base.
+
+The emergence of viable generative AI assistants presents a unique opportunity to address these challenges. Now, more than ever, there is a pressing need to provide curated, individualized AI mentorship to bridge the gaps in understanding and usage of the FreeMoCap software. This is particularly critical as we aim to serve both highly specialized domain experts and beginners with no prior technical training. The AI mentor will enable us to provide continuous, scalable support and education, tailored to each user's specific needs and learning path.
+
+The current advancements in AI and LLM technologies make this the opportune moment to implement such a solution. Our prior success with LLM-based teaching tools like SkellyBot, used in multiple university classes, underscores the potential effectiveness of this approach. Implementing an AI mentor will help us overcome the bottleneck of limited expert availability, maximizing the educational impact of our domain experts while providing mentees with flexible, self-directed learning opportunities. As AI and LLM tools continue to advance, our AI mentor will evolve, continuously enhancing its ability to support and educate our diverse user community.
+
+## 3 - [technical-design](technical-design.md)
+
+### 3.1 Describe your project’s technical design at a high level. What does it do and how? (200-350 words) 
+- Authentification 
+    - Tracking user identity across platforms to provide individually curated AI mentorship from 'first touch to expertise'
+- Data lake
+    - Storing raw data from:
+        - User interaction with the core software (`freemocap`)
+        - User-User interactions in our communal spaces 
+            - On Social media 
+            - On our 2400 person Discord server 
+        - User-Bot interactions 
+            - Conversations between user and SkellyBot
+                -  in community server 
+                -  within the `freemocap` software
+- Data Warehouse
+    - Storing structured data related to individual users as well as the `freemocap` community as a whole
+    - Combine these data sources to provide individually curated AI mentor ship for each user, guided by the User's past and current and desired intersts and expertise
+    - Aglomerate individual user data to provide fine-tuning for the generic LLM assistant for this task 
+- Application integration
+    - Run LLM services to provide Users with curated mentorship within their personal use of the `freemocap` application, as well as for the FreeMoCap community discord server 
+- AI/ML for reasearch 
+    - Fine tune an LLM based on the broadly distributed domains of expertise assocaited with the `freemocap` software
+    - `freemocap` touches many domains which do not commonly overlap (e.g. animation, AI/ML, biomechanics, perceptuomotor neuroscience, etc), so specific fine tuning will be necessary to provide AI mentorship in a way that appropriately combines these disparate domains into a coherent voice
+        - This training will occur on the basis of the world-class domain expertise of the core freemocap development team, as well as from extensive data collected in the context of using ealier forms of these LLM tools to teach the core concepts to undergraduates in university settings.
+
+### 3.3 Describe the resources and technical skills you may need to complete the project successfully. Do you have these resources in-house? If not, what will be your plan to acquire the skills needed? (200-350 words) *
+
+Technical skills needed: 
+- Managing user data an user profiles in a scalable and secure way
+- Training and fine-tuning of LLM based on dynamically growing datalake
+- Generation and storage of extract, structured data in secure data warehouse, where it will be used to provide individually curated AI mentorship for users across various platforms and extended time periods
+- Hosting and management of LLM services in a secure and scalabale way, so that we may utilize the fine-tuned LLM from various platforms (Discord server, an AI assitant on the freemocap website, AI mentorship/troubleshooting with in the `freemocap` software)
+
+The technical skills needed for these tasks exist in-house, as Endurance Idehen (FreeMoCap CTO) and his team have implemented similar systems in various forms. The resources provided by this proposal will allow us to contract the skilled labor needed for the actual implementation
 
 ---
 notes
 
 
 What is the [NEED?] of this tool:
+
 First touch to Expertise
 - onboarding - 
 - support - 
@@ -227,50 +128,3 @@ THEMES
   - onboarding, support
 - education
 - growth and scaling
-
-
-
-Jon post-video:
-
-Technical things
-- how will we use AWS services: explain our tech stack and where AWS fits in
-
-- login / authentication (single sign-on?)
-    - allows us to keep track of individual users
-    - the data also needs to be secure
-        - jkl- enhanced by systems that can use their data to build their "profile"
-
-
-Mentor model:
-
-- model for expertise
-    - computer vision, machine learning, clinical biomechanics, animation, video design
-- model for assessment of learner
-    - gauges their current state
-    - gauges their desired state
-    - plots the delta (i.e., the curricular bridge)
-    
-- community data can help enhance all of this
-
-
-- will also use AWS to host our own local models
-
-
-Things they're looking for
-- high impact
-- global impact
-- generalizable (easy-- this is ONE APP, we can snap this same type of system onto ANY app)
--- org works on many countries
-
-"work backwards from the end user"
-- what they want
-- what they need
-- what they're bringing to the table
-
-
-connect everything back to the global mission:
-- maximizing accessibility to bleeding-edge 
-
-JKL as project lead, 
-- specifically to say he has "ownership" over this part of the global project, 
-- allowing Jon to keep in the mocap realm, jkl can focus on the AI integration
