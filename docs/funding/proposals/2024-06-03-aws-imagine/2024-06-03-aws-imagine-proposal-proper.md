@@ -1,5 +1,8 @@
 # AWS Grant Instructions Outline
 
+[![hackmd-github-sync-badge](https://hackmd.io/Vl1LGFANQCW7JZctVkhXJg/badge)](https://hackmd.io/Vl1LGFANQCW7JZctVkhXJg)
+
+
 ## Organizational Information
 
 Please note: this section is used to determine basic information about your organization and is not part of the selection criteria.
