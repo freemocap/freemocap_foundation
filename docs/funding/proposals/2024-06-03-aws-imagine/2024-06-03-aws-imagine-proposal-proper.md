@@ -85,8 +85,8 @@ Please note: this section is used to determine basic information about your orga
         - If selected “Yes,” please provide your account ID (if your organization has multiple IDs, you can provide any one of them): 
 
 13. Have you applied for the IMAGINE Grant before? 
-    - [ ] No
-    - [x] Yes
+    - [ ] Yes
+    - [x] No
 
 ## Project Information
 
@@ -227,3 +227,50 @@ THEMES
   - onboarding, support
 - education
 - growth and scaling
+
+
+
+Jon post-video:
+
+Technical things
+- how will we use AWS services: explain our tech stack and where AWS fits in
+
+- login / authentication (single sign-on?)
+    - allows us to keep track of individual users
+    - the data also needs to be secure
+        - jkl- enhanced by systems that can use their data to build their "profile"
+
+
+Mentor model:
+
+- model for expertise
+    - computer vision, machine learning, clinical biomechanics, animation, video design
+- model for assessment of learner
+    - gauges their current state
+    - gauges their desired state
+    - plots the delta (i.e., the curricular bridge)
+    
+- community data can help enhance all of this
+
+
+- will also use AWS to host our own local models
+
+
+Things they're looking for
+- high impact
+- global impact
+- generalizable (easy-- this is ONE APP, we can snap this same type of system onto ANY app)
+-- org works on many countries
+
+"work backwards from the end user"
+- what they want
+- what they need
+- what they're bringing to the table
+
+
+connect everything back to the global mission:
+- maximizing accessibility to bleeding-edge 
+
+JKL as project lead, 
+- specifically to say he has "ownership" over this part of the global project, 
+- allowing Jon to keep in the mocap realm, jkl can focus on the AI integration
