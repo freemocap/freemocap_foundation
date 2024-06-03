@@ -37,13 +37,12 @@ The mentor will incorporate knowledge of individual users' skill levels and goal
 - Direct interaction with users in the community Discord has driven development of the core software. In addition to identifying bugs and quality of life issues, we use indications of confusion in new users to guide our documentation development and presentation of concepts within the UX/UI
 ___
 ### 2.3 What are the intended outcomes of your project? What new capabilities would it unlock for your organization? (200-350 words) 
-
-pnm combining with 2.4
+-pnm combining with 2.4
 - Create an AI-mentor that is fine tuned based on the broad domain expertise encompassed by the `freemocap` project 
     - Host this LLM on an AWS platform
     - Use it for onboarding, support, and education for the freemocap community as a whole as well as for individual users 
 - Engage authentication so we can curate AI mentorship and guidance for each user individually, according to their backghround, experience level, and interest
-- Provide mechanism to onboard low-to-zero XP individuals from a diverse backgrounds and fascilitate their self directed exploration and education as they engage in voluntary self-directed exploration of the wide breadth of the technical, scientific, and artistic landscape comprising the basis of the freemocap software~~
+- Provide mechanism to onboard low-to-zero XP individuals from a diverse backgrounds and fascilitate their self directed exploration and education as they engage in voluntary self-directed exploration of the wide breadth of the technical, scientific, and artistic landscape comprising the basis of the freemocap software
 
 ---
 
@@ -62,11 +61,13 @@ Through these efforts, we expect to unlock new capabilities for our organization
 ~~We have already built and deployed LLM based teaching tools (i.e. SkellyBot) that have been used in 5+ university classes. Our experience using AI in those settings establishes the potential power of creating a system for providing LLM/RAG mediated, individually tuned AI-mentorship for individuals learning to navigate an unfamiliar and complex domain of inquiry.~~
 ~~
 
-The driving need for this project stems from the inherent complexity and technicality of the FreeMoCap software and the associated domains it covers. While we have made significant strides in making the software accessible, the traditional methods we currently use—such as video tutorials, static site documentation, and direct human assistance via a community Discord server—have their limitations. As the project grows, these methods may not be scalable or sufficient to meet the diverse needs of our expanding user base.
+Universal design is a core tenet of the FreeMoCap Project, i.e. the idealized goal of creating a tool that is usable by every person regardless of their background, training, or expertise. The aspirational goal is to create a system that is simultaneously the best and most performant tool for world-class domain experts in fields that traditionally have used motion capture (e.g. clinical biomechanics, perceptuomotor neuroscience, 3d animation and video game design, etc.) while remaining accessible to high school students with no technical training and outside assistance. 
 
-The emergence of viable generative AI assistants presents a unique opportunity to address these challenges. Now, more than ever, there is a pressing need to provide curated, individualized AI mentorship to bridge the gaps in understanding and usage of the FreeMoCap software. This is particularly critical as we aim to serve both highly specialized domain experts and beginners with no prior technical training. The AI mentor will enable us to provide continuous, scalable support and education, tailored to each user's specific needs and learning path.
+However, the core technology and associated domains of the FreeMoCap software are nuanced and technical. To bridge these gaps, we currently use video tutorials, static site documentation, and direct human assistance via a community Discord server. These traditional methods, while effective, have limitations and may not scale as the project grows. The emergence of viable generative AI assistants presents an unprecedented opportunity to provide curated, individualized AI mentorship from a user’s first contact with the project through their technical development and into their exploration of the various domains the software encompasses.
 
-The current advancements in AI and LLM technologies make this the opportune moment to implement such a solution. Our prior success with LLM-based teaching tools like SkellyBot, used in multiple university classes, underscores the potential effectiveness of this approach. Implementing an AI mentor will help us overcome the bottleneck of limited expert availability, maximizing the educational impact of our domain experts while providing mentees with flexible, self-directed learning opportunities. As AI and LLM tools continue to advance, our AI mentor will evolve, continuously enhancing its ability to support and educate our diverse user community.
+Our plan includes creating an AI mentor fine-tuned to the broad domain expertise of the FreeMoCap project and hosted on an AWS platform. This AI mentor will assist with onboarding, support, and education for the entire FreeMoCap community and individual users. We will engage authentication to curate AI mentorship tailored to each user’s background, experience level, and interests. Additionally, we aim to onboard individuals with little to no experience from diverse backgrounds, facilitating their self-directed exploration and education within the technical, scientific, and artistic landscape of the FreeMoCap software.
+
+We have already built and deployed LLM-based teaching tools like SkellyBot that have been used in at least five university classes (and counting). These experiences highlight the potential of LLM/RAG-mediated, individually tuned AI mentorship for navigating complex domains. While the best form of education is direct human-to-human mentorship, this is limited by the availability of expert mentors. Our system aims to simulate this mentorship through AI, allowing experts to maximize their educational impact and providing mentees with the flexibility to navigate their educational journey. Data from limited direct mentorship and teaching activities will continuously fine-tune the AI, exponentially increasing its educational impact as AI and LLM tools advance.
 
 ## 3 - [technical-design](technical-design.md)
 
