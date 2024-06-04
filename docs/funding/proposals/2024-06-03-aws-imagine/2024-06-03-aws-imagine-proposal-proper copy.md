@@ -7,13 +7,13 @@
 
 ### 2.2 What is your project and how does it relate to your organization’s mission? (200-350 words) 
 
-We are developing an LLM-powered AI mentorship companion system for the FreeMoCap software - a free open source markerless motion capture system. The FreeMoCap Foundation is dedicated to the ensuring universal accessibility to emerging technology through the development of user friendly tools based on highly technical core principles. We specifically leverate the breadth of potential use cases for motion capture technology -  ranging from artistic use in 3d animation and video games to high level biomedical research and human movement neuroscience - to develop 'covert' educational opportunities for our users. We have many instances of high school aged users showing up with a desire to record a short motion capture clip for an animated short film and walking away with a working understanding of clinical biomechanics and principles of 3D motion capture, and career physical therapists who show up looking for a low-cost gait analysis tool and wind up developing an unexpected interest and expertise in computational video analysis and machine learning. 
+We are developing an LLM-powered AI mentorship companion system for the FreeMoCap software - a free open source markerless motion capture system. The FreeMoCap Foundation is dedicated to the ensuring universal accessibility to emerging technology through the development of user friendly tools based on highly technical core principles. We specifically leverage the breadth of potential use cases for motion capture technology -  ranging from artistic use in 3d animation and video games to high level biomedical research and human movement neuroscience - to develop 'covert' educational opportunities for our users. We have many instances of high school aged users showing up with a desire to record a short motion capture clip for an animated short film and walking away with a working understanding of clinical biomechanics and principles of 3D motion capture.
 
 We believe that by integrating a curated AI mentor/assistant to our core technology will massively accelerate these kinds of cross-disciplinary educational opportunities and super-charge our users ability to confidently dive deeply into the inner workings of the FreeMoCap software and its consituent and associated domains. 
 
 A strong onboarding process is one of the most difficult and often overlooked aspects of accessibility, particularly in the case of technical scientific software (albeit one with broad public appeal). By integrating a well-trained, finely-tuned AI support system, we can address onboarding issues and provide a sustainable resource for continuous troubleshooting and guidance in the fast-paced climate of software in development. The support system has broad generalizability that could be applied not just to this specific software, but to any technical application in any domain.
 
-Our datasets include thousands of student-AI interactions collected from LLM-empowered educational tools we developed for use in university classrooms. Beyond this, our online community enjoys thousands of international users from over 100 countries, including 2000+ member Discorder server representing a close-knit, diverse group of dedicated students, engineers, researchers, artists, and many more. 
+Our datasets include thousands of student-AI interactions collected from LLM-empowered educational tools we developed for use in university classrooms. Beyond this, our online community enjoys thousands of international users from over 100 countries, including 2000+ member Discord server representing a close-knit, diverse group of dedicated students, engineers, researchers, artists, and many more. 
 
 
 
@@ -22,15 +22,34 @@ Our datasets include thousands of student-AI interactions collected from LLM-emp
 The FreeMoCap Foundation's mission can be summed up as "aggressive accessibility" to science and education. The integration of generative AI is a transformative addition toward this same goal: where FreeMoCap currently lowers the barrier to motion capture *tools* (free open-source software with support for consumer-grade cameras), generative AI lowers the barrier to motion capture *expertise*. Our approach treats the model as a **mentor**, offering individualized support and instruction to all users across the entire FreeMoCap ecosystem.
 
 With the support of the generative AI mentor, our users will have constant, instantaneous access to all of the following: 
-- [1] **onboarding / orientation**, helping users just getting started to better understand all of the processes and features involved in the FreeMoCap workflow; 
+- [1] **onboarding / orientation**, helping users just getting started to understand processes involved in the FreeMoCap workflow along with their technical underpinnings. 
 - [2] **technical support**, helping established users navigate bugs or nuances of the interface, drawing on frequently asked questions; 
-- [3] and **further education**, when an experienced user wants to learn more advanced techniques for specific applications, or wants tutoring on advanced concepts in and around the realm of motion capture.
+- [3] and **further education**, when an experienced user wants to learn more advanced techniques for specific applications, or wants tutoring on advanced concepts in, around, and (critically) beyond the realm of motion capture.
 
 The mentor's own knowledge (as an LLM) will be supplemented with knowledge of individual users' skill levels and goals to create "curricular bridges", adapting on the fly as the user continues to interact with the app and in the community. In this way, the mentor will excel at providing deeply individualized support to every user, from the curious hobbyist home animator, to the highschooler with no experience, to the 20-year veteran of biomechanics research that now wants to learn about computer vision. 
 
 #### 2.2.2 How is your organization using data to make decisions today? (100 - 250 words) 	
 
+FreeMoCap is a data-rich endeavor at its core. The fundamental purpose of the tool is to transform camera data into 3d point data, a complex, multi-step process that saves and logs each intermediate stage. We also have a great deal of peripheral data from users on the the FreeMoCap community Discord server, seeking tech support advice, sharing outcomes, and otherwise participating in the online community. 
 
+- We have over 16,000 reports sent to a secure server from the software on shutdown, showing location and volume of our users across the world-- over 3800 unique users in over 100 countries. Further interrogating these reports reveals deeper reveal insights of issues users have encountered. (Note -  we receive user consent via a highly visible 'Opt Out' toggle on the welcome screen)
+- We have 2400 users in the FreeMoCap Discord server. The contents of the server's messages are routinely examined to extract bug reports for fixes, pain points to revise documentation, and new tools or solutions to consider in development. 
+
+FreeMoCap is a data-rich endeavor at its core. 
+
+- The fundamental purpose of the tool is to transform camera data into 3d point data, a complex, multi-step process that saves rich outputs at every step. 
+- We have over 16,000 reports sent "home" from the software on shutdown, showing location and volume of our users across the world-- >3800 unique users in over 100 countries. Further interrogating these reports reveals deeper reveal insights of issues users have encountered. 
+- We have 2400 users in the FreeMoCap Discord server. The contents of the server's messages are routinely examined to extract bug reports for fixes, pain points to revise documentation, and new tools or solutions to consider in development. 
+
+Integration with AI 
+In addition to the above, we also have a wealth of generative AI-specific data from 6 undergraduate courses across 3 universities.
+
+- AI assignments from JKL courses
+- Discord activity from Jon courses
+- Project management from Capstone
+
+
+PII - 
 
 ___
 ### 2.3 What are the intended outcomes of your project? What new capabilities would it unlock for your organization? (200-350 words) 
@@ -109,5 +128,4 @@ Technical skills needed:
 - Hosting and management of LLM services in a secure and scalable way, so that we may utilize the fine-tuned LLM from various platforms. These will include the existing Discord server, an AI assistant on the FreeMoCap website, and an AI mentorship and troubleshooting system within the FreeMoCap application. 
 
 The technical aspects for each of these integrations are diverse and require a breadth of unique expertise and time from FreeMocap's technical team. These technical skills exist in-house, as Endurance Idehen (FreeMoCap CTO) and his team have implemented similar systems in a varity of contexts. The resources provided by this proposal will allow us to contract the skilled labor needed for the actual implementation, as well as the training needed to allow to the core development team to sustainably support these capacities going forward. 
-
 
