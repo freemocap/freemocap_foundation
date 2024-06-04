@@ -35,23 +35,6 @@ FreeMoCap is a data-rich endeavor at its core. The fundamental purpose of the to
 - We have over 16,000 reports sent to a secure server from the software on shutdown, showing location and volume of our users across the world-- over 3800 unique users in over 100 countries. Further interrogating these reports reveals deeper reveal insights of issues users have encountered. (Note -  we receive user consent via a highly visible 'Opt Out' toggle on the welcome screen)
 - We have 2400 users in the FreeMoCap Discord server. The contents of the server's messages are routinely examined to extract bug reports for fixes, pain points to revise documentation, and new tools or solutions to consider in development. 
 
-FreeMoCap is a data-rich endeavor at its core. 
-
-- The fundamental purpose of the tool is to transform camera data into 3d point data, a complex, multi-step process that saves rich outputs at every step. 
-- We have over 16,000 reports sent "home" from the software on shutdown, showing location and volume of our users across the world-- >3800 unique users in over 100 countries. Further interrogating these reports reveals deeper reveal insights of issues users have encountered. 
-- We have 2400 users in the FreeMoCap Discord server. The contents of the server's messages are routinely examined to extract bug reports for fixes, pain points to revise documentation, and new tools or solutions to consider in development. 
-
-Integration with AI 
-In addition to the above, we also have a wealth of generative AI-specific data from 6 undergraduate courses across 3 universities.
-
-- AI assignments from JKL courses
-- Discord activity from Jon courses
-- Project management from Capstone
-
-
-PII - 
-
-___
 ### 2.3 What are the intended outcomes of your project? What new capabilities would it unlock for your organization? (200-350 words) 
 
 
@@ -64,55 +47,27 @@ Through these efforts, we expect to unlock new capabilities for our organization
 
 ### 2.4 What is driving the need for this specific project? Why now? (200-350 words) 
 
-The driving need for this project stems from the inherent complexity and technicality of the FreeMoCap software and the associated breadth of the domains it covers - ranging from computational video analysis, clinical biomechanics, 3d animation, and more. We are building FreeMoCap as a platform which simultaneously provides high technical capacity with minimal effort as well as a long-term entry point to any of the disparate domains it touches.
+We are building FreeMoCap as a platform which both provides high technical capacity with minimal cost and upfront effort as well as a long-term entry point to any of the disparate domains it touches, but there  are inherent limitations to traditional teaching methods like video tutorials and static site documentation. We all know the best form of instruction is direct human-to-human interaction, but that approach will always be limited by the finitude of available human effort.
 
-While we have made significant strides in making the software accessible, there are limitations to traditional methods we currently use, such as video tutorials, static site documentation, and direct human assistance via a community Discord server. As the project grows, these methods may not be scalable or sufficient to meet the diverse needs and backgrounds of our expanding user base.
+The emergence of viable generative AI assistants presents a unique opportunity to address these challenges. The ability to provide curated and individualized AI mentorship to bridge the gaps in understanding unlocks an unprecedented opportunity for large scale technical education. This is particularly critical as we aim to serve both highly specialized domain experts and beginners with no prior technical training - an AI mentor will be able to provide instruction at a level that is appropriate for each user tuned specifically to their interests and background, all while gently encouraging exploration into their nearby zones of proximal development.
 
-The emergence of viable generative AI assistants presents a unique opportunity to address these challenges. The ability to provide curated and individualized AI mentorship to bridge the gaps in understanding unlocks an unprecedented opportunity for large scale technical education by way of the FreeMoCap software. This is particularly critical as we aim to serve both highly specialized domain experts and beginners with no prior technical training - an AI mentor will be able to provide instruction at a level that is appropriate for each user, while gently encouraging gentle increases in broad mastery for each user throughout their lifetime.
+We already have direct experience developing and deploying AI-augmented chatbots in teaching environments - we have built and used three iterations of an LLM powered tool (https://github.com/freemocap/skellybot) in 6 university courses at three institutions to teach students topics like Human Movement Neuroscience, Cognitive Science Capstone, and Introduction to Perception and Action. These initial experiments were extremely successful at allowing students to navigate their own paths through broadly diverse topics in away that would be impossible using traditional teaching methods. These experiences underscore the potential effectiveness of this approach to education, and hint at incredible potential if integrated into a standalone, widely distributed software like the FreeMoCap system. 
 
-We already have direct experience developing and deploying AI-augmented chatbots in teaching evinronemnts - we have built and used three iterations of an LLM powered tool (https://github.com/freemocap/skellybot) in 6 university courses at three institutions to teach students topics like Human Movement Neuroscience, Cognitive Science Capstone, and Intoduction to Perception and Action. These initial experiments were extremely successful at allowing students to navigate their own paths through broadly diverse topics in away that would be impossible using traditional teaching methods. These experiences underscore the potential effectiveness of this approach to education, and hint at incredible potential if integrated into a standalone, widely distributed software like the FreeMoCap system. 
-
-Implementing an AI mentor will help us overcome the bottleneck of limited expert availability, maximizing the educational impact of our domain experts while providing mentees with flexible, self-directed learning opportunities. As AI and LLM tools continue to advance, our AI mentor will evolve, continuously enhancing its ability to support and educate our diverse user community.
+Generalizing beyond the specific use case of the FreeMoCap software - an AI mentor will help us overcome the bottleneck of limited expert availability, maximizing the educational impact of our domain experts while providing mentees with flexible, self-directed learning opportunities. As AI and LLM tools continue to advance, our AI mentor will evolve, continuously enhancing its ability to support and educate our diverse user community.
 
 ## 3 - [technical-design](technical-design.md)
 
 ### 3.1 Describe your project’s technical design at a high level. What does it do and how? (200-350 words) 
 
-- **Authentification**
-    - Tracking user identity across platforms to provide individually curated AI mentorship from 'first touch to expertise'.
+The FreeMoCap support system will utilize **authentication** to provide personalized AI mentorship by tracking user identity across platforms. This feature will ensure that each user receives curated guidance from first touch to eventual expertise.
 
-- **Data lake**
-    - Storing raw data from:
-        - User interaction with the core software (`freemocap`)
-        - User-User interactions in our communal spaces 
-            - On Social media 
-            - On our 2400 person Discord server 
-        - User-Bot interactions 
-            - Conversations between user and SkellyBot
-                -  in community server 
-                -  within the `freemocap` software
-- **Data Warehouse**
-    - Storing structured data related to individual users as well as the `freemocap` community as a whole
-    - Combine these data sources to provide individually curated AI mentor ship for each user, guided by the User's past and current and desired intersts and expertise
-    - Aglomerate individual user data to provide fine-tuning for the generic LLM assistant for this task 
-- **Application integration**
-    - Run LLM services to provide Users with curated mentorship within their personal use of the `freemocap` application, as well as for the FreeMoCap community discord server 
-- **AI/ML for reasearch **
-    - Fine tune an LLM based on the broadly distributed domains of expertise assocaited with the `freemocap` software
-    - `freemocap` touches many domains which do not commonly overlap (e.g. animation, AI/ML, biomechanics, perceptuomotor neuroscience, etc), so specific fine tuning will be necessary to provide AI mentorship in a way that appropriately combines these disparate domains into a coherent voice
-         - This training will occur on the basis of the world-class domain expertise of the core freemocap development team, as well as from extensive data collected in the context of using ealier forms of these LLM tools to teach the core concepts to undergraduates in university settings.
-
----
-
-The FreeMoCap support system will utilize authentification to provide personalized AI mentorship by tracking user identity across platforms. This feature will ensure that each user receives curated guidance from first touch to eventual expertise.
-
-The technical design includes a data lake to store raw data from various sources. This includes: 
+The technical design includes a **data lake** to store raw data from various sources (with user consent, privacy, and data ownership carefully and actively managed). Data sources include: 
 - User interaction with the core FreeMoCap software
 - User-User interactions in our communal spaces such as social media and our 2400-person Discord server.
-- User-Bot conversations between user and SkellyBot both in our community server and within the FreeMoCap software. 
+- NewUser-Bot conversations between user and SkellyBot both in our community server and within the FreeMoCap software. 
+- ExpertUser-Bot interactions, whereby experienced users might correct or ammend something the bot says or step in if it struggles to provide a useful answer
 
-
-A data warehouse will store structured data related to individual users and the FreeMoCap community as a whole. By combining these data sources, we can provide individually curated AI mentorship tailored to each user's past, current, and desired interests and expertise. Aggregated individual user data will also help fine-tune the generic LLM assistant, enhancing its ability to serve this specific task.
+A **data warehouse** will store structured data related to individual users and the FreeMoCap community as a whole. By combining these data sources, we can provide individually curated AI mentorship tailored to each user's past, current, and desired interests and expertise. Aggregated individual user data will also help **fine-tune** the generic LLM assistant, enhancing its ability to serve this specific task and specialized scientific and technical domain.
 
 Application integration will allow us to run LLM services that offer users curated mentorship within their personal use of the FreeMoCap application and the community Discord server. The AI/ML component will involve fine-tuning an LLM based on the diverse domains of expertise associated with the FreeMoCap software. Since FreeMoCap encompasses many fields that do not commonly overlap, e.g. animation, AI/ML, biomechanics, and perceptuomotor neuroscience, specific fine-tuning will be necessary to provide AI mentorship that effectively combines these disparate domains into a coherent voice.
 
@@ -123,9 +78,12 @@ This training will leverage the world-class domain expertise of the core FreeMoC
 Technical skills needed: 
 
 - Managing user data and user profiles in a scalable and secure way. This will allow us to provide users with a consistent experience interacting with the AI Mentor across multiple platforms
+- 
 - Training and fine-tuning of LLM based on dynamically growing data lake and input from the domain experts that are part of the core development team. 
+
 - Generation and storage of extracted structured data in secure data warehouse, where it will be used to provide individually curated AI mentorship for users across various platforms and extended time periods. This implementation will require careful management and curation of individual data high quality user experience while also allowing users to maintain ownership and control of how their personal use data is used to for the fine-tuning of the community-wide LLM. 
+
 - Hosting and management of LLM services in a secure and scalable way, so that we may utilize the fine-tuned LLM from various platforms. These will include the existing Discord server, an AI assistant on the FreeMoCap website, and an AI mentorship and troubleshooting system within the FreeMoCap application. 
 
-The technical aspects for each of these integrations are diverse and require a breadth of unique expertise and time from FreeMocap's technical team. These technical skills exist in-house, as Endurance Idehen (FreeMoCap CTO) and his team have implemented similar systems in a varity of contexts. The resources provided by this proposal will allow us to contract the skilled labor needed for the actual implementation, as well as the training needed to allow to the core development team to sustainably support these capacities going forward. 
+The technical aspects for each of these integrations are diverse and require a breadth of unique expertise and time from FreeMocap's technical team. These technical skills exist in-house, as Endurance Idehen (FreeMoCap CTO) and his team have implemented similar systems at enterprise scale. The resources provided by this proposal will allow us to contract the skilled labor needed for the actual implementation, as well as the training needed to allow to the core development team to sustainably support these capacities going forward. 
 
