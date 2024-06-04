@@ -30,10 +30,21 @@ The mentor's own knowledge (as an LLM) will be supplemented with knowledge of in
 
 #### 2.2.2 How is your organization using data to make decisions today? (100 - 250 words) 	
 
-FreeMoCap is a data-rich endeavor at its core. The fundamental purpose of the tool is to transform camera data into 3d point data, a complex, multi-step process that saves and logs each intermediate stage. We also have a great deal of peripheral data from users on the the FreeMoCap community Discord server, seeking tech support advice, sharing outcomes, and otherwise participating in the online community. 
+FreeMoCap is a data-rich endeavor at its core, both in terms of the data intrinsic to the mocap process, and in the peripheral user data that accumulates through online community support-- and soon, AI mentor chats. 
 
-- We have over 16,000 reports sent to a secure server from the software on shutdown, showing location and volume of our users across the world-- over 3800 unique users in over 100 countries. Further interrogating these reports reveals deeper reveal insights of issues users have encountered. (Note -  we receive user consent via a highly visible 'Opt Out' toggle on the welcome screen)
+At present, we actively use data in the following ways:
+- The fundamental purpose of the tool is to transform camera data into 3d point data, a complex, multi-step process that saves rich outputs at every step. 
+- We have over 16,000 reports sent "home" from the software on shutdown, showing location and volume of our users across the world-- >3800 unique users in over 100 countries. Further interrogating these reports reveals deeper reveal insights of issues users have encountered. 
 - We have 2400 users in the FreeMoCap Discord server. The contents of the server's messages are routinely examined to extract bug reports for fixes, pain points to revise documentation, and new tools or solutions to consider in development. 
+
+We also have generative AI user interaction data and meta-data from 6 undergraduate courses across 3 universities. These include activities incorporating generative AI such as:
+- initial introductory conversations, and their associated stumbles. 
+- topic explorations and Q and A sessions in lecture-based courses
+- multi-phase hierarchical project management from capstone courses
+
+Our ongoing analysis of these datasets continuously informs how we approach implementing AI in ways that are accessible to our users.
+
+Note that all sensitive and personally-identifying information is redacted before use in any analysis or development. 
 
 ### 2.3 What are the intended outcomes of your project? What new capabilities would it unlock for your organization? (200-350 words) 
 
@@ -78,7 +89,7 @@ This training will leverage the world-class domain expertise of the core FreeMoC
 Technical skills needed: 
 
 - Managing user data and user profiles in a scalable and secure way. This will allow us to provide users with a consistent experience interacting with the AI Mentor across multiple platforms
-- 
+
 - Training and fine-tuning of LLM based on dynamically growing data lake and input from the domain experts that are part of the core development team. 
 
 - Generation and storage of extracted structured data in secure data warehouse, where it will be used to provide individually curated AI mentorship for users across various platforms and extended time periods. This implementation will require careful management and curation of individual data high quality user experience while also allowing users to maintain ownership and control of how their personal use data is used to for the fine-tuning of the community-wide LLM. 
