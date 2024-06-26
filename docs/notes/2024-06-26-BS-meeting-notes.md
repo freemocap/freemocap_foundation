@@ -25,7 +25,7 @@ Project tab kanban of [BS repo](https://github.com/jonmatthis/bs): <https://gith
 6. Explore and set up home servers using Matrix protocol and Element app.
 7. Edit videos and coordinate with Michael on educational content.
 
-### Other Potential Tasks
+### Other General Categories of Tasks
 
 1. AI
 2. Website
