@@ -12,13 +12,14 @@
     - labelling workflow
       - and then plan skill-level waterfall
         - i.e. i figure it out, give it to Philip/Aaron, who figures it out and gives it to the newbier folk
-    - Integrate data into existing pipelines
+    - Integrate data into existing freemocap/blender pipelines
   - Mocap rig
     - Talk to philip about going to Denver
     - Buy IR lights and mounts
     - Spec out computer for them to buy
       - Probably a NAS too 
     - Get Basler camera code (philip)
+      - integrate Basler support into `skellycam`
     - Figure out the motor gantry thing
  
 ## 2024-06-26 Meeting Notes
