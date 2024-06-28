@@ -1,5 +1,24 @@
-### Tasks Associated with Ben's Project
+# Tasks Associated with Ben's Project
 
+## 2024-06-28 Meeting
+### Pre-notes
+- Tasks
+  - Eye tracker
+    - model skull w eye cameras mounted
+    - talk/respond to whosits in the server about the whatsits
+  - Deep lab cut
+    - pul up notes
+    - plan/create processing script
+    - labelling workflow
+      - and then plan skill-level waterfall
+        - i.e. i figure it out, give it to Philip/Aaron, who figures it out and gives it to the newbier folk
+    - Integrate data into existing pipelines
+  - Mocap rig
+    - Talk to philip about going to Denver
+    - Buy IR lights and mounts
+    - Spec out computer for them to buy
+    - 
+## 2024-06-26 Meeting Notes
 1. Ensure Ben Schull's project progresses and maintain funding
     1. Another meeting for current floating tasks with Ben
     2. Discuss frequency of check-ins
