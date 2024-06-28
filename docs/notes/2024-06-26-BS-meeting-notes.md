@@ -2,7 +2,7 @@
 
 ## 2024-06-28 Meeting
 ### Pre-notes
-- Tasks
+- Ben Tasks
   - Eye tracker
     - model skull w eye cameras mounted
     - talk/respond to whosits in the server about the whatsits
