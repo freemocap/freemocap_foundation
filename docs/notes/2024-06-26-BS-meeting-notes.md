@@ -7,7 +7,7 @@
     - model skull w eye cameras mounted
     - talk/respond to whosits in the server about the whatsits
   - Deep lab cut
-    - pul up notes
+    - pull up notes
     - plan/create processing script
     - labelling workflow
       - and then plan skill-level waterfall
