@@ -17,7 +17,7 @@
     - Talk to philip about going to Denver
     - Buy IR lights and mounts
     - Spec out computer for them to buy
-    - 
+      - Probably a NAS too 
 ## 2024-06-26 Meeting Notes
 1. Ensure Ben Schull's project progresses and maintain funding
     1. Another meeting for current floating tasks with Ben
