@@ -71,7 +71,7 @@ This procedure applies to all employees involved in preparing and submitting inv
 ### **4. Submit the Invoice:**
 
 4.1 **Email the Invoice:**
-   - Send the invoice to the specified email addresses (e.g., APInvoice@cu.edu and AVERY.WILLIAMSON@cuanschutz.edu).
+   - Send the invoice to the specified email addresses (e.g., APInvoice@AT-PLACE.WHATEVER and CONTACT.PERSON@PLACE.WHATEVER).
 
 4.2 **Include Attachments:**
    - Attach the original quote and PO if required.
