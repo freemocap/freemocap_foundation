@@ -3,16 +3,12 @@
 // Format: 8 pages max (excl. COI), single-spaced, 12pt, US letter, 1" margins
 
 #set page(paper: "us-letter", margin: 1in)
-#set text(size: 12pt, spacing: 1em)
-#set par(justify: false, leading: 0.3em, first-line-indent: 0pt)
+#set text(size: 12pt, font: "New Computer Modern")
+#set par(justify: true, leading: 0.55em, spacing: 0.55em, first-line-indent: 0pt)
 #set heading(numbering: "1.")
 
-// Tight heading spacing + force to 12pt bold (not the default ~17pt)
-#show heading: it => block(
-  above: 0.5em,
-  below: 0.25em,
-  text(weight: "bold", size: 12pt, it)
-)
+#show heading.where(level: 1): set block(above: 1.4em, below: 1em)
+#show heading.where(level: 1): set text(weight: "bold", size: 12pt)
 
 // ── Title Block ──
 
