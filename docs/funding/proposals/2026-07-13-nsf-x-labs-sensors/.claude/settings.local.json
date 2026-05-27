@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(pdftotext *)",
-      "Bash(typst compile *)"
+      "Bash(typst compile *)",
+      "WebSearch"
     ]
   }
 }
