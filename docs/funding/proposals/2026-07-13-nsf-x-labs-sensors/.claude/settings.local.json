@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pdftotext *)",
+      "Bash(typst compile *)",
+      "WebSearch"
+    ]
+  }
+}
