@@ -3,7 +3,8 @@
     "allow": [
       "Bash(pdftotext *)",
       "Bash(typst compile *)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(typst fonts *)"
     ]
   }
 }
