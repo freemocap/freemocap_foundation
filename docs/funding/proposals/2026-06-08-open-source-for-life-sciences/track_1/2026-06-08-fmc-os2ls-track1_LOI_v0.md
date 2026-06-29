@@ -1,6 +1,12 @@
 ## Short summary
 *Briefly describe the purpose of the proposal and the software project(s) it involves. 3,000 characters maximum* 
 
+## Funnel: Full body real world movement is the true desiderata of human-centered research
+
+
+
+
+----
 The FreeMoCap Project, or FreeMoCap, is a free, open-source markerless motion-capture platform that lets researchers turn ordinary cameras into a 3D measurement system for movement, enabling the capture of human or animal behavior without specialized motion-capture hardware or proprietary software. Using AI-based image tracking and synchronized camera footage, FreeMoCap generates research-grade 3D movement data for visualization, measurement, and analysis. With standard cameras and open software, FreeMoCap makes quantitative motion analysis accessible to labs, clinics, classrooms and field sites without access to motion capture systems that traditionally cost $50,000–$200,000 or more. FreeMoCap is the core software project of the FreeMoCap Foundation, a nonprofit organization supporting open, accessible tools for scientific, educational, and technological use.
 
 Advances in computer vision and AI have made it possible to track movement from video, but most existing markerless motion-capture tools remain limited to fixed human models or narrow analysis workflows. This limits their usefulness for researchers studying nonstandard human populations, animal behavior, or task-specific movements that require custom landmarks or tracking models. This proposal will support continued development of FreeMoCap as both an accessible end-user tool and a more general-purpose framework for AI-enabled 3D motion capture across the life sciences. 

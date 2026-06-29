@@ -3,7 +3,7 @@
 // Format: 8 pages max (excl. COI), single-spaced, 12pt, US letter, 1" margins
 
 #set page(paper: "us-letter", margin: 1in)
-#set text(size: 12pt, font: "New Computer Modern")
+#set text(size: 11pt, font: "New Computer Modern")
 #set par(justify: true, leading: 0.55em, spacing: 0.55em, first-line-indent: 0pt)
 #set heading(numbering: "1.")
 
@@ -12,14 +12,13 @@
 
 // ── Title Block ──
 
-#block(above: 0pt, below: 0.8em)[
+#block(above: 0pt, below: 0.28em)[
   #align(center)[
     #text(size: 13pt, weight: "bold")[FreeMoCap X-Lab]
     #v(0.15em)
-    #text(size: 11pt)[Lead Institution Name]
+    #text(size: 11pt)[FreeMoCap Foundation, Inc.]
     #v(0.4em)
     #text(size: 11pt)[
-      Written Proposal to the NSF X-Labs Initiative \
       Topic: Scientific Instrumentation for Sensing and Imaging
     ]
   ]
@@ -29,8 +28,8 @@
 
 // ── Sections ──
 
-#include "sections/mission.typ"
-#include "sections/technology-landscape.typ"
-#include "sections/outcomes.typ"
-#include "sections/personnel.typ"
-#include "sections/team-capabilities.typ"
+#include "sections/0-mission.typ"
+#include "sections/1-technology-landscape.typ"
+#include "sections/3-outcomes.typ"
+#include "sections/2-personnel.typ"
+#include "sections/4-team-capabilities.typ"
