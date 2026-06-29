@@ -1,25 +1,41 @@
-#Track 2: FreeMoCap Ecosystem / Skelly Ecosystem
 
 ## Short summary
 *Briefly describe the purpose of the proposal and the software project(s) it involves. 3,000 characters maximum* 
 
-Today, researchers building motion-analysis workflows often rebuild the same infrastructure from scratch: camera acquisition, calibration, reconstruction, data organization, quality checks, and export to downstream analysis. These project-specific pipelines can answer a single lab's question, but they are difficult to reuse, validate, maintain, or share. The result is a fragmented landscape where improvements in one group's code rarely become usable infrastructure for others. Reliable, reusable packages would significantly reduce the effort needed to build these pipelines.
+The FreeMoCap Foundation's Track 1 proposal describes our flagship software (freemocap) and its potential impact on the landscape of human-centered biomedical research. 
 
-The FreeMoCap Foundation's Track 1 proposal describes our core software, FreeMoCap, an open-source markerless motion-capture application that makes research-grade 3D movement data accessible using synchronized consumer cameras. Our Track 2 proposal aims to create a package ecosystem that researchers can incorporate into their own purpose-built pipelines without rebuilding the same components. FreeMoCap is built from Python-based subpackages that each address a critical stage of camera-based 3D measurement: SkellyCam for synchronized multi-camera acquisition; SkellyTracker for connecting interchangeable AI tracking models; SkellyForge for camera calibration, 3D reconstruction, and post-processing; and SkellyModels for structuring skeletal and keypoint data for analysis. Each library can be installed and used on its own or composed with others into pipelines.
+Our development of the FreeMoCap project has been structured around a poly-repo enforced separation of concerns whereby the different functional domains are split across individual repositories with a perscriptive naming structure: `skelly[domain]`, informally dubbed the 'sub-skelly network' after the logo and mascot of our company Skelly FreeMoCap. 
 
-This proposal aims to develop the existing Skelly ecosystem into fully independent, composable packages that researchers across the life sciences can use to build their own motion analysis workflows, tailored to their specific domains and methods. This is substantial engineering work spanning multiple packages and user communities. The first layer of this work is stable, documented public APIs for each library, with clear contribution protocols, so that external researchers can build against them with confidence. Additionally, shared data schemas will formalize the interfaces between packages, ensuring that outputs from any pipeline stage (such as 2D tracked landmarks from SkellyTracker or calibration parameters from SkellyForge) flow reliably into the next, regardless of tracking model, camera hardware, or organism.
+The principle sub-skelly repos are designed to provide isolated, semi-standalone developer environment to build the core functional pieces of the FreeMoCap software - `skellycam` for synchronized multi-camera streaming and recording, `skellytracker` for both traditional and AI/ML based image analysis, `skellyforge` for 3d capture volume calibration and kinematic reconstruction, and `skellyblender` for exporting basic trajectories to the animation software (such as Blender)
 
-A robust Skelly ecosystem will also include programmatic, command-line, and batch-processing workflows, enabling researchers to process hundreds of recordings and build the kind of large-scale movement datasets that AI-driven research increasingly demands. Benchmarking and validation tools will let researchers verify that a given pipeline configuration produces data suitable for their scientific question before building a study around it. A behavioral neuroscience lab could use SkellyCam alone for synchronized multi-angle video recording; a lab tracking insects with SLEAP could use SkellyForge to turn their 2D detections into calibrated 3D coordinates. Each group uses only the components they need, while improvements to shared infrastructure become available across the ecosystem.
+In addition, we also maintain a number of smaller scope utility repos to handle key sub-functionalities, such as `skellylogs` for a high-observability logging sytem, `skellypings` for Google cloud based user telemetry, etc. 
+
+Each principle sub-skelly repository is designed provide their own interface, documentation, and API that can be used independently of the project as a whole. SkellyCam provide a synchronized multicamera streaming/recording UI, etc (see https://github.com/freemocap for a partial list of all the code repositories supported by the FreeMoCap Foundation). 
+
+
+#### Gap 
+
+This strict standard of independent isolatable usage has been instrumental for our ability to develop and maintain the complex machinery of the top-level FreeMoCap software platform.
+
+However, in reality our ability to support each sub-repo is constrained by lack of time and resources. As a result, the individual tools are poorly documented and only loosely maintained UI with UX designed almost as a development tool rather than a properly usable tool. 
+
+#### Goal 
+
+This proposal aims to expand the existing FreeMoCap ecosystem to bring each independent principle and utility sub-skelly up to the same standards as the flagship FreeMoCap software. 
+
+A robust Skelly ecosystem will also include programmatic, command-line, and batch-processing workflows, enabling researchers to process hundreds of recordings and build the kind of large-scale movement datasets that AI-driven research increasingly demands. Benchmarking and validation tools will let researchers verify that a given pipeline configuration produces data suitable for their scientific question before building a study around it. 
+
+The activities of this proposal represent a substantial engineering labor that will effectively multiple our surface area of support by the number of sub-repositories, but if successful it could massively expand and deepen the impact of the FreeMoCap Project as a whole. 
 
 
 ## Expected value
 *If the proposal is successfully funded, what does success look like? We're seeking to understand: what type of capabilities the proposal is unlocking for the scientific community; how upstream and downstream software will be improved by the proposal; how the proposed work supports or implements novel functionality for AI enablement and large-scale data analysis. (1,500 characters maximum)*
 
-Success means researchers across the life sciences can build camera-based motion analysis pipelines from tested open-source components instead of starting from scratch. A neuroscientist, a clinician, and an ecologist can each assemble different pipelines from the same ecosystem, using only the packages they need, with confidence that the components are documented, validated, and interoperable.
+Success means researchers across the life sciences can assemble different pipelines from the same ecosystem, using only the packages they need, with confidence that the components are documented, validated, and interoperable.
 
 The project improves upstream software by giving tracking models, calibration methods, and reconstruction algorithms standardized interfaces - a new pose-estimation model can reach life sciences users through SkellyTracker without requiring them to rebuild their pipeline. Downstream, standardized data schemas mean that 3D datasets from different labs, organisms, and contexts share a common structure, making them combinable for large-scale analysis and usable for training new AI models. Improvements to any single package propagate to every researcher using the ecosystem rather than remaining trapped in one lab's codebase.
 
-The work supports AI enablement and large-scale data analysis through programmatic APIs, batch workflows, and structured outputs with embedded metadata and quality metrics. Researchers can process hundreds of recordings and integrate Skelly packages into scripted or automated workflows. Because each package is versioned and independently maintained, pipeline configurations become reproducible and shareable — a property that emerges from the modular architecture itself.
+The work supports AI enablement and large-scale data analysis through programmatic APIs, batch workflows, and structured outputs with embedded metadata and quality metrics. Researchers can process hundreds of recordings and integrate Skelly packages into scripted or automated workflows. Because each package is versioned and independently maintained, pipeline configurations become reproducible and shareable - a property that emerges from the modular architecture itself.
 
 
 ## Landscape Analysis 
