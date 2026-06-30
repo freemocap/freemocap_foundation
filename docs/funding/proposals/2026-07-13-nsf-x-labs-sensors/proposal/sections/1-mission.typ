@@ -10,5 +10,6 @@
 - *Hero*:
   - The proposed FreeMoCap Foundation X-Lab will create that platform 
 
-  #block(above: 2em, below: 1em)[
-*MISSION STATEMENT* - Build a Platform for Complete Empirical Capture of the Agent/Environment Interaction to Reshape Neuroscience  ]
+#block(above: 2em, below: 1em)[
+*MISSION STATEMENT* - Build a Platform for Complete Empirical Capture of the Agent/Environment Interaction to Reshape Neuroscience 
+ ]
