@@ -5,3 +5,5 @@
 
 # Ignore Smart Environment folder
 .smart-env
+.env
+*.env
