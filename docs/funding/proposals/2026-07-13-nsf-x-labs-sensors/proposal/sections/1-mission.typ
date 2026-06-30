@@ -13,3 +13,5 @@
 #block(above: 2em, below: 1em)[
 *MISSION STATEMENT* - Build a Platform for Complete Empirical Capture of the Agent/Environment Interaction to Reshape Neuroscience 
  ]
+
+*Complete Empirical Capture:* 
