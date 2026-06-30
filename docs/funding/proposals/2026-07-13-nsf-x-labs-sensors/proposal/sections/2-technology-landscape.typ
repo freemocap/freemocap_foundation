@@ -1,11 +1,25 @@
 // ── 2. Technology Landscape ──
 = Technology Landscape
-Provide  analysis of  current technology landscape that justifies how the proposed platform
-technology would accelerate the emergence of new technologies and lines of research. The
-Technology Landscape Analysis should compare current state-of-the-art technology and should
-provide a clear description of the team's goal to progress the technology and unlock
-fundamentally new capabilities. A plot or other figure to quantitatively depict the current
-technology landscape and desired goal(s) the NSF X-Lab may be included here.
-// TODO: Analyze current state of motion capture / sensing — marker-based vs markerless,
-// wearable IMUs, traditional gait labs. Show where FreeMoCap sits and what new capabilities
-// it unlocks. Consider including a figure comparing modalities.
+
+- Existing tools and methods
+  
+  - Myriad single-modality hyperspecialized research threads 
+    - OpenSim - Widely used but universally hated by practictioners
+    - DeepLabCut - Global success on paper, universally a headache in practice
+    - etc
+  
+
+- New approaches to complexity management
+  - Ontology/Entity Management (Anduril/Palantir/Maven Smart System)
+  - Industry and Military technology applied to scientific domain
+  - Want to establish an operational ontology as backbone of this tool, following powerful patterns established by (Anduril/Palantir/Maven) systems
+
+- FreeMoCap and its landscape
+  - Established Tool with Growing International Community
+  - Existence is proof-of-concept of approach, XLabs scale support would accelerate FreeMoCap model into the global scale
+
+- Laser Skeleton research
+  - @matthis2018 @matthis2022 @muller2023 
+  - etc
+  - Ferret work
+    - 

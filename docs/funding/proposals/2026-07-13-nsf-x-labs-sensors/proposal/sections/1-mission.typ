@@ -14,6 +14,12 @@
 *Agent/Environment Interaction:* Relates to the internal and external state of an actor (human, non-human animal, or artificial system).    
 
 *Interoperabilty across all Dimensional Domains:* A "dimensional domain" is any thing that can vary along an orientable dimension. We will a platform that will create seamless interoperability across *species*, *scale*, *time*, *numerosity*, and *complexity*.
+
+- Estimate per timestep-
+  - State
+  - Inputs
+  - Outputs 
+  - Environment
 // - **Species** - Data models mapped to phylogenetic tree, all vertebrates have a skull, all tetrapods have fore/hind limbs, etc. Mapping all animals into coherent structure to align animal research to human wellbeing. 
 // - **Scales** - Data alignment across spatial scales, c. elegans, fruit flies, mice, monkeys, humans, and elephants
 // - **Time** - Data alignment across high density measurements across short timescales (e.g. high speed vid) and longitudinal timescales (e.g. tracking in a cage across the full lifespan)

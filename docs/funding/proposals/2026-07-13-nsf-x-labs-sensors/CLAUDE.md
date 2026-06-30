@@ -55,3 +55,5 @@ NOTE - All PDFs have a markdown port alongside them
 - `README.md` — SAM.gov opportunity links
 
 Solicitation requirements (page limits, formatting, required sections, evaluation criteria) are in the PDFs above. Always verify proposal content against the official solicitation documents — do not rely on memory or assumptions about NSF formatting rules. **Open item to verify against the PDFs:**
+
+Personnel and collaborators are identified by initials for privacy in this public repo. There should be a local .env file mapping Initials to Names in your local context. 
