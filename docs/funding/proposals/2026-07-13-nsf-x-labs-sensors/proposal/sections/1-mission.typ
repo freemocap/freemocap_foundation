@@ -16,4 +16,4 @@
 
 *Complete Empirical Capture:* Complete empirical capture means that we are recording every single possible thing that we can record about a given slice of time over continuous time.
 
-*Agent/Environment Interaction:* Relates to the internal and external state of an actor (human, non-human animal, or artificial system).   
+*Agent/Environment Interaction:* Relates to the internal and external state of an actor (human, non-human animal, or artificial system).    
