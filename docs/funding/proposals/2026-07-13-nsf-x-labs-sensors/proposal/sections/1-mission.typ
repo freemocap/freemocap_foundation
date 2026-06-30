@@ -16,4 +16,9 @@
 
 *Complete Empirical Capture:* Complete empirical capture means that we are recording every single possible thing that we can record about a given slice of time over continuous time.
 
-*Agent/Environment Interaction:* Relates to the internal and external state of an actor (human, non-human animal, or artificial system). 
+*Agent/Environment Interaction:* Relates to the internal and external state of an actor (human, non-human animal, or artificial system).   
+- Want to record all relevant empirically accessible data relating to an agent's internal state and external environment across species, spatial and temporal scales
+- Record external data (body eye kinematics, reaction forces, etc)
+- Record internal data (neural activity, muscle activation, etc)
+- Record Environment through allocentric (  e.g. mocap) and egocentric (e.g. head cam) means
+- Manipulate environment using VR/AR/XR methods for experimental control
