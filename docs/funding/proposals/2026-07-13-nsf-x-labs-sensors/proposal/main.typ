@@ -30,10 +30,11 @@
 
 #include "sections/1-mission.typ"
 #pagebreak(weak:true)
-#include "sections/5-technology-landscape.typ"
+#include "sections/2-technology-landscape.typ"
 #pagebreak(weak:true)
-#include "sections/2-outcomes.typ"
+#include "sections/3-outcomes.typ"
 #pagebreak(weak:true)
-#include "sections/3-personnel.typ"
+#include "sections/4-personnel.typ"
 #pagebreak(weak:true)
-#include "sections/4-team-capabilities.typ"
+#include "sections/5-team-capabilities.typ"
+#bibliography("FMCF-NSF-XLABS.bib", style: "apa")

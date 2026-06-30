@@ -188,22 +188,12 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
-            }
-          },
-          {
-            "id": "7bbeae841deaefc8",
-            "type": "leaf",
-            "state": {
-              "type": "smart-connections-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "smart-connections-view"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -222,10 +212,16 @@
       "typst-book-preview:Open Typst Book Preview": false
     }
   },
-  "active": "03504b396df7ded7",
+  "active": "8e88be833df8dd13",
   "lastOpenFiles": [
-    "docs/funding/proposals/2026-07-13-nsf-x-labs-sensors/proposal/main.pdf",
     "docs/funding/proposals/2026-07-13-nsf-x-labs-sensors/notes/2026-nsf-xlabs-outline.md",
+    "docs/funding/proposals/2026-07-13-nsf-x-labs-sensors/proposal/sections/5-team-capabilities.typ",
+    "docs/funding/proposals/2026-07-13-nsf-x-labs-sensors/proposal/sections/4-personnel.typ",
+    "docs/funding/proposals/2026-07-13-nsf-x-labs-sensors/proposal/sections/3-outcomes.typ",
+    "docs/funding/proposals/2026-07-13-nsf-x-labs-sensors/proposal/sections/2-technology-landscape.typ",
+    "docs/funding/proposals/2026-07-13-nsf-x-labs-sensors/proposal/FMCF-NSF-XLABS.bib",
+    "docs/funding/proposals/2026-07-13-nsf-x-labs-sensors/proposal/NSF-XLABS.bib",
+    "docs/funding/proposals/2026-07-13-nsf-x-labs-sensors/proposal/main.pdf",
     "docs/funding/proposals/2026-07-13-nsf-x-labs-sensors/2026-nsf-xlabs-outline.md~",
     "docs/funding/proposals/2026-07-13-nsf-x-labs-sensors/2026-nsf-xlabs-outline.md"
   ]
