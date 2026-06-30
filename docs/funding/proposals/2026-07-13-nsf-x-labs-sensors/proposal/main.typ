@@ -14,14 +14,14 @@
 
 #block(above: 0pt, below: 0.28em)[
   #align(center)[
-    #text(size: 13pt, weight: "bold")[Complete e]
+    #text(size: 13pt, weight: "bold")[Complete Empirical Capture of the Agent/Environment Interaction ]
     #v(0.15em)
     #text(size: 11pt)[FreeMoCap Foundation, Inc.]
     #v(0.4em)
     #text(size: 11pt)[
       Topic: Scientific Instrumentation for Sensing and Imaging
     ]
-  ]r
+  ]
   #v(0.3em)
   #line(length: 100%)
 ]
