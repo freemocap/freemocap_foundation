@@ -29,7 +29,11 @@
 // ── Sections ──
 
 #include "sections/1-mission.typ"
+#pagebreak(weak:true)
 #include "sections/5-technology-landscape.typ"
+#pagebreak(weak:true)
 #include "sections/2-outcomes.typ"
+#pagebreak(weak:true)
 #include "sections/3-personnel.typ"
+#pagebreak(weak:true)
 #include "sections/4-team-capabilities.typ"
