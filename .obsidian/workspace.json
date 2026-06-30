@@ -27,10 +27,14 @@
             "id": "03504b396df7ded7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docs/funding/proposals/2026-07-13-nsf-x-labs-sensors/notes/2026-nsf-xlabs-outline.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2026-nsf-xlabs-outline"
             }
           }
         ],
@@ -197,19 +201,9 @@
               "icon": "lucide-ghost",
               "title": "smart-connections-view"
             }
-          },
-          {
-            "id": "7b451c34c94cf617",
-            "type": "leaf",
-            "state": {
-              "type": "typst-book-preview",
-              "state": {},
-              "icon": "book-open",
-              "title": "Typst Book Preview"
-            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -228,8 +222,9 @@
       "typst-book-preview:Open Typst Book Preview": false
     }
   },
-  "active": "7b451c34c94cf617",
+  "active": "7bbeae841deaefc8",
   "lastOpenFiles": [
+    "docs/funding/proposals/2026-07-13-nsf-x-labs-sensors/notes/2026-nsf-xlabs-outline.md",
     "docs/funding/proposals/2026-07-13-nsf-x-labs-sensors/2026-nsf-xlabs-outline.md~",
     "docs/funding/proposals/2026-07-13-nsf-x-labs-sensors/2026-nsf-xlabs-outline.md"
   ]
