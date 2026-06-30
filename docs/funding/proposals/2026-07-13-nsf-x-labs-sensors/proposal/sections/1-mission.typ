@@ -11,4 +11,4 @@
   - The proposed FreeMoCap Foundation X-Lab will create that platform 
 
 
-*MISSION STATEMENT* - 
+*MISSION STATEMENT* - Build a Platform for Complete Empirical Capture of the Agent/Environment Interaction to Reshape Neuroscience 
