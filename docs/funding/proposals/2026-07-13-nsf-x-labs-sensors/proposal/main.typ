@@ -3,7 +3,7 @@
 // Format: 8 pages max (excl. COI), single-spaced, 12pt, US letter, 1" margins
 
 #set page(paper: "us-letter", margin: 1in)
-#set text(size: 11pt, font: "New Computer Modern")
+#set text(size: 12pt, font: "New Computer Modern")
 #set par(justify: true, leading: 0.55em, spacing: 0.55em, first-line-indent: 0pt)
 #set heading(numbering: "1.")
 
@@ -28,8 +28,8 @@
 
 // ── Sections ──
 
-#include "sections/0-mission.typ"
-#include "sections/1-technology-landscape.typ"
-#include "sections/3-outcomes.typ"
-#include "sections/2-personnel.typ"
+#include "sections/1-mission.typ"
+#include "sections/5-technology-landscape.typ"
+#include "sections/2-outcomes.typ"
+#include "sections/3-personnel.typ"
 #include "sections/4-team-capabilities.typ"
