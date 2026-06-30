@@ -6,6 +6,6 @@
 - Gap: 
   - While this approach has led to many advances over the past century, the current model of specialized single-domain advancemnt has failed to create integrative frameworks to combine the individual threads of single-modality advancement into an coherent whole representing a richly interconnected representation nature capable of actionable operation. 
 - Hope:
-  - A high quality integrated platform directly designed for the use-case development of complete empirical capture of an awake behaving human-or-non-human-animal (HNHA) 
+  - A high quality integrated platform directly designed for the use-case development of complete empirical capture of an awake behaving human-or-non-human-animal (HNHA) would transform the scientific landscape by creating a technical commons whereby specialists and cross-disciplnary researchers can productively interact in serivce of the shared and unified scienfitic envdeavor.
 - Hero:
-  - A tangible extensible platform designed for 
+  - The proposed FreeMoCap Foundation X-Lab will create that platform 
