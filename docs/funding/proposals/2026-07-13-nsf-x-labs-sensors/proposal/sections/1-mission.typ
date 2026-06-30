@@ -9,3 +9,6 @@
   - A high quality integrated platform directly designed for the use-case development of complete empirical capture of an awake behaving human-or-non-human-animal (HNHA) would transform the scientific landscape by creating a technical commons whereby specialists and cross-disciplnary researchers can productively interact in serivce of the shared and unified scienfitic envdeavor.
 - *Hero*:
   - The proposed FreeMoCap Foundation X-Lab will create that platform 
+
+
+*MISSION STATEMENT* - 
