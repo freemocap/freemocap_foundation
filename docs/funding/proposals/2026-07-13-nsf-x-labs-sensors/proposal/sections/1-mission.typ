@@ -11,11 +11,13 @@
   *KEY DELIVERABLE* -  Scale-free Empirical Capture Volume
 Defined as *densely instrumented* 3d region wherein we can extract empirically grounded heterogenous sensor data into a coherent multi-domain estimate of all relevant internal and external variables that are relevant to the sensorimotor control over all timescales (sub-second reactions to longitudinal development).
 ]
+#pagebreak(weak:true)
+
+== Key Terms and Phrase
 *Complete Empirical Capture:* Complete empirical capture means that we are recording every single possible thing that we can record about a given slice of time over continuous time.
 
 *Agent/Environment Interaction:* Relates to the internal and external state of an actor (human, non-human animal, or artificial system).    
 
-*Interoperabilty across Phylogeny, Discipline, and Scale:* A "dimensional domain" is any thing that can vary along an orientable dimension. We will a platform that will create seamless interoperability across *species*, *scale*, *time*, *numerosity*, and *complexity*.
 
 
 == Building a Scale-free Empirical Capture Volume
