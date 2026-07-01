@@ -5,7 +5,9 @@
       "Bash(typst compile *)",
       "WebSearch",
       "Bash(typst fonts *)",
-      "Bash(code --list-extensions)"
+      "Bash(code --list-extensions)",
+      "WebFetch(domain:typst.app)",
+      "WebFetch(domain:nerixyz.github.io)"
     ]
   }
 }

@@ -1,7 +1,7 @@
 // ── 1. Mission ──
 = Mission
 
-#include "mission/intro.typ"
+#include "../helpers/intro.typ"
 
 #block(above: 2em, below: 1em)[
 *MISSION STATEMENT* - Build a Platform for *Complete Empirical Capture of the Agent/Environment Interaction* to fulfill the *Reductionist's Promise* and enable a *Mesoscale Revolution*
@@ -10,6 +10,11 @@
 #block(above: 1em, below: 1em)[
   *KEY DELIVERABLE* -  Scale-free Empirical Capture Volume
 Defined as *densely instrumented* 3d region wherein we can extract empirically grounded heterogenous sensor data into a coherent multi-domain estimate of all relevant internal and external variables that are relevant to the sensorimotor control over all timescales (sub-second reactions to longitudinal development).
+]
+
+#block(above: 1em, below: 1em)[
+  *ACTIONABLE TARGET* -  Align perceptuomotor neuroscience with legged robotics
+Eventual goal is "all of science especially biology", but for the timeline of this proposal we specifically target alignment between perceptuomotor neuroscience and legged robotics
 ]
 #pagebreak(weak:true)
 
