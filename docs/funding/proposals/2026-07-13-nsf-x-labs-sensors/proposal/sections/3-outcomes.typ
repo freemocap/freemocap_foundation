@@ -1,10 +1,25 @@
 // ── 3. Outcomes ──
 = Outcomes
-An NSF X-Lab is expected to deliver high-impact, measurable outcomes that advance a nascent
-platform technology, overcome critical bottlenecks, and realize the team's vision to reshape an
-entire area of technology or field of scientific research (see Section 7.0 for example outcomes).
-Phase 0 proposals should describe the team's ambitious target outcomes over a 5- to 7-year
-timescale to accomplish the stated Mission and the scientific and technical performance
-benchmarks needed to get there.
-// TODO: Define 5–7 year target outcomes. Include quantitative performance benchmarks
-// (e.g., sub-millimeter accuracy, real-time processing, deployment in N clinical sites, etc.).
+
+- Cool Tool -  #strike[Skinner]SkellyBox: Multiscale modular empirical capture arena
+  - Interoperabilty across species, domains, and timescales
+    - A member of a mouse lab can walk into a marmoset lab and expect their pipelines will still work
+    - Perceptuomotor behavior and kinematic/kinetic analysis directly interoperable with robotics models (via MuJoCo and Nvidia Isaac Gym) - Data for reinforcement learning models, Controls to interpret HNHA behavioral data
+    - Data models alignment across timescales - developmental/longitudinal (months/years/lifespan) timescales aligned with perception/action timescales (seconds/minutes)
+
+  - Composable complexity 
+    - Careful ontology allows for complexity via comopsible data sources and assocaited downstream entities
+    - Adding new sensor modalities into established scene, framework handles spatiotemporal alignment/calibration, unit conversions, resampling, etc
+  
+- Organize and operationalize a new culture of science around discussion/management/extension shared platform tool
+    - In the form of an annual Congress meeting
+    - Organizing the culture of science around the discussion and advancement of shared ontologies rather than an endless stream of 8-10 page pdfs
+    - Break the Skill Ceiling in academic science 
+      - Build tool to allow multi-decade continuous education across disciplines and experience (same tool in high school as used in federally funded research lab)
+      - Shared toolset encourages natural blending of disciplines while encouraging and reward higher specialized exploration (esp when that research produces actionable results across different dimensional domains)
+
+- Mesoscale revolution
+  - Allow advances in reductionist microscale research to align with human-scale interests
+  - Align Perceptuomotor Neuroscience with humanoid robotics, allow transfer, technology, and technique transfer between those fields
+  
+#include "../helpers/timeline-milestones.typ"

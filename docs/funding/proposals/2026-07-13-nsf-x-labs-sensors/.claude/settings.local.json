@@ -4,7 +4,12 @@
       "Bash(pdftotext *)",
       "Bash(typst compile *)",
       "WebSearch",
-      "Bash(typst fonts *)"
+      "Bash(typst fonts *)",
+      "Bash(code --list-extensions)",
+      "WebFetch(domain:typst.app)",
+      "WebFetch(domain:nerixyz.github.io)",
+      "Bash(where typst *)",
+      "Bash(typst --version)"
     ]
   }
 }
