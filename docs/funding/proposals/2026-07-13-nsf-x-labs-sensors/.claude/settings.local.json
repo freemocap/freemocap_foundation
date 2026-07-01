@@ -4,7 +4,8 @@
       "Bash(pdftotext *)",
       "Bash(typst compile *)",
       "WebSearch",
-      "Bash(typst fonts *)"
+      "Bash(typst fonts *)",
+      "Bash(code --list-extensions)"
     ]
   }
 }

@@ -1,0 +1,3 @@
+-  *Funnel Statement*: Reductionist's Dream
+-  *Gap Statement*: The failures of reductionism (airplanes/radios)
+- *Hero Statement*: Complete Empirical Capture as Commons

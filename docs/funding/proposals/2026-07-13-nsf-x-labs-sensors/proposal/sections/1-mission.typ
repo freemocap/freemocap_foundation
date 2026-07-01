@@ -1,9 +1,7 @@
 // ── 1. Mission ──
 = Mission
 
--  *Funnel Statement*: The modern landscape of science is one of loosely connected pockets of hyper specialization within siloed disciplines and domains of inquiry. 
--  *Gap Statement*: While this approach has led to many advances over the past century, the current model of specialized single-domain advancement has failed to create integrative frameworks to combine the individual threads of single-modality advancement into an coherent whole representing a richly interconnected representation nature capable of actionable operation. 
-- *Hero Statement*: A high quality integrated platform directly designed for the use-case development of complete empirical capture of an awake behaving human-or-non-human-animal (HNHA) would transform the scientific landscape by creating a technical commons whereby specialists and cross-disciplnary researchers can productively interact in serivce of the shared and unified scientific endeavor.
+#include "mission/funnel-gap-hero-2.typ"
 
 #block(above: 2em, below: 1em)[
 *MISSION STATEMENT* - Build a Platform for *Complete Empirical Capture of the Agent/Environment Interaction* to fulfill the *Reductionist's Promise* and enable a *Mesoscale Revolution*
