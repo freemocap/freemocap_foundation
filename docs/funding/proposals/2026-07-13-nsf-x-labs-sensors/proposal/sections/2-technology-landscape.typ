@@ -8,6 +8,8 @@
     - DeepLabCut - Global success on paper, universally a headache in practice
     - etc
   
+  - MuJoCo/IsaacLab Driving robotics 
+    - Integrate NeuroBehaioral Data into those sinulation/RL training enviornments to cross-align perceptuomotor neuroscience, HNHA biomechanics, robotics control research (e.g. Cassie from Guinea Fowl)
 
 - New approaches to complexity management
   - Ontology/Entity Management (Anduril/Palantir/Maven Smart System)

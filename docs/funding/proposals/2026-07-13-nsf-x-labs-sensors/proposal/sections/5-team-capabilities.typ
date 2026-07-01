@@ -1,16 +1,37 @@
 // ── 5. Team Capabilities Statement ──
 = Team Capabilities Statement
-Provide a Team Capability Statement describing how the Senior/Key Personnel on the proposed
-leadership team bring together complementary expertise in strategic leadership, technical
-expertise, and/or entrepreneurship, as applicable. The statement should describe how,
-collectively, the team demonstrates the experience, adaptability, and collaborative approach
-necessary to execute the Mission. Briefly describe the team's intended governance structure and
-autonomy during Phase 0 and Phase 1. If applicable, include an overview of networks,
-partnerships, and capital resources your team currently has and how they will be deployed in
-support of the proposal.
-// TODO: Write a narrative about how the team's complementary skills cover:
-// - Strategic leadership
-// - Technical depth (computer vision, sensing, biomechanics)
-// - Entrepreneurship / commercialization
-// - Governance structure (Phase 0 host org, Phase 1 independent structure)
-// - Existing networks, partnerships, capital resources
+
+== Senior Team Capabilities
+-  Jon -  done it before in humans, doing it in ferrets and mice
+- AC - focusing clinical adoption and bench-to-bedside transitions
+- EI - Deep professional experience in Tech Sector, high level software architecture experienced necessary to develop truly global scale enterprise level of software in open-source/academic contexts
+- RR - Organizational health and entrepreneurial development
+
+
+== Collaborators
+- [ ] BS - Ferrets - Visual/Perceptual neuroscience, ephys, etc
+- [ ] MD - Guinea Fowl - Musculoskeletal Biomechanics, muscle units
+- [ ] DF - Mice - System Biology (?)
+- [ ] AH - Marmosets and NHP - ephys
+- [ ] MH - Human vision and CPS
+- [ ] Mayo Clinic Epilepsy guy - human brain scans and implanted sensors
+- [ ] BD [ ] GN/RAI(?) [ ] CH(?) [ ] JH(?) - Robots and Fabrication, control theory
+- [ ] AA - Physical facilities, rapid iteration, recruiting
+
+== Governance
+- Most successful FOSS project operate under a Benevolent Dictator For Life (BDFL) Governance (e.g. Linus Torvald at Linux)
+- This is best when an organization is young, but later on centralization is a concern control should melt into the community of users (see Ton Roosenthaal's step down from Blender lead position)
+- We will use Benevolent Dictator for a Set Period of Time (BDfaSPoT)
+  - Transition from centralized control:  President -> President + Board -> to President + Board (C-Suite) + Community DAO 
+    - President maintains at least 51% control until year 5, then optional transition to 50/50 President/Board+Community
+- Plan changes via public Requests for Comments (similar to Python PEP system)
+  - Provide public space for feedback on planned features, allows transparency without creating a bottleneck
+- In 2nd year, create Developer Fund and Community Grants program
+  - Stakeholders vote on proposals and features, via DAO like voting
+- In 4-5th year, extend this system to handle community steering of org 
+
+
+== Autonomy
+ - We are already autonomous, as of 2 weeks prior to the deadline of this proposal. 
+  - This project will happen no matter what, but with XLabs funding, we could truly change the world 
+ 
