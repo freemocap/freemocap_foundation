@@ -14,7 +14,7 @@
 
 #block(above: 0pt, below: 0.28em)[
   #align(center)[
-    #text(size: 13pt, weight: "bold")[Complete Empirical Capture of the Agent/Environment Interaction during Natural Behavior across Phylogeny, Domain, and Dimension]
+    #text(size: 13pt, weight: "bold")[Complete Empirical Capture of the Agent/Environment Interaction across Phylogeny, Discipline, and Spatiotemporal Scale]
     #v(0.15em)
     #text(size: 11pt)[FreeMoCap Foundation, Inc.]
     #v(0.4em)

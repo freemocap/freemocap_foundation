@@ -1,25 +1,29 @@
 // ── 1. Mission ──
 = Mission
 
--  *Funnel Statement*: The modern landscape of science is one of loosely connected pockets of hyper specialization within siloed discplines and domains of inquiry. 
--  *Gap Statement*: While this approach has led to many advances over the past century, the current model of specialized single-domain advancemnt has failed to create integrative frameworks to combine the individual threads of single-modality advancement into an coherent whole representing a richly interconnected representation nature capable of actionable operation. 
+-  *Funnel Statement*: The modern landscape of science is one of loosely connected pockets of hyper specialization within siloed disciplines and domains of inquiry. 
+-  *Gap Statement*: While this approach has led to many advances over the past century, the current model of specialized single-domain advancement has failed to create integrative frameworks to combine the individual threads of single-modality advancement into an coherent whole representing a richly interconnected representation nature capable of actionable operation. 
 - *Hero Statement*: A high quality integrated platform directly designed for the use-case development of complete empirical capture of an awake behaving human-or-non-human-animal (HNHA) would transform the scientific landscape by creating a technical commons whereby specialists and cross-disciplnary researchers can productively interact in serivce of the shared and unified scientific endeavor.
 
 #block(above: 2em, below: 1em)[
-*MISSION STATEMENT* - Build a Platform for *Complete Empirical Capture of the Agent/Environment Interaction* to create Interoperabilty across all Dimensional Domains to align Neuroscience with Robotics
+*MISSION STATEMENT* - Build a Platform for *Complete Empirical Capture of the Agent/Environment Interaction* to fulfill the *Reductionist's Promise* and enable a *Mesoscale Revolution*
  ]
 
+#block(above: 1em, below: 1em)[
+  *KEY DELIVERABLE* -  Scale-free Empirical Capture Volume
+Defined as *densely instrumented* 3d region wherein we can extract empirically grounded sensor  data, spatiotemporally align, synchronize, and calibrate into a Coherent multi-domain estimate of all relevant internal and external variables that are relevant to the sensorimotor control over all timescales (sub-second reactions to longitudinal development).
+]
 *Complete Empirical Capture:* Complete empirical capture means that we are recording every single possible thing that we can record about a given slice of time over continuous time.
 
 *Agent/Environment Interaction:* Relates to the internal and external state of an actor (human, non-human animal, or artificial system).    
 
-*Interoperabilty across all Dimensional Domains:* A "dimensional domain" is any thing that can vary along an orientable dimension. We will a platform that will create seamless interoperability across *species*, *scale*, *time*, *numerosity*, and *complexity*.
+*Interoperabilty across Phylogeny, Discipline, and Scale:* A "dimensional domain" is any thing that can vary along an orientable dimension. We will a platform that will create seamless interoperability across *species*, *scale*, *time*, *numerosity*, and *complexity*.
 
 
 == Building a Scale-free Empirical Capture Volume
 Defined as 3d region where in we can extract empirically grounded sensor  data, spatiotemporally align, synchronize, and calibrate into a Coherent multi-domain estimate of all relevant internal and external variables that are relevant to the sensorimotor control over all timescales (sub-second reactions to longitudinal development).
 
-Composable complexity - new sensors intergrate into base dataset
+*Composable complexity* - new sensors intergrate into base dataset
 - Interspecies alignment though phylogenetic property Mapping
   - Any species with a Skull has the Skull property. If eye tracking data is not specified, eyes are fixed in head. If eye tracking is present, we pour emprically grounded estiamtes of measurable parameters (adduction/elevation). Eye models includes knowable but unmeasured values (like occular torsion or lens flexion), providing both future proofing of current research with optimistic preparation for future methodology which CAN measure those values
 
