@@ -9,7 +9,7 @@
 
 #block(above: 1em, below: 1em)[
   *KEY DELIVERABLE* -  Scale-free Empirical Capture Volume
-Defined as *densely instrumented* 3d region wherein we can extract empirically grounded sensor  data, spatiotemporally align, synchronize, and calibrate into a Coherent multi-domain estimate of all relevant internal and external variables that are relevant to the sensorimotor control over all timescales (sub-second reactions to longitudinal development).
+Defined as *densely instrumented* 3d region wherein we can extract empirically grounded heterogenous sensor data into a coherent multi-domain estimate of all relevant internal and external variables that are relevant to the sensorimotor control over all timescales (sub-second reactions to longitudinal development).
 ]
 *Complete Empirical Capture:* Complete empirical capture means that we are recording every single possible thing that we can record about a given slice of time over continuous time.
 
