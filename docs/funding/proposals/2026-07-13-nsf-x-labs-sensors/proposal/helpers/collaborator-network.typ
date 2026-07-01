@@ -1,6 +1,6 @@
 == Collaborators
 
-#set text(size: 10pt)
+#set text(size: 9pt)
 #figure(
   table(
     columns: (auto, auto, 1fr),

@@ -18,12 +18,7 @@ Eventual goal is "all of science especially biology", but for the timeline of th
 ]
 #pagebreak(weak:true)
 
-== Key Terms and Phrase
-*Complete Empirical Capture:* Complete empirical capture means that we are recording every single possible thing that we can record about a given slice of time over continuous time.
-
-*Agent/Environment Interaction:* Relates to the internal and external state of an actor (human, non-human animal, or artificial system).    
-
-
+[NOTE - prob move this part to Outcomes?]
 
 == Building a Scale-free Empirical Capture Volume
 Defined as 3d region where in we can extract empirically grounded sensor  data, spatiotemporally align, synchronize, and calibrate into a Coherent multi-domain estimate of all relevant internal and external variables that are relevant to the sensorimotor control over all timescales (sub-second reactions to longitudinal development).
@@ -38,12 +33,11 @@ Defined as 3d region where in we can extract empirically grounded sensor  data, 
   - Still rewards specialized work
   - Provides context to guide specialized work in directions that help actionable meso-scale insights
 
-=== [Specific Target] Align (perceptuomotor) neuroscience with (legged) robotics
+=== [Target Field/Domain] Align (perceptuomotor) neuroscience, musculoskeletal biomechanics, and mobile robotics
 - Recent robotics boom arising from high quality reinforcement learning frameworks (like Nvidia IsaacGym) alongside high quality inverse kinematics solvers (MuJoCo, OpenSim)
 - Create our system in a format that can feed directly into those systems, so insights about and data from Humans and Animals can drive RL models for Robots, and inferred robotic control policies provide insight into biological behavior, perceptuomotor neural activity and musculoskeletal biomechanics. 
-
-== Science as collaborative toolbuilding
-- Through workshops and congresses, shift the culture of science towards an endeavor of shared collaborative tool building rather than an endless parade of 8-10 page pdfs
+ - Use-inspired research (sensorimotor control in natural environments)
+ - Convergence research through blending of Bohr, Pasteur, and Edison's quadrants (Stokes et al)
   
   
 // - Estimate per timestep-
@@ -64,8 +58,3 @@ Defined as 3d region where in we can extract empirically grounded sensor  data, 
 //     - 3d layout 
 //       - True layout (allocentric)
 //       - Percieved/Estimated layout (ego centric)
-// - **Species** - Data models mapped to phylogenetic tree, all vertebrates have a skull, all tetrapods have fore/hind limbs, etc. Mapping all animals into coherent structure to align animal research to human wellbeing. 
-// - **Scales** - Data alignment across spatial scales, c. elegans, fruit flies, mice, monkeys, humans, and elephants
-// - **Time** - Data alignment across high density measurements across short timescales (e.g. high speed vid) and longitudinal timescales (e.g. tracking in a cage across the full lifespan)
-// - **Numerosity** - Data alignment whether studying animal swarms from drones or single/countable animals in a VR/AR Lab setting
-// - **Complexity** - Data alignment whether doing animal segmentation from satelite or precise full-body kinematics. 
