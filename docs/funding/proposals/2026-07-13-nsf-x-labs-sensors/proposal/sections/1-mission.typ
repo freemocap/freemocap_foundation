@@ -1,7 +1,7 @@
 // ── 1. Mission ──
 = Mission
 
-#include "mission/funnel-gap-hero-2.typ"
+#include "mission/funnel-gap-hero.typ"
 
 #block(above: 2em, below: 1em)[
 *MISSION STATEMENT* - Build a Platform for *Complete Empirical Capture of the Agent/Environment Interaction* to fulfill the *Reductionist's Promise* and enable a *Mesoscale Revolution*
@@ -31,7 +31,7 @@ Defined as 3d region where in we can extract empirically grounded sensor  data, 
   - Still rewards specialized work
   - Provides context to guide specialized work in directions that help actionable meso-scale insights
 
-== Align (perceptuomotor) neuroscience with (legged) robotics
+=== [Specific Target] Align (perceptuomotor) neuroscience with (legged) robotics
 - Recent robotics boom arising from high quality reinforcement learning frameworks (like Nvidia IsaacGym) alongside high quality inverse kinematics solvers (MuJoCo, OpenSim)
 - Create our system in a format that can feed directly into those systems, so insights about and data from Humans and Animals can drive RL models for Robots, and inferred robotic control policies provide insight into biological behavior, perceptuomotor neural activity and musculoskeletal biomechanics. 
 

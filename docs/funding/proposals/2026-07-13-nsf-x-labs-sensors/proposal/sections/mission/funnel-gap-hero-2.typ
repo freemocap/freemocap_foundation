@@ -1,3 +1,0 @@
--  *Funnel Statement*: Reductionist's Promise 
--  *Gap Statement*: Perverse incentives and structural skill-ceilings of academia results in a system fundamentally incapable of building sophisticated tool capable of managing the complexity of true interdisciplinary research.
-- *Hero Statement*: Complete Empirical Capture as Commons
