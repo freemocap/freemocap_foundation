@@ -1,9 +1,27 @@
 == Collaborators
-- [ ] BS - Ferrets - Visual/Perceptual neuroscience, ephys, etc
-- [ ] MD - Guinea Fowl - Musculoskeletal Biomechanics, muscle units
-- [ ] DF - Mice - System Biology (?)
-- [ ] AH - Marmosets and NHP - ephys
-- [ ] MH - Human vision and CPS
-- [ ] Mayo Clinic Epilepsy guy - human brain scans and implanted sensors
-- [ ] BD [ ] GN/RAI(?) [ ] CH(?) [ ] JH(?) - Robots and Fabrication, control theory
-- [ ] AA - Physical facilities, rapid iteration, recruiting
+
+#set text(size: 10pt)
+#figure(
+  table(
+    columns: (auto, auto, 1fr),
+    align: (left, left, left),
+    stroke: 0.5pt,
+    inset: 6pt,
+    table.header(
+      [Initials],
+      [Model / Domain],
+      [Expertise],
+    ),
+    [BS], [Ferrets], [Visual/Perceptual neuroscience, ephys],
+    [MD], [Guinea Fowl], [Musculoskeletal Biomechanics, muscle units],
+    [DF], [Mice], [System Biology],
+    [AH], [Marmosets / NHP], [Ephys],
+    [MH], [Human], [Vision and CPS],
+    [Mayo Clinic], [Human], [Brain scans and implanted sensors],
+    [BD, GN/RAI, CH, JH], [Robots / Fabrication], [Control theory],
+    [AA], [Physical facilities], [Rapid iteration, recruiting],
+  ),
+  kind: "table",
+  supplement: [Table],
+  caption: [Collaborator Network],
+)

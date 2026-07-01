@@ -22,4 +22,4 @@
   - Allow advances in reductionist microscale research to align with human-scale interests
   - Align Perceptuomotor Neuroscience with humanoid robotics, allow transfer, technology, and technique transfer between those fields
   
-#include "../helpers/timeline-milestones.typ" 
+#include "../helpers/timeline-milestones.typ"

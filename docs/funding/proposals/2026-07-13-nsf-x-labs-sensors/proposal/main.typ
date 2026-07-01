@@ -14,9 +14,9 @@
   center,
   text(
     size: 30pt,
-    fill: rgb("#0000001F"),
+    fill: rgb("#00000066"),
     weight: "bold",
-    smallcaps[Work in Progress],
+    smallcaps[DRAFT - Work in Progress],
   ),
 )
 
@@ -36,11 +36,14 @@
     [#h.numbering #h.body]
   }
   let total = counter(page).final().first()
-  grid(
-    columns: (1fr, 1fr),
-    align(left, text(size: 8pt, fill: rgb("#000000af"), section-label)),
-    align(right, text(size: 8pt, fill: rgb("#000000af"), [Page #counter(page).display() of #total])),
-  )
+  [
+    #wip-banner
+    #grid(
+      columns: (1fr, 1fr),
+      align(left, text(size: 8pt, fill: rgb("#000000af"), section-label)),
+      align(right, text(size: 8pt, fill: rgb("#000000af"), [Page #counter(page).display() of #total])),
+    )
+  ]
 }
 
 #let draft-margin-box = place(
