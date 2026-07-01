@@ -16,7 +16,7 @@
     size: 30pt,
     fill: rgb("#0000001F"),
     weight: "bold",
-    [!!!WORK IN PROGRESS!!!],
+    smallcaps[Work in Progress],
   ),
 )
 
@@ -51,7 +51,7 @@
     width: 6.5in,
     height: 9in,
     fill: none,
-    stroke: 0.5pt + rgb("#888888af"),
+    stroke: 0.5pt + rgb("#88888866"),
   ),
 )
 
@@ -71,7 +71,7 @@
   footer: if DRAFT_MODE { draft-footer } else { submission-footer },
   background: if DRAFT_MODE { draft-margin-box },
 )
-#set text(size: 12pt, font: "New Computer Modern")
+#set text(size: 12pt, font: "Libertinus Serif")
 #set par(justify: true, leading: 0.55em, spacing: 0.55em, first-line-indent: 0pt)
 #set heading(numbering: "1.")
 
