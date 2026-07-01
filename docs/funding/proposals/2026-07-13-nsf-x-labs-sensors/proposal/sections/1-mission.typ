@@ -1,7 +1,7 @@
 // ── 1. Mission ──
 = Mission
 
-#include "mission/funnel-gap-hero.typ"
+#include "mission/intro.typ"
 
 #block(above: 2em, below: 1em)[
 *MISSION STATEMENT* - Build a Platform for *Complete Empirical Capture of the Agent/Environment Interaction* to fulfill the *Reductionist's Promise* and enable a *Mesoscale Revolution*
