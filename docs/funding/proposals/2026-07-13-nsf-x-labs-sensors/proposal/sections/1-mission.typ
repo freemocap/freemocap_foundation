@@ -1,60 +1,55 @@
 // ── 1. Mission ──
+#import "../helpers/shared.typ": semibold
 = Mission
+The proposed FreeMoCap Foundation XLab will exist to align the #semibold[perceptuomotor neuroscience, musculoskeletal biomechanics, and mobile robotics] into single convergent science of *sensorimotor control* in *real-world* environments. 
 
-#include "../helpers/intro.typ"
 
-#block(above: 2em, below: 1em)[
-*MISSION STATEMENT* - Build a Platform for *Complete Empirical Capture of the Agent/Environment Interaction* to fulfill the *Reductionist's Promise* and enable a *Mesoscale Revolution*
- ]
 
-#block(above: 1em, below: 1em)[
-  *KEY DELIVERABLE* -  Scale-free Empirical Capture Volume
-Defined as *densely instrumented* 3d region wherein we can extract empirically grounded heterogenous sensor data into a coherent multi-domain estimate of all relevant internal and external variables that are relevant to the sensorimotor control over all timescales (sub-second reactions to longitudinal development).
-]
+== Novel Platform Technology: Complete Empirical Capture Volume (CECV)
+ In service of our Mission, we will build a *densely instrumented capture volume* to record all measurable aspects of the agent/environment interaction, including (but not limited to) binocular eye and 3d gaze tracking, full-body kinematics and kinetics, and corticomotor neural activity through high density electrophysiological electrodes and 1-photon miniscope (language?). 
 
-#block(above: 1em, below: 1em)[
-  *ACTIONABLE TARGET* -  Align perceptuomotor neuroscience with legged robotics
-Eventual goal is "all of science especially biology", but for the timeline of this proposal we specifically target alignment between perceptuomotor neuroscience and legged robotics
-]
-#pagebreak(weak:true)
+ 
+- 3d volume of densely instrumented real-world space aimed to capture all empirically measurable aspects of the agent/environment interaction
+  - All internal and external features of the agent 
+    - Biomechanical state
+      - Full-body kinematics - Motion Capture
+      - Body/Environment Center(s) of Pressure - Force Plates, Modelling
+      - Joint torques - Inverse Dynamics
+    - Muscle Activity 
+      - Muscle/Motor-unit Activation - Surface/Implanted EMG, OpenSim-style modelling
+    - Perceptual Inputs 
+      - binocular gaze tracking - Custom built binocular eye trackers
+      - Retinal input projection  -  World-aligned inverse projective ray tracking @matthis2022
+    - 
+- Scale free (same ontology for fruitfly mocap as untethered outdoor exploration)
+- Truth-preserving sensor-to-model pipelines, grounded in empirical sensors 
+- Complexity management as a Top-level Concern. 
+  - Pipelines coalesce across functionally equivalent paths
+    - Static camera mocap, IMU-mocap, drone-swarm mocap provide multiple estimates of same ontological object
 
-[NOTE - prob move this part to Outcomes?]
+== Novel Organizational Structures
+  - Something about #semibold[Accelerate interdisciplinary collaboration through Hypothetical Student design] — Consideration of usage by a Hypothetical Student usage in mind allows collaboration, communication, and movement across hyperspecialized niches (while still allowing hyperspecialized work to flourish-in-context within their contextualized niche)
+  - #semibold[Enable Mesoscale Revolution] by celebrating and contextualizing hyperspecialized research niches into use-defined something
+  - Something about #semibold['american hegemonic dominance'] by creating the instrumentally-grounded ontological commons within which convergent research program will occur
 
-== Building a Scale-free Empirical Capture Volume
-Defined as 3d region where in we can extract empirically grounded sensor  data, spatiotemporally align, synchronize, and calibrate into a Coherent multi-domain estimate of all relevant internal and external variables that are relevant to the sensorimotor control over all timescales (sub-second reactions to longitudinal development).
+== Vision Statements 
+- #semibold[Fulfill Reductionist's Promise] — Integrate disparate hyperspecialized advancements into a human-outcomes oriented use-inspired research platform
+- #semibold[Break the skill-ceiling of academic research] by building a convergent research program organized around communal tool building and shared ontologies rather than an infinite parade of 8-10pg PDFs and 12 minute talks.
+- [Some kinda 3rd thing], eg.
+  - Something about #semibold["Composable Complexity"] through shared ontology
 
-*Composable complexity* - new sensors intergrate into base dataset
-- Interspecies alignment though phylogenetic property Mapping
-  - Any species with a Skull has the Skull property. If eye tracking data is not specified, eyes are fixed in head. If eye tracking is present, we pour emprically grounded estiamtes of measurable parameters (adduction/elevation). Eye models includes knowable but unmeasured values (like occular torsion or lens flexion), providing both future proofing of current research with optimistic preparation for future methodology which CAN measure those values
 
-== Enable Mesoscale research
-- Cash in on reductionists dream by creating expansive framework for cross-domain integration of specialized insights
-- Allow grounding of human/meso-scale research to reductionist micro-scale mechanisms 
-  - Still rewards specialized work
-  - Provides context to guide specialized work in directions that help actionable meso-scale insights
 
-=== [Target Field/Domain] Align (perceptuomotor) neuroscience, musculoskeletal biomechanics, and mobile robotics
-- Recent robotics boom arising from high quality reinforcement learning frameworks (like Nvidia IsaacGym) alongside high quality inverse kinematics solvers (MuJoCo, OpenSim)
-- Create our system in a format that can feed directly into those systems, so insights about and data from Humans and Animals can drive RL models for Robots, and inferred robotic control policies provide insight into biological behavior, perceptuomotor neural activity and musculoskeletal biomechanics. 
- - Use-inspired research (sensorimotor control in natural environments)
- - Convergence research through blending of Bohr, Pasteur, and Edison's quadrants (Stokes et al)
-  
-  
-// - Estimate per timestep-
-//   - State
-//     - kinematics
-//     - kinetic (reaction forces)
-//     - Neural activity 
-//     - Muscle activity
-//     - Gaze direction
-//   - Inputs
-//     - Sensory
-//       - Visual - estimate via Retinal projection 
-//       - Somatosenory - estimate via Musculoskeletal modelling
-//   - Outputs 
-//     - motor deltas - exerted forces
-//     - saccades (gaze shifts) - seek information from a new part of the environment
-//   - Environment
-//     - 3d layout 
-//       - True layout (allocentric)
-//       - Percieved/Estimated layout (ego centric)
+
+// // Heilmeier Catechism 
+// *What are you trying to do?*
+
+// *How is it done today, and what are the limits*
+
+// *What is new, why will we succeed?* 
+
+// *Who cares? Who will benefit?* 
+
+// *Risks and Payoffs*
+
+// *Milestones and Key Performance Indicators* 

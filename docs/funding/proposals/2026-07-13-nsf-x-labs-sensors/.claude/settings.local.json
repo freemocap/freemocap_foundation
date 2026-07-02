@@ -9,7 +9,8 @@
       "WebFetch(domain:typst.app)",
       "WebFetch(domain:nerixyz.github.io)",
       "Bash(where typst *)",
-      "Bash(typst --version)"
+      "Bash(typst --version)",
+      "Bash(start *)"
     ]
   }
 }

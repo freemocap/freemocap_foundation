@@ -74,18 +74,20 @@
   footer: if DRAFT_MODE { draft-footer } else { submission-footer },
   background: if DRAFT_MODE { draft-margin-box },
 )
-#set text(size: 12pt, font: "Libertinus Serif")
-#set par(justify: true, leading: 0.55em, spacing: 0.55em, first-line-indent: 0pt)
+#set text(size: 12pt, font: "Libertinus Serif", hyphenate: false)
+#set par(justify: false, leading: 0.55em, spacing: 0.45em, first-line-indent: 0pt)
 #set heading(numbering: "1.")
 
 #show heading.where(level: 1): set block(above: 1.4em, below: 1em)
 #show heading.where(level: 1): set text(weight: "bold", size: 12pt)
+#show heading.where(level: 2): set block(above: 1em, below: 0.6em)
+#show heading.where(level: 2): set text(weight: "bold", size: 12pt)
 
 // ── Title Block ──
 
 #block(above: 0pt, below: 0.28em)[
   #align(center)[
-    #text(size: 13pt, weight: "bold")[Complete Empirical Capture of the Agent/Environment Interaction across Phylogeny, Discipline, and Spatiotemporal Scale]
+    #text(size: 13pt, weight: "bold", hyphenate: false)[Complete Empirical Capture of the Agent/Environment Interaction to create unified science of sensorimotor control]
     #v(0.15em)
     #text(size: 11pt)[FreeMoCap Foundation, Inc.]
     #v(0.4em)
