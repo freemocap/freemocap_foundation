@@ -6,9 +6,10 @@ The proposed FreeMoCap Foundation XLab will exist to align the #semibold[percept
 
 
 == Novel Platform Technology: Complete Empirical Capture Volume (CECV)
- In service of our Mission, we will build a *densely instrumented capture volume* to record all measurable aspects of the agent/environment interaction, including (but not limited to) binocular eye and 3d gaze tracking, full-body kinematics and kinetics, and corticomotor neural activity through high density electrophysiological electrodes and 1-photon miniscope (language?). 
+ In service of our Mission, we will build a *densely instrumented capture volume* to record all measurable aspects of the agent/environment interaction, including (but not limited to) binocular eye and 3d gaze tracking, full-body kinematics and kinetics, and corticoneural and muscle motor unit activity. 
 
- 
+ --
+ SCRATCH NOTES BELOW
 - 3d volume of densely instrumented real-world space aimed to capture all empirically measurable aspects of the agent/environment interaction
   - All internal and external features of the agent 
     - Biomechanical state
