@@ -6,7 +6,7 @@
 // Set to false for submission-ready output (strips WIP overlays,
 // section tracking, and margin box; keeps clean page numbers).
 
-#let DRAFT_MODE = true
+#let DRAFT_MODE = false
 
 // ── Draft-only content definitions ──
 
@@ -75,12 +75,12 @@
   background: if DRAFT_MODE { draft-margin-box },
 )
 #set text(size: 12pt, font: "Libertinus Serif", hyphenate: false)
-#set par(justify: false, leading: 0.55em, spacing: 0.45em, first-line-indent: 0pt)
-#set heading(numbering: "1.")
+#set par(justify: false, leading: 0.45em, spacing: 0.85em, first-line-indent: 1em)     
+#set heading(numbering: "1.", supplement: [§])
 
-#show heading.where(level: 1): set block(above: 1.4em, below: 1em)
+#show heading.where(level: 1): set block(above: 0em, below: 1em)
 #show heading.where(level: 1): set text(weight: "bold", size: 12pt)
-#show heading.where(level: 2): set block(above: 1em, below: 0.6em)
+#show heading.where(level: 2): set block(above: 1.4em, below: 0.6em)
 #show heading.where(level: 2): set text(weight: "bold", size: 12pt)
 
 // ── Title Block ──
@@ -88,14 +88,15 @@
 #block(above: 0pt, below: 0.28em)[
   #align(center)[
     #text(size: 13pt, weight: "bold", hyphenate: false)[Complete Empirical Capture of the Agent/Environment Interaction to create unified science of sensorimotor control]
-    #v(0.15em)
+    #v(0.1em)
     #text(size: 11pt)[FreeMoCap Foundation, Inc.]
-    #v(0.4em)
+    #v(0.1em)
     #text(size: 11pt)[
-      Topic: Scientific Instrumentation for Sensing and Imaging
+      Written Proposal to the NSF X-Labs Initiative  
+      // Topic: Scientific Instrumentation for Sensing and Imaging
     ]
   ]
-  #v(0.3em)
+  #v(0.1em)
   #line(length: 100%)
 ]
 

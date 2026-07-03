@@ -1,6 +1,6 @@
 // ── 4. Senior/Key Personnel Qualifications ──
-= Senior/Key Personnel Qualifications
-
+= Senior/Key Personnel Qualifications <SKP>
+== Jonathan Matthis, PhD <SKP-JM>
 #set text(size: 10pt)
 #figure(
   table(

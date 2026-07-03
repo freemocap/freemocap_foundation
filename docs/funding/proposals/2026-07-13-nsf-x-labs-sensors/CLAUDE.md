@@ -14,7 +14,11 @@ Per project instructions, Claude is an **observer and advisor, not a writer**. D
 
 ## Writing workflow
 
-The main document is `proposal/main.typ`. It pulls in sections from `proposal/sections/` via `#include`. Compile to PDF with:
+The main document is `proposal/main.typ`. It pulls in sections from `proposal/sections/` via `#include`.
+
+**CRITICAL: Always invoke the Typst skill before writing or editing any `.typ` file.** This is a Typst project — the skill documents parameter ownership (`leading` is `par`, not `text`; `raw` doesn't take `size`), common mistakes, and the full API surface. You must have it loaded before touching Typst code.
+
+Compile to PDF with:
 
 ```bash
 typst compile proposal/main.typ
