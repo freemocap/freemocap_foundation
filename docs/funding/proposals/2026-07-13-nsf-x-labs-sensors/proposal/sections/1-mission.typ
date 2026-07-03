@@ -33,10 +33,10 @@
 
 
 *Funnel:* Interaction with the environment is the most fundamental act of living. Information flows in, forces flow out - the brain exists to yank the bones around. 
-[TODO - This is good - dont  touch it. Might want to add a second]
+_[TODO - This is a good first sentence- dont  touch it. ]_
 
 *Hedge:* Investigation the sensorimotor control of a human-and-non-human-animal/artificial-agent (HANHA/AA) is fractured across disconnected academic (sub)disciplines, including but not limited to: (perceptuomotor) neuroscience, (musculoskeletal) biomechanics, and (legged) robotics, each of which spawns its own internal set of specializations and hyper-specializations within those.
-
+_[TODO - This is pretty good , but fairly overloaded anc could prob be clarified ]_
 *Gap:* 
 
  This reductionist approach to science is incredibly powerful, and has yielded advanced technologies and incredible precision of measurement and prediction, but has largely failed to deliver on the implied promise that the careful investigation of these gossamer threads of scientific insight would coalesce the patterns of the unified whole 
@@ -54,6 +54,8 @@ _
 
 == Novel Platform Technology: Complete Empirical Capture Volume (CECV)
 In service of our Mission, we will build a *densely instrumented capture volume* to record all measurable aspects of the agent/environment interaction, including (but not limited to) binocular eye and 3d gaze tracking, full-body kinematics and kinetics, and neural activity in the central and peripheral nervous systems.
+
+[TODO - Something about how complexity IS the target. We want to weave together all these existsing threads, using the technolgoy that exists when we can (e.g. neuropixels, miniscope, ferris EEG, MD's surface/implant EMG that can resolve individual motor unit firings), and building the components that don't as needed (previous target- kinematics (freemocap did it), next step eye trackers). Introduce the concept of composable scale-free complexity managed through modern software philosophy of ontology-based development (e.g. Palantir, Anduril, with their projects (Maven, that HUD thing Anduril makes) as examples of "new instrument derived from sophisticated complexity management" ). Mention @SKP-EI ]
 
 == Novel Organizational Structures: The FreeMoCap Foundation X-Lab (FMCF-X)
 

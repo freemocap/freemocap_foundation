@@ -1,6 +1,11 @@
 // ── 4. Senior/Key Personnel Qualifications ──
 = Senior/Key Personnel Qualifications <SKP>
-== Jonathan Matthis, PhD <SKP-JM>
+== Senior Personnel
+=== Jonathan Matthis, PhD [Principle Investigator] <SKP-JM>
+=== EI <SKP-EI>
+== Key Personnel
+=== AC,PhD  
+=== RR, CPA or w/e
 #set text(size: 10pt)
 #figure(
   table(
