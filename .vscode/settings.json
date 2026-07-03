@@ -13,5 +13,7 @@
         "typst": {
             "parser": "plain"
         }
-    }
+    },
+    "gitdoc.commitValidationLevel": "none",
+    "gitdoc.noVerify": true
 }
