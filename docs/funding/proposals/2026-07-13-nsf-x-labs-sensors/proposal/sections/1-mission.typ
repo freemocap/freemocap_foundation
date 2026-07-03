@@ -33,14 +33,21 @@
 
 
 *Funnel:* Interaction with the environment is the most fundamental act of living. Information flows in, forces flow out - the brain exists to yank the bones around. 
+[TODO - This is good - dont  touch it. Might want to add a second]
+
+*Hedge:* Investigation the sensorimotor control of a human-and-non-human-animal/artificial-agent (HANHA/AA) is fractured across disconnected academic (sub)disciplines, including but not limited to: (perceptuomotor) neuroscience, (musculoskeletal) biomechanics, and (legged) robotics, each of which spawns its own internal set of specializations and hyper-specializations within those.
 
 *Gap:* 
 
-Investigation the sensorimotor control of a human-and-non-human-animal/artificial-agent (HANHA/AA) is fractured across disconnected academic (sub)disciplines, including but not limited to: (perceptuomotor) neuroscience, (musculoskeletal) biomechanics, and (legged) robotics, each of which spawns its own internal set of specializations and hyper-specializations within those. This reductionist approach to science is incredibly powerful, and has yielded advanced technologies and incredible precision of measurement and prediction, but has largely failed to deliver on the implied promise that the careful investigation of these gossamer threads of scientific insight would coalesce the patterns of the unified whole. 
+ This reductionist approach to science is incredibly powerful, and has yielded advanced technologies and incredible precision of measurement and prediction, but has largely failed to deliver on the implied promise that the careful investigation of these gossamer threads of scientific insight would coalesce the patterns of the unified whole 
 
-
+_[TODO - Tighten, soften 'promise'language (implies blame, hinders "we actually love hyperspecialization and want to give it a *context* in which to thrive" angle. Make more evocative of weaving and webs and nets and meshes and stuff (which will come up later when we talk about Ontology and stuff like quinian web of belief and putnam and stuff))]. 
+_
+ 
 *Hero:* 
-  A high quality integrated platform directly designed for the use-case development of complete empirical capture of an awake behaving human-and-non-human-animals (HANHA) would transform the scientific landscape by creating a technical commons whereby specialists and cross-disciplnary researchers can productively interact in serivce of the shared and unified scientific endeavor.
+  A high quality integrated platform directly designed for the use-case development of complete empirical capture of an awake behaving human-and-non-human-animals (HANHA) would transform the scientific landscape by creating a technical commons whereby specialists and cross-disciplinary researchers can productively interact in service of the shared and unified scientific endeavor.
+
+  _[TODO - Fix language, make less redundant with surrounding text. make sure to hit the 'instrument not software' and 'technical commons' stuff and Novel Organization and Unmet by current structures thing]_
 
 #block(fill: rgb("#f5f5f5"), radius: 4pt, stroke: (left: 1.5pt + gray),  inset: (x: 1.5em, y: 0.75em))[#mission]
   
