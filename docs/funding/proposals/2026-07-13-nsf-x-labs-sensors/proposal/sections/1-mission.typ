@@ -55,7 +55,7 @@ In service of our Mission, we will build a *densely instrumented capture volume*
 
 == Novel Organizational Structures: The FreeMoCap Foundation X-Lab (FMCF-X)
 
-The Free Motion Capture (FreeMoCap) Foundation is an 501c3 certified public charity founded by the PI (@SKP-JM - JM) in 2021 in response to two-part realization: (1) that the best way to advance the research program embodied by Matthis et al (2013, 2014,2015, 2017, 2018, and 2022) was to prioritize building tools that allowed others to replicate his real-world sensorimotor control methodology, and (2) the traditional structures of academic research are fundamentally incompatible with high-level tool building due to a perverse incentive structure that near-exhaustively prioritizes publication quantity over quality and impact and the inherent skill-ceiling  associated with the constant labor churn assocaited with doing research within a degree granting institution. 
+The Free Motion Capture (FreeMoCap) Foundation is an 501c3 certified public charity founded by the PI (@SKP-JM - JM) in 2021 in response to two-part realization: (1) that the best way to advance the research program embodied by Matthis et al (2013, 2014,2015, 2017, 2018 and 2022) was to prioritize building tools that allowed others to replicate his real-world sensorimotor control methodology, and (2) the traditional structures of academic research are fundamentally incompatible with high-level tool building due to a perverse incentive structure that near-exhaustively prioritizes publication quantity over quality and impact and the inherent skill-ceiling  associated with the constant labor churn associated with doing research within a degree granting institution. 
 
 #pagebreak()
 
