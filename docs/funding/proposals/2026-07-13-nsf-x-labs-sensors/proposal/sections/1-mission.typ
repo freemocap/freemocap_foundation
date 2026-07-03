@@ -18,7 +18,7 @@ Investigation the sensorimotor control of a human-and-non-human-animal/artificia
 
 // // *Gap:* 
 
- This reductionist approach to science is incredibly powerful, and has yielded advanced technologies and incredible precision of measurement and prediction, but has largely failed to deliver on the implied promise that the careful investigation of these gossamer threads of scientific insight would coalesce the patterns of the unified whole 
+ This reductionist approach to science is incredibly powerful, and has yielded advanced technologies and incredible precision of measurement and prediction.  but has largely failed to deliver on the implied promise that the careful investigation of these gossamer threads of scientific insight would coalesce the patterns of the unified whole 
 
 // [TODO - Tighten, soften 'promise'language (implies blame, hinders "we actually love hyperspecialization and want to give it a *context* in which to thrive" angle. Make more evocative of weaving and webs and nets and meshes and stuff (which will come up later when we talk about Ontology and stuff like quinian web of belief and putnam and stuff))]. 
 
