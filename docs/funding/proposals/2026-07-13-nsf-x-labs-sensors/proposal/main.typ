@@ -88,7 +88,7 @@
 #block(above: 0pt, below: 0.28em)[
   #align(center)[
     // #text(size: 12pt, weight: "bold", hyphenate: false)[Complete Empirical Capture of the Agent/Environment Interaction to create unified science of sensorimotor control]
-    #text(size: 12pt, weight: "bold", hyphenate: false)[A Convergent Science of Perceptual/Motor Control from Sensor-Grounded Ontology]
+    #text(size: 12pt, weight: "bold", hyphenate: false)[A Unified Science of Perceptual/Motor Control through Sensor-Grounded Ontology]
     #v(0.1em)
     #text(size: 11pt)[FreeMoCap Foundation, Inc.]
     #v(0.1em)
@@ -98,7 +98,7 @@
     ]
   ]
   #v(0.1em)
-  #line(length: 100%)
+  // #line(length: 100%)
 ]
 
 // ── Sections ──

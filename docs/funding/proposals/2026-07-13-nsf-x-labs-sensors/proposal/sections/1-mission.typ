@@ -3,39 +3,39 @@
 = Mission
 
 // ── Mission statement — pick your favorite variant, delete the rest ──
-
-#let mission = [The #smallcaps()[Mission] of the proposed NSF X-Lab is to build a _constellation_ of _composable_, _interchangeable_ scientific instrumentation 
-
- capable of complete empirical capture of the entire agent/environment interaction to unify _perceptuomotor neuroscience_, _musculoskeletal biomechanics_, _agentic artificial intelligence_ and _mobile robotics_ into a single convergent science of *sensorimotor control*.]
-
-
-// // *Funnel:* 
-// _[TODO - This is a good first sentence- dont  touch it. ]_
-
-Interaction with the environment is the most fundamental act of living. Information flows in, forces flow out - the brain exists to yank the bones around. 
-
-[TODO - Need transitional sentence mentioning The Instrument - " things thing have been measured in isolation, but the complexity of the interaction remains an untackled problem"]
-
-// // *Hedge:* 
-Investigation the sensorimotor control of a humans, non-human-animals, and artificial agents is fractured across disconnected academic (sub)disciplines, including but not limited to: (perceptuomotor) neuroscience, (musculoskeletal) biomechanics, and (legged) robotics, each of which spawns its own internal set of specializations and hyper-specializations within those.
-// _[TODO - This is pretty good , but fairly overloaded anc could prob be clarified ]_
-
-
-
-// // *Gap:* 
-
- This reductionist approach to science is incredibly powerful, and has yielded advanced technologies and incredible precision of measurement and prediction.  but has largely failed to deliver on the implied promise that the careful investigation of these gossamer threads of scientific insight would coalesce the patterns of the unified whole 
-
-// [TODO - Tighten, soften 'promise'language (implies blame, hinders "we actually love hyperspecialization and want to give it a *context* in which to thrive" angle. Make more evocative of weaving and webs and nets and meshes and stuff (which will come up later when we talk about Ontology and stuff like quinian web of belief and putnam and stuff))]. 
-
- 
-// *Hero:* 
-  A high quality integrated platform directly designed for the use-case development of complete empirical capture of an awake behaving human-and-non-human-animals (HANHA) would transform the scientific landscape by creating a technical commons whereby specialists and cross-disciplinary researchers can productively interact in service of the shared and unified scientific endeavor.
-
-  // _[TODO - Fix  Sloppy language, make less   redundant with surrounding text. make sure to hit the 'instrument not software' and 'technical commons' stuff and Novel Organization and Unmet by current structures thing]_
+#let mission = [The #smallcaps()[Mission] of the proposed NSF X-Lab is to build a _constellation_ of _composable_, _interchangeable_ scientific instrumentation capable of complete empirical capture of the entire agent/environment interaction to unify _perceptuomotor neuroscience_, _musculoskeletal biomechanics_, _agentic artificial intelligence_ and _mobile robotics_ into a single convergent science of *sensorimotor control*.]
 
 #block(fill: rgb("#f5f5f5"), radius: 4pt, stroke: (left: 1.5pt + gray),  inset: (x: 1.5em, y: 0.75em))[#mission]
+
+
+// Funnel statement - What are we talking about? Cows? Hurricanes? Nebulae? Should be topic defining and thought provoking. This is the Hook. "Hey, here's something to think about"
+#let funnel = [Interaction with the environment is the most fundamental act of living. Information flows in, forces flow out - the brain exists to yank the bones around. ]
+
+// Hedge statement - What is good about the present? What have we succeeded at? Hedges against 'gap' below - give respect to current system and esp previous work/research. "Here's the current state of things, and the Oh So Impressive work that has already been done (possibly even by You, dearly Honored Anonymous Reviewer!"
+#let hedge = [Investigation the sensorimotor control of a humans, non-human-animals, and artificial agents is fractured across disconnected academic (sub)disciplines, including but not limited to: (perceptuomotor) neuroscience, (musculoskeletal) biomechanics, and (legged) robotics, each of which spawns its own internal set of specializations and hyper-specializations within those.]
+
+// GAP STATEMENT - What problem does this proposal solve? What damage is wrought due to this gap? how does this define a 'critical barrier to progress' or similar bs? "Oh no!! A Problem!"
+#let gap = [ This reductionist approach to science is incredibly powerful, and has yielded advanced technologies and incredible precision of measurement and prediction.  but has largely failed to deliver on the implied promise that the careful investigation of these gossamer threads of scientific insight would coalesce the patterns of the unified whole 
+]
+
+// HERO STATEMENT - How will WE solve this problem? "Oh Thank God! A Solution to the problem we just told you about!"
+#let hero = []
+
+
+#funnel
+
+#hedge
+
+#gap
+
+#hero
+
+
+#pagebreak()
   
+/// OLD STUFF BELOW - Some may be salvageable, but maybe not
+///
+///  
 // Dumb Acronym Options
 // LOOM
 // Layered Observed Ontological Mesh
@@ -54,7 +54,7 @@ Investigation the sensorimotor control of a humans, non-human-animals, and artif
 // Complete Empirical Capture Volume (CECV - a densely instrumented region of real-world space asiprationally organized to record all EAEE in a given 3d capture volume, e.g. Matthis et al/Freemocap  )
 
 
-== Building a  LOOM [Layered Ontology of Observable Measurements]
+== Building a  #strike()[Layered Ontology of Observable Measurements]  Sensor Grouned Ontologies???  
 In service of our Mission, we will build d a *densely instrumented capture volume* to record all measurable aspects of the agent/environment interaction (Complete Empirical Capture Volume), including (but not limited to) binocular eye and 3d gaze tracking, full-body kinematics and kinetics, and neural activity in the central and peripheral nervous systems.
 
 // [TODO - Need to define each L. O. O. M. term in this text. Something about how complexity IS the target. We want to weave together all these existsing threads, using the technolgoy that exists when we can (e.g. neuropixels, miniscope, ferris EEG, MD's surface/implant EMG that can resolve individual motor unit firings), and building the components that don't as needed (previous target- kinematics (freemocap did it), next step eye trackers). Introduce the concept of composable scale-free complexity managed through modern software philosophy of ontology-based development (e.g. Palantir, Anduril, with their projects (Maven, that HUD thing Anduril makes) as examples of "new instrument derived from sophisticated complexity management" ). Mention @SKP-EI ]
