@@ -4,7 +4,7 @@
 
 // ── Mission statement — pick your favorite variant, delete the rest ──
 
-#let mission = [The #smallcaps()[Mission] of the proposed NSF X-Lab is to align _perceptuomotor neuroscience_, _musculoskeletal biomechanics_, and _mobile robotics_ into single convergent science of *sensorimotor control* in *real-world* environments.]
+#let mission = [The #smallcaps()[Mission] of the proposed NSF X-Lab is to build a new kind of scientific instrument capable of complete empirical capture of the entire agent/environment interaction to unify _perceptuomotor neuroscience_, _musculoskeletal biomechanics_, and _mobile robotics_ into a single convergent science of *sensorimotor control*.]
 
 
 // // *Funnel:* 
@@ -12,9 +12,13 @@
 
 Interaction with the environment is the most fundamental act of living. Information flows in, forces flow out - the brain exists to yank the bones around. 
 
+[TODO - Need transitional sentence mentioning The Instrument - " things thing have been measured in isolation, but the complexity of the interaction remains an untackled problem"]
+
 // // *Hedge:* 
-Investigation the sensorimotor control of a human-and-non-human-animal/artificial-agent (HANHA/AA) is fractured across disconnected academic (sub)disciplines, including but not limited to: (perceptuomotor) neuroscience, (musculoskeletal) biomechanics, and (legged) robotics, each of which spawns its own internal set of specializations and hyper-specializations within those.
+Investigation the sensorimotor control of a humans, -non-human-animals, and artificial agents is fractured across disconnected academic (sub)disciplines, including but not limited to: (perceptuomotor) neuroscience, (musculoskeletal) biomechanics, and (legged) robotics, each of which spawns its own internal set of specializations and hyper-specializations within those.
 // _[TODO - This is pretty good , but fairly overloaded anc could prob be clarified ]_
+
+
 
 // // *Gap:* 
 
@@ -48,7 +52,7 @@ Investigation the sensorimotor control of a human-and-non-human-animal/artificia
 // Complete Empirical Capture Volume (CECV - a densely instrumented region of real-world space asiprationally organized to record all EAEE in a given 3d capture volume, e.g. Matthis et al/Freemocap  )
 
 
-== Building a  LOOM [Layered Ontology of Observed Measurements]
+== Building a  LOOM [Layered Ontology of Observable Measurements]
 In service of our Mission, we will build a *densely instrumented capture volume* to record all measurable aspects of the agent/environment interaction (Complete Empirical Capture Volume), including (but not limited to) binocular eye and 3d gaze tracking, full-body kinematics and kinetics, and neural activity in the central and peripheral nervous systems.
 
 // [TODO - Need to define each L. O. O. M. term in this text. Something about how complexity IS the target. We want to weave together all these existsing threads, using the technolgoy that exists when we can (e.g. neuropixels, miniscope, ferris EEG, MD's surface/implant EMG that can resolve individual motor unit firings), and building the components that don't as needed (previous target- kinematics (freemocap did it), next step eye trackers). Introduce the concept of composable scale-free complexity managed through modern software philosophy of ontology-based development (e.g. Palantir, Anduril, with their projects (Maven, that HUD thing Anduril makes) as examples of "new instrument derived from sophisticated complexity management" ). Mention @SKP-EI ]
