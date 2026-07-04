@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sensor-Grounded Phylogeny &amp; Entity-Component System</title>
+<style>
+  :root{
+    --bg:#0d1017; --bg2:#121724; --panel:#161c2b; --panel2:#1c2436; --ink:#e8edf6;
+    --muted:#93a1bd; --faint:#5f6d88; --line:#2b3550; --line2:#3a4a68;
+    --edge:#3a4a68;
+    --agency:#e0b34d; --body:#59c3b0; --nervous:#c77dff; --vision:#5aa0ff;
+    --loco:#7bd88f; --repro:#f0899b; --physics:#ff9f6e; --special:#ffd166;
+    --mech:#57d38c; --func:#f0b13a; --mixed:#5aa0ff; --target:#ffd166;
+    --shadow:0 8px 30px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:
+     radial-gradient(1200px 700px at 12% -8%, #1a2436 0, rgba(0,0,0,0) 60%),
+     radial-gradient(1100px 700px at 100% 0%, #17203a 0, rgba(0,0,0,0) 55%),
+     var(--bg);
+     color:var(--ink); font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  a{color:#7fb2ff}
+  .wrap{max-width:1500px;margin:0 auto;padding:28px 26px 90px;}
+  header.hero{border:1px solid var(--line);background:linear-gradient(180deg,#141b2b,#10151f);
+     border-radius:18px;padding:26px 30px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  header.hero:before{content:"";position:absolute;inset:0;background:
+     radial-gradient(600px 200px at 90% -30%, rgba(90,160,255,.15),transparent 60%);pointer-events:none}
+  h1{margin:0 0 6px;font-size:26px;letter-spacing:.2px}
+  h1 .sub{color:var(--special)}
+  .tagline{color:var(--muted);max-width:1050px;font-size:14.5px}
+  .tagline b{color:var(--ink)}
+  .flow{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;align-items:center;font-size:12.5px;color:var(--muted)}
+  .flow .step{background:var(--panel2);border:1px solid var(--line);border-radius:20px;padding:6px 12px;white-space:nowrap}
+  .flow .arr{color:var(--faint)}
+  .grid{display:grid;grid-template-columns:1fr 360px;gap:20px;margin-top:22px;align-items:start}
+  @media(max-width:1150px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
+  .card h2{font-size:15px;margin:0;padding:14px 18px;border-bottom:1px solid var(--line);letter-spacing:.3px}
+  .card h2 small{color:var(--muted);font-weight:400;margin-left:8px;font-size:12px}
+  .toolbar{display:flex;flex-wrap:wrap;gap:8px;padding:12px 16px;border-bottom:1px solid var(--line);align-items:center}
+  .toolbar .lbl{color:var(--faint);font-size:11.5px;text-transform:uppercase;letter-spacing:.6px;margin-right:2px}
+  button.tog{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:9px;
+     padding:7px 11px;cursor:pointer;font-size:12.5px;transition:.15s}
+  button.tog:hover{border-color:#4c5a7a}
+  button.tog.on{background:linear-gradient(180deg,#26406e,#1d2f52);border-color:#4f79c9;color:#fff}
+  .treeScroll{overflow:auto;max-height:74vh;padding:6px 6px 14px}
+  svg{display:block}
+  .edge{stroke:var(--line);stroke-width:1.6px;fill:none}
+  .edge.spine{stroke:#4a5a78;stroke-width:2.4px}
+  .node circle{stroke-width:2px;cursor:pointer;transition:.15s}
+  .node:hover circle{stroke:#fff}
+  .node text.nm{fill:var(--muted);font-size:10.5px;cursor:pointer;dominant-baseline:middle}
+  .node.big text.nm{fill:var(--ink);font-weight:600}
+  .tip .name{font-weight:700;font-size:13px}
+  .tip .latin{color:var(--faint);font-style:italic;font-size:10.5px;margin-left:5px}
+  .tip .em{font-size:15px;margin-right:4px}
+  .chips{margin-top:3px;display:flex;flex-wrap:wrap;gap:3px}
+  .chip{font-size:9.5px;padding:1.5px 6px;border-radius:8px;border:1px solid var(--line);white-space:nowrap;color:var(--ink);background:#0e1420}
+  .chip.func{border-color:#6b5320;background:#241d0e;color:#f0c675}
+  .chip.mech{border-color:#245a3b;background:#0f2318;color:#8ee6b0}
+  .ins{font-size:9.5px;padding:1px 7px;border-radius:20px;font-weight:700;letter-spacing:.4px}
+  .ins.mech{background:#123a26;color:#7ff0b0;border:1px solid #2a6a47}
+  .ins.func{background:#3a2c0e;color:#ffd07a;border:1px solid #6f551f}
+  .ins.mixed{background:#12294a;color:#8dbcff;border:1px solid #2f568f}
+  .ins.target{background:#4a3a0c;color:#ffe08a;border:1px solid #9c7a1f}
+  /* detail panel */
+  #panel{position:sticky;top:16px}
+  .pbody{padding:16px 18px}
+  .pname{font-size:19px;font-weight:700}
+  .prank{color:var(--muted);font-size:12.5px;margin-top:2px}
+  .pmya{color:var(--faint);font-size:11.5px}
+  .sect{margin-top:14px}
+  .sect h4{margin:0 0 6px;font-size:11px;text-transform:uppercase;letter-spacing:.7px;color:var(--faint)}
+  .teach{color:var(--muted);font-size:13px}
+  .hint{color:var(--faint);font-size:12px;font-style:italic}
+  .legendrow{display:flex;flex-wrap:wrap;gap:8px 14px;padding:10px 16px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted)}
+  .legendrow .k{display:inline-flex;align-items:center;gap:6px}
+  .dot{width:10px;height:10px;border-radius:50%}
+  /* matrix */
+  .mxWrap{overflow:auto;max-height:70vh}
+  table.mx{border-collapse:collapse;font-size:11px;min-width:100%}
+  table.mx th,table.mx td{border:1px solid var(--line);padding:4px 5px;text-align:center;white-space:nowrap}
+  table.mx thead th{position:sticky;top:0;background:var(--panel2);z-index:3;font-weight:600}
+  table.mx th.rowh{position:sticky;left:0;background:var(--panel2);z-index:2;text-align:left;min-width:150px}
+  table.mx th.cath{font-size:9.5px;letter-spacing:.4px;color:var(--faint);text-transform:uppercase}
+  .cell{width:14px;height:14px;border-radius:4px;margin:0 auto;display:block}
+  .cell.share{background:#2fae6e}
+  .cell.uniq{background:#e0a63a}
+  .rowh .em{margin-right:5px}
+  .rowh .insdot{float:right;width:9px;height:9px;border-radius:50%;margin-top:5px}
+  .section{margin-top:24px}
+  .cards3{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
+  .mini{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
+  .mini h3{margin:0 0 8px;font-size:14.5px}
+  .mini p{margin:6px 0;color:var(--muted);font-size:13px}
+  .mini .tagk{font-size:10.5px;color:var(--special);letter-spacing:.5px;text-transform:uppercase}
+  .pipe{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:8px;font-size:11.5px}
+  .pipe .box{background:#0e1626;border:1px solid var(--line);border-radius:8px;padding:5px 8px}
+  .pipe .to{color:var(--faint)}
+  details.ledger{margin-top:10px;border:1px solid var(--line);border-radius:12px;background:var(--panel);overflow:hidden}
+  details.ledger>summary{cursor:pointer;padding:12px 16px;font-weight:600;list-style:none}
+  details.ledger>summary::-webkit-details-marker{display:none}
+  .ledbody{padding:4px 16px 16px}
+  .lednode{padding:9px 0;border-top:1px solid var(--line)}
+  .lednode .h{font-weight:600}
+  .lednode .rk{color:var(--faint);font-size:11.5px;margin-left:6px}
+  footer{margin-top:30px;color:var(--faint);font-size:12px;border-top:1px solid var(--line);padding-top:16px}
+  .catlead{font-size:9px}
+  code{background:#0e1626;border:1px solid var(--line);border-radius:5px;padding:1px 5px;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>Sensor-Grounded Phylogeny &amp; <span class="sub">Entity-Component System</span></h1>
+  <div class="tagline">
+    A planning canvas (not a proposal figure) for the <b>convergent science of perceptual-motor control through sensor-grounded ontologies</b>.
+    The tree runs from the <b>minimal agent</b> (a bacterium: chemosensor&nbsp;+&nbsp;motor) to <b><i>Homo sapiens</i></b>, with the lab's research animals grafted at their real branch points.
+    Each node <b>adds components (traits)</b>; each animal <b>hydrates</b> a subset. Whether a trait is <b>shared</b> with humans (mechanistic insight) or <b>unshared</b> (functionalist insight) is computed and color-coded automatically. Click any node.
+  </div>
+  <div class="flow">
+    <span class="step">Real&nbsp;World · true facts</span><span class="arr">→</span>
+    <span class="step">EAEE (light, force…)</span><span class="arr">→</span>
+    <span class="step">sensor transduction</span><span class="arr">→</span>
+    <span class="step">measurement estimate</span><span class="arr">→</span>
+    <span class="step">hydrate ontology (this ECS)</span><span class="arr">→</span>
+    <span class="step">rigid-body physics · theory</span>
+  </div>
+</header>
+
+<div class="grid">
+  <div class="card">
+    <h2>Phylogenetic tree · entity-component acquisition <small>root = minimal agent · tips = research models · ★ highlighted</small></h2>
+    <div class="toolbar">
+      <span class="lbl">Highlight</span>
+      <button class="tog" data-hl="optical">👁 Optical sensors</button>
+      <button class="tog" data-hl="predprey">🎯 Predator / Prey</button>
+      <button class="tog" data-hl="physics">🦴 Rigid-body physics</button>
+      <button class="tog" data-hl="ferret">🔀 Trait ≠ Lineage (ferret)</button>
+      <button class="tog" data-hl="clear">⟲ Clear</button>
+    </div>
+    <div class="treeScroll"><svg id="tree"></svg></div>
+    <div class="legendrow">
+      <span class="k"><span class="dot" style="background:var(--mech)"></span> shared w/ human → mechanistic</span>
+      <span class="k"><span class="dot" style="background:var(--func)"></span> unshared → functionalist</span>
+      <span class="k"><span class="dot" style="background:var(--mixed)"></span> mixed</span>
+      <span class="k"><span class="dot" style="background:var(--target)"></span> target (human)</span>
+      <span class="k">◯ internal node (clade)</span>
+      <span class="k">● research model</span>
+    </div>
+  </div>
+
+  <div class="card" id="panel">
+    <h2>Node inspector</h2>
+    <div class="pbody" id="pbody">
+      <div class="hint">Hover or click a node in the tree to inspect the traits it adds, its full hydrated component set, and what it teaches about humans.</div>
+    </div>
+  </div>
+</div>
+
+<!-- SPOTLIGHT CONCEPTS -->
+<div class="section">
+  <div class="cards3">
+    <div class="mini">
+      <div class="tagk">Composition, not inheritance</div>
+      <h3>👁 The <code>OpticalSensor</code> slot</h3>
+      <p>Compound eye (insects), camera eye (vertebrates), and a <b>camera</b> (artificial) all satisfy one component — transduce light (EAEE) — while sharing no mechanism. A shared <i>interface</i>, not a shared ancestor. This is what lets the same ontology reach sideways to robots &amp; simulation.</p>
+    </div>
+    <div class="mini">
+      <div class="tagk">One ecological trait, whole visual system</div>
+      <h3>🎯 Predator vs Prey eyes</h3>
+      <p><b>Prey</b> (mouse, rat, guinea fowl): lateral eyes → panoramic field, little binocular overlap. <b>Predator</b> (ferret; and primates): frontal eyes → binocular overlap for depth. The <code>Predator</code>/<code>Prey</code> component propagates down through eye placement, cortical maps, and behavior.</p>
+    </div>
+    <div class="mini">
+      <div class="tagk">Same task, different machinery</div>
+      <h3>🧠 Optic tectum vs neocortex</h3>
+      <p>Bird vision is routed through the <b>optic tectum</b>; mammalian vision through <b>neocortex</b> (tectum = superior colliculus in us). Guinea fowl vision is a <b>functionalist</b> probe — how is seeing solved with different hardware?</p>
+    </div>
+    <div class="mini" style="border-color:#6a5320">
+      <div class="tagk" style="color:#ffcf6b">The sharpest point</div>
+      <h3>🔀 Trait ≠ Lineage: ferret vs mouse</h3>
+      <p><b>Phylogenetically</b>, mice/rats sit on <i>our</i> branch (Euarchontoglires); the ferret is on the sister branch (Laurasiatheria) — <b>farther</b> from us. <b>Functionally</b>, the ferret's frontal eyes + orientation-column V1 are <b>more human-like</b> than a mouse's lateral eyes + salt-&amp;-pepper V1. Convergence → a <b>component</b> ontology beats an inheritance tree. See it in the matrix: ferret shows green where mouse shows amber.</p>
+    </div>
+    <div class="mini" style="border-color:#5a3a20">
+      <div class="tagk" style="color:#ff9f6e">Physics hydration</div>
+      <h3>🦴 Where rigid-body kinematics attaches</h3>
+      <p>A <code>RigidBody</code> component (position, orientation, linear/angular momentum, inertia tensor) is valid only where segments are rigid — <b>mineralized bone</b> (Osteichthyes) or <b>exoskeleton</b> (arthropods). Soft-bodied agents (C. elegans) need continuum models.</p>
+      <div class="pipe">
+        <span class="box">camera</span><span class="to">→</span><span class="box">keypoints</span><span class="to">→</span><span class="box">segment</span><span class="to">→</span><span class="box">RigidBody</span>
+      </div>
+      <p style="margin-top:8px">Momentum &amp; angular momentum are <i>derived</i> objects carrying uncertainty propagated back to the primary optical sensor (metrology).</p>
+    </div>
+    <div class="mini">
+      <div class="tagk">Grounding floor</div>
+      <h3>🦠 Agency degree zero</h3>
+      <p>Even a bacterium is an agent: chemoreceptors + flagellar motor = <b>sense → act</b>. That is where Empirically Available Environmental Energy (EAEE) first grounds the ontology — every richer nervous system is more components stacked on this loop.</p>
+    </div>
+  </div>
+</div>
+
+<!-- MATRIX -->
+<div class="section card">
+  <h2>Trait × Animal matrix <small>green = shared with human (mechanistic) · amber = unshared (functionalist) · derived automatically from the tree</small></h2>
+  <div class="mxWrap"><table class="mx" id="matrix"></table></div>
+</div>
+
+<!-- LEDGER -->
+<details class="ledger">
+  <summary>▤ Full node ledger — every clade, every component it adds (click to expand)</summary>
+  <div class="ledbody" id="ledger"></div>
+</details>
+
+<footer id="footer"></footer>
+
+</div>
+
+<script>
+/* ---------------- component dictionary ---------------- */
+/* cat drives column grouping & color; humanHas is computed from the Homo sapiens cumulative set */
+const CAT = {agency:'Agency',body:'Body plan',nervous:'Nervous system',vision:'Vision',
+             loco:'Locomotion',repro:'Reproduction',special:'Cognition/Other'};
+const C = {
+  chemoSensor:['Chemosensor','agency'], motor:['Motor / actuator','agency'],
+  organelles:['Organelles + cytoskeleton','body'],
+  multicell:['Multicellularity','body'], collagen:['Collagen ECM','body'],
+  neuron:['Neurons','nervous'], muscle:['Muscle','body'],
+  bilateral:['Bilateral symmetry','body'], cns:['Central nervous system','nervous'],
+  cephalization:['Cephalization','nervous'], throughGut:['Through-gut','body'],
+  molting:['Molting cuticle','body'],
+  fixedConnectome:['Fixed 302-cell connectome','nervous'],
+  softBody:['Soft / hydrostatic body','body'],
+  exoskeleton:['Exoskeleton','body'],
+  compoundEye:['Compound eye','vision'],
+  uvVision:['UV / colour vision','vision'],
+  targetTracking:['Target-tracking neurons','nervous'],
+  notochord:['Notochord','body'], dorsalNerveCord:['Dorsal nerve cord','nervous'],
+  pharyngeal:['Pharyngeal slits','body'],
+  noHead:['No head/cranium','body'],
+  head:['Cranium / head','body'], neuralCrest:['Neural crest','body'],
+  cameraEye:['Camera eye','vision'],
+  vertebrae:['Vertebral column','body'], locomotorCPG:['Locomotor CPG','nervous'],
+  agnathan:['Jawless (agnathan)','body'],
+  jaws:['Jaws','body'],
+  bone:['Mineralized bone','body'], rigidSegments:['Rigid body segments','loco'],
+  limbs:['Limbs + digits','loco'],
+  amnioticEgg:['Amniotic egg','repro'],
+  opticTectumDom:['Optic-tectum-dominant vision','vision'],
+  feathers:['Feathers','body'], beak:['Beak','body'],
+  neocortex:['Neocortex','nervous'], fur:['Fur','body'], milk:['Milk','repro'], endothermy:['Endothermy','body'],
+  predator:['Predator ecology','vision'], prey:['Prey ecology','vision'],
+  frontalEyes:['Frontal eyes (binocular)','vision'], lateralEyes:['Lateral eyes (panoramic)','vision'],
+  columnarV1:['Orientation-column V1','vision'], saltPepperV1:['Salt-&-pepper V1','vision'],
+  vibrissae:['Vibrissae (whiskers)','body'],
+  fovea:['Fovea','vision'], trichromacy:['Trichromacy','vision'],
+  graspingHand:['Grasping hand + foot, nails','loco'],
+  bipedal:['Obligate bipedalism','loco'], bigBrain:['Massive brain expansion','nervous'],
+  language:['Language','special'], symbolic:['Symbolic thought / culture','special'],
+  transparentBrain:['Optically transparent brain','nervous'],
+  goldStandard:['Gold-standard homology to human','special'],
+  socialPrimate:['Small social primate','special'],
+  navModel:['Spatial-navigation model','nervous'],
+  geneticToolkit:['Deep genetic toolkit','special'],
+  bipedBiomech:['Bipedal-locomotion biomechanics','loco']
+};
+
+/* ---------------- the tree ---------------- */
+/* n(name, rank, mya, add[], extra{}) ; children last */
+function n(name,rank,mya,add,extra,children){return Object.assign({name,rank,mya,add:add||[],children:children||[]},extra||{});}
+const M = (o)=>Object.assign({model:true},o); // tip flag helper
+
+const TREE =
+ n('Prokaryota','Bacteria / Archaea','~3800',['chemoSensor','motor'],{note:'The minimal agent: transduce environmental energy → act. Agency, and the sensor-grounded ontology, bottoms out here.'},[
+  n('Eukaryota','Domain','~2100',['organelles'],{},[
+   n('Metazoa','Animalia','~600',['multicell','collagen'],{note:'Choanoflagellates are the closest non-animal kin.'},[
+    n('Eumetazoa','','~580',['neuron','muscle'],{note:'Origin of the nervous system & muscle — the machinery of control.'},[
+     n('Bilateria','','~570',['bilateral','cns','cephalization','throughGut'],{},[
+
+      n('Protostomia','','~560',[],{note:'Blastopore → mouth. Robustly supported clade.'},[
+       n('Ecdysozoa','','~550',['molting'],{},[
+        n('Nematoda','','~540',[],{},[
+         n('C. elegans','Round worm','',['fixedConnectome','softBody'],
+           M({emoji:'🪱',latin:'C. elegans',insight:'func',
+              teaches:'The only animal with a complete synaptic connectome (302 neurons, ~7000 synapses). Chemosensory decision-making in a fully-mapped circuit. Soft/hydrostatic body → NOT a rigid-body kinematics problem.'}))
+        ]),
+        n('Arthropoda','','~535',['exoskeleton','rigidSegments','compoundEye'],{note:'Exoskeleton = rigid segments → rigid-body kinematics applies (jointed appendages), but via a compound, not camera, eye.'},[
+         n('Insecta','','~480',[],{},[
+          n('Drosophila','Fruit fly','',[],
+            M({emoji:'🪰',latin:'D. melanogaster',insight:'func',
+               teaches:'~800-ommatidia compound eye; the workhorse of motion/optomotor vision and genetics. Same visual task (heading, motion) solved by radically different machinery.'})),
+          n('Honeybee','','',['uvVision'],
+            M({emoji:'🐝',latin:'A. mellifera',insight:'func',
+               teaches:'~5000-ommatidia eye with UV/colour channels; navigation & learning. Functionalist window on colour vision & spatial memory.'})),
+          n('Dragonfly','','',['targetTracking'],
+            M({emoji:'🦟',latin:'Anisoptera',insight:'func',
+               teaches:'Identified target-selective descending neurons for aerial prey interception — a high-performance sensorimotor pursuit controller in miniature.'}))
+         ])
+        ])
+       ])
+      ]),
+
+      n('Deuterostomia','','~550',[],{note:'Blastopore → anus. NB: recent phylogenomics finds monophyly equivocal.'},[
+       n('Chordata','','~540',['notochord','dorsalNerveCord','pharyngeal'],{},[
+        n('Cephalochordata','','~535',[],{},[
+         n('Lancelet','Amphioxus','',['noHead'],
+           M({emoji:'🐟',faint:true,latin:'Branchiostoma',insight:'func',
+              teaches:'The chordate body axis WITHOUT a head: notochord + dorsal nerve cord, no cranium. The living illustration of the "spine before head" step.'}))
+        ]),
+        n('Craniata','','~530',['head','neuralCrest','cameraEye'],{note:'Origin of the vertebrate head, face, neural crest — and paired camera eyes.'},[
+         n('Hagfish','','',[],
+           M({emoji:'🐟',faint:true,latin:'Myxini',insight:'func',
+              teaches:'Craniate with a skull but no true vertebrae — brackets the origin of the backbone.'})),
+         n('Vertebrata','','~525',['vertebrae','locomotorCPG'],{},[
+          n('Lamprey','','',['agnathan'],
+            M({emoji:'🐍',latin:'Petromyzon',insight:'mixed',
+               teaches:'Jawless craniate: head + camera eye YES, jaws NO, true vertebrae NO (cartilaginous arcualia). Classic model of the spinal locomotor CPG & reticulospinal control.'})),
+          n('Gnathostomata','','~460',['jaws'],{},[
+           n('Osteichthyes','Bony fish','~420',['bone','rigidSegments'],{physics:true,note:'MINERALIZED BONE → rigid segments. This is where rigid-body kinematics attaches for the vertebrate line; every bone you reconstruct traces here.'},[
+            n('Actinopterygii','','~400',[],{},[
+             n('Zebrafish','','',['transparentBrain'],
+               M({emoji:'🐠',latin:'D. rerio',insight:'mixed',
+                  teaches:'Vertebrate camera eyes + spine + bone, with an optically transparent larval brain enabling whole-brain cellular imaging during behavior.'}))
+            ]),
+            n('Sarcopterygii','Lobe-fins','~415',[],{},[
+             n('Tetrapoda','','~390',['limbs'],{note:'Four weight-bearing limbs with digits — the body plan SkellyCam reconstructs.'},[
+              n('Amniota','','~320',['amnioticEgg'],{},[
+               n('Sauropsida','','~310',[],{},[
+                n('Aves','Birds','~150',['opticTectumDom','feathers','beak','lateralEyes','prey'],{},[
+                 n('Guinea fowl','','',['bipedBiomech'],
+                   M({emoji:'🐔',latin:'N. meleagris',insight:'mixed',
+                      teaches:'Vision via OPTIC TECTUM (not neocortex); lateral prey eyes. Premier model of bipedal legged-locomotion biomechanics over uneven terrain.'}))
+                ])
+               ]),
+               n('Synapsida','','~310',[],{},[
+                n('Mammalia','','~170',['neocortex','fur','milk','endothermy'],{note:'Six-layered neocortex — the shared mammalian visual-processing substrate.'},[
+                 n('Laurasiatheria','','~90',[],{note:'Sister branch to Euarchontoglires — i.e., carnivores are FARTHER from humans than rodents are.'},[
+                  n('Carnivora','','~55',[],{},[
+                   n('Ferret','','',['predator','frontalEyes','columnarV1'],
+                     M({emoji:'🦦',latin:'M. putorius furo',insight:'mech',ferret:true,
+                        teaches:'Predator: frontal eyes + binocular overlap + ORIENTATION COLUMNS in V1 (like primates). Classic visual-development / cortical-plasticity model. Trait-shares with humans DESPITE being phylogenetically farther than rodents — the case for a component ontology.'}))
+                  ])
+                 ]),
+                 n('Euarchontoglires','','~85',[],{note:'The clade that contains BOTH rodents and primates — our own branch.'},[
+                  n('Rodentia','','~70',['prey','lateralEyes','saltPepperV1','vibrissae'],{},[
+                   n('Mouse','','',['geneticToolkit'],
+                     M({emoji:'🐭',latin:'M. musculus',insight:'mixed',
+                        teaches:'Prey: lateral eyes, non-columnar "salt-&-pepper" V1, whisker somatosensation. Unmatched genetic toolkit — but its visual system is LESS human-like than the ferret\'s despite closer kinship.'})),
+                   n('Rat','','',['navModel'],
+                     M({emoji:'🐀',latin:'R. norvegicus',insight:'mixed',
+                        teaches:'Prey rodent; premier spatial-navigation & somatosensory model (place/grid cells).'}))
+                  ]),
+                  n('Primates','','~65',['fovea','frontalEyes','trichromacy','columnarV1','graspingHand'],{note:'Fovea, forward eyes, trichromacy, columnar V1, grasping hand+foot — the closest machinery to human.'},[
+                   n('Platyrrhini','New World','~40',[],{},[
+                    n('Marmoset','','',['socialPrimate'],
+                      M({emoji:'🐒',latin:'C. jacchus',insight:'mech',
+                         teaches:'Small, social, lissencephalic primate — imaging- & genetics-tractable, with primate-grade foveal vision & hand use.'}))
+                   ]),
+                   n('Catarrhini','Old World','~35',[],{},[
+                    n('Macaque','','',['goldStandard'],
+                      M({emoji:'🐵',latin:'Macaca',insight:'mech',
+                         teaches:'The gold-standard homologue for human vision, oculomotor control & reaching — near-identical visual machinery.'})),
+                    n('Homo','','~2.8',['bipedal','bigBrain','language'],{},[
+                     n('Homo sapiens','','~0.3',['symbolic'],
+                       M({emoji:'🧍',latin:'H. sapiens',insight:'target',
+                          teaches:'The measurand everything maps back to. Obligate bipedal, foveate, trichromatic, columnar-cortex, grasping, symbolic.'}))
+                    ])
+                   ])
+                  ])
+                 ])
+                ])
+               ])
+              ])
+             ])
+            ])
+           ])
+          ])
+         ])
+        ])
+       ])
+      ])
+     ])
+    ])
+   ])
+  ])
+ ]);
+
+/* ---------------- layout ---------------- */
+const XSTEP=68, YSTEP=42, X0=34, Y0=26;
+let leaf=0, maxDepth=0;
+(function walk(node,depth,cum){
+  node.depth=depth; maxDepth=Math.max(maxDepth,depth);
+  node.cum = cum.concat(node.add);
+  if(node.children.length){ node.children.forEach(c=>walk(c,depth+1,node.cum));
+    node.y=(node.children[0].y+node.children[node.children.length-1].y)/2;
+  } else { node.y=Y0+(leaf++)*YSTEP; }
+  node.x=X0+depth*XSTEP;
+})(TREE,0,[]);
+const LEAVES=leaf;
+/* human reference set */
+let HUMAN=[]; (function find(nd){ if(nd.name==='Homo sapiens'){HUMAN=nd.cum;} nd.children.forEach(find); })(TREE);
+const humanHas=k=>HUMAN.includes(k);
+
+/* ---------------- render tree ---------------- */
+const svg=document.getElementById('tree');
+const W=X0+maxDepth*XSTEP+380, H=Y0+LEAVES*YSTEP+20;
+svg.setAttribute('width',W); svg.setAttribute('height',H); svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+const NS='http://www.w3.org/2000/svg';
+function el(t,a){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e;}
+const insColor={mech:'var(--mech)',func:'var(--func)',mixed:'var(--mixed)',target:'var(--target)'};
+
+/* precompute spine (path to Homo sapiens) — must run before edges/nodes use it */
+const spineNames=new Set();
+(function mark(nd,path){ const p=path.concat(nd.name);
+  if(nd.name==='Homo sapiens'){ p.forEach(x=>spineNames.add(x)); }
+  nd.children.forEach(c=>mark(c,p));
+})(TREE,[]);
+function onSpine(nd){ return spineNames.has(nd.name); }
+
+/* edges */
+(function edges(node){
+  if(node.children.length){
+    const ys=node.children.map(c=>c.y);
+    svg.appendChild(el('path',{class:'edge'+(onSpine(node)?' spine':''),
+       d:`M${node.x},${Math.min(...ys)} L${node.x},${Math.max(...ys)}`}));
+    node.children.forEach(c=>{
+      svg.appendChild(el('path',{class:'edge'+(onSpine(c)?' spine':''),
+        d:`M${node.x},${c.y} L${c.x},${c.y}`}));
+      edges(c);
+    });
+  }
+})(TREE);
+
+/* nodes */
+(function nodes(node){
+  const g=el('g',{class:'node'+(node.model?' tip':'')+(spineNames.has(node.name)?' big':''),'data-comps':node.cum.join(' '),'data-name':node.name});
+  g.style.cursor='pointer';
+  const col=node.model?insColor[node.insight]:'#26324e';
+  const r=node.model?6.5:4.2;
+  const c=el('circle',{cx:node.x,cy:node.y,r:r,fill:node.model?col:'#0e1626',stroke:node.model?col:'#4a5a78','opacity':node.faint?0.55:1});
+  g.appendChild(c);
+  if(node.model){
+    const fo=el('foreignObject',{x:node.x+10,y:node.y-16,width:360,height:38});
+    const div=document.createElement('div');
+    div.className='tip'; if(node.faint) div.style.opacity=.6;
+    div.innerHTML=`<span class="em">${node.emoji}</span><span class="name">${node.name}</span><span class="latin">${node.latin||''}</span>`+
+      `<span class="ins ${node.insight}" style="margin-left:6px">${({mech:'MECH',func:'FUNC',mixed:'MIXED',target:'TARGET'})[node.insight]}</span>`;
+    fo.appendChild(div); g.appendChild(fo);
+  } else {
+    const t=el('text',{class:'nm',x:node.x+8,y:node.y-8}); t.textContent=node.name;
+    g.appendChild(t);
+    if(node.add.length){
+      const t2=el('text',{class:'nm',x:node.x+8,y:node.y+9}); t2.setAttribute('style','fill:var(--faint);font-size:9px');
+      t2.textContent='+ '+node.add.map(k=>C[k][0]).join(', ').replace(/(.{46}).+/,'$1…');
+      g.appendChild(t2);
+    }
+  }
+  g.addEventListener('mouseenter',()=>show(node));
+  g.addEventListener('click',()=>show(node,true));
+  svg.appendChild(g);
+  node.children.forEach(nodes);
+})(TREE);
+
+/* ---------------- detail panel ---------------- */
+const pbody=document.getElementById('pbody');
+function chip(k){ const cls=humanHas(k)?'mech':'func'; return `<span class="chip ${cls}">${C[k][0]}</span>`; }
+function show(node,lock){
+  const insName={mech:'Mechanistic — shared machinery',func:'Functionalist — different machinery',mixed:'Mixed',target:'Target species'};
+  let html=`<div class="pname">${node.model?node.emoji+' ':''}${node.name}</div>`;
+  html+=`<div class="prank">${node.rank||'clade'}${node.latin?` · <i>${node.latin}</i>`:''}</div>`;
+  if(node.mya)html+=`<div class="pmya">~${node.mya} mya</div>`;
+  if(node.insight)html+=`<div class="sect"><span class="ins ${node.insight}">${insName[node.insight]}</span></div>`;
+  if(node.add.length)html+=`<div class="sect"><h4>Components added here</h4><div class="chips">${node.add.map(chip).join('')}</div></div>`;
+  if(node.teaches)html+=`<div class="sect"><h4>What it teaches re: human</h4><div class="teach">${node.teaches}</div></div>`;
+  if(node.note)html+=`<div class="sect"><div class="hint">${node.note}</div></div>`;
+  html+=`<div class="sect"><h4>Full hydrated component set (${node.cum.length})</h4><div class="chips">${node.cum.map(chip).join('')}</div></div>`;
+  html+=`<div class="sect"><div class="hint">green = shared with human (mechanistic) · amber = unshared (functionalist)</div></div>`;
+  pbody.innerHTML=html;
+}
+show(TREE); // default
+
+/* ---------------- highlight toggles ---------------- */
+const buttons=document.querySelectorAll('button.tog');
+buttons.forEach(b=>b.addEventListener('click',()=>{
+  const hl=b.dataset.hl;
+  buttons.forEach(x=>x.classList.remove('on'));
+  document.querySelectorAll('.node').forEach(g=>g.style.opacity=1);
+  if(hl==='clear')return;
+  b.classList.add('on');
+  const test={
+    optical:c=>c.includes('compoundEye')||c.includes('cameraEye'),
+    physics:c=>c.includes('rigidSegments'),
+    predprey:c=>c.includes('predator')||c.includes('prey'),
+    ferret:(c,name)=>['Ferret','Mouse','Rat','Primates','Homo sapiens','Macaque','Marmoset','Laurasiatheria','Euarchontoglires'].includes(name)
+  }[hl];
+  document.querySelectorAll('.node').forEach(g=>{
+    const comps=(g.dataset.comps||'').split(' '); const name=g.dataset.name;
+    g.style.opacity= test(comps,name)?1:0.16;
+  });
+}));
+
+/* ---------------- matrix ---------------- */
+const models=[]; (function collect(nd){ if(nd.model&&!nd.faint)models.push(nd); nd.children.forEach(collect);})(TREE);
+/* column order: grouped by category, only components some model has */
+const usedCols=[]; const seen=new Set();
+const catOrder=['agency','nervous','vision','body','loco','repro','special'];
+catOrder.forEach(cat=>{ for(const k in C){ if(C[k][1]===cat){ if(models.some(m=>m.cum.includes(k))&&!seen.has(k)){usedCols.push(k);seen.add(k);} } } });
+const mx=document.getElementById('matrix');
+let thead='<thead><tr><th class="rowh">Animal ↓ / Trait →</th>';
+let curCat=''; let catCells='';
+usedCols.forEach(k=>{}); // header build below with category row
+/* category header row */
+let catRow='<tr><th class="rowh catlead"></th>'; let colRow='<tr><th class="rowh">Animal</th>';
+let prev=null; let span=0; const catSpans=[];
+usedCols.forEach((k,i)=>{const cat=C[k][1]; if(cat!==prev){ if(prev)catSpans.push([prev,span]); prev=cat; span=1;} else span++;});
+if(prev)catSpans.push([prev,span]);
+catRow='<tr><th class="rowh"></th>'+catSpans.map(([cat,s])=>`<th class="cath" colspan="${s}">${CAT[cat]}</th>`).join('')+'</tr>';
+colRow='<tr><th class="rowh">Animal ↓</th>'+usedCols.map(k=>`<th title="${C[k][0]}"><div style="writing-mode:vertical-rl;transform:rotate(180deg);max-height:120px">${C[k][0]}</div></th>`).join('')+'</tr>';
+mx.innerHTML='<thead>'+catRow+colRow+'</thead>';
+let tb='<tbody>';
+models.forEach(m=>{
+  tb+=`<tr><th class="rowh"><span class="em">${m.emoji}</span>${m.name}<span class="insdot" style="background:${insColor[m.insight]}"></span></th>`;
+  usedCols.forEach(k=>{
+    if(m.cum.includes(k)){ const cls=humanHas(k)?'share':'uniq'; tb+=`<td><span class="cell ${cls}" title="${C[k][0]} — ${humanHas(k)?'shared with human':'not in human'}"></span></td>`; }
+    else tb+='<td></td>';
+  });
+  tb+='</tr>';
+});
+tb+='</tbody>'; mx.innerHTML+=tb;
+
+/* ---------------- ledger ---------------- */
+const led=document.getElementById('ledger'); let lh='';
+(function walk(nd){
+  if(nd.add.length||nd.note||nd.model){
+    lh+=`<div class="lednode"><span class="h">${nd.model?nd.emoji+' ':''}${nd.name}</span><span class="rk">${nd.rank||'clade'}${nd.mya?' · ~'+nd.mya+' mya':''}</span>`;
+    if(nd.add.length)lh+=`<div class="chips" style="margin-top:5px">${nd.add.map(k=>`<span class="chip ${humanHas(k)?'mech':'func'}">${C[k][0]}</span>`).join('')}</div>`;
+    if(nd.teaches)lh+=`<div class="teach" style="margin-top:4px">${nd.teaches}</div>`;
+    if(nd.note)lh+=`<div class="hint" style="margin-top:3px">${nd.note}</div>`;
+    lh+=`</div>`;
+  }
+  nd.children.forEach(walk);
+})(TREE);
+led.innerHTML=lh;
+
+/* ---------------- footer ---------------- */
+document.getElementById('footer').innerHTML=
+ `<b>Caveats (advisory):</b> the headless chordate is the <i>lancelet</i>; the <i>lamprey</i> is a craniate with a head &amp; camera eye but no jaws/true vertebrae. "Deuterostomia" monophyly is now contested. Predator/prey→eye-placement is a strong tendency, not a law. "Bacterium as agent" is deliberate framing. Dates approximate. &nbsp;·&nbsp; Companion to <code>research-animal-phylogeny-ecs.md</code>; builds on the sensor-grounded-ontology, whole-picture, and metrology briefings. Not a proposal figure — a thinking canvas.`;
+</script>
+</body>
+</html>
