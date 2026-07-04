@@ -1,0 +1,54 @@
+TRANSCRIPT: handy-1783191637
+============================================================
+
+
+Okay, so now I'm going to describe this sort of set of pictures that I've drawn for you and include as a copy with this message that kind of outlines some of the basic structure of the thing and I think will help to orient some of the work that we're doing here.
+So basically, we're imagining a system where there is a real world, which is capital R, capital W, real world, that contains the desiderata of our research. Desiderata meaning that which is desired, which we can just assume to be the capital T true facts of the universe.
+So the desiderata presumed here is just the true values that are associated with the downstream estimates that we're going to produce.
+The world is sort of suffused with empirically available environmental energy, abbreviated EAEE,
+which is equivalent to the Gibsonian optic array except specifically cast in terms of being empirically available because we're going to couch everything in these sensor grounded ontologies.
+So EaEAE is an important thing.
+And so in the case of Mathis 2022 and the kind of thing we're trying to build here,
+There's a certain type of energy, which, you know, things like light and mechanical force.
+And then specifically, let's talk about light, which goes into a sensor called a camera.
+The camera transduces the light into patterns of electrical energy, which gets converted into a video.
+video and then you can sort of trace the person in the video with modern convolutional neural networks or transformers and then estimate key point trajectories.
+And then sort of reconstruct skeletons based off of that and get the full body kinematics. That's basically what free mocap is.
+Alternatively, you could have also put on a IMU based motion capture suit, which measures
+linear and angular acceleration and tidaxial accelerometers gyroscopes and magnetometers Those measure the orientation of each segment and then reconstruct kinematics based off of that Importantly the
+camera-based mocap is low precision, high accuracy because it's noisy estimate around the true answer.
+IMU-based motion capture is low accuracy high precision because it's high precision and but it might drift so might drift away from the true answer
+the camera based stuff you have you start with position and you have to double differentiate to get acceleration IMU you start with acceleration and you have to double integrate to get position so they're both the same estimate from the outside
+So the hybrid of those two can be cleaner than the alternatives because each one can sort of correct for the other's error.
+But critically, all three of those things, so camera-derived motion capture, IMU-derived motion capture, or the hybrid motion capture, all produce the same exact data model,
+model, which is measurements that we can use to estimate the position of a canonical ontological
+set of entities with the kind of entity component property trait sort of relationships and overrides
+and stuff that we've been talking about in the rest of this conversation. So for example, you might have
+human as a canonical thing. By definition, humans live in a certain part of the phylogenetic tree, meaning that we are chordata, we have craniata, which means we have heads and we have skulls. We're tetraprods because we are bilateral. We have limbs, forward and backward limbs. We're predators, we're bipeds, we're primates. All of these things are sort of true traits that we have. And because of that, there's things that are sort of inherent to the data.
+model that represents us. So we have the body, which has the main body segments of the limbs and
+acuskeleton. And then we have parts of that, such as the hand has all the little tiny joints in it and
+stuff like that. And then the head has a face, and then the face has eyes, and then the eyes have a
+pupil and a lens and a retina and a 3D orientation space Critically all of these things are just different layers of precision on each of the other ones These are all just objects in the ontology like faces and eyes Eyes are optical sensors and so they have such properties as a lens and a focal length and they have projection and they have a sensor
+optical sensors can be eyes or cameras and there are some functional relationships between those.
+A biological eye has properties that it doesn't share with a camera, but both biological eyes and cameras are optical sensors in that they both interact with the empirically available environmental energy called light.
+Right. Yeah. And so then all of these things like, you know, in addition, there are layers of precision there. So even if we're measuring just the kinematics of a person, that canonical human is still assumed to have things like muscles and muscle activity and stuff like that, even if we don't measure it, we just those are properties of the ontology that we are not estimating. We're not grounding in sensors. So we don't know the answer. Once we have things like kinematics measured, we can estimate things like muscle formation.
+forces using tools like inverse dynamics and stuff like that from like OpenSim and that type of thing.
+But if we don't do that, then we just haven't hydrated that part of the ontology. The muscles are still presumed to be there. We just don't know. We can't say anything about them.
+That's grounded in a sensor. But we can make estimates and stuff like that, things that are calculated from other sensor-derived data.
+Even if we're estimating muscle activity from inverse dynamics, we're grounding that back to the camera sensor using the sort of metrology NIST calibration and propagating uncertainty kind of principles there.
+We could also measure muscle activity through surface electrodes or implanted electrodes, which is cool.
+But each of those gives you sort of like an additional layer of sort of estimation power on those different fine details without sort of requiring you to measure those things for the coherent whole to emerge All of this data and especially this sort of the ontological aspect of it grounds the empirical
+measurement in instrumentation and empirical energy. It also provides many other opportunities
+such as the ability to interface with research on artificial agents and robotics because the kind of
+of deeply grounded data that we're providing will also serve as really useful training data for reinforcement learning or trajectory optimization types of approaches.
+And the sort of extracted theoretical control policies of each of those are testable with experimentation onto humans and other animals.
+and there's kind of a relationship between different instantiations of the same thing.
+So the degree to which research will map back onto a human is inversely related to the number of shared and unshared traits that they have.
+where the more shared traits, the more insight the research provides on the mechanistic aspects of things.
+So studying the eyeballs of primates tells us a lot about how our own eyeballs work because they're so similar.
+Whereas studying the eyes and vision of birds or bees gives us insight into the more functionalist insights about vision.
+So it's sort of how do you solve the same problems with different machinery?
+And once you have that kind of thought in your mind, you can also start thinking about how biological agent and information that we learn about biological agents trades off with artificial agents.
+Because eyes and cameras are completely mechanically different objects.
+They are completely not the same in terms of their physical reality.
+But in terms of their functional space, they are both optical sensors that interact with empirically available environmental energy and as such kind of can operate in a similar space in a functional operational sensor grounded ontology approach to research.

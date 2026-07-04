@@ -114,4 +114,4 @@
 #include "sections/4-personnel.typ"
 #pagebreak(weak:true)
 #include "sections/5-team-capabilities.typ"
-#bibliography("FMCF-NSF-XLABS.bib", style: "nature")
+#bibliography("FMCF-NSF-XLABS.bib", style: "nature") 

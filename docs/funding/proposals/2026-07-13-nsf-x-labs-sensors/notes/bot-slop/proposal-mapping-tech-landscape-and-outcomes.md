@@ -2,21 +2,22 @@
 
 *Advisory planning map (bot slop by definition). For JSM. Fifth in the series; builds on the four bot-slop briefings. NOT proposal prose — terse phrase-outlines + a story spine + a page-budget strategy, to be reviewed before any drafting. Cross-refs to the prior docs are marked [D1]–[D4].*
 
-**Prior docs:** [D1] `entity-trait-composition-landscape.md` · [D2] `built-to-spec-vs-shared-protocols.md` · [D3] `why-not-academia-obo-internet-precedents.md` · [D4] `sensor-grounded-ontologies-instrumentation.md`
+**Prior docs:**
+
+- [D1] `entity-trait-composition-landscape.md`
+- [D2] `built-to-spec-vs-shared-protocols.md`
+- [D3] `why-not-academia-obo-internet-precedents.md`
+- [D4] `sensor-grounded-ontologies-instrumentation.md`
 
 ---
 
 ## 0. What the solicitation literally asks for (so the outlines map 1:1)
 
-**Technology Landscape** (§10.1): analyze current landscape → justify how the platform accelerates new tech/research lines · compare current SOTA · describe team's goal to progress the tech & unlock *fundamentally new* capabilities · *optional quantitative figure* of current-vs-goal.
-
-**Outcomes** (§10.1): high-impact *measurable* outcomes · advance nascent platform · overcome critical bottlenecks · realize field-reshaping vision · Phase 0 must state **5–7-yr target outcomes** + the **performance benchmarks** to get there.
-
-**Scored on** (§11.2, weighted = to team): ambitious/technically-sound/well-defined · landscape justifies a *dedicated full-time team* · aligned with X-Labs strategic objectives.
-
-**Topic-2 gifts to exploit:** opens with *"every revolution in science preceded by a revolution in what we can measure"* (telescope→MRI) · explicitly in-scope: *"whole-brain activity at cellular resolution across long timescales"* + *"instruments engineered for next-gen AI training pipelines."*
-
-**Topic-2 landmines to avoid:** "computational/software solutions without practical integration into an instrumentation system" · narrow/not-deployable · fundamental research w/o platform application · incremental SOTA · already-commercializable.
+- **Technology Landscape** (§10.1): analyze current landscape → justify how the platform accelerates new tech/research lines · compare current SOTA · describe team's goal to progress the tech & unlock *fundamentally new* capabilities · *optional quantitative figure* of current-vs-goal.
+- **Outcomes** (§10.1): high-impact *measurable* outcomes · advance nascent platform · overcome critical bottlenecks · realize field-reshaping vision · Phase 0 must state **5–7-yr target outcomes** + the **performance benchmarks** to get there.
+- **Scored on** (§11.2, weighted = to team): ambitious/technically-sound/well-defined · landscape justifies a *dedicated full-time team* · aligned with X-Labs strategic objectives.
+- **Topic-2 gifts to exploit:** opens with *"every revolution in science preceded by a revolution in what we can measure"* (telescope→MRI) · explicitly in-scope: *"whole-brain activity at cellular resolution across long timescales"* + *"instruments engineered for next-gen AI training pipelines."*
+- **Topic-2 landmines to avoid:** "computational/software solutions without practical integration into an instrumentation system" · narrow/not-deployable · fundamental research w/o platform application · incremental SOTA · already-commercializable.
 
 ---
 
