@@ -4,7 +4,9 @@
 
 // ── Mission statement — pick your favorite variant, delete the rest ──
 
-#let mission = [The #smallcaps()[Mission] of the proposed NSF X-Lab is to build a new kind of scientific instrument capable of complete empirical capture of the entire agent/environment interaction to unify _perceptuomotor neuroscience_, _musculoskeletal biomechanics_, and _mobile robotics_ into a single convergent science of *sensorimotor control*.]
+#let mission = [The #smallcaps()[Mission] of the proposed NSF X-Lab is to build a _constellation_ of _composable_, _interchangeable_ scientific instrumentation 
+
+ capable of complete empirical capture of the entire agent/environment interaction to unify _perceptuomotor neuroscience_, _musculoskeletal biomechanics_, _agentic artificial intelligence_ and _mobile robotics_ into a single convergent science of *sensorimotor control*.]
 
 
 // // *Funnel:* 
@@ -15,7 +17,7 @@ Interaction with the environment is the most fundamental act of living. Informat
 [TODO - Need transitional sentence mentioning The Instrument - " things thing have been measured in isolation, but the complexity of the interaction remains an untackled problem"]
 
 // // *Hedge:* 
-Investigation the sensorimotor control of a humans, -non-human-animals, and artificial agents is fractured across disconnected academic (sub)disciplines, including but not limited to: (perceptuomotor) neuroscience, (musculoskeletal) biomechanics, and (legged) robotics, each of which spawns its own internal set of specializations and hyper-specializations within those.
+Investigation the sensorimotor control of a humans, non-human-animals, and artificial agents is fractured across disconnected academic (sub)disciplines, including but not limited to: (perceptuomotor) neuroscience, (musculoskeletal) biomechanics, and (legged) robotics, each of which spawns its own internal set of specializations and hyper-specializations within those.
 // _[TODO - This is pretty good , but fairly overloaded anc could prob be clarified ]_
 
 
@@ -30,7 +32,7 @@ Investigation the sensorimotor control of a humans, -non-human-animals, and arti
 // *Hero:* 
   A high quality integrated platform directly designed for the use-case development of complete empirical capture of an awake behaving human-and-non-human-animals (HANHA) would transform the scientific landscape by creating a technical commons whereby specialists and cross-disciplinary researchers can productively interact in service of the shared and unified scientific endeavor.
 
-  // _[TODO - Fix  Sloppy language, make less redundant with surrounding text. make sure to hit the 'instrument not software' and 'technical commons' stuff and Novel Organization and Unmet by current structures thing]_
+  // _[TODO - Fix  Sloppy language, make less   redundant with surrounding text. make sure to hit the 'instrument not software' and 'technical commons' stuff and Novel Organization and Unmet by current structures thing]_
 
 #block(fill: rgb("#f5f5f5"), radius: 4pt, stroke: (left: 1.5pt + gray),  inset: (x: 1.5em, y: 0.75em))[#mission]
   
