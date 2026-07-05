@@ -173,7 +173,7 @@ commensurable rather than merely co-recorded.
 // ════════════════════════════════════════════════════════════════════════
 
 // -- 4a. The human flagship (Boston), two wings --
-#let build_flagship = [The FreeMoCap X-Lab will build a flagship facility for a large-scale DECV [DECV-L] facility in #semibold[Boston, MA]. 
+#let build_flagship = [The FreeMoCap X-Lab will build a flagship facility for a large-scale DECV [DECV-L] facility in #semibold[Boston, MA]. The DECV-L will be a warehouse-scale modular instrument designed for recording full-body kinematics, kinetics, and binocular eye tracking of freely moving humans within configurable open volume. 
 
  in two wings that validate against each other.
 #semibold[Wing A] is a fixed, room-mounted instrumented volume — maximum
