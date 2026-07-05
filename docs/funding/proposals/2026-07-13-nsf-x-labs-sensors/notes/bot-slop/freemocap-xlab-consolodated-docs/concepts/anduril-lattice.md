@@ -19,4 +19,4 @@ Anduril's own docs concede **"ontology alignment remains a work in progress"** �
 
 **The scientific mapping:** materialize-and-index ([[palantir-ontology|Palantir]]) vs. edge-fuse-and-mesh (Lattice) = the same **consistency ↔ latency ↔ resilience** triangle as an offline richly-queryable scientific record vs. real-time closed-loop experimentation. A mature platform likely needs both. On *why* we borrow this architecture at all, see [[science-military-coevolution]].
 
-**Related:** [[palantir-ontology]] · [[Science - Military tech alignment]] · [[entity-component-system]] · [[architectural-paradigm-operational-semantic-layer]]
+**Related:** [[palantir-ontology]] · [[science-military-coevolution]] · [[entity-component-system]] · [[architectural-paradigm-operational-semantic-layer]]
