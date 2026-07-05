@@ -1,28 +1,23 @@
 ---
-tags: [concept, x-labs, framing-hazard, trap]
-aliases: [Software Exclusion, the landmine, computational solutions exclusion]
+tags: [concept, x-labs]
+aliases: [Software Exclusion, computational solutions exclusion, out-of-scope list]
 type: concept
 ---
 
-# The Software Exclusion (the sharpest blade)
+# The Software Exclusion (reference — largely a non-issue now)
 
-The Topic-2 exclusion the whole strategy is engineered around:
+The Topic-2 out-of-scope clause worth knowing:
 
 > *"computational or software solutions without practical integration into an instrumentation system."*
 
-A reviewer's first reflex will be: **is this just better lab middleware or a data standard?** The [[maven-smart-system|Palantir/Anduril analogy]] can *hurt* here if it makes the work sound like enterprise software. `#framing-hazard`
+## Why this is no longer something to worry about
+Early in planning — when the pitch leaned on the ontology / complexity-management / Palantir-Anduril analogy — this exclusion was a real hazard, and a lot of the vault was written defensively around it. **The plan we actually landed on retires that concern.** The proposal is a physical [[the-physical-instrument-boston-flagship-and-network|instrumented capture volume in Boston]] plus **custom-built hardware** (next-gen [[next-generation-eye-trackers|eye trackers]]), force plates, EMG, mobile EEG, a [[drone-swarm-camera-mocap|drone swarm]], and an [[comparative-phylogeny-and-ecs|animal-model network]] running Neuropixels and miniscopes. That is self-evidently an instrumentation system. **We clear this exclusion by what we're building, not by rhetorical contortion — so state the instrument confidently and move on.**
 
-## The mitigation (by construction)
-Make the platform read as **an instrument that produces a measurement previously impossible** — define a *new scientific observable* ([[complete-empirical-capture]]) and show the instrument is what makes it measurable at all. The four moves:
+The [[sensor-grounded-ontology|sensor-grounded ontology]] and software are named as *how the instrument scales and stays commensurable* — a strength, mentioned in a clause. No need to be defensive about it.
 
-1. **Lead with the [[sensor-as-transducer|transducers]]** — name the physics.
-2. **Make every [[ontology-definition|ontological object]] a [[metrological-traceability|traceable measurement]]** — use metrology vocabulary (calibration, traceability, uncertainty), not software patterns.
-3. **Use "[[symbol-grounding-problem|grounding]]" as the term of art** — a *sensor-grounded* ontology is instrumentation; an ungrounded one is not.
-4. **Keep the [[composition-over-inheritance|software architecture]] as the *justified middle*** — the reason the instrument scales across modalities/species/scales, never the thing being funded on its own.
+## The related exclusions still worth a glance
+- **"Incremental advancement of the state of the art"** — the [[complete-empirical-capture|new unified observable]] + the hardware builds are clearly not incremental; just don't let it read as "a slightly better mocap tool."
+- **"Narrow, not widely deployable"** — the [[tiered-dissemination-and-communal-science|tiered/open]] model answers this (many fields, many labs).
+- **"Already at full-scale commercialization"** and **"sole challenges are non-technical"** — not applicable.
 
-## The related exclusions (don't trip these either) `#trap`
-- **"Incremental advancement of the state of the art"** — must not read as "a better mocap tool."
-- **"Narrow, not widely deployable"** — argue broad multi-field adoption, not one vertical.
-- **"Already at full-scale commercialization"** and **"sole challenges are non-technical."**
-
-**Related:** [[the-three-load-bearing-questions]] · [[sensor-grounded-ontology]] · [[metrological-traceability]] · [[say-vs-allude]]
+**Related:** [[the-physical-instrument-boston-flagship-and-network]] · [[the-three-load-bearing-questions]] · [[complete-empirical-capture]] · [[say-vs-allude]]
