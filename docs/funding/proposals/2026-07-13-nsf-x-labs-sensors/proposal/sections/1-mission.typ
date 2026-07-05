@@ -44,9 +44,8 @@
 // Angle A — the physics-of-living framing (current draft's instinct; keep)
 #let hook_a = [Every living and engineered agent solves the same problem:
 it senses a thin slice of the energy available in its environment through a limited set of 
-imperfect transducers, and on that basis generates forces that push back
-against the world to move itself toward a goal. Information flows in, forces
-flow out — the nervous system exists to move the body through the world.]
+imperfect transducers, and on that basis generate reaction forces against an available substrate to propel its toward its goal. Information flows in, forces
+flow out; the brain exists to yank the bones around.]
 
 // Angle B — the "unit of behavior" framing (sharper for an instrument pitch)
 #let hook_b = [The fundamental unit of behavior is not a neuron firing or a
