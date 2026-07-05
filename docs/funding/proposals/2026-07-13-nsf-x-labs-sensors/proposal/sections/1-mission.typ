@@ -133,7 +133,7 @@ once — binocular gaze and reconstructed retinal input, full-body kinematics
 and kinetics, muscle and motor-unit activation, and central and peripheral
 neural activity — all spatially calibrated, temporally synchronized, and
 expressed in a single sensor-grounded ontology so the channels are directly
-commensurable rather than merely co-recorded.]
+commensurable rather than merely co-recorded. The term "Complete" is intentionally aspirational. ]
 
 // Angle B — the "what makes it ONE instrument" framing (the integration claim)
 #let instrument_b = [The novelty is not any single sensor but the
