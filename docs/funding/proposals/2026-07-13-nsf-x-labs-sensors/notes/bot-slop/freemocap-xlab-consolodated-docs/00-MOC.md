@@ -94,4 +94,11 @@ Each folds many threads and concepts into one coherent argument.
 ## Tag legend (quick)
 
 `#thesis` `#architecture` `#ontology` `#instrument` `#metrology` `#landscape` `#competition` `#funding-structure` `#dissemination` `#education` `#philosophy` `#biology` `#team` `#x-labs` — topic tags.
-`#concept` `#thread` `#integrative` `#refere
+
+`#concept` `#thread` `#integrative` `#citation` `#index` `#moc` — note-type tags.
+
+Cross-cutting **trait tags** (`#trap` `#precedent` `#design-lesson` `#reusable-pattern` `#coinage` `#reframe` `#framing-hazard` `#proof-at-scale` `#cautionary-tale` `#anti-pattern` `#north-star`) attach across the hierarchy.
+
+`#verify` flags an unconfirmed claim (see [[_verification-punchlist]]); `#say` / `#allude` mark 8-page discipline (see [[say-vs-allude]]).
+
+See [[_tag-legend]] for the full taxonomy.
