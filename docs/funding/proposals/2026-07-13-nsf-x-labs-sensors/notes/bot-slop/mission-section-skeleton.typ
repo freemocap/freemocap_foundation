@@ -291,9 +291,9 @@ motor, environmental, and neural activity of humans and non-human animals, to
 unify perceptuomotor neuroscience, musculoskeletal biomechanics, mobile
 robotics, and agentic AI into a single science of sensorimotor control.]
 
-// #PICK[A is the formal statement; B is what A was distilled from — keep B only
-// as a source note. A formal mission line should be re-quotable in one breath;
-// if a reviewer can't repeat it, it's carrying too much.]
+#PICK[A is the formal statement; B is what A was distilled from — keep B only
+as a source note. A formal mission line should be re-quotable in one breath;
+if a reviewer can't repeat it, it's carrying too much.]
 
 
 // ════════════════════════════════════════════════════════════════════════
