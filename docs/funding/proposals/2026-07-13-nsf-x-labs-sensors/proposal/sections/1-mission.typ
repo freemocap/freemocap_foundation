@@ -133,7 +133,7 @@ once — binocular gaze and reconstructed retinal input, full-body kinematics
 and kinetics, muscle and motor-unit activation, and central and peripheral
 neural activity — all spatially calibrated, temporally synchronized, and
 expressed in a single sensor-grounded ontology so the channels are directly
-commensurable rather than merely co-recorded. The term "Complete" is intentionally aspirational; a dream of perfect knowledge to give . ]
+commensurable rather than merely co-recorded. The term "Complete" is intentionally aspirational; a dream of perfect Knowledge as we build metrologically grounded estimates to hydrate shared ontology. Markered, markerless, and IMU motion capture each measure the same `Human` kinematics (albeit with different noise profiles). A `Head` has `Eyes` even if the participant did not wear an eye-tracker. An `Eye` defines Torsion, and LensAcomodation, even if the current era of eye trackers can only estimate `Adduction` and `Elevation.`  ]
 
 // Angle B — the "what makes it ONE instrument" framing (the integration claim)
 #let instrument_b = [The novelty is not any single sensor but the
