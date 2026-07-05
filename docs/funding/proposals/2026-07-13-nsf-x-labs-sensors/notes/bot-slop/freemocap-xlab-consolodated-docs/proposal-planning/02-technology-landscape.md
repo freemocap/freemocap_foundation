@@ -34,7 +34,7 @@ The single most important visual in the proposal. Confirm axes (see open decisio
 
 ## Landmines
 - Do **not** compete on pure capture accuracy (Theia/Move.ai win that) — the edge is **integration-as-instrument**. [[competitive-terrain]]
-- Do not let the miltech analogy make it sound like enterprise/defense software → [[the-software-exclusion]].
+- The miltech analogy is a light touch (architecture credibility), not the spine — the physical instrument and the concrete SOTA comparison carry the section. [[the-software-exclusion]]
 - Naming competitors is a strength; ignoring them reads as naïveté.
 
 ## Open decisions (JSM)

@@ -32,12 +32,12 @@ Team half ≈ Mission half. **Do not under-invest the team/governance sections**
 Answer the [[the-three-load-bearing-questions|three load-bearing questions]] everywhere: **(1)** the new measurement/observable, **(2)** the field reshaped, **(3)** why unmet by normal mechanisms.
 
 ## Global strategic through-lines to weave across sections
-1. **Instrument, not software** — lead every subsection with a measurement/instrument noun; software/org ideas enter only as *why the instrument scales and lasts*. The #1 landmine: [[the-software-exclusion]].
+1. **Lead with the physical instrument** — the Boston volume, the custom-built hardware, the sensors; measurement/instrument nouns first. Software/org ideas enter as *why the instrument scales and lasts*. (The old software-exclusion worry is **retired** by the hardware-coupled plan — assert the instrument, don't defend it: [[the-software-exclusion]].)
 2. **The measurement-revolution register** — use Topic-2's own frame ("every revolution in science preceded by a revolution in what we can measure"). We are the next instance.
 3. **The new observable** — [[complete-empirical-capture]] is a *new scientific observable*, not a better tool for existing science.
 4. **The missing middle** — [[the-missing-middle]]; the calibrated/synchronized/semantic operational layer nobody has built.
 5. **Sensor-grounded = instrumentation** — [[sensor-grounded-ontology]], [[metrology-and-traceability]]; the [[symbol-grounding-problem|grounding]] argument turns the software worry into an instrument strength.
-6. **Borrow the miltech architecture, carefully** — [[architectural-paradigm-operational-semantic-layer]] for engineering credibility; [[science-military-coevolution]] for *why*; keep the surface on measurement ([[maven-smart-system|framing hazard]]).
+6. **Borrow the miltech architecture** — [[architectural-paradigm-operational-semantic-layer]] for engineering credibility; [[science-military-coevolution]] for *why*. A light touch; the physical hardware carries the instrument identity, so no need to over-manage the analogy ([[maven-smart-system]]).
 7. **Two X-Labs objectives, both hit** — the instrument = *platform technology*; the foundation + tiered network + governance = *new organizational research structure*.
 8. **Unmet by normal mechanisms** — [[why-this-cant-be-academic-science]]; the autonomy/IP/full-time model is the literal fix.
 9. **Concrete, de-risked deliverable** — [[the-physical-instrument-boston-flagship-and-network]]; a building + *already-ongoing* named collaborations + proven prototypes.

@@ -10,6 +10,9 @@ type: integrative
 
 This is the note everything else hangs from. If a sentence in the proposal doesn't serve this spine, question it.
 
+> [!note] On "instrument, not software"
+> Early planning worried this could read as a software play, and a lot of the vault was written defensively around that. The plan we landed on retires the worry: a physical [[the-physical-instrument-boston-flagship-and-network|Boston capture volume]], custom-built [[next-generation-eye-trackers|eye trackers]], force plates, EMG, a [[drone-swarm-camera-mocap|drone swarm]], and an animal network running Neuropixels/miniscopes. The instrument identity is obvious — so we **assert** it and move on. "Not software" is a statement of what it *is*, not a shield ([[the-software-exclusion]]).
+
 ## The central claim
 Defense and enterprise software built an **operational semantic layer** — a calibrated, typed, fused, action-capable model of the world that sits *between* raw data streams and archived files — and it unlocked transformative capability ([[architectural-paradigm-operational-semantic-layer|Palantir, Anduril, Maven]]). Empirical science of behavior has every *adjacent* layer — [[lab-streaming-layer|transport]], [[bids-and-nwb|archive]], [[opensim|physics]] — but conspicuously **lacks this middle one.** Building it is **not a software convenience; it is a new class of measurement instrument.** See [[the-missing-middle]].
 

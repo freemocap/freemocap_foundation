@@ -6,7 +6,7 @@ type: concept
 
 # Say vs. Allude (the 8-page discipline)
 
-The rule of thumb that keeps the 8 pages on the right side of [[the-software-exclusion]]. Every note in this vault is tagged `#say` or `#allude` where a discipline call applies.
+The rule of thumb for what earns space in 8 pages: the instrument, the measurements, and the numbers get stated; the deep software/philosophy gets a clause. It's about **focus and scoring**, not defending against [[the-software-exclusion]]. Every note in this vault is tagged `#say` or `#allude` where a discipline call applies.
 
 > **Framing rule of thumb:** lead every subsection with the *measurement / instrument* noun; let the software/organization ideas enter only as *why the instrument scales and lasts.*
 

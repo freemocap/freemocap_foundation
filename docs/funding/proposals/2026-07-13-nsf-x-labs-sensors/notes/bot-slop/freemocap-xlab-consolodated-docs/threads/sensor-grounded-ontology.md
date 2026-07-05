@@ -20,7 +20,7 @@ This is the **load-bearing thread** for the solicitation's instrumentation requi
 
 Environmental energy at the bottom, a human perceiver at the top. The software content is the **necessary connective tissue in the middle** — elevated to a first-order concern precisely because *managing the complexity of grounded, multimodal, uncertainty-bearing measurement is itself a problem in measurement science.*
 
-## The one-sentence defense against [[the-software-exclusion]] `#reframe`
+## What it is, in one sentence `#reframe`
 > We do not build software that happens to touch sensors; we build **a measurement instrument whose readings are [[ontology-definition|ontological objects]], constructed by truth-preserving pipelines from calibrated, [[metrological-traceability|traceable]] transduction of environmental energy.**
 
 ## Why it's the right instrument for *perceptual-motor* science
