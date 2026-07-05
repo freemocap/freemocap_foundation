@@ -1,5 +1,5 @@
 ---
-tags: [citation, architecture, ontology, trap]
+tags: [citation, architecture, ontology, trap, software-aphorism]
 citekey: minsky1974
 aliases: [Minsky 1974, A Framework for Representing Knowledge, frames]
 type: citation

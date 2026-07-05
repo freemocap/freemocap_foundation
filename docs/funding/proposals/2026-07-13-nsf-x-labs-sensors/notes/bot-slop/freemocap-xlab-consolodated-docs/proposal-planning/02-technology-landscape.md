@@ -21,7 +21,7 @@ Prove the gap is real, structural, and unfillable by the current players — the
 4. **Name the competition + the betweenness argument.** [[competitive-terrain]]: institutes (Allen/Bonsai — closed animal pipelines), archives (DANDI/OpenNeuro — post-hoc storage), companies (Theia/Move.ai — single-modality verticals), standards bodies ([[bids-and-nwb|BIDS/HED]] — file formats). The open, human, multimodal, calibrated, semantic, operational instrument falls between every chair.
 5. **The quantitative figure (include it).** X = ecological validity (constrained rig → unconstrained natural env); Y = modality integration / semantic unification (single stream → fully fused, calibrated, cross-scale); existing tools hug the axes; **target = empty upper-right**; 3rd dim (species × scale) via marker size/color.
 6. **Why credible now.** [[freemocap|FreeMoCap]] seed (open, adopted) + the [[naturalistic-neuroscience|two enabling shifts]] (markerless threshold crossed; naturalistic neuro is the stated frontier).
-7. **Why not incremental.** Grounding + metrology + composability + usability = *instrument*, not middleware; differentiator stated in the instrument's own terms.
+7. **Why not incremental.** Grounding + metrology + composability + usability = *instrument*, not middleware. The differentiator is treating [[complexity-management-first-order|complexity management]] as a first-order problem with the enterprise/defense/games toolkit — which is *why* the fused whole is achievable where every silo and every fusion-middleware attempt stalls.
 
 ## Say explicitly `#say`
 The missing-middle argument; SOTA-by-silo; the competitors + betweenness; the figure; credible-now; not-incremental.

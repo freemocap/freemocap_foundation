@@ -1,5 +1,5 @@
 ---
-tags: [concept, funding-structure, trap, anti-pattern]
+tags: [concept, funding-structure, trap, anti-pattern, software-aphorism]
 aliases: [Path Dependence, lock-in, technical debt, step-zero, QWERTY]
 type: concept
 ---

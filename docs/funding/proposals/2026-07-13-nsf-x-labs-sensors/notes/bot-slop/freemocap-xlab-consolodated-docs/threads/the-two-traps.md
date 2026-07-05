@@ -1,5 +1,5 @@
 ---
-tags: [thread, architecture, trap, design-lesson]
+tags: [thread, architecture, trap, design-lesson, software-aphorism]
 aliases: [The Two Traps, inheritance trap, standard trap]
 type: thread
 ---

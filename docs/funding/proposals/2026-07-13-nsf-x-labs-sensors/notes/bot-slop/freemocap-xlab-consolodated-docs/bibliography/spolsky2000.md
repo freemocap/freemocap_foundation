@@ -1,5 +1,5 @@
 ---
-tags: [citation, funding-structure, reframe]
+tags: [citation, funding-structure, reframe, software-aphorism]
 citekey: spolsky2000
 aliases: [Spolsky 2000, Things You Should Never Do, never rewrite]
 type: citation

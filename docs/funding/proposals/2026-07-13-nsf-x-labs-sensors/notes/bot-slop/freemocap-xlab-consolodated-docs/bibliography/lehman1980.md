@@ -1,5 +1,5 @@
 ---
-tags: [citation, funding-structure, anti-pattern]
+tags: [citation, funding-structure, anti-pattern, software-aphorism]
 citekey: lehman1980
 aliases: [Lehman 1980, Laws of Software Evolution]
 type: citation

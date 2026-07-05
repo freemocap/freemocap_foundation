@@ -1,5 +1,5 @@
 ---
-tags: [concept, funding-structure, anti-pattern, cautionary-tale]
+tags: [concept, funding-structure, anti-pattern, cautionary-tale, software-aphorism]
 aliases: [Research Software Sustainability, RSE crisis, abandonware, valley of death]
 type: concept
 ---

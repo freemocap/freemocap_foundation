@@ -1,5 +1,5 @@
 ---
-tags: [thread, architecture, ontology, biology, design-lesson, reusable-pattern, trap]
+tags: [thread, architecture, ontology, biology, design-lesson, reusable-pattern, trap, software-aphorism]
 aliases: [Composition over Inheritance, entity-trait-override, the inheritance trap]
 type: thread
 ---

@@ -19,7 +19,7 @@ The vault uses a small, deliberately flat tag vocabulary so the Obsidian graph a
 
 ## Topic tags
 - `#thesis` — the core instrument-not-software spine.
-- `#architecture` — operational semantic layer, ontology engineering, composition.
+- `#architecture` — operational semantic layer, ontology engineering, composition, complexity management.
 - `#ontology` — the sensor-grounded ontology and its concepts.
 - `#instrument` — the physical capture apparatus, sensors, the flagship.
 - `#metrology` — measurement science, calibration, traceability, uncertainty.
@@ -33,4 +33,26 @@ The vault uses a small, deliberately flat tag vocabulary so the Obsidian graph a
 - `#team` — personnel, collaborators, governance.
 - `#x-labs` — the solicitation, criteria, exclusions, proposal mechanics.
 
-## Cross-cutt
+## Cross-cutting trait tags (the "traits" of the conceptual space)
+
+Composable labels applied *across* the folder hierarchy — the same dogfooding move as [[composition-over-inheritance]] and [[entity-component-system|ECS]]: a note's type/topic place it in the tree, but its **traits** are attached, not inherited, so a recurring idea is findable wherever it appears. Browse any one to pull every instance across the vault.
+
+- `#coinage` — a project-specific coined term ([[eaee|EAEE]], [[hydration]], [[complete-empirical-capture|CEC]]).
+- `#north-star` — an aspirational guiding principle, not a literal deliverable.
+- `#reframe` — a strategic reframing move that changes how a reviewer reads the work.
+- `#trap` — a seductive-but-wrong move to *avoid* (the inheritance trap, the adopt-the-standard trap).
+- `#anti-pattern` — a known-bad structure or failure mode (big-ball-of-mud, abandonware).
+- `#design-lesson` — a positive design principle to *follow*.
+- `#reusable-pattern` — a concrete architecture pattern to borrow (typed canonical model, separated registry/store/query).
+- `#software-aphorism` — a pithy, hard-won engineering lesson for managing complexity (composition-over-inheritance, worse-is-better, avoid premature standardization, the traps). Gathers the toolkit behind [[complexity-management-first-order]].
+- `#precedent` — a worked external/historical example to emulate or cite (OBO, the Internet, JCTLM, LHC).
+- `#proof-at-scale` — evidence a pattern already works at large scale ([[maven-smart-system|Maven]], BIDS/NWB).
+- `#cautionary-tale` — a failure to steer around (Human Brain Project).
+- `#framing-hazard` — a way the pitch can misfire with reviewers if mishandled.
+
+## Modifier tags
+- `#verify` — the note contains a claim not yet confirmed; see [[_verification-punchlist]].
+- `#say` — 8-page discipline: **state explicitly** (earns the score / clears the exclusion).
+- `#allude` — 8-page discipline: **compress to a clause**; the depth lives in the oral round.
+
+See [[say-vs-allude]] for the say/allude rule of thumb.

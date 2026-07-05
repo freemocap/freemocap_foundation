@@ -40,7 +40,7 @@ If you read nothing else, read **[[the-thesis-instrument-not-software]]**.
 Each folds many threads and concepts into one coherent argument.
 
 1. **[[the-thesis-instrument-not-software]]** — the spine: the operational semantic layer / the missing middle / instrument-not-software. `#thesis`
-2. **[[architectural-paradigm-operational-semantic-layer]]** — Palantir / Anduril / [[maven-smart-system|Maven]]; the architectural transplant from defense to science. `#architecture`
+2. **[[architectural-paradigm-operational-semantic-layer]]** — Palantir / Anduril / [[maven-smart-system|Maven]] + video-game ECS; [[complexity-management-first-order|complexity management]] as a first-order problem, transplanted to science. `#architecture`
 3. **[[the-scientific-landscape-and-the-missing-middle]]** — [[mobi|MoBI]], the layered stack ([[lab-streaming-layer|LSL]] / [[bids-and-nwb|BIDS/NWB]] / [[opensim|OpenSim]]), the [[the-ontology-question-in-science|ontology question]], and the [[competitive-terrain|competition]]. `#landscape`
 4. **[[the-physical-instrument-boston-flagship-and-network]]** — the concrete deliverable: two-wing Boston flagship, drone swarm, [[next-generation-eye-trackers|eye-tracker build]], the animal-model network, the [[the-validation-triangle|validation triangle]]. `#instrument`
 5. **[[why-this-cant-be-academic-science]]** — the "unmet by existing structures" case: [[research-software-sustainability|RSE crisis]], [[path-dependence]], [[conways-law|Conway's Law]], [[obo-foundry|OBO]] & Internet precedents, [[tiered-dissemination-and-communal-science|dissemination]], governance. `#funding-structure`
@@ -58,7 +58,7 @@ Strategic planning mapped 1:1 to the proposal sections, built on this landscape 
 ## The thread notes (medium-grain threads)
 
 - [[sensor-grounded-ontology]] · [[composition-over-inheritance]] · [[build-to-spec-vs-shared-protocols]] · [[the-two-traps]]
-- [[architectural-paradigm-operational-semantic-layer|architecture]] cluster: [[science-military-coevolution]] (why we borrow the miltech architecture)
+- [[architectural-paradigm-operational-semantic-layer|architecture]] cluster: [[complexity-management-first-order]] (the real challenge) · [[science-military-coevolution]] (why we borrow from enterprise / defense / games)
 - [[metrology-and-traceability]] · [[the-rw-to-ontology-pipeline]]
 - [[next-generation-eye-trackers]] · [[comparative-phylogeny-and-ecs]]
 - [[the-ontology-question-in-science]] · [[competitive-terrain]]

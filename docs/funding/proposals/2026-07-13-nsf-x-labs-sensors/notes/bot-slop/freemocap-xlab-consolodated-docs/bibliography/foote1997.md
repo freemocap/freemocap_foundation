@@ -1,5 +1,5 @@
 ---
-tags: [citation, funding-structure, anti-pattern]
+tags: [citation, funding-structure, anti-pattern, software-aphorism]
 citekey: foote1997
 aliases: [Foote 1997, Big Ball of Mud]
 type: citation

@@ -1,5 +1,5 @@
 ---
-tags: [concept, funding-structure, design-lesson, precedent]
+tags: [concept, funding-structure, design-lesson, precedent, software-aphorism]
 aliases: [Conways Law, Conway's Law, Inverse Conway Maneuver]
 type: concept
 ---

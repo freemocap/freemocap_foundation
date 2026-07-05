@@ -1,5 +1,5 @@
 ---
-tags: [citation, architecture, ontology, design-lesson]
+tags: [citation, architecture, ontology, design-lesson, software-aphorism]
 citekey: touretzky1986
 aliases: [Touretzky 1986, The Mathematics of Inheritance Systems, inferential distance]
 type: citation

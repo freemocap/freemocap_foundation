@@ -1,5 +1,5 @@
 ---
-tags: [citation, architecture, design-lesson]
+tags: [citation, architecture, design-lesson, software-aphorism]
 citekey: postel1981
 aliases: [Postel 1981, RFC 793, robustness principle]
 type: citation

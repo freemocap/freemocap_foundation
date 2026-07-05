@@ -1,5 +1,5 @@
 ---
-tags: [thread, architecture, funding-structure, trap, design-lesson, precedent]
+tags: [thread, architecture, funding-structure, trap, design-lesson, precedent, software-aphorism]
 aliases: [Build-to-Spec, shared protocols, the adopt-the-standard trap, Postel, adapter pattern]
 type: thread
 ---

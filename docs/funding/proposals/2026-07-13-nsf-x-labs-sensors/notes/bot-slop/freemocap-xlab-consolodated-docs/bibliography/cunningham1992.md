@@ -1,5 +1,5 @@
 ---
-tags: [citation, funding-structure, anti-pattern]
+tags: [citation, funding-structure, anti-pattern, software-aphorism]
 citekey: cunningham1992
 aliases: [Cunningham 1992, technical debt, WyCash]
 type: citation

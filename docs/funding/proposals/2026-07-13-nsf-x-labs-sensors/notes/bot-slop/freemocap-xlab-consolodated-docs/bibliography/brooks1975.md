@@ -1,5 +1,5 @@
 ---
-tags: [citation, funding-structure, design-lesson]
+tags: [citation, funding-structure, design-lesson, software-aphorism]
 citekey: brooks1975
 aliases: [Brooks 1975, The Mythical Man-Month, plan to throw one away]
 type: citation

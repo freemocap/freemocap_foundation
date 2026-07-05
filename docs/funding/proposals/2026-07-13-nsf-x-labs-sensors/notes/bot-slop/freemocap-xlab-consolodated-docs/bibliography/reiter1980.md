@@ -1,5 +1,5 @@
 ---
-tags: [citation, architecture, ontology]
+tags: [citation, architecture, ontology, software-aphorism]
 citekey: reiter1980
 aliases: [Reiter 1980, A Logic for Default Reasoning, default logic]
 type: citation

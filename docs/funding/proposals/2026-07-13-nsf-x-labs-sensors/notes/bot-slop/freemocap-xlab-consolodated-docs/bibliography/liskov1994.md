@@ -1,5 +1,5 @@
 ---
-tags: [citation, architecture, trap]
+tags: [citation, architecture, trap, software-aphorism]
 citekey: liskov1994
 aliases: [Liskov 1994, Liskov Substitution Principle, behavioral subtyping]
 type: citation

@@ -1,5 +1,5 @@
 ---
-tags: [citation, architecture, funding-structure, design-lesson, precedent]
+tags: [citation, architecture, funding-structure, design-lesson, precedent, software-aphorism]
 citekey: gabriel1991
 aliases: [Gabriel 1991, Worse is Better, The Rise of Worse is Better]
 type: citation

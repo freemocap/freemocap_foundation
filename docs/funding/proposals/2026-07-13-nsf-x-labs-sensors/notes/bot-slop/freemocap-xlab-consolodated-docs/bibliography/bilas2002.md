@@ -1,5 +1,5 @@
 ---
-tags: [citation, architecture, reusable-pattern]
+tags: [citation, architecture, reusable-pattern, software-aphorism]
 citekey: bilas2002
 aliases: [Bilas 2002, A Data-Driven Game Object System, ECS origin]
 type: citation
