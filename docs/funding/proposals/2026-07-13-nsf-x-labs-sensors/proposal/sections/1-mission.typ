@@ -173,7 +173,7 @@ commensurable rather than merely co-recorded.
 // ════════════════════════════════════════════════════════════════════════
 
 // -- 4a. The human flagship (Boston), two wings --
-#let build_flagship = [The FreeMoCap X-Lab will build a flagship facility for a large-scale DECV [DECV-L] in a shared warehouse/office-space facility in #semibold[Boston, MA]. 
+#let build_flagship = [The FreeMoCap X-Lab will build a flagship facility for a large-scale DECV [DECV-L] facility in #semibold[Boston, MA]. 
 
  in two wings that validate against each other.
 #semibold[Wing A] is a fixed, room-mounted instrumented volume — maximum
