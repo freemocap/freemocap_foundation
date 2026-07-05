@@ -52,13 +52,13 @@ Answer the [[the-three-load-bearing-questions|three load-bearing questions]] eve
 ## Page budget (8 pp incl. figures; COI excluded)
 | Section | Pages | Note |
 |---|---|---|
-| [[01-mission\|Mission]] | ~1.0 | vision + "unmet by existing structures" clause |
-| [[02-technology-landscape\|Technology Landscape]] | ~1.25 | incl. the landscape figure |
-| [[03-outcomes\|Outcomes]] | ~1.25 | targets + benchmarks table |
-| [[04-senior-key-personnel\|Senior/Key Personnel]] | ~1.75 | — |
-| [[05-team-capabilities\|Team Capabilities]] | ~1.75 | incl. governance/autonomy |
+| [[01-mission]] | ~1.0 | vision + "unmet by existing structures" clause |
+| [[02-technology-landscape]] | ~1.25 | incl. the landscape figure |
+| [[03-outcomes]] | ~1.25 | targets + benchmarks table |
+| [[04-senior-key-personnel]] | ~1.75 | — |
+| [[05-team-capabilities]] | ~1.75 | incl. governance/autonomy |
 | slack / figures | ~1.0 | — |
-| [[06-summary\|Summary]] | separate | ~5000 chars, not in the 8 pp |
+| [[06-summary]] | separate | ~5000 chars, not in the 8 pp |
 
 ## Section planning modules
 - [[01-mission]] · [[02-technology-landscape]] · [[03-outcomes]] · [[04-senior-key-personnel]] · [[05-team-capabilities]] · [[06-summary]]
