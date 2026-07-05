@@ -257,13 +257,13 @@ a finding in one becomes evidence in another — collapsing four parallel
 literatures into one cumulative field studying real-world behavior in real and
 naturalistic environments.]
 
-// Angle B — the "reductionist's promise" framing (more provocative)
-#let vision_b = [Reductionist science has delivered exquisite measurement of
-each isolated thread while quietly deferring the promise that the threads would
-one day reassemble into an understanding of the whole behaving agent. The
-instrument is how that promise is finally kept: a commons where hyper-
-specialized advances are woven, in context, into a shared, cumulative picture
-of the acting organism.]
+// // Angle B — the "reductionist's promise" framing (more provocative)
+// #let vision_b = [Reductionist science has delivered exquisite measurement of
+// each isolated thread while quietly deferring the promise that the threads would
+// one day reassemble into an understanding of the whole behaving agent. The
+// instrument is how that promise is finally kept: a commons where hyper-
+// specialized advances are woven, in context, into a shared, cumulative picture
+// of the acting organism.]
 
 // #PICK[A is the concrete, scorable "reshapes a field" statement — use it as the
 // spine. B is a better closing flourish. Consider A as the vision beat and fold a
@@ -330,11 +330,8 @@ robotics, and agentic AI into a single science of sensorimotor control.]
   #build_binding
 
  #xlab_a
- 
+
   #xlab_b 
-
-
- 
 
 
   #vision_a
