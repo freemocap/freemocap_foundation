@@ -3,37 +3,35 @@
 = Mission
 
 // ── Mission statement — pick your favorite variant, delete the rest ──
-#let mission = [The #smallcaps()[Mission] of the proposed NSF X-Lab is to build a _constellation_ of _composable_, _interchangeable_ scientific instrumentation capable of complete empirical capture of the entire agent/environment interaction to unify _perceptuomotor neuroscience_, _musculoskeletal biomechanics_, _agentic artificial intelligence_ and _mobile robotics_ into a single convergent science of *sensorimotor control*.]
-
-#block(fill: rgb("#f5f5f5"), radius: 4pt, stroke: (left: 1.5pt + gray),  inset: (x: 1.5em, y: 0.75em))[#mission]
+#let mission = [The #smallcaps()[Mission] of the proposed NSF X-Lab is to build a enterprise-scale, high-performance, usability-focused research platform for supporting the creation of use-defined, composable multi-instumented capture volumes for empirical capture of all relevant empirically available environmental energy associated with the sensory/perceptual, motor/mechanical, environment factors, and neural activty in the centeral and peripheral nervous systems of humans, non-human-animals  to unify _perceptuomotor neuroscience_, _musculoskeletal biomechanics_,  _mobile/industrial robotics_ and _agentic artificial intelligence_ into a single unified science of *sensorimotor control* in real and naturalistic environments.]
 
 
-// Funnel statement - What are we talking about? Cows? Hurricanes? Nebulae? Should be topic defining and thought provoking. This is the Hook. "Hey, here's something to think about"
-#let funnel = [The Agent/Environment interaction is fundamental to the act of living. 
-
-Physically instantiated sensors transduce empirically available environmental energy (EAEE) into truth preserving patterns which flow in to the agent and drive resulting application of mechanical forces against the environmental substrate in service of some goal. Information flows in, forces flow out - the brain exists to yank the bones around. ]
+// Funnel/Hook statement - What are we talking about? Cows? Hurricanes? Nebulae? Should be topic defining and thought provoking. This is the Hook. "Hey, here's something to think about"
+#let funnel = [The Agent/Environment interaction is fundamental to the act of living. A biological or artifical agent navigates the world by transducing a thin subset of the empirically available environmental energy (EAEE) through imperfect sensors and, on the basis of that information, generates internal and external forces which act against the environmental substrate to propel th agent in the direction of their goal. Information flows in, forces flow out - the brain exists to yank the bones around. ]
 
 // Hedge statement - What is good about the present? What have we succeeded at? Hedges against 'gap' below - give respect to current system and esp previous work/research. "Here's the current state of things, and the Oh So Impressive work that has already been done (possibly even by You, dearly Honored Anonymous Reviewer!"
 #let hedge = [
-  The study of the perceptual and motor aspects of humans, non-human-animals, and artificial agents is fundamental to a wide array of [semantically] overlapping but largely non-overlapping fields, including (but not limited to): (perceptuomotor) neuroscience, (musculoskeletal) biomechanics, and (legged) robotics, each of which spawns its own internal set of specializations and hyper-specializations within those.]
+  The study of the perceptual and motor aspects of humans, non-human-animals, and artificial agents is fundamental to a wide array of [semantically] overlapping but largely non-interacting fields, including (but not limited to): (perceptuomotor) neuroscience, (musculoskeletal) biomechanics, and (legged) robotics. Each of these disparate disciplines have build vibrant research programs and technologically marvelous instrumentation on individual threads within the expansive tapestry of real-world perceptual/motor control of biological and artifical agents. ]
 
 // GAP STATEMENT - What problem does this proposal solve? What damage is wrought due to this gap? how does this define a 'critical barrier to progress' or similar bs? "Oh no!! A Problem!"
-#let gap = [ This reductionist approach to science is incredibly powerful, and has yielded advanced technologies and incredible precision of measurement and prediction.  but has largely failed to deliver on the implied promise that the careful investigation of these gossamer threads of scientific insight would coalesce the patterns of the unified whole 
-]
+// #let gap = [ This reductionist approach to science is incredibly powerful, and has yielded advanced technologies and incredible precision of measurement and prediction.  but has largely failed to deliver on the implied promise that the careful investigation of these gossamer threads of scientific insight would coalesce the patterns of the unified whole 
+// ]
+#let gap = [ However, intergration across these domains remains thin, and the standard funding and institutional structures of academic science are counterposed to the development of development of high quality instrumentation capable of blending the threads of these niche-specialized investigation into a coherent tapestry representing a unified science of real world perceptual/motor control. ]
 
 // HERO STATEMENT - How will WE solve this problem? "Oh Thank God! A Solution to the problem we just told you about!"
-#let hero = []
+#let hero = [The PI of this proposal founded the FreeMoCap Foundation in 2021 in response to two-part realization: (1) that the best way to advance the research program embodied by Matthis et al (2013, 2014,2015, 2017, 2018 and 2022) was to prioritize building tools that allowed others to replicate his real-world sensorimotor control methodology, and (2) the traditional structures of academic research are fundamentally incompatible with high-level tool building due to a perverse incentive structure that near-exhaustively prioritizes publication quantity over quality and impact and the inherent skill-ceiling  associated with the constant labor churn associated with doing research within a degree granting institution.  ]
 
+// [TODO - De-duplicate vocabulary. I'm pretty sure I use the same words multiple times in short succession. We'll clean that up later with approrpiate use of similies lol]
 
 #funnel
 
-#hedge
-
-#gap
-
+#hedge  #gap
+ 
 #hero
 
+#block(fill: rgb("#f5f5f5"), radius: 4pt, stroke: (left: 1.5pt + gray),  inset: (x: 1.5em, y: 0.75em))[#mission]
 
+lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
 #pagebreak()
   
 /// OLD STUFF BELOW - Some may be salvageable, but maybe not
@@ -64,7 +62,7 @@ In service of our Mission, we will build d a *densely instrumented capture volum
 
 == Novel Organizational Structures: The FreeMoCap Foundation X-Lab (FMCF-X)
 
-The Free Motion Capture (FreeMoCap) Foundation is an 501c3 certified public charity founded by the PI (@SKP-JM - JM) in 2021 in response to two-part realization: (1) that the best way to advance the research program embodied by Matthis et al (2013, 2014,2015, 2017, 2018 and 2022) was to prioritize building tools that allowed others to replicate his real-world sensorimotor control methodology, and (2) the traditional structures of academic research are fundamentally incompatible with high-level tool building due to a perverse incentive structure that near-exhaustively prioritizes publication quantity over quality and impact and the inherent skill-ceiling  associated with the constant labor churn associated with doing research within a degree granting institution. 
+// The Free Motion Capture (FreeMoCap) Foundation is an 501c3 certified public charity founded by the PI (@SKP-JM - JM) in 2021 in response to two-part realization: (1) that the best way to advance the research program embodied by Matthis et al (2013, 2014,2015, 2017, 2018 and 2022) was to prioritize building tools that allowed others to replicate his real-world sensorimotor control methodology, and (2) the traditional structures of academic research are fundamentally incompatible with high-level tool building due to a perverse incentive structure that near-exhaustively prioritizes publication quantity over quality and impact and the inherent skill-ceiling  associated with the constant labor churn associated with doing research within a degree granting institution. 
 
 #pagebreak()
 
