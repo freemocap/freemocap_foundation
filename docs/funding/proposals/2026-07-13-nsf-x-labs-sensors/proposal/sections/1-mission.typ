@@ -79,7 +79,7 @@ flow out; the brain exists to yank the bones around.]
 #let fracture_hedge = [Perceptuomotor neuroscience, musculoskeletal
 biomechanics, and legged robotics have each built vibrant research programs
 and technically marvelous instruments — Neuropixels, markerless motion
-capture, force-plate gait labs, motor-unit EMG [TODO - Improve this list, focus on measurement rather than company/tool (kinetics, kinematics, binocular gaze, neurons (ephys neuropixel and w/e a 1Photon miniscope does), muscle activity etc)]— around individual threads of the perception-action loop. Each field measures its thread with extraordinary
+capture, force-plate gait labs, motor-unit EMG [TODO - Improve this list, focus on measurement rather than company/tool (kinetics, kinematics, binocular gaze, neurons (ephys neuropixel and w/e a 1Photon miniscope does), muscle activity etc, like in `fracture_need_b`)]— around individual threads of the perception-action loop. Each field measures its thread with extraordinary
 precision.]
 
 // -- 2b. GAP: name what's actually impossible (two prongs) --
@@ -89,7 +89,7 @@ threads are measured in incompatible coordinate frames, on unsynchronized
 clocks, under semantic schemes that do not talk to each other, so the single
 most basic question — what did this agent see, and what did it therefore do —
 has no calibrated, unified answer. The fracture is in the measurement itself,
-not just in the sociology of the fields. [TODO - this sucks, improve it]]
+not just in the sociology of the fields. [TODO - this sucks, improve it. ok content, needs rewrite]]
 
 // Prong 2 = STRUCTURAL gap (why nobody has built it) — sets up XLAB beat
 #let fracture_gap_structural = [And the instrument that would close it falls
@@ -109,7 +109,7 @@ of an agent's sensory/perceptual input and motor/mechanical output captured, cal
 // #let fracture_need_b = [#semibold[What is needed is the ability to measure the
 // whole loop at once] — perception, kinematics, kinetics, and neural activity of
 // a behaving agent, jointly and commensurably — which requires not a better
-// sensor but a new class of instrument that unifies them.]
+// sensor but a new class of instrument that unifies them.] 
 
 // #PICK[Keep BOTH gap prongs — they are your two selection criteria in miniature
 // (technical = C1, structural = C2/the "why a full-time team" argument). The
