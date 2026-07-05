@@ -1,6 +1,6 @@
 // ════════════════════════════════════════════════════════════════════════
 //  MISSION SECTION — STRUCTURAL SKELETON + APPROACH OPTIONS   (bot slop)
-//  Advisory scaffold for JSM. NOT proposal prose — a composable menu.
+//   scaffold for JSM. NOT proposal prose — a composable menu.
 //
 //  Purpose: give the Mission section a load-bearing skeleton with named,
 //  swappable variables (like 1-mission.typ already does), plus 2-3 drafted
