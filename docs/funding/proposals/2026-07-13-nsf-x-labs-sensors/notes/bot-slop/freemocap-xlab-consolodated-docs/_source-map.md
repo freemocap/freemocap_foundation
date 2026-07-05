@@ -11,8 +11,8 @@ Crosswalk so nothing in the original series is orphaned. Left column = the origi
 | Original doc | Consolidated into |
 |---|---|
 | `older/Empirical-Capture-XLabs-Strategic-Briefing.md` (master) | [[the-thesis-instrument-not-software]], [[architectural-paradigm-operational-semantic-layer]], [[the-scientific-landscape-and-the-missing-middle]], [[nsf-x-labs-opportunity-and-fit]], [[glossary]] |
-| `[D1]` entity-trait-composition-landscape | [[composition-over-inheritance]], [[entity-component-system]], [[the-two-traps]] |
-| `[D2]` built-to-spec-vs-shared-protocols | [[build-to-spec-vs-shared-protocols]], [[worse-is-better]], [[narrow-waist]], [[obo-foundry]], [[the-two-traps]] |
+| `[D1]` entity-trait-composition-landscape | [[composition-over-inheritance]], [[entity-component-system]], [[traps-and-anitpatterns]] |
+| `[D2]` built-to-spec-vs-shared-protocols | [[build-to-spec-vs-shared-protocols]], [[worse-is-better]], [[narrow-waist]], [[obo-foundry]], [[traps-and-anitpatterns]] |
 | `[D3]` why-not-academia-obo-internet-precedents | [[why-this-cant-be-academic-science]], [[research-software-sustainability]], [[conways-law]], [[path-dependence]] |
 | `[D4]` sensor-grounded-ontologies-instrumentation | [[sensor-grounded-ontology]], [[sensor-as-transducer]], [[symbol-grounding-problem]], [[gibson-ecological-optics]] |
 | `[D5]` proposal-mapping-tech-landscape-and-outcomes | [[proposal-section-scaffold]], [[say-vs-allude]] |

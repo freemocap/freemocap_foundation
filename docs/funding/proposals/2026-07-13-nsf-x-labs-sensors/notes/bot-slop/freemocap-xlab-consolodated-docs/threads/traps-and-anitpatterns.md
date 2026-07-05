@@ -4,9 +4,13 @@ aliases: [The Two Traps, inheritance trap, standard trap]
 type: thread
 ---
 
-# The Two Traps (a synthesis)
+# Traps and Anti-Patterns
+1. ** [[composition-over-inheritance|Composition-over-inheritance]]** 
+2. **[[build-to-spec-vs-shared-protocols|build-to-spec-over-shared-protocol]]** 
 
-Both traps are the **same underlying error: accepting a general structure that looks authoritative, in exchange for surrendering control of your core model.** [[composition-over-inheritance|Composition-over-inheritance]] and [[build-to-spec-vs-shared-protocols|build-to-spec-over-shared-protocol]] are the *same principle at two different altitudes.*
+...are the *same principle at two different altitudes.*
+
+Both traps are the **same underlying error: accepting a general structure that looks authoritative, in exchange for surrendering control of your core model.
 
 | | **Trap 1 — Inheritance** | **Trap 2 — Adopt the standard** |
 |---|---|---|

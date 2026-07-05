@@ -57,8 +57,8 @@ Strategic planning mapped 1:1 to the proposal sections, built on this landscape 
 
 ## The thread notes (medium-grain threads)
 
-- [[sensor-grounded-ontology]] · [[composition-over-inheritance]] · [[build-to-spec-vs-shared-protocols]] · [[the-two-traps]]
-- [[architectural-paradigm-operational-semantic-layer|architecture]] cluster: [[complexity-management-first-order]] (the real challenge) · [[science-military-coevolution]] (why we borrow from enterprise / defense / games)
+- [[sensor-grounded-ontology]] · [[composition-over-inheritance]] · [[build-to-spec-vs-shared-protocols]] · [[traps-and-anitpatterns]]
+- [[architectural-paradigm-operational-semantic-layer|architecture]] cluster: [[complexity-management-first-order]] (the real challenge) · [[science-applied-tech-coevolution]] (why we borrow from enterprise / defense / games)
 - [[metrology-and-traceability]] · [[the-rw-to-ontology-pipeline]]
 - [[next-generation-eye-trackers]] · [[comparative-phylogeny-and-ecs]]
 - [[the-ontology-question-in-science]] · [[competitive-terrain]]

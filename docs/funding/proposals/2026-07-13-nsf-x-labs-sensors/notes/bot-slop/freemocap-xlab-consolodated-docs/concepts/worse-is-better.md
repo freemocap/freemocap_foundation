@@ -18,4 +18,4 @@ Sibling precedents in the same family:
 > [!note] Proposal framing
 > Present the timestamp system as the instrument's **metrological core** (the thing that makes cross-modality measurements commensurable), not as "middleware." Then build-to-spec reads as "we engineered the instrument's measurement standard to be exact."
 
-**Related:** [[narrow-waist]] · [[build-to-spec-vs-shared-protocols]] · [[obo-foundry]] · [[the-two-traps]]
+**Related:** [[narrow-waist]] · [[build-to-spec-vs-shared-protocols]] · [[obo-foundry]] · [[traps-and-anitpatterns]]

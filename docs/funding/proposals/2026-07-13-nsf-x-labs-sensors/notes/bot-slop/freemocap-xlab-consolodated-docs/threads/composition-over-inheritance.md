@@ -35,4 +35,4 @@ Biology is where inheritance looks *most* obviously correct and where the naïve
 ## Proposal safety
 On its face this is a *data-model* argument. Keep it anchored to **measurement**: the entity-trait-override idea is the instrument's **measurement model** — analogous to the coordinate frame and unit system of any scientific instrument — "how the instrument makes its measurements commensurable," not middleware. `#allude` See [[the-software-exclusion]], [[say-vs-allude]].
 
-**Related:** [[entity-component-system]] · [[hydration]] · [[build-to-spec-vs-shared-protocols]] · [[the-two-traps]] · [[comparative-phylogeny-and-ecs]]
+**Related:** [[entity-component-system]] · [[hydration]] · [[build-to-spec-vs-shared-protocols]] · [[traps-and-anitpatterns]] · [[comparative-phylogeny-and-ecs]]

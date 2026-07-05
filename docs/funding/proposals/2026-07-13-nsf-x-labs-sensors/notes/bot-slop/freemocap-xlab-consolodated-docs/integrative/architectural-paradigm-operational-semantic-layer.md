@@ -48,4 +48,4 @@ The [[digital-twin-two-traditions|operational twin and the physics-based twin]] 
 ## Why the pattern was *built to spec*, not on OWL
 Both companies **eschewed the formal Semantic Web stack** — Palantir needed verbs, governance, closed-world determinism, and materialized speed; Anduril's model descends from game-engine [[entity-component-system|ECS]]. This is direct license for the [[build-to-spec-vs-shared-protocols|build-to-spec]] design decision, and it recurs *inside* neuroscience ([[the-ontology-question-in-science]]).
 
-**Related:** [[complexity-management-first-order]] · [[palantir-ontology]] · [[anduril-lattice]] · [[maven-smart-system]] · [[science-military-coevolution]] · [[the-missing-middle]] · [[composition-over-inheritance]] · [[entity-component-system]] · [[build-to-spec-vs-shared-protocols]]
+**Related:** [[complexity-management-first-order]] · [[palantir-ontology]] · [[anduril-lattice]] · [[maven-smart-system]] · [[science-applied-tech-coevolution]] · [[the-missing-middle]] · [[composition-over-inheritance]] · [[entity-component-system]] · [[build-to-spec-vs-shared-protocols]]

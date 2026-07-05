@@ -10,6 +10,6 @@ verification: carried
 
 **What it is:** The formal reference for **LSL** — per-sample timestamps, NTP-derived clock sync over LAN, sub-ms sync on commodity hardware, plus the XDF format. Delivers genuinely; ubiquitous in EEG/BCI labs.
 
-**Why we cite it:** [[lab-streaming-layer|LSL]] is the [[the-missing-middle|transport layer, solved as transport]] — and precisely the standard NOT to inherit into the core ([[build-to-spec-vs-shared-protocols]], [[the-two-traps]]). The paper's own account of XDF encoding "ugly real events" and constant per-stream delay modeling is our evidence that it's a general recorder's assumptions, overhead for a tighter instrument.
+**Why we cite it:** [[lab-streaming-layer|LSL]] is the [[the-missing-middle|transport layer, solved as transport]] — and precisely the standard NOT to inherit into the core ([[build-to-spec-vs-shared-protocols]], [[traps-and-anitpatterns]]). The paper's own account of XDF encoding "ugly real events" and constant per-stream delay modeling is our evidence that it's a general recorder's assumptions, overhead for a tighter instrument.
 
 **Related:** [[lab-streaming-layer]] · [[the-missing-middle]] · [[build-to-spec-vs-shared-protocols]]

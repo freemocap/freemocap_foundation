@@ -1,3 +1,0 @@
-## Science - Military tech alignment
-
-Reference this topic in the context like: Science and military tech have always co-evolved, so noticing the strategies used by miltech like Anduril is useful both as a way to see what problems they are trying to solve (complexity management across disaparate heteorgeonous sensors tht need fused into a coherent whole) and the methods they adopt to solve it (Entity/Component model, etc), 

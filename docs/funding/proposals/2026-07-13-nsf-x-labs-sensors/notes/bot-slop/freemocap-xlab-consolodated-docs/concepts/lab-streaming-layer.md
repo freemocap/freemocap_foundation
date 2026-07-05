@@ -14,6 +14,6 @@ LSL gets samples onto a shared clock; it does **nothing** about what those sampl
 ## Why it's a base class you don't want to inherit `#trap`
 Adopting LSL as the *core* timing substrate means **inheriting its assumptions**: an NTP-over-LAN clock model, its network transport, XDF's need to encode ugly real events (a device disappearing on a battery swap), constant per-stream delay modeling. Those are *correct for a general recorder* and *overhead for an instrument* whose synchronization may be hardware-triggered and provably tighter.
 
-> The boundary decision: LSL belongs on the **outside** as an import/export adapter, **not** on the inside as the thing your timestamps are defined in terms of. This is the [[build-to-spec-vs-shared-protocols|build-to-spec]] / [[narrow-waist|narrow-waist]] move; it is one half of [[the-two-traps]].
+> The boundary decision: LSL belongs on the **outside** as an import/export adapter, **not** on the inside as the thing your timestamps are defined in terms of. This is the [[build-to-spec-vs-shared-protocols|build-to-spec]] / [[narrow-waist|narrow-waist]] move; it is one half of [[traps-and-anitpatterns]].
 
-**Related:** [[build-to-spec-vs-shared-protocols]] · [[the-two-traps]] · [[the-missing-middle]] · [[bids-and-nwb]]
+**Related:** [[build-to-spec-vs-shared-protocols]] · [[traps-and-anitpatterns]] · [[the-missing-middle]] · [[bids-and-nwb]]

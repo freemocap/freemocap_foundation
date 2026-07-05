@@ -12,7 +12,7 @@ Everything in the proposal should be answerable to these three. If a sentence do
    → [[complete-empirical-capture|The complete, calibrated, cross-scale interaction record]] — previously unmeasurable as a unified object.
 
 2. **What field is being reshaped** — specifically enough that a reviewer can picture the before/after?
-   → Behavioral / motor / embodied-cognitive neuroscience, currently bottlenecked by [[the-missing-middle|fragmented, non-composable measurement]] → a convergent science of perceptual-motor control.
+   → Perceptual / motor / embodied-cognitive neuroscience, currently bottlenecked by [[the-missing-middle|fragmented, non-composable measurement]] → a convergent science of perceptual-motor control.
 
 3. **Why hasn't this been built, and why can't normal NSF grants or a startup do it?** — the mission-unmet argument.
    → Normal funding [[research-software-sustainability|structurally produces disposable single-modality prototypes]]; this requires full-time, autonomous, IP-owning, sustained platform engineering — the X-Labs model.

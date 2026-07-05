@@ -28,4 +28,4 @@ OBO is what "do it right, as a governed shared standard" looks like *when it wor
 - **Say so, and cite it** — reframe a *lack* of standard-compliance from weakness into a defended architectural decision.
 - Frame the timestamp system as the **[[metrology-and-traceability|metrological core]]** of the instrument, not "middleware." `#say`
 
-**Related:** [[the-two-traps]] · [[worse-is-better]] · [[narrow-waist]] · [[lab-streaming-layer]] · [[obo-foundry]] · [[composition-over-inheritance]]
+**Related:** [[traps-and-anitpatterns]] · [[worse-is-better]] · [[narrow-waist]] · [[lab-streaming-layer]] · [[obo-foundry]] · [[composition-over-inheritance]]

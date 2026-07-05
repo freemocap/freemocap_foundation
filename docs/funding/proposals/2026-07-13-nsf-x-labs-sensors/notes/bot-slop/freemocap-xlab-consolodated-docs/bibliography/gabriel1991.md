@@ -10,6 +10,6 @@ verification: carried
 
 **What it is:** Contrasts MIT "do the right thing" (interface completeness first) with New Jersey "worse is better" (implementation simplicity first — ship the small correct core, spread, generalize later). Thesis: the simple-core design ships first and wins. Unix and C are the examples.
 
-**Why we cite it:** The **philosophical license** for [[build-to-spec-vs-shared-protocols|building the instrument's timestamp/sync core to spec]] rather than gating it on a general standard ([[lab-streaming-layer|LSL]], OWL). Anchors [[worse-is-better]] and one half of [[the-two-traps]].
+**Why we cite it:** The **philosophical license** for [[build-to-spec-vs-shared-protocols|building the instrument's timestamp/sync core to spec]] rather than gating it on a general standard ([[lab-streaming-layer|LSL]], OWL). Anchors [[worse-is-better]] and one half of [[traps-and-anitpatterns]].
 
-**Related:** [[worse-is-better]] · [[build-to-spec-vs-shared-protocols]] · [[narrow-waist]] · [[the-two-traps]]
+**Related:** [[worse-is-better]] · [[build-to-spec-vs-shared-protocols]] · [[narrow-waist]] · [[traps-and-anitpatterns]]

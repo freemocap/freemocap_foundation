@@ -16,4 +16,4 @@ The **documented, citable** reason academic tools decay — and the backbone of 
 ## Why it *is* the X-Labs thesis
 A calibrated, multimodal, semantically-unified capture platform is exactly the class of artifact the normal R01/standard-grant machine cannot produce: it needs full-time engineering, indefinite maintenance, cross-modality integration no single PI scopes, and an institutional home with autonomy and IP control. **The autonomy / full-time / IP-ownership requirements of X-Labs are the literal solution to the documented reason this class of platform doesn't get built.** `#reframe`
 
-**Related:** [[why-this-cant-be-academic-science]] · [[conways-law]] · [[path-dependence]] · [[the-two-traps]]
+**Related:** [[why-this-cant-be-academic-science]] · [[conways-law]] · [[path-dependence]] · [[traps-and-anitpatterns]]

@@ -9,7 +9,9 @@
 
 
 // Funnel statement - What are we talking about? Cows? Hurricanes? Nebulae? Should be topic defining and thought provoking. This is the Hook. "Hey, here's something to think about"
-#let funnel = [Interaction with the environment is the most fundamental act of living. Information flows in, forces flow out - the brain exists to yank the bones around. ]
+#let funnel = [The Agent/Environment interaction is fundamental to the act of living. 
+
+Physically instantiated sensors transduce empirically available environmental energy (EAEE) into truth preserving patterns which flow in to the agent and drive resulting application of mechanical forces against the environmental substrate in service of some goal. Information flows in, forces flow out - the brain exists to yank the bones around. ]
 
 // Hedge statement - What is good about the present? What have we succeeded at? Hedges against 'gap' below - give respect to current system and esp previous work/research. "Here's the current state of things, and the Oh So Impressive work that has already been done (possibly even by You, dearly Honored Anonymous Reviewer!"
 #let hedge = [Investigation the sensorimotor control of a humans, non-human-animals, and artificial agents is fractured across disconnected academic (sub)disciplines, including but not limited to: (perceptuomotor) neuroscience, (musculoskeletal) biomechanics, and (legged) robotics, each of which spawns its own internal set of specializations and hyper-specializations within those.]
