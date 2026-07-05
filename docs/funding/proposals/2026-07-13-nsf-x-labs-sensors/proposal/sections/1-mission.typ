@@ -197,12 +197,9 @@ is, in effect, a miniature animal-scale instance of the whole flagship,
 already demonstrated and now integrating electrophysiology.]
 
 // -- 4c. What binds them into ONE distributed instrument --
-#let build_binding = [The flagship wings and the partner labs are a single
-distributed instrument, not a consortium, because they share one
-sensor-grounded ontology, one metrological traceability chain (every site's
-measurements uncertainty-tagged and commensurable across species and equipment
-tiers), one comparative design, and one annual convening that keeps the
-federation aligned.]
+#let build_binding = [The flagship wings and the partner labs begin to resemble a world-spanning
+distributed instrument, with distributed groups of researchers pouring sensor-grounded estimates one metrological traceability chain (every site's measurements uncertainty-tagged and commensurable across species and equipment
+tiers).[TODO - Again, nice thoughts, words need cleaning]]
 
 // #PICK[This whole beat is your strongest material and your best exclusion
 // defense — keep it concrete and named. The "already built" ferret/mouse
