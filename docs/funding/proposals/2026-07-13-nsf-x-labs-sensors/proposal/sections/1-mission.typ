@@ -61,10 +61,10 @@ robot picking its way over rubble are, at the level of measurement, the same
 event: an agent transducing environmental energy and returning force to the
 world. We treat them as three sciences. They are three views of one object.]
 
-#PICK[B is the strongest setup for an *instrument* proposal because it names a
-measurement target ("capture the loop whole") that beats 2-4 then deliver on.
-C front-loads the cross-species payoff but risks over-claiming before you've
-earned it. A is warmest/most on-voice. Consider A→ then a sentence of C.]
+// #PICK[B is the strongest setup for an *instrument* proposal because it names a
+// measurement target ("capture the loop whole") that beats 2-4 then deliver on.
+// C front-loads the cross-species payoff but risks over-claiming before you've
+// earned it. A is warmest/most on-voice. Consider A→ then a sentence of C.]
 
 
 // ════════════════════════════════════════════════════════════════════════
@@ -114,10 +114,10 @@ whole loop at once] — perception, kinematics, kinetics, and neural activity of
 a behaving agent, jointly and commensurably — which requires not a better
 sensor but a new class of instrument that unifies them.]
 
-#PICK[Keep BOTH gap prongs — they are your two selection criteria in miniature
-(technical = C1, structural = C2/the "why a full-time team" argument). The
-hinge is the most important sentence in the section; A states the instrument
-plainly, which is safest against the software-only exclusion. Use A.]
+// #PICK[Keep BOTH gap prongs — they are your two selection criteria in miniature
+// (technical = C1, structural = C2/the "why a full-time team" argument). The
+// hinge is the most important sentence in the section; A states the instrument
+// plainly, which is safest against the software-only exclusion. Use A.]
 
 
 // ════════════════════════════════════════════════════════════════════════
@@ -154,11 +154,11 @@ describes a tethered fruit-fly rig and an untethered human walking outdoors.
 Different sites realize it at different tiers of precision and uncertainty —
 but in kind, not in category, they are the same measurement.]
 
-#PICK[A = the object, B = why it's one instrument (the anti-software argument),
-C = the bridge to the BUILD beat. Recommend A then B then a compressed C — the
-three together are the whole platform-technology claim and each answers a
-different reviewer objection ("what is it / how is it one thing / how does it
-generalize").]
+// #PICK[A = the object, B = why it's one instrument (the anti-software argument),
+// C = the bridge to the BUILD beat. Recommend A then B then a compressed C — the
+// three together are the whole platform-technology claim and each answers a
+// different reviewer objection ("what is it / how is it one thing / how does it
+// generalize").]
 
 
 // ════════════════════════════════════════════════════════════════════════
@@ -201,11 +201,11 @@ measurements uncertainty-tagged and commensurable across species and equipment
 tiers), one comparative design, and one annual convening that keeps the
 federation aligned.]
 
-#PICK[This whole beat is your strongest material and your best exclusion
-defense — keep it concrete and named. The "already built" ferret/mouse
-prototypes are the "demonstrated record of success" the reviewers reward; do
-not bury them. Decide how much of the drone swarm to promise in Phase 1 (it's
-the highest-risk element) — name it as ambition, scope it carefully.]
+// #PICK[This whole beat is your strongest material and your best exclusion
+// defense — keep it concrete and named. The "already built" ferret/mouse
+// prototypes are the "demonstrated record of success" the reviewers reward; do
+// not bury them. Decide how much of the drone swarm to promise in Phase 1 (it's
+// the highest-risk element) — name it as ambition, scope it carefully.]
 
 
 // ════════════════════════════════════════════════════════════════════════
@@ -234,11 +234,11 @@ open, tool-first, community-grounded — applied to the far larger target of the
 complete capture volume, at a scale that only dedicated, autonomous funding
 can reach.]
 
-#PICK[Lead with B (evidence that the org model works) then A (why academia
-structurally can't) — evidence before critique reads as confident, not
-resentful. This beat is also where the Team Capabilities / governance section
-gets set up; keep it to the "why a dedicated lab" claim and let §5 carry the
-governance detail so you don't duplicate across the 8 pages.]
+// #PICK[Lead with B (evidence that the org model works) then A (why academia
+// structurally can't) — evidence before critique reads as confident, not
+// resentful. This beat is also where the Team Capabilities / governance section
+// gets set up; keep it to the "why a dedicated lab" claim and let §5 carry the
+// governance detail so you don't duplicate across the 8 pages.]
 
 
 // ════════════════════════════════════════════════════════════════════════
@@ -264,9 +264,9 @@ instrument is how that promise is finally kept: a commons where hyper-
 specialized advances are woven, in context, into a shared, cumulative picture
 of the acting organism.]
 
-#PICK[A is the concrete, scorable "reshapes a field" statement — use it as the
-spine. B is a better closing flourish. Consider A as the vision beat and fold a
-compressed B into the funnel or the final mission line for rhetorical bookend.]
+// #PICK[A is the concrete, scorable "reshapes a field" statement — use it as the
+// spine. B is a better closing flourish. Consider A as the vision beat and fold a
+// compressed B into the funnel or the final mission line for rhetorical bookend.]
 
 
 // ════════════════════════════════════════════════════════════════════════
