@@ -8,7 +8,7 @@ type: concept
 
 The distinctive, high-risk element of [[the-physical-instrument-boston-flagship-and-network|Wing B]]: a small **coordinated autonomous drone swarm** of camera-carrying drones that **follow the subject** through natural terrain.
 
-## Its job (not what you'd assume)
+## Its job
 It is **not** trying to match Wing-A's wall-mounted, carefully-calibrated precision. Per JSM's note, it exists to **ground the outdoor mocap rig** — two things at once:
 1. **Drift-correct the IMU mocap.** An external visual reference stops inertial dead-reckoning from wandering — the classic visual-inertial-SLAM fix ([[accuracy-precision-drift|IMU drifts; camera anchors]]).
 2. **Estimate and co-register the terrain**, fused with the head-mounted **egocentric** reconstruction (visual-inertial SLAM / Gaussian-splat / NeRF) so the person's movement *and* their position in the world are reconstructed together.
