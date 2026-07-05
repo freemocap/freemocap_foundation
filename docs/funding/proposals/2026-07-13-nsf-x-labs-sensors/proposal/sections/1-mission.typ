@@ -137,9 +137,7 @@ commensurable rather than merely co-recorded.
 
 
 
- Because the instrument is defined by its ontology rather than its hardware, measurements for differnt sensor systems may hydrate the same model.
-
-Camera- and IMU-based motion capture each measure the same `Human` kinematics with very different uncertaintain profiles, so sensor-fused estimate will be far more reliable than then either sensor's estmate alone, but all three estimtes (camera, imu, or hybrid) define the exact same `Human` model. The shared ontology aligns across different combinations of sensors, and across different generations of the same transducer. A `Head` has `Eyes` even if the participant did not wear an eye-tracker. An `Eye` defines `Torsion`, and `LensAccomodation`, even if the current era of eye trackers can only estimate `Adduction` and `Elevation.` And then once we build a better eye tracker that *can* record torsion [TODO - Reference `Outcomes` section where we talk about eye tracker plans], we can train a model relating `Torsion` <-> `Adduction` <-> `Elevation` and use it to backfill older data as a way to test next generation of  theories against the previous generation's  data. _[TODO - Good content, some of the detail may want to move to a different section. ] _]
+ Because the instrument is defined by its ontology rather than its hardware, measurements for differnt sensor systems may hydrate the same model. Camera- and IMU-based motion capture each measure the same `Human` kinematics with very different uncertainty profiles, so sensor-fused estimate will be far more reliable than then either sensor's estmate alone, but all three estimtes (camera, imu, or hybrid) define the exact same `Human` model. The shared ontology aligns across different combinations of sensors, and across different generations of the same transducer. A `Head` has `Eyes` even if the participant did not wear an eye-tracker. An `Eye` defines `Torsion`, and `LensAccomodation`, even if the current era of eye trackers can only estimate `Adduction` and `Elevation.` And then once we build a better eye tracker that *can* record torsion [TODO - Reference `Outcomes` section where we talk about eye tracker plans], we can train a model relating `Torsion` <-> `Adduction` <-> `Elevation` and use it to backfill older data as a way to test next generation of  theories against the previous generation's  data. _[TODO - Good content, some of the detail may want to move to a different section. ] _]
 
 // // // Angle B — the "what makes it ONE instrument" framing (the integration claim)
 // #let instrument_b = [The novelty is not any single sensor but the
@@ -151,12 +149,12 @@ Camera- and IMU-based motion capture each measure the same `Human` kinematics wi
 // event in the same terms.]
 // Gotta get the word "metrologically-traceable" in here somewhere
 
-// Angle C — the "scale-free ontology" framing (sets up the cross-species build)
-#let instrument_c = [Because the instrument is defined by its ontology rather
-than its hardware, it is #semibold[scale-free]: the same entity/trait structure
-describes a tethered fruit-fly rig and an untethered human walking outdoors.
-Different sites realize it at different tiers of precision and uncertainty —
-but in kind, not in category, they are the same measurement.]
+// // Angle C — the "scale-free ontology" framing (sets up the cross-species build)
+// #let instrument_c = [Because the instrument is defined by its ontology rather
+// than its hardware, it is #semibold[scale-free]: the same entity/trait structure
+// describes a tethered fruit-fly rig and an untethered human walking outdoors.
+// Different sites realize it at different tiers of precision and uncertainty —
+// but in kind, not in category, they are the same measurement.]
 
 // #PICK[A = the object, B = why it's one instrument (the anti-software argument),
 // C = the bridge to the BUILD beat. Recommend A then B then a compressed C — the
