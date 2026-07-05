@@ -52,6 +52,7 @@ Each folds many threads and concepts into one coherent argument.
 ## The thread notes (medium-grain threads)
 
 - [[sensor-grounded-ontology]] · [[composition-over-inheritance]] · [[build-to-spec-vs-shared-protocols]] · [[the-two-traps]]
+- [[architectural-paradigm-operational-semantic-layer|architecture]] cluster: [[science-military-coevolution]] (why we borrow the miltech architecture)
 - [[metrology-and-traceability]] · [[the-rw-to-ontology-pipeline]]
 - [[next-generation-eye-trackers]] · [[comparative-phylogeny-and-ecs]]
 - [[the-ontology-question-in-science]] · [[competitive-terrain]]

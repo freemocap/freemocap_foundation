@@ -13,8 +13,8 @@ The vault uses a small, deliberately flat tag vocabulary so the Obsidian graph a
 - `#integrative` — a large document that weaves many threads into one argument (the seven backbone docs).
 - `#thread` — a medium note developing one recurring thread.
 - `#concept` — an atomic note defining one grounded term or idea.
-- `#citation` — a per-reference note in `references/`: what a cited source *is* and *why we cite it*, kept separate from the citing instances in the core notes. Each maps to a `@citekey` in `proposal/FMCF-NSF-XLABS.bib`.
-- `#reference` — glossary / personnel / crosswalk / admin.
+- `#citation` — a per-source note in `bibliography/`: what a cited source *is* and *why we cite it*, kept separate from the citing instances in the core notes. Each maps to a `@citekey` in `proposal/FMCF-NSF-XLABS.bib`.
+- `#index` — a lookup/navigation note (not about the domain, about the vault or its cast): [[glossary]], [[personnel]], [[_source-map]], [[_tag-legend]], [[_verification-punchlist]].
 
 ## Topic tags
 - `#thesis` — the core instrument-not-software spine.
