@@ -173,16 +173,16 @@ commensurable rather than merely co-recorded.
 // ════════════════════════════════════════════════════════════════════════
 
 // -- 4a. The human flagship (Boston), two wings --
-#let build_flagship = [The FreeMoCap X-Lab will build a flagship facility for a large-scale DECV [DECV-L for Large] facility in #semibold[Boston, MA]. The DECV-L will be a warehouse-scale modular instrument designed for recording full-body kinematics, kinetics, and binocular eye tracking of freely moving humans within configurable open volume (Building on the PI's indoor AR/MoCap history @matthis2013 @matthis2014 @matthis2015 @matthis2017). In addition, we will build wearable IMU-based mocap suit plus binocular eye tracker and head-mounted world camera (DECV-O for Outdoor buiding on the lineage of the PI's outdoor gaze/gait control @matthis2018 and retinal optic flor research @matthis2022 @muller2023 @muller2024 @muller2022 - something something mention the drone swarm thing). Critically, the DECV-L will be large enough to fully cover smaller DECVs representative of the kinds that would be build by other research labs and FreeMoCap users. 
+#let build_flagship = [The FreeMoCap X-Lab will build a flagship facility for a large-scale DECV [DECV-L for Large] facility in #semibold[Boston, MA]. The DECV-L will be a warehouse-scale modular instrument designed for recording full-body kinematics, kinetics, and binocular eye tracking of freely moving humans within configurable open volume (Building on the PI's indoor AR/MoCap history @matthis2013 @matthis2014 @matthis2015 @matthis2017).. Critically, the DECV-L will be large enough to fully cover smaller DECVs representative of the kinds that would be build by other research labs and FreeMoCap users, so the DECV-L can serve both as a flagship representative of the DECV instrument, but also a validation and meta-experimental platform to assist in the dissemination of this platform to downstream consumers. In addition the DECV-L will large enough to assist in the development and validation of a wearable IMU-based mocap suit plus binocular eye tracker and head-mounted world camera (DECV-W for Wearable), buiding on the lineage of the PI's outdoor gaze/gait control @matthis2018 and retinal optic flow research @matthis2022 @muller2023 @muller2024 @muller2022 - something something mention the drone swarm thing or leave to later?)]
 
- in two wings that validate against each other.
-#semibold[Wing A] is a fixed, room-mounted instrumented volume — maximum
-precision, a manipulable environment, the calibration reference for everything
-else. #semibold[Wing B] is a wearable/outdoor system extending the PI's
-2018/2022 outdoor-gaze lineage, made portable and productizable, with a
-coordinated autonomous drone swarm that follows the subject to ground inertial
-drift and estimate the terrain. Running Wing B inside Wing A first gives the
-portable rig a traceable calibration chain before it goes outdoors.]
+//  in two wings that validate against each other.
+// #semibold[Wing A] is a fixed, room-mounted instrumented volume — maximum
+// precision, a manipulable environment, the calibration reference for everything
+// else. #semibold[Wing B] is a wearable/outdoor system extending the PI's
+// 2018/2022 outdoor-gaze lineage, made portable and productizable, with a
+// coordinated autonomous drone swarm that follows the subject to ground inertial
+// drift and estimate the terrain. Running Wing B inside Wing A first gives the
+// portable rig a traceable calibration chain before it goes outdoors.]
 
 // -- 4b. The animal / prosthetic / robotics network (functionally equivalent) --
 #let build_network = [Around the human flagship sits a federated network of
