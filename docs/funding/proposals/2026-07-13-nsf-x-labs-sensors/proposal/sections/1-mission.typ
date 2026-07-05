@@ -303,17 +303,50 @@ robotics, and agentic AI into a single science of sensorimotor control.]
 #let render = [
   #hook_a
 
-  #fracture_hedge #fracture_gap_technical #fracture_gap_structural
+--
+
+  #fracture_hedge 
+  
+  #fracture_gap_technical 
+  
+  #fracture_gap_structural
+
+-- 
+
 
   #fracture_need_a
 
-  #instrument_a #instrument_b
+--
 
-  #build_flagship #build_network #build_binding
+  #instrument_a
+--
+   #instrument_b
 
-  #xlab_b #xlab_a
+--
+
+  #build_flagship 
+  
+  --
+
+  #build_network 
+  
+  --
+  
+  #build_binding
+
+--
+
+  #xlab_b 
+
+--
+
+  #xlab_a
+
+--
 
   #vision_a
+
+--
 
   #block(fill: rgb("#f5f5f5"), radius: 4pt, stroke: (left: 1.5pt + gray),
     inset: (x: 1.5em, y: 0.75em))[#mission_a]
