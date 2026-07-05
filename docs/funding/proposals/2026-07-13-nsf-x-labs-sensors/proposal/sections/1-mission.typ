@@ -15,10 +15,7 @@ Physically instantiated sensors transduce empirically available environmental en
 
 // Hedge statement - What is good about the present? What have we succeeded at? Hedges against 'gap' below - give respect to current system and esp previous work/research. "Here's the current state of things, and the Oh So Impressive work that has already been done (possibly even by You, dearly Honored Anonymous Reviewer!"
 #let hedge = [
-  The study of the perceptual and motor aspects of humans, non-human-animals, and artificial agents is fundamental to a wide array of 
-
-
-  Investigation the sensorimotor control of a humans, non-human-animals, and artificial agents is fractured across disconnected academic (sub)disciplines, including but not limited to: (perceptuomotor) neuroscience, (musculoskeletal) biomechanics, and (legged) robotics, each of which spawns its own internal set of specializations and hyper-specializations within those.]
+  The study of the perceptual and motor aspects of humans, non-human-animals, and artificial agents is fundamental to a wide array of [semantically] overlapping but largely non-overlapping fields, including (but not limited to): (perceptuomotor) neuroscience, (musculoskeletal) biomechanics, and (legged) robotics, each of which spawns its own internal set of specializations and hyper-specializations within those.]
 
 // GAP STATEMENT - What problem does this proposal solve? What damage is wrought due to this gap? how does this define a 'critical barrier to progress' or similar bs? "Oh no!! A Problem!"
 #let gap = [ This reductionist approach to science is incredibly powerful, and has yielded advanced technologies and incredible precision of measurement and prediction.  but has largely failed to deliver on the implied promise that the careful investigation of these gossamer threads of scientific insight would coalesce the patterns of the unified whole 
