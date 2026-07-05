@@ -1,6 +1,6 @@
 // ════════════════════════════════════════════════════════════════════════
 //  MISSION SECTION — STRUCTURAL SKELETON + APPROACH OPTIONS   (bot slop)
-//   scaffold for JSM. NOT proposal prose — a composable menu.
+//  Advisory scaffold for JSM. NOT proposal prose — a composable menu.
 //
 //  Purpose: give the Mission section a load-bearing skeleton with named,
 //  swappable variables (like 1-mission.typ already does), plus 2-3 drafted
@@ -43,7 +43,7 @@
 
 // Angle A — the physics-of-living framing (current draft's instinct; keep)
 #let hook_a = [Every living and engineered agent solves the same problem:
-it senses a thin slice of the energy available in its environment through
+it senses a thin slice of the energy available in its environment through a limited set of 
 imperfect transducers, and on that basis generates forces that push back
 against the world to move itself toward a goal. Information flows in, forces
 flow out — the nervous system exists to move the body through the world.]
