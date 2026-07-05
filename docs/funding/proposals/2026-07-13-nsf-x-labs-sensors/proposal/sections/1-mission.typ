@@ -47,18 +47,18 @@ it senses a thin slice of the energy available in its environment through a limi
 imperfect transducers, and on that basis generate reaction forces against an available substrate to propel its toward its goal. Information flows in, forces
 flow out; the brain exists to yank the bones around.]
 
-// Angle B — the "unit of behavior" framing (sharper for an instrument pitch)
-#let hook_b = [The fundamental unit of behavior is not a neuron firing or a
-muscle contracting but a whole agent acting in a whole environment: a closed
-loop of perception and action unfolding in real time and real space. That
-loop is the thing every behavioral science is ultimately trying to measure —
-and the thing none of them can currently capture whole.]
+// // Angle B — the "unit of behavior" framing (sharper for an instrument pitch)
+// #let hook_b = [The fundamental unit of behavior is not a neuron firing or a
+// muscle contracting but a whole agent acting in a whole environment: a closed
+// loop of perception and action unfolding in real time and real space. That
+// loop is the thing every behavioral science is ultimately trying to measure —
+// and the thing none of them can currently capture whole.]
 
-// Angle C — the shared-object framing (sets up cross-species/robot unity early)
-#let hook_c = [A human crossing a room, a ferret tracking prey, and a legged
-robot picking its way over rubble are, at the level of measurement, the same
-event: an agent transducing environmental energy and returning force to the
-world. We treat them as three sciences. They are three views of one object.]
+// // Angle C — the shared-object framing (sets up cross-species/robot unity early)
+// #let hook_c = [A human crossing a room, a ferret tracking prey, and a legged
+// robot picking its way over rubble are, at the level of measurement, the same
+// event: an agent transducing environmental energy and returning force to the
+// world. We treat them as three sciences. They are three views of one object.]
 
 // #PICK[B is the strongest setup for an *instrument* proposal because it names a
 // measurement target ("capture the loop whole") that beats 2-4 then deliver on.
@@ -79,8 +79,7 @@ world. We treat them as three sciences. They are three views of one object.]
 #let fracture_hedge = [Perceptuomotor neuroscience, musculoskeletal
 biomechanics, and legged robotics have each built vibrant research programs
 and technically marvelous instruments — Neuropixels, markerless motion
-capture, force-plate gait labs, motor-unit EMG — around individual threads of
-the perception-action loop. Each field measures its thread with extraordinary
+capture, force-plate gait labs, motor-unit EMG [TODO - Improve this list, focus on measurement rather than company/tool (kinetics, kinematics, binocular gaze, neurons (ephys neuropixel and w/e a 1Photon miniscope does), muscle activity etc)]— around individual threads of the perception-action loop. Each field measures its thread with extraordinary
 precision.]
 
 // -- 2b. GAP: name what's actually impossible (two prongs) --
