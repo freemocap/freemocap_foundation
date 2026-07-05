@@ -223,7 +223,8 @@ grant cycle: it needs full-time engineers held for years, not students
 rotating out on degree timelines, and it needs a home whose success metric is
 a working, shared instrument rather than publication count. The FreeMoCap
 Foundation was founded in 2021 precisely to occupy this gap — a 501(c)(3)
-built to develop open scientific instruments as its primary output.]
+built to develop open scientific instruments as its primary output.[TODO - Again, nice thoughts, words need cleaning]] 
+
 
 // Angle B — the "we already proved the model" framing (evidence-first)
 #let xlab_b = [The FreeMoCap Foundation has already demonstrated the model at
@@ -232,7 +233,7 @@ maintained outside academia, now used by thousands of researchers who could
 not otherwise access the capability. The X-Lab is that proven approach —
 open, tool-first, community-grounded — applied to the far larger target of the
 complete capture volume, at a scale that only dedicated, autonomous funding
-can reach.]
+can reach. [TODO - Again, nice thoughts, words need cleaning]]
 
 // #PICK[Lead with B (evidence that the org model works) then A (why academia
 // structurally can't) — evidence before critique reads as confident, not
@@ -328,11 +329,12 @@ robotics, and agentic AI into a single science of sensorimotor control.]
   
   #build_binding
 
-
+ #xlab_a
+ 
   #xlab_b 
 
 
-  #xlab_a
+ 
 
 
   #vision_a
