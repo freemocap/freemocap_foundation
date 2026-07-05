@@ -174,6 +174,8 @@ commensurable rather than merely co-recorded.
 
 // -- 4a. The human flagship (Boston), two wings --
 #let build_flagship = [The FreeMoCap X-Lab will build a flagship facility for a large-scale DECV [DECV-L for Large] facility in #semibold[Boston, MA]. The DECV-L will be a warehouse-scale modular instrument designed for recording full-body kinematics, kinetics, and binocular eye tracking of freely moving humans within configurable open volume (Building on the PI's indoor AR/MoCap history @matthis2013 @matthis2014 @matthis2015 @matthis2017).. Critically, the DECV-L will be large enough to fully cover smaller DECVs representative of the kinds that would be build by other research labs and FreeMoCap users, so the DECV-L can serve both as a flagship representative of the DECV instrument, but also a validation and meta-experimental platform to assist in the dissemination of this platform to downstream consumers. In addition the DECV-L will large enough to assist in the development and validation of a wearable IMU-based mocap suit plus binocular eye tracker and head-mounted world camera (DECV-W for Wearable), buiding on the lineage of the PI's outdoor gaze/gait control @matthis2018 and retinal optic flow research @matthis2022 @muller2023 @muller2024 @muller2022 - something something mention the drone swarm thing or leave to later?)]
+ [TODO - Also need to mention the robot connection DECV feeds Robot models, robot control theory inform human/animal research (tested via environmnet manipulating experimens via ARGP and VR, etc). Each data stream in DECV output is modeled relative to the other, so each included data set helps to learn statstical structures across modalities, so even 
+ single-discipline researchers contribute to coherent whole! ]
 
 //  in two wings that validate against each other.
 // #semibold[Wing A] is a fixed, room-mounted instrumented volume — maximum
@@ -190,11 +192,8 @@ partner labs running #semibold[functionally-equivalent instruments] on their
 own model systems — the invasive neural modalities that cannot go on humans
 (Neuropixels, miniscope calcium imaging) living on the animal branches, plus
 prosthetic and robotic platforms as engineered agents in the same ontology.
-These are not hypothetical: we have already built plausibly best-in-world
-eye-trackers for ferret and mouse — a ferret rig fusing three-camera gaze,
-full-body kinematics, AR display, and world cameras in one calibrated system
-is, in effect, a miniature animal-scale instance of the whole flagship,
-already demonstrated and now integrating electrophysiology.]
+We have already built plausibly best-in-world eye-trackers for ferret and mouse — a ferret rig fusing three-camera gaze, full-body kinematics, AR display, and world cameras in one calibrated system is, in effect, a miniature animal-scale instance of the whole flagship,
+already demonstrated and now integrating electrophysiology [TODO - Also mention MD Guinea fowl and AH Marmoset connections].]
 
 // -- 4c. What binds them into ONE distributed instrument --
 #let build_binding = [The flagship wings and the partner labs begin to resemble a world-spanning
