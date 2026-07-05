@@ -103,7 +103,7 @@ the loom.[TODO - This also sucks. content ok, needs rewrite]]
 #let fracture_need_a = [#semibold[What is needed is a new class of scientific
 instrument]: a calibrated, synchronized, semantically-unified recording of the
 complete agent-environment interaction — every empirically available channel
-of an agent's sensory/perceptual input and motor/mechanical output captured, calibrated, and reconstructed into a unified grounded scientific ontology.]
+of an agent's sensory/perceptual input and motor/mechanical output captured, calibrated, and processed with metrologically-grounded, truth-preserving pipelines into a unified scientific ontology.]
 
 // Angle B — capability-first (leads with what it lets you do)
 #let fracture_need_b = [#semibold[What is needed is the ability to measure the
