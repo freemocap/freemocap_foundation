@@ -89,21 +89,21 @@ threads are measured in incompatible coordinate frames, on unsynchronized
 clocks, under semantic schemes that do not talk to each other, so the single
 most basic question — what did this agent see, and what did it therefore do —
 has no calibrated, unified answer. The fracture is in the measurement itself,
-not just in the sociology of the fields. [TODO - this sucks, improve it. ok content, needs rewrite]]
+not just in the sociology of the fields. _[TODO - this sucks, improve it. ok content, needs rewrite]_]
 
 // Prong 2 = STRUCTURAL gap (why nobody has built it) — sets up XLAB beat
 #let fracture_gap_structural = [And the instrument that would close it falls
 through every existing crack: too integrative for a single-modality grant, too
 infrastructural to be a paper, too long-horizon for a graduate degree, too
 open to be a product. The academic incentive structure rewards the thread, not
-the loom.[TODO - This also sucks. content ok, needs rewrite]]
+the loom._[TODO - This also sucks. content ok, needs rewrite]_]
 
 // -- 2c. THE HINGE: "What is needed…" (this is the pivot you asked for) --
 // Angle A — instrument-first
 #let fracture_need_a = [#semibold[What is needed is a new class of scientific
 instrument]: a calibrated, synchronized, semantically-unified recording of the
 complete agent-environment interaction — every empirically available channel
-of an agent's sensory/perceptual input and motor/mechanical output captured, calibrated, and processed with metrologically-grounded, truth-preserving pipelines into a unified scientific ontology [TODO - Clarity, Awk, Run-on, overloaded].]
+of an agent's sensory/perceptual input and motor/mechanical output captured, calibrated, and processed with metrologically-grounded, truth-preserving pipelines into a unified scientific ontology #super[[TODO - Clarity, Awk, Run-on, overloaded]].]
 
 // // Angle B — capability-first (leads with what it lets you do)
 // #let fracture_need_b = [#semibold[What is needed is the ability to measure the
