@@ -139,7 +139,7 @@ commensurable rather than merely co-recorded.
 
  Because the instrument is defined by its ontology rather than its hardware, measurements for differnt sensor systems may hydrate the same model.
 
-Camera- and IMU-based motion capture each measure the same `Human` kinematics with very different uncertaintain profiles, so sensor-fused estimate will be far more reliable than then either sensor's estmate alone, but all three estimtes (camera, imu, or hybrid) define the exact same `Human` model. The shared ontology aligns across different combinations of sensors, and across different generations of the same transducer. A `Head` has `Eyes` even if the participant did not wear an eye-tracker. An `Eye` defines `Torsion`, and `LensAcomodation`, even if the current era of eye trackers can only estimate `Adduction` and `Elevation.` And then once we build a better eye tracker that *can* record torsion, we can train a model relating `Torsion` <-> `Adduction` <-> `Elevation` and use it to backfill older data as a way to test next generation of  theories against the previous generation's  data. _[TODO - Good content, some of the detail may want to move to a different section. S] _]
+Camera- and IMU-based motion capture each measure the same `Human` kinematics with very different uncertaintain profiles, so sensor-fused estimate will be far more reliable than then either sensor's estmate alone, but all three estimtes (camera, imu, or hybrid) define the exact same `Human` model. The shared ontology aligns across different combinations of sensors, and across different generations of the same transducer. A `Head` has `Eyes` even if the participant did not wear an eye-tracker. An `Eye` defines `Torsion`, and `LensAccomodation`, even if the current era of eye trackers can only estimate `Adduction` and `Elevation.` And then once we build a better eye tracker that *can* record torsion [TODO - Reference `Outcomes` section where we talk about eye tracker plans], we can train a model relating `Torsion` <-> `Adduction` <-> `Elevation` and use it to backfill older data as a way to test next generation of  theories against the previous generation's  data. _[TODO - Good content, some of the detail may want to move to a different section. ] _]
 
 // // // Angle B — the "what makes it ONE instrument" framing (the integration claim)
 // #let instrument_b = [The novelty is not any single sensor but the
@@ -306,9 +306,10 @@ robotics, and agentic AI into a single science of sensorimotor control.]
 // ════════════════════════════════════════════════════════════════════════
 
 #let render = [
-  #hook_a
+  #block(fill: rgb("#ddd"), radius: 4pt, stroke: (left: 5pt + gray ),
+  inset: (x: 1.5em, y: 0.75em))[#mission_a]
 
---
+  #hook_a
 
   #fracture_hedge 
   
@@ -316,47 +317,32 @@ robotics, and agentic AI into a single science of sensorimotor control.]
   
   #fracture_gap_structural
 
--- 
-
 
   #fracture_need_a
 
---
 
   #instrument_a
 
-// --
-
-//    #instrument_b
-
-// --
 
   #build_flagship 
   
-  --
 
   #build_network 
   
-  --
   
   #build_binding
 
---
 
   #xlab_b 
 
---
 
   #xlab_a
 
---
 
   #vision_a
 
---
 
-  #block(fill: rgb("#f5f5f5"), radius: 4pt, stroke: (left: 1.5pt + gray),
-    inset: (x: 1.5em, y: 0.75em))[#mission_a]
+
 ]
 
 #render
