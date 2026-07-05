@@ -173,8 +173,9 @@ commensurable rather than merely co-recorded.
 // ════════════════════════════════════════════════════════════════════════
 
 // -- 4a. The human flagship (Boston), two wings --
-#let build_flagship = [The X-Lab builds and operates the human flagship in
-#semibold[Boston], in two wings that validate against each other.
+#let build_flagship = [The FreeMoCap X-Lab will build a flagship facility for a large-scale DECV in a shared warehouse/office-space facility in #semibold[Boston, MA]. 
+
+ in two wings that validate against each other.
 #semibold[Wing A] is a fixed, room-mounted instrumented volume — maximum
 precision, a manipulable environment, the calibration reference for everything
 else. #semibold[Wing B] is a wearable/outdoor system extending the PI's
