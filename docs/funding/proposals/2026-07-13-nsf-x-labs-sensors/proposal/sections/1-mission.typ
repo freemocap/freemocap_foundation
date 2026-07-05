@@ -14,7 +14,11 @@
 Physically instantiated sensors transduce empirically available environmental energy (EAEE) into truth preserving patterns which flow in to the agent and drive resulting application of mechanical forces against the environmental substrate in service of some goal. Information flows in, forces flow out - the brain exists to yank the bones around. ]
 
 // Hedge statement - What is good about the present? What have we succeeded at? Hedges against 'gap' below - give respect to current system and esp previous work/research. "Here's the current state of things, and the Oh So Impressive work that has already been done (possibly even by You, dearly Honored Anonymous Reviewer!"
-#let hedge = [Investigation the sensorimotor control of a humans, non-human-animals, and artificial agents is fractured across disconnected academic (sub)disciplines, including but not limited to: (perceptuomotor) neuroscience, (musculoskeletal) biomechanics, and (legged) robotics, each of which spawns its own internal set of specializations and hyper-specializations within those.]
+#let hedge = [
+  The study of the perceptual and motor aspects of humans, non-human-animals, and artificial agents is fundamental to a wide array of 
+
+
+  Investigation the sensorimotor control of a humans, non-human-animals, and artificial agents is fractured across disconnected academic (sub)disciplines, including but not limited to: (perceptuomotor) neuroscience, (musculoskeletal) biomechanics, and (legged) robotics, each of which spawns its own internal set of specializations and hyper-specializations within those.]
 
 // GAP STATEMENT - What problem does this proposal solve? What damage is wrought due to this gap? how does this define a 'critical barrier to progress' or similar bs? "Oh no!! A Problem!"
 #let gap = [ This reductionist approach to science is incredibly powerful, and has yielded advanced technologies and incredible precision of measurement and prediction.  but has largely failed to deliver on the implied promise that the careful investigation of these gossamer threads of scientific insight would coalesce the patterns of the unified whole 
