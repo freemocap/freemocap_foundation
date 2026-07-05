@@ -9,7 +9,7 @@ type: planning
 > [!quote] What the solicitation asks (§10.1)
 > "Describe one or more **novel platform technologies** that the proposed NSF X-Lab is uniquely suited to advance. Successful teams will have a **clear vision statement** of how their work will result in an end-state that **reshapes an entire field** of scientific inquiry or a sector of technology, and **how their Mission is currently unmet** by existing organizational structures and funding mechanisms."
 
-**Earns:** Mission Clarity & Outcomes — §11.2a (ambitious/sound/well-defined) + §11.2c (aligned with the §3.0 objectives). Seeds the org-structure case too. · **Budget:** ~1.0 pg.
+**Earns:** Mission Clarity & Outcomes — §11.2a ned) + §11.2c (aligned with the §3.0 objectives). Seeds the org-structure case too. · **Budget:** ~1.0 pg.
 
 ## The job of this section
 Land the [[the-thesis-instrument-not-software|spine]] in one tight arc: **new observable → instrument → field reshaped → why unmet**. A reviewer should finish this page able to picture the before/after and know this needs an X-Lab.
