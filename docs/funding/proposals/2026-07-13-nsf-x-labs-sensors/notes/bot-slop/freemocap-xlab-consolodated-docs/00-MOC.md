@@ -49,6 +49,12 @@ Each folds many threads and concepts into one coherent argument.
 
 ---
 
+## Proposal planning (section-by-section strategy)
+
+Strategic planning mapped 1:1 to the proposal sections, built on this landscape → **[[00-proposal-planning-MOC|🎯 Proposal Planning]]** (global strategy + page budget + through-lines), then [[01-mission]] · [[02-technology-landscape]] · [[03-outcomes]] · [[04-senior-key-personnel]] · [[05-team-capabilities]] · [[06-summary]] · [[07-logistics-and-coi]].
+
+---
+
 ## The thread notes (medium-grain threads)
 
 - [[sensor-grounded-ontology]] · [[composition-over-inheritance]] · [[build-to-spec-vs-shared-protocols]] · [[the-two-traps]]

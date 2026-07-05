@@ -15,6 +15,7 @@ The vault uses a small, deliberately flat tag vocabulary so the Obsidian graph a
 - `#concept` — an atomic note defining one grounded term or idea.
 - `#citation` — a per-source note in `bibliography/`: what a cited source *is* and *why we cite it*, kept separate from the citing instances in the core notes. Each maps to a `@citekey` in `proposal/FMCF-NSF-XLABS.bib`.
 - `#index` — a lookup/navigation note (not about the domain, about the vault or its cast): [[glossary]], [[personnel]], [[_source-map]], [[_tag-legend]], [[_verification-punchlist]].
+- `#planning` — a proposal-planning module in `proposal-planning/`: a strategic outline for one proposal section (or the global plan). Advisory; not proposal prose.
 
 ## Topic tags
 - `#thesis` — the core instrument-not-software spine.
@@ -32,25 +33,4 @@ The vault uses a small, deliberately flat tag vocabulary so the Obsidian graph a
 - `#team` — personnel, collaborators, governance.
 - `#x-labs` — the solicitation, criteria, exclusions, proposal mechanics.
 
-## Cross-cutting trait tags (the "traits" of the conceptual space)
-
-These are **composable labels** applied *across* the folder hierarchy — the same dogfooding move as [[composition-over-inheritance]] and [[entity-component-system|ECS]]: a note's *type* and *topic* place it in the tree, but its **traits** are attached, not inherited, so a recurring idea (a trap, a precedent, a design lesson) is findable wherever it appears. Browse any one of these tags to pull every instance of that idea across the whole vault. **The vault dogfoods its own thesis** — we tag the conceptual space the way the instrument tags its measurements.
-
-- `#coinage` — a project-specific coined term ([[eaee|EAEE]], [[hydration]], [[complete-empirical-capture|CEC]]).
-- `#north-star` — an aspirational guiding principle, not a literal deliverable.
-- `#reframe` — a strategic reframing move that changes how a reviewer reads the work.
-- `#trap` — a seductive-but-wrong move to *avoid* (the inheritance trap, the adopt-the-standard trap).
-- `#anti-pattern` — a known-bad structure or failure mode (big-ball-of-mud, abandonware).
-- `#design-lesson` — a positive design principle to *follow*.
-- `#reusable-pattern` — a concrete architecture pattern to borrow (typed canonical model, separated registry/store/query).
-- `#precedent` — a worked external/historical example to emulate or cite (OBO, the Internet, JCTLM, LHC).
-- `#proof-at-scale` — evidence a pattern already works at large scale ([[maven-smart-system|Maven]], BIDS/NWB).
-- `#cautionary-tale` — a failure to steer around (Human Brain Project).
-- `#framing-hazard` — a way the pitch can misfire with reviewers if mishandled.
-
-## Modifier tags
-- `#verify` — the note contains a claim not yet confirmed; see [[_verification-punchlist]].
-- `#say` — 8-page discipline: **state explicitly** (earns the score / clears the exclusion).
-- `#allude` — 8-page discipline: **compress to a clause**; the depth lives in the oral round.
-
-See [[say-vs-allude]] for the say/allude rule of thumb.
+## Cross-cutt
