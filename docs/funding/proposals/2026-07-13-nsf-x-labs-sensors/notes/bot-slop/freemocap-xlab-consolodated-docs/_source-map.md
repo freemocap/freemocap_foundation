@@ -28,4 +28,6 @@ Crosswalk so nothing in the original series is orphaned. Left column = the origi
 | `notes/handy-*_transcript.txt` / `_video_summary.txt` | JSM voice source for [[the-thesis-instrument-not-software]], [[complete-empirical-capture]] |
 | official solicitation PDFs (`.md` ports) | [[nsf-x-labs-opportunity-and-fit]], [[the-software-exclusion]], [[autonomy-factor-test]] |
 
-**Bibliography:** the BibTeX blocks scattered through the briefing series (D2, D3, D4, D7, D10, D11 + inline links) were consolidated, deduped, and merged into **`proposal/FMCF-NSF-XLABS.bib`** (now 78 entries, `autho
+**Bibliography:** the BibTeX blocks scattered through the briefing series (D2, D3, D4, D7, D10, D11 + inline links) were consolidated, deduped, and merged into **`proposal/FMCF-NSF-XLABS.bib`** (now 78 entries, `authorYYYY` keys, all biblatex format). Each entry has a companion `#citation` note under `bibliography/` — see [[00-bibliography-index]]. This is the one core-repo artifact the vault work modified (Jon-authorized).
+
+**Not consolidated (left as-is):** the proposal `.typ` files, the `_HANDOFF-consolidation.md`, and the `.html` visualizations — either core documents (off-limits) or build artifacts.

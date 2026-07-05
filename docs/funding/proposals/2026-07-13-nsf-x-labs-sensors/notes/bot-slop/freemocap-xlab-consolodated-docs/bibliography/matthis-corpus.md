@@ -19,4 +19,6 @@ An overview of the 12 pre-existing bib entries (already in `FMCF-NSF-XLABS.bib`)
 
 **The theory & binocular anchors:** `@warren2006` (behavioral dynamics — the agent–environment coupled-dynamical-systems frame) · `@bonnen2021` (binocular vision in foothold selection).
 
-**Why we cite this corpus:** It is the **demonstrated record of success** NSF's criteria reward — the [[naturalistic-neuroscience|naturalistic]], multimodal, calibrated capture the instrument generalizes, and the PI's [[personnel|qualifications]]. The retinal-optic-flow analysis is the "scientific unlock" the [[proposal-section-scaffold|Outcomes]] promi
+**Why we cite this corpus:** It is the **demonstrated record of success** NSF's criteria reward — the [[naturalistic-neuroscience|naturalistic]], multimodal, calibrated capture the instrument generalizes, and the PI's [[personnel|qualifications]]. The retinal-optic-flow analysis is the "scientific unlock" the [[proposal-section-scaffold|Outcomes]] promises to make routine and cross-species.
+
+**Related:** [[personnel]] · [[naturalistic-neuroscience]] · [[sensor-grounded-ontology]] · [[freemocap]] · [[metrology-and-traceability]]

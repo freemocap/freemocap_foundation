@@ -48,4 +48,4 @@ The two wings + animal labs are a **single distributed instrument** because they
 ## Open questions (JSM's call — don't invent) `#verify`
 Facility buy-vs-lease + Boston location + budget/phasing; primate collaborator; IRB/IACUC across the network; drone-swarm FAA/airspace + Phase-1-vs-later scope (highest-risk element); per-species eye-tracker DOF targets. See [[_verification-punchlist]].
 
-**Related:** [[the-validation-triangle]] · [[next-generation-eye-trackers]] · [[comparative-phylogeny
+**Related:** [[the-validation-triangle]] · [[next-generation-eye-trackers]] · [[comparative-phylogeny-and-ecs]] · [[personnel]] · [[tiered-dissemination-and-communal-science]] · [[metrology-and-traceability]]
