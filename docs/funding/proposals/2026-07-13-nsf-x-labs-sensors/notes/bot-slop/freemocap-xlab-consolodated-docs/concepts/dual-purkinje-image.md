@@ -1,5 +1,5 @@
 ---
-tags: [concept, instrument, metrology]
+tags: [concept, instrument, metrology, design-lesson, verify]
 aliases: [Dual Purkinje Image, DPI, Purkinje imaging]
 type: concept
 ---

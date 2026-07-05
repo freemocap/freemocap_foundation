@@ -1,5 +1,5 @@
 ---
-tags: [concept, thesis, instrument]
+tags: [concept, thesis, instrument, coinage, north-star, reframe]
 aliases: [Complete Empirical Capture, CEC, the new observable]
 type: concept
 ---

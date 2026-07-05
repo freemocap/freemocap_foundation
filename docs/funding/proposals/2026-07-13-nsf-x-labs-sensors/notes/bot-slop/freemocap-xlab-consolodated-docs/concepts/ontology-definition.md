@@ -1,5 +1,5 @@
 ---
-tags: [concept, architecture, ontology]
+tags: [concept, architecture, ontology, design-lesson]
 aliases: [Ontology, ontological object, ontological model, Gruber definition]
 type: concept
 ---

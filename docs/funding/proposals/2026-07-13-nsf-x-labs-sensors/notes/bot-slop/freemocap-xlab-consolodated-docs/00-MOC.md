@@ -8,7 +8,7 @@ status: living-document
 # 🗺️ Map of Content — FreeMoCap X-Lab Consolidated Landscape
 
 > [!note] What this vault is
-> A **consolidated, cross-linked rewrite** of the scattered `notes/bot-slop/` briefing series (the `[D1]`–`[D12]` docs, the master strategic briefing, the sketch synthesis, and the working outline), reorganized into a small-world network of interlinked notes for the **NSF X-Labs Topic 2** proposal (*Scientific Instrumentation for Sensing and Imaging*). Lead org: **FreeMoCap Foundation**. PI: **[[dramatis-personae|JSM]]**. Written-proposal deadline: **2026-07-13**.
+> A **consolidated, cross-linked rewrite** of the scattered `notes/bot-slop/` briefing series (the `[D1]`–`[D12]` docs, the master strategic briefing, the sketch synthesis, and the working outline), reorganized into a small-world network of interlinked notes for the **NSF X-Labs Topic 2** proposal (*Scientific Instrumentation for Sensing and Imaging*). Lead org: **FreeMoCap Foundation**. PI: **[[personnel|JSM]]**. Written-proposal deadline: **2026-07-13**.
 >
 > This is **advisory scaffolding — "bot slop by definition."** It is *not* proposal prose and does not replace the `proposal/**/*.typ` files. Everything here exists to help structure, plan, and pressure-test the argument.
 
@@ -81,8 +81,9 @@ Each folds many threads and concepts into one coherent argument.
 
 ## Reference
 
+- **[[00-bibliography-index|📚 Bibliography Index]]** — the reference layer: one `#citation` note per source (contents + why-we-cite-it), each mapping to a `@citekey` in `proposal/FMCF-NSF-XLABS.bib`. Kept separate from the citing instances in the core notes.
 - **[[glossary]]** — every named tool, standard, person, and acronym in the landscape.
-- **[[dramatis-personae]]** — personnel & collaborators (by initials, per repo privacy convention).
+- **[[personnel]]** — personnel & collaborators (by initials, per repo privacy convention).
 - **[[_source-map]]** — which original `bot-slop` doc feeds which consolidated note.
 - **[[_verification-punchlist]]** — claims flagged `#verify` that only JSM / a citation check can settle.
 - **[[_tag-legend]]** — the tag taxonomy used across the vault.
@@ -92,8 +93,4 @@ Each folds many threads and concepts into one coherent argument.
 ## Tag legend (quick)
 
 `#thesis` `#architecture` `#ontology` `#instrument` `#metrology` `#landscape` `#competition` `#funding-structure` `#dissemination` `#education` `#philosophy` `#biology` `#team` `#x-labs` — topic tags.
-`#concept` `#thread` `#integrative` `#reference` `#moc` — note-type tags.
-`#verify` — contains an unconfirmed claim (see [[_verification-punchlist]]).
-`#say` / `#allude` — 8-page discipline: state explicitly vs. compress to a clause (see [[say-vs-allude]]).
-
-See [[_tag-legend]] for the full taxonomy.
+`#concept` `#thread` `#integrative` `#refere

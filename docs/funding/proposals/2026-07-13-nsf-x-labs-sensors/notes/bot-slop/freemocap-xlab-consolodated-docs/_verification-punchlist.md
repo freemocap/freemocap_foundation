@@ -1,7 +1,7 @@
 ---
-tags: [reference, verify]
+tags: [index, verify]
 aliases: [Verification Punchlist, Open Items, Verify]
-type: reference
+type: index
 ---
 
 # ✅ Verification Punchlist
@@ -25,9 +25,9 @@ Load-bearing items that only **JSM** or a real citation/fact check can settle. C
 - [ ] "Bacteria as agent" is deliberate framing, flag as such.
 
 ## People / identity
-- [ ] **Initials mapping** against local `.env` — esp. guinea-fowl lead "D" = **M.D.**; primate collaborator initials **TBD**. See [[dramatis-personae]].
+- [ ] **Initials mapping** against local `.env` — esp. guinea-fowl lead "D" = **M.D.**; primate collaborator initials **TBD**. See [[personnel]].
 - [ ] **JSM author-lineage** (philosophy BA → CogSci PhD in the Gibson/Warren line → Hayhoe → Dynamic Walking) — from JSM's own account; confirm phrasing.
-- [ ] **JSM credentials** ([[dramatis-personae]]): NEI/NIH K99/R00; leaving TT faculty at Northeastern — confirm current status.
+- [ ] **JSM credentials** ([[personnel]]): NEI/NIH K99/R00; leaving TT faculty at Northeastern — confirm current status.
 
 ## Evidence hedges to keep
 - [ ] **AI-tutoring & LLM-log-anomaly claims** ([[bloom-2-sigma]], [[ontology-grounded-qc-copilot]]) rest on early/mixed evidence — keep the hedges; don't overclaim "2σ."

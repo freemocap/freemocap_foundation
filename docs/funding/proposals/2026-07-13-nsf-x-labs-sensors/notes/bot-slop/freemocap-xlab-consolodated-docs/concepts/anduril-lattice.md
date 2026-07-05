@@ -1,5 +1,5 @@
 ---
-tags: [concept, architecture, ontology]
+tags: [concept, architecture, ontology, reusable-pattern, precedent]
 aliases: [Anduril Lattice, Lattice, entity-component model, Lattice Mesh]
 type: concept
 ---
@@ -19,4 +19,6 @@ Anduril's own docs concede **"ontology alignment remains a work in progress"** �
 
 **The scientific mapping:** materialize-and-index ([[palantir-ontology|Palantir]]) vs. edge-fuse-and-mesh (Lattice) = the same **consistency ↔ latency ↔ resilience** triangle as an offline richly-queryable scientific record vs. real-time closed-loop experimentation. A mature platform likely needs both.
 
-**Related:** [[palantir-ontology]] · [[entity-component-system]] · [[architectural-paradigm-operational-semantic-layer]]
+
+
+**Related:** [[palantir-ontology]] · [[Science - Military tech alignment]] · [[entity-component-system]] · [[architect

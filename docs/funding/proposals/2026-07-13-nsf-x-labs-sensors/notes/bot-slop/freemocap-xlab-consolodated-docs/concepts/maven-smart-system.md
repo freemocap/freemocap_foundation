@@ -1,5 +1,5 @@
 ---
-tags: [concept, architecture]
+tags: [concept, architecture, precedent, proof-at-scale, framing-hazard]
 aliases: [Maven Smart System, MSS, Project Maven]
 type: concept
 ---

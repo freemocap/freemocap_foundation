@@ -1,5 +1,5 @@
 ---
-tags: [concept, architecture, funding-structure]
+tags: [concept, architecture, funding-structure, design-lesson, precedent]
 aliases: [Narrow Waist, Thin Waist, Hourglass Model]
 type: concept
 ---

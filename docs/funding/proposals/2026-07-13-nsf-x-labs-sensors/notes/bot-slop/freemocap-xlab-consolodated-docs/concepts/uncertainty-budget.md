@@ -1,5 +1,5 @@
 ---
-tags: [concept, metrology, instrument]
+tags: [concept, metrology, instrument, design-lesson]
 aliases: [Uncertainty Budget, Measurement Uncertainty, Uncertainty propagation]
 type: concept
 ---

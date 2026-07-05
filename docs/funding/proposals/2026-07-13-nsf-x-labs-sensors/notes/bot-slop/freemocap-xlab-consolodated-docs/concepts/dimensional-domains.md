@@ -1,5 +1,5 @@
 ---
-tags: [concept, thesis, biology]
+tags: [concept, thesis, biology, coinage, design-lesson]
 aliases: [Dimensional Domains, dimensional domain]
 type: concept
 ---

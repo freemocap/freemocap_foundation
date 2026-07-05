@@ -1,5 +1,5 @@
 ---
-tags: [concept, thesis, landscape, architecture]
+tags: [concept, thesis, landscape, architecture, reframe, design-lesson]
 aliases: [Missing Middle, The Missing Middle, operational layer gap]
 type: concept
 ---

@@ -1,5 +1,5 @@
 ---
-tags: [concept, architecture, funding-structure]
+tags: [concept, architecture, funding-structure, design-lesson, precedent, trap]
 aliases: [Worse is Better, build to spec, rough consensus and running code]
 type: concept
 ---

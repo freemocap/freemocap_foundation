@@ -1,5 +1,5 @@
 ---
-tags: [concept, metrology, instrument]
+tags: [concept, metrology, instrument, design-lesson, reframe]
 aliases: [Metrological Traceability, Traceability, Traceability chain]
 type: concept
 ---

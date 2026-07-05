@@ -1,5 +1,5 @@
 ---
-tags: [concept, architecture, ontology]
+tags: [concept, architecture, ontology, reusable-pattern, precedent, proof-at-scale]
 aliases: [Palantir Ontology, Foundry, Gotham, AIP]
 type: concept
 ---
@@ -19,6 +19,7 @@ Palantir's central abstraction — a "digital twin of an organization," a **sema
 
 **Reusable design ideas:** separate **registry / instance store / query service** (the single most transferable idea); **security as a propagating data property** (markings flow along lineage — essential for human-subjects data); **materialize-and-index** for consistency + rich query.
 
-**Why *not* RDF/OWL:** Palantir needed *verbs and governance*, closed-world determinism, and materialized speed — so it built a property-graph-flavored, write-capable system. The same split recurs inside neuroscience ([[the-ontology-question-in-science]]).
+**Why *not* RDF/OWL:** Palantir needed *verbs and governance*, closed-world determinism, and materialized speed — so it built a property-graph-flavored, write-capable system. The same split recurs inside neuroscience ([[the-ontology-question-in-science]], [[worse-is-better]]).
 
-**Related:** [[architectural-paradigm-operational-semantic-layer]] · [[anduril-lattice]] · [[maven-smart-system]] · [[ontology-definition]]
+
+Mistake - Adopt shared standards [[lab-streaming-layer]] etc too early - leads to problems [[worse-is-better|build to spe

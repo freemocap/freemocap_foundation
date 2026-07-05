@@ -1,5 +1,5 @@
 ---
-tags: [concept, architecture]
+tags: [concept, architecture, design-lesson]
 aliases: [Digital Twin, two digital-twin traditions]
 type: concept
 ---

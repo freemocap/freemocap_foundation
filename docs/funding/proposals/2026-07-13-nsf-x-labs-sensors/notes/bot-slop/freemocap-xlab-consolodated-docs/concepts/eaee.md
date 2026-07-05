@@ -1,5 +1,5 @@
 ---
-tags: [concept, ontology, philosophy, instrument]
+tags: [concept, ontology, philosophy, instrument, coinage]
 aliases: [EAEE, Empirically Available Environmental Energy]
 type: concept
 ---

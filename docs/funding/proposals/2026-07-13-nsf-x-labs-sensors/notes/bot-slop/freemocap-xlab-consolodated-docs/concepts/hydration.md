@@ -1,5 +1,5 @@
 ---
-tags: [concept, ontology, philosophy]
+tags: [concept, ontology, philosophy, coinage, design-lesson]
 aliases: [Hydration, Hydrate, un-hydrated]
 type: concept
 ---

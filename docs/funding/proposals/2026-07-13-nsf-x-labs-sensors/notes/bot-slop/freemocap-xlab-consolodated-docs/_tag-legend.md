@@ -1,7 +1,7 @@
 ---
-tags: [reference, moc]
+tags: [index, moc]
 aliases: [Tag Legend, Tags]
-type: reference
+type: index
 ---
 
 # 🏷️ Tag Legend
@@ -13,6 +13,7 @@ The vault uses a small, deliberately flat tag vocabulary so the Obsidian graph a
 - `#integrative` — a large document that weaves many threads into one argument (the seven backbone docs).
 - `#thread` — a medium note developing one recurring thread.
 - `#concept` — an atomic note defining one grounded term or idea.
+- `#citation` — a per-reference note in `references/`: what a cited source *is* and *why we cite it*, kept separate from the citing instances in the core notes. Each maps to a `@citekey` in `proposal/FMCF-NSF-XLABS.bib`.
 - `#reference` — glossary / personnel / crosswalk / admin.
 
 ## Topic tags
@@ -31,9 +32,6 @@ The vault uses a small, deliberately flat tag vocabulary so the Obsidian graph a
 - `#team` — personnel, collaborators, governance.
 - `#x-labs` — the solicitation, criteria, exclusions, proposal mechanics.
 
-## Modifier tags
-- `#verify` — the note contains a claim not yet confirmed; see [[_verification-punchlist]].
-- `#say` — 8-page discipline: **state explicitly** (earns the score / clears the exclusion).
-- `#allude` — 8-page discipline: **compress to a clause**; the depth lives in the oral round.
+## Cross-cutting trait tags (the "traits" of the conceptual space)
 
-See [[say-vs-allude]] for the say/allude rule of thumb.
+These are **composable labels** applied *across* the folder hierarch

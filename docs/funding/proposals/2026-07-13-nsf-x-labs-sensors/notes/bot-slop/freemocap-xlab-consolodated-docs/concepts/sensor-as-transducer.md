@@ -1,5 +1,5 @@
 ---
-tags: [concept, metrology, instrument, ontology]
+tags: [concept, metrology, instrument, ontology, design-lesson]
 aliases: [Sensor as Transducer, Transducer, Transduction]
 type: concept
 ---

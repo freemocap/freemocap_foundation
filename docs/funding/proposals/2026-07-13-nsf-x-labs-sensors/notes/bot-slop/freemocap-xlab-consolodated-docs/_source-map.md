@@ -1,7 +1,7 @@
 ---
-tags: [reference, moc]
+tags: [index, moc]
 aliases: [Source Map, Crosswalk, Provenance]
-type: reference
+type: index
 ---
 
 # 🧭 Source Map — original bot-slop docs → consolidated notes
@@ -24,8 +24,8 @@ Crosswalk so nothing in the original series is orphaned. Left column = the origi
 | `[D10]` conceptual-cleanliness-education-ai-kuhn | [[conceptual-cleanliness-four-audiences]], [[bloom-2-sigma]], [[boundary-objects]], [[kuhn-paradigm-shift]] |
 | `[D11]` ai-observability-debugging-assistant | [[ontology-grounded-qc-copilot]] |
 | `[D12]` physical-facility-and-animal-collaborations | [[the-physical-instrument-boston-flagship-and-network]], [[next-generation-eye-trackers]], [[the-validation-triangle]], [[dual-purkinje-image]] |
-| `notes/old/2026-nsf-xlabs-outline.md` | [[proposal-section-scaffold]], [[freemocap]], [[dimensional-domains]], [[dramatis-personae]] |
+| `notes/old/2026-nsf-xlabs-outline.md` | [[proposal-section-scaffold]], [[freemocap]], [[dimensional-domains]], [[personnel]] |
 | `notes/handy-*_transcript.txt` / `_video_summary.txt` | JSM voice source for [[the-thesis-instrument-not-software]], [[complete-empirical-capture]] |
 | official solicitation PDFs (`.md` ports) | [[nsf-x-labs-opportunity-and-fit]], [[the-software-exclusion]], [[autonomy-factor-test]] |
 
-**Not consolidated (left as-is):** the proposal `.typ` files, `FMCF-NSF-XLABS.bib`, the `_HANDOFF-consolidation.md`, and the `.html` visualizations — these are either core documents (off-limits) or build artifacts.
+**Bibliography:** the BibTeX blocks scattered through the briefing series (D2, D3, D4, D7, D10, D11 + inline links) were consolidated, deduped, and merged into **`proposal/FMCF-NSF-XLABS.bib`** (now 78 entries, `autho

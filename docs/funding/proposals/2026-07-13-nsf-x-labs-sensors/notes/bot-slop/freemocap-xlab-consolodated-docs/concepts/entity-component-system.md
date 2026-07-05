@@ -1,5 +1,5 @@
 ---
-tags: [concept, architecture, ontology, biology]
+tags: [concept, architecture, ontology, biology, reusable-pattern, design-lesson]
 aliases: [ECS, Entity-Component-System, entity-component, bag of components]
 type: concept
 ---

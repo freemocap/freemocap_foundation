@@ -1,5 +1,5 @@
 ---
-tags: [concept, philosophy]
+tags: [concept, philosophy, coinage, north-star]
 aliases: [Capital-T True Facts, True Facts, Desiderata]
 type: concept
 ---

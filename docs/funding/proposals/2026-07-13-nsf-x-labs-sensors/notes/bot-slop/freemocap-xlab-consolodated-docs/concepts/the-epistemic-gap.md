@@ -1,5 +1,5 @@
 ---
-tags: [concept, philosophy]
+tags: [concept, philosophy, coinage]
 aliases: [Epistemic Gap, Metaphysics vs Epistemology]
 type: concept
 ---
