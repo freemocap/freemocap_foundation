@@ -103,13 +103,13 @@ the loom.[TODO - This also sucks. content ok, needs rewrite]]
 #let fracture_need_a = [#semibold[What is needed is a new class of scientific
 instrument]: a calibrated, synchronized, semantically-unified recording of the
 complete agent-environment interaction — every empirically available channel
-of an agent's sensory/perceptual input and motor/mechanical output captured, calibrated, and processed with metrologically-grounded, truth-preserving pipelines into a unified scientific ontology.]
+of an agent's sensory/perceptual input and motor/mechanical output captured, calibrated, and processed with metrologically-grounded, truth-preserving pipelines into a unified scientific ontology [TODO - Clarity, Awk, Run-on, overloaded].]
 
-// Angle B — capability-first (leads with what it lets you do)
-#let fracture_need_b = [#semibold[What is needed is the ability to measure the
-whole loop at once] — perception, kinematics, kinetics, and neural activity of
-a behaving agent, jointly and commensurably — which requires not a better
-sensor but a new class of instrument that unifies them.]
+// // Angle B — capability-first (leads with what it lets you do)
+// #let fracture_need_b = [#semibold[What is needed is the ability to measure the
+// whole loop at once] — perception, kinematics, kinetics, and neural activity of
+// a behaving agent, jointly and commensurably — which requires not a better
+// sensor but a new class of instrument that unifies them.]
 
 // #PICK[Keep BOTH gap prongs — they are your two selection criteria in miniature
 // (technical = C1, structural = C2/the "why a full-time team" argument). The
