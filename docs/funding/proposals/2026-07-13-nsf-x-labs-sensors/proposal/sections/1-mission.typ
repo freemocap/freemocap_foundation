@@ -137,8 +137,7 @@ commensurable rather than merely co-recorded.
 // The term "Complete" is intentionally aspirational; a dream of perfect Knowledge as we compose our own limited set of imperfect transducers to fan-in metrologically-traceable pipelines from hetereogenous sensors into a single fitted model.
 
 
- Because the instrument is defined by its ontology rather
-than its hardware, different sets of transducers may hydrate 
+ Because the instrument is defined by its ontology rather than its hardware, measurements for differnt sensor systems may hydrate the same model.
 
 Camera- and IMU-based motion capture each measure the same `Human` kinematics (albeit with different noise profiles). A `Head` has `Eyes` even if the participant did not wear an eye-tracker. An `Eye` defines Torsion, and LensAcomodation, even if the current era of eye trackers can only estimate `Adduction` and `Elevation.` And then once we build a better eye tracker that *can* record torsion, we can train a model relating Torsion <-> Adduction <-> Elevation and use it to backfill older data as a way to test next generation of  theories against the previous generation's  data. [TODO - Good content, some of the detail may want to move to a different section. Should allude to the concept of 'partial hydration' when talking about the Head/Eye/Torsion thing, like incomplete data partially hydrates the complete model] ]
 
