@@ -126,7 +126,7 @@ of an agent's sensory/perceptual input and motor/mechanical output captured, cal
 // ════════════════════════════════════════════════════════════════════════
 
 // Angle A — the "capture volume" as the instrument (most concrete)
-#let instrument_a = [We call the instrument a #semibold[Complete Empirical
+#let instrument_a = [We call the instrument a #semibold[Dense Empirical
 Capture Volume]: a densely instrumented region of real-world space engineered
 to record every measurable channel of the agent-environment interaction at
 once — binocular gaze and reconstructed retinal input, full-body kinematics
@@ -134,7 +134,7 @@ and kinetics, muscle and motor-unit activation, and central and peripheral
 neural activity — all spatially calibrated, temporally synchronized, and
 expressed in a single sensor-grounded ontology so the channels are directly
 commensurable rather than merely co-recorded. 
-// The term "Complete" is intentionally aspirational; a dream of perfect Knowledge as we compose our own limited set of imperfect transducers to fan-in metrologically-traceable pipelines from hetereogenous sensors into a single fitted model.
+
 
 
  Because the instrument is defined by its ontology rather than its hardware, measurements for differnt sensor systems may hydrate the same model.
