@@ -17,8 +17,6 @@ An **entity = a bag of components**; **no inheritance hierarchy** — presence o
 
 Anduril's own docs concede **"ontology alignment remains a work in progress"** — i.e. the shared vocabulary is the hard part, not the plumbing. A useful, honest note for our own [[the-ontology-question-in-science|ontology question]].
 
-**The scientific mapping:** materialize-and-index ([[palantir-ontology|Palantir]]) vs. edge-fuse-and-mesh (Lattice) = the same **consistency ↔ latency ↔ resilience** triangle as an offline richly-queryable scientific record vs. real-time closed-loop experimentation. A mature platform likely needs both.
+**The scientific mapping:** materialize-and-index ([[palantir-ontology|Palantir]]) vs. edge-fuse-and-mesh (Lattice) = the same **consistency ↔ latency ↔ resilience** triangle as an offline richly-queryable scientific record vs. real-time closed-loop experimentation. A mature platform likely needs both. On *why* we borrow this architecture at all, see [[science-military-coevolution]].
 
-
-
-**Related:** [[palantir-ontology]] · [[Science - Military tech alignment]] · [[entity-component-system]] · [[architect
+**Related:** [[palantir-ontology]] · [[Science - Military tech alignment]] · [[entity-component-system]] · [[architectural-paradigm-operational-semantic-layer]]

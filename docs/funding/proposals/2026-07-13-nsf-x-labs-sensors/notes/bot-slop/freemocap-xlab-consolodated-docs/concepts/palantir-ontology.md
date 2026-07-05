@@ -21,5 +21,7 @@ Palantir's central abstraction — a "digital twin of an organization," a **sema
 
 **Why *not* RDF/OWL:** Palantir needed *verbs and governance*, closed-world determinism, and materialized speed — so it built a property-graph-flavored, write-capable system. The same split recurs inside neuroscience ([[the-ontology-question-in-science]], [[worse-is-better]]).
 
+> [!note] JSM margin note
+> Mistake — adopting shared standards ([[lab-streaming-layer|LSL]] etc.) too early leads to problems; [[worse-is-better|build to spec, standardize later]] instead. See [[the-two-traps]].
 
-Mistake - Adopt shared standards [[lab-streaming-layer]] etc too early - leads to problems [[worse-is-better|build to spe
+**Related:** [[architectural-paradigm-operational-semantic-layer]] · [[anduril-lattice]] · [[maven-smart-system]] · [[ontology-definition]]

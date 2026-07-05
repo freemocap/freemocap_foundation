@@ -1,6 +1,6 @@
 ---
 tags: [thread, architecture, x-labs, reframe, framing-hazard]
-aliases: [Science-Military Coevolution, why cite Anduril, miltech analogy rationale]
+aliases: [Science-Military Coevolution, "Science - Military tech alignment", why cite Anduril, miltech analogy rationale]
 type: thread
 ---
 
