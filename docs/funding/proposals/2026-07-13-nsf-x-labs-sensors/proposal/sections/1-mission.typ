@@ -138,14 +138,14 @@ commensurable rather than merely co-recorded.
 
  Markered, markerless, and IMU motion capture each measure the same `Human` kinematics (albeit with different noise profiles). A `Head` has `Eyes` even if the participant did not wear an eye-tracker. An `Eye` defines Torsion, and LensAcomodation, even if the current era of eye trackers can only estimate `Adduction` and `Elevation.` And then once we build a better eye tracker that *can* record torsion, we can train a model relating Torsion <-> Adduction <-> Elevation and use it to backfill older data as a way to test next generation of  theories against the previous generation's  data. [TODO - Good content, some of the detail may want to move to a different section ] ]
 
-// Angle B — the "what makes it ONE instrument" framing (the integration claim)
-#let instrument_b = [The novelty is not any single sensor but the
-#semibold[integration itself]: what turns a room full of instruments into one
-instrument is a shared, metrologically-traceable pipeline that carries every
-measurement — from raw sensor to fitted model — with its coordinate frame, its
-timestamp, its uncertainty, and its semantic identity intact, so that a gaze
-vector and a joint torque measured by different hardware describe the same
-event in the same terms.]
+// // Angle B — the "what makes it ONE instrument" framing (the integration claim)
+// #let instrument_b = [The novelty is not any single sensor but the
+// #semibold[integration itself]: what turns a room full of instruments into one
+// instrument is a shared, metrologically-traceable pipeline that carries every
+// measurement — from raw sensor to fitted model — with its coordinate frame, its
+// timestamp, its uncertainty, and its semantic identity intact, so that a gaze
+// vector and a joint torque measured by different hardware describe the same
+// event in the same terms.]
 
 // Angle C — the "scale-free ontology" framing (sets up the cross-species build)
 #let instrument_c = [Because the instrument is defined by its ontology rather
