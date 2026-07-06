@@ -1,0 +1,115 @@
+# Mission Section — Structural Outline (v2 reorientation)
+
+**Proposal:** NSF X-Labs Initiative · Topic 2 (Scientific Instrumentation for Sensing and Imaging) · Written Proposal §1 (Mission)
+**Length budget:** ~1.5–2 pp of the 8-page total. Everything marked `[DEFER]` moves to §2 Technology Landscape, §3 Outcomes, or §5 Team Capabilities.
+**Working name:** the **DOME** (provisional expansion: *Dense Observational Measurement Environment*) — the word carries an observatory/instrument-enclosure resonance that rhymes with the Topic's "telescope"; the backronym is secondary. Variants: **DOME-L** (Large / warehouse flagship), **DOME-S** (Standard / lab-and-classroom scale), **DOME-W** (Wearable / walking).
+
+---
+
+## PART A — What the Mission must accomplish (the design constraints it is tuned to)
+
+**The four claims the section must land** (from the template §1 + OTASO §11.2 criteria C1–C4):
+
+1. **A novel platform technology this X-Lab is *uniquely suited* to advance.** → the DOME (a physical, sensor-grounded instrumented capture volume). *Hits C1 (ambitious + technically sound + well-defined), and clears the software-exclusion by being self-evidently hardware.*
+2. **A new capability / observable that wasn't knowable before.** → *complete empirical capture of the agent–environment interaction* as a single calibrated object. *Hits the Topic's own "revolution in what we can measure" register; this is the sentence that makes it sensing-and-imaging, not software.*
+3. **A vision / end-state that reshapes a field of science *or a sector of technology*.** → a convergent science of real-world sensorimotor control **and** the grounded corpora embodied-AI/robotics needs. *Hits C3; deliberately claims both halves the template offers.*
+4. **Why the Mission is unmet by existing organizational structures and funding.** → tools must be built by masters not trainees (structure mismatch) + the right scope is the *measurement* not the *domain* (which makes a commons) + FreeMoCap already proved both at smaller scale. *Hits C2 (justifies a full-time team) and C4.*
+
+**Topic-2 fit rules the section must satisfy (and be seen to satisfy):**
+- **Match the opening register** — "every revolution in science preceded by a revolution in measurement (telescope → MRI)." Echo it deliberately in Beat 2.
+- **Hit an explicit in-scope example** — "instruments intentionally engineered for next-generation AI training pipelines" (the robot/RL loop) and "sensors to resolve whole-brain activity … across long timescales" (the animal-network ephys + longitudinal trackers). Name-check both obliquely.
+- **Stay clear of every out-of-scope trap:** not software-without-integration (→ lead hardware-first), not incremental (→ the *new unified observable* + the must-build transducers, never "a better mocap tool"), not narrow (→ the tiered/open commons), not fundamental-research-only (→ platform technology positioned for widespread use).
+
+**Discipline throughout:** `[SAY]` = state it plainly in the Mission. `[ALLUDE]` = one clause, then let a later section carry it. `[DEFER]` = do not put it in the Mission at all.
+
+---
+
+## PART B — The beat-by-beat structure
+
+### Beat 0 — The formal Mission statement (boxed, top of section) `[SAY]`
+*Job: one crisp, quotable sentence a reviewer repeats back. Do not cram the ontology in — the beats below do that.*
+- Candidate line (see Part C for full options): *"…build a new class of scientific instrument — the DOME — that renders the complete, calibrated, synchronized interaction between an agent and its environment measurable for the first time, and the open organization that can sustain it, unifying the study of perception and action across humans, animals, and machines into a single science of real-world sensorimotor control."*
+
+### Beat 1 — Hook: the universal loop `[SAY]`
+*Job: define the topic and hook the reader in one move. Keep the existing hook — it works.*
+- Keep: *"Every living and engineered agent solves the same problem: it senses a thin slice of the energy in its environment through imperfect transducers, and on that basis generates forces against a substrate to propel itself toward its goal."*
+- Land the payoff line: *"Information flows in, forces flow out; the brain exists to yank the bones around."*
+- One-sentence bridge to measurement: *this loop — perception into action, continuously, in the real world — is the thing we have never been able to record whole.*
+
+### Beat 2 — The measurement-revolution frame + the un-instrumented frontier `[SAY]`
+*Job: plant the flag in the Topic's own soil; establish this as a sensing-and-imaging problem from sentence one. Hits Topic register + Claim 2 setup.*
+- Echo the Topic: *measurement revolutions precede scientific revolutions — the telescope, the microscope, MRI each made a new class of phenomenon knowable.*
+- Name the frontier: *today the un-instrumented frontier is not the very small or the very distant — it is the whole behaving agent in its natural environment* (ties to naturalistic/real-world neuroscience, the field's stated frontier — the wind at our back).
+- Set up the gap: *every thread of that loop is measurable in isolation; none of them together.*
+
+### Beat 3 — The fracture: name what is impossible today `[SAY]`
+*Job: the "new measurable" argument. This is the elevated, load-bearing version of the old `gap_technical` — promote it, do not cut it. Hits Claim 2.*
+- Honor the fields (your reviewers built them), briefly: *perceptuomotor neuroscience, musculoskeletal biomechanics, and legged robotics have each built superb instruments — each measuring its own thread with extraordinary precision.*
+- Name the impossibility (the key sentences): *but no instrument captures the loop whole. The threads live in incompatible coordinate frames, on unsynchronized clocks, under semantic schemes that don't talk to each other — so the single most basic question, **what did this agent see, and what did it therefore do**, has no calibrated, unified answer.*
+- The thesis line: **"The fracture is in the measurement itself, not merely in the sociology of the fields."**
+- Hinge: *what is needed is a new class of instrument — one that captures every empirically available channel of an agent's perception and action at once, and renders them commensurable.*
+
+### Beat 4 — The DOME: the novel platform technology (HERO — hardware first) `[SAY]`
+*Job: name the buildable physical thing; clear the software-exclusion by construction; show the instrument drives its own new-transducer development. Hits Claim 1 + the in-scope "AI-training instrument" adjacency. This is the longest beat.*
+- **Lead with the physical object, not the ontology:** *we call the instrument the **DOME**: a densely instrumented region of real-world space engineered to record every measurable channel of the agent–environment interaction at once — full-body kinematics and kinetics, muscle and motor-unit activity, binocular gaze and reconstructed retinal input, and, where feasible, central and peripheral neural activity — all spatially calibrated, temporally synchronized, and expressed in one sensor-grounded ontology.*
+- **The three variants (one instrument, three scales/forms):** `[SAY, brief]`
+  - **DOME-L** — a warehouse-scale flagship in Boston, built large enough to *contain and cross-validate* the smaller variants, so it doubles as the metrology and validation platform for the whole network. *(This is the mission-justified reason the footprint must be warehouse-scale — not "bigger is better.")*
+  - **DOME-S** — the standard, lab-and-classroom-scale instrument that other labs and users actually deploy (the dissemination target the flagship validates).
+  - **DOME-W** — the wearable/mobile variant (IMU suit + mobile eye tracker + world camera) that takes calibrated capture out of the room and into natural terrain, extending the PI's outdoor gaze/gait lineage. `[ALLUDE]` — mention the drone-swarm terrain-grounding as *one high-reach element*, scoped to later phases; do not promise it here. `[DEFER details]`
+- **The ontology as *how it scales*, in a clause, not a hero:** `[ALLUDE]` *because the instrument is defined by its ontology rather than any one sensor, different sensor systems hydrate the same model — a camera-based and an IMU-based estimate describe the same `Human` kinematics with different uncertainty, and fuse into one; the model aligns measurements across sensor generations and across species.*
+- **The flagship new transducer — the eye tracker (the clean "sensing and imaging" win):** `[SAY]`
+  - The gap: *current mobile eye trackers are old, closed, and top out around a degree of error — and whole degrees of freedom (ocular torsion, lens accommodation) go **unmeasured at any price**.*
+  - Why it matters (not optional): *torsion is active essentially 100% of the time during natural locomotion (VOR), and accurate reconstruction of what actually lands on the retina requires it* — the PI's own retinal-optic-flow work is the paradigm case.
+  - The bet, framed correctly: **"a camera-quality bet, not a physics bet"** — *smartphones prove tiny, fast, cheap, high-resolution cameras exist; eye trackers simply never adopted them. Put modern imaging behind controlled illumination and the two 'unreachable' DOFs become tractable in a mobile tracker.*
+  - The payoff that reads as instrumentation *and* data-longevity: *the instrument's ontology defines slots (torsion, accommodation) that no existing sensor fills; the DOME tells us which sensor to build next — and once built, the archive improves retroactively as models back-predict the newly measurable channels for older recordings.*
+  - Credibility anchor `[ALLUDE]`: *we have already built plausibly the best-in-world eye trackers for ferret and mouse — track record, not blue-sky.* `[DEFER specifics to §4/§5]`
+
+### Beat 5 — The closed experimental loop (allude) `[ALLUDE]`
+*Job: this is the framing upgrade — the DOME is not an observation instrument, it is a full experimental instrument. Converts "agentic AI" from buzzword to closed ecosystem; hits the in-scope "AI-training-pipeline" example. One tight paragraph; Outcomes develops the five stations.*
+- Prepackaged for AI: *because every stream is modeled into the same ontology, DOME captures are, with little reshaping, directly consumable by modern RL/robotics training stacks (Isaac Lab, MuJoCo) — a measured bone segment and a simulated robot link are the same `RigidBody`.*
+- The loop, stated as a cycle, not a list: *the instrument yields structured data → the data trains control models → the models drive robots and, because a system optimized for the same task under the same constraints tends to converge on the same internal solution, become **testable hypotheses** about the neural computation behind the behavior → those hypotheses are probed back inside the DOME by controlled perturbation of the perception-action loop.*
+- Name the intervention arm (ARGP): *a modular augmented-reality ground plane — LED floor panels, projection, and VR that reshape the terrain a real agent navigates **while it is being measured** — closes the loop from passive observation to active experiment.* `[ALLUDE]` the lineage (V1 built and published; the instrument the PI has wanted to scale for a decade). `[DEFER V2/institutional detail to Beat 6]`
+- The one-line significance: *observation, modeling, and intervention become a single apparatus — the full hypothetico-deductive cycle, inside one instrument.*
+
+### Beat 6 — Why this is unmet by existing structures (the X-Lab justification) `[SAY]`
+*Job: the organizational-gap answer the solicitation explicitly demands. THREE moves, in order. Structural/economic register — never grievance, never "students aren't good enough." Hits C2 + C4. This is a distinct, high-value paragraph.*
+- **Move 1 — tools must be built by masters, not trainees (an inverted apprenticeship).** *A trainee's job is to **learn** by doing science; a research tool's job is to **encode** mastery so others can do science without re-learning everything. These point in opposite directions. Academia's incentive structure runs it backwards — the experienced builder is rewarded for novel findings and pushed to offload infrastructure onto trainees who rotate out on degree timelines, so the shared instrument never accumulates the mastery that would make it trustworthy. The result is the well-documented graveyard of abandoned research software.* *(Frame as structure/incentive, not competence.)*
+- **Move 2 — the right scope for a shared tool is the *measurement*, not the *domain* — which is what turns a tool into a commons.** *A tool defined by a research **domain** partitions its users; a tool defined by a **measurement** unites everyone who needs that measurement, however different their goals. This is the boundary-object move: the instrument different communities can each use for their own ends **because** it imposes none of them.*
+- **Move 3 — FreeMoCap already ran this experiment, and it worked.** *The FreeMoCap Foundation (est. 2021) scoped itself to the measurement apparatus itself — turning cameras and light into calibrated, usable skeleton estimates — and refused to own a research question. That refusal is why biomechanists, animators, roboticists, game designers, and neuroscientists now meet in one shared measurement commons and cross-pollinate. The DOME is that proven model — measurement-scoped, master-built, open, full-time-maintained — aimed at the far larger target of the whole interaction loop.* `[ALLUDE]` the ARGP-V2-died-at-a-university fact as the first-person evidence that the gap is real. `[DEFER scale metrics — users/countries/stars — to §5]`
+- The closing structural claim: *an instrument on this scale needs full-time career engineers held for years and a home whose success metric is a working shared instrument, not a publication count — precisely the X-Labs model, and precisely what a university cannot provide.*
+
+### Beat 7 — Vision: the reshaped end-state `[SAY]`
+*Job: the "appropriately ambitious," reshapes-a-field/sector claim. One clear end-state (two-sided). Hits C3. Land it and stop.*
+- The scientific end-state (a field): *a single empirical science of sensorimotor control — where perceptuomotor neuroscience, biomechanics, robotics, and agentic AI, today four parallel literatures with incompatible tools and vocabularies, become **commensurable**: a finding in one is evidence in another, collapsing four bodies of work into one cumulative science of real-world behavior.*
+- The technology end-state (a sector): *and, on the same measurements, the metrologically-grounded, uncertainty-tagged corpora that embodied AI and robotics need to learn real-world sensorimotor behavior — an instrument intentionally engineered for the next generation of AI training pipelines.* *(Deliberately claims the "sector of technology" half and echoes a named Topic in-scope example — strengthens fit with NSF/TIP's competitiveness mandate.)*
+- Optional close: return to the boxed Mission line, or a single sentence restating the DOME as the instrument this frontier needs and lacks.
+
+---
+
+## PART C — Mission-statement candidates (for the box)
+
+**C-1 (recommended shape — instrument + organization + end-state):**
+> *The mission of the proposed NSF X-Lab is to build a new class of scientific instrument — the DOME, which renders the complete, calibrated, synchronized interaction between an agent and its environment measurable for the first time — and the open organization that can sustain it, unifying the study of perception and action across humans, animals, and machines into a single science of real-world sensorimotor control.*
+
+**C-2 (adds the closed-loop / tech-sector half — use if §7 needs reinforcing up top):**
+> *…to build the DOME — the instrument that makes the whole agent–environment loop a calibrated, cumulative measurable — and the community that sustains it, closing the loop between measuring natural behavior, modeling it, and manipulating it, to unify perceptuomotor neuroscience, biomechanics, robotics, and embodied AI into one science of sensorimotor control.*
+
+**C-3 (kept for reference — the current long-form; too dense as the formal line, mine it for §2):**
+> *…an enterprise-scale, usability-focused platform for user-defined, composable, multi-instrumented capture volumes that record all relevant empirically available energy of the sensory, motor, environmental, and neural activity of humans and non-human animals…*
+
+---
+
+## PART D — Sequencing rationale + open decisions
+
+**Why this order:** hook (topic) → measurement-revolution frame (Topic register) → the fracture (the new measurable) → the DOME (the platform tech, hardware-first, clears the software trap) → the closed loop (observation→intervention, the ambition) → why-unmet (the X-Lab argument) → vision (reshaped field + sector). Each beat sets up the next; the two "hero" loads (the instrument in Beat 4, the organizational gap in Beat 6) are separated so neither crowds the other. The old draft's `gap_structural` (the incentive gap) is **folded entirely into Beat 6** so the argument is made once, not 1.5 times.
+
+**Say / Allude / Defer summary:**
+- `[SAY]` in Mission: the DOME + three variants; the new observable; the eye-tracker must-build + hydration story; the three-move why-unmet argument; the two-sided vision.
+- `[ALLUDE]` (one clause, developed elsewhere): the ontology mechanics; the drone swarm; the RL/robot five-station loop; the ARGP lineage; the animal network; ARGP-V2's death.
+- `[DEFER]` entirely: eye-tracker DOF targets per species; FreeMoCap scale metrics; facility budget/phasing; collaborator roster; citation specifics; the Palantir/Anduril architecture analogy (Landscape only, as a clause).
+
+**Open decisions to resolve before drafting prose (flagging, not blocking):**
+1. **DOME expansion** — confirm *"Dense Observational Measurement Environment"* vs. an omni-modal variant, or let the word stand and drop the backronym. *(My lean: keep the word, footnote the expansion.)*
+2. **How hard to name embodied-AI/robotics as a *technology sector*** in Beat 7 vs. keeping the field-of-science framing primary. *(My lean: claim both explicitly — TIP rewards the sector half, and it's a named in-scope example.)*
+3. **Whether the boxed Mission line names the closed loop** (C-2) or stays instrument-and-science (C-1). *(My lean: C-1 in the box; let Beat 5 carry the loop.)*
+4. **The neural-convergence claim's citation footing** — the Yamins/DiCarlo goal-driven line and the motor-cortex-RNN line still need exact DOIs pulled before §2/§3; the Mission only alludes ("tends to converge on the same solution"), so it is safe to draft now and firm up citations later.
