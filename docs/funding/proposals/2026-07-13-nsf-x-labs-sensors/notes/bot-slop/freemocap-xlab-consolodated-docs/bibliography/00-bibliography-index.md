@@ -14,6 +14,7 @@ The reference layer of the vault. Each note here describes **one cited source** 
 ## How to use
 - Adding a citation to the proposal? Find the source here → grab its `@citekey` → cite in the `.typ` file → the entry is already in `FMCF-NSF-XLABS.bib`.
 - `verification:` frontmatter on each note: **verified** (web-checked this session), **carried** (DOI carried from the advisory series; standard for a canonical work but not re-checked), **needs-check** (flagged; see [[_verification-punchlist]]).
+- `bib-status: pending` frontmatter marks notes whose source is web-verified but **not yet added to `FMCF-NSF-XLABS.bib`** — add on JSM approval. Currently pending: [[yates2025]], [[sangi2010]], [[daley2006]], [[daley2007]].
 
 ## By theme
 
@@ -32,6 +33,10 @@ The reference layer of the vault. Each note here describes **one cited source** 
 **Metrology:** [[jcgm2012vim]] · [[jcgm2008gum]] · [[taylor1994]] · [[possolo2015]] · [[iso17511]] · [[jctlm]] · [[iso17025]] · [[zhang2000]] · [[nist_ai_rmf]] · [[welty2019]]
 
 **Naturalistic neuro, capture, biomechanics, competition:** [[makeig2009]] · [[mathis2018dlc]] · [[kanko2021]] · [[delp2007]] · [[seth2018]]
+
+**Eye-tracker instrumentation (the must-build):** [[yates2025]] (DPI on consumer cameras) · [[sangi2010]] (torsion from iris texture)
+
+**Model-organism biomechanics:** [[daley2006]] · [[daley2007]] (guinea-fowl obligate-biped control — M. Daley)
 
 **Research-software sustainability & the academia argument:** [[brooks1975]] · [[lehman1980]] · [[cunningham1992]] · [[foote1997]] · [[spolsky2000]] · [[david1985]] · [[arthur1989]] · [[osc2015]] · [[aac2023]]
 

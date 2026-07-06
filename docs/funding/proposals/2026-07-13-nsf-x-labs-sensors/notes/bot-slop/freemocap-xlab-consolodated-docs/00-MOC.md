@@ -61,6 +61,7 @@ Strategic planning mapped 1:1 to the proposal sections, built on this landscape 
 - [[architectural-paradigm-operational-semantic-layer|architecture]] cluster: [[complexity-management-first-order]] (the real challenge) · [[science-applied-tech-coevolution]] (why we borrow from enterprise / defense / games)
 - [[metrology-and-traceability]] · [[the-rw-to-ontology-pipeline]]
 - [[next-generation-eye-trackers]] · [[comparative-phylogeny-and-ecs]]
+- [[the-robotics-ai-loop]] (the fourth leg — instrument → RL → robots → biology)
 - [[the-ontology-question-in-science]] · [[competitive-terrain]]
 - [[tiered-dissemination-and-communal-science]] · [[conceptual-cleanliness-four-audiences]] · [[ontology-grounded-qc-copilot]]
 
@@ -70,7 +71,7 @@ Strategic planning mapped 1:1 to the proposal sections, built on this landscape 
 
 **Core coinages:** [[eaee]] · [[hydration]] · [[capital-t-true-facts]] · [[the-epistemic-gap]] · [[dimensional-domains]] · [[the-missing-middle]] · [[complete-empirical-capture]]
 
-**Measurement & metrology:** [[sensor-as-transducer]] · [[calibration]] · [[metrological-traceability]] · [[uncertainty-budget]] · [[accuracy-precision-drift]] · [[dual-purkinje-image]]
+**Measurement & metrology:** [[sensor-as-transducer]] · [[calibration]] · [[metrological-traceability]] · [[uncertainty-budget]] · [[accuracy-precision-drift]] · [[dual-purkinje-image]] · [[ocular-torsion-and-listings-law]]
 
 **Architecture & software:** [[ontology-definition]] · [[entity-component-system]] · [[palantir-ontology]] · [[anduril-lattice]] · [[maven-smart-system]] · [[worse-is-better]] · [[narrow-waist]] · [[digital-twin-two-traditions]]
 

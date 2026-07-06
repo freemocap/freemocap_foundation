@@ -27,6 +27,7 @@ Crosswalk so nothing in the original series is orphaned. Left column = the origi
 | `notes/old/2026-nsf-xlabs-outline.md` | [[proposal-section-scaffold]], [[freemocap]], [[dimensional-domains]], [[personnel]] |
 | `notes/handy-*_transcript.txt` / `_video_summary.txt` | JSM voice source for [[the-thesis-instrument-not-software]], [[complete-empirical-capture]] |
 | official solicitation PDFs (`.md` ports) | [[nsf-x-labs-opportunity-and-fit]], [[the-software-exclusion]], [[autonomy-factor-test]] |
+| **conversation 2026-07-05** (Cowork mission review — JSM) | new: [[the-robotics-ai-loop]], [[ocular-torsion-and-listings-law]]; augmented: [[next-generation-eye-trackers]] (smartphone-camera thesis), [[conceptual-cleanliness-four-audiences]] (Duty 5, RL/robotics), [[comparative-phylogeny-and-ecs]] (guinea-fowl/Daley), [[01-mission]]; bib: [[yates2025]], [[sangi2010]], [[daley2006]], [[daley2007]] |
 
 **Bibliography:** the BibTeX blocks scattered through the briefing series (D2, D3, D4, D7, D10, D11 + inline links) were consolidated, deduped, and merged into **`proposal/FMCF-NSF-XLABS.bib`** (now 78 entries, `authorYYYY` keys, all biblatex format). Each entry has a companion `#citation` note under `bibliography/` — see [[00-bibliography-index]]. This is the one core-repo artifact the vault work modified (Jon-authorized).
 

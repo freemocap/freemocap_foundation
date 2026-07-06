@@ -17,6 +17,8 @@ Load-bearing items that only **JSM** or a real citation/fact check can settle. C
 - [ ] **arXiv "Metrology for AI: From Benchmarks to Instruments" (1911.01875)** — cited without confirmed authors/venue.
 - [ ] **DOIs** for Matthis 2018/2022, Sweller 1988, Harnad 1990, Brooks 1991, Zhang 2000, Star & Griesemer 1989 — cross-check against the existing `FMCF-NSF-XLABS.bib` (which already holds `matthis2018`/`matthis2022`) and canonical sources. Briefing keys (`author2018gaze`) differ from the bib's `authorYYYY` style.
 - [ ] **arXiv IDs in [D12]** (egocentric 3DGS `2604.23803` etc.) — some look post-cutoff / possibly fabricated; verify before citing.
+- [ ] **ResNet ↔ V1 filters** ([[the-robotics-ai-loop]]): JSM recalls the *result* (early-ResNet layers develop V1-like edge filters) but **not the paper**. Supply the specific reference; do **not** substitute a different one.
+- [ ] **New session citekeys — add to `FMCF-NSF-XLABS.bib`** (web-verified, `bib-status: pending`): [[yates2025]] (OpenIrisDPI), [[sangi2010]] (iris torsion — *also check for anything newer*), [[daley2006]], [[daley2007]] (guinea-fowl control). Confirm authors/full metadata before insertion.
 
 ## Biology accuracy ([[comparative-phylogeny-and-ecs]], [[shared-vs-unshared-traits]])
 - [ ] **Lancelet vs. lamprey:** lancelet = headless chordate; lamprey = craniate with head + camera eye but no jaws / no true vertebrae. Keep correct.
