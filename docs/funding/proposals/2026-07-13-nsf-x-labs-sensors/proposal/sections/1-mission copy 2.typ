@@ -33,7 +33,7 @@
 #let PICK(body) = block(fill: rgb("#fff4e6"), inset: 6pt, radius: 3pt,
   text(size: 8pt)[#semibold[PICK/NOTE:] #body])
 
-
+ 
 // ════════════════════════════════════════════════════════════════════════
 //  BEAT 1 — HOOK  (the funnel)
 //  JOB: define the phenomenon in one thought-provoking frame. Not yet a
