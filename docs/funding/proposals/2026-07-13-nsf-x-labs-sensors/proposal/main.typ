@@ -6,7 +6,7 @@
 // Set to false for submission-ready output (strips WIP overlays,
 // section tracking, and margin box; keeps clean page numbers).
 
-#let DRAFT_MODE = false
+#let DRAFT_MODE = true
 
 // ── Draft-only content definitions ──
 
@@ -54,7 +54,7 @@
     width: 6.5in,
     height: 9in,
     fill: none,
-    stroke: 0.5pt + rgb("#88888866"),
+    stroke: 0.5pt + rgb("#aaa"),
   ),
 )
 

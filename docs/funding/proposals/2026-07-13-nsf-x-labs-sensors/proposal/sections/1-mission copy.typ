@@ -2,7 +2,6 @@
 #import "../helpers/shared.typ": semibold
 = Mission
 
-// ── Mission statement — pick your favorite variant, delete the rest ──
 #let mission = [The #smallcaps()[Mission] of the proposed NSF X-Lab is to build a enterprise-scale, high-performance, usability-focused research platform for supporting the creation of use-defined, composable multi-instumented capture volumes for empirical capture of all relevant empirically available environmental energy associated with the sensory/perceptual, motor/mechanical, environment factors, and neural activty in the centeral and peripheral nervous systems of humans, non-human-animals  to unify _perceptuomotor neuroscience_, _musculoskeletal biomechanics_,  _mobile/industrial robotics_ and _agentic artificial intelligence_ into a single unified science of *sensorimotor control* in real and naturalistic environments.]
 
 
