@@ -103,7 +103,7 @@
 
 // ── Sections ──
 
-#include "sections/1-mission.typ"
+#include "../notes/1-mission-scratch.typ"
 #pagebreak(weak:true)
 #include "helpers/figure-page.typ"
 #pagebreak(weak:true)
