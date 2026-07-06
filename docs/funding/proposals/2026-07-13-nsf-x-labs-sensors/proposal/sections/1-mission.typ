@@ -1,4 +1,4 @@
 There are only two scientific questions - What am I? ...and what is all of _that_?
 
- To answer the latter, we build massive space telescopes into the slopes of dark mountains and microscopes the size of buildings
+ To answer the latter, we build massive space telescopes into the slopes of dark mountains and microscopes in the deep basements of tall buildings. 
 
