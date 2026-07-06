@@ -176,7 +176,7 @@ robotics, and agentic AI into a single science of sensorimotor control.]
 // ════════════════════════════════════════════════════════════════════════
 
 #let render = [
-  
+
   #block(fill: rgb("#ddd"), radius: 4pt, stroke: (left: 5pt + gray ),
   inset: (x: 1.5em, y: 0.75em))[#mission_a]
 
@@ -213,4 +213,6 @@ robotics, and agentic AI into a single science of sensorimotor control.]
 
 ]
 
-#render
+#render 
+
+
