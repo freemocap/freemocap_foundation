@@ -24,6 +24,5 @@
 // What are we talking about? Cows? Hurricanes? Nebulae? The first sentence defines the topic, and should 'hook' the reader. "Hey, here's something to think about."
 // ════════════════════════════════════════════════════════════════════════
 
-#let hook = [Every biological and artificial agent solves the same problem:
-it senses a thin slice of the energy available in its environment through a limited set of imperfect transducers, and on that basis generate reaction forces against an available substrate to propel its toward its goal. Information flows in, forces flow out; the brain exists to yank the bones around.]
+#let hook = [The perception/action loop of biological and artificial agent follows the same pattern: Sample a thin slice of the available environmental energy through a limited set of imperfect transducers, and on that basis generate reaction forces against an available substrate to propel its toward its goal. Information flows in, forces flow out; the brain exists to yank the bones around.]
 
