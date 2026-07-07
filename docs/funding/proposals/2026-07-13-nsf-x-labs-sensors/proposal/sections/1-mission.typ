@@ -30,7 +30,7 @@ And yet we are a species of explorers and we are drawn to those dark spaces. Eac
 
 Mentorship-based academic research has it backwards - Tools should be built by masters and taught tto students, not the other way around. We should bake the wisom of our experise and long experience into the tools put into the hands of students and other researchers. Most users of the tool will never notice the myriad ways whey have been gently guided away from sharp points and spinning blades of empirical research, and the ones that do may become the next generation of tool builders. 
 
-
+We must separate the building of tools from the usage of them, 
 
 
 
