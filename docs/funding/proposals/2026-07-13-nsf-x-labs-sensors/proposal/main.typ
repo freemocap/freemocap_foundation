@@ -76,9 +76,7 @@
 )
 #set text(size: 12pt, font: "Libertinus Serif", hyphenate: false)
 #set par(justify: false, leading: 0.45em, spacing: 0.85em, first-line-indent: 1em)
-#if DRAFT_MODE {
-  set par.line(numbering: "1")
-}
+#set par.line(numbering: if DRAFT_MODE { "1" } else { none })
 #set heading(numbering: "1.", supplement: [§])
 
 #show heading.where(level: 1): set block(above: 0em, below: 1em)
