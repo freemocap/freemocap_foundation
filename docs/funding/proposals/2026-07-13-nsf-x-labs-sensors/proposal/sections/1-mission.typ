@@ -11,7 +11,9 @@
 //     C3  aligned with X-Labs strategic objectives (reshape a field)
 //     C4  unmet by existing institutions
 // 
- Official Instructions (from template):
+═══════════════════════════════════════
+
+#emph[ Official Instructions (from template):
     Proposing teams must describe *one or more novel platform technologies* that the proposed NSF  X-Lab is _uniquely suited_ to advance. Successful teams will have a clear *vision statement* of how *their work will result in an end-state that reshapes an entire field of scientific inquiry or a sector* of technology, and how their Mission is currently *unmet by existing organizational structures* and  funding mechanisms.
 
   
@@ -25,12 +27,12 @@
     - How their Mission is currently unmet by:
       - Existing organizational structures
       - Funding mechanisms.
- ════════════════════════════════════════════════════════════════════════
-
+ ═══════════════════════════════════════
+]
 #import "../helpers/shared.typ": semibold
 
 #let mission = [
-  The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab [FMC-X]* is to create  a novel research apparatus called a *Dense Observation Measuring Environment [DOME]* that fuses heterogenous instrumentation for the measurement or manipulation of the _perceptual, motor, and environmental_ factors realting to the Agent/Environment interaction into a single convergent stream of calibrated, synchronized, uncertainty-traced, semantically-coherent measurements through validated sensor-to-model pipelines developed and disseminated in collaboration with a broad network of cross-disciplinary researchers #semibold()[to build a unified science of the sensory/motor control of biological and articial agents in real-world environments].
+  The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab [FMC-X]* is to create  a novel research apparatus called a *Dense Observation Measuring Environment [DOME]* that fuses heterogenous instrumentation for the measurement or manipulation of the _perceptual, motor, and environmental_ factors realting to the Agent/Environment interaction into a single convergent stream of calibrated, synchronized, semantically-coherent measurements through validated, uncertainty-traced,  truth-preserving, sensor-to-model pipelines developed and disseminated in collaboration with a broad network of cross-disciplinary researchers #semibold()[to build a unified science of the sensory/motor control of biological and articial agents in real-world environments].
 
 ]
 
