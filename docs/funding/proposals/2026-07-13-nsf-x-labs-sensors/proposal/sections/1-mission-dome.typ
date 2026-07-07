@@ -444,23 +444,38 @@ reshaping a field of science and seeding a sector of technology at once.]
 
   // BEAT 3 — THE FRACTURE
   #fracture_hedge
+
   #fracture_gap
+  
   #fracture_need
 
   // BEAT 4 — THE DOME (hardware-first hero)
   #dome_hero
+
   #dome_variants
+  
   #dome_validation
+  
   #dome_ontology
+  
   #dome_bothsides
+  
   #mocap_array
+  
   #mocap_fusion
+  
   #mocap_pose
+  
   #mocap_drone
+  
   #eye_gap
+  
   #eye_why
+  
   #eye_bet
+  
   #eye_payoff
+  
   #eye_anchor
 
   // BEAT 5 — THE CLOSED LOOP (allude)
