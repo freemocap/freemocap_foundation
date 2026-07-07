@@ -35,7 +35,9 @@
   The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab [FMC-X]* is to create  a novel research apparatus called a *Dense Observation Measuring Environment [DOME]* that fuses heterogenous instrumentation for the measurement or manipulation of the _perceptual, motor, and environmental_ factors realting to the Agent/Environment interaction into a single convergent stream of calibrated, synchronized, semantically-coherent measurements through validated, uncertainty-traced, sensor-to-model pipelines developed and disseminated in collaboration with a broad network of cross-disciplinary researchers #semibold()[to build a unified science of the sensory/motor control of biological and articial agents in real-world environments].
 
 ]
-#mission]
+
+#block(fill: rgb("#ddd"), radius: 1pt, stroke: (left: 2pt + gray ),
+inset: (x: 1.5em, y: 0.75em))[#mission]
 
 
 The perception/action loop of biological and artificial agents follows the same pattern: sample a thin slice of the available environmental energy through a limited set of imperfect transducers, then generate reaction forces against a substrate in service of some goal. Information flows in, forces flow out; the brain exists to yank the bones around.
