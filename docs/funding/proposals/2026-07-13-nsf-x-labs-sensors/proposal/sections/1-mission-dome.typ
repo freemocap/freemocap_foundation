@@ -173,10 +173,15 @@ gaze-and-gait lineage @matthis2018 @matthis2022.]
 // DOME-S validation receipt + the "Ouroboros" cross-scale calibration.
 // [MOVE →§5 exact metrics: ~15k users, ~10k GitHub stars, ~3.5k Discord.]
 // [MOVE →§3/§5 the calibration method + AC dissertation/preprint citations.]
+// CITE-BLOCKED: could not resolve AC's dissertation/preprint — AC's real name is
+// not in this repo (initials-only convention; no .env mapping present) and a
+// web/PubMed search for the FreeMoCap-vs-Qualisys validation did not return an
+// attributable reference. Jon: drop the name/title/DOI (or AC's name) and I'll
+// add the .bib entry + swap the key in here.
 #let dome_validation = [The validation path is not hypothetical: an earlier
 dissertation from the team already benchmarked FreeMoCap against a research-grade
 optical system and showed it yields clinically valid kinematics
-#semibold[[cite AC dissertation + preprint — keys not yet in .bib]]. The DOME-L
+#semibold[[CITE-BLOCKED: AC dissertation + preprint — awaiting name/title/DOI]]. The DOME-L
 industrializes that experiment — the flagship continuously certifies the
 disseminated DOME-S against itself through bootstrapping calibration, closing
 the loop between the instrument we build and the instrument the world runs, and
@@ -317,8 +322,7 @@ the instrument yields structured data, the data trains control models, and
 because a system optimized for the same task under the same constraints tends to
 converge on the same internal solution, those models become #semibold[testable
 hypotheses] about the neural computation behind the behavior
-#semibold[[cite Yamins/DiCarlo goal-driven modeling + motor-cortex RNN work —
-keys not yet in .bib]].]
+@yamins2014 @sussillo2015 @michaels2020.]
 
 // The intervention arm (ARGP) — what makes it an experiment, not just a recorder.
 // [MOVE →§3 ARGP V1 published lineage / V2 institutional death → that's §6/§5 evidence.]
@@ -370,9 +374,9 @@ this experiment. Scoped to the measurement itself — turning cameras and light
 into calibrated, usable skeleton estimates, with an obsessive focus on
 usability — and refusing to claim a research domain, it became a shared commons
 where biomechanists, neuroscientists, roboticists, animators, and game designers
-now meet and cross-pollinate. Domain-scoped tools such as OpenCap and DeepLabCut
-@mathis2018dlc are excellent and, precisely by being domain-scoped, are the foils
-that prove the point. The DOME is that proven model — measurement-scoped,
+now meet and cross-pollinate. Domain-scoped tools such as OpenCap @uhlrich2023
+and DeepLabCut @mathis2018dlc are excellent and, precisely by being
+domain-scoped, are the foils that prove the point. The DOME is that proven model — measurement-scoped,
 master-built, open, full-time-maintained — aimed at the far larger target of the
 whole interaction loop.]
 
