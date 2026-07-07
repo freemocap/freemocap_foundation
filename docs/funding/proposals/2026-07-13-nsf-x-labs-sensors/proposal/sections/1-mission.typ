@@ -25,7 +25,7 @@ Myriad disciplines within the broad vehicle of science point their lenses at key
 
 Each member of these individual research clades understands that their work is contextualized in a broad and deeply cross-disciplinary domain of inquiry, and each strives to reach out across those disciplinary divides to their allies in nearby fields. But in practice, most of those threads fail to connect. Walk through the poster session of a visual neuroscience conference, you will mostly encounter variations of two-alternative-forced-choice-center-out-fixation tasks in non-mobile, head-fixed animal models. At the motor neuroscience conference, it will be single-joint planar reaching movements through a force field. At the biomechanics conference, its steady state walking on a treadmill. Each clade builds beautifully nuanced and complex theories in their domain of inquiry, but the pieces never quite fit together to form a coherent whole. Each group occupies a different room in the tower of Babel. They learned the nuances of different instruments, mastered different branches of mathematics. They are motivated by different kinds of arguments and ground their assertions in different flavors of statistics. They call out to each other in the first and last paragraphs of their research articles, the distant call of an unmet ally echoing across the yawning darkness between the fields. 
 
-And yet we are fearless, and the 
+And yet we are a species of explorers, and we are drawn to those dark spaces. 
 
 
 
