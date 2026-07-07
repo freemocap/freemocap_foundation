@@ -20,5 +20,5 @@
 
 
 
-#let hook = [The perception/action loop of biological and artificial agent follows the same pattern: Sample a thin slice of the available environmental energy through a limited set of imperfect transducers, and on that basis generate reaction forces against an available substrate to propel its toward its goal. Information flows in, forces flow out; the brain exists to yank the bones around.]
+#let hook = [The perception/action loop of biological and artificial agent follows the same pattern: Sample a thin slice of the available environmental energy through a limited set of imperfect transducers, and on that basis generate reaction forces against an available substrate in service of some desired goal. Information flows in, forces flow out; the brain exists to yank the bones around.]
 
