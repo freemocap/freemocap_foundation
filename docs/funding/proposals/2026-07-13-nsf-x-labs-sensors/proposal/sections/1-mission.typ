@@ -39,10 +39,9 @@
 #block(fill: rgb("#ddd"), radius: 1pt, stroke: (left: 2pt + gray ),
 inset: (x: 1.5em, y: 0.75em))[#mission]
 
-- We eschew specialization - our desideratum is the measurement itself. 
-- Our development priorities are defined by the combination of our mission and the use-cases of our users.
-- We buy what we can and build what we can't [ref  - Target - Eye trackers, Mocap Cameras]
-- 
+- DOME-L: Flagship in Greater Boston area. Large enough to fully encompass smaller DOME-S and DOME-Mobile units, to assist development and validation
+- DOME-S: Extension of the USB-camera based motion capture volumes we have been building as part of the FreeMoCap Project. Representative of the kinds of DOME that would be built in a research lab or classrom.
+- DOME-Mobile: Wearable, mobile DOME, capable of generating the precisely the same Dense Observation Measurements (DOM) data as a static DOME in unconstrained indoor or outdoor environemnts. Contionues the lineage of PI's Gaze/Gait and Retinal Optic Flow research @matthis2018 @matthis2022 @muller2023
 
 
 The perception/action loop of biological and artificial agents follows the same pattern: sample a thin slice of the available environmental energy through a limited set of imperfect transducers, then generate reaction forces against a substrate in service of some goal. Information flows in, forces flow out; the brain exists to yank the bones around.
