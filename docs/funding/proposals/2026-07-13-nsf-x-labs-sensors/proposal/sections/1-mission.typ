@@ -39,7 +39,7 @@
 #block(fill: rgb("#ddd"), radius: 1pt, stroke: (left: 2pt + gray ),
 inset: (x: 1.5em, y: 0.75em))[#mission]
 
-- Our research topic is the measurement itself. 
+- We eschew specialization - our desideratum is the measurement itself. 
 - Our development priorities are defined by the combination of our mission and the use-cases of our users.
 - We buy what we can and build what we can't [ref  - Target - Eye trackers, Mocap Cameras]
 - 
