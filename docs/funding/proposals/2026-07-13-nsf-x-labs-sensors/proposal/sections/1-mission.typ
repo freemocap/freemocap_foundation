@@ -50,13 +50,14 @@ inset: (x: 1.5em, y: 0.75em))[#mission]
 - *DOME-Mobile*: Wearable, mobile DOME, capable of generating the precisely the same model Dense Observations as a static DOME in unconstrained indoor or outdoor environemnts. Contionues the lineage of PI's Gaze/Gait and Retinal Optic Flow research @matthis2018 @matthis2022 @muller2023
 
 == *Targets*
-- Buy what we can, build what we can't
+  - *Measurment target* - Verdical estiamtes of retinal projection during real-world locomotion @matthis2022
+  - *Integration goal* - Full pathway mapping from photon-retinal transduction on one end, and reaction force detection/generation at the substrate boundary (i.e. the ground)- Buy what we can, build what we can't
+  
   - Build as much of the whole thing with off-the-shelf equipment as we can, then build what doesnt exist
   - Let the research questions, research-bottle necking friction, and uncertainty-tracing drive development. 
 
 
-  - *Measurment target* - Verdical estiamtes of retinal projection during real-world locomotion @matthis2022
-  - *Integration goal* - Full pathway mapping from photon-retinal transduction on one end, and reaction force detection/generation at the substrate boundary (i.e. the ground)
+
   - 
   - *Bottlenecks* [TODO - re-org this into a more coherent 'Problem -> Solution' format]
     - *Eye trackers* - No open mobile eye trackers exist. Pupil still makes the Core, but its dev is frozen. No modern eye tracker can measure torsion or lens accommodation at any price. We can build our own eye trackers, but in the mean time we still use the best availavle (Pupil Core)and partially hydrate model with the best data we have.
@@ -64,7 +65,7 @@ inset: (x: 1.5em, y: 0.75em))[#mission]
     - *Centrally Controllable Programmable Capture Volume* - Moving camreas around is a bottlenecking-friction (limits reseach because its too hard to move the cameras), so we build a linked array of centrally and programmatically controllable camera mounts that control extrinsics and intrinsics, to create a system for a self-deploying capture volume (select region in available volume and cameras configer themselves for maximal coverage)
     - *Hybrid Camera/IMU Kinematics* - Outside-in mocap systems (e.g. camera-based) produce high-accuracy/low-precision kinematic estimates (noise estiamte centered on True value), Inside-Out systems (e.g. IMU-suits) produce high-precision/low-accuracy estimates. Their hybrid should be much better than either alone.
       - we will use the DOME-Mobile nested in the DOME-W to develop and validate this sensor-fused hybrid estimate. This way, we can create full interoperability between Human estimates derived from cameras, IMU's or both
-  - *Drone-Swarm Mocap* - Drone swarm to create hybrid mocap during outdoor locomotion 
+    - *Drone-Swarm Mocap* - Drone swarm to create hybrid mocap during outdoor locomotion 
 
 == *Data consumers*
 - Train better models using reprojected 3d estimates onto each camera's estimates
