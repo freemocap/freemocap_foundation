@@ -38,7 +38,7 @@
 
 ]
 
-#block(fill: rgb("#"), radius: 1pt, stroke: (left: 2pt + gray ),
+#block(fill: rgb("(255,255,255)"), radius: 1pt, stroke: (left: 2pt + gray ),
 inset: (x: 1.5em, y: 0.75em))[#mission]
 
 // A Dense Observation of an Agent/Environment is defined as a multi-modal estimate of a set of of records arising from heterogenous ...blah blah blah 
