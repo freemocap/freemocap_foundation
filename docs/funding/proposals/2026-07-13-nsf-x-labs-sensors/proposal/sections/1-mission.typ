@@ -32,10 +32,14 @@
 #let mission = [
   The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab [FMC-X] *will be to develop and disseminate a novel research apparatus called a *Densely Observed Measurement Environment [DOME]* 
   
-  a research and experimentation platform for generating calibrated, synchronized, uncertainty-traced, semantically-coherent measurements
+  a research and experimentation platform that
+  
+  fuses heterogenous instrumentation for the measurement or manipulation of the _perceptual, motor, and environmental_ factors into  a single stream of 
+  
+  calibrated, synchronized, uncertainty-traced, semantically-coherent measurements
 
 
-   fuses heterogenous instrumentation for the measurement or manipulation of the _perceptual, motor, and environmental_ factors into  
+  
    
    
    through validated, sensor-to-model pipelines
