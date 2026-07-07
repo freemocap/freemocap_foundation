@@ -44,7 +44,7 @@ inset: (x: 1.5em, y: 0.75em))[#mission]
 // A Dense Observation of an Agent/Environment is defined as a multi-modal estimate of a set of of records arising from heterogenous ...blah blah blah 
 
  
-
+== Dense Observation Measuring Environment
 - *DOME-L*: Flagship in Greater Boston area. Large enough to fully encompass smaller DOME-S and DOME-Mobile units to assist development and validation, and stress test ability to calibrate large spaces.
 - *DOME-S*: Extension of the USB-camera based motion capture volumes we have been building as part of the FreeMoCap Project. Representative of the kinds of DOME that would be built in a research lab or classrom.
 - *DOME-Mobile*: Wearable, mobile DOME, capable of generating the precisely the same model Dense Observations as a static DOME in unconstrained indoor or outdoor environemnts. Contionues the lineage of PI's Gaze/Gait and Retinal Optic Flow research @matthis2018 @matthis2022 @muller2023
