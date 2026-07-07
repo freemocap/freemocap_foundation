@@ -39,6 +39,11 @@
 #block(fill: rgb("#ddd"), radius: 1pt, stroke: (left: 2pt + gray ),
 inset: (x: 1.5em, y: 0.75em))[#mission]
 
+- Our research topic is the measurement itself. 
+- Our development priorities are defined by the combination of our mission and the use-cases of our users.
+- We buy what we can and build what we can't [ref  - Target - Eye trackers, Mocap Cameras]
+- 
+
 
 The perception/action loop of biological and artificial agents follows the same pattern: sample a thin slice of the available environmental energy through a limited set of imperfect transducers, then generate reaction forces against a substrate in service of some goal. Information flows in, forces flow out; the brain exists to yank the bones around.
 
