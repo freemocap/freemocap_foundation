@@ -30,7 +30,7 @@
 #import "../helpers/shared.typ": semibold
 
 #let mission = [
-  The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab [FMC-X] *will be to create a novel research platform to create a *Densely Observed Measurement Environment [DOME]* which creates a single, _calibrated_, _synchronized_, _uncertainty-traced_, and _semantically-coherent_ observation from a heterogenous array of instruments the measurement or manipulation of the _perceptual, motor, and environmental_ factors relating to #semibold()[sensorimotor control of biological and articial agents in real-world environments].  
+  The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab [FMC-X] *will be to create a novel research platform to create a *Densely Observed Measurement Environment [DOME]* which creates a single, _calibrated_, _synchronized_, _uncertainty-traced_, and _semantically-coherent_ observation from a heterogenous array of instruments for the measurement or manipulation of the _perceptual, motor, and environmental_ factors relating to #semibold()[sensorimotor control of biological and articial agents in real-world environments].  
 ]
 
 #block(fill: rgb("#ddd"), radius: 1pt, stroke: (left: 2pt + gray ),
