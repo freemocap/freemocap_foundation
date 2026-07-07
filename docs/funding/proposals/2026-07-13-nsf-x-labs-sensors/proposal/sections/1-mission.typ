@@ -43,7 +43,13 @@ inset: (x: 1.5em, y: 0.75em))[#mission]
 - DOME-S: Extension of the USB-camera based motion capture volumes we have been building as part of the FreeMoCap Project. Representative of the kinds of DOME that would be built in a research lab or classrom.
 - DOME-Mobile: Wearable, mobile DOME, capable of generating the precisely the same Dense Observation Measurements (DOM) data as a static DOME in unconstrained indoor or outdoor environemnts. Contionues the lineage of PI's Gaze/Gait and Retinal Optic Flow research @matthis2018 @matthis2022 @muller2023
 
-
+*Targets*
+- Buy what we can, build what we can't
+  - Build as much of the whole thing with off-the-shelf equipment as we can, then build what doesnt exist
+  - Let the research questions, research-bottle necking friction, and uncertainty-tracing drive development. 
+    - e.g. 
+    - Eye trackers - pupil is best, but it can't measure torsion or lens accomodation. Buy it, partially hydrate model, try to build a new system that can measure the previously unavailable DoF, then train a model from previously existing DoFs to back fill old data with estimatsions based on models derived from the new capacity
+    - Mocap - Moving camreas around is a bottlenecking-friction (limits reseach because its too hard to move the cameras), so we build a linked array of centrally and programmatically controllable camera mounts that control extrinsics and intrinsics, to create a system for a self-deploying capture volume (select region in available volume and cameras configer themselves for maximal coverage)
 
 The perception/action loop of biological and artificial agents follows the same pattern: sample a thin slice of the available environmental energy through a limited set of imperfect transducers, then generate reaction forces against a substrate in service of some goal. Information flows in, forces flow out; the brain exists to yank the bones around.
 
