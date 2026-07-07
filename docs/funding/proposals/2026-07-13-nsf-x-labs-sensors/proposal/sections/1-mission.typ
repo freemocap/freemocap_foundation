@@ -57,6 +57,9 @@ inset: (x: 1.5em, y: 0.75em))[#mission]
     - *Eye trackers* - No open mobile eye trackers exist. Pupil still makes the Core, but its dev is frozen. No modern eye tracker can measure torsion or lens accommodation at any price. We can build our own eye trackers, but in the mean time we still use the best availavle (Pupil Core)and partially hydrate model with the best data we have.
       - After we make our cool new eye tracker, we use the newly unlocked DoF along with from previously existing DoFs to train a model that lets you backfill old data with estimations of previously unmeasured DoF. 
     - *Centrally Controllable Programmable Capture Volume* - Moving camreas around is a bottlenecking-friction (limits reseach because its too hard to move the cameras), so we build a linked array of centrally and programmatically controllable camera mounts that control extrinsics and intrinsics, to create a system for a self-deploying capture volume (select region in available volume and cameras configer themselves for maximal coverage)
+    - *Hybrid Camera/IMU Kinematics* - Outside-in mocap systems (e.g. camera-based) produce high-accuracy/low-precision kinematic estimates (noise estiamte centered on True value), Inside-Out systems (e.g. IMU-suits) produce high-precision/low-accuracy estimates. Their hybrid should be much better than either alone.
+      - we will use the DOME-Mobile nested in the DOME-W to develop and validate this sensor-fused hybrid estimate. This way, we can create full interoperability between Human estimates derived from cameras, IMU's or both
+  - *Drone-Swarm Mocap* - 
 
 == Vision 
 The perception/action loop of biological and artificial agents follows the same pattern: sample a thin slice of the available environmental energy through a limited set of imperfect transducers, then generate reaction forces against a substrate in service of some goal. Information flows in, forces flow out; the brain exists to yank the bones around.
