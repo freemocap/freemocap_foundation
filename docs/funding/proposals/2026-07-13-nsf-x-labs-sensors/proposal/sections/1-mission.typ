@@ -30,7 +30,7 @@
 #import "../helpers/shared.typ": semibold
 
 #let mission = [
-  The #smallcaps()[Mission] of the FreeMoCap Foundation X-Lab will be to create a unified science of sensorimotor control by creating a new kind of scientific research platform  that we call a DOME (*D*ensely Oberserved Measurement Environment), 
+  The #smallcaps()[Mission] of the FreeMoCap Foundation X-Lab will be to create a unified science of sensorimotor control by creating a new kind of scientific research instrumentation that we call a DOME (Densely Oberserved Measurement Environment) - a which integrates
 ]
 
 #block(fill: rgb("#ddd"), radius: 4pt, stroke: (left: 5pt + gray ),
