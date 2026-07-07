@@ -25,6 +25,5 @@
 // ════════════════════════════════════════════════════════════════════════
 
 #let hook = [Every biological and artificial agent solves the same problem:
-it senses a thin slice of the energy available in its environment through a limited set of 
-imperfect transducers, and on that basis generate reaction forces against an available substrate to propel its toward its goal. Information flows in, forces flow out; the brain exists to yank the bones around.]
+it senses a thin slice of the energy available in its environment through a limited set of imperfect transducers, and on that basis generate reaction forces against an available substrate to propel its toward its goal. Information flows in, forces flow out; the brain exists to yank the bones around.]
 
