@@ -39,7 +39,7 @@ Each member of these individual research clades understands that their work is c
 
 And yet we are a species of explorers and we are drawn to those dark spaces. Each new generation of scientist builds new tools for their exploration; most dig down within their specialized niche, but some brave few build outwards towards the distant glowing shapes in the fog. Some of those even succeed, building new intergrations of previously disjointed theory - shedding light on new territory and the promise of new science at the intersections between deep domains of existing knowledge. But the discoverer cannot stay there. As reward for their success, they are bundled up and shipped to a new lab across the world with a rubber stamp on their forhead that reads #smallcaps["This One Knows Neuroscience."] 
 
-Except they don't really... do they? They
+Except they don't really, do they? Their training is in Neuroscience *and* Biomechanics. They know more about those topics than _almost_ anyone in the world... except for the all the people who will be evaluating their progress, scoring their grants, 
 
 The tools their discovery - built through years of hard battles and tough lessons - are handed off the latest, least experienced member of the research group with the instruction "Pick up where they left off." And sometimes they do - bolting new complexity on an inherted pile of technical debt - until eventually it collapses under its own weight and is thrown onto an ever-growing pile of academic abandonware - unique and powerful tools that could have changed the face of science and human society... but never made it across the hall. 
 
