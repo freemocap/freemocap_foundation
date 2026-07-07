@@ -29,6 +29,12 @@
 
 #import "../helpers/shared.typ": semibold
 
+#let mission = [
+  The #smallcaps()[Mission] of the FreeMoCap Foundation X-Lab will be to 
+]
+
+#block(fill: rgb("#ddd"), radius: 4pt, stroke: (left: 5pt + gray ),
+inset: (x: 1.5em, y: 0.75em))[#mission]
 
 
 The perception/action loop of biological and artificial agents follows the same pattern: sample a thin slice of the available environmental energy through a limited set of imperfect transducers, then generate reaction forces against a substrate in service of some goal. Information flows in, forces flow out; the brain exists to yank the bones around.
