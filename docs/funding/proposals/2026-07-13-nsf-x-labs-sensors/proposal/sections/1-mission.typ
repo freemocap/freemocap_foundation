@@ -32,4 +32,5 @@ Mentorship-based academic research has it backwards - Tools should be built by m
 
 
 
-Roboticists approach at a different scale, building swarms of flying drones comminucating and navigating in a delicate aerial dance and uncanny legged agents - after decades of work - are finally starting to take their first steps into real human environments. 
+
+
