@@ -11,9 +11,21 @@
 //     C3  aligned with X-Labs strategic objectives (reshape a field)
 //     C4  unmet by existing institutions
 // 
-//  Official Instructions (from template):
-//     Proposing teams must describe *one or more novel platform technologies* that the proposed NSF  X-Lab is _uniquely suited_ to advance. Successful teams will have a clear *vision statement* of how *their work will result in an end-state that reshapes an entire field of scientific inquiry or a sector* of technology, and how their Mission is currently *unmet by existing organizational structures* and  funding mechanisms.
-// ════════════════════════════════════════════════════════════════════════
+ Official Instructions (from template):
+    Proposing teams must describe *one or more novel platform technologies* that the proposed NSF  X-Lab is _uniquely suited_ to advance. Successful teams will have a clear *vision statement* of how *their work will result in an end-state that reshapes an entire field of scientific inquiry or a sector* of technology, and how their Mission is currently *unmet by existing organizational structures* and  funding mechanisms.
+
+  
+  1. #smallcaps()[Describe *one or more novel platform technologies* ]
+    - that the proposed NSF  X-Lab is _uniquely suited_ to advance
+  
+  2.  #smallcaps[Clear *vision statement*]
+    - How their work will result in an end-state that reshapes:
+      -  an entire field of scientific inquiry or
+      -  a sector of technology
+    - How their Mission is currently unmet by:
+      - Existing organizational structures
+      - Funding mechanisms.
+ ════════════════════════════════════════════════════════════════════════
 
 #import "../helpers/shared.typ": semibold
 
