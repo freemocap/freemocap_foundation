@@ -41,7 +41,9 @@
 #block(fill: rgb("#ddd"), radius: 1pt, stroke: (left: 2pt + gray ),
 inset: (x: 1.5em, y: 0.75em))[#mission]
 
-A Dense Observation is defined as a 
+A Dense Observation of an Agent/Environment is defined as a multi-modal estimate of a set of 
+
+ of records arising from heterogenous 
 
 - DOME-L: Flagship in Greater Boston area. Large enough to fully encompass smaller DOME-S and DOME-Mobile units, to assist development and validation
 - DOME-S: Extension of the USB-camera based motion capture volumes we have been building as part of the FreeMoCap Project. Representative of the kinds of DOME that would be built in a research lab or classrom.
