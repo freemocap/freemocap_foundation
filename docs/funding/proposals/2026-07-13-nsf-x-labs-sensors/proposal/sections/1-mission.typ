@@ -30,7 +30,7 @@
 #import "../helpers/shared.typ": semibold
 
 #let mission = [
-  The #smallcaps()[Mission] of the FreeMoCap Foundation X-Lab will be to 
+  The #smallcaps()[Mission] of the FreeMoCap Foundation X-Lab will be to create a unified science of sensorimotor control by creating a new platform to support the 
 ]
 
 #block(fill: rgb("#ddd"), radius: 4pt, stroke: (left: 5pt + gray ),
