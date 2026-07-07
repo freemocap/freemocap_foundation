@@ -30,7 +30,7 @@
 #import "../helpers/shared.typ": semibold
 
 #let mission = [
-  The #smallcaps()[Mission] of the FreeMoCap Foundation X-Lab will be to create a unified science of sensorimotor control by creating a new kind of scientific research instrumentation that we call a DOME (Densely Oberserved Measurement Environment) designed specically around the integration of heterogenous single-threaded research tools 
+  The #smallcaps()[Mission] of the FreeMoCap Foundation X-Lab will be to create a new kind of research platform to create a Densely Observed Measurement Environment which combines a heterogenous array of instruments which measure the different components of perceptual, motor, and environmental factors relating to sensorimotor control of a biological or articial agent's interaction with its environment  into a single, calibrated, synchronized and coherent observation.
 ]
 
 #block(fill: rgb("#ddd"), radius: 1pt, stroke: (left: 2pt + gray ),
