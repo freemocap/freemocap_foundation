@@ -75,7 +75,7 @@
   background: if DRAFT_MODE { draft-margin-box },
 )
 #set text(size: 12pt, font: "Libertinus Serif", hyphenate: false)
-#set par(justify: false, leading: 0.45em, spacing: 0.85em, first-line-indent: 1em)     
+#set par(justify: false, leading: 0.45em, spacing: 0.85em, first-line-indent: 1em, numbering: "1")     
 #set heading(numbering: "1.", supplement: [§])
 
 #show heading.where(level: 1): set block(above: 0em, below: 1em)
