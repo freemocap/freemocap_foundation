@@ -30,7 +30,7 @@
 #import "../helpers/shared.typ": semibold
 
 #let mission = [
-  The #smallcaps()[Mission] of the FreeMoCap Foundation X-Lab will be to create a novel research platform to create a Densely Observed Measurement Environment which combines a heterogenous array of instruments which measure the different components of perceptual, motor, and environmental factors relating to sensorimotor control of a biological or articial agent's interaction with its environment  into a single, calibrated, synchronized and coherent observation.
+  The #smallcaps()[Mission] of the FreeMoCap Foundation X-Lab will be to create a novel research platform to create a Densely Observed Measurement Environment [DOME] which creates a single, calibrated, synchronized, uncertainty-traced, and semantically-coherent observation from a heterogenous array of instruments the measurement or manipulation of the perceptual, motor, and environmental factors relating to sensorimotor control of a biological or articial agent within an given environment.  
 ]
 
 #block(fill: rgb("#ddd"), radius: 1pt, stroke: (left: 2pt + gray ),
