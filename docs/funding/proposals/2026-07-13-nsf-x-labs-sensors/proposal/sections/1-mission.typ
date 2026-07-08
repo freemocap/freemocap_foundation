@@ -38,27 +38,26 @@
 
 ]
 
-#block(fill: rgb("#f0f"), radius: 1pt, stroke: (left: 2pt + gray ),
+#block(fill: rgb("#ddd"), radius: 1pt, stroke: (left: 2pt + gray ),
 inset: (x: 1.5em, y: 0.75em))[#mission]
 
 // A Dense Observation of an Agent/Environment is defined as a multi-modal estimate of a set of of records arising from heterogenous ...blah blah blah 
 
  
-== Dense Observation Measuring Environment
+== Dense Observational Measuring Environment
 - *DOME-L*: Flagship in Greater Boston area. Large enough to fully encompass smaller DOME-S and DOME-Mobile units to assist development and validation, and stress test ability to calibrate large spaces.
 - *DOME-S*: Extension of the USB-camera based motion capture volumes we have been building as part of the FreeMoCap Project. Representative of the kinds of DOME that would be built in a research lab or classrom.
 - *DOME-Mobile*: Wearable, mobile DOME, capable of generating the precisely the same model Dense Observations as a static DOME in unconstrained indoor or outdoor environemnts. Contionues the lineage of PI's Gaze/Gait and Retinal Optic Flow research @matthis2018 @matthis2022 @muller2023
 
 == *Targets*
   - *Measurment target* - Verdical estiamtes of retinal projection during real-world locomotion @matthis2022
-  - *Integration goal* - Full pathway mapping from photon-retinal transduction on one end, and reaction force detection/generation at the substrate boundary (i.e. the ground)- Buy what we can, build what we can't
-  
+  - *Integration goal* - Full pathway mapping from photon-retinal transduction on one end, and reaction force detection/generation at the substrate boundary (i.e. the ground)
+- 
+  - Buy what we can, build what we can't
   - Build as much of the whole thing with off-the-shelf equipment as we can, then build what doesnt exist
   - Let the research questions, research-bottle necking friction, and uncertainty-tracing drive development. 
 
-
-
-  - 
+   
   - *Bottlenecks* [TODO - re-org this into a more coherent 'Problem -> Solution' format]
     - *Eye trackers* - No open mobile eye trackers exist. Pupil still makes the Core, but its dev is frozen. No modern eye tracker can measure torsion or lens accommodation at any price. We can build our own eye trackers, but in the mean time we still use the best availavle (Pupil Core)and partially hydrate model with the best data we have.
       - After we make our cool new eye tracker, we use the newly unlocked DoF along with from previously existing DoFs to train a model that lets you backfill old data with estimations of previously unmeasured DoF. 
