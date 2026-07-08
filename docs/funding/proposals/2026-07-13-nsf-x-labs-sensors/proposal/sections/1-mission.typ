@@ -50,7 +50,7 @@ inset: (x: 1.5em, y: 0.75em))[#mission]
 - *DOME-Mobile*: Wearable, mobile DOME, capable of generating the precisely the same model Dense Observations as a static DOME in unconstrained indoor or outdoor environemnts. Contionues the lineage of PI's Gaze/Gait and Retinal Optic Flow research @matthis2018 @matthis2022 @muller2023
 
 == *Targets*
-  - *Measurment target* - Verdical estiamtes of retinal projection during real-world locomotion @matthis2022
+  - *Measurment target* - Verdical estiamtes of retinal projection during real-world locomotion @matthis2022 @muller2023 @muller2024
   - *Integration goal* - Full pathway mapping from photon-retinal transduction on one end, and reaction force detection/generation at the substrate boundary (i.e. the ground)
 - 
   - Buy what we can, build what we can't
