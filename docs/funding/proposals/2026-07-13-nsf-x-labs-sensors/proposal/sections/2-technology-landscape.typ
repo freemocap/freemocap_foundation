@@ -6,6 +6,8 @@
   - Myriad single-modality hyperspecialized research threads 
     - OpenSim - Widely used but universally hated by practictioners
     - DeepLabCut - Global success on paper, universally a headache in practice
+    - OpenCap works, but only for iPhones and requires a cloud upload, and caters exclusively to clinical biomechanics
+    - SIMPL/Meshcapade - Has built past empirically validity (3d from 2d) pipelines not truth preserving. Building increasingly more abstract and less tracable data channels on top of the same 2d data we've had for a while
     - etc
   
   - MuJoCo/IsaacLab Driving robotics 
