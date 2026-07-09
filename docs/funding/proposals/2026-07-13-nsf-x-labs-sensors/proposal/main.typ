@@ -105,7 +105,7 @@
 
 // ── Sections ──
 
-#include "sections/1-mission__.typ"
+#include "sections/1-mission.typ"
 #pagebreak(weak:true)
 #include "helpers/figure-page.typ"
 #pagebreak(weak:true)

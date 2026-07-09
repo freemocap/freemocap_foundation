@@ -30,12 +30,12 @@
   uncertainty-tagged record of the _sensory, motor, neural, and environmental_ factors underpinning goal-directed behavior of biological and artificial agents in real-world and naturalistic environments to reshape the fields of perceptomotor neuroscience, muscoloskeletal biomechanics, and mobile robotics.]
   
   
- The #smallcaps[Dome] platform defines a constellation of low-barrier to entry, high skill ceiling instruments
-  to measure (and manipulate) the full perception/action loop in  real-world environments, at instrument scales from a \$100 classroom kit to a
-  flagship facility, every one of them emitting the same kind of record.
-  #semibold[In doing so it will make measurable an object that no existing instrument
-  can capture, and open the real-world sensorimotor control of behaving agents to a
-  science that is currently unable to observe it.]
+//  The #smallcaps[Dome] platform defines a constellation of low-barrier to entry, high skill ceiling instruments
+//   to measure (and manipulate) the full perception/action loop in  real-world environments, at instrument scales from a \$100 classroom kit to a
+//   flagship facility, every one of them emitting the same kind of record.
+//   #semibold[In doing so it will make measurable an object that no existing instrument
+//   can capture, and open the real-world sensorimotor control of behaving agents to a
+//   science that is currently unable to observe it.]
 
 
 #block(
