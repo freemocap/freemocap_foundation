@@ -53,7 +53,7 @@ The perception/action loop of biological and artificial agents follows the same 
 
 // Many disciplines within the broad vehicle of science point their lenses at key components of this complex exchange sensation, perception, decision, and action. Perceptual neuroscientists built magnificently precise tools and theories to measuring and explicating the neural mechanisms behind the cascade of neural activity which follows the absorbtion of a photon by a opsin molecule in the retina. Musculoskeletal biomechanists have characterized the stretch/strain curves the winding `titan` filaments in our muscle spindles and mapped them to the full-body muscle activity of human movement [TODO - rewrite so its F&B reaching - photon - retina - V1 - etc, GRF - GTO - Muscle, motor - spine - muscle - force, or something, the Photon to Forces bit]. 
 
-Imagine all the things you could theoretically observe about a human jogging through a rocky field, and then imagine the instruments you could use to to measure them. You could measure the movement of the body, you could measure the _kinematic_ movements of their bodies with _camera- or IMU-based motion capture_, and the _kinetic forces_ between their body and environmental subtrates with _force plates or pressure-sensing insoles_. 
+Imagine all the things you could theoretically observe about a human jogging through a rocky field, and then imagine the instruments you could use to to measure them. You could measure the movement of the body, you could measure the _kinematic_ movements of their bodies with _camera- or IMU-based motion capture_, and the _kinetic forces_ between their body and environmental subtrates with _force plates or pressure-sensing insoles_. [ETC ETC, Flesh out the pathways that lead to the retinal projection stuff @matthis2022 and outdoor system @muller2023]
 
 [BUT MISSING COHERENT UIFIED PICTURE - ONLY DISPARATE THREADS OF RESEARCH - NEED INTEGRATIVE SYSTEM TO CREATE A NEW KIND OF OBSERVATION, DENSELY COMPOSED OF LAYERED OVERLAPPING MEASUREMENTS OF DIFFERNET PAERTS OF TEH SAME WHOLE (i.e. mocap for kinematics and eye tracking for gaze, both are part of the same whole) to unlock new science in the space between the fields]
 
@@ -64,45 +64,49 @@ Imagine all the things you could theoretically observe about a human jogging thr
 
 We define a *Dense Observational Measurement* as the unified, synchronized, calibrated record resulting from a set of overlapping heterogenous instrumentation measuring different aspects of the same whole, either redundantly or at different scales. [Give examples]
 
+  - *Measurment target* - Verdical estiamtes of retinal projection during real-world locomotion @matthis2022 @muller2023 @muller2024
+  - *Integration goal* - Full pathway mapping from photon-retinal transduction on one end, and reaction force detection/generation at the substrate boundary (i.e. the ground)
+  
 In service of our mission, we will focus our activities on the development tof three cross-validating variants of the #smallcaps[Dome] platform
  
 - *DOME-L*: Flagship in Greater Boston area. Large enough to fully encompass smaller DOME-S and DOME-Mobile units to assist development and validation, and stress test ability to calibrate large spaces.
 - *DOME-S*: Extension of the USB-camera based motion capture volumes we have been building as part of the FreeMoCap Project. Representative of the kinds of DOME that would be built in a research lab or classrom.
 - *DOME-Mobile*: Wearable, mobile DOME, capable of generating the precisely the same model Dense Observations as a static DOME in unconstrained indoor or outdoor environemnts. Continues the lineage of PI's Gaze/Gait and Retinal Optic Flow research @matthis2018 @matthis2022 @muller2023
 
-== *Targets*
-  - *Measurment target* - Verdical estiamtes of retinal projection during real-world locomotion @matthis2022 @muller2023 @muller2024
-  - *Integration goal* - Full pathway mapping from photon-retinal transduction on one end, and reaction force detection/generation at the substrate boundary (i.e. the ground)
-- 
-  - Buy what we can, build what we can't
-  - Build as much of the whole thing with off-the-shelf equipment as we can, then build what doesnt exist
-  - Let the research questions, research-bottle necking friction, and uncertainty-tracing drive development. 
+- Plan - Buy what we can and build what we can. 
+  - Build quickly with existing tech, then parrellel develop next generation (e.g. dense array eye trackers, auto-configuring wall-mounted mocap, drone-swarm mocap)
+// == *Plans and Milestone (Most of this codes to `Outcomes` i think?)*
+
+// - 
+//   - Buy what we can, build what we can't
+//   - Build as much of the whole thing with off-the-shelf equipment as we can, then build what doesnt exist
+//   - Let the research questions, research-bottle necking friction, and uncertainty-tracing drive development. 
 
    
-  - *Technical Bottlenecks that need solved* [TODO - re-org this into a more coherent 'Problem -> Solution' format]
-    - *Eye trackers* - No open mobile eye trackers exist. Pupil still makes the Core, but its dev is frozen. No modern eye tracker can measure torsion or lens accommodation at any price. We can build our own eye trackers, but in the mean time we still use the best availavle (Pupil Core)and partially hydrate model with the best data we have.
-      - After we make our cool new eye tracker, we use the newly unlocked DoF along with from previously existing DoFs to train a model that lets you backfill old data with estimations of previously unmeasured DoF. 
-    - *Centrally Controllable Programmable Capture Volume* - Moving camreas around is a bottlenecking-friction (limits reseach because its too hard to move the cameras), so we build a linked array of centrally and programmatically controllable camera mounts that control extrinsics and intrinsics, to create a system for a self-deploying capture volume (select region in available volume and cameras configer themselves for maximal coverage)
-    - *Hybrid Camera/IMU Kinematics* - Outside-in mocap systems (e.g. camera-based) produce high-accuracy/low-precision kinematic estimates (noise estiamte centered on True value), Inside-Out systems (e.g. IMU-suits) produce high-precision/low-accuracy estimates. Their hybrid should be much better than either alone.
-      - we will use the DOME-Mobile nested in the DOME-W to develop and validate this sensor-fused hybrid estimate. This way, we can create full interoperability between Human estimates derived from cameras, IMU's or both
-    - *Drone-Swarm Mocap* - Drone swarm to create hybrid mocap during outdoor locomotion 
+//   - *Technical Bottlenecks that need solved* [TODO - re-org this into a more coherent 'Problem -> Solution' format]
+//     - *Eye trackers* - No open mobile eye trackers exist. Pupil still makes the Core, but its dev is frozen. No modern eye tracker can measure torsion or lens accommodation at any price. We can build our own eye trackers, but in the mean time we still use the best availavle (Pupil Core)and partially hydrate model with the best data we have.
+//       - After we make our cool new eye tracker, we use the newly unlocked DoF along with from previously existing DoFs to train a model that lets you backfill old data with estimations of previously unmeasured DoF. 
+//     - *Centrally Controllable Programmable Capture Volume* - Moving camreas around is a bottlenecking-friction (limits reseach because its too hard to move the cameras), so we build a linked array of centrally and programmatically controllable camera mounts that control extrinsics and intrinsics, to create a system for a self-deploying capture volume (select region in available volume and cameras configer themselves for maximal coverage)
+//     - *Hybrid Camera/IMU Kinematics* - Outside-in mocap systems (e.g. camera-based) produce high-accuracy/low-precision kinematic estimates (noise estiamte centered on True value), Inside-Out systems (e.g. IMU-suits) produce high-precision/low-accuracy estimates. Their hybrid should be much better than either alone.
+//       - we will use the DOME-Mobile nested in the DOME-W to develop and validate this sensor-fused hybrid estimate. This way, we can create full interoperability between Human estimates derived from cameras, IMU's or both
+//     - *Drone-Swarm Mocap* - Drone swarm to create hybrid mocap during outdoor locomotion 
 
-== *Data consumers*
-- Train better models using reprojected 3d estimates onto each camera's estimates
-- Create validation dataset for consumer labs
-- Train new models using new data of extreme movements (fix COCO datasets are old/limited problem)
-- Package DOM datasets for RL training in robots, use resultant control theoretically models as testable hypotheses [Cite that thing that says training NN on a task predicts neuron firing for animal performing that task]
+// == *Data consumers TODO - Hit this point harder - DOME creates perfect data for RL, internal modelling w/ backfill. Backprojected 3d data provides training refinement for CNN and Transformer models. COCO is old and and limited *
+// - Train better models using reprojected 3d estimates onto each camera's estimates
+// - Create validation dataset for consumer labs
+// - Train new models using new data of extreme movements (fix COCO datasets are old/limited problem)
+// - Package DOM datasets for RL training in robots, use resultant control theoretically models as testable hypotheses [Cite that thing that says training NN on a task predicts neuron firing for animal performing that task]
 
-== *Environment Manipulation*
-- Animals - Like the BS magnet toy gantry
+// == *Environment Manipulation*
+// - Animals - Like the BS magnet toy gantry
  
-- Floor planels
-  - 3d terrain - For control, and validating egocentric mapping from head-sensor array 
-  - Soft, slippy, sticky substrate 
-  - LED floor and/or Wall Panels 
-    - for ground and walls (Like a CAVE, ARGPv3 @matthis2013 matthis2014 matthis2015 matthis2017)
-    - Stimulus manipulation and gameification tasks (bug squishing, stepping stone, obstacle avoidance, dual-attention, etc)
-- VR/Projector - Build equivalent methods in LED, VR, and Projector methods - measure uncertainty at those simulation boundaries (i.e. people step weird in VR, can we figure out why using VR + LED comparison?)
+// - Floor planels
+//   - 3d terrain - For control, and validating egocentric mapping from head-sensor array 
+//   - Soft, slippy, sticky substrate 
+//   - LED floor and/or Wall Panels 
+//     - for ground and walls (Like a CAVE, ARGPv3 @matthis2013 matthis2014 matthis2015 matthis2017)
+//     - Stimulus manipulation and gameification tasks (bug squishing, stepping stone, obstacle avoidance, dual-attention, etc)
+// - VR/Projector - Build equivalent methods in LED, VR, and Projector methods - measure uncertainty at those simulation boundaries (i.e. people step weird in VR, can we figure out why using VR + LED comparison?)
 
 
 
