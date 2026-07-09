@@ -50,6 +50,8 @@ The perception/action loop of biological and artificial agents follows the same 
 
 Many disciplines within the broad vehicle of science point their lenses at key components of this complex exchange sensation, perception, decision, and action. Perceptual neuroscientists built magnificently precise tools and theories to measuring and explicating the neural mechanisms behind the cascade of neural activity which follows the absorbtion of a photon by a opsin molecule in the retina. Musculoskeletal biomechanists have characterized the stretch/strain curves the winding `titan` filaments in our muscle spindles and mapped them to the full-body muscle activity of human movement [TODO - rewrite so its F&B reaching - photon - retina - V1 - etc, GRF - GTO - Muscle, motor - spine - muscle - force, or something, the Photon to Forces bit]. 
 
+[BUT MISSING COHERENT UIFIED PICTURE - ONLY DISPARATE THREADS OF RESEARCH - NEED INTEGRATIVE SYSTEM TO CREATE A NEW KIND OF OBSERVATION, DENSELY COMPOSED OF LAYERED OVERLAPPING MEASUREMENTS OF DIFFERNET PAERTS OF TEH SAME WHOLE (i.e. mocap for kinematics and eye tracking for gaze, both are part of the same whole) to unlock new science in the space between the fields]
+
 == Novel Platform Technology: *Dense Observation Measuring Environment (#smallcaps[Dome])*
 
 // A Dense Observation of an Agent/Environment is defined as a multi-modal estimate of a set of of records arising from heterogenous ...blah blah blah 
