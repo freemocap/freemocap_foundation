@@ -1,140 +1,232 @@
-// // ════════════════════════════════════════════════════════════════════════
-// //  MISSION SECTION 
-// //
-// //  Structure:
-// //     funnel/hook → fracture → instrument → build → xlab → vision → mission
-// //
-// //
-// //  Selection-criteria map (from NSF-OTASO §11.2 Mission Clarity & Outcomes):
-// //     C1  ambitious + technically sound + well-defined
-// //     C2  landscape justifies a dedicated FULL-TIME team
-// //     C3  aligned with X-Labs strategic objectives (reshape a field)
-// //     C4  unmet by existing institutions
-// // 
-// ═══════════════════════════════════════
+// ════════════════════════════════════════════════════════════════════════
+//  MISSION SECTION — target length ~1.0 page of the 8-page limit
+//
+//  Six beats:
+//     1. the observable        (what could be seen)
+//     2. the gap               (why no one sees it)
+//     3. the Dense Observation (the new observable unit)
+//     4. the DOME              (the instrument, three scales)
+//     5. the must-builds       (hardware that does not exist)
+//     6. unmet + vision        (why not academia; the end-state)
+//
+//  Selection-criteria map (NSF-OTASO §11.2 Mission Clarity & Outcomes):
+//     C1  ambitious + technically sound + well-defined   → beats 3,4,5
+//     C2  landscape justifies a dedicated FULL-TIME team → beats 2,6
+//     C3  aligned with X-Labs strategic objectives       → beats 3,6
+//     C4  unmet by existing institutions                 → beat 6
+//
+//  Discipline: lead every subsection with the measurement/instrument noun.
+//  Software, ontology, and philosophy enter only as *why the instrument
+//  scales and lasts* — a clause, never a paragraph.
+// ════════════════════════════════════════════════════════════════════════
 
-// #emph[ Official Instructions (from template):
-//     Proposing teams must describe *one or more novel platform technologies* that the proposed NSF  X-Lab is _uniquely suited_ to advance. Successful teams will have a clear *vision statement* of how *their work will result in an end-state that reshapes an entire field of scientific inquiry or a sector* of technology, and how their Mission is currently *unmet by existing organizational structures* and  funding mechanisms.
-
-  
-//   1. #smallcaps()[Describe *one or more novel platform technologies* ]
-//     - that the proposed NSF  X-Lab is _uniquely suited_ to advance
-  
-//   2.  #smallcaps[Clear *vision statement*]
-//     - How their work will result in an end-state that reshapes:
-//       -  an entire field of scientific inquiry or
-//       -  a sector of technology
-//     - How their Mission is currently unmet by:
-//       - Existing organizational structures
-//       - Funding mechanisms.
-//  ═══════════════════════════════════════
-// ]
 #import "../helpers/shared.typ": semibold
 
-= Mission 
-
-// From photons to forces
-
-// #let mission = [
-//   The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab [FMC-X]* is to create  a novel research apparatus called a *Dense Observation Measuring Environment [DOME]* that [Builds New Observable Unit] fuses heterogenous instrumentation for the measurement or manipulation of the _perceptual, motor, and environmental_ factors realting to the Agent/Environment interaction into a single convergent stream of calibrated, synchronized, semantically-coherent measurements through validated, uncertainty-traced, hardware-agnostic, sensor-to-model pipelines developed and disseminated in collaboration with a broad network of cross-disciplinary researchers #semibold()[to build a unified science of the sensory/motor control of biological and articial agents in real-world environments].
-
-// ]
+= Mission
 
 #let mission = [
-  The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab [FMC-X]* is develop, validate, and disseminate a set of novel research platforms to for recording a *Dense Observational Measurement* of the _sensory/perceptual, motor/mechanical, neural, and environmental_ factors relating to goal-directed movement of humans and non-human animals in real-world and naturalistic environments. ]
-
-#block(fill: rgb("#ddd"), radius: 1pt, stroke: (left: 2pt + gray ),
-inset: (x: 1.5em, y: 0.75em))[#mission]
-
-
-
- 
-The perception/action loop of biological and artificial agents follows the same pattern: sample a thin slice of the available environmental energy through a limited set of imperfect transducers, then generate reaction forces against a substrate in service of some goal. A patterned array of luminous energy refracts through the cornea to be transduced by opsins in retina into a patterned cascade of neural activity flowing down the optic nerve to sub-cortical and cortical pathways, progressing through the primary and secondary areas of the visual cortex, through the integration areas of the poster parietal cortex before pouring down the motor heirarchy from the motor cortex through teh sbcortical areas, down the spine, accelerated by Nodes of Ranvier through reflex gates and pattern generators to activate peripheral nervers which wind `titan` filaments which compress muscle fibers which pull your bones to press against the world to accelerate the body in the equal and opposite direction. Those forces stimulate new organs which genreate a cascade of patterns proprioceptive sensation back up the way it came, in an tightly coupled loop, unfolding across time and space. The agent tumbling forward with saccades and stabilization of teh body and the gaze. Information flows in, forces flow out; the brain exists to yank the bones around.
-
-
-
-Imagine all the things you could theoretically observe about a human jogging through a rocky field, and then imagine the instruments you could use to to measure them. You could measure the movement of the body, you could measure the _kinematic_ movements of their bodies with _camera- or IMU-based motion capture_, and the _kinetic forces_ between their body and environmental subtrates with _force plates or pressure-sensing insoles_. [ETC ETC, Flesh out the pathways that lead to the retinal projection stuff @matthis2022 and outdoor system @muller2023]
-
-[BUT MISSING COHERENT UIFIED PICTURE - ONLY DISPARATE THREADS OF RESEARCH - NEED INTEGRATIVE SYSTEM TO CREATE A NEW KIND OF OBSERVATION, DENSELY COMPOSED OF LAYERED OVERLAPPING MEASUREMENTS OF DIFFERNET PAERTS OF TEH SAME WHOLE (i.e. mocap for kinematics and eye tracking for gaze, both are part of the same whole) to unlock new science in the space between the fields]
-
-== Novel Platform Technology: *Dense Observation Measuring Environment (#smallcaps[Dome])*
-
-// A Dense Observation of an Agent/Environment is defined as a multi-modal estimate of a set of of records arising from heterogenous ...blah blah blah 
-
-
-We define a *Dense Observational Measurement* as the unified, synchronized, calibrated record resulting from a set of overlapping heterogenous instrumentation measuring different aspects of the same whole, either redundantly or at different scales. [Give examples]
-
-  - *Measurment target* - Verdical estiamtes of retinal projection during real-world locomotion @matthis2022 @muller2023 @muller2024
-  - *Integration goal* - Full pathway mapping from photon-retinal transduction on one end, and reaction force detection/generation at the substrate boundary (i.e. the ground)
+  The #smallcaps[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X)* is to build a  novel platform technology — the *Dense Observation Measuring Environment (#smallcaps[Dome])* —
+    an instrument that fuses heterogeneous multi-modal instrumentation into a single  *Dense Observation* representing a a calibrated, synchronized, metrologically traceable,
+  uncertainty-tagged record of the _sensory, motor, neural, and environmental_ factors underpinning goal-directed behavior of biological and artificial agents in real-world and naturalistic environments to reshape the fields of perceptomotor neuroscience, muscoloskeletal biomechanics, and mobile robotics.]
   
-In service of our mission, we will focus our activities on the development tof three cross-validating variants of the #smallcaps[Dome] platform
- 
-- *DOME-L*: Flagship in Greater Boston area. Large enough to fully encompass smaller DOME-S and DOME-Mobile units to assist development and validation, and stress test ability to calibrate large spaces.
-- *DOME-S*: Extension of the USB-camera based motion capture volumes we have been building as part of the FreeMoCap Project. Representative of the kinds of DOME that would be built in a research lab or classrom.
-- *DOME-Mobile*: Wearable, mobile DOME, capable of generating the precisely the same model Dense Observations as a static DOME in unconstrained indoor or outdoor environemnts. Continues the lineage of PI's Gaze/Gait and Retinal Optic Flow research @matthis2018 @matthis2022 @muller2023
-
-- Plan - Buy what we can and build what we can. 
-  - Build quickly with existing tech, then parrellel develop next generation (e.g. dense array eye trackers, auto-configuring wall-mounted mocap, drone-swarm mocap)
-// == *Plans and Milestone (Most of this codes to `Outcomes` i think?)*
-
-// - 
-//   - Buy what we can, build what we can't
-//   - Build as much of the whole thing with off-the-shelf equipment as we can, then build what doesnt exist
-//   - Let the research questions, research-bottle necking friction, and uncertainty-tracing drive development. 
-
-   
-//   - *Technical Bottlenecks that need solved* [TODO - re-org this into a more coherent 'Problem -> Solution' format]
-//     - *Eye trackers* - No open mobile eye trackers exist. Pupil still makes the Core, but its dev is frozen. No modern eye tracker can measure torsion or lens accommodation at any price. We can build our own eye trackers, but in the mean time we still use the best availavle (Pupil Core)and partially hydrate model with the best data we have.
-//       - After we make our cool new eye tracker, we use the newly unlocked DoF along with from previously existing DoFs to train a model that lets you backfill old data with estimations of previously unmeasured DoF. 
-//     - *Centrally Controllable Programmable Capture Volume* - Moving camreas around is a bottlenecking-friction (limits reseach because its too hard to move the cameras), so we build a linked array of centrally and programmatically controllable camera mounts that control extrinsics and intrinsics, to create a system for a self-deploying capture volume (select region in available volume and cameras configer themselves for maximal coverage)
-//     - *Hybrid Camera/IMU Kinematics* - Outside-in mocap systems (e.g. camera-based) produce high-accuracy/low-precision kinematic estimates (noise estiamte centered on True value), Inside-Out systems (e.g. IMU-suits) produce high-precision/low-accuracy estimates. Their hybrid should be much better than either alone.
-//       - we will use the DOME-Mobile nested in the DOME-W to develop and validate this sensor-fused hybrid estimate. This way, we can create full interoperability between Human estimates derived from cameras, IMU's or both
-//     - *Drone-Swarm Mocap* - Drone swarm to create hybrid mocap during outdoor locomotion 
-
-// == *Data consumers TODO - Hit this point harder - DOME creates perfect data for RL, internal modelling w/ backfill. Backprojected 3d data provides training refinement for CNN and Transformer models. COCO is old and and limited *
-// - Train better models using reprojected 3d estimates onto each camera's estimates
-// - Create validation dataset for consumer labs
-// - Train new models using new data of extreme movements (fix COCO datasets are old/limited problem)
-// - Package DOM datasets for RL training in robots, use resultant control theoretically models as testable hypotheses [Cite that thing that says training NN on a task predicts neuron firing for animal performing that task]
-
-// == *Environment Manipulation*
-// - Animals - Like the BS magnet toy gantry
- 
-// - Floor planels
-//   - 3d terrain - For control, and validating egocentric mapping from head-sensor array 
-//   - Soft, slippy, sticky substrate 
-//   - LED floor and/or Wall Panels 
-//     - for ground and walls (Like a CAVE, ARGPv3 @matthis2013 matthis2014 matthis2015 matthis2017)
-//     - Stimulus manipulation and gameification tasks (bug squishing, stepping stone, obstacle avoidance, dual-attention, etc)
-// - VR/Projector - Build equivalent methods in LED, VR, and Projector methods - measure uncertainty at those simulation boundaries (i.e. people step weird in VR, can we figure out why using VR + LED comparison?)
+  
+ The #smallcaps[Dome] platform defines a constellation of low-barrier to entry, high skill ceiling instruments
+  to measure (and manipulate) the full perception/action loop in  real-world environments, at instrument scales from a \$100 classroom kit to a
+  flagship facility, every one of them emitting the same kind of record.
+  #semibold[In doing so it will make measurable an object that no existing instrument
+  can capture, and open the real-world sensorimotor control of behaving agents to a
+  science that is currently unable to observe it.]
 
 
+#block(
+  fill: rgb("#ddd"),
+  radius: 1pt,
+  stroke: (left: 2pt + gray),
+  inset: (x: 1.5em, y: 0.75em),
+)[#mission]
 
-== Unmet Needs in existing institutions
+// ── BEAT 1 — the observable ─────────────────────────────────────────────
+// Concrete, enumerable, sets up the gap. Keep the jogger; she returns at the end.
 
-[TODO - Condense, focus on FOA, less poetic]
-// Many disciplines within the broad vehicle of science point their lenses at key components of this complex exchange sensation, perception, decision, and action. Perceptual neuroscientists built magnificently precise tools and theories to measuring and explicating the neural mechanisms behind the cascade of neural activity which follows the absorbtion of a photon by a opsin molecule in the retina. Musculoskeletal biomechanists have characterized the stretch/strain curves the winding `titan` filaments in our muscle spindles and mapped them to the full-body muscle activity of human movement [TODO - rewrite so its F&B reaching - photon - retina - V1 - etc, GRF - GTO - Muscle, motor - spine - muscle - force, or something, the Photon to Forces bit]. 
+Imagine a person jogging across a rocky field, and imagine everything you might
+measure about her. The kinematics of her body, through camera- or IMU-based motion
+capture. The kinetic forces at the boundary between her foot and the ground, through
+force plates or pressure-sensing insoles. The activity of the muscles that generated
+them, through electromyography. The direction of her gaze, through a mobile eye
+tracker; the terrain she is looking at, through photogrammetric reconstruction; the
+image cast upon her retina, by composing the two @matthis2022 @muller2023. The neural
+activity coordinating all of it, through mobile electroencephalography — or, in a
+model organism, through chronic electrophysiology at cellular resolution.
 
-Each member of these individual research clades understands that their work is contextualized in a broad and deeply cross-disciplinary domain of inquiry, and each strives to reach out across those disciplinary divides to their allies in nearby fields. But in practice, most of those threads fail to connect. Walk through the poster session of a visual neuroscience conference, you will mostly encounter variations of two-alternative-forced-choice-center-out-fixation tasks in non-mobile, head-fixed animal models. At the motor neuroscience conference, it will be single-joint planar reaching movements through a force field. At the biomechanics conference, its steady state walking on a treadmill. Each clade builds beautifully nuanced and complex theories in their domain of inquiry, but the pieces never quite fit together to form a coherent whole. Each group occupies a different room in the tower of Babel. They learned the nuances of different instruments, mastered different branches of mathematics. They are motivated by different kinds of arguments and ground their assertions in different flavors of statistics. They call out to each other in the first and last paragraphs of their research articles, the distant call of an unmet ally echoing across the yawning darkness between the fields. 
+Every one of those measurements has been made. #semibold[None of them have ever been
+made together.]
 
-And yet we are a species of explorers and we are drawn to those dark spaces. Each new generation of scientist builds new tools for their exploration; most dig down within their specialized niche, but some brave few build outwards towards the distant glowing shapes in the fog. Some of those even succeed, building new intergrations of previously disjointed theory - shedding light on new territory and the promise of new science at the intersections between deep domains of existing knowledge. But the discoverer cannot stay there. As reward for their success, they are bundled up and shipped to a new lab across the world with a rubber stamp on their forhead that reads #smallcaps["This One Knows Neuroscience."] 
+// ── BEAT 2 — the gap ────────────────────────────────────────────────────
+// Evidence first (MoBI), then the technical diagnosis. Institutions come later.
 
-Except they don't really, do they? Their expertise is in Neuroscience *and* Biomechanics *and* Computer Vision *and*  Robotics *and* the a few other disparate skillsets as well. They know more about each of those topics than _almost_ anyone in the world... except for the all the people who will be evaluating their progress, scoring their grants, and reviewing their papers. It's not the specialists' fault, (almost) all of them recognize the importantance of cross-disciplinary reseach, and many will offer to lend their experise to the process... but the skillset necessary to merge a set of disparate disciplines is necessarily absent from each component speciality [TODO - Clarity]. 
+This is not for want of trying. Mobile Brain/Body Imaging @makeig2009 has pursued
+synchronous brain, body, and environment capture for over fifteen years, and it
+remains #semibold[a methodology rather than a platform]: heroic laboratories assemble
+it by hand, per study, out of instruments that were never built to compose. Each
+instrument was designed inside a discipline, to a tolerance that discipline cares
+about, on a clock that discipline trusts, exporting a format that discipline reads.
 
-// A culture of specialization focused on building powerful tools for the extremely precise measurement and increasingly deep niche will necessarily lack the skillset necessary to form the weave in the results of the separate niches into a unified whole. 
- 
+Ask a visual neuroscientist why the animal is head-fixed before a screen, and she
+will tell you it is the only way to know what the retina received. Ask a motor
+neuroscientist why the reach is planar and the arm is in a manipulandum, and he will
+tell you it is the only way to know the forces. Ask a biomechanist why the walking is
+steady-state on a treadmill, and she will tell you it is the only way to close the
+loop on the kinetics. Each is describing the same constraint from a different side:
+#semibold[the experiment is shaped by the instrument.] Each field has retreated to the
+largest region of behavior over which its own measurement stays valid, and those
+regions do not overlap. What lies outside all of them — an agent pursuing a goal in
+an unconstrained environment, using vision to place its feet — is not a niche at the
+edge of these fields. It is the ordinary condition of behavior, and it is the one
+condition none of them can measure.
 
-Conway's Law states that organization design systems that mirror their communication structure, so its no surprise that an institution composed of departments, journals, conferences, and funding agents named after specialized domains of inquiry would struggle to support cross-disciplinary research, that a system built on peer review will aways stuggle to evaluate work that sits equidistant between the fields, that an incentive structure that prioritizes novel discovery would struggle to support the long, slow, laborious work necessary to convert a proof of concept to an actual #smallcaps()[Tool] that other people can use. 
+Composing these instruments is not an integration exercise to be solved once by a
+graduate student. It is a problem in #smallcaps[Metrology]: calibration across
+modalities, synchronization across clocks, and the propagation of uncertainty from
+transducer to derived value @jcgm2008gum @jcgm2012vim. It must be solved by the
+instrument itself, permanently, for everyone who uses it. And some of the constituent
+instruments do not exist at any price.
 
+// ── BEAT 3 — the new observable unit ────────────────────────────────────
+// The platform technology is the RECORD, not the room.
 
-Tools should be built by masters and taught to students, not the other way around. We should bake the wisom of our experise and long experience into the tools put into the hands of students and other researchers. Most users of the tool will never notice the myriad ways whey have been gently guided away from pinch points and spinning blades of empirical research, and the ones that do may become the next generation of tool builders. 
+== The New Observable: the *Dense Observation*
+
+Science advances when a new #semibold[unit of observation] becomes available. The cell
+was not discovered by thinking harder about tissue; a lens made it observable, and a
+field organized itself around what the lens revealed. The study of behavior has no such
+unit. It has _variables_ — a joint angle, a fixation, a spike train, a ground reaction
+force — each a projection of the agent/environment interaction onto the measurement
+axis of a single discipline. The projections are precise. They do not reassemble.
+
+We define a *Dense Observation* as a single record in which the perceptual, motor,
+neural, and environmental state of a behaving agent are not separate datasets to be
+aligned after the fact, but #semibold[one measurement]: overlapping heterogeneous
+transducers sampling different aspects of the same whole, redundantly and at different
+scales, unified on a common spatial and temporal frame, with an unbroken chain of
+calibration behind every value and a quantified uncertainty attached to it. Under this
+definition gaze and gait are not two experiments to be correlated afterward; they are
+two faces of one observed object.
+
+#semibold[The Dense Observation is the platform technology.] The instruments below are
+the means of producing one.
+
+// ── BEAT 4 — the instrument ─────────────────────────────────────────────
+// Physical, buildable, three scales. The validation triangle makes them ONE instrument.
+
+== The Instrument: *Dense Observation Measuring Environment* (#smallcaps[Dome])
+
+We will develop three cross-validating variants of the #smallcaps[Dome] platform, which
+together form a single distributed instrument along three axes — #semibold[precision,
+portability, and biological depth]:
+
+- *#smallcaps[Dome]-L* — the flagship instrumented volume, in the greater Boston area. A calibrated, synchronized room in which an entire behaving human is captured across every modality at once: markerless multi-camera motion capture, force plates, gaze, EMG, physiology, mobile EEG, and a manipulable environment (LED floor and wall panels, VR/AR, variable terrain and substrate). Large enough to fully enclose the smaller variants, which is what makes it a metrological reference rather than merely a large room. #semibold[Precision.]
+
+- *#smallcaps[Dome]-S* — the extension of the commodity-camera capture volumes already built and disseminated through the FreeMoCap Project. Representative of the #smallcaps[Dome] a research lab or a classroom would build. #semibold[Reach.]
+
+- *#smallcaps[Dome]-Mobile* — a wearable, self-contained #smallcaps[Dome] producing Dense Observations in unconstrained indoor and outdoor environments, continuing the lineage of the PI's gaze/gait and retinal optic flow work @matthis2018 @matthis2022 @muller2023 @muller2024. #semibold[Portability.]
+
+The variants are not three products; they are one instrument, because
+#semibold[a record from a classroom kit and a record from the flagship differ in
+uncertainty, not in kind.] This is a claim we can make only because it is earned:
+#smallcaps[Dome]-Mobile is calibrated #emph[inside] #smallcaps[Dome]-L before it is
+carried outdoors, establishing an unbroken traceability chain from the flagship's
+reference measurements to a rig on a runner's back @taylor1994 @possolo2015. The same
+chain extends to our collaborating animal-model laboratories, where the invasive neural
+modalities that cannot be applied to humans hydrate the parts of the Dense Observation
+we cannot reach on our own. #semibold[Biological depth.]
+
+// ── BEAT 5 — the must-builds ────────────────────────────────────────────
+// THE topic-fit section. Hardware that does not exist. Lead with the eye tracker.
+
+== What We Must Build
+
+We will buy what exists and build what does not. The clearest must-build is the eye
+tracker. Commercial video trackers plateau near one degree of gaze error, and
+#semibold[whole degrees of freedom of the eye are unmeasured by any instrument at any
+price] — notably ocular torsion and the shape of the lens. Torsion was historically
+set aside on the authority of Listing's law, but Listing's law changes under the
+vestibulo-ocular reflex, which is active essentially continuously during natural
+locomotion. Veridical reconstruction of the retinal image of a moving agent
+#emph[requires] it @matthis2022.
+
+The physics of reaching these degrees of freedom is known and unpackaged: ocular
+torsion from iris texture, and accommodation from higher-order Purkinje reflections,
+now demonstrated at 500 Hz binocularly on commodity hardware.
+// TODO [#verify] — cite Yates et al. 2025 (OpenIrisDPI) and Sangi et al. 2010 (iris
+// torsion). Neither key is yet in FMCF-NSF-XLABS.bib. Do not cite until confirmed.
+#semibold[This is a camera-quality bet, not a physics bet.] Smartphones proved that
+tiny, fast, high-resolution, inexpensive cameras exist; eye trackers never adopted
+them. We have already built what are plausibly the world's best eye trackers for
+ferrets and mice — the ferret rig integrates a three-camera skull-mounted tracker with
+full-body motion capture, binocular gaze, world cameras, and augmented-reality display,
+all calibrated as one system. #semibold[It is a working animal-scale instance of the
+flagship instrument.] // [#verify] confirm phrasing + collaborator attribution w/ B.S.
+
+Three further instruments do not exist and must be built:
+
+- *A programmatically reconfigurable capture volume.* Moving cameras is the friction that limits what an experiment can ask. A linked array of centrally controlled mounts governing extrinsics and intrinsics turns a capture volume into an addressable resource: designate a region, and the array configures itself for maximal coverage.
+
+- *Hybrid outside-in / inside-out kinematics.* Camera-based capture yields estimates that are accurate but imprecise; IMU-based capture yields estimates that are precise but drift. Their principled fusion should exceed either, and #smallcaps[Dome]-Mobile nested inside #smallcaps[Dome]-L is the apparatus that develops and validates it.
+
+- *A coordinated drone swarm.* Camera-carrying drones that follow an agent outdoors, avoiding obstacles and maintaining view, whose fused telemetry grounds the wearable rig's inertial drift and reconstructs the terrain the agent is traversing.
+
+Every one of these deliverables terminates in a number: reprojection error, joint-center
+expanded uncertainty at $k = 2$, gaze-in-world angular uncertainty, inter-sensor
+synchronization jitter against a traceable clock. // TODO [#verify] — JSM to set targets; see §3 Outcomes.
+#semibold[The instrument is engineered so that every claim it makes is falsifiable.]
+That same discipline is what makes a Dense Observation machine-learning-grade —
+uncertainty-annotated at every sample, geometrically self-consistent across views — an
+instrument built from first principles for next-generation AI training pipelines
+@yamins2014 @yamins2016.
+
+// ── BEAT 6 — unmet + vision ─────────────────────────────────────────────
+// Instruments first, institutions second. Conway's Law explains the absence.
+// [#allude] — compress hard. Full argument lives in §5 Team Capabilities.
+
+== Why This Is Unmet
+
+These instruments do not exist because no existing structure is built to produce them.
+Serious, well-funded groups are building #emph[pieces] and each is confined to its piece
+by its own incentives: the institutes build closed, single-species pipelines; the
+archives store finished, single-modality datasets @gorgolewski2016; the commercial
+markerless systems sell kinematics — and only kinematics — into verticals; the standards
+bodies retrofit file formats onto instruments that have already been built. The open,
+multimodal, calibrated, traceable capture instrument falls between every chair.
+
+Conway's Law holds that organizations produce systems mirroring their own communication
+structures @conway1968. An enterprise of departments, journals, and funding programs
+named after specialized domains of inquiry will produce instruments that measure single
+domains, evaluated by reviewers who can only score work that sits inside one. It will
+not produce the long, unglamorous, cumulative labor of metrology — of turning a proof of
+concept into a #smallcaps[Tool] that others can trust. Tools should be built by masters
+and given to students, not the reverse. Building this instrument requires an
+organization designed to build it: full-time, autonomous, owning its own intellectual
+property, and funded on a horizon measured in years rather than grant cycles.
 
 == Vision
 
-The FreeMoCap X-Lab will exist at the boundary between the forms of inquiry that focus on biological and artifical agents moving through real-world environments, including (but not limited to) disciplines like organismal biology, sensory/motor neuroscience, musculoskeletal biomechanics, computer vision and perceptual robotics, as well as animation, video game design, dance and sports performance. 
+In seven years, the jogger crossing that rocky field is a routine measurement. Her
+kinematics, her forces, her muscle activity, her gaze, the terrain beneath her, and the
+image on her retina are recorded as one object, with a defensible uncertainty on every
+value, by an instrument that a graduate student can operate. The same record is produced,
+at lower coverage and higher uncertainty but not in a different kind, by a classroom in
+Ohio and by a ferret hunting in a laboratory in #emph[[collaborator institution]] — and the
+three can be compared, because every value in each of them is traceable to the same
+references.
 
-We will reifiy the complexity at the convergence of these fields into a new unified science of sensorimotor control that defines itself as convergent context in which each its component domains may interoperate. We will eschew any specific application or research question and dedicate ourselves to the #smallcaps[Measurement] itself and the development and dissemination of the tools needed to reliably measure it. We will build a research platform that is not only usable, but is a _joy_ to use. A #smallcaps()[Proper Tool] with a low barrier to entry and an extreme high skill ceiling, an entry point for specialists and generalists alike, regardless of their background and level of expertise. A Greased Rail to the Good Stuff at the edge of human knowledge. 
+Because the record is a scaffold rather than a fixed schema, it improves in arrears:
+once torsion is measured jointly with the degrees of freedom that older instruments
+captured, it can be estimated backward into recordings made before any instrument could
+measure it. #semibold[The archive appreciates.]
 
-We will define ourselves as the physical, technological, and philosophical center of mass for the integrated study real-world sensorimotor control. A layered physical and sociological engine for the development, validation, training, and desemination of the instruments and skillsets necessary to for recording densely layered emprical records of the full agent/environemnt interaction. 
-
-We will build \$100 three-camera mocap kits for students, mobile eye trackers that measure degrees of freedom that are invisible to current technology, field-deployable gait labs, and wearable, mobile research environemnts, all fully interoperabile with each other producing empirically grounded measurement records that are purely isomorphic to the output of massive flagship systems. Heterogenous arrays of bleeding edge and made-to-spec built into vast industrial buildings, the opposite of a space telescope, it's lenses pointing inward to the place where the body meets the world. 
+We will build \$100 three-camera kits for students, mobile eye trackers that measure
+degrees of freedom invisible to current technology, field-deployable gait laboratories,
+and wearable research environments — all of them interoperable, all of them producing the
+same kind of record. Heterogeneous arrays of bleeding-edge and made-to-spec instruments
+built into vast industrial buildings: #semibold[the opposite of a space telescope, its
+lenses pointing inward to the place where the body meets the world.]
