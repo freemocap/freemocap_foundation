@@ -41,16 +41,8 @@
 // ]
 
 #let mission = [
-  The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab [FMC-X]* is 
-  
-  develop, validate, and disseminate a set of novel research platforms to for recording a *Dense Observational Measurement* of the _sensory/perceptual, motor/mechanical, neural, and environmental_ factors relating to the movement of humans and non-human animals through 
-  
-   the Agent/Environment interaction 
-  
-  
-  into a single convergent stream of calibrated, synchronized, semantically-coherent measurements through validated, uncertainty-traced, hardware-agnostic, sensor-to-model pipelines developed and disseminated in collaboration with a broad network of cross-disciplinary researchers #semibold()[to build a unified science of the sensory/motor control of biological and articial agents in real-world environments].
+  The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab [FMC-X]* is develop, validate, and disseminate a set of novel research platforms to for recording a *Dense Observational Measurement* of the _sensory/perceptual, motor/mechanical, neural, and environmental_ factors relating to goal-directed movement of humans and non-human animals in real-world and naturalistic environments. ]
 
-]
 #block(fill: rgb("#ddd"), radius: 1pt, stroke: (left: 2pt + gray ),
 inset: (x: 1.5em, y: 0.75em))[#mission]
 
@@ -70,8 +62,9 @@ Imagine all the things you could theoretically observe about a human jogging thr
 // A Dense Observation of an Agent/Environment is defined as a multi-modal estimate of a set of of records arising from heterogenous ...blah blah blah 
 
 
-We define a *Dense Observational Measurement* as the unified, synchronized, calibrated record resulting from a set of overlapping heterogenous instrumentation measuring different aspects of the same whole, either redundantly or at different scales. 
+We define a *Dense Observational Measurement* as the unified, synchronized, calibrated record resulting from a set of overlapping heterogenous instrumentation measuring different aspects of the same whole, either redundantly or at different scales. [Give examples]
 
+In service of our mission, we will focus our activities on the development tof three cross-validating variants of the #smallcaps[Dome] platform
  
 - *DOME-L*: Flagship in Greater Boston area. Large enough to fully encompass smaller DOME-S and DOME-Mobile units to assist development and validation, and stress test ability to calibrate large spaces.
 - *DOME-S*: Extension of the USB-camera based motion capture volumes we have been building as part of the FreeMoCap Project. Representative of the kinds of DOME that would be built in a research lab or classrom.
