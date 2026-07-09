@@ -46,16 +46,21 @@ inset: (x: 1.5em, y: 0.75em))[#mission]
 
 
  
-The perception/action loop of biological and artificial agents follows the same pattern: sample a thin slice of the available environmental energy through a limited set of imperfect transducers, then generate reaction forces against a substrate in service of some goal. Information flows in, forces flow out; the brain exists to yank the bones around.
+The perception/action loop of biological and artificial agents follows the same pattern: sample a thin slice of the available environmental energy through a limited set of imperfect transducers, then generate reaction forces against a substrate in service of some goal. 
+
+
+Information flows in, forces flow out; the brain exists to yank the bones around.
 
 Many disciplines within the broad vehicle of science point their lenses at key components of this complex exchange sensation, perception, decision, and action. Perceptual neuroscientists built magnificently precise tools and theories to measuring and explicating the neural mechanisms behind the cascade of neural activity which follows the absorbtion of a photon by a opsin molecule in the retina. Musculoskeletal biomechanists have characterized the stretch/strain curves the winding `titan` filaments in our muscle spindles and mapped them to the full-body muscle activity of human movement [TODO - rewrite so its F&B reaching - photon - retina - V1 - etc, GRF - GTO - Muscle, motor - spine - muscle - force, or something, the Photon to Forces bit]. 
+
+Imagine all the things you could theoretically observe about a human jogging through a rocky field, and then imagine the instruments you could use to to measure them. To understand thefor the body, you could measure the _kinematic_ movements of their bodies with _camera- or IMU-based motion capture_, and the _kinetic forces_ between their body and environmental subtrates with _force plates or pressure-sensing insoles_. 
 
 [BUT MISSING COHERENT UIFIED PICTURE - ONLY DISPARATE THREADS OF RESEARCH - NEED INTEGRATIVE SYSTEM TO CREATE A NEW KIND OF OBSERVATION, DENSELY COMPOSED OF LAYERED OVERLAPPING MEASUREMENTS OF DIFFERNET PAERTS OF TEH SAME WHOLE (i.e. mocap for kinematics and eye tracking for gaze, both are part of the same whole) to unlock new science in the space between the fields]
 
 == Novel Platform Technology: *Dense Observation Measuring Environment (#smallcaps[Dome])*
 
 // A Dense Observation of an Agent/Environment is defined as a multi-modal estimate of a set of of records arising from heterogenous ...blah blah blah 
-Imagine all the things you could theoretically observe about a human jogging through a rocky field, and then imagine the instruments you could use to to measure them. To understand thefor the body, you could measure the _kinematic_ movements of their bodies with _camera- or IMU-based motion capture_, and the _kinetic forces_ between their body and environmental subtrates with _force plates or pressure-sensing insoles_. 
+
 
 We define a *Dense Observational Measurement* as the unified, synchronized, calibrated record resulting from a set of overlapping heterogenous instrumentation measuring different aspects of the same whole, either redundantly or at different scales. 
 
