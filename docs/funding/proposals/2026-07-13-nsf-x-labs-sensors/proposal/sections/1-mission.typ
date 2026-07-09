@@ -55,7 +55,7 @@ Many disciplines within the broad vehicle of science point their lenses at key c
 == Novel Platform Technology: *Dense Observation Measuring Environment (#smallcaps[Dome])*
 
 // A Dense Observation of an Agent/Environment is defined as a multi-modal estimate of a set of of records arising from heterogenous ...blah blah blah 
-Imagine a human walking across at 
+Imagine a human running across the tops of boulders along a rocky trail. 
 
 We define a *Dense Observational Measurement* as the unified, synchronized, calibrated record resulting from a set of overlapping heterogenous instrumentation measuring different aspects of the same whole, either redundantly or at different scales. 
 
