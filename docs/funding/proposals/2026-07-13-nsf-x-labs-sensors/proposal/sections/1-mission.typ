@@ -43,7 +43,7 @@
 #let mission = [
   The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab [FMC-X]* is 
   
-  develop, validate, and disseminate a set of novel research platforms to for recording a *Dense Observational Measurement* of the _perceptual, motor, neural, and environmental_ factors relating to the 
+  develop, validate, and disseminate a set of novel research platforms to for recording a *Dense Observational Measurement* of the _sensory/perceptual, motor/mechanical, neural, and environmental_ factors relating to the movement of humans and non-human animals through 
   
    the Agent/Environment interaction 
   
