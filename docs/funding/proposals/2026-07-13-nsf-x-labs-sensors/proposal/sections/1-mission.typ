@@ -5,9 +5,9 @@
 = Mission
 
 #let mission = [
-  The #smallcaps[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X)* is to create a novel platform technology that generates a new observable object respresenting the full, closed-loop interaction between an agent and its environments by
-  
-  new unified observable object which captures the full closed-loop interaction between an agent and its environment by building 
+The Mission of the FreeMoCap Foundation X-Lab (FMC-X) is to develop, validate, and disseminate the Densely Overlapping Measurement Environment (DOME), a measurement platform that records the eye, the body, and the world in a single calibrated, synchronized, and metrologically traceable observable record
+
+, and thereby makes the retinal input of a freely behaving agent a measured quantity — in humans, and in the animal models where the cortex that input drives can be recorded directly.
   
   ]
   
