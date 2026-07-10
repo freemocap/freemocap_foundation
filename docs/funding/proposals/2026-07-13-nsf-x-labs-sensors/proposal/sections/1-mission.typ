@@ -18,9 +18,7 @@ The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X) *is to deve
 We will develop and validate a novel research platform which supports #smallcaps[Densely Overlapping Measurement Environments] (#smallcaps[Dome]s) for recording and reconstructing (at least) the *eye*, *body*, and *environment* of freely moving human and non-human animals and geometically estimate the #semibold[projected retinal stimulus] in the eye and #semibold()[internal and external reaction forces] on the body with sufficient accuracy and precision to model and predict the resultant cascades of downstream activation in the peripheral and central nervous systems. 
 
 
-We will package these capacties into a set of convivial tools
-
-
- and hardware- and species-agnostic instrumentation platform and disseminate them to a network of research collaborators and through the existing, gloabally expansive community of FreeMoCap users, and drive our development on the basis of user-reported capacity blocking bottlenecks and limitations. Our organization, the tools we build, and the new observations we unlock will form a boundary object that ]. 
+// EDIT/REMOVE - 
+// We will package these capacties into a set of convivial tools and hardware- and species-agnostic instrumentation platform and disseminate them to a network of research collaborators and through the existing, gloabally expansive community of FreeMoCap users, and drive our development on the basis of user-reported capacity blocking bottlenecks and limitations. Our organization, the tools we build, and the new observations we unlock will form a boundary object that ]. 
   
  
