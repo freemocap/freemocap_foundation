@@ -4,7 +4,8 @@
 = Mission
 
 #let mission_statement = [
-The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X) *is to develop and disseminate the tools to measure a new scientific observable representing the closed loop of the #semibold()[perceptual, mechanical, and environmental] aspects of goal-directed behavior of freely moving organisms in real-world environments.]
+The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X) *is to develop and disseminate the tools to measure a new scientific observable representing the closed loop of the #semibold()[perceptual, mechanical, and environmental] aspects of goal-directed behavior of freely moving organisms to reshape perceptual/motor neuroscience, muscuskeletal biomechanics, embodied/agentic artificial intelligence, and mobile robotics into a new convergent science of #semibold[sensorimotor control in natural environments
+.]
 
  
 #block(
@@ -20,6 +21,6 @@ We will develop and validate a novel research platform which supports #smallcaps
 We will package these capacties into a set of convivial tools
 
 
- and hardware- and species-agnostic instrumentation platform and disseminate them to a network of research collaborators and through the existing, gloabally expansive community of FreeMoCap users, and drive our development on the basis of user-reported capacity blocking bottlenecks and limitations. Our organization, the tools we build, and the new observations we unlock will form a boundary object that reshapes the fields of perceptual/motor neuroscience, muscuskeletal biomechanics, and mobile robotics into a new convergent science of #semibold[sensorimotor control in natural environments]. 
+ and hardware- and species-agnostic instrumentation platform and disseminate them to a network of research collaborators and through the existing, gloabally expansive community of FreeMoCap users, and drive our development on the basis of user-reported capacity blocking bottlenecks and limitations. Our organization, the tools we build, and the new observations we unlock will form a boundary object that ]. 
   
  
