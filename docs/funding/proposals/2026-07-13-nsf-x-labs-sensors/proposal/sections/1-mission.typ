@@ -19,7 +19,7 @@ We will develop and validate a #semibold()[novel research instrument ]we call a 
 
 == Measurement target
 
-We will organize our develoment of 
+We will organize our technical development around 
 
 record and reconstruct the *eye*, *body*, and *environment* of freely moving human and non-human animals and geometically estimate the #semibold[projected retinal stimulus] in the eye and #semibold()[internal and external reaction forces] on the body with sufficient accuracy and precision to model and predict the resultant cascades of downstream activation in the peripheral and central nervous systems. 
 
