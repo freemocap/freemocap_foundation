@@ -5,7 +5,9 @@
 = Mission
 
 #let mission = [
-  The #smallcaps[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X)* is to create a new unified observable object which captures the full complete Agent/Environment interaction by 
+  The #smallcaps[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X)* is to create a novel platform technology that generates a new observable object respresenting the full, closed-loop interaction between an agent and its environments by
+  
+  new unified observable object which captures the full closed-loop interaction between an agent and its environment by building 
   
   ]
   
