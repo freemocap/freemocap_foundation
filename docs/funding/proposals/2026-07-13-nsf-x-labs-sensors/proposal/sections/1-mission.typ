@@ -19,9 +19,28 @@ We will develop and validate a #semibold()[novel research instrument ]we call a 
 
 == Measurement target
 
-We will organize our technical development around the technical bottlenecks which limit our ability to combine reconstructions
+We will organize our technical development around the technical bottlenecks which limit our ability to combine reconstructions the *eye*, *body*, and *environment* into combined represetations whch trace to activity in the central and peripheral nervous system ...
 
- of the *eye*, *body*, and *environment* into veridical estimates the #semibold[projected retinal stimulus] in the eye and #semibold()[internal and external reaction mechanical forces] on the body with sufficient accuracy and precision to model and predict the resultant cascades of downstream activation in the peripheral and central nervous systems. 
+```
+*(Eye tracker) -> Eye kinematics *------------------------------------------------------------------\
+                                                                                                     \
+                                                                                                      \                               
+                                                                                                       \
+*(Camera-based Motion Capture) -> Body Landmark Trajectories*                                           ------> *Gaze Kinematics*--------------------\
+                                                             \                                         /                                             \
+                                                              -->*|Hybrid Estimate|-> Body Kinematics*-                                                 --> *Retinal Projected Image / Optic Flow, Input to Visual System*
+                                                            /                                         \                                              /
+*(IMU-based Motion Capture) -> Body Segment Orientation* --/                                           -> *Inverse Dynamics -> Muscle Activity*      /
+                                                                                                      -/                                            /
+*World--> Measure --> Ground Reaction Forces (Kinetics)*----------------------------------------------/                                            /
+      |            |                                                                                                                              /
+      |            *-> (Groundplane geometry, terrain floor panels, head-mounted ground scanner(part of eye tracker))*---------------------------/
+      |
+      *--> Manipulate (Experiment Controlled Experiments VR, AR, XR with LED floor panels, magnet gantried fictive prey target in the ferret case)*
+
+```
+
+// veridical estimates the #semibold[projected retinal stimulus] in the eye and #semibold()[internal and external reaction mechanical forces] on the body with sufficient accuracy and precision to model and predict the resultant cascades of downstream activation in the peripheral and central nervous systems. 
 
 We will organize our development around the technological 
 
