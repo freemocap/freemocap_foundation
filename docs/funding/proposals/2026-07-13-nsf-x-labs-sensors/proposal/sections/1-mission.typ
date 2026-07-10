@@ -5,7 +5,7 @@
 = Mission
 
 #let mission = [
-The Mission of the FreeMoCap Foundation X-Lab (FMC-X) is to create a new scientific observable representing the fully closed loop of the perceptual, mechanical, and environmental aspects of goal-directed behavior of freely moving organisms in real-world environments. In service of this mission, we will develop and disseminate 
+The Mission of the FreeMoCap Foundation X-Lab (FMC-X) is to create a new scientific observable representing the fully closed loop of the perceptual, mechanical, and environmental aspects of goal-directed behavior of freely moving organisms in real-world environments. In service of this mission, we will fuse data streams from heterogenous instrumentation arrays into synchronized, calibrated, and metrologically-traced #semibold[Densely Oberlapping Measurement Environments]
 
 
 novel research platform that fuses heterogenous instrumentation streams into a single, unified rec
