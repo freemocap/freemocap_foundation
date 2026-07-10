@@ -5,7 +5,7 @@
 
 #let mission_statement = [
 The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X) *is to develop and disseminate the tools to measure a new scientific observable representing the closed loop of the #semibold()[perceptual, mechanical, and environmental] aspects of goal-directed behavior of freely moving organisms to reshape perceptual/motor neuroscience, muscuskeletal biomechanics, embodied/agentic artificial intelligence, and mobile robotics into a new convergent science of #semibold[sensorimotor control in natural environments
-.]
+.]]
 
  
 #block(
