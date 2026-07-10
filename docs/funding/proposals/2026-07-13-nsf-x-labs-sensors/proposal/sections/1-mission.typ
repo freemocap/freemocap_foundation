@@ -10,12 +10,13 @@ The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X) *is to deve
   fill: rgb("#ddd"),
   radius: 1pt,
   stroke: (left: 2pt + gray),
-  inset: (x: 1.5em, y: 0.75em),
+  inset: (x: 1em, y: 0.5em),
 )[#mission_statement]
 
 //================
 
-We will develop and validate a novel research instrument, a centrally-controlable array of heterogenous sensors into a *Densely Overlapping Measurement Environment (DOME)* for measuring and manipulating the *body*,  *eye*, and *environment* of a freely moving agent within a specified 3D volume of real-world space. 
+We will develop and validate a novel research instrument called a *#smallcaps()[Dome]* - A *Densely Overlapping Measurement Environment*  a centrally-controlable array of heterogenous sensors into  for measuring and manipulating the *body*,  *eye*, and *environment* of a freely moving agent within a specified 3D volume of real-world space. 
+
 
 
 
