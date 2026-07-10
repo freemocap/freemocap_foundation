@@ -17,9 +17,6 @@ The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X) *is to deve
 
 We will develop and validate a novel research instrument, a centrally-controlable array of heterogenous instruments into a *Densely Overlapping Measurement Environment (DOME)* for measuring and manipulating the *body*,  *eye*, and *environment* of a freely moving agent within a specified 3D volume of real-world space.
 
-Specifically, we will be a large flagship instrument (DOME-L) in Greater Boston area that is large enough
-
-
 
 
 
