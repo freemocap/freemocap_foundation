@@ -5,7 +5,7 @@
 = Mission
 
 #let mission = [
-The Mission of the FreeMoCap Foundation X-Lab (FMC-X) is to crate a novel platform technology 
+The Mission of the FreeMoCap Foundation X-Lab (FMC-X) is to crate a novel measurement and experimentation platform which 
 
 
 
