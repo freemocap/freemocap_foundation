@@ -15,8 +15,15 @@ The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X) *is to deve
 
 //================
 
-We will develop and validate a #semibold()[novel research instrument ]we call a *#smallcaps()[Dome]* _(Densely Overlapping Measurement Environment)_, which unifies a heterogeneous array of multi-modal sensors into single, centrally-controllable instrument for measuring and manipulating the *body*,  *eye*, and *environment* of a freely moving agent within a specified 3D volume of real-world space. 
+We will develop and validate a #semibold()[novel research instrument ]we call a *#smallcaps()[Dome]* _(Densely Overlapping Measurement Environment)_, which unifies a heterogeneous array of multi-modal sensors into single, centrally-controllable, metrologically-validated instrument for the measurement and manipulation of a freely moving agent within a specified 3D volume of real-world space. 
 
+== Measurement target
+
+We will record and reconstruct the *eye*, *body*, and *environment* of freely moving human and non-human animals and geometically estimate the #semibold[projected retinal stimulus] in the eye and #semibold()[internal and external reaction forces] on the body with sufficient accuracy and precision to model and predict the resultant cascades of downstream activation in the peripheral and central nervous systems. 
+
+
+
+== Flagship 
 
 
 
@@ -30,7 +37,7 @@ We will develop and validate a #semibold()[novel research instrument ]we call a 
 
 
 
-novel research platform which supports #smallcaps[Densely Overlapping Measurement Environments] (#smallcaps[Dome]s) for recording and reconstructing (at least) the *eye*, *body*, and *environment* of freely moving human and non-human animals and geometically estimate the #semibold[projected retinal stimulus] in the eye and #semibold()[internal and external reaction forces] on the body with sufficient accuracy and precision to model and predict the resultant cascades of downstream activation in the peripheral and central nervous systems. 
+novel research platform which supports #smallcaps[Densely Overlapping Measurement Environments] (#smallcaps[Dome]s) for recording and reconstructing (at least)
 
 
 // EDIT/REMOVE - 
