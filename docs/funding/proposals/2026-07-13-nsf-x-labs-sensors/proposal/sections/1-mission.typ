@@ -17,6 +17,10 @@ The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X) *is to deve
 
 We will develop and validate a novel research instrument, a centrally-controlable array of heterogenous instruments into a *Densely Overlapping Measurement Environment (DOME)* for measuring and manipulating the *body*,  *eye*, and *environment* of a freely moving agent within a specified 3D volume of real-world space.
 
+Specifically, we will build a 
+
+
+
 
 
 novel research platform which supports #smallcaps[Densely Overlapping Measurement Environments] (#smallcaps[Dome]s) for recording and reconstructing (at least) the *eye*, *body*, and *environment* of freely moving human and non-human animals and geometically estimate the #semibold[projected retinal stimulus] in the eye and #semibold()[internal and external reaction forces] on the body with sufficient accuracy and precision to model and predict the resultant cascades of downstream activation in the peripheral and central nervous systems. 
