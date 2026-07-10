@@ -4,9 +4,7 @@
 = Mission
 
 #let mission_statement = [
-The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X) *is to develop and disseminate the tools to measure a new scientific observable representing the closed loop of the #semibold()[perceptual, mechanical, and environmental] aspects of goal-directed behavior of freely moving organisms to reshape perceptual/motor neuroscience, muscuskeletal biomechanics, embodied/agentic artificial intelligence, and mobile robotics into a new convergent science of #semibold[sensorimotor control in natural environments
-.]]
-
+The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X) *is to develop and disseminate the tools to measure a new scientific observable representing the closed loop of the #semibold()[perceptual, mechanical, and environmental] aspects of goal-directed behavior of freely moving organisms to reshape perceptual/motor neuroscience, muscuskeletal biomechanics, embodied/agentic artificial intelligence, and mobile robotics into a new convergent science of #semibold[sensorimotor control in natural environments.]]
  
 #block(
   fill: rgb("#ddd"),
@@ -15,9 +13,11 @@ The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X) *is to deve
   inset: (x: 1.5em, y: 0.75em),
 )[#mission_statement]
 
+//================
+
 We will develop and validate a novel research instrument, a centrally-controlable array of heterogenous instruments into a *Densely Overlapping Measurement Environment (DOME)* for measuring and manipulating the *body*,  *eye*, and *environment* of a freely moving agent within a specified 3D volume of real-world space.
 
-Specifically, we will build a 
+Specifically, we will be a large flagship instrument (DOME-L) in Greater Boston area that is large enough
 
 
 
