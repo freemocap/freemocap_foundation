@@ -15,7 +15,7 @@ The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X) *is to deve
   inset: (x: 1.5em, y: 0.75em),
 )[#mission_statement]
 
-We will develop and validate a novel research instrument, a centrally-controlled array of heterogenous 
+We will develop and validate a novel research instrument, a centrally-controlable array of heterogenous instruments which create a *Densely Overlapping Measurement Environment (DOME)* 
 
 
 defined as 3d volume of real-world space 
