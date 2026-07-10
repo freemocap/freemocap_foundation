@@ -15,7 +15,8 @@ The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X) *is to deve
 
 //================
 
-We will develop and validate a novel research instrument we call a *#smallcaps()[Dome]* _(Densely Overlapping Measurement Environment)_, a centrally-controlable tool for converting overlapping array of heterogenous sensors into for measuring and manipulating the *body*,  *eye*, and *environment* of a freely moving agent within a specified 3D volume of real-world space. 
+We will develop and validate a #semibold()[novel research instrument ]we call a *#smallcaps()[Dome]* _(Densely Overlapping Measurement Environment)_, which unifies a heterogeneous array of multi-modal sensors into single, centrally-controllable instrument for measuring and manipulating the *body*,  *eye*, and *environment* of a freely moving agent within a specified 3D volume of real-world space. 
+
 
 
 
