@@ -15,15 +15,15 @@ The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X) *is to deve
 
 //================
 
-We will develop and validate a novel research instrument, a centrally-controlable array of heterogenous instruments into a *Densely Overlapping Measurement Environment (DOME)* for measuring and manipulating the *body*,  *eye*, and *environment* of a freely moving agent within a specified 3D volume of real-world space. 
+We will develop and validate a novel research instrument, a centrally-controlable array of heterogenous sensors into a *Densely Overlapping Measurement Environment (DOME)* for measuring and manipulating the *body*,  *eye*, and *environment* of a freely moving agent within a specified 3D volume of real-world space. 
 
 
 
-- *#smallcaps[Dome]-L* — the flagship instrumented volume, in the greater Boston area. Large enough to fully enclose the smaller variants for validation and metrological grounding.
+// - *#smallcaps[Dome]-L* — the flagship instrumented volume, in the greater Boston area. Large enough to fully enclose the smaller variants for validation and metrological grounding.
 
-- *#smallcaps[Dome]-S* — the extension of the commodity-camera capture volumes already built and disseminated through the FreeMoCap Project. Representative of the #smallcaps[Dome] a research lab or a classroom would build. 
+// - *#smallcaps[Dome]-S* — the extension of the commodity-camera capture volumes already built and disseminated through the FreeMoCap Project. Representative of the #smallcaps[Dome] a research lab or a classroom would build. 
 
-- *#smallcaps[Dome]-Mobile* — a wearable, self-contained #smallcaps[Dome] producing Dense Observations in unconstrained indoor and outdoor environments, continuing the lineage of the PI's gaze/gait and retinal optic flow work @matthis2018 @matthis2022 @muller2023 @muller2024. 
+// - *#smallcaps[Dome]-Mobile* — a wearable, self-contained #smallcaps[Dome] producing Dense Observations in unconstrained indoor and outdoor environments, continuing the lineage of the PI's gaze/gait and retinal optic flow work @matthis2018 @matthis2022 @muller2023 @muller2024. 
 
 
 
