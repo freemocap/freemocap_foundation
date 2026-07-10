@@ -28,16 +28,15 @@ We will organize our development around the technological
 
 
 
-// - *#smallcaps[Dome]-L* — the flagship instrumented volume, in the greater Boston area. Large enough to fully enclose the smaller variants for validation and metrological grounding.
+- *#smallcaps[Dome]-L* — the flagship instrumented volume, in the greater Boston area. Large enough to fully enclose the smaller variants for validation and metrological grounding.
 
-// - *#smallcaps[Dome]-S* — the extension of the commodity-camera capture volumes already built and disseminated through the FreeMoCap Project. Representative of the #smallcaps[Dome] a research lab or a classroom would build. 
+- *#smallcaps[Dome]-S* — the extension of the commodity-camera capture volumes already built and disseminated through the FreeMoCap Project. Representative of the #smallcaps[Dome] a research lab or a classroom would build. 
 
-// - *#smallcaps[Dome]-Mobile* — a wearable, self-contained #smallcaps[Dome] producing Dense Observations in unconstrained indoor and outdoor environments, continuing the lineage of the PI's gaze/gait and retinal optic flow work @matthis2018 @matthis2022 @muller2023 @muller2024. 
-
-
+- *#smallcaps[Dome]-Mobile* — a wearable, self-contained #smallcaps[Dome] producing Dense Observations in unconstrained indoor and outdoor environments, continuing the lineage of the PI's gaze/gait and retinal optic flow work @matthis2018 @matthis2022 @muller2023 @muller2024. 
 
 
-novel research platform which supports #smallcaps[Densely Overlapping Measurement Environments] (#smallcaps[Dome]s) for recording and reconstructing (at least)
+
+
 
 
 // EDIT/REMOVE - 
