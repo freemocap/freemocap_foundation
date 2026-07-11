@@ -54,7 +54,7 @@
     width: 6.5in,
     height: 9in,
     fill: none,
-    stroke: 0.5pt + rgb("#aaa"),
+    stroke: 1pt + rgb("#878787"),
   ),
 )
 
@@ -108,6 +108,8 @@
 #include "sections/1-mission.typ"
 #pagebreak(weak:true)
 #include "helpers/figure-page.typ"
+#pagebreak(weak:true)
+#include "helpers/typst-diagram-fmc-nsf-xlab/main.typ"
 #pagebreak(weak:true)
 #include "sections/2-technology-landscape.typ"
 #pagebreak(weak:true)
