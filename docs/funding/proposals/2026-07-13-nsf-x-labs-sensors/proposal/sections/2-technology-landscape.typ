@@ -15,8 +15,10 @@
 
 - FreeMoCap and its landscape
   - Established Tool with Growing International Community
+    - >15k uses from 152 countries, 10k GH stars, 3.5k in Discord server
   - Existence is proof-of-concept of approach, XLabs scale support would accelerate FreeMoCap model into the global scale
-  - v2 has realtime and professional architecture
+  - v2 has realtime and professional architecture (thanks to EI)
+  - DOME-L and DOME-S camera-based mocap will use FMC or a variant. Mocap, Eye, World camera software composable from FMC polyrepo (skellycam, skellytracker, skellyforge, etc)
 
 - ARGP
   - ARGPv1 - PhD Era @matthis2013 @matthis2014 @matthis2015 @matthis2017

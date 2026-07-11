@@ -1,7 +1,16 @@
 // ── 3. Outcomes ──
 = Outcomes
 
-- DOME-L, DOME-S, DOME-Mobile (pull details from `Mission`)
+- Develop, validte, and disseminte - DOME Variants
+  - *#smallcaps[Dome]-L* — the flagship instrumented volume, in the greater Boston area. Large enough to fully enclose the smaller variants for validation and metrological grounding.
+
+  - *#smallcaps[Dome]-S* — the extension of the commodity-camera capture volumes already built and disseminated through the FreeMoCap Project. Representative of the #smallcaps[Dome] a research lab or a classroom would build. 
+
+  - *#smallcaps[Dome]-Mobile* — a wearable, self-contained #smallcaps[Dome] producing Dense Observations in unconstrained indoor and outdoor environments, continuing the lineage of the PI's gaze/gait and retinal optic flow work @matthis2018 @matthis2022 @muller2023 @muller2024. 
+
+  - Also - disseminate custom use-directed builds of DOME variants through network of collaborators studying Humans, animals, and robots. 
+
+
 - New eye tracker
   - Best ever made
   - Add every sensor we can, see which allow us to measure DoFs we need, optionally scale back and remove 
