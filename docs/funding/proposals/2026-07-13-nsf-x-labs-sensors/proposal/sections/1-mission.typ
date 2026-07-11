@@ -14,8 +14,16 @@ The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X) *is to deve
 )[#mission_statement]
 
 //================
+== Flagship 
+We will develop and validate a #semibold()[novel research instrument ]we call a *#smallcaps()[Dome]* _(Densely Overlapping Measurement Environment, Ref - Figure 1 - Hero Figure showing full DOME)_, which unifies a heterogeneous array of multi-modal sensors into single, centrally-controllable, metrologically-validated instrument for the measurement and manipulation of a freely moving agent within a specified 3D volume of real-world space (ref DOME-L, DOME-S, and DOME-Mobile in `3. Outcomes`). 
 
-== Measurement target
+== Unmet instutional needs
+- Conway's Law 
+  - Academia too siloed for true cross-disciplinary works
+  - Funding mechanisms defined as single-discpline institutions. Impossible to properly target proposals to announcments 
+  - Rome-on-top-of-Rome development of academic tools defines complexity ceiling for research tools (SKP-EI to help build to global scale)
+- System rewards novel discoveries, not long slow work of proper tool making (Tools should be built by masters and taught to students, not other way around)
+
 
 
 
@@ -42,36 +50,3 @@ We will organize our technical development around the technical bottlenecks whic
     - Comensurate data output (with less precision and fewer modalities)
     - Prepare new generation for a future where human and robot centered research is focused on full-body kinematics and 3d binocular eye tracking with retinal projection. 
     - 
-// ```
-// *(Eye tracker) -> Eye kinematics *------------------------------------------------------------------\
-//                                                                                                      \
-//                                                                                                       \                               
-//                                                                                                        \
-// *(Camera-based Motion Capture) -> Body Landmark Trajectories*                                           ------> *Gaze Kinematics*--------------------\
-//                                                              \                                         /                                             \
-//                                                               -->*|Hybrid Estimate|-> Body Kinematics*-                                                 --> *Retinal Projected Image / Optic Flow, Input to Visual System*
-//                                                             /                                         \                                              /
-// *(IMU-based Motion Capture) -> Body Segment Orientation* --/                                           -> *Inverse Dynamics -> Muscle Activity*      /
-//                                                                                                       -/                                            /
-// *World--> Measure --> Ground Reaction Forces (Kinetics)*----------------------------------------------/                                            /
-//       |            |                                                                                                                              /
-//       |            *-> (Groundplane geometry, terrain floor panels, head-mounted ground scanner(part of eye tracker))*---------------------------/
-//       |
-//       *--> Manipulate (Experiment Controlled Experiments VR, AR, XR with LED floor panels, magnet gantried fictive prey target in the ferret case)*
-
-// ```
-
-// veridical estimates the #semibold[projected retinal stimulus] in the eye and #semibold()[internal and external reaction mechanical forces] on the body with sufficient accuracy and precision to model and predict the resultant cascades of downstream activation in the peripheral and central nervous systems. 
-
-
-== Flagship 
-We will develop and validate a #semibold()[novel research instrument ]we call a *#smallcaps()[Dome]* _(Densely Overlapping Measurement Environment, Ref - Figure 1 - Hero Figure showing full DOME)_, which unifies a heterogeneous array of multi-modal sensors into single, centrally-controllable, metrologically-validated instrument for the measurement and manipulation of a freely moving agent within a specified 3D volume of real-world space (ref DOME-L, DOME-S, and DOME-Mobile in 3. Outcomes). 
-
-
-
-
-
-// EDIT/REMOVE - 
-// We will package these capacties into a set of convivial tools and hardware- and species-agnostic instrumentation platform and disseminate them to a network of research collaborators and through the existing, gloabally expansive community of FreeMoCap users, and drive our development on the basis of user-reported capacity blocking bottlenecks and limitations. Our organization, the tools we build, and the new observations we unlock will form a boundary object that ]. 
-  
- 
