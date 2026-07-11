@@ -1,25 +1,27 @@
 // ── 3. Outcomes ──
 = Outcomes
 
-- Cool Tool -  #strike[Skinner]SkellyBox: Multiscale modular empirical capture arena
-  - Interoperabilty across species, domains, and timescales
-    - A member of a mouse lab can walk into a marmoset lab and expect their pipelines will still work
-    - Perceptuomotor behavior and kinematic/kinetic analysis directly interoperable with robotics models (via MuJoCo and Nvidia Isaac Gym) - Data for reinforcement learning models, Controls to interpret HNHA behavioral data
-    - Data models alignment across timescales - developmental/longitudinal (months/years/lifespan) timescales aligned with perception/action timescales (seconds/minutes)
-
-  - Composable complexity 
-    - Careful ontology allows for complexity via comopsible data sources and assocaited downstream entities
-    - Adding new sensor modalities into established scene, framework handles spatiotemporal alignment/calibration, unit conversions, resampling, etc
-  
-- Organize and operationalize a new culture of science around discussion/management/extension shared platform tool
-    - In the form of an annual Congress meeting
-    - Organizing the culture of science around the discussion and advancement of shared ontologies rather than an endless stream of 8-10 page pdfs
-    - Break the Skill Ceiling in academic science 
-      - Build tool to allow multi-decade continuous education across disciplines and experience (same tool in high school as used in federally funded research lab)
-      - Shared toolset encourages natural blending of disciplines while encouraging and reward higher specialized exploration (esp when that research produces actionable results across different dimensional domains)
-
-- Mesoscale revolution
-  - Allow advances in reductionist microscale research to align with human-scale interests
-  - Align Perceptuomotor Neuroscience with humanoid robotics, allow transfer, technology, and technique transfer between those fields
-  
+- DOME-L, DOME-S, DOME-Mobile
+- New eye tracker
+  - Best ever made
+  - Dense instrumentation in the eye and world cameras
+    - *Eye sensor array*
+      -  includes
+        - High res IRGB
+        - High speed IRGB
+        - MEMS single-pixel sensor
+        - LIDar scanner 
+        - IR/Structured IR illuminators
+        - Event Camera
+      - Add every sensor we can, see which allow us to measure DoFs we need, optionally scale back and remove 
+      - Optionally also make cheaper version for classroms - fully compatible data output (with less precision and depth)
+    - *World sensor array* 
+      - Build differnt form factors (big heavy, small light)
+      - Head- or Drone- mountable
+      - Stereo RGB, Structured IR, LiDAR, etc
+      - High density multi-model environment scan
+      - Fast scan (RGB-D)
+      - Slow scan (Textured Mesh)
+      - Semantic segmentation (via SAM3, YOLO, etc)
+      - 
 #include "../helpers/timeline-milestones.typ"
