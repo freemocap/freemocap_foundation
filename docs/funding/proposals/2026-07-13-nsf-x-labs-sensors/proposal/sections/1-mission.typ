@@ -22,7 +22,7 @@ We will create a new scientific observable representing the closed loop of the #
 
 We will develop, validate, and broadly disseminate a #semibold()[novel research instrument ]we call a *#smallcaps()[Dome]* _(Densely Overlapping Measurement Environment, Ref - Figure 1 - Hero Figure showing full DOME)_ for measuring the *eye*, *body*, and *environment* of freely moving organisms with sufficient reliablity to predict neural activity along the sensory and motor pathways of the central and perpipheral nervous system _(ref- Figure 2, metrology flow chart)_ in humans and non-human animals.
 
-
+The resulting 
 
 
 - Internally consistent and metrologically-grounded data set is defined for auto-improving training (e.g. reprojection error to improve tracking models), 
