@@ -1,6 +1,6 @@
 // ── 4. Senior/Key Personnel Qualifications ──
 // [Provide a brief description of the qualifications of Senior/Key Personnel on the team. Include technical expertise, experience commercializing technology, past efforts, and other qualifications that will contribute to achieving the team's Mission. Include information for all Senior/Key Personnel, including team members not currently affiliated with the lead organization.]
-
+NOTE - Names abbreviated in public draft. Check initials to real names in local .env (or request it, if you need it)
 #set text(size: 10pt)
 #figure(
   table(
