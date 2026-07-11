@@ -109,7 +109,7 @@
 #pagebreak(weak:true)
 #include "helpers/figure-page.typ"
 #pagebreak(weak:true)
-#include "helpers/typst-diagram-fmc-nsf-xlab/main.typ"
+#include "helpers/dome-sensor-estimate-model/main.typ"
 #pagebreak(weak:true)
 #include "sections/2-technology-landscape.typ"
 #pagebreak(weak:true)
