@@ -22,9 +22,7 @@ We will create a new scientific observable representing the closed loop of the #
 
 We will develop, validate, and broadly disseminate a #semibold()[novel research instrument ]we call a *#smallcaps()[Dome]* _(Densely Overlapping Measurement Environment, Ref - Figure 1 - Hero Figure showing full DOME)_ for measuring the *eye*, *body*, and *environment* of freely moving organisms with sufficient reliablity to predict neural activity along the sensory and motor pathways of the central and perpipheral nervous system _(ref- Figure 2, metrology flow chart)_ in humans and non-human animals.
 
-The resulting 
-
-
+[Something about the resulting metrologically grounded data is ideal for next gen AI models, robot RL policy, and auto-improving models through back projected reconstructions]
 - Internally consistent and metrologically-grounded data set is defined for auto-improving training (e.g. reprojection error to improve tracking models), 
 - backfill prior unmeasured DoFs with models trained on correlations in new DOME measurements that specify that DoF. 
 - Upfill data from lower-quality DOMEs (e.g. classrooms) based on models trained on flagship data. 
@@ -33,6 +31,7 @@ The resulting
 
 
 == Unmet instutional needs
+- The PI left a tenure track job to build FreeMoCap, specifically because the standard models of academia can't support the work
 - Conway's Law 
   - Academia too siloed for true cross-disciplinary works
   - Funding mechanisms defined as single-discpline institutions. Impossible to properly target proposals to announcments 
