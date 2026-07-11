@@ -38,6 +38,13 @@
       - Experience in neuroprosthetics design and brain imaging
       - Worked with PI on core FMC dev and validation
     ],
+
+    [*JKL, PhD* \ CAIO], [
+      - PhD - Cognitive Science \
+      - Director - Cognitive Science Program \
+      - Current - Senior AI Applications Engineer @ SOLID \ 
+      - Expertise in use of AI in classroom, lab, and enterprise \
+    ],
     [*RR* \ CFO], [
       - Bookkeeping \
       - NSF Grant management \
