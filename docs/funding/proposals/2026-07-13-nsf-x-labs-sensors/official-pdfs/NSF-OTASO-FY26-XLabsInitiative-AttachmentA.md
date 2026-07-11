@@ -10,7 +10,7 @@
 
 ## [Proposal Title and/or Team Name]
 ## [Lead Institution]
-
+ 
 ### Written Proposal to the NSF X-Labs Initiative
 
 ## 1. Mission

@@ -1,5 +1,5 @@
 == Timeline
-
+NOTE - THIS IS A PLACEHOLDER!!!! THIS IS A PLACEHOLDER
 #set text(size: 10pt)
 #figure(
   table(
@@ -25,3 +25,5 @@
   supplement: [Table],
   caption: [Timeline of Phased Milestones],
 )
+
+NOTE - THIS IS A PLACEHOLDER!!!! THIS IS A PLACEHOLDER

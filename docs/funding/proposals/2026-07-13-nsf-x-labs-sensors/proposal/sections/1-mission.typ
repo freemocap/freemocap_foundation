@@ -1,4 +1,8 @@
 
+//OFFICIAL INSTRUCTIONS
+
+// [Proposing teams must describe one or more novel platform technologies that the proposed NSF X-Lab is uniquely suited to advance. Successful teams will have a clear vision statement of how their work will result in an end-state that reshapes an entire field of scientific inquiry or a sector of technology, and how their Mission is currently unmet by existing organizational structures and funding mechanisms.]
+
 #import "../helpers/shared.typ": semibold
 
 = Mission
@@ -14,8 +18,17 @@ The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X) *is to deve
 )[#mission_statement]
 
 //================
-== Flagship 
+== Buiding the #smallcaps[Dome] 
 We will develop and validate a #semibold()[novel research instrument ]we call a *#smallcaps()[Dome]* _(Densely Overlapping Measurement Environment, Ref - Figure 1 - Hero Figure showing full DOME)_, which unifies a heterogeneous array of multi-modal sensors into single, centrally-controllable, metrologically-validated instrument for the measurement and manipulation of a freely moving agent within a specified 3D volume of real-world space (ref DOME-L, DOME-S, and DOME-Mobile in `3. Outcomes`). 
+
+We will organize our technical development around the technical bottlenecks which limit our ability to combine reconstructions the *eye*, *body*, and *environment* into combined represetations whch trace to activity in the central and peripheral nervous system ...
+
+- Internally consistent and metrologically-grounded data set is defined for auto-improving training (e.g. reprojection error to improve tracking models), 
+- backfill prior unmeasured DoFs with models trained on correlations in new DOME measurements that specify that DoF. 
+- Upfill data from lower-quality DOMEs (e.g. classrooms) based on models trained on flagship data. 
+- Unify research from disparate field through use-directed partially hydrating DOMEs based on research domain. 
+- Train next gen of embodied autonomous data from densely overlapping data and metrologically grounded downstream estiamtes i.e. Inverse Reinforcement Learning on human/animal data to infer viable strategies, RL models to guide robots use to design controlled experiemnts on humans)
+
 
 == Unmet instutional needs
 - Conway's Law 
@@ -24,11 +37,10 @@ We will develop and validate a #semibold()[novel research instrument ]we call a 
   - Rome-on-top-of-Rome development of academic tools defines complexity ceiling for research tools (SKP-EI to help build to global scale)
 - System rewards novel discoveries, not long slow work of proper tool making (Tools should be built by masters and taught to students, not other way around)
 
-
-
-
-We will organize our technical development around the technical bottlenecks which limit our ability to combine reconstructions the *eye*, *body*, and *environment* into combined represetations whch trace to activity in the central and peripheral nervous system ...
-
+=== Vision
+- We define ourselves by the tool and the measurement, drive our development by direct needs of collaborator network. 
+- Form the boundary object between fields
+- DOME - makes 
 
 - Best Eye trackers ever made at any price 
 - Best Mocap system ever made at any price 

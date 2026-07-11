@@ -1,9 +1,6 @@
 // ── 4. Senior/Key Personnel Qualifications ──
-= Senior/Key Personnel Qualifications <SKP>
-== Jonathan Matthis, PhD [Principle Investigator] <SKP-JM>
-== EI <SKP-EI>
-== AC,PhD  
-== RR, CPA or w/e
+// [Provide a brief description of the qualifications of Senior/Key Personnel on the team. Include technical expertise, experience commercializing technology, past efforts, and other qualifications that will contribute to achieving the team's Mission. Include information for all Senior/Key Personnel, including team members not currently affiliated with the lead organization.]
+
 #set text(size: 10pt)
 #figure(
   table(

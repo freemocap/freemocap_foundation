@@ -1,6 +1,9 @@
 // NSF X-Labs Initiative — Topic 2: Scientific Instrumentation for Sensing and Imaging
 // Written Proposal
 // Format: 8 pages max (excl. COI), single-spaced, 12pt, US letter, 1" margins
+// OFFICIAL INSTRUCTIONS
+
+// [Written Proposals should be direct, concise, and must not exceed a total of 8 single-sided pages exclusive of the Conflicts of Interest (COI) statement. The Written Proposal shall be typed, single-spaced, using 12-point font, and printed on 8½" by 11" paper, with 1" margins on all sides. Tables/graphs may use a smaller font. Written Proposals shall be submitted as a PDF document without a cover letter. COI statements shall be submitted as a separate PDF document and have no page limit. Proposals that do not meet these format specifications may be removed from consideration.]
 
 // ── Draft Mode ──
 // Set to false for submission-ready output (strips WIP overlays,
@@ -54,7 +57,7 @@
     width: 6.5in,
     height: 9in,
     fill: none,
-    stroke: 1pt + rgb("#878787"),
+    stroke: .5pt + rgb("#0000ff"),
   ),
 )
 
@@ -118,4 +121,6 @@
 #include "sections/4-personnel.typ"
 #pagebreak(weak:true)
 #include "sections/5-team-capabilities.typ"
+
+#pagebreak()
 #bibliography("FMCF-NSF-XLABS.bib", style: "nature") 
