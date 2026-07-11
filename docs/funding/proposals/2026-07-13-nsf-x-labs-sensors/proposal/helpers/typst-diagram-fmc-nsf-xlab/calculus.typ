@@ -12,7 +12,7 @@
 //  Compile:  typst compile calculus.typ
 // ════════════════════════════════════════════════════════════════════════
 
-#import "fmcx-dome-flow-chart.typ": mark-ok, mark-inf, mark-build, mark-could, ink, tagink, headink, hairline
+#import "../dome-sensor-estimate-model/fmcx-dome-flow-chart.typ": mark-ok, mark-inf, mark-build, mark-could, ink, tagink, headink, hairline
 
 #set page(paper: "us-letter", margin: (x: 1.7cm, y: 1.5cm), numbering: "1")
 #set text(size: 9.3pt, fill: ink)
