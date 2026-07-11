@@ -19,11 +19,16 @@ We will create a new scientific observable representing the closed loop of the #
 
 //================
 == Buiding the #smallcaps[Dome] 
-We will measure the *eye*, *body*, and *environment* of freely moving organisms with sufficient reliablity to predict neural activty along the sensory and motor pathways of the central and perpipheral nervous system. 
 
-We generate this observable through We will develop, validate, and broadly disseminate a #semibold()[novel research instrument ]we call a *#smallcaps()[Dome]* _(Densely Overlapping Measurement Environment, Ref - Figure 1 - Hero Figure showing full DOME)_, which unifies a heterogeneous array of multi-modal sensors into single, centrally-controllable, metrologically-validated instrument for the measurement and manipulation of a freely moving agent within a specified 3D volume of real-world space (ref DOME-L, DOME-S, and DOME-Mobile in `3. Outcomes`). 
+We will develop, validate, and broadly disseminate a #semibold()[novel research instrument ]we call a *#smallcaps()[Dome]* _(Densely Overlapping Measurement Environment, Ref - Figure 1 - Hero Figure showing full DOME)_ for measuring the *eye*, *body*, and *environment* of freely moving organisms with sufficient reliablity to predict neural activity along the sensory and motor pathways of the central and perpipheral nervous system. 
 
-We ground our development of the #smallcaps[Dome] and its variants through a novel _calculus of sensor-grounded observation_, a formal system for tracing uncertainty across complex, converging chains of inference from sensors to downstream estimations of the desiderata of the study (ref- Figure 2, metrology flow chart). Specifically,  we will organize our technical development around the technical bottlenecks which limit our ability to combine reconstructions the *eye*, *body*, and *environment* into a unified observable object representing the fully state of 
+We ground our development of the #smallcaps[Dome] and its variants through a novel _calculus of sensor-grounded observation_, a formal system for tracing uncertainty across complex, converging chains of inference from sensors to downstream estimations of the desiderata of the study (ref- Figure 2, metrology flow chart). 
+
+
+We generate this observable through which unifies a heterogeneous array of multi-modal sensors into single, centrally-controllable, metrologically-validated instrument for the measurement and manipulation of a freely moving agent within a specified 3D volume of real-world space (ref DOME-L, DOME-S, and DOME-Mobile in `3. Outcomes`). 
+
+
+Specifically,  we will organize our technical development around the technical bottlenecks which limit our ability to combine reconstructions the *eye*, *body*, and *environment* into a unified observable object representing the fully state of 
 
 combined represetations whch trace to activity in the central and peripheral nervous system, tagetting development effort on the target of tracking the body, eye, and world with sufficient precision and accuracy so that the retina-projected real-world stimulus is reliable enough to be targetted by cortical measurements in animal models, and body kinematics and kinetics are reliable enough so that surface and implanted EMG measures match full-body muscuskeletal activation models (e.g. via OpenSim or similar). 
 
