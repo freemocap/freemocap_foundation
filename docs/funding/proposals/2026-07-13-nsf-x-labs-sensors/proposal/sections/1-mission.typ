@@ -8,7 +8,7 @@
 = Mission
 
 #let mission_statement = [
-The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X) *is to develop and disseminate the tools to measure a new scientific observable representing the closed loop of the #semibold()[perceptual, mechanical, and environmental] aspects of goal-directed behavior of freely moving organisms to reshape perceptual/motor neuroscience, muscuskeletal biomechanics, embodied/agentic artificial intelligence, and mobile robotics into a new convergent science of #semibold[sensorimotor control in natural environments.]]
+We will create a new scientific observable representing the closed loop of the #semibold()[perceptual, mechanical, and environmental] aspects of goal-directed behavior of freely moving organisms to reshape perceptual/motor neuroscience, muscuskeletal biomechanics, embodied/agentic artificial intelligence, and mobile robotics into a new convergent science of #semibold[sensorimotor control.]]
  
 #block(
   fill: rgb("#ddd"),
@@ -19,7 +19,7 @@ The #smallcaps()[Mission] of the *FreeMoCap Foundation X-Lab (FMC-X) *is to deve
 
 //================
 == Buiding the #smallcaps[Dome] 
-We will develop and validate a #semibold()[novel research instrument ]we call a *#smallcaps()[Dome]* _(Densely Overlapping Measurement Environment, Ref - Figure 1 - Hero Figure showing full DOME)_, which unifies a heterogeneous array of multi-modal sensors into single, centrally-controllable, metrologically-validated instrument for the measurement and manipulation of a freely moving agent within a specified 3D volume of real-world space (ref DOME-L, DOME-S, and DOME-Mobile in `3. Outcomes`). 
+We will develop, validate, and broadly disseminate a #semibold()[novel research instrument ]we call a *#smallcaps()[Dome]* _(Densely Overlapping Measurement Environment, Ref - Figure 1 - Hero Figure showing full DOME)_, which unifies a heterogeneous array of multi-modal sensors into single, centrally-controllable, metrologically-validated instrument for the measurement and manipulation of a freely moving agent within a specified 3D volume of real-world space (ref DOME-L, DOME-S, and DOME-Mobile in `3. Outcomes`). 
 
 We will organize our technical development around the technical bottlenecks which limit our ability to combine reconstructions the *eye*, *body*, and *environment* into combined represetations whch trace to activity in the central and peripheral nervous system ...
 
