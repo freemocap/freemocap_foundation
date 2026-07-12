@@ -101,12 +101,7 @@ We define a #Dome as a densely instrumented region of real space engineered (at 
 
 Because every channel is spatially calibrated, temporally synchronized, uncertainty-traced within a unified sensor-grounded ontology, #Dome records provide ideal training data for internal and external applications. Internally, each sensor stream is modelable agaist every other stream, both within recordings (modelling eye movements against head movent to model VOR) and across recordings (back-fill old datasets with models of Cyclotorsion after we build a new eye tracker that measures torsion). The data also provides internal automatic erorr signals - downstream estimates of body kinematics fused from IMU- and Camera-mocap can back project onto the the original cmaera images, defining a reprojection-error signal that can improve image pose-detection algorithms that are currently stuck on an increasingly long-in-the-tooth [TODO - synonym ] COCO dataset. 
 
-
- are directly consumable by modern reinforcement-learning and robotics stacks giving embodied AI and legged robots the real-world sensorimotor corpora.
-
-The records are inter
-
-This yields capabilities no existing tool provides. #Dome records are consumable by modern reinforcement-learning and robotics stacks with minimal reshaping — a measured bone segment and a simulated robot link are the same `RigidBody` — giving embodied AI and legged robots the real-world sensorimotor corpora, annotated with the explicit uncertainty bounds safe learning requires. The same calibrated array is physical ground truth for computer vision at scale: an instrument, in the Topic's own language, engineered to produce better AI training data. And because the ontology defines slots for channels no current sensor fills, the archive appreciates — new transducers back-fill older records and up-fill cheaper #Domes. Ultimately, observation, modeling, and intervention collapse into a single apparatus: the #Dome extracts the reward a biological agent appears to optimize and probes it back by controlled perturbation of the loop, running the full hypothetico-deductive cycle inside one instrument.
+The Sensor-Grounded Ontology [SGO TODO - define this above] also imporvides LLM's ability to reason over #Dome domains, such as providing user assistance by routing SGO-tagged logs and sensor samples through a local LLM during runtime (e.g. "Looks like someone bumped Camera 2"), assisting analysis of resulting data, and teaching the tool to students and out-of-domain experts. 
 
 // [→ §3: RigidBody/contact-force mapping, reprojection-error pipeline + Isaac Lab/MuJoCo RL integration, IRL methodology + validation, backfill/upfill statistical framework, AR perturbation hardware — LED floor panels, projection, VR.]
 == Why Unmet
@@ -115,3 +110,4 @@ This yields capabilities no existing tool provides. #Dome records are consumable
 
 // [→ §4, §5: PI expertise + departure from Northeastern; EI enterprise software; AC clinical validation; KM mobile DOME lineage; MN large-scale lab; JKL AI systems; RR org health + NSF grant mgmt; NR CEO ops; collaborator roster; governance (FMC-X within FMC-F, PI final say); autonomy at submission; congress/hackathon cadence; community grants; FreeMoCap scale receipts.]
 == The Vision
+There is no upper limit to our ambition. 
