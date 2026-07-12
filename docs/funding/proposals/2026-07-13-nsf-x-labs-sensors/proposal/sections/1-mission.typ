@@ -112,7 +112,7 @@ The vision of this proposal represents an grand acceleration of movement the Fre
 
 _[TODO - Clean up closing, tighten language. Idea is that each Dome's reconstructed data is connected to all of science through the SGO, so when a researcher or student is looking at it, they can, like, click on things and its like its asking them "would you like to know more" like, about the thing you are looking at or the world in general, ya know? ]_
 
-
+Platform measurement techniques behave this way. PCR was built to copy DNA; it went on to underwrite forensics, diagnostics, ancestry, and a pandemic response its inventors never imagined. Next-generation sequencing did not become foundational by being precious — it became foundational when it grew cheap and standardized enough that every lab could run it, and its applications followed the price collapse rather than preceding it. We are building the #Dome for a clear and present need; like those techniques, we expect the tool, once in the world's hands, to be turned to uses we could not have anticipated — and we are designing, from the first day, for that to be easy.
 
 == The Vision
 
