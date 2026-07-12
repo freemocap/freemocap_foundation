@@ -70,8 +70,10 @@ Develop and disseminate a new class of scientific instrument called a #semibold(
 
 ==  A New Instrument: Building the #smallcaps[Dome] 
 
-We define a #smallcaps([Dome])as a densely instrumented region of real space engineered (at some aspirational extreme) to record every  possible measurable channel of the agent–environment interaction at once: full-body kinematics and kinetics, muscle and motor-unit activity, binocular gaze and reconstructed retinal input, and neural activity. In practice, 
-    - It is the inverse of a space telescope: a room of lenses aimed inward, at the place where the body meets the world.
+We define a #smallcaps([Dome])as a densely instrumented region of real space engineered (at some aspirational extreme) to record every  possible measurable channel of the agent–environment interaction at once: full-body kinematics and kinetics, muscle and motor-unit activity, binocular gaze and reconstructed retinal input, and neural activity. It is the opposite of a space telescope, an empty volume of of lenses focused inward at the mysterious place where the body meets the world.
+
+ In practice, individual researchers will build their #smallcaps([Dome])s with a partial subset 
+    - 
 
 - The DOME is one instrument built in three forms, each defined by the role it plays in the network.
     - DOME-L is the warehouse-scale flagship in greater Boston: it pushes each instrument to its limits, and is large enough to physically contain and cross-validate the smaller forms, which makes it the metrological reference for the whole network.
