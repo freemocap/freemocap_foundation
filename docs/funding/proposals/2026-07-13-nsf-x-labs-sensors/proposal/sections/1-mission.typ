@@ -99,7 +99,7 @@ We define a #Dome as a densely instrumented region of real space engineered (at 
 
 == The New Capability
 
-Because every channel is spatially calibrated, temporally synchronized, uncertainty-traced within a unified sensor-grounded ontology, #Dome records provide ideal training data for internal and external applications. Internally, each sensor stream is modelable agaist every other stream, providing 
+Because every channel is spatially calibrated, temporally synchronized, uncertainty-traced within a unified sensor-grounded ontology, #Dome records provide ideal training data for internal and external applications. Internally, each sensor stream is modelable agaist every other stream, both within recordings (modelling eye movements against head movent to model VOR) and across recordings (back-fill old datasets with models of Cyclotorsion after we build a new eye tracker that measures torsion). The data also provides internal automatic erorr signals - downstream estimates of body kinematics fused from IMU- and Camera-mocap can back project onto the the original cmaera images, defining a reprojection-error signal that can improve image pose-detection algorithms that are currently stuck on an increasingly long-in-the-tooth [TODO - synonym ] COCO dataset. 
 
 
  are directly consumable by modern reinforcement-learning and robotics stacks giving embodied AI and legged robots the real-world sensorimotor corpora.
