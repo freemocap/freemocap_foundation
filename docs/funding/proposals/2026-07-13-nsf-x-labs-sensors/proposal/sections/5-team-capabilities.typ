@@ -3,35 +3,53 @@
 
 = Team Capabilities Statement
 
-== Senior Team Capabilities
-- Jon -  done it before in humans, currentludoing it in ferrets and mice. Left tenure track position to run FreeMoCap, XLab funding will accelerate that mission
-- EI - Deep professional experience in Tech Sector, high level software architecture experienced necessary to develop truly global scale enterprise level of software in open-source/academic contexts
-- RR - Organizational health and entrepreneurial development
-- NR - XP as CEO and working in tech industry. Hiring her as CEO allows Jon/PI to focus on applying their domain expertise on the core work of the lab
-- JKL - AI expertise in teaching, research, and industry. Will build internal AI systems for core software, developer, user, and student assistance. 
-- AC - focusing clinical adoption and bench-to-bedside transitions. Wrote his dissertation on validation of freemocap. Has all skillsets needed for DOME-S
-- MN - XP in mechatronics and large-scale lab building and management. Hase core skillset needed for DOME-L 
-- KM - Part of original laser skeleton team, has all necessary sub-skills to buld core instrumentation of Mobile DOME
+== Complementary expertise
 
-#include "../helpers/collaborator-network.typ"
+- The leadership team spans the full stack the DOME requires, a combination no single institution's faculty could assemble.
+    - Scientific domain expertise: JSM (perception/action neuroscience), AC (clinical biomechanics).
+    - Enterprise software architecture: EI.
+    - AI systems: JKL.
+    - Hardware and mechatronics: KM (mobile/wearable), MN (large-scale facilities).
+    - Organizational operations: NR (CEO), RR (CFO/finance).
+    - The combination exists because the FreeMoCap Foundation was built from the ground up to produce integrated scientific instruments.
 
-== Governance
-- FMC-X will exist as a independent project within FMC-F organization
-- FMC-F will handle other work (e.g. FreeMoCap Project), but otherwise the missions almost fully overlap
-- Nearly identical leasdership between FMC-F and FMC-X, with final say on all topics falling to the President (who is also the PI) ensures fast decision making (no higher management to talk to - PI is the top of the org chart)
-- Collaborator network and user community consulted for design decisions, work targets, and roadmap
-  - Handled via "Request for Comments" style annoucments (like Python's PEP), so progress can't be stalled by community problems. 
-- Annual Workshop/Hackathon/COnference/Congress to bring together collaborator network to discuss progress, tech targets, friction, etc. 
-  - Workshops to train students and out-of-domain experts
-  - Hackathons to on-board developers and foster in-person connections between normally remote workers (important for FOSS)
-  - Conferences to discuss progress and rsearch done with DOME tech
-  - Congress to dicuss org status, plans, and future (annual State of the Skelly address)
-  - Developer fund, Community Grants Program, etc to support FOSS network
-    - Use Community Grants Program to to test differnt strategies for community engagement and consensus taking (Eurovision style voting, DAO methods, etc)
+== Governance during Phase 0 and Phase 1
 
-
+- The FreeMoCap X-Lab (FMC-X) will operate as an independent project within the FreeMoCap Foundation, a 501(c)(3) nonprofit.
+    - The Foundation runs other work (e.g., the ongoing FreeMoCap Project), but the missions almost fully overlap.
+    - Leadership is nearly identical between FMC-F and FMC-X, with final decision authority resting with the President/PI at the top of the org chart.
+    - Research, partnership, and organizational decisions are made in days, not weeks, with no higher management to consult.
 
 == Autonomy
- - We are already autonomous, as of 2 weeks prior to the deadline of this proposal. 
-  - This project will happen no matter what, but with XLabs funding, we could truly change the world 
- 
+
+- The FreeMoCap Foundation is already autonomous as of this submission.
+    - Full internal control of funding allocation, research direction, partnership agreements, intellectual property, and hiring, with no parent-institution approval required for any operational decision.
+    - Satisfies all conditions of the NSF X-Labs Autonomy Factor Test (§6.1.1) at the time of submission.
+
+== Collaborator network
+
+- A standing, active network of research groups already spans every domain the DOME serves.
+    - Members include human perception-and-action researchers, robotics and prosthetics groups, visual neuroscientists studying ferret and mouse, musculoskeletal biomechanists studying guinea fowl, and primate electrophysiologists.
+    - The network is real and active, not aspirational, with existing collaborations and shared tooling across multiple sites.
+    - The PI architects and holds the instrument-plus-network together; the domain arms are executed by named collaborators.
+
+== Community governance and engagement
+
+- The community sets design and roadmap priorities through structured processes that gather input without stalling on consensus.
+    - A Request-for-Comments process modeled on Python's PEP system collects broad input on design decisions, work targets, and roadmap priorities.
+    - Semi-annual in-person convening: Workshops (train students and out-of-domain experts), Hackathons (onboard developers and connect normally remote workers), Conferences (share DOME-based research), and a Congress (organizational status, plans, and direction).
+    - A Community Grants Program and Developer Fund support the open-source network and serve as a testbed for engagement mechanisms (Eurovision-style voting, DAO mechanisms, and others).
+
+== FreeMoCap as completed pilot
+
+- FreeMoCap has already proven this model at smaller scale.
+    - It is an open-source markerless motion-capture instrument, built and maintained outside academia, scoped to the measurement — turning cameras and light into calibrated, usable skeleton estimates with an obsessive focus on usability — and refusing to claim any research domain.
+    - That refusal is what made it a commons.
+    - Receipts: over 15,000 users from 152 countries, over 10,000 GitHub stars, and over 3,500 Discord members.
+    - The DOME applies this proven model — measurement-scoped, master-built, open, full-time-maintained — to the far larger target of the complete interaction loop, at a scale only dedicated, autonomous, milestone-based X-Labs funding can reach.
+
+== IP management and dissemination strategy
+
+- The IP strategy keeps the core instrumentation open while actively pursuing adoption and commercialization. [To develop — OT contract requires an IP Management Plan by end of Phase 0.]
+    - Open-source core instrumentation with permissive licensing for downstream use.
+    - IP structured so platform technologies stay widely accessible while the team pursues adoption, commercialization, and ecosystem growth.
