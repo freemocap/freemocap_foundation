@@ -8,33 +8,26 @@
 = Mission
 
 #let mission_statement = [
-Build the DOME — a new class of scientific instrument that records the complete perception–action loop of a behaving agent as a single calibrated, uncertainty-tagged measurement — and the autonomous organization required to turn it into shared infrastructure and  align perceptual and motor neuroscience, musculoskeletal biomechanics, mobile robotics, and embodied AI around a single convergent science of sensorimotor control.]
+Develop and disseminate a new class of scientific instrument that records the complete perception–action loop of a behaving agent as a single calibrated, uncertainty-tagged measurement, and build the autonomous organization dedicated to the measurement itself and form the boundary object that will align perceptual and motor neuroscience, musculoskeletal biomechanics, mobile robotics, and embodied AI into a single convergent science of sensorimotor control.]
  
 #block(
   fill: rgb("#ddd"),
   radius: 1pt,
   stroke: (left: 2pt + gray),
-  inset: (x: 1em, y: 0.5em),
+  inset: (x: 0.5em, y: 0.5em),
 )[#mission_statement]
 
-==  A New Observable: The Semsorimotor Loop
+==  A New Observable: The Sensorimotor Loop
 
-- Every agent, living or engineered, runs the same loop: it senses a thin slice of its environment through imperfect transducers and pushes back against the world to move toward a goal.
-    - Information flows in, forces flow out; the brain exists to move the bones.
-    - This loop is the shared object of four fields that rarely speak: perceptual and motor neuroscience, musculoskeletal biomechanics, mobile robotics, and embodied AI.
+ Every agent, living or engineered, must solve the same problem -  sense a thin slice of available energy in the environment through a limited set of imperfect transducers and on its basis push its body against the world to propel itself towards its goal. Information flows in, forces flow out; the brain exists to yank the bones around.
 
-- We can already measure each thread of the loop with extraordinary precision — but only one thread at a time.
-    - Silicon probes resolve single neurons; markerless capture and force plates resolve kinematics and kinetics; electromyography resolves individual motor units; mobile eye trackers resolve gaze.
-    - Each instrument is superb in isolation and blind to the rest of the loop.
+ We can measure individual components of this loop with extraordinary precision progressing at the rate of our technology. Camera and IMU based motion capture can track the kinematics of the body, force plates measure the kinetic forces between the body and world. Outward facing cameras can measure the world, and inward facing cameras can track the eyes. For humans, EEG nets and surface EMG record course records of patterns of neural activity in the cortex and musculoskeletal system. In animal models, dense electrode arrays resolve the individual spikes of neurons and motor units.  
 
-- No one can record the whole loop at once, because the integration is harder than any single lab can sustain.
-    - Every so often a team stitches several threads together for one heroic study.
-    - But the method lives only in a Methods section, and the wiring decays on the timescale of a single PhD, as the burden of maintaining the integration outstrips what an academic lab can hold together.
-    - Each of those teams was reaching for the same measurement — the coupled record of perception *and* action — and each was stopped by the same wall.
-
-- The unmet need is therefore a single instrument, not a better sensor.
-    - It must capture every empirically available channel of an agent's perception and action at once: spatially calibrated, temporally synchronized, and rendered commensurable across labs and species.
-    - It must be faithful enough that its record can predict neural activity along the sensory and motor pathways — the fidelity bar that separates a recording from a measurement.
+ And yet, despite the extradradoinary precision and progress along these individual threads of measurement, access to the coherent whole representing the shared observational context that each of these tools illuminates remains ellusive. Occasionally, a research team will reach accross disciplinary divides and stitch several threads together for heroic integrative studies, but the methods rarely escape the Methods sections of a small cluster of publications spanning roughly the timescale of a single PhD. 
+ 
+  Each of these teams sought out to answer a question at the edge of their discipline and instead found themselves in the business of tool building. The build these tools because they know the answers to the questions that they seek lie in the output of the integrated tool that does not exist.  In an institution that rewards the plating of seeds over the tending of gardens, the long and laborious work of maintaining a novel complex instrument quickly overwhelms the capacity of an academic lab.  Eventually the nascent tool collapses under the weight of its own complexity, and what was meant to be a bridge between two domains of study instead fades into an evergrowing pile of academic abandonware.
+  
+  We need a new organization that exists outside of the siloed domains of the Academia that dedicates itself to the #smallcaps[measurement], the development and dissertation of world-class, convival tools and novel skillsets explore the landscape the capacity unlocks. Eschewing any specific application or discipline, it reifies the complexity of the intergration to generate a new observable of the #semibold[complete sensorimotor] loop between an agent and its environment, packaged and prepared for anyone that needs it. That organization is the #semibold[FreeMoCap X-Lab] [FMC-X].  
 
 ==  A New Instrument: The #smallcaps[Dome] 
 
