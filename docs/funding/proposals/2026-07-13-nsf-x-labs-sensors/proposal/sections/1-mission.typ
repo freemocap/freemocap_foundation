@@ -3,7 +3,7 @@
 
 // [Proposing teams must describe one or more novel platform technologies that the proposed NSF X-Lab is uniquely suited to advance. Successful teams will have a clear vision statement of how their work will result in an end-state that reshapes an entire field of scientific inquiry or a sector of technology, and how their Mission is currently unmet by existing organizational structures and funding mechanisms.]
 
-#import "../helpers/shared.typ": semibold
+#import "../helpers/shared.typ": semibold, Dome, Domes
 
 = Mission
 
@@ -70,9 +70,10 @@ Develop and disseminate a new class of scientific instrument called a #semibold(
 
 ==  A New Instrument: Building the #smallcaps[Dome] 
 
-We define a #smallcaps([Dome]) as a densely instrumented region of real space engineered (at some aspirational extreme) to record every  possible measurable channel of the agent–environment interaction at once. It is the opposite of a space telescope, an empty volume of of lenses focused inward at the mysterious place where the body meets the world. 
 
- In practice, individual #smallcaps([Dome])s will comprise a partial subset of available instrumentation, selected based on use-case. However, criticall, #semibold([All #smallcaps([Dome])s produce the same output]) regardless of the component instruments - a metrologically-grounded record of semantically-coherent cannonical models *partially hydrated* by measurements from the available instruments. A motion capture recording produces the same reconstructed `Head`  A mocap  `Skull` is assumed to have `Eye`s, reagardless of whether the subject was wearing an eye tracker. Both a `Ferret` and a `Human` have a `Skull` wqhich maybe approxomated as the same `RigidBody` defining segments of the body of a `HumanoidRobot`. 
+We define a #Dome as a densely instrumented region of real space engineered (at some aspirational extreme) to record every  possible measurable channel of the agent–environment interaction at once. It is the opposite of a space telescope, an empty volume of of lenses focused inward at the mysterious place where the body meets the world. 
+
+ In practice, individual #Domes will comprise a partial subset of available instrumentation, selected based on use-case. However, criticall, #semibold([All #Domes produce the same output]) regardless of the component instruments - a metrologically-grounded record of semantically-coherent cannonical models *partially hydrated* by measurements from the available instruments. A motion capture recording produces the same reconstructed `Head`  A mocap  `Skull` is assumed to have `Eye`s, reagardless of whether the subject was wearing an eye tracker. Both a `Ferret` and a `Human` have a `Skull` wqhich maybe approxomated as the same `RigidBody` defining segments of the body of a `HumanoidRobot`. 
 
 - The DOME is one instrument built in three forms, each defined by the role it plays in the network.
     - DOME-L is the warehouse-scale flagship in greater Boston: it pushes each instrument to its limits, and is large enough to physically contain and cross-validate the smaller forms, which makes it the metrological reference for the whole network.
