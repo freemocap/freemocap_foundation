@@ -72,7 +72,7 @@ Develop and disseminate a new class of scientific instrument called a #semibold(
 
 We define a #smallcaps([Dome]) as a densely instrumented region of real space engineered (at some aspirational extreme) to record every  possible measurable channel of the agent–environment interaction at once. It is the opposite of a space telescope, an empty volume of of lenses focused inward at the mysterious place where the body meets the world. 
 
- In practice, individuals will build their #smallcaps([Dome])s with a partial subset of available instrumentation on the selected on the basis of their use-case. 
+ In practice, individual #smallcaps([Dome])s will comprise a partial subset of available instrumentation, selected based on use-case. However, criticall, #semibold([All #smallcaps([Dome])s produce the same output]) regardless of the component instruments
     - 
 
 - The DOME is one instrument built in three forms, each defined by the role it plays in the network.
