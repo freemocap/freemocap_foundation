@@ -19,7 +19,7 @@ Develop and disseminate a new class of scientific instrument called a #semibold(
 
 ==  A New Observable: The Sensorimotor Loop
 
- Every agent, living or engineered, must solve the same problem -  sense a thin slice of available energy in the environment through a limited set of imperfect transducers and on its basis push its body against the world to propel itself towards its goal. Information flows in, forces flow out; the brain exists to yank the bones around.
+ Every agent, living or engineered, must solve the same problem - sense a thin slice of available energy in the environment through a limited set of imperfect transducers and on its basis push its body against the world to propel itself towards its goal. Information flows in, forces flow out; the brain exists to yank the bones around.
 
  We can measure individual components of this loop with extraordinary precision progressing at the rate of our technology. Camera and IMU based motion capture can track the kinematics of the body, force plates measure the kinetic forces between the body and world. Outward facing cameras can measure the world, and inward facing cameras can track the eyes. For humans, EEG nets and surface EMG record course records of patterns of neural activity in the cortex and musculoskeletal system. In animal models, dense electrode arrays resolve the individual spikes of neurons and motor units.  
 
