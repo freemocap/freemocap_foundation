@@ -17,7 +17,7 @@ Build the DOME — a new class of scientific instrument that records the complet
   inset: (x: 1em, y: 0.5em),
 )[#mission_statement]
 
-==  A New Observable: The Perception/Action Loop
+==  A New Observable: The Semsorimotor Loop
 
 - Every agent, living or engineered, runs the same loop: it senses a thin slice of its environment through imperfect transducers and pushes back against the world to move toward a goal.
     - Information flows in, forces flow out; the brain exists to move the bones.
