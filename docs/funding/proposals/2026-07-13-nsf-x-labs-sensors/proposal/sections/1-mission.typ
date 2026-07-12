@@ -36,7 +36,7 @@ Build the DOME — a new class of scientific instrument that records the complet
     - It must capture every empirically available channel of an agent's perception and action at once: spatially calibrated, temporally synchronized, and rendered commensurable across labs and species.
     - It must be faithful enough that its record can predict neural activity along the sensory and motor pathways — the fidelity bar that separates a recording from a measurement.
 
-==  A New Instrument: The #smallcaps[Dome](Densely Overlapping Measurement Environment)
+==  A New Instrument: The #smallcaps[Dome]/(Densely Overlapping Measurement Environment)
 
 - We call this instrument the DOME — a Densely Overlapping Measurement Environment.
     - It is a densely instrumented region of real space engineered to record every measurable channel of the agent–environment interaction at once: full-body kinematics and kinetics, muscle and motor-unit activity, binocular gaze and reconstructed retinal input, and, where feasible, neural activity.
