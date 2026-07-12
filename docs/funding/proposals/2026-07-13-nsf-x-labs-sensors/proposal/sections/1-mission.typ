@@ -102,65 +102,11 @@ We define a #Dome as a densely instrumented region of real space engineered (at 
 Because every channel is spatially calibrated, temporally synchronized, and expressed in one sensor-grounded ontology, the #Dome makes heterogeneous sensor streams directly commensurable, with uncertainty traced from each transducer to every derived value. This yields capabilities no existing tool provides. #Dome records are consumable by modern reinforcement-learning and robotics stacks with minimal reshaping — a measured bone segment and a simulated robot link are the same `RigidBody` — giving embodied AI and legged robots the real-world sensorimotor corpora, annotated with the explicit uncertainty bounds safe learning requires. The same calibrated array is physical ground truth for computer vision at scale: an instrument, in the Topic's own language, engineered to produce better AI training data. And because the ontology defines slots for channels no current sensor fills, the archive appreciates — new transducers back-fill older records and up-fill cheaper #Domes. Ultimately, observation, modeling, and intervention collapse into a single apparatus: the #Dome extracts the reward a biological agent appears to optimize and probes it back by controlled perturbation of the loop, running the full hypothetico-deductive cycle inside one instrument.
 
 // [→ §3: RigidBody/contact-force mapping, reprojection-error pipeline + Isaac Lab/MuJoCo RL integration, IRL methodology + validation, backfill/upfill statistical framework, AR perturbation hardware — LED floor panels, projection, VR.]
+== Why Unmet
 
+An instrument like this is unmet by existing organizational structures and funding mechanisms for reasons that are structural, not incidental. The abandonware problem is the symptom: academia rewards the experienced builder for novel findings and pushes infrastructure onto trainees who rotate out on degree timelines, so a shared instrument never accumulates the mastery that would make it trustworthy. The deeper cause is scope. A tool defined by a research domain partitions its users into specialists; a tool defined by a #semibold[measurement] unites everyone who needs that measurement, however different their goals, and becomes a commons precisely because it imposes none of them — OpenCap and DeepLabCut are excellent, and by being domain-scoped are the foils that prove it. The FreeMoCap Foundation already ran the experiment: scoped to the measurement and refusing to claim a domain, it became a commons where biomechanists, neuroscientists, roboticists, animators, and game designers cross-pollinate across 15,000 users in 152 countries. And by Conway's Law, an enterprise of domain-named departments, journals, and grants can only produce domain-scoped instruments, reviewed by people who score work inside a single domain — never the long, unglamorous metrology that turns a proof of concept into a tool others trust. The measurement needs its own organization. The PI left a tenure-track position because the institution could not support this work, and founded FreeMoCap as a 501(c)(3) whose primary output is open scientific instruments; the X-Lab's operating model follows — scope the deliverable to the instrument, fan the science out to a standing network of collaborators who feed insight back, and hold full-time career engineers for years. That is exactly the X-Labs model, and exactly what a university cannot provide.
+
+// [→ §4, §5: PI expertise + departure from Northeastern; EI enterprise software; AC clinical validation; KM mobile DOME lineage; MN large-scale lab; JKL AI systems; RR org health + NSF grant mgmt; NR CEO ops; collaborator roster; governance (FMC-X within FMC-F, PI final say); autonomy at submission; congress/hackathon cadence; community grants; FreeMoCap scale receipts.]
 == The Vision
 
 The end-state is a single empirical science of sensorimotor control: perceptuomotor neuroscience, musculoskeletal biomechanics, mobile robotics, and embodied AI — four parallel literatures with incompatible tools today — become commensurable, so a finding in one becomes evidence in another. On the very same measurements sits a second end-state: the uncertainty-tagged corpora embodied AI and robotics need to learn real-world behavior, reshaping a field of science and seeding a sector of technology at once. In seven years, the jogger crossing a rocky field is a routine measurement — her kinematics, forces, muscle activity, gaze, the terrain beneath her, and the image on her retina recorded as one object, with a defensible uncertainty on every value, by an instrument a graduate student can operate. The same kind of record — lower precision, not a different kind — comes from a classroom in Ohio and a ferret hunting in a lab, comparable because every value traces to the same references. The telescope showed us our place in the universe by pointing outward; the #Dome shows us ourselves by pointing inward, at the place where the body meets the world.
-
-// [→ §3 / Outcomes: full deployment catalog — hundred-dollar kits, field-deployable gait labs, hospitals and PT clinics, athletic centers, robotics labs, classrooms, ISS.]
-==  The New Capability
-
-- Because every channel is spatially calibrated, temporally synchronized, and expressed in one sensor-grounded ontology, DOME records make heterogeneous sensor streams directly commensurable, with uncertainty traced from each transducer to every derived value.
-
-- This structure makes DOME data consumable by modern reinforcement-learning and robotics stacks with minimal reshaping.
-    - A measured bone segment and a simulated robot link are the same RigidBody; a measured ground reaction force and a simulated contact force are the same quantity.
-    - Embodied AI and legged robots gain real-world sensorimotor corpora annotated with the explicit uncertainty bounds that safe learning requires.
-
-- The same calibrated array provides physical ground truth for computer vision at large scale.
-    - Back-projecting the reconstructed 3D solution onto each camera's 2D view yields a reprojection-error signal that directly improves the underlying skeleton trackers, both as single-camera models and as in-volume estimators — an instrument, in the Topic's own language, engineered to produce better AI training data.
-
-- The archive appreciates over time, because the ontology defines slots for channels no current sensor fills.
-    - Once a tracker measures torsion or accommodation, models trained on the new channels can back-predict them for older recordings made before any instrument could capture them, and the same principle up-fills data from lower-cost DOMEs using models trained on flagship data.
-
-- The instrument closes the hypothesis loop on itself.
-    - Inverse reinforcement learning on DOME records extracts the reward a biological agent appears to optimize, which both jump-starts robot training and becomes a testable hypothesis about the underlying neural computation.
-    - That hypothesis is then probed back inside the DOME by controlled perturbation of the loop, through a reconfigurable augmented-reality ground plane of LED floor panels, projection, and VR that reshapes the terrain a real agent navigates while it is measured.
-    - Observation, modeling, and intervention become a single apparatus: the full hypothetico-deductive cycle inside one instrument.
-
-- [ALLUDE → §3: reprojection-error pipeline, robot RL integration with Isaac Lab/MuJoCo, IRL methodology and validation, backfill/upfill statistical framework, ARGPv3 build plan and lineage from ARGPv1 (Matthis 2013–2017), environment-manipulation modalities, the five-station closed loop.]
-
-==  Why Unmet
-
-- An instrument like this cannot be built inside the institutions that most need it, for structural reasons that are well understood but rarely stated plainly.
-    - A trainee's job is to learn by doing science; a tool's job is to encode hard-won mastery so others need not re-learn it — and these point in opposite directions.
-    - Academia rewards the experienced builder for novel findings and pushes infrastructure onto trainees who rotate out on degree timelines, so the shared instrument never accumulates the mastery that would make it trustworthy.
-    - The result is the well-documented graveyard of abandoned research software: the incentive structure rewards the thread, not the loom.
-
-- A second structural problem is scope.
-    - A tool defined by a research domain partitions its users into specialists; a tool defined by a measurement unites everyone who needs that measurement, however different their goals, and becomes a boundary object — a commons — precisely because it imposes none of them.
-    - The FreeMoCap Foundation already ran this experiment: scoped entirely to the measurement, refusing to claim any domain, it became a commons where biomechanists, neuroscientists, roboticists, animators, and game designers now cross-pollinate across 15,000 users in 152 countries.
-    - OpenCap and DeepLabCut are excellent and, by being domain-scoped, are the foils that prove the point: measurement-not-domain scoping is what creates a commons rather than a user base.
-
-- A third problem is organizational shape, and it names the answer the Observable left open: the measurement needs its own organization.
-    - Conway's Law holds that organizations produce systems mirroring their own structure, so an enterprise of domain-named departments, journals, and grants produces domain-scoped instruments, reviewed by reviewers who can only score work inside one domain — never the long, unglamorous metrology that turns a proof of concept into a tool others trust.
-    - The PI left a tenure-track faculty position because the institution could not support this work, and founded the FreeMoCap Foundation as a 501(c)(3) whose primary output is open scientific instruments.
-    - The X-Lab's operating model follows: scope the deliverable to the instrument, and fan the science out to a standing network of collaborators — human perception-and-action researchers, robotics and prosthetics groups, and animal labs spanning mouse, ferret, and guinea fowl — who use the tools and convene to feed insight back.
-    - Building the tool and leaving the science to others is the mechanism of impact, not a retreat from it: a working shared instrument as the success metric, and full-time career engineers held for years, are exactly the X-Labs model and exactly what a university cannot provide.
-
-- [ALLUDE → §4, §5: PI's expertise and departure from Northeastern, EI's enterprise software background, AC's clinical validation dissertation, KM's mobile DOME lineage, MN's large-scale lab expertise, JKL's AI systems role, RR's organizational health and NSF grant management, NR's CEO operations role, collaborator network roster, governance (FMC-X within FMC-F, PI has final say), autonomy (already autonomous at submission), semi-annual congress/hackathon/workshop/conference cadence, community grants program, FreeMoCap scale receipts.]
-
-==  The Vision
-
-- The end-state is a single empirical science of sensorimotor control.
-    - Perceptuomotor neuroscience, musculoskeletal biomechanics, mobile robotics, and embodied AI — today four parallel literatures with incompatible tools and vocabularies — become commensurable, so a finding in one becomes evidence in another and four bodies of work collapse into one cumulative science of real-world behavior.
-    - On the very same measurements sits a second end-state: the uncertainty-tagged corpora embodied AI and robotics need to learn real-world sensorimotor behavior, reshaping a field of science and seeding a sector of technology at once.
-
-- In seven years, the jogger crossing a rocky field is a routine measurement.
-    - Her kinematics, forces, muscle activity, gaze, the terrain beneath her, and the image on her retina are recorded as one object, with a defensible uncertainty on every value, by an instrument a graduate student can operate.
-    - The same kind of record — lower precision, not a different kind — is produced by a classroom in Ohio and by a ferret hunting in a laboratory, and the three can be compared because every value traces to the same references.
-
-- We will build the full range and put it everywhere.
-    - Hundred-dollar three-camera kits for students, mobile eye trackers that measure ocular torsion and accommodation, field-deployable gait laboratories, and wearable research environments — all interoperable, all producing the same kind of record.
-    - Deployed in hospitals and physical-therapy clinics, athletic centers and robotics labs, classrooms, and on the International Space Station — each one an instance of the same instrument, the same measurement, the same growing archive.
-
-- The telescope showed us our place in the universe by pointing outward; the DOME shows us ourselves by pointing inward, at the place where the body meets the world — bringing the ordinary condition of behavior, an agent using vision to place its feet in an unconstrained environment, into routine, traceable measurement.
