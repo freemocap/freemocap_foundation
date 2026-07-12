@@ -68,7 +68,7 @@ Develop and disseminate a new class of scientific instrument called a #semibold(
 
 // Net: the strategy is sound and unusually well-matched to X-Labs specifically — don't second-guess the dual instrument/org framing, it's a feature here. The work on page 1 is (1) make the instrument the grammatical and narrative subject, (2) surface the "we already built a working one" proof earlier, and (3) name one economic beneficiary so domain-agnosticism reads as reach rather than homelessness.
 
-==  A New Instrument: The #smallcaps[Dome] 
+==  A New Instrument: Building the #smallcaps[Dome] 
 
 - We call this instrument the DOME — a Densely Overlapping Measurement Environment.
     - It is a densely instrumented region of real space engineered to record every measurable channel of the agent–environment interaction at once: full-body kinematics and kinetics, muscle and motor-unit activity, binocular gaze and reconstructed retinal input, and, where feasible, neural activity.
