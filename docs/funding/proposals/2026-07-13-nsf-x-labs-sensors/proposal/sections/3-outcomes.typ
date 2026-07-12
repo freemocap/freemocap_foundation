@@ -2,69 +2,82 @@
 // [An NSF X-Lab is expected to deliver high-impact, measurable outcomes that advance a nascent platform technology, overcome critical bottlenecks, and realize the team's vision to reshape an entire area of technology or field of scientific research (see Section 7.0 for example outcomes). Phase 0 proposals should describe the team's ambitious target outcomes over a 5- to 7-year timescale to accomplish the stated Mission and the scientific and technical performance benchmarks needed to get there.]
 = Outcomes
 
-- Develop, validte, and disseminte - DOME Variants
-  - *#smallcaps[Dome]-L* — the flagship instrumented volume, in the greater Boston area. Large enough to fully enclose the smaller variants for validation and metrological grounding.
+### DOME-L flagship facility
 
-  - *#smallcaps[Dome]-S* — the extension of the commodity-camera capture volumes already built and disseminated through the FreeMoCap Project. Representative of the #smallcaps[Dome] a research lab or a classroom would build. 
+- DOME-L is a warehouse-scale instrumented volume in the greater Boston area.
+    - Specs: configurable capture volume up to [TBD] m³, [N] actuated cameras, a modular force-plate floor array (each 0.5 m² panel a force plate, terrain panel, LED panel, or stacked combination), integrated ARGPv3 (LED floor + wall panels, projection, VR), and adjacent animal and fabrication facilities.
+    - Phase 0 deliverable: site selection, facility design, and initial build-out.
+    - Phase 1 deliverable: an operational DOME-L able to cross-validate DOME-S and DOME-Mobile.
+    - KPI: inter-sensor synchronization jitter, end-to-end spatial uncertainty on a reference object, and reprojection error on a standardized movement corpus.
 
-  - *#smallcaps[Dome]-Mobile* — a wearable, self-contained #smallcaps[Dome] producing Dense Observations in unconstrained indoor and outdoor environments, continuing the lineage of the PI's gaze/gait and retinal optic flow work @matthis2018 @matthis2022 @muller2023 @muller2024. 
-    - Validate in large DOME-L so we can trust the outdoors
+### DOME-S dissemination
 
-  - Also - disseminate custom use-directed builds of DOME variants through network of collaborators studying Humans, animals, and robots. 
+- DOME-S extends FreeMoCap's existing webcam-based capture volumes into the disseminated, lab- and classroom-scale instrument.
+    - Phase 0: validate DOME-S against DOME-L on a standardized movement battery, establish a calibration protocol any lab can follow, and publish a build guide and parts list.
+    - Phase 1: deploy DOME-S at [N] collaborator sites spanning human biomechanics, robotics, visual neuroscience, and clinical applications.
+    - KPI: number of deployed and validated DOME-S instances, kinematic accuracy against the DOME-L reference, and inter-site measurement comparability.
+        - SPECIFIC TARGET - 510(k) certification of FreeMoCap and DOME instrument as FDA certified for clinical rehab and assessment
 
-== Bottlenecks
-- *Technology*
-  - *New eye tracker*
-    - Best ever made
-    - Add every sensor we can, see which allow us to measure DoFs we need, optionally scale back and remove 
-    - Optionally also make cheaper version for classroms - fully compatible data output (with less precision and depth)
-      - Remake the field by retraining the next generation of researcher in the tools of the field you want to build
-    - Dense instrumentation in the eye and world cameras
-      - *Eye sensor array*
-        -  includes
-          - High res IRGB
-          - High speed IRGB
-          - MEMS single-pixel sensor
-          - LIDar scanner 
-          - IR/Structured IR illuminators
-          - Event Camera
+### DOME-Mobile wearable
 
-      - *World sensor array* 
-        - Build differnt form factors (big heavy, small light)
-        - Head- or Drone- mountable
-        - Stereo RGB, Structured IR, LiDAR, etc
-        - High density multi-model environment scan
-        - Fast scan (RGB-D)
-        - Slow scan (Textured Mesh)
-        - Semantic segmentation (via SAM3, YOLO, etc)
-        - 
-- *Auto-configuring Mocap Camera Array*
-  - Large scale mocap too hard to control, cuts against usefulness of large volumes. Legit barrier to progress and usefulness of mocap!!
-  - Our Auto-calibrating, Programmtically controlled Mocap Camera array will help!
-    - Allow centrally controlled definition of capture volume within availble range
-    - Auto-configure for high density tracking within a small space, or more diffuse tracking across a larger space. Higher ceiling for drones, or groundplane focus for locomotion
-    - Use to cross-validate smaller DOMEs within its space, Programmtically explore best practices for camera placement and calibration procedures
+- DOME-Mobile is the wearable form: an IMU suit, binocular eye tracker, and head-mounted world-camera array (stereo RGB, structured IR, LiDAR).
+    - Phase 0: sensor selection, initial integration, and benchtop validation.
+    - Phase 1: validate DOME-Mobile against DOME-L on locomotion tasks (walking, running, obstacle navigation, stair climbing), indoors and outdoors.
+        - Build Drone Swarm Mocap - Drones mounted with simnilar world-scanner on the eye tracker, used to ground the IMU- mocap and flesh out world-scan from head-mounted scanner. 
+    - KPI: kinematic accuracy against the DOME-L reference during co-recorded trials, gaze-in-world angular uncertainty, and drift over [TBD]-minute outdoor walks.
 
-  - *Each camera*: 
-    - Fully actuated Extrinsics (pitch, tilt, roll motor) and Intrinsics (Zoom, apperture, focus)
-    - *Power Over Ethernet* (daisy-chainable power + data, so we can control arbitrary cameras from a single wire coming off the computer)
-    - Modular: 
-      - Sensor (high def, high speed, spectral sensitivity, size, etc)
-      - Illumination (Matchin spectrum of sensor)
-      - Lens Assembly (zoom, aperture, etc)
-- *Hybrid Body kinematics*
-  - Fuse IMU- kinematics iwth Camera-kinematics for BEST kinematics (able to do inverse dynamics (note - also needs force plates))
-- *Drone swarm mocap*
-  - Do it in comparison of IMU- mocap to static DOME cameras, then itnegrate a *Swarm of Drone-mounted World-Sensor arrays* that ground inside-out estiamtes of IMU- and head-mounted World-sensor array during unconstrained outdoor used (train drones and develop swarm controller by tracking them within large DOME-L)
-  - Drone kinematics will be noisy, but fusable with IMu-mocap for grouned outdoor data
-- *Modular Force Plate floor panels*
-  - Floor is all removable panels
-  - Integrate force plates at key points
-  - Create *Terrain* and *LED sceen* panels that can attached to top of force plates, give force reading under defined 3d terrain and interactive LED panels (for cntrolled experiments that manipulate location and texture motion of target footholds)
-  - Each 0.5m square of the ground can be: Forceplate, Terrain/LED panel, or both (force plate stacked with terrain that is either inert or composed of LED panels)
-  - Force plates allow measuring GRF and downstream OpenSim and Inverse Dynamics stuff to estimate muscle activity
-  - Terrain allows validation of head and drone mounted world scanners
-  - LED panels allow controlled experiments of visual/locomotor control theory, and useful human DOME data to use Inverse Reinforcement Learning to extract apparent human control policy, and feed that policy AND and the actual DOME data into robot RL control systems solvers
+### Eye tracker development
 
-#pagebreak()
-#include "../helpers/timeline-milestones.typ"
+- The binocular eye tracker measures torsion and accommodation at 200+ Hz.
+    - Phase 0: bench prototype measuring torsion (via iris texture) and accommodation (via higher-order Purkinje reflections) binocularly, validated against a reference eye tracker and an artificial eye.
+    - Phase 1: mobile form factor, integrated into DOME-Mobile and DOME-S, validated on human participants during natural locomotion.
+    - KPI: torsion accuracy [TBD arcmin], accommodation accuracy [TBD diopters], gaze-in-world uncertainty during walking [TBD degrees], and per-unit cost target [TBD].
+
+### Actuated camera array
+
+- The actuated camera array places cameras on controllable mounts that recalibrate under dynamic reconfiguration.
+    - Phase 0: prototype array of [N] cameras on controllable mounts, a calibration method for dynamic reconfiguration, and validation on static and moving reference objects.
+    - Phase 1: production array in DOME-L, a remote configuration API, and auto-calibration on sub-volume selection.
+    - KPI: post-reconfiguration calibration quality (κ_s, κ_t), time from sub-volume selection to calibrated capture, and reprojection error against a fixed-calibration baseline.
+
+### Camera↔IMU sensor fusion
+
+- Camera↔IMU fusion combines outside-in and inside-out estimates with explicit per-joint uncertainty.
+    - Phase 0: develop the fusion algorithm on existing FreeMoCap + IMU-suit data, validate against the DOME-L reference on standardized movements, and establish uncertainty budgets per joint per movement type.
+    - Phase 1: real-time fusion in DOME-L and DOME-Mobile, validated for inverse dynamics (joint torques, muscle forces via OpenSim).
+    - KPI: joint-center uncertainty at k=2, joint-torque uncertainty against force-plate ground truth, and muscle-force uncertainty against EMG-informed estimates.
+
+### Reprojection-error training pipeline
+
+- The reprojection-error pipeline turns calibrated 3D reconstructions into a training signal for pose estimators.
+    - Phase 0: build a pipeline that back-projects calibrated 3D reconstructions onto each camera's 2D view, computes per-joint reprojection error, and uses that error to fine-tune pose estimators.
+    - Phase 1: demonstrate measurable improvement on out-of-distribution movements (clinical gait, acrobatics, animal locomotion).
+    - KPI: percentage reduction in pose-estimation error on held-out movements, and improvement on standard benchmarks.
+
+### Robot RL integration
+
+- DOME data feeds robot reinforcement learning and inverse reinforcement learning.
+    - Phase 0: define a DOME export format mapping directly to MuJoCo/Isaac Lab rigid-body models, record an initial human-locomotion corpus, and demonstrate policy learning from DOME data in simulation.
+    - Phase 1: sim-to-real transfer of DOME-trained policies onto physical robots, inverse RL to extract apparent human control policies, and tests of IRL-derived hypotheses in DOME-L via ARGP perturbation.
+    - KPI: sim-to-real transfer success rate, policy performance against a simulation-trained baseline, and IRL reward-function predictive accuracy on held-out behavior.
+
+### ARGPv3
+
+- ARGPv3 is a modular augmented-reality ground plane extending the PI's published ARGPv1 apparatus (Matthis 2013–2017).
+    - Phase 0: design a modular LED floor-panel system (0.5 m² tiles), prototype with projection-based visual stimuli, and validate that visual perturbations produce measurable locomotor adjustments in DOME-L.
+    - Phase 1: full DOME-L floor integration, VR-headset integration for immersive manipulation, and coupled LED floor + wall panels for full visual-field control.
+    - KPI: latency from perturbation command to visual update, spatial calibration between LED panels and the DOME coordinate frame, and magnitude of locomotor adjustment per unit visual perturbation.
+
+### Cross-species validation network
+
+- The cross-species network deploys functionally equivalent instruments at animal-collaborator labs.
+    - Phase 0: establish calibration and data-exchange protocols with ferret (visual neuroscience + ephys), mouse (systems neuroscience + miniscope), guinea fowl (musculoskeletal biomechanics + EMG), and marmoset (primate electrophysiology) labs.
+    - Phase 1: deploy functionally equivalent DOME-S instances at each site and validate cross-species measurement comparability.
+    - KPI: number of validated cross-species measurement channels, and inter-species kinematic-model alignment quality.
+
+### Milestone timeline
+
+- The milestones compound across phases, from components to an operating network.
+    - Phase 0 (9 months): DOME-L site selection and design, eye-tracker bench prototype, actuated-array prototype, camera↔IMU fusion algorithm, reprojection pipeline v1, DOME-S validation protocol, and collaborator MOUs.
+    - Phase 1 Go/No-Go (month 7–9): demonstrated components, a validated calibration chain, and signed collaborator agreements.
+    - Phase 1 (24–36 months): operational DOME-L, validated DOME-S at collaborator sites, validated DOME-Mobile, mobile eye tracker v1, actuated array in DOME-L, real-time fusion, robot RL corpus v1, ARGPv3 operational, and cross-species data exchange operational.

@@ -1,25 +1,19 @@
 // ════════════════════════════════════════════════════════════════════════
-//  fmcx-dome-flow-chart.typ
+//  shared.typ
 //
-//  The DOME measurement-chain figure. Desiderata bookend both sides:
+//  The DOME measurement-chain figure, organized into four bands:
 //
-//    DESIDERATA            SENSORS         MEASUREMENT CHAIN          DESIDERATA
-//    (externally     ->    straddle   ->   sensor reference    ->     (nervous system,
-//     observable:          the real–       frame ... into the         not externally
-//     eye, body,           internal        retinotopic reference      observable:
-//     environment)         boundary        frame                      retinal input,
-//                                                                      muscle activation,
-//                                                                      central nervous
-//                                                                      system)
+//    REAL WORLD  →  MEASUREMENTS  →  ESTIMATES  →  NERVOUS SYSTEM
+//    (instruments)  (one step off   (kinematic ·   (peripheral ·
+//                    the sensor)     composite)      central)
 //
-//  Both ends are the True Facts of the universe we want to know. Everything
-//  between is measurement machinery whose one job is to transport an estimate
-//  out of each sensor's own reference frame and into the reference frame the
-//  nervous system uses — retinotopic on the vision path.
+//  Every value is a vector of channels (degrees of freedom), each with a
+//  per-channel status on two orthogonal axes:
+//    present   ● measured directly   ◐ inferred under an explicit prior
+//    build     ★ build target (load-bearing DOF)   ◇ could build (feasible)
 //
-//  Every value is a bundle of channels (degrees of freedom); each channel is
-//  marked measured (●) or inferred under a prior (◐), and every estimate names
-//  the reference frame it lives in.
+//  Propagation is the pushforward of channel-supports: ⊕ carries them through,
+//  ⋈ unions the measured subspaces, Π maps input DOF onto output channels.
 //
 //  Everything scales from one number: theme(f: ...).
 // ════════════════════════════════════════════════════════════════════════
@@ -39,13 +33,11 @@
 #let headink = rgb("#111111")
 #let hairline = rgb("#8a8a8a")
 #let divider = rgb("#cdcdd4")
-#let boundary = rgb("#5a5a5a")       // the real–internal transduction boundary
-#let desid-stroke = 1.1pt + rgb("#2b2b2b")  // marks a desideratum (a True Fact)
 
 #let mark-ok = rgb("#2e7d52")    // ● measured directly and well
 #let mark-inf = rgb("#b9770a")   // ◐ inferred under an explicit prior
-#let mark-build = rgb("#c0392b") // retained for API compatibility
-#let mark-could = rgb("#2f6fb0") // retained for API compatibility
+#let mark-build = rgb("#c0392b") // ★ build target (load-bearing unmeasured DOF)
+#let mark-could = rgb("#2f6fb0") // ◇ could build (feasible, not yet needed)
 
 // ── theme: one scale factor drives every size ───────────────────────────
 #let theme(f: 1.0) = (
@@ -66,7 +58,9 @@
 
 // ── channel marks: code -> (glyph, colour) ──────────────────────────────
 #let glyphof(code) = {
-  if code == "ok" { ([●], mark-ok) } else if code == "inf" { ([◐], mark-inf) } else { ([·], ink) }
+  if code == "ok" { ([●], mark-ok) } else if code == "inf" { ([◐], mark-inf) } else if code == "build" {
+    ([★], mark-build)
+  } else if code == "could" { ([◇], mark-could) } else { ([·], ink) }
 }
 #let gmark(code, size) = {
   let (ch, col) = glyphof(code)
@@ -104,20 +98,18 @@
 
 #let elabel(th, t, fill: ink) = text(size: th.elabel, fill: fill)[#t]
 
-// ── headers: two-line band super-header and column sub-header ────────────
-#let bandhead(th, top, bottom) = block(width: 100%, inset: (y: 2.5pt * th.f), radius: th.radius, fill: rgb("#ececef"), stroke: 0.5pt + hairline)[
+// ── headers: band super-header (chip) and column sub-header ──────────────
+#let bandhead(th, t) = block(width: 100%, inset: (y: 2.5pt * th.f), radius: th.radius, fill: rgb("#ececef"), stroke: 0.5pt + hairline)[
   #set align(center)
   #set text(hyphenate: false)
-  #text(size: th.band, weight: "bold", fill: headink, tracking: 0.35pt, smallcaps(top))
-  #linebreak()
-  #text(size: th.band * 0.82, fill: tagink, tracking: 0.2pt, smallcaps(bottom))
+  #text(size: th.band, weight: "bold", fill: headink, tracking: 0.35pt, smallcaps(t))
 ]
 #let subhead(th, t) = align(center)[
   #set text(hyphenate: false)
   #text(size: th.head * 0.98, fill: tagink)[#t]
 ]
 
-// ── legend: the per-channel vocabulary, one slim band at the top ────────
+// ── legend: the two-axis vocabulary, one slim band at the top ───────────
 #let legend(th) = {
   let item(code, label) = box(inset: (right: 1.1em))[
     #gmark(code, th.legend * 1.15) #h(0.12em) #text(size: th.legend, fill: ink)[#label]
@@ -133,20 +125,20 @@
     #set par(leading: 0.4em)
     #text(size: th.legend, weight: "bold", fill: tagink)[per channel — ]
     #item("ok", [measured]) #item("inf", [inferred under a prior])
-    #h(0.4em) #text(size: th.legend, weight: "bold", fill: tagink)[· each estimate names the reference frame it lives in · ]
-    #box(inset: (right: 0.3em))[#text(size: th.legend, fill: boundary, weight: "bold")[▮]] #text(size: th.legend, fill: ink)[the real–internal boundary (transduction)]
+    #h(0.4em) #text(size: th.legend, weight: "bold", fill: tagink)[· build flag — ]
+    #item("build", [build target (load-bearing)]) #item("could", [could build])
   ]
 }
 
 // ════════════════════════════════════════════════════════════════════════
 //  chain(): the banded measurement DAG.
-//    x = -1 left desiderata · 0 sensors · 1 measurements · 2 kinematic
-//        3 composite · 4 peripheral NS · 5 central NS. Hybrid at 1.5.
+//    x = 0 sensors · 1 measurements · 2 kinematic est. · 3 composite est.
+//        4 peripheral NS · 4.9 central NS (narrow). Hybrid at 1.5.
 // ════════════════════════════════════════════════════════════════════════
 #let chain(th, with-manip: true) = {
   let W = th.W
-  let Wc = 0.8 * W // central-nervous-system column
-  let Ws = 0.85 * W // desideratum column (the True Fact being measured)
+  let Wc = 0.8 * W // squished central-nervous-system column
+  let Ws = 0.85 * W // narrow subject column (the physical thing measured)
 
   let scene-tag = if with-manip { [manipulable: VR/AR/XR, LED, terrain] } else { none }
 
@@ -158,31 +150,31 @@
     edge-stroke: 0.6pt + ink,
     label-sep: 1.2pt * th.f,
 
-    // ── band dividers (behind the nodes); x=0.5 is the transduction boundary ─
-    edge((0.5, -1.9), (0.5, 4.4), stroke: 1.2pt + boundary),
+    // ── band dividers (drawn first, behind the nodes) ─────────────────
+    edge((0.5, -1.5), (0.5, 4.4), stroke: 0.5pt + divider),
     edge((1.5, -1.5), (1.5, 4.4), stroke: 0.5pt + divider),
     edge((3.5, -1.5), (3.5, 4.4), stroke: 0.5pt + divider),
 
-    // ── band super-headers (two lines each) ───────────────────────────
-    node((-1, -1.8), bandhead(th, [Desiderata], [externally observable]), stroke: none, fill: none, width: Ws),
-    node((0, -1.8), bandhead(th, [Sensors], [straddle the boundary]), stroke: none, fill: none, width: W),
-    node((2, -1.8), bandhead(th, [Measurement chain], [into retinotopic coordinates]), stroke: none, fill: none, width: 5.7cm * th.f),
-    node((4.5, -1.8), bandhead(th, [Desiderata], [nervous system]), stroke: none, fill: none, width: 2.9cm * th.f),
+    // ── band super-headers ────────────────────────────────────────────
+    node((-0.5, -1.75), bandhead(th, [Real world]), stroke: none, fill: none, width: 3.9cm * th.f),
+    node((1, -1.75), bandhead(th, [Measurements]), stroke: none, fill: none, width: 2.7cm * th.f),
+    node((2.5, -1.75), bandhead(th, [Estimates]), stroke: none, fill: none, width: 2.7cm * th.f),
+    node((4.5, -1.75), bandhead(th, [Nervous system]), stroke: none, fill: none, width: 2.9cm * th.f),
 
     // ── column sub-headers ────────────────────────────────────────────
-    node((-1, -1.05), subhead(th, [true facts of the world]), stroke: none, fill: none, width: Ws),
-    node((0, -1.05), subhead(th, [transduce energy $arrow.r$ signal]), stroke: none, fill: none, width: W),
+    node((-1, -1.05), subhead(th, [subject]), stroke: none, fill: none, width: Ws),
+    node((0, -1.05), subhead(th, [instrument]), stroke: none, fill: none, width: W),
     node((1, -1.05), subhead(th, [off the sensor]), stroke: none, fill: none, width: W),
     node((2, -1.05), subhead(th, [kinematic]), stroke: none, fill: none, width: W),
     node((3, -1.05), subhead(th, [composite]), stroke: none, fill: none, width: W),
     node((4, -1.05), subhead(th, [peripheral]), stroke: none, fill: none, width: W),
     node((5, -1.05), subhead(th, [central]), stroke: none, fill: none, width: Wc),
 
-    // ── LEFT DESIDERATA: the externally observable True Facts ─────────
-    node((-1, 0), nb(th, [Environment], tag: [scene + terrain]), name: <envsub>, stroke: desid-stroke, fill: lane-world, width: Ws),
-    node((-1, 1), nb(th, [Eye], tag: [pose + optics]), name: <eyesub>, stroke: desid-stroke, fill: lane-eye, width: Ws),
-    node((-1, 2.425), nb(th, [Body], tag: [segment poses]), name: <bodysub>, stroke: desid-stroke, fill: lane-body, width: Ws),
-    node((-1, 3.8), nb(th, [Ground contact], tag: [foot–ground forces]), name: <groundsub>, stroke: desid-stroke, fill: lane-world, width: Ws),
+    // ── SUBJECTS: the physical thing each instrument observes ─────────
+    node((-1, 0), nb(th, [Environment], tag: [scene + terrain]), name: <envsub>, fill: lane-world, width: Ws),
+    node((-1, 1), nb(th, [Eye], tag: [pose + optics]), name: <eyesub>, fill: lane-eye, width: Ws),
+    node((-1, 2.425), nb(th, [Body], tag: [segment poses]), name: <bodysub>, fill: lane-body, width: Ws),
+    node((-1, 3.8), nb(th, [Ground contact], tag: [foot–ground forces]), name: <groundsub>, fill: lane-world, width: Ws),
 
     // ── WORLD ─────────────────────────────────────────────────────────
     node((0, 0), nb(th, [World & terrain scanner], chans: (([$cal(P) tack.r$ depth], ("ok",)),)), name: <worldcam>, fill: lane-world, width: W),
@@ -190,26 +182,26 @@
 
     // ── EYE / VISION ──────────────────────────────────────────────────
     node((0, 1), nb(th, [Eye tracker], chans: (([$cal(P) tack.r$ image], ("ok",)),)), name: <eyetracker>, fill: lane-eye, width: W),
-    node((1, 1), nb(th, [Eye keypoint trajectories], tag: [image reference frame], chans: (([keypoints], ("ok",)),)), name: <eyekp>, fill: lane-eye, width: W),
+    node((1, 1), nb(th, [Eye keypoint trajectories], tag: [pupil · iris · limbus], chans: (([keypoints], ("ok",)),)), name: <eyekp>, fill: lane-eye, width: W),
     node(
       (2, 1),
-      nb(th, [Eye kinematics], tag: [eye-in-head reference frame], chans: (([elev], ("ok",)), ([abd], ("ok",)), ([tors], ("inf",)), ([pupil], ("ok",)), ([accom], ("inf",)))),
+      nb(th, [Eye kinematics], tag: [eye-in-head], chans: (([elev], ("ok",)), ([abd], ("ok",)), ([tors], ("inf", "build")), ([pupil], ("ok",)), ([accom], ("inf", "could")))),
       name: <eyekin>, fill: lane-eye, width: W,
     ),
     node(
       (3, 1),
-      nb(th, [Gaze in world], tag: [world reference frame], chans: (([orient], ("ok",)), ([tors], ("inf",)))),
+      nb(th, [Gaze in world], tag: [eye-kin $plus.o$ head-in-world], chans: (([orient], ("ok",)), ([tors], ("inf", "build")))),
       name: <gaze>, fill: lane-comp, width: W,
     ),
     node(
       (4, 1),
       nb(
-        th, [Retinal input],
-        tag: [world structure in retinotopic reference frame],
-        chans: (([structure], ("inf",)), ([flow], ("inf",))),
-        neural: [afferent input → visual cortex],
+        th, [Retinal image & optic flow],
+        tag: [$Pi$(gaze, scene, self-motion)],
+        chans: (([div], ("ok",)), ([def], ("ok",)), ([curl], ("inf", "build")), ([illum], ("ok",)), ([defocus], ("inf", "could"))),
+        neural: [afferent input → visual system],
       ),
-      name: <retina>, stroke: desid-stroke, fill: lane-pns, width: W,
+      name: <retina>, fill: lane-pns, width: W,
     ),
 
     // ── BODY ──────────────────────────────────────────────────────────
@@ -217,8 +209,8 @@
     node((1, 2.0), nb(th, [Body keypoint trajectories], tag: [accurate, imprecise], chans: (([keypoints], ("ok",)),)), name: <bodykp>, fill: lane-body, width: W),
     node((0, 2.85), nb(th, [IMU mocap], chans: (([$cal(I) tack.r$ accel, gyro], ("ok",)),)), name: <imu>, fill: lane-body, width: W),
     node((1, 2.85), nb(th, [Segment orientations], chans: (([ang. rate], ("ok",)), ([abs. orient], ("inf",)))), name: <segorient>, fill: lane-body, width: W),
-    node((1.5, 2.425), nb(th, [$join$]), name: <hybrid>, fill: white),
-    node((2, 2.425), nb(th, [Body kinematics], tag: [world reference frame], chans: (([translation], ("ok",)), ([orientation], ("ok",)))), name: <bodykin>, fill: lane-comp, width: W),
+    node((1.5, 2.425), nb(th, [$join$], tag: [#text(fill: mark-build)[★]]), name: <hybrid>, fill: white),
+    node((2, 2.425), nb(th, [Body kinematics], tag: [keypoints $join$ orient · head pose], chans: (([translation], ("ok",)), ([orientation], ("ok",)))), name: <bodykin>, fill: lane-comp, width: W),
 
     // ── KINETICS ──────────────────────────────────────────────────────
     node((0, 3.8), nb(th, [Force plates & insoles], chans: (([$cal(M) tack.r$ force], ("ok",)),)), name: <plates>, fill: lane-world, width: W),
@@ -227,27 +219,27 @@
     node(
       (4, 3.4),
       nb(
-        th, [Muscle activation],
-        tag: [drive to the motor units],
+        th, [Muscle forces & activation],
+        tag: [$a = upright(M)(tau)$ $join$ EMG],
         chans: (([model estimate], ("inf",)), ([EMG-sensed], ("ok",))),
         neural: [efferent drive → motor units],
       ),
-      name: <muscle>, stroke: desid-stroke, fill: lane-pns, width: W,
+      name: <muscle>, fill: lane-pns, width: W,
     ),
 
-    // ── CENTRAL NERVOUS SYSTEM ────────────────────────────────────────
-    node((5, 1.45), nb(th, [Cortical]), name: <cortical>, stroke: desid-stroke, fill: lane-cns, width: Wc),
-    node((5, 2.7), nb(th, [Subcortical]), name: <subcortical>, stroke: desid-stroke, fill: lane-cns, width: Wc),
+    // ── CENTRAL NERVOUS SYSTEM (squished) ─────────────────────────────
+    node((5, 1.45), nb(th, [Cortical], tag: [flexible · learned]), name: <cortical>, fill: lane-cns, width: Wc),
+    node((5, 2.7), nb(th, [Subcortical], tag: [fast · reflexive]), name: <subcortical>, fill: lane-cns, width: Wc),
     node((5, 3.9), nb(th, [Efferent command], tag: [at $t + delta t$]), name: <efferent>, fill: white, width: Wc),
 
-    // ── desideratum → sensor (the sensor observes the True Fact) ──────
+    // ── subject → instrument (the sensor observes the physical thing) ─
     edge(<envsub>, <worldcam>, "->"),
     edge(<eyesub>, <eyetracker>, "->"),
     edge(<bodysub>, <cameras>, "->"),
     edge(<bodysub>, <imu>, "->"),
     edge(<groundsub>, <plates>, "->"),
 
-    // ── sensor → measurement (transduction crosses the boundary) ──────
+    // ── sensor → measurement ──────────────────────────────────────────
     edge(<worldcam>, <scene>, "->"),
     edge(<eyetracker>, <eyekp>, "->"),
     edge(<cameras>, <bodykp>, "->"),
@@ -266,8 +258,8 @@
     edge(<bodykin>, <invdyn>, "->"),
     edge(<grf>, <invdyn>, "->"),
 
-    // ── composite estimate → peripheral nervous system (project Π) ─────
-    edge(<gaze>, <retina>, "->", label: elabel(th, [$Pi$]), label-pos: 0.5, label-side: left),
+    // ── composite estimate → peripheral nervous system ────────────────
+    edge(<gaze>, <retina>, "->", label: elabel(th, [→curl], fill: mark-build), label-pos: 0.5, label-side: left),
     edge(<scene>, <retina>, "->", bend: 24deg, label: elabel(th, [scene / terrain]), label-pos: 0.15, label-side: left),
     edge(<bodykin>, <retina>, "->", bend: -22deg, label: elabel(th, [self-motion]), label-side: right),
     edge(<invdyn>, <muscle>, "->"),
@@ -298,7 +290,7 @@
   )
 }
 
-// ── calculus strip: full-width, below the diagram; self-contained ───────
+// ── calculus strip: full-width, below the diagram; fully self-contained ─
 #let sidebox(th) = block(
   width: 100%,
   inset: (x: 8pt * th.f, y: 6pt * th.f),
@@ -308,54 +300,52 @@
 )[
   #set par(leading: 0.5em, justify: false)
   #set text(size: 6.5pt * th.f, fill: ink, hyphenate: false)
-  #text(size: th.head, weight: "bold", fill: headink, tracking: 0.3pt, smallcaps[Reading the chart])
-  #h(0.6em) #text(size: 6.4pt * th.f, fill: tagink)[both ends are *desiderata* — the True Facts we want. The chain between them transports each estimate out of its sensor's reference frame and into the reference frame the nervous system uses.]
+  #text(size: th.head, weight: "bold", fill: headink, tracking: 0.3pt, smallcaps[Reading the chart as a calculus])
+  #h(0.6em) #text(size: 6.4pt * th.f, fill: tagink)[each value is a bundle of *channels* (degrees of freedom); the top legend grades each channel.]
   #v(0.4em)
 
   #grid(
-    columns: (1.15fr, 1.15fr, 1fr),
+    columns: (1.25fr, 1fr, 1fr),
     column-gutter: 1.3em,
     align: left + top,
 
-    // ── column 1: notation ────────────────────────────────────────────
+    // ── column 1: notation, defined from scratch ──────────────────────
     [
       #text(weight: "bold", fill: headink)[Notation]
       #v(0.2em)
       #grid(
         columns: (auto, 1fr), column-gutter: 0.55em, row-gutter: 0.42em, align: (left + top, left),
         $cal(E)$, [an *energy* a sensor is sensitive to: $cal(P)$ photons · $cal(I)$ inertial · $cal(M)$ contact],
-        [$cal(E) tack.r s$], [*transduce* — a sensor *yields* ($tack.r$) a raw *signal* $s$; the one physical step, at the real–internal boundary],
+        [$cal(E) tack.r s$], [*transduce* — a sensor *yields* ($tack.r$) a raw *signal* $s$ from an energy (image · inertial · force)],
         $arrow.r$, [*derive* — a signal is processed into a measurement, then an estimate],
-        $plus.o$, [*compose* — chain estimates across reference frames],
-        $join$, [*fuse* — combine two estimates of one quantity],
-        $Pi$, [*project* — map a state onto an observable],
+        $plus.o$, [*compose* — chain relative poses; the shared reference frame cancels],
+        $join$, [*fuse* — union the measured subspaces of two estimators],
+        $Pi$, [*project* — the only operator that maps input DOF onto output channels],
+        [$approx v^star$], [*approximates* the true latent value $v^star$],
       )
     ],
 
-    // ── column 2: the reference-frame journey ─────────────────────────
+    // ── column 2: the chains (vision path) ────────────────────────────
     [
-      #text(weight: "bold", fill: headink)[The reference-frame journey]
-      #v(0.2em)
-      #text(fill: tagink)[Each estimate lives in one reference frame. The vision path is a journey from sensor reference frames into the retinotopic reference frame — the coordinates the visual cortex uses.]
-      #v(0.3em)
-      #grid(
-        columns: (auto, 1fr), column-gutter: 0.55em, row-gutter: 0.42em, align: (left + top, left),
-        [*Vision*], [image $arrow.r$ eye-in-head $arrow.r$ world $arrow.r$ retinotopic],
-        [*Body*], [camera / IMU sensor $arrow.r$ world (inertial)],
-        [*Gaze*], [eye-in-head $plus.o$ head-in-world $arrow.r$ world],
-      )
-    ],
-
-    // ── column 3: the chains ──────────────────────────────────────────
-    [
-      #text(weight: "bold", fill: headink)[The chains] #text(fill: tagink)[— energy $tack.r$ signal $arrow.r$ estimate]
+      #text(weight: "bold", fill: headink)[The chains] #text(fill: tagink)[— energy $tack.r$ signal $arrow.r$ measurement $arrow.r$ estimate]
       #v(0.2em)
       #grid(
         columns: (auto, 1fr), column-gutter: 0.55em, row-gutter: 0.5em, align: (left + top, left),
-        [*Eye*], [$cal(P) tack.r$ image $arrow.r$ keypoints $arrow.r$ eye-kin (elev, abd, tors, pupil, accom)],
-        [*Body*], [$cal(P) tack.r$ images $arrow.r$ keypoints; $cal(I) tack.r$ accel+gyro $arrow.r$ segment orient; body-kin $=$ keypoints $join$ orient],
-        [*Retinal input*], [$Pi$(gaze, scene, self-motion) — afferent],
-        [*Motor*], [$tau =$ ID(body-kin, GRF); muscle $=$ M($tau$) $join$ EMG — efferent],
+        [*Eye*], [$cal(P) tack.r$ image $arrow.r$ eye keypoints $arrow.r$ eye-kin #linebreak() (elev, abd, tors, pupil, accom)],
+        [*Body*], [$cal(P) tack.r$ images $arrow.r$ body keypoints; #linebreak() $cal(I) tack.r$ accel+gyro $arrow.r$ segment orient; #linebreak() body-kin $=$ keypoints $join$ orient],
+        [*Gaze*], [$g =$ eye-kin $plus.o$ head-in-world],
+      )
+    ],
+
+    // ── column 3: the chains (projection to the nervous system) ───────
+    [
+      #text(weight: "bold", fill: headink)[Into the nervous system]
+      #v(0.2em)
+      #grid(
+        columns: (auto, 1fr), column-gutter: 0.55em, row-gutter: 0.5em, align: (left + top, left),
+        [*Retinal input*], [$rho = Pi(g, "scene", dot(x)) approx rho^star$ #linebreak() retinal image & optic flow (afferent)],
+        [*Kinetics*], [$cal(M) tack.r$ force $arrow.r$ GRF; #h(0.2em) $tau = "ID"("body-kin, GRF; BSP")$],
+        [*Motor*], [$a = upright(M)(tau) join "EMG" approx a^star$ #linebreak() muscle drive (efferent)],
       )
     ],
   )
