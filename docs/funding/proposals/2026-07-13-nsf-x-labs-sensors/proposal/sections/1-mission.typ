@@ -8,7 +8,7 @@
 = Mission
 
 #let mission_statement = [
-Build the DOME — a new class of scientific instrument that records the complete perception–action loop of a behaving agent as a single calibrated, uncertainty-tagged measurement — and the autonomous organization required to turn it into shared infrastructure, fusing four disconnected sciences of behavior into one.]
+Build the DOME — a new class of scientific instrument that records the complete perception–action loop of a behaving agent as a single calibrated, uncertainty-tagged measurement — and the autonomous organization required to turn it into shared infrastructure and  align perceptual and motor neuroscience, musculoskeletal biomechanics, mobile robotics, and embodied AI around a single convergent science of sensorimotor control.]
  
 #block(
   fill: rgb("#ddd"),
