@@ -78,13 +78,16 @@
   background: if DRAFT_MODE { draft-margin-box },
 )
 #set text(size: 12pt, font: "Libertinus Serif", hyphenate: false)
-#set par(justify: false, leading: 0.45em, spacing: 0.85em, first-line-indent: 1em)
 #set par.line(numbering: if DRAFT_MODE { "1" } else { none })
 #set heading(numbering: "1.", supplement: [§])
 
-#show heading.where(level: 1): set block(above: 0em, below: 1em)
+#set par(justify: false, leading: 0.45em, spacing: 0.72em, first-line-indent: 1em)
+#set par.line(numbering: if DRAFT_MODE { "1" } else { none })
+#set heading(numbering: "1.", supplement: [§])
+
+#show heading.where(level: 1): set block(above: 0em, below: 0.6em)
 #show heading.where(level: 1): set text(weight: "bold", size: 12pt)
-#show heading.where(level: 2): set block(above: 1.4em, below: 0.6em)
+#show heading.where(level: 2): set block(above: 0.7em, below: 0.3em)
 #show heading.where(level: 2): set text(weight: "bold", size: 12pt)
 
 // ── Title Block ──
