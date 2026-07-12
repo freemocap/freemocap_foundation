@@ -70,7 +70,8 @@ Develop and disseminate a new class of scientific instrument called a #semibold(
 
 ==  A New Instrument: Building the #smallcaps[Dome] 
 
-- We call this instrument the DOME — a Densely Overlapping Measurement Environment.
+We define a #smallcaps([Dome])as 3d volume of real-world space representing a 
+
     - It is a densely instrumented region of real space engineered to record every measurable channel of the agent–environment interaction at once: full-body kinematics and kinetics, muscle and motor-unit activity, binocular gaze and reconstructed retinal input, and, where feasible, neural activity.
     - It is the inverse of a space telescope: a room of lenses aimed inward, at the place where the body meets the world.
 
