@@ -99,7 +99,8 @@ We define a #Dome as a densely instrumented region of real space engineered (at 
 
 == The New Capability
 
-Because every 
+Because each data stream in a #Dome system is synchronized, calibrated, and metrologically-traceable from sensor to a shared ontology of well-defined cannonical objects, 
+
 
 Because every channel is spatially calibrated, temporally synchronized, and expressed in one sensor-grounded ontology, the #Dome makes heterogeneous sensor streams directly commensurable, with uncertainty traced from each transducer to every derived value. This yields capabilities no existing tool provides. #Dome records are consumable by modern reinforcement-learning and robotics stacks with minimal reshaping — a measured bone segment and a simulated robot link are the same `RigidBody` — giving embodied AI and legged robots the real-world sensorimotor corpora, annotated with the explicit uncertainty bounds safe learning requires. The same calibrated array is physical ground truth for computer vision at scale: an instrument, in the Topic's own language, engineered to produce better AI training data. And because the ontology defines slots for channels no current sensor fills, the archive appreciates — new transducers back-fill older records and up-fill cheaper #Domes. Ultimately, observation, modeling, and intervention collapse into a single apparatus: the #Dome extracts the reward a biological agent appears to optimize and probes it back by controlled perturbation of the loop, running the full hypothetico-deductive cycle inside one instrument.
 
