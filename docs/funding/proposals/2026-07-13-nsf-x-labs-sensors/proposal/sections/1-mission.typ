@@ -103,7 +103,11 @@ Because every channel is spatially calibrated, temporally synchronized, and expr
 
 // [→ §3: RigidBody/contact-force mapping, reprojection-error pipeline + Isaac Lab/MuJoCo RL integration, IRL methodology + validation, backfill/upfill statistical framework, AR perturbation hardware — LED floor panels, projection, VR.]
 
+== The Vision
 
+The end-state is a single empirical science of sensorimotor control: perceptuomotor neuroscience, musculoskeletal biomechanics, mobile robotics, and embodied AI — four parallel literatures with incompatible tools today — become commensurable, so a finding in one becomes evidence in another. On the very same measurements sits a second end-state: the uncertainty-tagged corpora embodied AI and robotics need to learn real-world behavior, reshaping a field of science and seeding a sector of technology at once. In seven years, the jogger crossing a rocky field is a routine measurement — her kinematics, forces, muscle activity, gaze, the terrain beneath her, and the image on her retina recorded as one object, with a defensible uncertainty on every value, by an instrument a graduate student can operate. The same kind of record — lower precision, not a different kind — comes from a classroom in Ohio and a ferret hunting in a lab, comparable because every value traces to the same references. The telescope showed us our place in the universe by pointing outward; the #Dome shows us ourselves by pointing inward, at the place where the body meets the world.
+
+// [→ §3 / Outcomes: full deployment catalog — hundred-dollar kits, field-deployable gait labs, hospitals and PT clinics, athletic centers, robotics labs, classrooms, ISS.]
 ==  The New Capability
 
 - Because every channel is spatially calibrated, temporally synchronized, and expressed in one sensor-grounded ontology, DOME records make heterogeneous sensor streams directly commensurable, with uncertainty traced from each transducer to every derived value.
