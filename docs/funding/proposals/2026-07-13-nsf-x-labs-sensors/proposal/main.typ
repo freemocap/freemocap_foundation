@@ -87,7 +87,7 @@
 
 #show heading.where(level: 1): set block(above: 0em, below: 0.6em)
 #show heading.where(level: 1): set text(weight: "bold", size: 12pt)
-#show heading.where(level: 2): set block(above: 0.7em, below: 0.3em)
+#show heading.where(level: 2): set block(above: 0.8em, below: 0.5em)
 #show heading.where(level: 2): set text(weight: "bold", size: 12pt)
 
 // ── Title Block ──
