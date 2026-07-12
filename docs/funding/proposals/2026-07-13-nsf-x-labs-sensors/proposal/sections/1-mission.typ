@@ -70,7 +70,7 @@ Develop and disseminate a new class of scientific instrument called a #semibold(
 
 ==  A New Instrument: Building the #smallcaps[Dome] 
 
-We define a #smallcaps([Dome])as a densely instrumented region of real space engineered (at some aspirational extreme) to record every  possible measurable channel of the agent–environment interaction at once: full-body kinematics and kinetics, muscle and motor-unit activity, binocular gaze and reconstructed retinal input, and neural activity. It is the opposite of a space telescope, an empty volume of of lenses focused inward at the mysterious place where the body meets the world.
+We define a #smallcaps([Dome]) as a densely instrumented region of real space engineered (at some aspirational extreme) to record every  possible measurable channel of the agent–environment interaction at once. It is the opposite of a space telescope, an empty volume of of lenses focused inward at the mysterious place where the body meets the world. 
 
  In practice, individuals will build their #smallcaps([Dome])s with a partial subset of available instrumentation on the selected on the basis of their use-case. 
     - 
