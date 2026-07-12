@@ -17,7 +17,7 @@ Build the DOME — a new class of scientific instrument that records the complet
   inset: (x: 1em, y: 0.5em),
 )[#mission_statement]
 
-==  The Observable
+==  A New Observable: The Perception/Action Cycle
 
 - Every agent, living or engineered, runs the same loop: it senses a thin slice of its environment through imperfect transducers and pushes back against the world to move toward a goal.
     - Information flows in, forces flow out; the brain exists to move the bones.
@@ -36,7 +36,7 @@ Build the DOME — a new class of scientific instrument that records the complet
     - It must capture every empirically available channel of an agent's perception and action at once: spatially calibrated, temporally synchronized, and rendered commensurable across labs and species.
     - It must be faithful enough that its record can predict neural activity along the sensory and motor pathways — the fidelity bar that separates a recording from a measurement.
 
-==  The Instrument
+==  A New Instrument: The #smallcaps[Dome](Densely Overlapping Measurement Environment)
 
 - We call this instrument the DOME — a Densely Overlapping Measurement Environment.
     - It is a densely instrumented region of real space engineered to record every measurable channel of the agent–environment interaction at once: full-body kinematics and kinetics, muscle and motor-unit activity, binocular gaze and reconstructed retinal input, and, where feasible, neural activity.
