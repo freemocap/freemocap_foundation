@@ -110,4 +110,4 @@ The Sensor-Grounded Ontology [SGO TODO - define this above] also imporvides LLM'
 
 // [→ §4, §5: PI expertise + departure from Northeastern; EI enterprise software; AC clinical validation; KM mobile DOME lineage; MN large-scale lab; JKL AI systems; RR org health + NSF grant mgmt; NR CEO ops; collaborator roster; governance (FMC-X within FMC-F, PI final say); autonomy at submission; congress/hackathon cadence; community grants; FreeMoCap scale receipts.]
 == The Vision
-There is no upper limit to our ambition. 
+The vision of this proposal represents an grand acceleration of movement the FreeMoCap Project has fostered since 2021, and there is no upper limit to our ambition. 
