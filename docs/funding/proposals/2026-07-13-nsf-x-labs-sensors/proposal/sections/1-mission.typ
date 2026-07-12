@@ -96,6 +96,14 @@ We define a #Dome as a densely instrumented region of real space engineered (at 
 
 // - [ALLUDE → §3: DOME-L warehouse specs, DOME-S build plans and FreeMoCap community metrics, DOME-Mobile sensor suite, eye-tracker DoF targets and validation, actuated camera array engineering, camera↔IMU fusion uncertainty budgets, force-plate floor panels, ARGPv3, drone swarm (later phase).]
 
+
+== The New Capability
+
+Because every channel is spatially calibrated, temporally synchronized, and expressed in one sensor-grounded ontology, the #Dome makes heterogeneous sensor streams directly commensurable, with uncertainty traced from each transducer to every derived value. This yields capabilities no existing tool provides. #Dome records are consumable by modern reinforcement-learning and robotics stacks with minimal reshaping — a measured bone segment and a simulated robot link are the same `RigidBody` — giving embodied AI and legged robots the real-world sensorimotor corpora, annotated with the explicit uncertainty bounds safe learning requires. The same calibrated array is physical ground truth for computer vision at scale: an instrument, in the Topic's own language, engineered to produce better AI training data. And because the ontology defines slots for channels no current sensor fills, the archive appreciates — new transducers back-fill older records and up-fill cheaper #Domes. Ultimately, observation, modeling, and intervention collapse into a single apparatus: the #Dome extracts the reward a biological agent appears to optimize and probes it back by controlled perturbation of the loop, running the full hypothetico-deductive cycle inside one instrument.
+
+// [→ §3: RigidBody/contact-force mapping, reprojection-error pipeline + Isaac Lab/MuJoCo RL integration, IRL methodology + validation, backfill/upfill statistical framework, AR perturbation hardware — LED floor panels, projection, VR.]
+
+
 ==  The New Capability
 
 - Because every channel is spatially calibrated, temporally synchronized, and expressed in one sensor-grounded ontology, DOME records make heterogeneous sensor streams directly commensurable, with uncertainty traced from each transducer to every derived value.
