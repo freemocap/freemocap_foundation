@@ -4,10 +4,9 @@
 
 = Senior/Key Personnel <sec-personnel>
 
-Under the NSF X-Labs model, Phase 0 is the runway for members to transition to full-time before Phase 1. The PI and CSO are already full-time on FreeMoCap; the others commit to full-time by Phase 1, most having already contributed for years — part-time or volunteer, alongside senior industry and academic roles — before any funding existed.
+Under the NSF X-Labs model, Phase 0 is the runway for members to transition to full-time before Phase 1. The PI and CSO are already full-time on FreeMoCap; the others commit to full-time by Phase 1.
 
 *Jonathan Matthis, PhD — President / PI.* Founded and maintains FreeMoCap; two decades measuring the full perception–action loop. Left a tenure-track professorship (Human Movement Neuroscience, Northeastern) because it could not support the integrated tool-building this work requires. NEI NIH K99/R00 recipient (EY028229), with a publication record spanning the full loop, from outdoor gaze-and-gait to real-world retinal-input reconstruction. <skp-JSM>
-// NOTE: PI/Northeastern-departure story repeats in Mission's Unmet Needs (@sec-unmet-needs) and Team Capabilities' Governance section (@sec-governance) — three tellings of the same founding fact; see the red flags in @sec-unmet-needs.
 
 *NR — Chief Executive Officer.* Technology-sector engineering leader and startup co-founder, recruited to run the organization so the PI can focus on the technical Mission. Staff Platform Software Engineer at Rapid7; co-founded and scaled MailLift, a venture-backed API startup. Brings the leadership and operations capacity to build FreeMoCap into an autonomous, independent X-Lab. <skp-NR>
 
@@ -15,7 +14,7 @@ Under the NSF X-Labs model, Phase 0 is the runway for members to transition to f
 
 *AC, PhD — Chief Scientific Officer.* Dissertation validated FreeMoCap against research-grade optical motion capture (Qualisys), demonstrating clinically valid kinematics from commodity hardware. Expertise in clinical tool validation, bench-to-bedside development, neuroprosthetics, and brain imaging; leads DOME-S development and clinical dissemination. <skp-AC>
 
-*JKL, PhD — Chief AI Officer.* Cognitive scientist and applied-AI architect (Applied AI Architect, SOLID Inc.); FreeMoCap contributor since 2024 and lead developer of SkellyBot, its multi-agent AI assistant (NestJS + LangChain, vector-store retrieval, multimodal inputs). 15+ years handling sensitive human-subjects and health data under FERPA and IRB — anchors data governance and research security, and builds internal AI for development, support, and education. <skp-JKL>
+*JKL, PhD — Chief AI Officer.* Cognitive scientist and applied-AI architect (Applied AI Architect, SOLID Inc.); FreeMoCap contributor since 2024 and co-developer of SkellyBot, an AI-based teaching assistant that he and the PI build and deployed into 10 classes across 3 universities between between Spring 2023 and Fall 2025.  15+ years handling sensitive human-subjects and health data under FERPA and IRB — anchors data governance and research security, and builds internal AI for development, support, and education. <skp-JKL>
 
 *RR — Chief Financial Officer.* Cooperative- and nonprofit-finance specialist and FreeMoCap's Treasurer / volunteer CFO since 2021, its longest-serving financial officer. Founder of Capital Bookkeeping Cooperative; Controller at Honest Weight Food Co-op; Adjunct Professor of Accounting, University at Albany (MS, Accounting). Runs financial operations and grant management; cooperative-governance experience fits the Foundation's open structure and the X-Labs autonomy requirements. <skp-RR>
 

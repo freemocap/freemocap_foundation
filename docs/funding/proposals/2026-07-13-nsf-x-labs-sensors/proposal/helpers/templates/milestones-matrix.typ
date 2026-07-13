@@ -51,28 +51,27 @@
     it[Required NSF plans], e, s(cOrg, [Data · IP · Security · Gov; Ph1 plan + budget]), e, e,
     it[IP management], hv[prior IP], s(cOrg, [IP Mgmt Plan]), sl(cOrg, [license · manage]), e,
 
-    grp(cBody, [Body — technical maturity]),
-    it[Camera array], e, s(cBody, [PoC]), s(cBody, [Prototype]), sl(cBody, [Operational]),
+    grp(cInt, [#Dome Variants]),
+    it[#Dome-L (Automated)], e, s(cInt, [PoC / testbed]), s(cInt, [Prototype - Validated]), sl(cInt, [Operational]),
+    it[#Dome-S (Static)], hv[FMC webcam], s(cInt, [Validated]), s(cInt, [Operational (510(k) cert)]), sl(cInt, [Operational]),
+    it[#Dome-Mob], e, s(cInt, [PoC-Breadboard]), s(cInt, [Prototype-Validated]), sl(cInt, [Operational]),
+
+    grp(cBody, [Body — Technical Development]),
+    it[Camera array], e, s(cBody, [PoC-Breadboard]), s(cBody, [Prototype -> Validated]), sl(cBody, [Operational]),
     it[IMU↔camera fusion], hv[FMC mocap], s(cBody, [PoC]), s(cBody, [Prototype]), sl(cBody, [Validated]),
 
     grp(cEye, [Eye — technical maturity]),
-    it[Eye tracker (torsion)], e, s(cEye, [Breadboard]), s(cEye, [Prototype]), sl(cEye, [Operational]),
+    it[Dense Array Eye tracker], e, s(cEye, [PoC - Breadboard]), s(cEye, [Prototype-Validated]), sl(cEye, [Operational]),
 
     grp(cWorld, [World — technical maturity]),
-    it[World-scanner], e, s(cWorld, [Concept]), s(cWorld, [Prototype]), e,
+    it[Dense Array World-scanner], e, s(cWorld, [PoC - Breadboard]), s(cWorld, [Prototype-Validated]), e,
     it[Actuated floor (force·LED·terrain)], hv[v1], s(cWorld, [PoC]), s(cWorld, [Prototype]), sl(cWorld, [Validated]),
-    it[Drone swarm], e, e, sl(cWorld, [Concept]), sl(cWorld, [PoC]),
-
-    grp(cInt, [Integration — first-order]),
-    it[#Dome-L (Auto)], e, s(cInt, [PoC / testbed]), s(cInt, [Prototype]), sl(cInt, [Operational]),
-    it[#Dome-S (Static)], hv[FMC webcam], s(cInt, [Breadboard]), s(cInt, [Validated]), sl(cInt, [Operational]),
-    it[#Dome-Mob], e, s(cInt, [Concept]), s(cInt, [Prototype]), sl(cInt, [Validated]),
-    it[#Dome-Animals], hv[ferret · mouse], s(cInt, [+ neural]), s(cInt, [+ marmoset · guinea fowl]), sl(cInt, [Validated]),
+    it[Drone Swarm Mocap], e, e, sl(cWorld, [Concept-PoC]), sl(cWorld, [PoC-Validated]),
 
     table.hline(stroke: 0.9pt + ink),
   ),
   kind: table, supplement: [Table],
-  caption: [Maturity ladder (TRL): Concept (2) · PoC (3) · Breadboard (4) · Prototype (5–6) · Validated (7) · Operational (8–9); organization rows show operational deliverables. ✓ = in place pre-award. Each Phase 1 Progress Milestone carries a quantitative exit criterion (FOA §9.2); stages illustrative.],
+  caption: [Maturity ladder (TRL): Concept (2) · PoC (3) · Breadboard (4) · Prototype (5–6) · Validated (7) · Operational (8–9); organization rows show operational deliverables. ✓ = in place pre-award. Each Phase 1 Progress Milestone carries a quantitative exit criterion (FOA §9.2).],
   ) <tbl-milestones>]
 }
 

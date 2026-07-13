@@ -129,7 +129,7 @@
 
     // ── project (Π) onto the retinal input ──
     edge((3, 1), (4, 1), el[Π], "->"),
-    edge((1, 0), (4, 1), el[scene], "->", bend: 20deg, label-pos: 0.12),
+    edge((1, 0), (4, 1), "->", bend: 15deg, label-pos: 0.12),
     edge((2, 2.425), (4, 1), el[self-motion], "->", bend: -18deg, label-side: right),
 
     // ── drive ──
