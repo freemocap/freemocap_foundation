@@ -56,7 +56,7 @@
     grp(cInt, [#Dome Variants]),
     it[#Dome-L (Automated)], e, s(cInt, [PoC / testbed]), s(cInt, [Prototype - Validated]), sl(cInt, [Operational]),
     it[#Dome-S (Static)], hv[FMC webcam], s(cInt, [Validated]), s(cInt, [Operational (510(k) cert)]), sl(cInt, [Operational]),
-    it[#Dome-Mob], e, s(cInt, [PoC-Breadboard]), s(cInt, [Prototype-Validated]), sl(cInt, [Operational]),
+    it[#Dome-Mob], hv[Matthis/Muller papers], s(cInt, [PoC-Breadboard]), s(cInt, [Prototype-Validated]), sl(cInt, [Operational]),
 
     table.hline(stroke: 0.7pt + ink),
     grp(cBody, [Body — Technical Development]),
