@@ -32,7 +32,7 @@
   scale(x: s, y: s, origin: top + left, reflow: true, body)
 })
 
-#let dome-chain-figure = figure(
+#let dome-chain-figure = [#figure(
   fit-to-width(diagram(
     spacing: (5.5mm, 2.6mm),
     node-outset: 0pt,
@@ -119,9 +119,9 @@
     edge((5, 2.7), (5, 1.45), "->", bend: 22deg),
     edge((5, 1.45), (5, 3.9), "->"), edge((5, 2.7), (5, 3.9), "->"),
   )),
-  kind: image, supplement: [Figure],
+  kind: image, // supplement inherited from main.typ's set-figure-supplements ("Fig.") for consistency with prose
   caption: [#set text(size: 7pt); *The #smallcaps[Dome] measurement chain.* Each sensor transduces a true fact into signal; the chain derives, fuses, and composes estimates whose channels are #text(fill: ok)[● measured] or #text(fill: inf)[◐ inferred under a prior], and projects (Π) them onto the *retinal input* and *muscle activation* that drive the nervous system. The metrological target: drive retinal-input error low enough to *predict neural activity in marmoset visual cortex / superior colliculus* — a ground-truth test no existing system can pose.],
-)
+) <fig-dome-chain>]
 
 // Rendered only when this file is compiled on its own. When the proposal
 // imports `dome-chain-figure`, this line (and the `#set page` above) are

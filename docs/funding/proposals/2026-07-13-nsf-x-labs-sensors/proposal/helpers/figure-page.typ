@@ -17,7 +17,7 @@
 #figure(
   image("../media/2026-07-12-fmc-xlabs_all_v3.jpg", width: 100%),
   caption: [Blah blah blah captions. Blah blah blah captions. Blah blah blah captions. Blah blah blah captions. Blah blah blah captions.],
-)
+) <fig-hero>
 
 #v(1.2em)
 #dome-chain-figure
