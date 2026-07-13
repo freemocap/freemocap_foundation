@@ -103,6 +103,7 @@
 #show figure.caption: it => {
   set text(size: 9pt)
   text(weight: "bold")[#it.supplement]
+  [ ]
   context text(weight: "bold")[#counter(figure.where(kind: it.kind)).display(it.numbering)]
   it.separator
   it.body
@@ -120,7 +121,6 @@
       Written Proposal to the NSF X-Labs Initiative  
     ]
   ]
-  #v(0.1em)
   // #line(length: 100%)
 ]
 

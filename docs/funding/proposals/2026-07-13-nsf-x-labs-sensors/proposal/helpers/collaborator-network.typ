@@ -23,7 +23,7 @@
         radius: 1pt,
       )[
         #table(
-          columns: (7.5em, 6.5em, 6em),
+          columns: (7.5em, 6.5em, 7em),
           align: (left, left, left),
           stroke: none,
           inset: (x: 4pt, y: 2.5pt),
@@ -38,11 +38,11 @@
           // ── Vision / Neuroscience ──
           [#box[Ben Scholl] <collab-BS>], [CU Anschutz], [Ferret],
           [#box[Monica Daley] <collab-MD>], [UC Irvine],  [Guinea fowl],
-          [#box[DF] <collab-DF>], [CCMH],[Mouse],
+          [#box[Diego Fernandez] <collab-DF>], [CCMH],[Mouse],
           [#box[Alex Huk] <collab-AH>], [UCLA],[Marmoset, NHP],
           [#box[Mary Hayhoe] <collab-MH>], [UT Austin],[Human],
-          [#box[TW] <collab-TW>], [U Cincinnati],[Human],
-          [#box[BF] <collab-BF>], [RPI],[Human],
+          [#box[Trenton Wirth] <collab-TW>], [U Cincinnati],[Human],
+          [#box[Brett Fajen] <collab-BF>], [RPI],[Human],
           [#box[Kate Bonnen] <collab-KB>], [Indiana Univ.],[Human, NHP],
           [#box[Jake Yates] <collab-JY>], [UC Berkeley], [Human, NHP],
 

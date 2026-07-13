@@ -27,10 +27,10 @@ Building the #Dome demands expertise no single faculty could assemble: the work 
   [
   Under X-Lab funding, we will merge this collaborator network and the globally distributed community of FreeMoCap users to form a coherent culture organized around a shared set of tools, skills, and measurements. We will communicate design plans and roadmap priorities through structured processes that gather broad input without stalling on consensus — a Request-for-Comments process modeled on Python's PEP system. 
   
-    Once a year, we will host an overlapping set of in-person events including workshops that train students and out-of-domain experts, hackathons that onboard developers, conferences that share #Dome -based research, and a congress
+    Once a year, we will host an overlapping set of in-person events including workshops that train students and out-of-domain experts, hackathons that onboard developers, conferences that share #Dome -based research, and a congress that sets organizational direction. A Community Grants Program and Developer Fund sustain the open-source network and serve as a testbed for community engagement and consensus-seeking mechanisms.
   ],
 )
- that sets organizational direction. A Community Grants Program and Developer Fund sustain the open-source network and serve as a testbed for community engagement and consensus-seeking mechanisms.
+ 
 
 *A proven model.* FreeMoCap has already proven this operating model - over 15k users across 152 countries, ~10k GitHub stars, and over 3,500 Discord members.  It is a gift freely given, built and maintained outside academia, scoped to the measurement itself with an obsessive focus on usability and refusing to claim any research domain — and that refusal is precisely what let it become a commons rather than one lab's tool. The #Dome applies the same measurement-scoped, master-built, open, full-time-maintained model to the far larger target - a scale reachable only with the dedicated, autonomous, milestone-based funding the X-Labs program exists to provide.
 
