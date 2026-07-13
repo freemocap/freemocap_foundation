@@ -140,4 +140,6 @@
 // ── References Cited (dense, small font — references count toward the 8-pg limit) ──
 #set text(size: 7pt)
 #set par(leading: 0.38em, spacing: 0.12em, first-line-indent: 0pt)
-#bibliography("FMCF-NSF-XLABS.bib", style: "nature", title: [References])
+// compact manual title instead of the default 12pt small-caps section heading
+#block(above: 0.7em, below: 0.3em)[#text(size: 8.5pt, weight: "bold")[References]]
+#bibliography("FMCF-NSF-XLABS.bib", style: "nature", title: none)

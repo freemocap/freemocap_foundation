@@ -48,10 +48,10 @@ We will build the #Dome - The opposite of a space telescope. An empty volume of 
   // the §5 collaborator table. caption: none + manual "Fig. N:" label so the figure
   // is still numbered and @fig-hero still resolves.
   grid(
-    columns: (1fr, 0.72fr),
+    columns: (1fr, 0.18fr),
     column-gutter: 1.1em,
     align: (center + horizon, left + horizon),
-    image("../media/2026-07-13-FMC-NSF-XLab-Hero-Figure.png", width: 100%),
+    image("../media/2026-07-13-FMC-NSF-XLab-Hero-Figure.jpg", width: 100%),
     [
       #set text(size: 9pt)
       #set par(leading: 0.5em, first-line-indent: 0pt)
