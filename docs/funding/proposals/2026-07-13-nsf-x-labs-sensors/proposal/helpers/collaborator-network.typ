@@ -23,7 +23,7 @@
         radius: 1pt,
       )[
         #table(
-          columns: (2.5em, 9em, 7em),
+          columns: (4em,8em, 8em),
           align: (left, left, left),
           stroke: none,
           inset: (x: 4pt, y: 2.5pt),
@@ -41,6 +41,8 @@
           [#box[DF] <collab-DF>], [CCMH],[Mouse],
           [#box[AH] <collab-AH>], [UCLA],[Marmoset, NHP],
           [#box[MH] <collab-MH>], [UT Austin],[Human],
+          [#box[TW] <collab-TW>], [U Cinncinati],[Human],
+          [#box[BF] <collab-BF>], [RPI],[Human],
           [#box[KB] <collab-KB>], [Indiana Univ.],[Human, NHP],
           [#box[JY] <collab-JY>], [UC Berkeley], [Human, NHP],
 
