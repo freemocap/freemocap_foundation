@@ -34,15 +34,43 @@
 // for the collaborator table's <collab-XX> labels.
 #let collab(id, shown: none) = link(label("collab-" + id))[#if shown == none [#id] else [#shown]]
 
-// #flag(kind: "redundant")[...] / #flag(kind: "verbose")[...]
-// kind: "redundant" -> red  (says the same thing as content living elsewhere — candidate to cut + cross-ref instead)
-// kind: "verbose"   -> blue (same idea, just wordier than it needs to be — candidate to tighten, not necessarily a duplicate)
-#let flag-color(kind) = if kind == "redundant" { rgb("#ff000055") } else { rgb("#1e6fff55") }
+// #flag(kind: "redundant" | "verbose" | "clarity")[...]
+// kind: "redundant" -> red   (says the same thing as content living elsewhere — candidate to cut + cross-ref instead)
+// kind: "verbose"   -> blue  (same idea, just wordier than it needs to be — candidate to tighten, not necessarily a duplicate)
+// kind: "clarity"   -> amber (grammar / punctuation / awkward / unclear — the ORIGINAL WORDS ARE LEFT UNTOUCHED here on
+//                     purpose; a reword can flip meaning, so that's the author's call. Pair with an adjacent
+//                     #suggestion[..] holding the proposed rewrite when there is one.)
+#let flag-color(kind) = {
+  if kind == "redundant" { rgb("#ff000055") } else if kind == "clarity" { rgb("#e8a33d66") } else { rgb("#1e6fff55") }
+}
 
 #let flag(kind: "redundant", body) = {
   if DRAFT_MODE {
     highlight(fill: flag-color(kind), body)
   } else {
     body
+  }
+}
+
+// #suggestion(note: [..])[..] — new prose drafted by Claude. Unlike #flag (which
+// wraps existing author text and leaves it in submission mode), #suggestion holds
+// Claude-authored language: it renders as a labeled green block in DRAFT_MODE and
+// vanishes ENTIRELY when DRAFT_MODE = false, so it can never ship un-integrated.
+// Optional `note:` shows a short pointer in the label (e.g. rationale or where the
+// canonical version lives).
+#let suggestion(note: none, body) = {
+  if DRAFT_MODE {
+    block(
+      width: 100%,
+      fill: rgb("#e9f7ef"),
+      stroke: (left: 2.5pt + rgb("#1f9d55")),
+      inset: (x: 0.6em, y: 0.5em),
+      radius: 1pt,
+      breakable: true,
+    )[
+      #text(size: 7.5pt, fill: rgb("#177245"), weight: "bold", tracking: 0.4pt)[SUGGESTION#if note != none [ — #note]]
+      #v(0.35em, weak: true)
+      #body
+    ]
   }
 }

@@ -10,9 +10,16 @@ The working thesis (see the strategic briefing in `notes/`): pitch FreeMoCap not
 
 ## Claude's role here
 
-Per project instructions, Claude is an **observer and advisor, not a writer**. Do NOT edit the core proposal documents or their prose (`proposal/**/*.typ`, the outline, the briefing). Claude structures, plans, and reviews the proposal from the granting agency's perspective. Meta/guidance files like this `CLAUDE.md` are fair game when the user asks.
+**Updated 2026-07-13 (Phase 2): Claude may now write prose.** The earlier "observer and advisor, not a writer" rule is retired. Claude may draft, rewrite, tighten, and cut prose directly in the core proposal documents (`proposal/**/*.typ`, the outline, the briefing) and continues to structure, plan, and review the proposal from the granting agency's perspective. Meta/guidance files like this `CLAUDE.md` remain fair game when the user asks.
 
-**Exception (approved 2026-07-13): structural markup only.** Claude may add non-prose markup directly into `proposal/**/*.typ` — Typst `<label>` anchors on headings/figures/tables/personnel entries, cross-reference helper calls (`#skp()`, `#collab()`, `@label`) that replace placeholder tags like `[Ref-Collab-MH/KB]`, and `#flag(kind: "redundant" | "verbose")[...]` review-mark wrappers (see `proposal/helpers/xref.typ`) paired with `// NOTE:` comments. None of this changes a word of prose — it wraps, labels, and annotates existing text. Actually rewriting/cutting/tightening prose (including inside a `#flag()` wrapper) is still off-limits; that's the user's call. `#flag()` is gated on `DRAFT_MODE` (now in `helpers/shared.typ`) so review marks disappear automatically in the submission-ready compile.
+**The one hard rule: keep Claude's voice and the author's voice separable at a glance in the draft compile.** The only edits Claude makes directly to author words are *mechanical* ones that cannot change meaning. Anything that could shift meaning stays the author's call and is surfaced as a suggestion, never silently applied.
+
+- **Mechanical fixes → edit directly, no marker.** Unambiguous typos, misspellings, obviously dropped/duplicated words, and broken Typst markup. If an "obvious" fix has more than one plausible reading (e.g. inserting a missing preposition that could be *of* vs *in*), it is NOT mechanical — flag it instead.
+- **Grammar, punctuation, clarity, awkwardness, word choice → do NOT touch the original text.** A small grammatical shift can flip meaning, so leave the author's words exactly as written, wrap them in `#flag(kind: "clarity")[..]` (amber), and place any proposed rewrite in an adjacent `#suggestion[..]` block. The author compares the two and decides.
+- **New prose Claude drafts → wrap in `#suggestion(note: [..])[..]`.** Renders as a labeled green block in draft mode and disappears **entirely** in the submission-ready compile (`DRAFT_MODE = false`), so it can never ship un-integrated. Also covers new connective prose written to replace a placeholder tag.
+- **Existing author prose Claude wants to cut or condense → `#flag(kind: "redundant" | "verbose")[..]`** + a `// NOTE:` explaining the call, rather than deleting it. Unlike `#suggestion`, `#flag()` leaves the wrapped text intact in submission mode — it's a review mark, not a change.
+
+All of the above live in `proposal/helpers/xref.typ` and are gated on `DRAFT_MODE` (in `helpers/shared.typ`). Structural markup (Typst `<label>` anchors, `#skp()` / `#collab()` / `@label` cross-reference helper calls that replace placeholder tags like `[Ref-Collab-MH/KB]`) remains free to add directly, as before.
 
 ## Writing workflow
 
@@ -45,7 +52,7 @@ proposal/
     5-team-capabilities.typ       — Team Capabilities Statement          (renders as §5)
   helpers/
     shared.typ                    — small typography helpers + DRAFT_MODE toggle
-    xref.typ                      — cross-ref (#skp, #collab) + #flag() review-mark helpers
+    xref.typ                      — cross-ref (#skp, #collab) + #flag() review-marks + #suggestion() draft-prose helper
     figure-page.typ               — assembles the figure/table page after §1
     collaborator-network.typ, templates/milestones-matrix.typ,
     dome-sensor-estimate-model/dome-chain-compact.typ — the 2 figures + 2 tables
