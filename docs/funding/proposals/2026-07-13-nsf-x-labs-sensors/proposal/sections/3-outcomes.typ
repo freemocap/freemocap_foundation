@@ -65,29 +65,37 @@ We need to build a new eye tracker, beucase no existing eye tracker can measure 
 - DOME-Mobile is the wearable form: an IMU suit, binocular eye tracker, and head-mounted world-camera array (stereo RGB, structured IR, LiDAR).
     - Phase 0: sensor selection, initial integration, and benchtop validation.
     - Phase 1: validate DOME-Mobile against DOME-L on locomotion tasks (walking, running, obstacle navigation, stair climbing), indoors and outdoors.
-        - Build Drone Swarm Mocap - Drones mounted with simnilar world-scanner on the eye tracker, used to ground the IMU- mocap and flesh out world-scan from head-mounted scanner. 
-    - KPI: kinematic accuracy against the DOME-L reference during co-recorded trials, gaze-in-world angular uncertainty, and drift over [TBD]-minute outdoor walks.
+        - Build Drone Swarm Mocap - Drones mounted with similar world-scanner we developed for the head-mounted world-scanner on the eye tracker, used to ground the IMU- mocap and flesh out world-scan from head-mounted scanner. 
+    - KPI: kinematic accuracy against the DOME-L reference during co-recorded trials, gaze-in-world angular uncertainty.
 
 == Eye tracker development
 
-- The binocular eye tracker measures torsion and accommodation at 200+ Hz.
-    - Phase 0: bench prototype measuring torsion (via iris texture) and accommodation (via higher-order Purkinje reflections) binocularly, validated against a reference eye tracker and an artificial eye.
+- We will build an binocular eye tracker consisting of two eye-oriented dense sensor arrays and one head-moutned world-oriented dense sensor array
+    - *eye dense sensror array* is a group of multimodal multi sensor sensors to track the eye - fast low res, slow high res RGB-IR sensors, LiDAR, MEMS, event cameras. Bulit int o a compack package, built like phone camera bank. 
+    - Use the multimodal image of the eye to estimte aspectrs of eye pose not present in other trackers, namely microsaccades (15 arcminutes) and torsion (via iris texture) to make retinal curl veridical. May also be able to get lens accomodation (via Dual Purkinge), but thats not guaranteed. 
+    - Very different approach to Tobii and Pupil - they are building low profile stuff. We will build big and heavy to get better data (built into a hockey stuyle helmet with eye sensor arrays on face rail, and visor made of Visibel Transmissive IR blocking material, to shade the eyes from IR in outdoor settings). IMUs in the helmet, alongside world scanner
+    - Phase 0: bench prototype to select sensor array, building PoC  torsion tracker
     - Phase 1: mobile form factor, integrated into DOME-Mobile and DOME-S, validated on human participants during natural locomotion.
-    - KPI: torsion accuracy [TBD arcmin], accommodation accuracy [TBD diopters], gaze-in-world uncertainty during walking [TBD degrees], and per-unit cost target [TBD].
+    - KPI: eye-in-head accuracy sub 15 arcminutes, torsion accuracy to 1 degree, accommodation accuracy [TBD diopters], gaze-in-world uncertainty during walking [1 degree on retina for on ground when looking down at 45 degree angle]
+        - Target making it cheap! Should be able to do so by targetting commercial electronics like cell phone cameras. We want to do a cost-collapse thing like in some of the named examples. Cheap next gen eye trackers flooding the world like we did with mocap in freemocap.
+    - *head-mounted world-scanner*
+        - Like eye-array, but on head and outward facing bank of sensors for depth scanning - stereo-RGB, structured-IR, LiDAR. Generate per-frame RGB-D, longer term Terrain mesh and camera pose (SLAM head trajectory to fix drift, like in @muller2023). Also post process each image stream for Gaussian Splat and NERF field reconstruction. 
+        - BUild indoors, validate on modular terrain in DOME-L, also mount on Drones and use as their main sensor. 
 
 == Actuated camera array
 
-- The actuated camera array places cameras on controllable mounts that recalibrate under dynamic reconfiguration.
+- The actuated camera array places cameras on controllable mounts that recalibrate under dynamic reconfiguration. Fix practical bottleneck of big labs and allow for self-conifguring space and automated experimentation via paired camera array with autonomous drone swarms.
+    - Necessitates building each camera, modular sensors, lense, etc, and central control of extrinsics (pan, tilt, roll) and intrinsics (zoom, apperture, focus)
     - Phase 0: prototype array of [N] cameras on controllable mounts, a calibration method for dynamic reconfiguration, and validation on static and moving reference objects.
     - Phase 1: production array in DOME-L, a remote configuration API, and auto-calibration on sub-volume selection.
     - KPI: post-reconfiguration calibration quality (κ_s, κ_t), time from sub-volume selection to calibrated capture, and reprojection error against a fixed-calibration baseline.
 
 == Camera↔IMU sensor fusion
 
-- Camera↔IMU fusion combines outside-in and inside-out estimates with explicit per-joint uncertainty.
+- Camera↔IMU fusion combines outside-in and inside-out estimates with explicit per-joint uncertainty. Goal is to get mocap data clean enough for inverse dyanmics. Start with Wall-camera -> IMU-suit, once that works, try Drone-camera -> IMU suit (grounding #Dome-Mobile in outdoor settings)
     - Phase 0: develop the fusion algorithm on existing FreeMoCap + IMU-suit data, validate against the DOME-L reference on standardized movements, and establish uncertainty budgets per joint per movement type.
     - Phase 1: real-time fusion in DOME-L and DOME-Mobile, validated for inverse dynamics (joint torques, muscle forces via OpenSim).
-    - KPI: joint-center uncertainty at k=2, joint-torque uncertainty against force-plate ground truth, and muscle-force uncertainty against EMG-informed estimates.
+    - KPI: joint-center uncertainty, joint-torque uncertainty against force-plate ground truth, and muscle-force uncertainty against EMG-informed estimates.
 
 == Reprojection-error training pipeline
 
@@ -103,16 +111,11 @@ We need to build a new eye tracker, beucase no existing eye tracker can measure 
     - Phase 1: sim-to-real transfer of DOME-trained policies onto physical robots, inverse RL to extract apparent human control policies, and tests of IRL-derived hypotheses in DOME-L via ARGP perturbation.
     - KPI: sim-to-real transfer success rate, policy performance against a simulation-trained baseline, and IRL reward-function predictive accuracy on held-out behavior.
 
-== ARGPv3
 
-- ARGPv3 is a modular augmented-reality ground plane extending the PI's published ARGPv1 apparatus (Matthis 2013–2017).
-    - Phase 0: design a modular LED floor-panel system (0.5 m² tiles), prototype with projection-based visual stimuli, and validate that visual perturbations produce measurable locomotor adjustments in DOME-L.
-    - Phase 1: full DOME-L floor integration, VR-headset integration for immersive manipulation, and coupled LED floor + wall panels for full visual-field control.
-    - KPI: latency from perturbation command to visual update, spatial calibration between LED panels and the DOME coordinate frame, and magnitude of locomotor adjustment per unit visual perturbation.
 
 == Cross-species validation network
 
 - The cross-species network deploys functionally equivalent instruments at animal-collaborator labs.
-    - Phase 0: establish calibration and data-exchange protocols with ferret (visual neuroscience + ephys), mouse (systems neuroscience + miniscope), guinea fowl (musculoskeletal biomechanics + EMG), and marmoset (primate electrophysiology) labs.
-    - Phase 1: deploy functionally equivalent DOME-S instances at each site and validate cross-species measurement comparability.
-    - KPI: number of validated cross-species measurement channels, and inter-species kinematic-model alignment quality.
+    - Already mature - Ferret eye tracking plus mocap - gaze and retina image reconsttruected. Adding neural recordings presently.
+    - Phase 0: establish calibration and data-exchange protocols with ferret (visual neuroscience + ephys), mouse (systems neuroscience + miniscope), guinea fowl (musculoskeletal biomechanics + EMG), and marmoset (primate electrophysiology) labs. Deploy functionally equivalent DOME-S instances at each site and validate cross-species measurement comparability.
+    - Phase 1: Iterative development to service collaborator use-case. Training alignment through annual workshop/congress. 

@@ -95,8 +95,7 @@
 #block(above: 0pt, below: 0.28em)[
   #align(center)[
     // #text(size: 12pt, weight: "bold", hyphenate: false)[Complete Empirical Capture of the Agent/Environment Interaction to create unified science of sensorimotor control]
-    #text(size: 12pt, weight: "bold", hyphenate: false)[Building a unified science of sensorimotor control with Densely Overlapping Measurement Environments [DOMEs]]
-    // #text(size: 12pt, weight: "bold", hyphenate: false)[A Unified Science of Perceptual/Motor Control through Sensor-Grounded Ontology]
+    #text(size: 12pt, weight: "bold", hyphenate: false)[Building a unified science of Natural Behavior with Densely Overlapping Measurement Environments [DOMEs]]
     #v(0.1em)
     #text(size: 11pt)[FreeMoCap Foundation, Inc.]
     #v(0.1em)

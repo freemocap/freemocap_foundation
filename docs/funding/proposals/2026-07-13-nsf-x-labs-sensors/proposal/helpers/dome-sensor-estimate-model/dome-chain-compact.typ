@@ -98,10 +98,12 @@
     // ── drive ──
     edge((3, 3.4), (4, 3.4), el[drive], "->"),
 
-    // ── afferent / efferent → CNS ──
+    // ── vision: afferent (sensory in) ──
     edge((4, 1), (5, 1.45), el[afferent], "->", stroke: 1.2pt + ink),
     edge((4, 1), (5, 2.7), "->", stroke: 0.35pt + ink),
-    edge((4, 3.4), (5, 2.7), el[efferent], "->", stroke: 1.2pt + ink),
+    // ── motor: two-way — efferent drive out, proprioception in ──
+    edge((5, 2.7), (4, 3.4), el[efferent], "->", bend: 15deg, stroke: 1.2pt + ink),
+    edge((4, 3.4), (5, 2.7), el[proprioception], "->", bend: 15deg, stroke: 0.9pt + ink),
     edge((4, 3.4), (5, 1.45), "->", stroke: 0.35pt + ink),
 
     // ── CNS internal + out ──
