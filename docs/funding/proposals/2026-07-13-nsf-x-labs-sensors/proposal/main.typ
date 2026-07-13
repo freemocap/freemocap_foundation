@@ -66,10 +66,10 @@
 
 // ── Submission-mode footer (page numbers only) ──
 
-#let submission-footer = context {
-  let total = counter(page).final().first()
-  align(center, text(size: 8pt, [Page #counter(page).display() of #total]))
-}
+// #let submission-footer = context {
+//   let total = counter(page).final().first()
+//   align(center, text(size: 8pt, [Page #counter(page).display() of #total]))
+// }
 
 // ── Page Setup ──
 
@@ -77,7 +77,7 @@
   paper: "us-letter",
   margin: 1in,
   header: if DRAFT_MODE { draft-header },
-  footer: if DRAFT_MODE { draft-footer } else { submission-footer },
+  footer: if DRAFT_MODE { draft-footer } ,
   background: if DRAFT_MODE { draft-margin-box },
 )
 #set text(size: 12pt, font: "Libertinus Serif", hyphenate: false)

@@ -4,7 +4,7 @@
 // can import the same single toggle — main.typ uses it for page chrome,
 // helpers/xref.typ uses it to gate #flag() review-mark highlights. Flip to
 // false for submission-ready output; strips WIP overlays and review marks.
-#let DRAFT_MODE = true
+#let DRAFT_MODE = false
 
 #let semibold(body) = text(weight: "semibold", body)
 #let Dome = smallcaps([Dome])

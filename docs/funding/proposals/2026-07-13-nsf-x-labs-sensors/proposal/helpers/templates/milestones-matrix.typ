@@ -33,7 +33,7 @@
 #let milestones-figure = {
   // Scoped so the em-based column widths match the standalone layout,
   // regardless of the surrounding document's font size.
-  set text(size: 9pt, font: "Libertinus Serif")
+  set text(size: 10pt, font: "Libertinus Serif")
   [#figure(
   placement: top,
   table(
@@ -46,15 +46,15 @@
     table.hline(y: 1, stroke: 0.7pt + ink),
 
     grp(cOrg, [Organization — operational deliverables]),
-    it[Legal & governance], hv[501(c)(3)], s(cOrg, [Governance + Autonomy Plan]), sl(cOrg, [board seated]), e,
-    it[Facility (lease)], e, s(cOrg, [lease + move-in]), sl(cOrg, [office fit-out]), e,
-    it[Full-time team], hv[core FT], s(cOrg, [hire · onboard]), s(cOrg, [full staff]), e,
-    it[Required NSF plans], e, s(cOrg, [Data · IP · Security · Gov; Ph1 plan + budget]), e, e,
-    it[IP management], hv[prior IP], s(cOrg, [IP Mgmt Plan]), sl(cOrg, [license · manage]), e,
+    it[Legal & governance], hv[FMC-F 501(c)(3)], s(cOrg, [Governance + Autonomy Plan]), sl(cOrg, [Board seated]), e,
+    it[Facility (Lease)], e, s(cOrg, [Lease + Move-in]), sl(cOrg, [Office fit-out]), e,
+    it[Full-time team], hv[Core FT], s(cOrg, [Hire · Onboard]), s(cOrg, [Full staff]), e,
+    it[Required NSF plans], e, s(cOrg, [Data · IP · Sec · Gov; Ph1 Plan + Budget]), e, e,
+    it[IP management], hv[Prior IP], s(cOrg, [IP Mgmt Plan]), sl(cOrg, [License · Manage]), e,
 
     table.hline(stroke: 0.7pt + ink),
     grp(cInt, [#Dome Variants]),
-    it[#Dome-L (Automated)], e, s(cInt, [PoC / testbed]), s(cInt, [Prototype - Validated]), sl(cInt, [Operational]),
+    it[#Dome-L (Automated)], e, s(cInt, [PoC / Testbed]), s(cInt, [Prototype - Validated]), sl(cInt, [Operational]),
     it[#Dome-S (Static)], hv[FMC webcam], s(cInt, [Validated]), s(cInt, [Operational (510(k) cert)]), sl(cInt, [Operational]),
     it[#Dome-Mob], hv[Matthis/Muller papers], s(cInt, [PoC-Breadboard]), s(cInt, [Prototype-Validated]), sl(cInt, [Operational]),
 
@@ -70,7 +70,7 @@
     table.hline(stroke: 0.7pt + ink),
     grp(cWorld, [World — technical development]),
     it[Dense Array World-scanner], e, s(cWorld, [PoC - Breadboard]), s(cWorld, [Prototype-Validated]), e,
-    it[Actuated floor (force·LED·terrain)], hv[v1], s(cWorld, [PoC]), s(cWorld, [Prototype]), sl(cWorld, [Validated]),
+    it[Floor (force·LED·terrain)], hv[v1], s(cWorld, [PoC]), s(cWorld, [Prototype]), sl(cWorld, [Validated]),
     it[Drone Swarm Mocap], e, e, sl(cWorld, [Concept-PoC]), sl(cWorld, [PoC-Validated]),
 
     table.hline(stroke: 0.9pt + ink),
