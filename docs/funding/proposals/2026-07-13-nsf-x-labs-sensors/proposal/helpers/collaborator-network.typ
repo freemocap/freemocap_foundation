@@ -1,11 +1,11 @@
 == Collaborators
 
-// NOTE: mission.typ (@sec-new-instrument) cites collaborator "AS" (Aaron Saunders,
-// Boston Dynamics, per .env) which has no row here — the closest unconfirmed
-// robotics row is "BD" (name/institution still "—"/"[?]"). Flagging for
-// reconciliation; not resolved here since it's a content decision, not markup.
+// NOTE: mission.typ cites collaborator "AS" which has no row here —
+// the closest unconfirmed robotics row is "BD" (institution still "[?]").
+// Flagging for reconciliation; not resolved here since it's a content
+// decision, not markup.
+
 #let collaborator-figure = {
-  // Scoped so the font size only affects this table.
   set text(size: 7.5pt, hyphenate: false)
 
   let rule-thick = 0.8pt + rgb("#333")
@@ -13,15 +13,13 @@
 
   [#figure(
     table(
-      columns: (auto, auto, auto, auto, 1fr),
-      align: (left, left, left, left, left),
+      columns: (auto, auto, auto, 1fr),
+      align: (left, left, left, left),
       stroke: none,
       inset: (x: 5pt, y: 3pt),
 
-      // Header
       table.header(
         [*Initials*],
-        [*Name*],
         [*Institution*],
         [*Model*],
         [*Expertise*],
@@ -29,26 +27,26 @@
       table.hline(stroke: rule-thick),
 
       // ── Vision / Neuroscience ──
-      [<collab-BS> BS], [Ben\ Scholl],      [Univ.\ of Colorado\ Denver], [Ferret],         [Visual/perceptual neuroscience, ephys],
-      [<collab-MD> MD], [Monica\ Daley],    [UC\ Irvine],                [Guinea\ fowl],   [Musculoskeletal biomechanics, muscle-level units],
-      [<collab-DF> DF], [—],                  [?],                         [Mouse],          [Systems biology],
-      [<collab-AH> AH], [Alex\ Huk],        [UCLA],                      [Marmoset\ /\ NHP],[Ephys, population-level vision],
-      [<collab-MH> MH], [Mary\ Hayhoe],     [UT\ Austin],                [Human],          [Vision\ &\ CPS,\ natural\ behavior,\ VR/AR,\ eye\ tracking],
-      [<collab-KB> KB], [Kate\ Bonnen],     [Indiana\ Univ.],            [Human\ /\ NHP],  [Visual\ neuroscience,\ optometry],
-      [<collab-JY> JY], [Jake\ Yates],      [UC\ Berkeley],              [Human\ /\ NHP],  [Computational\ neuroscience,\ eye\ tracking,\ ephys],
-      [<collab-GD> GD], [—],                  [?],                         [Human],          [Eye\ tracking,\ VR/AR,\ perceptual/motor\ control],
+      [#box[BS] <collab-BS>], [Univ.\ of Colorado\ Denver], [Ferret],         [Visual/perceptual neuroscience, ephys],
+      [#box[MD] <collab-MD>], [UC\ Irvine],                [Guinea\ fowl],   [Musculoskeletal biomechanics, muscle-level units],
+      [#box[DF] <collab-DF>], [?],                         [Mouse],          [Systems biology],
+      [#box[AH] <collab-AH>], [UCLA],                      [Marmoset\ /\ NHP],[Ephys, population-level vision],
+      [#box[MH] <collab-MH>], [UT\ Austin],                [Human],          [Vision\ &\ CPS,\ natural\ behavior,\ VR/AR,\ eye\ tracking],
+      [#box[KB] <collab-KB>], [Indiana\ Univ.],            [Human\ /\ NHP],  [Visual\ neuroscience,\ optometry],
+      [#box[JY] <collab-JY>], [UC\ Berkeley],              [Human\ /\ NHP],  [Computational\ neuroscience,\ eye\ tracking,\ ephys],
+      [#box[GD] <collab-GD>], [?],                         [Human],          [Eye\ tracking,\ VR/AR,\ perceptual/motor\ control],
 
       // ── Robotics / Control ──
-      [GN] <collab-GN>, [Gabe\ Nelson],     [RAI\ Institute],            [Robotics],       [Control\ theory,\ legged\ locomotion],
-      [CH] <collab-CH>, [Christian\ Hubicki],[FAMU-FSU],                  [Robotics],       [Bipedal\ locomotion,\ optimal\ control],
-      [JH] <collab-JH>, [Jonathan\ Hurst],  [Agility\ Robotics\ /\ OSU], [Robotics],       [Legged\ robots,\ mechanical\ design],
-      [SH] <collab-SH>, [Steve\ Heim],      [Cornell\ Univ.],            [Robotics],       [Legged\ locomotion,\ morphology–control\ coupling],
-      [BD] <collab-BD>, [—],                  [?],                         [Robotics],       [Control\ theory,\ fabrication],
+      [#box[GN] <collab-GN>], [RAI\ Institute],            [Robotics],       [Control\ theory,\ legged\ locomotion],
+      [#box[CH] <collab-CH>], [FAMU-FSU],                  [Robotics],       [Bipedal\ locomotion,\ optimal\ control],
+      [#box[JH] <collab-JH>], [Agility\ Robotics\ /\ OSU], [Robotics],       [Legged\ robots,\ mechanical\ design],
+      [#box[SH] <collab-SH>], [Cornell\ Univ.],            [Robotics],       [Legged\ locomotion,\ morphology–control\ coupling],
+      [#box[BD] <collab-BD>], [?],                         [Robotics],       [Control\ theory,\ fabrication],
       table.hline(stroke: rule-thin),
     ),
     kind: table,
     supplement: [Table],
-    caption: [#set text(size: 7.5pt); External research collaborators spanning every model system and dimensional domain the #smallcaps[Dome] instrument serves. Dashes (—) indicate initials pending confirmation; [?] marks institutions not yet confirmed.],
+    caption: [#set text(size: 7.5pt); External research collaborators spanning every model system and dimensional domain the #smallcaps[Dome] instrument serves. [?] marks institutions not yet confirmed.],
   ) <tbl-collaborators>]
 }
 

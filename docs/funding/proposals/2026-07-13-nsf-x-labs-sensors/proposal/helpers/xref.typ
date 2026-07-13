@@ -29,6 +29,11 @@
 // Second arg lets a caller override the visible text, e.g. #skp("KM", shown: [Karl Muller, PM]).
 #let skp(id, shown: none) = link(label("skp-" + id))[#if shown == none [#id] else [#shown]]
 
+// #collab("MH") -> linked initials, jumping to that collaborator's row in the
+// Collaborator Network table (helpers/collaborator-network.typ). Mirror of #skp()
+// for the collaborator table's <collab-XX> labels.
+#let collab(id, shown: none) = link(label("collab-" + id))[#if shown == none [#id] else [#shown]]
+
 // #flag(kind: "redundant")[...] / #flag(kind: "verbose")[...]
 // kind: "redundant" -> red  (says the same thing as content living elsewhere — candidate to cut + cross-ref instead)
 // kind: "verbose"   -> blue (same idea, just wordier than it needs to be — candidate to tighten, not necessarily a duplicate)
