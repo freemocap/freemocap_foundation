@@ -111,18 +111,11 @@
 // ── Sections ──
 
 #include "sections/1-mission.typ"
-#pagebreak(weak:true)
 #include "helpers/figure-page.typ"
-#pagebreak(weak:true)
 #include "helpers/dome-sensor-estimate-model/dome-chain-compact.typ"
-#pagebreak(weak:true)
+#include "helpers/templates/milestones-matrix.typ"
 #include "sections/2-technology-landscape.typ"
-#pagebreak(weak:true)
 #include "sections/3-outcomes.typ"
-#pagebreak(weak:true)
 #include "sections/4-personnel.typ"
-#pagebreak(weak:true)
 #include "sections/5-team-capabilities.typ"
-
-#pagebreak()
 #bibliography("FMCF-NSF-XLABS.bib", style: "nature") 

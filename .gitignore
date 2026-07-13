@@ -179,3 +179,5 @@ upx.exe
 /.claude/
 /CLAUDE.md
 .aider*
+*secrets/*
+/docs/funding/proposals/2026-07-13-nsf-x-labs-sensors/proposal/secrets/

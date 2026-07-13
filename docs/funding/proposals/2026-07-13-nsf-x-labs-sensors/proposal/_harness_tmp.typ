@@ -1,0 +1,10 @@
+#set page(paper: "us-letter", margin: 1in)
+#set text(size: 12pt, font: "Libertinus Serif", hyphenate: false)
+#set par(justify: false, leading: 0.45em, spacing: 0.72em, first-line-indent: 1em)
+#set heading(numbering: "1.", supplement: [§])
+#show heading.where(level: 1): set block(above: 0em, below: 0.6em)
+#show heading.where(level: 1): set text(weight: "bold", size: 12pt)
+#show heading.where(level: 2): set block(above: 0.8em, below: 0.5em)
+#show heading.where(level: 2): set text(weight: "bold", size: 12pt)
+#counter(heading).update(3)
+#include "sections/4-personnel.typ"
