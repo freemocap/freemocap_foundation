@@ -29,7 +29,7 @@
 #let fit-to-width(body) = layout(size => {
   let w = measure(body).width
   let s = if w > 0pt { calc.min(1, size.width / w) } else { 1 }
-  scale(s, origin: top + left, reflow: true, body)
+  scale(body, factor: s, origin: top + left, reflow: true)
 })
 
 #let dome-chain-figure = figure(
