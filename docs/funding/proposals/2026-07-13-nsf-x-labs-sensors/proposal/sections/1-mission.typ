@@ -4,8 +4,9 @@
 // [Proposing teams must describe one or more novel platform technologies that the proposed NSF X-Lab is uniquely suited to advance. Successful teams will have a clear vision statement of how their work will result in an end-state that reshapes an entire field of scientific inquiry or a sector of technology, and how their Mission is currently unmet by existing organizational structures and funding mechanisms.]
 
 #import "../helpers/shared.typ": semibold, Dome, Domes, Dome-Mobile
+#import "../helpers/xref.typ": collab, flag
 
-= Mission
+= Mission <sec-mission>
 
 #let mission_statement = [
 Develop and disseminate a new class of scientific instrument called a #semibold([Densely Overlapping Measurement Environment #smallcaps([(Dome)])]) that records the complete perception–action loop of a behaving agent as a single calibrated, uncertainty-tagged measurement, and build the autonomous organization dedicated to the measurement itself and form the boundary object that will align perceptual and motor neuroscience, musculoskeletal biomechanics, mobile robotics, and embodied AI into a single convergent science of sensorimotor control.]
@@ -17,7 +18,7 @@ Develop and disseminate a new class of scientific instrument called a #semibold(
   inset: (x: 0.5em, y: 0.5em),
 )[#mission_statement]
 
-==  A New Observable: The Sensorimotor Loop
+==  A New Observable: The Sensorimotor Loop <sec-observable>
 
  Every agent, living or engineered, must solve the same problem - sense a thin slice of available energy in the environment through a limited set of imperfect transducers and on its basis push its body against the world to propel itself towards its goal. Information flows in, forces flow out; the brain exists to yank the bones around.
 
@@ -30,22 +31,24 @@ Develop and disseminate a new class of scientific instrument called a #semibold(
   
   We need a new organization that exists outside of the siloed domains of the Academia that dedicates itself to the #smallcaps[measurement], the development and dissertation of world-class, convival tools and novel skillsets explore the landscape the capacity unlocks. That organization is the #semibold[FreeMoCap X-Lab] [FMC-X]. We have already changed the landscape human-focused research by bringing high-quality capture to over 15,000 researchers, clinicians, robotists, and animators across 152 countries. With the support of the NSF X-Labs program, we will extend our mission and change entire landscape of neuroscience, biomechanics and robotics.
   
-==  A New Instrument: Building the #smallcaps[Dome] 
+==  A New Instrument: Building the #smallcaps[Dome] <sec-new-instrument>
 
 
 We define a #Dome as a densely instrumented region of real space engineered (at some aspirational extreme) to record every  possible measurable channel of the agent–environment interaction at once. It is the opposite of a space telescope, an empty volume of of lenses focused inward at the mysterious place where the body meets the world. 
 
  In practice, individual #Domes will comprise a partial subset of available instrumentation, selected based on use-case. However, criticall, #semibold([All #Domes produce the same output]) regardless of the component instruments - a metrologically-grounded record of semantically-coherent cannonical models *partially hydrated* by measurements from the available instruments [TODO - Define/invoke Sensor-Grounded Ontology thing here]. 
  
- A motion capture recording produces the same reconstructed `Head`  A mocap  `Skull` is assumed to have `Eye`s, reagardless of whether the subject was wearing an eye tracker to hydrate its Degrees of Freedom. Both a ferret and a human have a `Skull` wqhich maybe approxomated as the same `RigidBody` defining segments of the body of a humanoid robot [Collaborator - SH, CH, JH, GN, AS] _[TODO - This robot stuff is redundant to below, I think. need consolldation]_. The reconstructed `RetinalInput` derived from reconstructions of the `Body`, `Eye`, and `Environment` of a human participant running across a rocky field [Ref-Collab-MH/KB] are precisely the same data models as those derived from a `Marmoset` leaping from branch to branch with Neuropixel electrodes emdedded in its `SuperiorColliculus` leaping to platform [Ref-Collab-AH/JY], a `Ferret` chasing a fictive prey with a Miniscope viewer mounted over of its `PosteriorParietalCortex` [Ref-Collab-BS], and a `GuineaFowl` running across a pneumatically actuated platform with EMG-electrodes implanted in its `MedialGastrocnemius` [Ref-Collab-MD].
+ A motion capture recording produces the same reconstructed `Head`  A mocap  `Skull` is assumed to have `Eye`s, reagardless of whether the subject was wearing an eye tracker to hydrate its Degrees of Freedom. #flag(kind: "redundant")[Both a ferret and a human have a `Skull` wqhich maybe approxomated as the same `RigidBody` defining segments of the body of a humanoid robot] // NOTE (redundancy): flagged red — this RigidBody/humanoid-robot framing duplicates the fuller MuJoCo/Isaac-Lab RigidBody treatment in Outcomes, @sec-unlocks ("What the record unlocks"). Author's original note: "This robot stuff is redundant to below, I think. need consolldation." Consider cutting here and pointing to @sec-unlocks instead.
+ (#collab("SH"), #collab("CH"), #collab("JH"), #collab("GN"), AS). // NOTE: "AS" (Aaron Saunders) has no matching row in the Collaborator Network table (helpers/collaborator-network.typ) — the robotics row lists "BD" instead. Left unlinked pending reconciliation; not altered per instructions not to change content decisions.
+ The reconstructed `RetinalInput` derived from reconstructions of the `Body`, `Eye`, and `Environment` of a human participant running across a rocky field #collab("MH")/#collab("KB") are precisely the same data models as those derived from a `Marmoset` leaping from branch to branch with Neuropixel electrodes emdedded in its `SuperiorColliculus` leaping to platform #collab("AH")/#collab("JY"), a `Ferret` chasing a fictive prey with a Miniscope viewer mounted over of its `PosteriorParietalCortex` #collab("BS"), and a `GuineaFowl` running across a pneumatically actuated platform with EMG-electrodes implanted in its `MedialGastrocnemius` #collab("MD").
 
 [TODO - reference specific work  building DOME-variants in flagship facility and fan-out of built-to-use variants to collaborator network. Mention targetting specific hardware based on practical and research-grounded needs - target Retinal input good enough to target ephys, needs build better eye tracker (dense sensor array for better eye data in general, and adding unmeasurable DoFs like torsion and accomdation for accurate retinal optic flow(CURL). Need world sensor to map environment, built into head-mounted world sensor array of eye tracker, later expanding to attach that scanner to drones. Auto-calibrating camera sensor array - break practicality plateus of large capture volumes, allow for autonomously driven experiments on ideal camera configureations, and ai-driven autonoumous collaborative experiments by intergrating drone-swarms in the scene (i.e. the drone swarms and camera arrays interact to test different capture configurations, training the drone-swarm control policies, all which preps for integrations into #Dome-Mobile later to ground inside-out sensors of IMU-suit and head-mounted world scanner) )]
 
 
-// - [ALLUDE → §3: DOME-L warehouse specs, DOME-S build plans and FreeMoCap community metrics, DOME-Mobile sensor suite, eye-tracker DoF targets and validation, actuated camera array engineering, camera↔IMU fusion uncertainty budgets, force-plate floor panels, ARGPv3, drone swarm (later phase).]
+// - [ALLUDE → @sec-instrument (DOME-L/S/Mobile), @sec-body, @sec-eye, @sec-world: DOME-L warehouse specs, DOME-S build plans and FreeMoCap community metrics, DOME-Mobile sensor suite, eye-tracker DoF targets and validation, actuated camera array engineering, camera↔IMU fusion uncertainty budgets, force-plate floor panels, ARGPv3, drone swarm (later phase).]
 
 
-== The New Capability
+== The New Capability <sec-new-capability>
 
 
 Because every channel is spatially calibrated, temporally synchronized, uncertainty-traced within a unified sensor-grounded ontology, #Dome records drop into modern reinforcement-learning and robotics stacks with minimal reshaping — giving embodied AI the real-world, uncertainty-bounded sensorimotor corpora that safe learning requires and that no current dataset provides.

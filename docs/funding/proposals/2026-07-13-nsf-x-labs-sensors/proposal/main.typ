@@ -8,8 +8,11 @@
 // ── Draft Mode ──
 // Set to false for submission-ready output (strips WIP overlays,
 // section tracking, and margin box; keeps clean page numbers).
+// Lives in helpers/shared.typ (not here) so section files and
+// helpers/xref.typ's #flag() review-marks read the same single toggle.
 
-#let DRAFT_MODE = true
+#import "helpers/shared.typ": DRAFT_MODE
+#import "helpers/xref.typ": set-figure-supplements
 
 // ── Draft-only content definitions ──
 
@@ -89,6 +92,9 @@
 #show heading.where(level: 1): set text(weight: "bold", size: 12pt)
 #show heading.where(level: 2): set block(above: 0.8em, below: 0.5em)
 #show heading.where(level: 2): set text(weight: "bold", size: 12pt)
+
+// Fig. N / Table N supplements for @label refs (see helpers/xref.typ)
+#show: set-figure-supplements
 
 // ── Title Block ──
 

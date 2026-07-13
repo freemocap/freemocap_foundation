@@ -1,32 +1,50 @@
 == Collaborators
 
 #let collaborator-figure = {
-  // Scoped so the 9pt only affects this table, not everything after it.
-  set text(size: 9pt)
+  // Scoped so the font size only affects this table.
+  set text(size: 7.5pt, hyphenate: false)
+
+  let rule-thick = 0.8pt + rgb("#333")
+  let rule-thin  = 0.4pt + rgb("#666")
+
   figure(
-  table(
-    columns: (auto, auto, 1fr),
-    align: (left, left, left),
-    stroke: 0.5pt,
-    inset: 6pt,
-    table.header(
-      [Initials],
-      [Model / Domain],
-      [Expertise],
+    table(
+      columns: (auto, auto, auto, auto, 1fr),
+      align: (left, left, left, left, left),
+      stroke: none,
+      inset: (x: 5pt, y: 3pt),
+
+      // Header
+      table.header(
+        [*Initials*],
+        [*Name*],
+        [*Institution*],
+        [*Model*],
+        [*Expertise*],
+      ),
+      table.hline(stroke: rule-thick),
+
+      // ── Vision / Neuroscience ──
+      [BS], [Ben\ Scholl],      [Univ.\ of Colorado\ Denver], [Ferret],         [Visual/perceptual neuroscience, ephys],
+      [MD], [Monica\ Daley],    [UC\ Irvine],                [Guinea\ fowl],   [Musculoskeletal biomechanics, muscle-level units],
+      [DF], [—],                  [?],                         [Mouse],          [Systems biology],
+      [AH], [Alex\ Huk],        [UCLA],                      [Marmoset\ /\ NHP],[Ephys, population-level vision],
+      [MH], [Mary\ Hayhoe],     [UT\ Austin],                [Human],          [Vision\ &\ CPS,\ natural\ behavior,\ VR/AR,\ eye\ tracking],
+      [KB], [Kate\ Bonnen],     [Indiana\ Univ.],            [Human\ /\ NHP],  [Visual\ neuroscience,\ optometry],
+      [JY], [Jake\ Yates],      [UC\ Berkeley],              [Human\ /\ NHP],  [Computational\ neuroscience,\ eye\ tracking,\ ephys],
+      [GD], [—],                  [?],                         [Human],          [Eye\ tracking,\ VR/AR,\ perceptual/motor\ control],
+
+      // ── Robotics / Control ──
+      [GN], [Gabe\ Nelson],     [RAI\ Institute],            [Robotics],       [Control\ theory,\ legged\ locomotion],
+      [CH], [Christian\ Hubicki],[FAMU-FSU],                  [Robotics],       [Bipedal\ locomotion,\ optimal\ control],
+      [JH], [Jonathan\ Hurst],  [Agility\ Robotics\ /\ OSU], [Robotics],       [Legged\ robots,\ mechanical\ design],
+      [SH], [Steve\ Heim],      [Cornell\ Univ.],            [Robotics],       [Legged\ locomotion,\ morphology–control\ coupling],
+      [BD], [—],                  [?],                         [Robotics],       [Control\ theory,\ fabrication],
+      table.hline(stroke: rule-thin),
     ),
-    [BS], [Ferrets], [Visual/Perceptual neuroscience, ephys],
-    [MD], [Guinea Fowl], [Musculoskeletal Biomechanics, muscle units],
-    [DF], [Mice], [System Biology],
-    [AH], [Marmosets / NHP], [Ephys],
-    [MH], [Human ], [Vision and CPS, Natural Bx, VR/AR and eye tracking],
-    [KB], [Human/NHP ], [Visual Neuroscience, Optometry],
-    [JY], [Human/NHP], [Computational neuroscience, Eye tracknig, Ephys],
-    [GD],[HUman],[Eye tracking, VR/AR, Perceptual/Motor control],
-    [BD, GN/RAI, CH, JH, SH], [Robotics, Prosteheics, Exoskeletons], [Control theory],
-  ),
-  kind: table,
-  supplement: [Table],
-  caption: [Collaborator Network],
+    kind: table,
+    supplement: [Table],
+    caption: [#set text(size: 7.5pt); External research collaborators spanning every model system and dimensional domain the #smallcaps[Dome] instrument serves. Dashes (—) indicate initials pending confirmation; [?] marks institutions not yet confirmed.],
   )
 }
 
