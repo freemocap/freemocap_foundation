@@ -115,7 +115,7 @@
 #pagebreak(weak:true)
 #include "helpers/figure-page.typ"
 #pagebreak(weak:true)
-#include "helpers/dome-sensor-estimate-model/dome-sensor-estimate-flow.typ"
+#include "helpers/dome-sensor-estimate-model/dome-chain-compact.typ"
 #pagebreak(weak:true)
 #include "sections/2-technology-landscape.typ"
 #pagebreak(weak:true)
