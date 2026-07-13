@@ -35,6 +35,7 @@
   // regardless of the surrounding document's font size.
   set text(size: 11pt, font: "Libertinus Serif")
   [#figure(
+  placement: auto,
   table(
     columns: (9em, 0.85fr, 1fr, 1fr, 0.9fr),
     stroke: (y: 0.3pt + luma(220)), align: (left + horizon,) + (center + horizon,) * 4,
