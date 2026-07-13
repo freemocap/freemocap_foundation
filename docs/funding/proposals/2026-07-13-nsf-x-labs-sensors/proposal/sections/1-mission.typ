@@ -64,7 +64,7 @@ The measurement needs an organization of its own, outside academia's silos: the 
 ]
 
 #figure(
-  image("../media/2026-07-12-fmc-xlabs_all_v3.jpg", width: 80%),
+  image("../media/2026-07-13-FMC-NSF-XLab-Hero-Figure.png", width: 80%),
   caption: [*A Densely Overlapping Measurement Environment (#Dome).* The flagship #smallcaps[Dome-L] physically contains the disseminated #smallcaps[Dome-S] and wearable #Dome-Mobile forms, calibrating every variant against one reference. A centrally controllable camera array and modular force/LED/terrain floor tiles feed calibrated eye, body, world, and force streams into a single model of the sensorimotor loop — segment kinematics, gaze-in-world, and reconstructed retinal input — closing an analysis-to-hypothesis-to-experiment loop inside the same instrument that measures it.],
 ) <fig-hero>
 
