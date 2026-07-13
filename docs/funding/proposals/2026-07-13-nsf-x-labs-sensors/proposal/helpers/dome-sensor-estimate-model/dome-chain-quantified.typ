@@ -77,10 +77,10 @@
     bx((0, 3.8), lWorld, [Force plates]),
 
     // ── off-sensor estimates (error on the measured quantity) ──
-    bx((1, 0), lWorld, [Scene geometry], err: [0.5°#sup[2] #fg("open")]),
+    bx((1, 0), lWorld, [Scene geometry], err: [0.5° #fg("open")]),
     bx((1, 1), lEye,   [Eye keypoints]),
-    bx((1, 2.0), lBody, [Body keypoints], err: [2–6°#sup[6] #fg("open")]),
-    bx((1, 2.85), lBody, [Segment orient.], err: [±1–2°#sup[1] #fg("closed") · yaw #fg("faked")]),
+    bx((1, 2.0), lBody, [Body keypoints], err: [2–6° #fg("open")]),
+    bx((1, 2.85), lBody, [Segment orient.], err: [±1–2° #fg("closed") · yaw #fg("faked")]),
     node((1.5, 2.425), {
       set par(leading: 0.2em, spacing: 0.2em)
       align(center)[#text(size: 6.2pt, weight: "semibold", fill: ink)[Hybrid]#linebreak()#bld]
@@ -88,15 +88,15 @@
 
     // ── kinematic ──
     bx((2, 1), lEye, [Eye kinematics],
-      err: [elev/abd 0.6–1.8°#sup[3,4,5] #fg("closed")#linebreak()pupil #fg("open")#linebreak()torsion #bld · accom #bld], w: 2.5cm),
+      err: [elev/abd 0.6–1.8° #fg("closed")#linebreak()pupil #fg("open")#linebreak()torsion #bld · accom #bld], w: 2.5cm),
     bx((2, 2.425), lComp, [Body kinematics], sub: [world frame]),
 
     // ── composite ──
-    bx((3, 1), lComp, [Gaze in world], sub: [eye ⊕ head], err: [±1° / ±2–3°#sup[1]], st: 1.1pt + cOpen),
+    bx((3, 1), lComp, [Gaze in world], sub: [eye ⊕ head], err: [±1° / ±2–3°], st: 1.1pt + cOpen),
     bx((3, 3.4), lComp, [Inverse dynamics]),
 
     // ── peripheral (targets) ──
-    bx((4, 1), lTgt, [Retinal input], sub: [slip 0.26–0.83°#sup[2]], err: [< 1° target #fg("target")], st: tgt),
+    bx((4, 1), lTgt, [Retinal input], sub: [slip 0.26–0.83°], err: [< 1° target #fg("target")], st: tgt),
     bx((4, 3.4), lTgt, [Muscle activation]),
 
     // ── central nervous system ──
@@ -147,31 +147,26 @@
   )),
   kind: image,
   caption: [
-    *Quantifying the technology landscape.* Each reported error is placed on the *quantity it
-    measures*, not the instrument, and tagged by provenance — #fg("open") open & traceable,
-    #fg("closed") closed vendor model (uncertainty unknown), #fg("faked") closed & *not
-    truth-preserving* (Xsens#super[1'] fills an out-of-bounds magnetometer yaw with a model fit),
-    #fg("target") #smallcaps[Dome] target, and a big blue #text(fill: cBuild, weight: "bold")[?]
-    for what is *not built or measured yet* — the capabilities #smallcaps[Dome] adds. Mobile eye
-    trackers resolve gaze (elevation/abduction) in the *head frame* to 0.6° (Tobii Pro Glasses
-    3#super[4]), 1.3–1.8° (Pupil Labs Neon#super[3]), and ≈1° (AdHawk MindLink#super[5]), and give
-    pupil diameter — but *torsion and accommodation are measured by no mobile tracker* (#text(fill:
-    cBuild, weight: "bold")[?]), and the camera–IMU *Hybrid* fusion (#text(fill: cBuild, weight:
-    "bold")[?]) is itself unbuilt. The quantity vision needs is gaze *in the world*: composing eye
-    with head/body pose (IMU segment orientation ±1–2°#super[1]; markerless keypoints 2–6°#super[6])
-    and photogrammetric scene geometry (median ≈3 cm ≈ 0.5°#super[2]), the only published end-to-end
-    eye + IMU + world method — *this team's own prior work* — reaches *±1° calibrated and ±2–3°
-    during natural walking* (Matthis, Yates & Hayhoe 2018#super[1]), with retinal-slip precision mode
-    0.26° / median 0.83° (Muller et al. 2022/2023#super[2]), against the *< 1°* gaze-in-world needed
-    to predict neural activity. No existing toolchain delivers sub-1° gaze-in-world with a propagated
-    uncertainty budget — the #smallcaps[Dome] goal.
-    #v(2pt)
-    #text(size: 7pt)[*Sources:* #super[1] Matthis, Yates & Hayhoe 2018, _Curr. Biol._ 28:1224–1233
-    (this team); #super[1'] Xsens/Movella MVN magnetometer-mapping behavior; #super[2] Muller et al.
-    2022 (_bioRxiv_) / 2023, _eLife_ 12:e82410 (this team); #super[3] Pupil Labs Neon accuracy report;
-    #super[4] Tobii Pro Glasses 3 spec; #super[5] AdHawk MindLink spec; #super[6] Cherian 2026
-    FreeMoCap dissertation, cf. Theia3D & OpenCap validations.]
+    *Quantifying the technology landscape.* Reported error sits on the *quantity measured*, not the
+    instrument, tagged by provenance: #fg("open") open and traceable, #fg("closed") closed vendor
+    model (uncertainty unknown), #fg("faked") closed and *not truth-preserving* (Xsens fills an
+    out-of-bounds magnetometer yaw with a model fit), #fg("target") #smallcaps[Dome] target, and a
+    blue #text(fill: cBuild, weight: "bold")[?] for what no instrument measures yet. Mobile eye
+    trackers resolve head-frame gaze to 0.6° (Tobii Pro Glasses 3), ≈1° (AdHawk MindLink), and
+    1.3–1.8° (Pupil Labs Neon), but none measure ocular torsion or accommodation, and the camera–IMU
+    fusion is itself unbuilt. Composed into gaze *in the world* through IMU segment orientation
+    (±1–2°), markerless keypoints (2–6°, @cherian2026), and photogrammetric scene geometry
+    (≈3 cm ≈ 0.5°), the only published end-to-end eye + IMU + world method — this team's own prior
+    work — reaches ±1° calibrated and ±2–3° in natural walking (@matthis2018 @muller2023), against
+    the sub-1° needed to predict the neural activity it drives. No existing toolchain delivers sub-1°
+    gaze-in-world with a propagated uncertainty budget — the #smallcaps[Dome] goal.
   ],
 ) <fig-landscape-quantified>]
 
 #dome-chain-quantified-figure
+// Standalone-only: the @-citations in the caption resolve against the main proposal's
+// bibliography when this figure is imported into the build (import pulls only the
+// `dome-chain-quantified-figure` binding, discarding everything below). When compiling
+// THIS file on its own to check node layout, the line below gives the citations a
+// bibliography to resolve against so the standalone preview doesn't error.
+#bibliography("../../FMCF-NSF-XLABS.bib", style: "nature", title: [])

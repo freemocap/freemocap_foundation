@@ -53,12 +53,12 @@
   }
 }
 
-// #suggestion(note: [..])[..] — new prose drafted by Claude. Unlike #flag (which
-// wraps existing author text and leaves it in submission mode), #suggestion holds
-// Claude-authored language: it renders as a labeled green block in DRAFT_MODE and
-// vanishes ENTIRELY when DRAFT_MODE = false, so it can never ship un-integrated.
-// Optional `note:` shows a short pointer in the label (e.g. rationale or where the
-// canonical version lives).
+// #suggestion(note: [..])[..] — new prose drafted by Claude. Renders as a GREEN
+// highlighted block in DRAFT_MODE so it's visually distinct from author prose, and
+// vanishes entirely in the submission-ready compile (DRAFT_MODE = false), so it can
+// never ship un-integrated. The `note:` argument is a SOURCE-ONLY annotation (rationale
+// / pointer) — kept in the .typ but NOT rendered in the PDF (changed 2026-07-13 at
+// author request: keep the green highlight, drop the note from the rendered output).
 #let suggestion(note: none, body) = {
   if DRAFT_MODE {
     block(
@@ -68,10 +68,6 @@
       inset: (x: 0.6em, y: 0.5em),
       radius: 1pt,
       breakable: true,
-    )[
-      #text(size: 7.5pt, fill: rgb("#177245"), weight: "bold", tracking: 0.4pt)[SUGGESTION#if note != none [ — #note]]
-      #v(0.35em, weak: true)
-      #body
-    ]
+    )[#body]
   }
 }

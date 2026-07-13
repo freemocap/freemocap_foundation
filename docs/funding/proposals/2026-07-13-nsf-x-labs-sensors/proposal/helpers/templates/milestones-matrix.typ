@@ -60,20 +60,19 @@
 
     grp(cWorld, [World — technical maturity]),
     it[World-scanner], e, s(cWorld, [Concept]), s(cWorld, [Prototype]), e,
-    it[Floor panels (force/LED)], e, s(cWorld, [PoC]), s(cWorld, [Prototype]), e,
-    it[ARGPv3], hv[ARGPv1], e, s(cWorld, [Prototype]), sl(cWorld, [Validated]),
+    it[Actuated floor (force·LED·terrain)], hv[v1], s(cWorld, [PoC]), s(cWorld, [Prototype]), sl(cWorld, [Validated]),
     it[Drone swarm], e, e, sl(cWorld, [Concept]), sl(cWorld, [PoC]),
 
     grp(cInt, [Integration — first-order]),
     it[#Dome-L (Auto)], e, s(cInt, [PoC / testbed]), s(cInt, [Prototype]), sl(cInt, [Operational]),
     it[#Dome-S (Static)], hv[FMC webcam], s(cInt, [Breadboard]), s(cInt, [Validated]), sl(cInt, [Operational]),
     it[#Dome-Mob], e, s(cInt, [Concept]), s(cInt, [Prototype]), sl(cInt, [Validated]),
-    it[#Dome-Animals], hv[ferret (6) · mouse (3)], s(cInt, [marmoset]), s(cInt, [guinea fowl]), sl(cInt, [rat]),
+    it[#Dome-Animals], hv[ferret · mouse], s(cInt, [+ neural]), s(cInt, [+ marmoset · guinea fowl]), sl(cInt, [Validated]),
 
     table.hline(stroke: 0.9pt + ink),
   ),
   kind: table, supplement: [Table],
-  caption: [Technology Readiness Level (TRL): Concept (2) · PoC (3) · Breadboard (4) · Prototype (5–6) · Validated (7) · Operational (8–9) — hardware analogue of PoC→MVP→alpha→beta→release. Org rows = operational deliverables. ✓ = in place pre-award; #Dome-Animals cells = per-species level. Each Progress Milestone needs a quantitative exit criterion (FOA §9.2). Stages illustrative.],
+  caption: [Maturity ladder (TRL): Concept (2) · PoC (3) · Breadboard (4) · Prototype (5–6) · Validated (7) · Operational (8–9); organization rows show operational deliverables. ✓ = in place pre-award. Each Phase 1 Progress Milestone carries a quantitative exit criterion (FOA §9.2); stages illustrative.],
   ) <tbl-milestones>]
 }
 
