@@ -97,6 +97,12 @@ Platform measurements behave this way once they get cheap. PCR was built to copy
 
 // Platform measurement techniques behave this way. PCR was built to copy DNA; it went on to underwrite forensics, diagnostics, ancestry, and a pandemic response its inventors never imagined. Next-generation sequencing did not become foundational by being precious — it became foundational when it grew cheap and standardized enough that every lab could run it, and its applications followed the price collapse rather than preceding it. We are building the #Dome for a clear and present need; like those techniques, we expect the tool, once in the world's hands, to be turned to uses we could not have anticipated — and we are designing, from the first day, for that to be easy.
 
+#v(1.2em)
+#figure(
+  image("../media/2026-07-12-fmc-xlabs_all_v3.jpg", width: 100%),
+  caption: [Blah blah blah captions. Blah blah blah captions. Blah blah blah captions. Blah blah blah captions. Blah blah blah captions.],
+) <fig-hero>
+
 // == The Vision
 
 // The vision of this proposal is a grand acceleration of a movement the FreeMoCap Project has fostered since 2021, and there is no upper limit to our ambition. Going from zero to more than 15,000 users across 152 countries in four years taught us that the world is hungry for this kind of tool, and we intend to feed it. We will put #Domes where the science and the need already are — research labs and classrooms, physical-therapy clinics and athletic facilities, animation studios, and the country hospitals and retirement homes where an auto-calibrating gait-and-posture station could hold a plain-language conversation with a patient about their own kinematics. We will build field-deployable #Dome-Mobile systems that bring lab-quality data to humans and animals in the open wilderness, into the EVA suits and habitat volumes of the ISS, and into zoo enclosures that could become around-the-clock behavioral archives.

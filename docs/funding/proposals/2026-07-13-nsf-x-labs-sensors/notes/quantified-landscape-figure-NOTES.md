@@ -8,7 +8,13 @@ Written by Claude (advisor role) — **the §2 body prose below is a suggestion 
 A lean rework of Fig 2 (`dome-chain-compact.typ`) into the "plot or other figure to **quantitatively depict the current technology landscape and desired goal(s)**" that Attachment A §2 invites (and that §2 was arguably missing). **Same boxes and arrows as Fig 2** — no added header bands, no legend band, no separate budget strip (kept tight on purpose). It adds one small reported-error line under the nodes on the retinal-input (vision) path, each with a single provenance glyph:
 
 - **Provenance flags** (one small colored glyph per number): ● open/traceable · ◐ closed model (unknown) · ✗ closed & not-truth-preserving · ◆ DOME target. Node fill colors are unchanged from Fig 1/Fig 2 (modality pastels); the flags are the only added color.
-- **Quantified nodes:** World scanner (≈3 cm·0.5° ●), Eye tracker (0.6–1.8° ◐), Camera mocap (2–6° ●), IMU mocap (±1–2° ◐ · yaw ✗), Body kinematics (head pose ±1–2° ●), Gaze in world (±1° calib · ±2–3° dyn), Retinal input (target < 1° ◆). Eye kinematics notes torsion/accommodation absent.
+- **Error sits on the quantity it measures, not the instrument.** Instrument boxes just name the device (World scanner → photogrammetry; Eye tracker → Tobii·Pupil·AdHawk; Camera mocap → markerless; IMU mocap → Xsens). The numbers live one column downstream: Scene geometry 0.5°² ●; Body keypoints 2–6°⁶ ●; Segment orient. ±1–2°¹ ◐ · yaw ✗; Gaze in world ±1° / ±2–3°¹; Retinal input slip 0.26–0.83°² · < 1° target ◆.
+- **Eye kinematics is broken out by DOF:** elevation/abduction 0.6–1.8°³ˑ⁴ˑ⁵ ◐ and pupil ● are measured; **torsion and accommodation show a big blue `?`** = not measured by any mobile tracker (a thing DOME builds).
+- **The camera–IMU join is relabeled `Hybrid` with a big blue `?`** = not built yet.
+- **`?` build-marker** (big, blue, 9.5 pt) is its own glyph in the legend/caption — "not built / not measured yet, the capabilities DOME adds" — distinct from ◆ (DOME target spec).
+- **Everything bigger & darker:** titles/numbers 6.5 pt bold black (were ~5.6/4.7 pt), device sub-lines 5.0 pt #3a3a3a, edge labels 5.6 pt; flag colors darkened.
+- Source key (caption): 1 = Matthis, Yates & Hayhoe 2018 (Curr. Biol. — **this team**); 1′ = Xsens yaw-mapping; 2 = Muller et al. 2022/2023 (eLife — **this team**); 3 = Pupil Labs Neon; 4 = Tobii Pro Glasses 3; 5 = AdHawk MindLink; 6 = Cherian 2026 (FreeMoCap diss.), cf. Theia3D/OpenCap.
+- On compile, eyeball the **Eye-kinematics box** (now the tallest/widest, 2.5 cm) and the sensor column; fletcher sizes rows/columns to fit, but if anything crowds, nudge `spacing` (currently 6.5 × 4.4 mm) or that box's `w`.
 - **Motor/ground path kept at normal visibility** (force → inverse dynamics → muscle) — shown, not greyed.
 - The provenance key lives in the caption, not a separate legend band.
 - New binding: `dome-chain-quantified-figure`, label `<fig-landscape-quantified>`.

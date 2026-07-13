@@ -1,6 +1,7 @@
 // // ── 3. Outcomes ──
 // [An NSF X-Lab is expected to deliver high-impact, measurable outcomes that advance a nascent platform technology, overcome critical bottlenecks, and realize the team's vision to reshape an entire area of technology or field of scientific research (see Section 7.0 for example outcomes). Phase 0 proposals should describe the team's ambitious target outcomes over a 5- to 7-year timescale to accomplish the stated Mission and the scientific and technical performance benchmarks needed to get there.]
 #import "../helpers/xref.typ": collab
+#import "../helpers/templates/milestones-matrix.typ": milestones-figure
 = Outcomes <sec-outcomes>
 
 
@@ -36,3 +37,6 @@ Because every channel is calibrated, synchronized, and uncertainty-traced within
 == Dissemination and validation <sec-dissemination>
 
 The outcome is a countable, validated footprint rather than a released codebase: [N] validated DOME-S instances spanning human biomechanics, robotics, visual neuroscience, and clinical sites, each cross-validated against the DOME-L reference and shipped with a build guide, parts list, and calibration protocol any lab can follow. We anchor clinical rigor to FDA 510(k) clearance of the FreeMoCap/DOME instrument for rehabilitation and assessment, letting a regulatory bar drive protocol quality. Phase activities and maturity targets for every line above appear in the Milestone Matrix (@tbl-milestones), whose quantitative exit criteria are the benchmarks named here. [TODO - Are they? Make double sure about that... ]
+
+#v(0.8em)
+#milestones-figure

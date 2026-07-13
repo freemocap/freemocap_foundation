@@ -3,6 +3,7 @@
 
 #import "../helpers/shared.typ": semibold, Dome, Domes, Dome-Mobile
 #import "../helpers/xref.typ": flag, suggestion
+#import "../helpers/collaborator-network.typ": collaborator-figure
 
 = Team Capabilities Statement <sec-team-capabilities>
 
@@ -21,7 +22,19 @@ The FreeMoCap X-Lab (FMC-X) will operate as an independent project within the Fr
 
 == Network, partnerships, and community <sec-network>
 
-A standing, active network of research groups already spans every domain the #Dome serves — human perception-and-action researchers, robotics and prosthetics groups, visual neuroscientists working in ferret and mouse, musculoskeletal biomechanists working in guinea fowl, and primate electrophysiologists. This network is real and in use today, not aspirational, with existing collaborations and shared tooling across multiple sites; the PI architects and holds the instrument-and-network together while the domain-specific science is executed by the named collaborators (@tbl-collaborators). The community sets design and roadmap priorities through structured processes that gather broad input without stalling on consensus — a Request-for-Comments process modeled on Python's PEP system — and convenes in person twice a year across workshops that train students and out-of-domain experts, hackathons that onboard developers, conferences that share #Dome -based research, and a congress that sets organizational direction. A Community Grants Program and Developer Fund sustain the open-source network and double as a testbed for engagement mechanisms.
+A standing, active network of research groups already spans every domain the #Dome serves — human perception-and-action researchers, robotics and prosthetics groups, visual neuroscientists working in ferret and mouse, musculoskeletal biomechanists working in guinea fowl, and primate electrophysiologists. This network is real and in use today, not aspirational, with existing collaborations and shared tooling across multiple sites; the PI architects and holds the instrument-and-network together while the domain-specific science is executed by the named collaborators (@tbl-collaborators).
+
+#v(0.6em)
+#grid(
+  columns: (165pt, 1fr),
+  gutter: 1.2em,
+  align: (left + top, left + top),
+  collaborator-figure,
+  [
+    The community sets design and roadmap priorities through structured processes that gather broad input without stalling on consensus — a Request-for-Comments process modeled on Python's PEP system — and convenes in person twice a year across workshops that train students and out-of-domain experts, hackathons that onboard developers, conferences that share #Dome -based research, and a congress that sets organizational direction. A Community Grants Program and Developer Fund sustain the open-source network and double as a testbed for engagement mechanisms.
+  ],
+)
+#v(0.6em)
 
 == A proven model at smaller scale <sec-proven-model>
 
