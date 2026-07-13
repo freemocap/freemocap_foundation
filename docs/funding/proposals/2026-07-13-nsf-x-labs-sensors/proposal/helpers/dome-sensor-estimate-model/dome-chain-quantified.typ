@@ -59,7 +59,7 @@
 })
 
 #let dome-chain-quantified-figure = [#figure(
-  placement: auto,
+  placement: top,
   fit-to-width(diagram(
     spacing: (6.5mm, 3mm),
     node-outset: 0pt,
