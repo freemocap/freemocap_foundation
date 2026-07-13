@@ -22,14 +22,14 @@
 
 
 = Outcomes
-We will create a flag ship facility in the Greated Boston area, and then use it to build 3 #Dome variants, selected to provide cross validation method to develop and validate different kinds of #Domes. Specifically - #Dome-L is large auto-calibrating space big enough to hold smaller #Domes within it. teh #Dome-static variant is an extension of the volumes we make in FreeMoCap, the kind of thing we would expect to put in a lab or classroom. WE also will choose a space large enough to run #Dome-Mobile variants, which allows us to develop and validate that system indoors before moving outdoors where validation becomes much harder. 
+We will create a flag ship facility in the Greated Boston area, and then use it to build 3 #Dome variants, selected to provide cross validation method to develop and validate different kinds of #Domes. Specifically - #Dome -L is large auto-calibrating space big enough to hold smaller #Domes within it. teh #Dome -static variant is an extension of the volumes we make in FreeMoCap, the kind of thing we would expect to put in a lab or classroom. WE also will choose a space large enough to run #Dome-Mobile variants, which allows us to develop and validate that system indoors before moving outdoors where validation becomes much harder. 
 
 
 We continually fan out our work to the collaborator network - working with each collaborator to build their own system specific to their research direction, and then validate relative to our core cross-validation network. 
 
 We build the initial DOME variants with off-the-shelf equipment (e.g. Pupil), and then build new iterations of each of the sub-instruments prioritized on things that are bottlenecks to our resarch. We specifically target the abilty to estimate the retinal projected input accurately enough to predict neural activitym which we'll  define by saying we need to be able to predict the retinal projection of a world object with an accuracy of 1-degree at the fovea (when looking at a point on the ground at a 45-degree angle). We have already charcterized joint-angle accuracy in freemocap (cite: aaron's disseration) so we can combine that with the reported errors of commercial eye trackers to define our uncertainty budget. 
 
-We need to build a new eye tracker, beucase no existing eye tracker can measure torsion, and that directly corrupts the Curl dimension of retinal optic flow, which is a research target per @Matthis2022 . 
+We need to build a new eye tracker, beucase no existing eye tracker can measure torsion, and that directly corrupts the Curl dimension of retinal optic flow, which is a research target per \@matthis2022. 
 
  In all the #Domes we build, assume the person or persons tracked will be tracked by full-body mocap (camera-based, imu-based, or hybrid-both), and wearing an eye tracker (either a pupil labs tracker to start, then our new custom system later)
 
