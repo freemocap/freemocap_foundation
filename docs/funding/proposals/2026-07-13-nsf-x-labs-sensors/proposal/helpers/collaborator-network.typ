@@ -29,14 +29,14 @@
       table.hline(stroke: rule-thick),
 
       // ── Vision / Neuroscience ──
-      [BS] <collab-BS>, [Ben\ Scholl],      [Univ.\ of Colorado\ Denver], [Ferret],         [Visual/perceptual neuroscience, ephys],
-      [MD] <collab-MD>, [Monica\ Daley],    [UC\ Irvine],                [Guinea\ fowl],   [Musculoskeletal biomechanics, muscle-level units],
-      [DF] <collab-DF>, [—],                  [?],                         [Mouse],          [Systems biology],
-      [AH] <collab-AH>, [Alex\ Huk],        [UCLA],                      [Marmoset\ /\ NHP],[Ephys, population-level vision],
-      [MH] <collab-MH>, [Mary\ Hayhoe],     [UT\ Austin],                [Human],          [Vision\ &\ CPS,\ natural\ behavior,\ VR/AR,\ eye\ tracking],
-      [KB] <collab-KB>, [Kate\ Bonnen],     [Indiana\ Univ.],            [Human\ /\ NHP],  [Visual\ neuroscience,\ optometry],
-      [JY] <collab-JY>, [Jake\ Yates],      [UC\ Berkeley],              [Human\ /\ NHP],  [Computational\ neuroscience,\ eye\ tracking,\ ephys],
-      [GD] <collab-GD>, [—],                  [?],                         [Human],          [Eye\ tracking,\ VR/AR,\ perceptual/motor\ control],
+      [<collab-BS> BS], [Ben\ Scholl],      [Univ.\ of Colorado\ Denver], [Ferret],         [Visual/perceptual neuroscience, ephys],
+      [<collab-MD> MD], [Monica\ Daley],    [UC\ Irvine],                [Guinea\ fowl],   [Musculoskeletal biomechanics, muscle-level units],
+      [<collab-DF> DF], [—],                  [?],                         [Mouse],          [Systems biology],
+      [<collab-AH> AH], [Alex\ Huk],        [UCLA],                      [Marmoset\ /\ NHP],[Ephys, population-level vision],
+      [<collab-MH> MH], [Mary\ Hayhoe],     [UT\ Austin],                [Human],          [Vision\ &\ CPS,\ natural\ behavior,\ VR/AR,\ eye\ tracking],
+      [<collab-KB> KB], [Kate\ Bonnen],     [Indiana\ Univ.],            [Human\ /\ NHP],  [Visual\ neuroscience,\ optometry],
+      [<collab-JY> JY], [Jake\ Yates],      [UC\ Berkeley],              [Human\ /\ NHP],  [Computational\ neuroscience,\ eye\ tracking,\ ephys],
+      [<collab-GD> GD], [—],                  [?],                         [Human],          [Eye\ tracking,\ VR/AR,\ perceptual/motor\ control],
 
       // ── Robotics / Control ──
       [GN] <collab-GN>, [Gabe\ Nelson],     [RAI\ Institute],            [Robotics],       [Control\ theory,\ legged\ locomotion],
