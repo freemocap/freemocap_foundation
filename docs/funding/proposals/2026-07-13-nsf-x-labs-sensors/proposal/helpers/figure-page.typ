@@ -15,3 +15,5 @@
 #include "../helpers/dome-sensor-estimate-model/dome-chain-compact.typ"
 
 #include "../helpers/templates/milestones-matrix.typ"
+
+#include "collaborator-network.typ"

@@ -20,7 +20,6 @@
     [KB], [Human/NHP ], [Visual Neuroscience, Optometry],
     [JY], [Human/NHP], [Computational neuroscience, Eye tracknig, Ephys],
     [GD],[HUman],[Eye tracking, VR/AR, Perceptual/Motor control],
-    [Mayo Clinic], [Human], [Brain scans and implanted sensors],
     [BD, GN/RAI, CH, JH, SH], [Robotics, Prosteheics, Exoskeletons], [Control theory],
   ),
   kind: "table",
