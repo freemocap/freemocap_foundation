@@ -28,7 +28,7 @@
 // block, so it stays inside the page margins wherever this figure is placed.
 #let fit-to-width(body) = layout(size => {
   let w = measure(body).width
-  let s = if w > 0pt { calc.min(1.0, size.width / w) } else { 1.0 }
+  let s = if w > 0pt { calc.min(100%, (size.width / w) * 100%) } else { 100% }
   scale(x: s, y: s, origin: top + left, reflow: true, body)
 })
 
