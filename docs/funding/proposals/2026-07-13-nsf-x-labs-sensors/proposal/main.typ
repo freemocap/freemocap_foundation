@@ -141,5 +141,5 @@
 #set text(size: 7pt)
 #set par(leading: 0.38em, spacing: 0.12em, first-line-indent: 0pt)
 // compact manual title instead of the default 12pt small-caps section heading
-#block(above: 0.7em, below: 0.3em)[#text(size: 8.5pt, weight: "bold")[References]]
+#block(above: 0.7em, below: 0.3em)[#text(size: 8.5pt, weight: "bold")[#smallcaps()[References]]]
 #bibliography("FMCF-NSF-XLABS.bib", style: "nature", title: none)

@@ -16,18 +16,18 @@
 #set page(paper: "us-letter", margin: (x: 0.7in, y: 0.55in))
 #set text(size: 11pt, font: "Libertinus Serif")
 
-#let ink = rgb("#26303a"); #let done = rgb("#4a4f55")
-#let cOrg=rgb("#6f7f92"); #let cBody=rgb("#3a7ca5"); #let cEye=rgb("#4a9d5b")
-#let cWorld=rgb("#9b6a9e"); #let cInt=rgb("#c1853a")
+#let ink = rgb("#1c242c"); #let done = rgb("#3f444a")
+#let cOrg=rgb("#54637a"); #let cBody=rgb("#2e6e95"); #let cEye=rgb("#3c8a4e")
+#let cWorld=rgb("#835889"); #let cInt=rgb("#9e6a24")
 
 #let s(col, l) = table.cell(fill: col, inset: (x: 2pt, y: 1.6pt))[#text(size: 5.7pt, fill: white, weight: "medium")[#l]]
-#let sl(col, l) = table.cell(fill: col.lighten(58%), inset: (x: 2pt, y: 1.6pt))[#text(size: 5.7pt, fill: col.darken(28%))[#l]]
+#let sl(col, l) = table.cell(fill: col.lighten(62%), inset: (x: 2pt, y: 1.6pt))[#text(size: 5.7pt, weight: "medium", fill: col.darken(45%))[#l]]
 #let hv(l) = table.cell(fill: done, inset: (x: 2pt, y: 1.6pt))[#text(size: 5.7pt, fill: white, weight: "medium")[✓ #l]]
 #let e = table.cell(inset: (x: 2pt, y: 1.6pt))[]
 #let it(l) = [#text(size: 6.2pt, weight: "medium", fill: ink)[#l]]
 #let trl(a, b) = table.cell(align: center)[#box(radius: 2pt, stroke: 0.4pt + luma(140), inset: (x: 2.5pt, y: 0.6pt))[#text(size: 5.4pt, fill: ink)[#a→#b]]]
 #let ntrl = table.cell(align: center)[#text(size: 5.2pt, fill: luma(150))[n/a]]
-#let grp(col, l) = table.cell(colspan: 5, fill: col.lighten(80%), inset: (x: 3pt, y: 1.8pt))[#text(size: 6pt, weight: "bold", fill: col.darken(24%), tracking: 0.5pt)[#upper(l)]]
+#let grp(col, l) = table.cell(colspan: 5, fill: col.lighten(75%), inset: (x: 3pt, y: 2.2pt))[#text(size: 6.3pt, weight: "bold", fill: col.darken(42%), tracking: 0.5pt)[#upper(l)]]
 #let hd(l) = table.cell(fill: ink, inset: (x: 2.5pt, y: 2.5pt))[#text(size: 6pt, weight: "bold", fill: white)[#l]]
 
 #let milestones-figure = {
@@ -52,18 +52,22 @@
     it[Required NSF plans], e, s(cOrg, [Data · IP · Security · Gov; Ph1 plan + budget]), e, e,
     it[IP management], hv[prior IP], s(cOrg, [IP Mgmt Plan]), sl(cOrg, [license · manage]), e,
 
+    table.hline(stroke: 0.7pt + ink),
     grp(cInt, [#Dome Variants]),
     it[#Dome-L (Automated)], e, s(cInt, [PoC / testbed]), s(cInt, [Prototype - Validated]), sl(cInt, [Operational]),
     it[#Dome-S (Static)], hv[FMC webcam], s(cInt, [Validated]), s(cInt, [Operational (510(k) cert)]), sl(cInt, [Operational]),
     it[#Dome-Mob], e, s(cInt, [PoC-Breadboard]), s(cInt, [Prototype-Validated]), sl(cInt, [Operational]),
 
+    table.hline(stroke: 0.7pt + ink),
     grp(cBody, [Body — Technical Development]),
     it[Camera array], e, s(cBody, [PoC-Breadboard]), s(cBody, [Prototype -> Validated]), sl(cBody, [Operational]),
     it[IMU↔camera fusion], hv[FMC mocap], s(cBody, [PoC]), s(cBody, [Prototype]), sl(cBody, [Validated]),
 
+    table.hline(stroke: 0.7pt + ink),
     grp(cEye, [Eye — technical development]),
     it[Dense Array Eye tracker], e, s(cEye, [PoC - Breadboard]), s(cEye, [Prototype-Validated]), sl(cEye, [Operational]),
 
+    table.hline(stroke: 0.7pt + ink),
     grp(cWorld, [World — technical development]),
     it[Dense Array World-scanner], e, s(cWorld, [PoC - Breadboard]), s(cWorld, [Prototype-Validated]), e,
     it[Actuated floor (force·LED·terrain)], hv[v1], s(cWorld, [PoC]), s(cWorld, [Prototype]), sl(cWorld, [Validated]),
