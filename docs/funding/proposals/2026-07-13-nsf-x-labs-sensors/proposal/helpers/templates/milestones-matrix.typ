@@ -33,7 +33,7 @@
 #let milestones-figure = {
   // Scoped so the em-based column widths match the standalone layout,
   // regardless of the surrounding document's font size.
-  set text(size: 11pt, font: "Libertinus Serif")
+  set text(size: 10pt, font: "Libertinus Serif")
   [#figure(
   placement: auto,
   table(
@@ -72,7 +72,7 @@
     table.hline(stroke: 0.9pt + ink),
   ),
   kind: table, supplement: [Table],
-  caption: [Maturity ladder (TRL): Concept (2) · PoC (3) · Breadboard (4) · Prototype (5–6) · Validated (7) · Operational (8–9); organization rows show operational deliverables. ✓ = in place pre-award],
+  caption: [Tech Readiness Ladder(TRL): Concept (2) · PoC (3) · Breadboard (4) · Prototype (5–6) · Validated (7) · Operational (8–9)],
   ) <tbl-milestones>]
 }
 
