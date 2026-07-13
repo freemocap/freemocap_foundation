@@ -57,7 +57,7 @@
     width: 6.5in,
     height: 9in,
     fill: none,
-    stroke: .5pt + rgb("#0000ff"),
+    stroke: .5pt + rgb("#7e7eba"),
   ),
 )
 
