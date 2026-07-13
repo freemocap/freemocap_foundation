@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Human Phylogenetic Lineage — Animalia → Homo sapiens</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0a07;
+    --bg-card: #141210;
+    --text: #e4d9c6;
+    --text-muted: #8a806e;
+    --amber: #c4943a;
+    --amber-bright: #e8b84b;
+    --amber-glow: rgba(196, 148, 58, 0.15);
+    --bone: #d4c9b5;
+    --bone-light: #ede4d3;
+    --line: #3a3228;
+    --line-bright: #5a5040;
+    --font-display: 'Cormorant Garamond', 'Georgia', serif;
+    --font-label: 'JetBrains Mono', 'Consolas', monospace;
+    --font-inscription: 'IM Fell English SC', 'Georgia', serif;
+    --node-size: 12px;
+    --major-node-size: 18px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-display);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(196,148,58,0.04) 0%, transparent 70%),
+      radial-gradient(ellipse at 80% 30%, rgba(58,138,122,0.03) 0%, transparent 50%),
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 6rem;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  header h1 {
+    font-family: var(--font-inscription);
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: var(--bone-light);
+    margin-bottom: 0.4rem;
+  }
+
+  header .subtitle {
+    font-family: var(--font-label);
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--amber);
+  }
+
+  header .ancestor-path {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 1.2rem;
+    font-family: var(--font-label);
+    font-size: 0.6rem;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+  }
+  header .ancestor-path span.arrow { color: var(--amber); font-size: 0.55rem; }
+  header .ancestor-path span.end { color: var(--amber-bright); font-weight: 500; }
+
+  .legend {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.2rem;
+    font-family: var(--font-label);
+    font-size: 0.6rem;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+  }
+  .legend-item { display: flex; align-items: center; gap: 0.4rem; }
+  .legend-dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    border: 2px solid var(--amber);
+    background: transparent;
+  }
+  .legend-dot.major {
+    width: 14px; height: 14px;
+    background: var(--amber);
+    box-shadow: 0 0 8px var(--amber-glow);
+  }
+
+  .controls-bar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .btn-expand {
+    font-family: var(--font-label);
+    font-size: 0.58rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--amber);
+    background: transparent;
+    border: 1px solid var(--line-bright);
+    padding: 0.4rem 1.2rem;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    user-select: none;
+  }
+  .btn-expand:hover {
+    background: rgba(196,148,58,0.1);
+    border-color: var(--amber);
+    color: var(--amber-bright);
+  }
+  .btn-expand:active {
+    background: rgba(196,148,58,0.2);
+  }
+
+  .timeline-scale {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: linear-gradient(to bottom, var(--bg) 60%, transparent);
+    padding: 0.5rem 0 0.8rem;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-label);
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(58,50,40,0.3);
+  }
+  .timeline-scale span {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+  .timeline-scale span:hover { opacity: 1; color: var(--amber); }
+
+  .tree {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .tree::before {
+    content: '';
+    position: absolute;
+    left: 28px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(
+      to bottom,
+      var(--line) 0%,
+      var(--line-bright) 30%,
+      var(--amber) 95%,
+      transparent 100%
+    );
+    z-index: 0;
+  }
+
+  .tree-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 3px 0;
+    z-index: 1;
+    cursor: pointer;
+    transition: background 0.2s;
+    flex-wrap: wrap;
+  }
+  .tree-row:hover {
+    background: rgba(196,148,58,0.03);
+  }
+
+  .node {
+    position: absolute;
+    left: 28px;
+    width: var(--node-size);
+    height: var(--node-size);
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+    background: var(--bg);
+    border: 2px solid var(--line-bright);
+    z-index: 2;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .tree-row.major .node {
+    width: var(--major-node-size);
+    height: var(--major-node-size);
+    background: var(--amber);
+    border-color: var(--amber-bright);
+    box-shadow: 0 0 12px var(--amber-glow), 0 0 2px var(--amber);
+  }
+  .tree-row.major:hover .node {
+    box-shadow: 0 0 20px rgba(196,148,58,0.35), 0 0 4px var(--amber-bright);
+    transform: translate(-50%, 0) scale(1.2);
+  }
+
+  .branch-line {
+    position: absolute;
+    left: calc(28px + var(--node-size)/2 + 6px);
+    width: 18px;
+    height: 1px;
+    background: var(--line);
+    transition: background 0.3s;
+  }
+  .tree-row.major .branch-line {
+    background: var(--line-bright);
+    width: 24px;
+  }
+
+  .label-area {
+    margin-left: 64px;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    flex: 1;
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+
+  .clade-name {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--bone);
+    letter-spacing: 0.02em;
+    transition: color 0.3s;
+    white-space: nowrap;
+  }
+  .tree-row.major .clade-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--bone-light);
+    text-shadow: 0 0 20px rgba(196,148,58,0.2);
+  }
+  .tree-row.major:hover .clade-name {
+    color: var(--amber-bright);
+  }
+
+  .mya {
+    font-family: var(--font-label);
+    font-size: 0.6rem;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    min-width: 4.5em;
+    text-align: right;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+  .tree-row:hover .mya { opacity: 1; }
+
+  .innovation {
+    font-family: var(--font-label);
+    font-size: 0.55rem;
+    letter-spacing: 0.03em;
+    color: var(--text-muted);
+    opacity: 0.65;
+    transition: all 0.3s ease;
+    flex: 1;
+    min-width: 0;
+    line-height: 1.3;
+  }
+  .tree-row.major .innovation {
+    opacity: 0.85;
+    color: var(--amber);
+  }
+  .tree-row:hover .innovation {
+    opacity: 1;
+    color: var(--amber);
+  }
+
+  .expand-icon {
+    font-family: var(--font-label);
+    font-size: 0.55rem;
+    color: var(--amber);
+    opacity: 0.35;
+    transition: opacity 0.3s;
+    cursor: pointer;
+    user-select: none;
+    flex-shrink: 0;
+  }
+  .tree-row.major .expand-icon { opacity: 0.55; }
+  .tree-row:hover .expand-icon { opacity: 1; }
+
+  .detail-card {
+    display: none;
+    width: 100%;
+    margin: 0.2rem 0 0.4rem 64px;
+    padding: 0.8rem 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-left: 2px solid var(--amber);
+    border-radius: 0 4px 4px 0;
+    font-family: var(--font-display);
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: var(--text);
+    animation: fadeSlide 0.3s ease;
+  }
+  .detail-card.open { display: block; }
+  .tree.all-expanded .detail-card { display: block; }
+
+  @keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .detail-card .novelty {
+    color: var(--amber-bright);
+    font-weight: 600;
+    font-size: 0.92rem;
+    margin-bottom: 0.3rem;
+  }
+  .detail-card .desc {
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    font-style: italic;
+    line-height: 1.55;
+  }
+  .detail-card .relatives {
+    margin-top: 0.5rem;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--line);
+    padding-top: 0.5rem;
+  }
+  .detail-card .relatives strong {
+    color: var(--bone);
+    font-weight: 400;
+  }
+
+  .tree-divider {
+    height: 1.2rem;
+    position: relative;
+  }
+  .tree-divider::after {
+    content: '\00B7  \00B7  \00B7';
+    position: absolute;
+    left: 28px;
+    transform: translateX(-50%);
+    font-family: var(--font-label);
+    font-size: 0.5rem;
+    color: var(--line);
+    letter-spacing: 0.3em;
+  }
+
+  .footer-note {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    font-family: var(--font-label);
+    font-size: 0.55rem;
+    color: var(--text-muted);
+    letter-spacing: 0.06em;
+  }
+  .footer-note em { color: var(--amber); font-style: normal; }
+
+  @media (max-width: 700px) {
+    .container { padding: 1.5rem 0.8rem 3rem; }
+    .label-area { margin-left: 52px; }
+    .tree-row { min-height: 38px; }
+    .clade-name { font-size: 0.9rem; }
+    .tree-row.major .clade-name { font-size: 1.05rem; }
+    .detail-card { margin-left: 52px; }
+    .innovation { font-size: 0.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>Homo sapiens &mdash; A Phylogenetic Lineage</h1>
+    <div class="subtitle">The Path from Animalia to Human, Node by Node</div>
+    <div class="ancestor-path">
+      <span>Animalia</span><span class="arrow">&rarr;</span>
+      <span>Chordata</span><span class="arrow">&rarr;</span>
+      <span>Craniata</span><span class="arrow">&rarr;</span>
+      <span>Vertebrata</span><span class="arrow">&rarr;</span>
+      <span>Osteichthyes</span><span class="arrow">&rarr;</span>
+      <span>Tetrapoda</span><span class="arrow">&rarr;</span>
+      <span>Mammalia</span><span class="arrow">&rarr;</span>
+      <span>Primates</span><span class="arrow">&rarr;</span>
+      <span>Hominidae</span><span class="arrow">&rarr;</span>
+      <span>Homo</span><span class="arrow">&rarr;</span>
+      <span class="end">Homo sapiens</span>
+    </div>
+  </header>
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot major"></div> Major clade node</div>
+    <div class="legend-item"><div class="legend-dot"></div> Intermediate node</div>
+    <div class="legend-item"><span style="color:var(--amber);">&diams;</span> Click to expand details</div>
+  </div>
+
+  <div class="controls-bar">
+    <button class="btn-expand" id="btnExpandAll" onclick="toggleExpandAll()">&dtrif; Expand All Details</button>
+  </div>
+
+  <div class="timeline-scale">
+    <span>600 mya</span><span>500</span><span>400</span><span>300</span><span>200</span><span>100</span><span>0</span>
+  </div>
+
+  <div class="tree" id="tree"></div>
+
+  <div class="footer-note">
+    <em>&#9733;</em> Highlighted nodes = key clades. Click any row to expand details.
+    &nbsp;&middot;&nbsp; mya = million years ago (approximate).
+    &nbsp;&middot;&nbsp; Tree shows the <em>direct lineage</em> path; sister clades and side branches omitted for clarity.
+  </div>
+
+</div>
+
+<script>
+const treeData = [
+  { name: "Animalia",        mya: "~600", major: false,
+    novel: "Multicellular heterotrophs — differentiated tissues, collagen matrix, Hox genes",
+    desc: "Kingdom Animalia — multicellular, heterotrophic eukaryotes with differentiated tissues, an extracellular collagen matrix, and Hox-gene-regulated body plans. The root of all animal life. Sperm + egg sexual reproduction with a blastula embryonic stage. Epithelial cell sheets with basement membranes.",
+    relatives: "Sister to Choanoflagellata (collar-flagellates) — single-celled eukaryotes that form colonies and express cadherins. Fungi + Plants are outside this kingdom entirely." },
+  { name: "Eumetazoa",       mya: "~580", major: false,
+    novel: "True tissues — distinct germ layers (endoderm + ectoderm) from gastrulation",
+    desc: "True tissues organized from distinct embryonic germ layers. The endoderm (gut lining) and ectoderm (skin, nervous system) form during gastrulation. Sponges (Porifera) lack this level of tissue organization — they have specialized cell types but no true germ layers or epithelial sheets.",
+    relatives: "Porifera (sponges) sit outside Eumetazoa as the earliest-branching animals. Ctenophora (comb jellies) placement is debated — they may be sister to all other animals or within Eumetazoa." },
+  { name: "Bilateria",       mya: "~570", major: false,
+    novel: "Bilateral symmetry + cephalization + mesoderm (third germ layer) + coelom",
+    desc: "A body plan with an anterior-posterior axis and left-right mirroring. This enables cephalization — the concentration of sensory organs and a brain at the front end. A third germ layer (mesoderm) appears, enabling muscles, a circulatory system, and a coelom (fluid-filled body cavity lined by mesoderm).",
+    relatives: "Cnidaria (jellyfish, corals, sea anemones) are radially symmetric diploblasts and branch off before Bilateria. Within Bilateria, the protostome-deuterostome split is the next major divide." },
+  { name: "Deuterostomia",   mya: "~550", major: false,
+    novel: "Deuterostomy — blastopore becomes anus (not mouth) + enterocoelic coelom",
+    desc: "In deuterostome embryonic development, the blastopore (first opening) becomes the anus, and the mouth forms secondarily from a new opening. The coelom forms by enterocoely (outpocketing of the archenteron). This developmental pattern defines the entire lineage leading to vertebrates — every chordate is a deuterostome.",
+    relatives: "Protostomes (arthropods, mollusks, annelids, nematodes) — the blastopore becomes the mouth, coelom forms by schizocoely. The protostome-deuterostome split is one of the deepest branches in animal phylogeny." },
+  { divider: true },
+  { name: "Chordata",        mya: "~540", major: true,
+    novel: "Notochord + dorsal hollow nerve cord + pharyngeal slits + post-anal tail",
+    desc: "The four chordate synapomorphies, present at some developmental stage in all members. The notochord is a flexible rod of mesodermal origin that provides structural support; in vertebrates it is largely replaced by the vertebral column, persisting only as the nucleus pulposus of intervertebral discs. The dorsal hollow nerve cord develops from ectoderm and becomes the brain and spinal cord. Pharyngeal slits function in filter feeding and gas exchange; in humans they appear transiently as pharyngeal arches during embryogenesis. The post-anal tail extends past the anus — human embryos have one briefly before apoptosis removes it.",
+    relatives: "Non-vertebrate chordates: Cephalochordata (lancelets) and Tunicata (sea squirts). Echinodermata (starfish, sea urchins) are the closest non-chordate deuterostomes." },
+  { name: "Olfactores",      mya: "~535", major: false,
+    novel: "Olfactory placodes + revised neural crest — tunicates are closest vertebrate relatives",
+    desc: "The clade uniting tunicates + vertebrates. Olfactory (smell) sensory organs appear. Neural crest cells begin to take on their vertebrate-like migratory and differentiative capacity. Tunicates (sea squirts) are actually the closest living relatives of vertebrates — their larvae have a notochord and dorsal nerve cord that are lost at metamorphosis. Molecular phylogenetics firmly places tunicates, not lancelets, as the vertebrate sister group.",
+    relatives: "Cephalochordata (lancelets) branch off just before Olfactores. Tunicata (ascidians, salps, larvaceans) is the sister group to Vertebrata within Olfactores." },
+  { name: "Craniata",        mya: "~530", major: true,
+    novel: "Cranium (skull) + neural crest cells — origin of the vertebrate head",
+    desc: "A protective cartilaginous or bony brain case surrounding the brain and sensory capsules — the origin of the skull. Neural crest cells — sometimes called the 'fourth germ layer' — migrate during development to form the face, jaw, sensory placodes (eye, ear, nose), melanocytes, and much of the peripheral nervous system. The skull is the foundational structure of the vertebrate head: every bone you can touch on your own face and cranium traces its evolutionary origin to this node. Hagfish (Myxiniformes) are craniates: they have a cartilaginous skull but lack true vertebrae. Whether hagfish ancestrally never had vertebrae or secondarily lost them is still debated.",
+    relatives: "Craniata = hagfish + Vertebrata. The hagfish lineage branches off here — they are craniates but may not be true vertebrates. Everything above this node has a skull." },
+  { divider: true },
+  { name: "Vertebrata",      mya: "~525", major: true,
+    novel: "True vertebrae — segmented spinal column of cartilage or bone",
+    desc: "The vertebral column — segmented skeletal elements (centra, neural arches, hemal arches) surrounding and protecting the dorsal nerve cord. This is the backbone proper. In humans, the notochord is largely replaced by the vertebral column during development, persisting only as the nucleus pulposus of intervertebral discs — herniated discs are literally notochord remnants bulging through the vertebral wall. Lampreys (Petromyzontiformes) have rudimentary cartilaginous vertebrae and are the earliest-branching living vertebrates.",
+    relatives: "Vertebrata = lampreys + Gnathostomata (jawed vertebrates). The lamprey lineage branches off here — they have rudimentary vertebrae but no jaws. Our lineage continues through Gnathostomata." },
+  { name: "Gnathostomata",   mya: "~460", major: false,
+    novel: "Articulated jaws + paired pectoral/pelvic fins + adaptive immune system (V(D)J)",
+    desc: "Articulated mandibles derived from the first pharyngeal arch — a transformative innovation that enables active predation, chewing, and a massive expansion of ecological niche. Paired pectoral and pelvic fins (precursors to arms and legs) appear here. The adaptive immune system with V(D)J recombination and immunoglobulins also emerges in gnathostomes. In humans, the jaw joint (temporomandibular) and middle ear bones trace back to the remodeling of gnathostome pharyngeal arches.",
+    relatives: "Agnathans (jawless vertebrates) — lampreys and hagfish — are the only surviving jawless vertebrates. The placoderms (armored jawed fish) are extinct stem-gnathostomes." },
+  { name: "Osteichthyes",    mya: "~420", major: true,
+    novel: "Endochondral (bony) skeleton — mineralized bone (calcium phosphate / hydroxyapatite)",
+    desc: "The 'bony fish' clade. The skeleton mineralizes with calcium phosphate (hydroxyapatite), replacing the cartilaginous model of earlier vertebrates. This is where real bone enters the human lineage — every bone in your body (femur, vertebrae, skull plates, ribs, phalanges) traces its evolutionary origin to this node. Dermal bone (skull roof, clavicle, scales) also appears here, forming via intramembranous ossification directly in the dermis. Lungs (via vascularized outpocketings of the gut) and a lepidotrichial (bony-rayed) fin structure are also osteichthyan features.",
+    relatives: "Chondrichthyes (sharks, rays, skates, chimaeras) retain a cartilaginous skeleton — they are osteichthyans' closest living relatives but lack endochondral bone. Their prismatic 'calcified' cartilage is not true bone." },
+  { name: "Sarcopterygii",   mya: "~415", major: false,
+    novel: "Lobe-fins — muscular fins with central bony axis (homologous to tetrapod limbs)",
+    desc: "Fleshy, muscular fins with a single basal bone articulating with the girdle — the structural precursor to the tetrapod limb. The humerus, radius, ulna, femur, tibia, and fibula are all homologized to sarcopterygian fin bones. Enamel on teeth appears here. Lungs (via modification of the ventral pharyngeal pouch) are present in all sarcopterygians — including coelacanths and lungfish. The cosmoid scale (enamel + dentine + bone layers) is another sarcopterygian feature.",
+    relatives: "Actinopterygii (ray-finned fish) — the vast majority of living fish species (>30,000). Coelacanths (Actinistia) and lungfish (Dipnoi) are the only surviving non-tetrapod sarcopterygians." },
+  { divider: true },
+  { name: "Tetrapoda",       mya: "~390", major: true,
+    novel: "Four weight-bearing limbs with digits (pentadactyl pattern) + neck + sacrum",
+    desc: "The water-to-land transition. Lobe-fins become weight-bearing limbs with wrist (carpals), ankle (tarsals), and multi-jointed digits. The pentadactyl (five-digit) pattern is the ancestral condition and persists across all tetrapod lineages — whale flippers, bat wings, bird wings, and horse hooves are all modified pentadactyl limbs. A neck (cervical vertebrae separating the head from the pectoral girdle) and a sacrum (pelvic girdle fused to the vertebral column for weight transmission) appear here. The stapes (from the hyomandibula) begins functioning in airborne sound conduction. Digits themselves — with their characteristic phalangeal formula (2,3,4,5,4 in early tetrapods) — are the hallmark of this node.",
+    relatives: "Non-tetrapod sarcopterygians: lungfish (Dipnoi) are the closest living relatives. Fossil taxa — Tiktaalik, Acanthostega, Ichthyostega — show the intermediate fin-to-limb transition with evolving wrist joints, digit-like radials, and reducing dermal fin rays." },
+  { name: "Amniota",         mya: "~320", major: false,
+    novel: "Amniotic egg (amnion, chorion, allantois) — reproduce entirely on dry land",
+    desc: "The amniotic egg with three extraembryonic membranes — amnion (protective fluid-filled sac), chorion (gas exchange), and allantois (waste storage) — allows embryonic development entirely on dry land, breaking the final tether to aquatic reproduction. Keratinized, water-resistant skin with β-keratin reduces desiccation. Costal (rib-based) ventilation replaces buccal pumping. The amniote lineage splits almost immediately into Sauropsida (reptiles + birds) and Synapsida (mammals).",
+    relatives: "Lissamphibia (frogs, salamanders, caecilians) must return to water to reproduce and lack the amniotic membranes. They are the sister group to Amniota." },
+  { name: "Synapsida",       mya: "~310", major: false,
+    novel: "Single temporal fenestra — the synapsid (mammal-lineage) skull pattern + differentiated teeth",
+    desc: "A single temporal opening (fenestra) behind each eye socket — the defining skull characteristic of the lineage leading to mammals. The synapsid fenestra allows for larger jaw-closing muscles and is the structural hallmark that distinguishes the mammal lineage from the sauropsid (reptile + bird) lineage. Differentiated dentition (incisors, canines, cheek teeth) begins here. The first synapsids ('pelycosaurs' like Dimetrodon) are traditionally miscalled 'mammal-like reptiles' — they are not reptiles at all but stem-mammals on a completely separate amniote branch.",
+    relatives: "Sauropsida — the other amniote branch, with either two temporal fenestrae (Diapsida: lizards, snakes, crocs, birds) or secondarily none (turtles, now understood as modified diapsids)." },
+  { name: "Therapsida",      mya: "~275", major: false,
+    novel: "Erect limb posture + enlarged dentary + heterodont dentition + partial secondary palate",
+    desc: "A more upright limb posture moves the legs under the body rather than sprawling laterally — more efficient terrestrial locomotion. The dentary (tooth-bearing lower jaw bone) enlarges at the expense of post-dentary bones. Heterodont dentition becomes more refined (incisors, canines, premolars, molars). A partial bony secondary palate begins to form, separating the nasal passage from the mouth and allowing simultaneous breathing and chewing. The therapsids are the 'mammal-like reptiles' par excellence and include our direct cynodont ancestors.",
+    relatives: "Earlier, more basal synapsids ('pelycosaurs,' caseids, varanopids) are outside Therapsida. Within Therapsida: dinocephalians, anomodonts, gorgonopsians, therocephalians, and cynodonts — most groups went extinct in the Permian-Triassic mass extinction (~252 mya)." },
+  { name: "Cynodontia",      mya: "~260", major: false,
+    novel: "Fully differentiated multicusped molars + complete secondary palate + turbinates + probable fur",
+    desc: "A complete bony secondary palate (allowing uninterrupted breathing during prolonged chewing). Multicrowned postcanine teeth with complex occlusal surfaces for efficient food processing. A massively enlarged dentary bone with reduced post-dentary bones — the articular and quadrate bones are shrinking and will eventually become the malleus and incus of the mammalian middle ear. Turbinate bones (respiratory conchae) in the nasal cavity indicate elevated metabolic rate and endothermy. Whiskers (vibrissae) and fur likely appear here. The cynodonts survive the Permian-Triassic extinction and give rise to Mammaliaformes in the Late Triassic.",
+    relatives: "Other therapsid groups (dicynodonts, gorgonopsians, therocephalians) branch off earlier and are all extinct. Cynodontia is the only therapsid lineage to survive into the Mesozoic and give rise to mammals." },
+  { divider: true },
+  { name: "Mammalia",        mya: "~225 stem / ~170 crown", major: true,
+    novel: "Milk (lactation) + fur + endothermy + three middle-ear bones + six-layered neocortex",
+    desc: "The mammalian crown group. Lactation via mammary glands (modified apocrine sweat glands) is the defining and namesake feature — every mammal feeds its young with milk. The dentary-squamosal jaw joint is now the sole jaw articulation; the former articular and quadrate bones have migrated into the middle ear as the malleus and incus, joining the stapes to form a three-ossicle chain for impedance-matched high-frequency hearing. Endothermy (internal metabolic heat production) with fur insulation (α-keratin hair) enables nocturnal and high-latitude activity. A six-layered neocortex (isocortex) with distinct laminar organization supports advanced sensory processing and motor control. A muscular diaphragm facilitates efficient lung ventilation.",
+    relatives: "Monotremata (platypus, echidna) are the earliest-branching living mammals — they lay eggs, lack nipples (milk seeps from mammary patches), and retain a cloaca, but they produce milk, have fur, and are fully endothermic. Marsupials (Metatheria) + placentals (Eutheria) form Theria." },
+  { name: "Theria",          mya: "~160", major: false,
+    novel: "Live birth (viviparity) + tribosphenic molar + nipples + loss of cloaca",
+    desc: "Marsupials + placentals (crown Theria). Viviparity — live birth without an eggshell. The tribosphenic molar — a complex tooth with both a talonid basin for grinding and a trigonid for shearing — enables more efficient food processing. Nipples for concentrated milk delivery evolve here. The cloaca (single urogenital opening) is replaced by separate anal and urogenital openings. The scapula develops a spine for greater shoulder muscle attachment.",
+    relatives: "Monotremes branch off before Theria and retain egg-laying (oviparity), a cloaca, and lack nipples. Within Theria, the marsupial (Metatheria) and placental (Eutheria) split occurs around 160 mya." },
+  { name: "Eutheria",        mya: "~100", major: false,
+    novel: "Chorioallantoic placenta + corpus callosum + scrotum + astragalus/calcaneus ankle",
+    desc: "Placental mammals — extended intrauterine gestation with a chorioallantoic placenta that fuses fetal and maternal tissues for efficient nutrient and gas exchange. The corpus callosum (the major white-matter tract connecting the left and right cerebral hemispheres) appears. The scrotum (external testes for temperature regulation of spermatogenesis) evolves in males. Ankle bones (astragalus + calcaneus) show a distinctive eutherian morphology. Four major superorders radiate after the K-Pg extinction: Afrotheria, Xenarthra, Laurasiatheria, and Euarchontoglires.",
+    relatives: "Metatheria (marsupials) are the sister group to Eutheria — they have a choriovitelline (yolk-sac) placenta and a very short gestation with extended lactation." },
+  { name: "Euarchontoglires", mya: "~85", major: false,
+    novel: "Euarchonta (primates + colugos + treeshrews) + Glires (rodents + lagomorphs) supraordinal clade",
+    desc: "The supraordinal group containing Primates, Dermoptera (colugos), and Scandentia (treeshrews) on one side (Euarchonta), and Rodentia + Lagomorpha on the other (Glires). This grouping was controversial morphologically — treeshrews were once classified as primates — but is now firmly supported by multiple independent molecular datasets (nuclear DNA, mtDNA, retrotransposon insertions). The human lineage runs through Euarchonta.",
+    relatives: "Glires (rodents + lagomorphs — rats, mice, rabbits) are the sister group to Euarchonta within Euarchontoglires. Laurasiatheria (carnivorans, bats, whales, ungulates) is the sister superorder." },
+  { divider: true },
+  { name: "Primates",        mya: "~65", major: true,
+    novel: "Opposable hallux + pollex with nails (not claws) + postorbital bar + expanded brain",
+    desc: "Nails replacing claws on grasping digits with an opposable hallux (big toe) and pollex (thumb) — the grasping foot is the key primate innovation; many arboreal mammals grasp with hands but primates specialize the foot for prehension. A bony postorbital bar encloses the lateral eye socket, providing rigidity for high-acuity depth discrimination (binocular vision itself is ancient — present since the origin of paired vertebrate eyes in early craniates). Olfactory apparatus reduced; visual cortex expanded disproportionately. Increased encephalization quotient (brain:body ratio) relative to other mammals. Long gestation, small litters, extended juvenile period with parental care.",
+    relatives: "Dermoptera (colugos/flying lemurs) are the closest living non-primate relatives. Scandentia (treeshrews) are also in Euarchonta. Within Primates: Strepsirrhini (lemurs, lorises, galagos) vs. Haplorhini (tarsiers + simians)." },
+  { name: "Haplorhini",      mya: "~58", major: false,
+    novel: "Dry hairless rhinarium + retinal fovea + postorbital septum + loss of vitamin C synthesis",
+    desc: "The 'dry-nosed' primates. The rhinarium (wet, hairless nose pad) is lost — the upper lip is freed from the gum (frenulum reduced), enabling complex facial expressions. The retinal fovea centralis (a pit of densely packed cones) enables high-acuity daylight vision at the center of gaze. A partial postorbital septum (bony wall behind the eye) begins to form. The GULO gene for vitamin C synthesis is pseudogenized — all haplorhines require dietary vitamin C. Tarsiers are haplorhines and are closer to monkeys than to lemurs.",
+    relatives: "Strepsirrhini (lemurs, lorises, galagos — 'wet-nosed' primates with a rhinarium and tapetum lucidum for night vision) are the sister group. Tarsiers are the only surviving non-simian haplorhines." },
+  { name: "Simiiformes",     mya: "~45", major: false,
+    novel: "Complete postorbital closure + routine trichromacy + fused mandibular symphysis + larger brain",
+    desc: "Simians (monkeys + apes). The eye socket is now fully enclosed in bone (complete postorbital closure). A diurnal lifestyle with enhanced color vision — routine trichromacy in Old World lineages (from an X-linked opsin gene duplication). The two halves of the lower jaw fuse at the midline (fused mandibular symphysis). Brain size increases significantly relative to body mass. Complex social structures with coalition formation and tactical deception appear.",
+    relatives: "Tarsiers branch off before Simiiformes — they have a partial postorbital septum and lack retinal trichromacy. Simians split into Platyrrhini (New World monkeys) and Catarrhini (Old World monkeys + apes)." },
+  { name: "Catarrhini",      mya: "~35", major: false,
+    novel: "Downward-pointing nostrils + 2.1.2.3 dental formula + routine X-linked trichromacy",
+    desc: "Old World monkeys + apes. Narrow, downward-pointing nostrils with a narrow nasal septum (vs. the wide, sideways-facing nostrils of platyrrhines). Dental formula 2.1.2.3 (two incisors, one canine, two premolars, three molars per quadrant) — having lost one premolar relative to the ancestral 2.1.3.3. Routine trichromatic color vision from a duplication of the X-linked opsin gene (separate from the convergent howler monkey duplication). Ischial callosities (keratinized sitting pads). Ectotympanic bone forms an external auditory tube.",
+    relatives: "Platyrrhini (New World monkeys) — wider, sideways-facing nostrils, three premolars, some with fully prehensile tails. Catarrhini splits into Cercopithecoidea (Old World monkeys) and Hominoidea (apes)." },
+  { name: "Hominoidea",      mya: "~25", major: false,
+    novel: "No external tail + broad shallow ribcage + Y-5 lower molars + brachiating shoulder",
+    desc: "Apes. Complete loss of the external tail — the coccyx (tailbone) is all that remains in humans. A broad, shallow (dorsoventrally compressed) ribcage with the scapulae positioned on the back (dorsally), enabling below-branch suspension and brachiation (arm-swinging). Y-5 lower molar cusp pattern (five cusps separated by a Y-shaped groove). Increased brain-to-body ratio with elaboration of the frontal and parietal lobes. Complex social cognition — mirror self-recognition, tactical deception, and cultural transmission are documented across multiple ape species.",
+    relatives: "Cercopithecoidea (Old World monkeys: macaques, baboons, colobus, langurs) are the sister group — they retain a tail, have a narrow deep ribcage, and bilophodont molars. Hylobatidae (gibbons, siamang) are the earliest-branching living apes." },
+  { divider: true },
+  { name: "Hominidae",       mya: "~15", major: true,
+    novel: "Great ape body plan — large body (>30 kg), no tail, tool use, von Economo neurons",
+    desc: "The great apes (Hominidae). Large body size (>30 kg), marked sexual dimorphism, extended juvenile period (7+ years to weaning in chimpanzees, 2–3× longer in humans), prolonged maternal care, complex fission-fusion social structures with theory of mind, and sophisticated tool use and manufacture (termite fishing, nut cracking, leaf sponges in chimpanzees; stone tools in hominins). The great ape brain shows von Economo (spindle) neurons in the anterior cingulate and frontoinsular cortex, associated with social cognition, empathy, and rapid intuitive decision-making.",
+    relatives: "Hylobatidae (gibbons/siamang — the 'lesser apes') are the sister group to Hominidae. Within Hominidae: Ponginae (orangutans) split first (~15 mya), then Gorillini (gorillas) split (~8 mya), then Hominini." },
+  { name: "Homininae",       mya: "~8",  major: false,
+    novel: "African apes (gorillas + hominins) — post-orangutan divergence, knuckle-walking",
+    desc: "The African ape clade after the orangutan (Ponginae) lineage split. Larger body size, knuckle-walking locomotion (in Gorilla and Pan — possibly independently evolved or secondarily lost in the hominin lineage), more terrestrial ecology compared to the largely arboreal orangutan. The gorilla lineage splits from Hominini around 8 mya, leaving the human-chimpanzee clade.",
+    relatives: "Ponginae (orangutans — Pongo pygmaeus, P. abelii, P. tapanuliensis) split from Homininae around 15 mya. Within Homininae: Gorillini (gorillas) split around 8 mya, leaving Hominini." },
+  { name: "Hominini",        mya: "~6–7", major: false,
+    novel: "Human-chimpanzee clade — LCA at ~7 mya, bipedal adaptations appear soon after split",
+    desc: "The last common ancestor (LCA) of Pan (chimpanzees + bonobos) and Homo lived in Africa around 6–7 mya. The two lineages diverged, likely with minimal gene flow after initial separation. Bipedalism begins to appear in the hominin lineage soon after the split — Sahelanthropus tchadensis (~7 mya) shows a forward-positioned foramen magnum suggesting upright posture, Orrorin tugenensis (~6 mya) has femoral morphology consistent with bipedalism, and Ardipithecus ramidus (~4.4 mya) shows a mosaic of bipedal and arboreal adaptations. Pan retains the ancestral knuckle-walking and arboreal locomotion.",
+    relatives: "Pan (common chimpanzee — P. troglodytes, and bonobo — P. paniscus) is our closest living relative — we share ~98.8% of our DNA. Our lineage from here forward is exclusively hominin." },
+  { divider: true },
+  { name: "Homo",            mya: "~2.8", major: true,
+    novel: "Obligate bipedalism + massive brain expansion + stone tools + fire + language",
+    desc: "The genus Homo. Obligate upright walking with a fully adducted hallux (big toe in line with other toes — no grasping foot), a short, broad pelvis reshaped for bipedal striding and endurance running, lumbar lordosis, and elongated lower limbs. Brain volume expands dramatically — from ~400 cc in australopiths to ~600 cc (H. habilis), ~900 cc (H. erectus), ~1,200 cc (H. heidelbergensis), ~1,350 cc (H. sapiens), and ~1,450 cc (H. neanderthalensis). Oldowan stone tool industry (Mode 1) appears ~2.6 mya. Controlled use of fire by H. erectus ~1.5 mya enabled cooking, which reduced gut size and freed metabolic energy for brain expansion. Language — with a descended larynx enabling a two-tube vocal tract, expanded Broca's and Wernicke's areas, and the human variant of FOXP2 — likely emerges within Homo.",
+    relatives: "Australopithecus (A. afarensis — 'Lucy,' ~3.2 mya; A. africanus; A. sediba) and Paranthropus (robust australopiths) are the closest non-Homo hominins. Within Homo: H. habilis, H. erectus (first to leave Africa), H. neanderthalensis, H. denisova, H. floresiensis, H. luzonensis — all extinct except us." },
+  { name: "Homo sapiens",    mya: "~0.3", major: true,
+    novel: "Anatomically modern humans — chin, globular braincase, symbolic thought, cumulative culture",
+    desc: "Anatomically modern Homo sapiens appears in Africa ~300 kya (Jebel Irhoud, Morocco). A prominent mental eminence (chin) — unique among hominins, possibly related to speech biomechanics. A globular (rounded) braincase with a steep forehead and reduced brow ridges. A gracile, less robust postcranial skeleton. Behavioral modernity — symbolic art (cave paintings, figurines), intentional burials with grave goods, long-distance trade networks, musical instruments, and cumulative cultural evolution (the ratchet effect) — becomes archaeologically visible ~100–50 kya, though the cognitive capacity likely predates the material expression. We are the sole surviving hominin species, carrying 1–2% Neanderthal DNA (Eurasians) and up to 5% Denisovan DNA (Melanesians) from interbreeding events during our expansion out of Africa.",
+    relatives: "H. neanderthalensis (LCA ~600–500 kya; robust, cold-adapted; buried their dead). H. denisova (known from a finger bone, Denisova Cave). H. floresiensis (insular dwarf, Flores). H. luzonensis (Philippines). H. naledi (South Africa — small brain, Homo-like body). All extinct." },
+];
+
+let allExpanded = false;
+
+function toggleExpandAll() {
+  const tree = document.getElementById('tree');
+  const btn = document.getElementById('btnExpandAll');
+  allExpanded = !allExpanded;
+
+  if (allExpanded) {
+    tree.classList.add('all-expanded');
+    btn.innerHTML = '&#x25B3; Collapse All Details';
+  } else {
+    tree.classList.remove('all-expanded');
+    btn.innerHTML = '&#x25B7; Expand All Details';
+  }
+}
+
+/* Render */
+const treeEl = document.getElementById('tree');
+
+treeData.forEach((row, idx) => {
+  if (row.divider) {
+    const div = document.createElement('div');
+    div.className = 'tree-divider';
+    treeEl.appendChild(div);
+    return;
+  }
+
+  const rowEl = document.createElement('div');
+  rowEl.className = 'tree-row' + (row.major ? ' major' : '');
+  rowEl.setAttribute('data-index', idx);
+
+  rowEl.innerHTML =
+    '<div class="node"></div>' +
+    '<div class="branch-line"></div>' +
+    '<div class="label-area">' +
+      '<span class="clade-name">' + row.name + '</span>' +
+      '<span class="mya">' + row.mya + '</span>' +
+      '<span class="innovation">' + (row.novel ? '♦ ' + row.novel : '') + '</span>' +
+      '<span class="expand-icon">▸</span>' +
+    '</div>';
+
+  if (row.desc) {
+    const detail = document.createElement('div');
+    detail.className = 'detail-card';
+    detail.setAttribute('data-detail-for', idx);
+    detail.innerHTML =
+      (row.novel ? '<div class="novelty">♦ ' + row.novel + '</div>' : '') +
+      '<div class="desc">' + row.desc + '</div>' +
+      (row.relatives ? '<div class="relatives"><strong>Context:</strong> ' + row.relatives + '</div>' : '');
+    rowEl.appendChild(detail);
+  }
+
+  rowEl.addEventListener('click', function(e) {
+    if (allExpanded) return;
+    const detailCard = this.querySelector('.detail-card');
+    if (!detailCard) return;
+    const wasOpen = detailCard.classList.contains('open');
+    document.querySelectorAll('.detail-card.open').forEach(function(c) { c.classList.remove('open'); });
+    if (!wasOpen) detailCard.classList.add('open');
+  });
+
+  treeEl.appendChild(rowEl);
+});
+</script>
+
+</body>
+</html>

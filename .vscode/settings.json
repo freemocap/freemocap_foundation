@@ -1,3 +1,19 @@
 {
-    "gitdoc.enabled": false
+    "gitdoc.enabled": true,
+    "spellright.language": [
+        "en-US-10-1."
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "typst"
+    ],
+    "spellright.parserByClass": {
+        "typst": {
+            "parser": "plain"
+        }
+    },
+    "gitdoc.commitValidationLevel": "none",
+    "gitdoc.noVerify": true
 }
