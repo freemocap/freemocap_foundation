@@ -23,34 +23,34 @@
         radius: 1pt,
       )[
         #table(
-          columns: (4em,8em, 8em),
+          columns: (7.5em, 6.5em, 6em),
           align: (left, left, left),
           stroke: none,
           inset: (x: 4pt, y: 2.5pt),
 
           table.header(
-            [*Initials*],
+            [*Collaborator*],
             [*Institution*],
             [*Model*],
           ),
           table.hline(stroke: rule-thick),
 
           // ── Vision / Neuroscience ──
-          [#box[BS] <collab-BS>], [CU Anschutz], [Ferret],
-          [#box[MD] <collab-MD>], [UC Irvine],  [Guinea fowl],
+          [#box[Ben Scholl] <collab-BS>], [CU Anschutz], [Ferret],
+          [#box[Monica Daley] <collab-MD>], [UC Irvine],  [Guinea fowl],
           [#box[DF] <collab-DF>], [CCMH],[Mouse],
-          [#box[AH] <collab-AH>], [UCLA],[Marmoset, NHP],
-          [#box[MH] <collab-MH>], [UT Austin],[Human],
-          [#box[TW] <collab-TW>], [U Cinncinati],[Human],
+          [#box[Alex Huk] <collab-AH>], [UCLA],[Marmoset, NHP],
+          [#box[Mary Hayhoe] <collab-MH>], [UT Austin],[Human],
+          [#box[TW] <collab-TW>], [U Cincinnati],[Human],
           [#box[BF] <collab-BF>], [RPI],[Human],
-          [#box[KB] <collab-KB>], [Indiana Univ.],[Human, NHP],
-          [#box[JY] <collab-JY>], [UC Berkeley], [Human, NHP],
+          [#box[Kate Bonnen] <collab-KB>], [Indiana Univ.],[Human, NHP],
+          [#box[Jake Yates] <collab-JY>], [UC Berkeley], [Human, NHP],
 
           // ── Robotics / Control ──
-          [#box[GN] <collab-GN>], [RAI Institute],[Robotics],
-          [#box[CH] <collab-CH>], [FAMU-FSU],[Robotics],
-          [#box[JH] <collab-JH>], [Agility Robotics],[Robotics],
-          [#box[SH] <collab-SH>], [Cornell],        [Robotics],
+          [#box[Gabe Nelson] <collab-GN>], [RAI Institute],[Robotics],
+          [#box[Chris Huibicki] <collab-CH>], [FAMU-FSU],[Robotics],
+          [#box[Jonathan Hurst] <collab-JH>], [Agility Robotics],[Robotics],
+          [#box[Steve Heim] <collab-SH>], [Cornell],        [Robotics],
 
           table.hline(stroke: rule-thin),
         )

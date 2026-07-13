@@ -151,7 +151,7 @@
     *Quantifying the technology landscape.* Reported error sits on the *quantity measured*, not the
     instrument, tagged by provenance: #fg("open") open and traceable, #fg("closed") closed vendor
     model (uncertainty unknown), #fg("faked") closed and *not truth-preserving* (Xsens fills an
-    out-of-bounds magnetometer yaw with a presumptive data), #fg("target") #smallcaps[Dome] target, and a
+    out-of-bounds magnetometer yaw with presumptive data), #fg("target") #smallcaps[Dome] target, and a
     blue #text(fill: cBuild, weight: "bold")[?] for what no instrument measures yet. Mobile eye
     trackers resolve head-frame gaze to 0.6° (Tobii Pro Glasses 3), ≈1° (AdHawk MindLink), and
     1.3–1.8° (Pupil Labs Neon), but none measure ocular torsion or accommodation, and the camera–IMU

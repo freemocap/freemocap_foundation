@@ -76,7 +76,7 @@
     table.hline(stroke: 0.9pt + ink),
   ),
   kind: table, supplement: [Table],
-  caption: [Tech Readiness Ladder(TRL): Concept (2) · PoC (3) · Breadboard (4) · Prototype (5–6) · Validated (7) · Operational (8–9)],
+  caption: [Tech Readiness Ladder (TRL): Concept (2) · PoC (3) · Breadboard (4) · Prototype (5–6) · Validated (7) · Operational (8–9)],
   ) <tbl-milestones>]
 }
 
