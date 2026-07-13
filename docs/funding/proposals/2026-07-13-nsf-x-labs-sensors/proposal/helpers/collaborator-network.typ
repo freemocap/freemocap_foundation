@@ -55,7 +55,7 @@
           table.hline(stroke: rule-thin),
         )
         #context [
-          #text(size: 9pt)[
+          #text(size: 8pt)[
             #text(weight: "bold")[Table #counter(figure.where(kind: table)).get().first(): ]
             Collaborator network.
           ]
