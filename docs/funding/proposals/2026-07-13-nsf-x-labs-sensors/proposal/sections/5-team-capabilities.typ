@@ -17,7 +17,7 @@ Building the #Dome demands expertise no single faculty could assemble: the work 
 
 *Governance and autonomy.* The FreeMoCap X-Lab (FMC-X) operates as an independent project within the FreeMoCap Foundation, a 501(c)(3) whose leadership and mission nearly fully overlap it. Final authority rests with the President/PI, so research, partnership, and hiring decisions are made in days rather than weeks. The Foundation is already autonomous at submission — full internal control of research, funding, partnerships, IP, and hiring with no parent-institution approval required — and satisfies every condition of the NSF X-Labs Autonomy Factor Test (§6.1.1). Phase 0 is the runway over which the remaining leaders go full-time; the PI and CSO already are.
 
-*Network, partnerships, and community.* A standing, active network of research groups already spans every domain the #Dome serves — human perception-and-action researchers, robotics and prosthetics groups, visual neuroscientists working in ferret and mouse, musculoskeletal biomechanists working in guinea fowl, and primate electrophysiologists (@tbl-collaborators).
+*Network, partnerships, and community.* An active network of research groups already spans every domain the #Dome serves — human perception-and-action researchers, robotics and prosthetics groups, visual neuroscientists working in ferret and mouse, musculoskeletal biomechanists working in guinea fowl, and primate electrophysiologists (@tbl-collaborators).
 
 #grid(
   columns: (145pt, 1fr),
