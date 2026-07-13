@@ -85,7 +85,7 @@
 #set par.line(numbering: if DRAFT_MODE { "1" } else { none })
 #set heading(numbering: "1.", supplement: [§])
 
-#show heading.where(level: 1): set block(above: 0em, below: 0.6em)
+#show heading.where(level: 1): set block(above: 1em, below: 0.6em)
 #show heading.where(level: 1): set text(weight: "bold", size: 12pt)
 #show heading.where(level: 2): set block(above: 0.8em, below: 0.5em)
 #show heading.where(level: 2): set text(weight: "bold", size: 12pt)
@@ -111,11 +111,15 @@
 // ── Sections ──
 
 #include "sections/1-mission.typ"
+#pagebreak()
 #include "helpers/figure-page.typ"
-#include "helpers/dome-sensor-estimate-model/dome-chain-compact.typ"
-#include "helpers/templates/milestones-matrix.typ"
+
 #include "sections/2-technology-landscape.typ"
+#pagebreak()
 #include "sections/3-outcomes.typ"
+#pagebreak()
 #include "sections/4-personnel.typ"
+#pagebreak()
 #include "sections/5-team-capabilities.typ"
+#pagebreak()
 #bibliography("FMCF-NSF-XLABS.bib", style: "nature") 
