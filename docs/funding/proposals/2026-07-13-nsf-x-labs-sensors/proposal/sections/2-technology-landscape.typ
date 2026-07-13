@@ -48,9 +48,3 @@
     - Simulation has advanced rapidly (MuJoCo, Isaac Lab, Genesis), but sim-to-real transfer remains the critical barrier.
     - The missing resource is ground-truth, uncertainty-tagged, multimodal recordings of real agents in real environments.
     - Existing datasets (Human3.6M, AMASS, GRAB) are single-modality, lab-constrained, or lack uncertainty quantification.
-
-== Quantitative landscape figure
-
-- A single figure will locate current capability against the DOME's target.
-    - For each modality, plot current commercial and academic capability against the DOME's target, with the "uninstrumented region" highlighted.
-    - Axes: spatial precision, temporal synchronization quality, degrees of freedom captured, and usability/deployability.

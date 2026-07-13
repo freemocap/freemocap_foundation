@@ -18,16 +18,39 @@
 // - We have already built a working animal-scale version of this instrument.
 //     - The team's ferret and mouse eye trackers already integrate three-camera gaze, full-body kinematics, and world cameras in one calibrated system — a working animal-scale instance of the flagship instrument — and the human, mouse, and ferret builds are being made functionally equivalent so the same measurement crosses species.
 
+#import "../helpers/shared.typ": semibold, Dome, Domes, Dome-Mobile
+
 
 = Outcomes
+We will create a flag ship facility in the Greated Boston area, and then use it to build 3 #Dome variants, selected to provide cross validation method to develop and validate different kinds of #Domes. Specifically - #Dome-L is large auto-calibrating space big enough to hold smaller #Domes within it. teh #Dome-static variant is an extension of the volumes we make in FreeMoCap, the kind of thing we would expect to put in a lab or classroom. WE also will choose a space large enough to run #Dome-Mobile variants, which allows us to develop and validate that system indoors before moving outdoors where validation becomes much harder. 
 
-== DOME-L flagship facility
 
+We continually fan out our work to the collaborator network - working with each collaborator to build their own system specific to their research direction, and then validate relative to our core cross-validation network. 
+
+We build the initial DOME variants with off-the-shelf equipment (e.g. Pupil), and then build new iterations of each of the sub-instruments prioritized on things that are bottlenecks to our resarch. We specifically target the abilty to estimate the retinal projected input accurately enough to predict neural activitym which we'll  define by saying we need to be able to predict the retinal projection of a world object with an accuracy of 1-degree at the fovea (when looking at a point on the ground at a 45-degree angle). We have already charcterized joint-angle accuracy in freemocap (cite: aaron's disseration) so we can combine that with the reported errors of commercial eye trackers to define our uncertainty budget. 
+
+We need to build a new eye tracker, beucase no existing eye tracker can measure torsion, and that directly corrupts the Curl dimension of retinal optic flow, which is a research target per @Matthis2022 . 
+
+ In all the #Domes we build, assume the person or persons tracked will be tracked by full-body mocap (camera-based, imu-based, or hybrid-both), and wearing an eye tracker (either a pupil labs tracker to start, then our new custom system later)
+
+== FMC-X flagship facility
+
+- Main Facility - Combined office and warehouse space in Greater Boston area with attached outdoor space for #Dome-Mobile testing
+    - Office space for full time staff
+    - Mutlipurpose conference rooms for meetings, classes, and lectures
+    - Ad hoc lab space
+    - Office/Lab space for visiting scholars
+    - Fabrication facility and workshop
+  
 - DOME-L is a warehouse-scale instrumented volume in the greater Boston area.
-    - Specs: configurable capture volume up to [TBD] m³, [N] actuated cameras, a modular force-plate floor array (each 0.5 m² panel a force plate, terrain panel, LED panel, or stacked combination), integrated ARGPv3 (LED floor + wall panels, projection, VR), and adjacent animal and fabrication facilities.
+    - Specs: configurable capture volume targetting a 20mx30mx10m(tall) space, grid of rails on the wall allo placement of cameras on a 1m grid. Ground is laser-leveled raised panel flooring, allowing modular force-plate floor array (each 0.5 m² panel a force plate, terrain panel, LED panel, or stacked combination).
+    - Consists of a distrbuted array of Centrally Controllable Cameras {ref - below}, daisy chained by PoE connections to control centrally. Can centrally define a desired capture volume, and the system can automatically configure for different spaces and levels of coverage [TODO - ref back to the 'self-driving' ai training systems from the proposal]. 
+    - This array solves the central practical bottlenck to large mocap spaces - its so labor intensive to align that in practrice the cameras are set once and never move. 
+        - This system allows for flexible defining lower coverage over wide spaces or tight coverage over small spaces. BBecause each camera will pan, tilt, roll extrinsics control and zoom, apperature, focus control of intrinisics, we can craete auto-benchmarking systems to train next gen models of camera pose detection and multi-camera reconstructions and calibration-aware LLMs that can diagnose camera problems from raw inputs. Also, offer advice for best operational pracices
+        - We can link up drone swarms to auto-configuring camrea array, and the groups can auto-run experiemtns, like, drones fly and camera try to track them in dfferent configurations, and we learn about best ways to cover differetn kinds of spaces nad movements. 
     - Phase 0 deliverable: site selection, facility design, and initial build-out.
     - Phase 1 deliverable: an operational DOME-L able to cross-validate DOME-S and DOME-Mobile.
-    - KPI: inter-sensor synchronization jitter, end-to-end spatial uncertainty on a reference object, and reprojection error on a standardized movement corpus.
+    - KPI: Same validations that Aaron dissertation, extended to overground and multi-person
 
 == DOME-S dissemination
 
@@ -35,7 +58,7 @@
     - Phase 0: validate DOME-S against DOME-L on a standardized movement battery, establish a calibration protocol any lab can follow, and publish a build guide and parts list.
     - Phase 1: deploy DOME-S at [N] collaborator sites spanning human biomechanics, robotics, visual neuroscience, and clinical applications.
     - KPI: number of deployed and validated DOME-S instances, kinematic accuracy against the DOME-L reference, and inter-site measurement comparability.
-        - SPECIFIC TARGET - 510(k) certification of FreeMoCap and DOME instrument as FDA certified for clinical rehab and assessment
+        - SPECIFIC TARGET - 510(k) certification of FreeMoCap and DOME instrument as FDA certified for clinical rehab and assessment. Let that validation system drive development and protocols. 
 
 == DOME-Mobile wearable
 
@@ -93,10 +116,3 @@
     - Phase 0: establish calibration and data-exchange protocols with ferret (visual neuroscience + ephys), mouse (systems neuroscience + miniscope), guinea fowl (musculoskeletal biomechanics + EMG), and marmoset (primate electrophysiology) labs.
     - Phase 1: deploy functionally equivalent DOME-S instances at each site and validate cross-species measurement comparability.
     - KPI: number of validated cross-species measurement channels, and inter-species kinematic-model alignment quality.
-
-== Milestone timeline
-
-- The milestones compound across phases, from components to an operating network.
-    - Phase 0 (9 months): DOME-L site selection and design, eye-tracker bench prototype, actuated-array prototype, camera↔IMU fusion algorithm, reprojection pipeline v1, DOME-S validation protocol, and collaborator MOUs.
-    - Phase 1 Go/No-Go (month 7–9): demonstrated components, a validated calibration chain, and signed collaborator agreements.
-    - Phase 1 (24–36 months): operational DOME-L, validated DOME-S at collaborator sites, validated DOME-Mobile, mobile eye tracker v1, actuated array in DOME-L, real-time fusion, robot RL corpus v1, ARGPv3 operational, and cross-species data exchange operational.
