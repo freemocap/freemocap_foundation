@@ -5,8 +5,10 @@
 // solicitation §10.2). Self-contained — compile on its own:
 //   typst compile proposal/coi.typ
 //
-// Real names used per submission requirement. Content assessment: no actual or
-// potential conflicts identified; outside affiliations disclosed for transparency.
+// NOTE: this working copy uses INITIALS (privacy). Swap in real names from the
+// local .env before compiling the submission PDF (real names are a submission
+// requirement). Content assessment: no actual or potential conflicts identified;
+// outside affiliations disclosed for transparency.
 
 // ── Page Setup (mirrors main.typ submission styling) ──
 #set page(
@@ -101,37 +103,37 @@ supplier, subcontractor, or competitive relationship to the proposed work.
   [None. Former tenure-track faculty, Northeastern University (resigned). NIH NEI K99/R00 awardee (EY028229), now concluded.],
   [No conflict. No outside employment or financial interest tied to the award.],
 
-  [Aaron Cherian, PhD\ Chief Scientific Officer],
+  [AC, PhD\ Chief Scientific Officer],
   [Full-time],
   [None reported.],
   [No conflict.],
 
-  [Nikki Rostellan\ Chief Executive Officer],
+  [NR\ Chief Executive Officer],
   [Transitioning to full-time by Phase 1],
   [Software engineering (Rapid7); co-founder, MailLift (API startup). Unrelated industries.],
   [No conflict. Outside roles are in general software; no overlap with DOME scope; winds down on transition.],
 
-  [Endurance Idehen\ Chief Technology Officer],
+  [EI\ Chief Technology Officer],
   [Part-time; transitioning to full-time by Phase 1],
   [Concurrent CTO, Chorus Innovations (enterprise software / health-tech platform). Former Principal Architect, Unqork.],
   [No conflict. Enterprise-software domain, not instrumentation; no supplier/competitor relationship; time commitment managed under §4.],
 
-  [John K. Lindstedt, PhD\ Chief AI Officer],
+  [JKL, PhD\ Chief AI Officer],
   [Transitioning to full-time by Phase 1],
   [Applied AI Architect, SOLID Inc. (applied-AI consulting).],
   [No conflict. Unrelated applied-AI work; no overlap with DOME scope.],
 
-  [Ryan Rose\ Chief Financial Officer / Treasurer],
+  [RR\ Chief Financial Officer / Treasurer],
   [Part-time (volunteer CFO)],
   [Founder, Capital Bookkeeping Cooperative; Controller, Honest Weight Food Co-op; Adjunct Professor of Accounting, University at Albany.],
   [No conflict. Accounting/finance and academic roles unrelated to the technical scope; no financial interest in project outcomes.],
 
-  [Karl Muller, PhD\ Project Manager, DOME-Mobile],
+  [KM, PhD\ Project Manager, DOME-Mobile],
   [Transitioning to full-time by Phase 1],
   [Senior Data Scientist, SynMax (energy-sector data analytics).],
   [No conflict. Energy-analytics employer is outside the instrumentation domain; no supplier/competitor relationship.],
 
-  [Michael Nguyen\ Project Manager, DOME-L],
+  [MN\ Project Manager, DOME-L],
   [Transitioning to full-time by Phase 1],
   [None reported.],
   [No conflict.],

@@ -26,7 +26,7 @@
 }
 
 // #skp("KM") -> linked initials, jumping to that person's bullet in §4.
-// Second arg lets a caller override the visible text, e.g. #skp("KM", shown: [Karl Muller, PM]).
+// Second arg lets a caller override the visible text, e.g. #skp("KM", shown: [KM, PM]).
 #let skp(id, shown: none) = link(label("skp-" + id))[#if shown == none [#id] else [#shown]]
 
 // #collab("MH") -> linked initials, jumping to that collaborator's row in the

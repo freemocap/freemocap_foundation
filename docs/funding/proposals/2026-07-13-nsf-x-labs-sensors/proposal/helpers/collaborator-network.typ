@@ -29,28 +29,28 @@
           inset: (x: 4pt, y: 2.5pt),
 
           table.header(
-            [*Collaborator*],
+            [*Initials*],
             [*Institution*],
             [*Model*],
           ),
           table.hline(stroke: rule-thick),
 
           // ── Vision / Neuroscience ──
-          [#box[Ben Scholl] <collab-BS>], [CU Anschutz], [Ferret],
-          [#box[Monica Daley] <collab-MD>], [UC Irvine],  [Guinea fowl],
-          [#box[Diego Fernandez] <collab-DF>], [CCMH],[Mouse],
-          [#box[Alex Huk] <collab-AH>], [UCLA],[Marmoset, ],
-          [#box[Mary Hayhoe] <collab-MH>], [UT Austin],[Human],
-          [#box[Trenton Wirth] <collab-TW>], [U Cincinnati],[Human],
-          [#box[Brett Fajen] <collab-BF>], [RPI],[Human],
-          [#box[Kate Bonnen] <collab-KB>], [IU],[Human, NHP],
-          [#box[Jake Yates] <collab-JY>], [UC Berkeley], [Human, NHP],
+          [#box[BS] <collab-BS>], [CU Anschutz], [Ferret],
+          [#box[MD] <collab-MD>], [UC Irvine],  [Guinea fowl],
+          [#box[DF] <collab-DF>], [CCMH],[Mouse],
+          [#box[AH] <collab-AH>], [UCLA],[Marmoset, ],
+          [#box[MH] <collab-MH>], [UT Austin],[Human],
+          [#box[TW] <collab-TW>], [U Cincinnati],[Human],
+          [#box[BF] <collab-BF>], [RPI],[Human],
+          [#box[KB] <collab-KB>], [IU],[Human, NHP],
+          [#box[JY] <collab-JY>], [UC Berkeley], [Human, NHP],
 
           // ── Robotics / Control ──
-          [#box[Gabe Nelson] <collab-GN>], [RAI Institute],[Robotics],
-          [#box[Chris Huibicki] <collab-CH>], [FAMU-FSU],[Robotics],
-          [#box[Jonathan Hurst] <collab-JH>], [Agility Robotics],[Robotics],
-          [#box[Steve Heim] <collab-SH>], [Cornell],        [Robotics],
+          [#box[GN] <collab-GN>], [RAI Institute],[Robotics],
+          [#box[CH] <collab-CH>], [FAMU-FSU],[Robotics],
+          [#box[JH] <collab-JH>], [Agility Robotics],[Robotics],
+          [#box[SH] <collab-SH>], [Cornell],        [Robotics],
 
           table.hline(stroke: rule-thin),
         )
