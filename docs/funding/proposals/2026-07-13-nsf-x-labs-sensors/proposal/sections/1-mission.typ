@@ -18,12 +18,6 @@ Develop and disseminate a new class of scientific instrument called a #semibold(
   inset: (x: 0.5em, y: 0.5em),
 )[#mission_statement]
 
-// COMPACTED 2026-07-13 → single green block below; original three paragraphs commented:
-// *A New Observable — The Sensorimotor Loop.* Every agent, living or engineered, must solve the same problem - sense a thin slice of available energy in the environment through a limited set of imperfect transducers and on its basis press against the world to propel itself in the direction of its goals. Information flows in, forces flow out; the brain exists to yank the bones around.
-
-// We can measure individual components of this loop with extraordinary precision progressing at the rate of our technology. Camera and IMU based motion capture can track the kinematics of the body, force plates measure the kinetic forces between the body and world. Outward facing cameras can measure the world, and inward facing cameras can track the eyes. For humans, EEG nets and surface EMG record coarse records of patterns of neural activity in the cortex and musculoskeletal system. In animal models, dense electrode arrays resolve the same signals to the precision of individual spikes of neurons and motor units.  
-
-// And yet, despite the extraordinary precision and progress along these individual threads of measurement, access to the coherent whole representing the shared observational context that each of these tools illuminates remains elusive. Occasionally, a research team will reach across disciplinary divides and stitch several threads together for heroic integrative studies, but the methods rarely escape the Methods sections of a small cluster of publications spanning roughly the timescale of a single PhD. 
  
 
 *A New Observable — The Sensorimotor Loop.* Every agent, living or engineered, solves the same problem: sense a thin slice of the world's energy through imperfect transducers and, on that basis, push against the world to move toward its goals — information in, forces out; the brain exists to yank the bones around. We can already measure each component of this loop with extraordinary, ever-improving precision: camera and IMU motion capture for body kinematics, force plates for body–world forces, outward- and inward-facing cameras for the scene and the eyes, EEG and surface EMG for coarse neural and muscular activity in humans, and dense electrode arrays resolving individual spikes in animals. Yet the coherent whole — the shared context each tool illuminates — stays out of reach: occasionally a team stitches several threads together for a heroic integrative study, but the method rarely escapes the Methods section of a few papers spanning a single PhD.
@@ -31,10 +25,7 @@ Develop and disseminate a new class of scientific instrument called a #semibold(
 We need a new organization that exists outside of the siloed domains of the Academia that dedicates itself to the #smallcaps[measurement], the development and dissemination of world-class, convivial tools and novel skillsets to explore the landscape the capacity unlocks. That organization is the #semibold[FreeMoCap X-Lab] [FMC-X]. We have already changed the landscape human-focused research by bringing high-quality motion capture to a global community. With the support of the NSF X-Labs program, we will change the face of science itself.
 
 
-
-
-*A New Instrument — Building the #Dome.* A #Dome is a densely instrumented region of real space engineered to (at some aspirational extreme) record every measurable channel of the agent–environment interaction. In practice, a given #Dome carries only a subset of the available instrumentation, yet all #Domes produce the same output. A #Dome is defined by the ontology of its domain rather than its current instruments. A metrologically-grounded record of canonical models definied by their degrees of freedom, which maybe unspecied or hydrated by measurements from whatever instruments are present. A reconstructed `Skull` is assumed to carry `Eye`s whether or not an eye tracker measured them, and a `RetinalInput` or `RigidBody` denotes the same quantity whether it came from a human, a ferret, or a marmoset (See @sec-outcomes and @tbl-collaborators).
-
+*A New Instrument — Building the #Dome.* A #Dome is a densely instrumented region of real space engineered to (at some aspirational extreme) record every measurable channel of the agent–environment interaction. In practice, a given #Dome carries a subset of the available instrumentation, yet all #Domes produce the same output. A #Dome is defined by the ontology of its domain rather than its current instruments. A metrologically-grounded record of canonical models definied by their degrees of freedom (DoF), which are hydrated by measurements from whatever instruments are present. A reconstructed `Skull` is assumed to have `Eye`s whether or not an eye tracker measured them, and a `RetinalInput` or `RigidBody` denotes the same quantity whether it came from a human, a ferret, or a marmoset (See @sec-outcomes and @tbl-collaborators).
 
 
 *The New Capability.* The same #semibold[Sensor-Grounded Ontology] that lets heterogeneous #Domes share one schema makes the instrument legible to both people and machines: explicit entities and relationships, and typed, grounded data over which a model can build reliable reasoning chains rather than guess at unlabeled streams. That clarity lets a #Dome route its live streams and logs through a local model to assist novices, experts, and developers alike, and lets published results tag back into one shared entity–relationship structure that connects them to the wider body of science.
@@ -53,7 +44,21 @@ We will build the #Dome - The opposite of a space telescope. An empty volume of 
 
 #figure(
   placement: auto,
-  image("../media/2026-07-13-FMC-NSF-XLab-Hero-Figure.png", width: 65%),
-  caption: [*A Densely Overlapping Measurement Environment (#Dome).* The flagship #smallcaps[Dome-L] physically contains the disseminated #smallcaps[Dome-S] and wearable #Dome-Mobile forms, calibrating every variant against one reference. A centrally controllable camera array and modular force/LED/terrain floor tiles feed calibrated eye, body, world, and force streams into a single model of the sensorimotor loop — segment kinematics, gaze-in-world, and reconstructed retinal input — closing an analysis-to-hypothesis-to-experiment loop inside the same instrument that measures it.],
+  // Caption runs in a column BESIDE the image (grid), instead of below it — mirrors
+  // the §5 collaborator table. caption: none + manual "Fig. N:" label so the figure
+  // is still numbered and @fig-hero still resolves.
+  grid(
+    columns: (1fr, 0.72fr),
+    column-gutter: 1.1em,
+    align: (center + horizon, left + horizon),
+    image("../media/2026-07-13-FMC-NSF-XLab-Hero-Figure.png", width: 100%),
+    [
+      #set text(size: 9pt)
+      #set par(leading: 0.5em, first-line-indent: 0pt)
+      #context [*Fig. #counter(figure.where(kind: image)).get().first(): A Densely Overlapping Measurement Environment (#Dome).* The flagship #smallcaps[Dome-L] physically contains the disseminated #smallcaps[Dome-S] and wearable #Dome-Mobile forms, calibrating every variant against one reference. A centrally controllable camera array and modular force/LED/terrain floor tiles feed calibrated eye, body, world, and force streams into a single model of the sensorimotor loop — segment kinematics, gaze-in-world, and reconstructed retinal input — closing an analysis-to-hypothesis-to-experiment loop inside the same instrument that measures it.]
+    ],
+  ),
+  kind: image,
+  caption: none,
 ) <fig-hero>
 
