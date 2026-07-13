@@ -150,7 +150,7 @@
     *Quantifying the technology landscape.* Reported error sits on the *quantity measured*, not the
     instrument, tagged by provenance: #fg("open") open and traceable, #fg("closed") closed vendor
     model (uncertainty unknown), #fg("faked") closed and *not truth-preserving* (Xsens fills an
-    out-of-bounds magnetometer yaw with a model fit), #fg("target") #smallcaps[Dome] target, and a
+    out-of-bounds magnetometer yaw with a presumptive data), #fg("target") #smallcaps[Dome] target, and a
     blue #text(fill: cBuild, weight: "bold")[?] for what no instrument measures yet. Mobile eye
     trackers resolve head-frame gaze to 0.6° (Tobii Pro Glasses 3), ≈1° (AdHawk MindLink), and
     1.3–1.8° (Pupil Labs Neon), but none measure ocular torsion or accommodation, and the camera–IMU
@@ -158,8 +158,7 @@
     (±1–2°), markerless keypoints (2–6°, @cherian2026), and photogrammetric scene geometry
     (≈3 cm ≈ 0.5°), the only published end-to-end eye + IMU + world method — this team's own prior
     work — reaches ±1° calibrated and ±2–3° in natural walking (@matthis2018 @muller2023), against
-    the sub-1° needed to predict the neural activity it drives. No existing toolchain delivers sub-1°
-    gaze-in-world with a propagated uncertainty budget — the #smallcaps[Dome] goal.
+    the sub-1° needed to predict the neural activity it drives. 
   ],
 ) <fig-landscape-quantified>]
 

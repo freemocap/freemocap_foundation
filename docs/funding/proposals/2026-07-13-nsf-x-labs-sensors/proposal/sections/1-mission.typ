@@ -26,16 +26,12 @@ Develop and disseminate a new class of scientific instrument called a #semibold(
 // And yet, despite the extraordinary precision and progress along these individual threads of measurement, access to the coherent whole representing the shared observational context that each of these tools illuminates remains elusive. Occasionally, a research team will reach across disciplinary divides and stitch several threads together for heroic integrative studies, but the methods rarely escape the Methods sections of a small cluster of publications spanning roughly the timescale of a single PhD. 
  
 
-#suggestion()[
 *A New Observable — The Sensorimotor Loop.* Every agent, living or engineered, solves the same problem: sense a thin slice of the world's energy through imperfect transducers and, on that basis, push against the world to move toward its goals — information in, forces out; the brain exists to yank the bones around. We can already measure each component of this loop with extraordinary, ever-improving precision: camera and IMU motion capture for body kinematics, force plates for body–world forces, outward- and inward-facing cameras for the scene and the eyes, EEG and surface EMG for coarse neural and muscular activity in humans, and dense electrode arrays resolving individual spikes in animals. Yet the coherent whole — the shared context each tool illuminates — stays out of reach: occasionally a team stitches several threads together for a heroic integrative study, but the method rarely escapes the Methods section of a few papers spanning a single PhD.
-]
 
 // CONDENSED 2026-07-13 → green block below. Original:
 //   We need a new organization that exists outside of the siloed domains of the Academia that dedicates itself to the #smallcaps[measurement], the development and dissemination of world-class, convivial tools and novel skillsets to explore the landscape the capacity unlocks. That organization is the #semibold[FreeMoCap X-Lab] [FMC-X]. We have already changed the landscape human-focused research by bringing high-quality motion capture to a global community. With the support of the NSF X-Labs program, we will extend our mission and change the face of science.
 
-#suggestion()[
 The measurement needs an organization of its own, outside academia's silos: the #semibold[FreeMoCap X-Lab] [FMC-X], which has already brought high-quality motion capture to a global community and, with NSF X-Labs support, will extend that reach across the science of behavior.
-]
 
 *A New Instrument — Building the #Dome.* A #Dome is a densely instrumented region of real space engineered to (at some aspirational extreme) record every measurable channel of the agent–environment interaction. In practice, a given #Dome carries only a subset of the available instrumentation, yet all #Domes produce the same output. A #Dome is defined by the ontology of its domain rather than its current instruments. A metrologically-grounded record of canonical models definied by their degrees of freedom, which maybe unspecied or hydrated by measurements from whatever instruments are present. A reconstructed `Skull` is assumed to carry `Eye`s whether or not an eye tracker measured them, and a `RetinalInput` or `RigidBody` denotes the same quantity whether it came from a human, a ferret, or a marmoset (See @sec-outcomes and @tbl-collaborators).
 
@@ -45,9 +41,7 @@ The measurement needs an organization of its own, outside academia's silos: the 
 // *The New Capability.* The same #semibold[Sensor-Grounded Ontology] that lets heterogeneous #Domes express their measurements in one shared schema makes the instrument legible to a human — explicit entities, formalized relationships, and explicit chains of reasoning from sensors to cannonincal objects — also makes  natively legible to a machine: typed, grounded data over which a model can build reliable reasoning chains rather than guessing at unlabeled streams. By treating complexity management as a first-order concern; a #Dome gains a clarity of expression that lets it route its live streams and logs through a local model to assist novices, experts, and developers alike, and that lets published results tag back into one shared entity–relationship structure connecting them to the wider body of science.
 // n its own.   (stray fragment removed)
 
-#suggestion()[
 *The New Capability.* The same #semibold[Sensor-Grounded Ontology] that lets heterogeneous #Domes share one schema makes the instrument legible to both people and machines: explicit entities and relationships, and typed, grounded data over which a model can build reliable reasoning chains rather than guess at unlabeled streams. That clarity lets a #Dome route its live streams and logs through a local model to assist novices, experts, and developers alike, and lets published results tag back into one shared entity–relationship structure that connects them to the wider body of science.
-]
 
 *Unmet Needs.* Building a scientific instrument is a distinct craft, not a byproduct of domain expertise. Integrated measurement is repeatedly scoped as a student side-project and abandoned when it proves to to require a career of engineering rather than a semester of it, and even its successes rarely outlive the trainee who built them. By Conway's Law, an enterprise of domain-named departments, journals, and grants tends to produce only domain-scoped instruments — never the sustained metrology that turns a proof of concept into shared infrastructure. A tool defined by a measurement rather than a domain unites everyone who needs it and becomes a commons precisely because it imposes none of their goals. The measurement therefore needs its own organization, scoped to the instrument and staffed to maintain it for years — what the X-Labs model exists to fund and a university appointment cannot sustain.
 
@@ -59,9 +53,7 @@ The measurement needs an organization of its own, outside academia's silos: the 
 
 // We will build the #Dome - The opposite of a space telescope. An empty volume of lenses focused inward on where the body meets the world. We will build a new observable and share it broadly to anyone that wants it. We will change our understanding of ourselves, and the ways we interact with the world.
 
-#suggestion()[
 *The Vision.* This proposal is a grand acceleration of the movement FreeMoCap has fostered since 2021, and there is no upper limit to our ambition. The global spread of the software already shows the world's hunger for this kind of tool, and we intend to feed it — a #Dome in every research lab, classroom, clinic, and athletic facility; wearable #Dome-Mobile systems that bring lab-quality data to humans and animals in the field; and zoo enclosures turned into around-the-clock behavior labs. The analogy we hold in mind is the Internet, which reshaped the world not by making any computer faster but by giving them a shared protocol to relate to one another — turning disparate machines into a network that changed what it means to be human. The #Dome is the opposite of a space telescope: an empty volume of lenses focused inward on where the body meets the world. We will build a new observable, share it with anyone who wants it, and change how we understand ourselves and act in the world.
-]
 
 #figure(
   image("../media/2026-07-13-FMC-NSF-XLab-Hero-Figure.png", width: 80%),

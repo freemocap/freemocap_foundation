@@ -7,7 +7,7 @@
 //   Technical rows use a fixed maturity ladder tied to TRL —
 //     Concept(2) · PoC(3) · Breadboard(4) · Prototype(5–6) · Validated(7) · Operational(8–9)
 //   (= the hardware analogue of PoC → MVP → alpha → beta → release)
-//   Org rows are NOT technical maturity → they show operational deliverables.
+//   Org rows are NOT technical development → they show operational deliverables.
 // ══════════════════════════════════════════════════════════════════════
 
 #import "../shared.typ": semibold, Dome
@@ -60,10 +60,10 @@
     it[Camera array], e, s(cBody, [PoC-Breadboard]), s(cBody, [Prototype -> Validated]), sl(cBody, [Operational]),
     it[IMU↔camera fusion], hv[FMC mocap], s(cBody, [PoC]), s(cBody, [Prototype]), sl(cBody, [Validated]),
 
-    grp(cEye, [Eye — technical maturity]),
+    grp(cEye, [Eye — technical development]),
     it[Dense Array Eye tracker], e, s(cEye, [PoC - Breadboard]), s(cEye, [Prototype-Validated]), sl(cEye, [Operational]),
 
-    grp(cWorld, [World — technical maturity]),
+    grp(cWorld, [World — technical development]),
     it[Dense Array World-scanner], e, s(cWorld, [PoC - Breadboard]), s(cWorld, [Prototype-Validated]), e,
     it[Actuated floor (force·LED·terrain)], hv[v1], s(cWorld, [PoC]), s(cWorld, [Prototype]), sl(cWorld, [Validated]),
     it[Drone Swarm Mocap], e, e, sl(cWorld, [Concept-PoC]), sl(cWorld, [PoC-Validated]),
