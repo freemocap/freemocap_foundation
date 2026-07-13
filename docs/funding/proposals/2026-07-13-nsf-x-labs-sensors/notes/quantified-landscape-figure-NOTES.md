@@ -5,12 +5,12 @@ Written by Claude (advisor role) — **the §2 body prose below is a suggestion 
 
 ## What the new figure is
 
-A significant rework of Fig 2 (`dome-chain-compact.typ`) into the "plot or other figure to **quantitatively depict the current technology landscape and desired goal(s)**" that Attachment A §2 invites (and that §2 was arguably missing). It keeps the measurement-chain topology but:
+A lean rework of Fig 2 (`dome-chain-compact.typ`) into the "plot or other figure to **quantitatively depict the current technology landscape and desired goal(s)**" that Attachment A §2 invites (and that §2 was arguably missing). **Same boxes and arrows as Fig 2** — no added header bands, no legend band, no separate budget strip (kept tight on purpose). It adds one small reported-error line under the nodes on the retinal-input (vision) path, each with a single provenance glyph:
 
-- **Quantifies only the retinal-input (afferent) path** — eye + head/body pose + world → gaze-in-world → retinal input — because the metrological desideratum is *gaze-in-world accurate enough to predict neural activity, i.e. sub-1°*.
-- **Hangs a reported-error chip on each contributing stage,** tagged by provenance: ● open/traceable · ◐ closed model (unknown-but-bounded) · ✗ closed & not-truth-preserving.
-- **Greys the motor branch** (force → inverse dynamics → muscle → efferent) — context only, off the retinal-input path.
-- **Adds an error-budget band**: stage errors accumulate to the one *published end-to-end* integrated gaze-in-world result (±1° calibrated, ±2–3° walking — Matthis/Muller), plotted against the < 1° desideratum line and the DOME target below it.
+- **Provenance flags** (one small colored glyph per number): ● open/traceable · ◐ closed model (unknown) · ✗ closed & not-truth-preserving · ◆ DOME target. Node fill colors are unchanged from Fig 1/Fig 2 (modality pastels); the flags are the only added color.
+- **Quantified nodes:** World scanner (≈3 cm·0.5° ●), Eye tracker (0.6–1.8° ◐), Camera mocap (2–6° ●), IMU mocap (±1–2° ◐ · yaw ✗), Body kinematics (head pose ±1–2° ●), Gaze in world (±1° calib · ±2–3° dyn), Retinal input (target < 1° ◆). Eye kinematics notes torsion/accommodation absent.
+- **Motor/ground path kept at normal visibility** (force → inverse dynamics → muscle) — shown, not greyed.
+- The provenance key lives in the caption, not a separate legend band.
 - New binding: `dome-chain-quantified-figure`, label `<fig-landscape-quantified>`.
 
 ## To include it in the build (JSM's call — not done, has numbering implications)
@@ -22,7 +22,7 @@ A significant rework of Fig 2 (`dome-chain-compact.typ`) into the "plot or other
   - line ~23: `#dome-chain-quantified-figure`  (in place of `#dome-chain-figure`)
 - **Add as a new figure** — add both the import and a `#v(1.2em)` + `#dome-chain-quantified-figure` line; note this makes it Figure 3 and pushes the table numbering. Check `@fig-` cross-refs in the sections if you renumber.
 
-**No `typst` binary was available in the authoring sandbox, so this was NOT compiled.** Please `typst compile proposal/helpers/dome-sensor-estimate-model/dome-chain-quantified.typ` standalone first to check layout/overflow (the 6-column chain + 5-cell budget band is wide — the `theme(f: 0.86)` scale may need nudging to fit the 6.5 in text block). It reuses the exact fletcher 0.5.7 / theme patterns from `dome-sensor-estimate-flow.typ`, which does compile.
+**No `typst` binary was available in the authoring sandbox, so this was NOT compiled.** Please `typst compile proposal/helpers/dome-sensor-estimate-model/dome-chain-quantified.typ` standalone first to check for node overlap. It uses the exact node coordinates and `fit-to-width` wrapper of the shipping `dome-chain-compact.typ`, with only the error lines added and vertical `spacing` bumped 2.6 → 3.8 mm to absorb the extra line — so it should behave like Fig 2. If any pair still crowds, raise `spacing`'s second value.
 
 ## Suggested §2 body text (place near the "capability no existing system provides" paragraph)
 
@@ -50,4 +50,4 @@ All trace to `notes/FMC-X-Technology-Landscape-Metrics-Reference.md` (§4b holds
 
 ## Honesty guardrail baked into the figure
 
-The band's endpoint is anchored on the **one published end-to-end integrated measurement** (Matthis/Muller ±1–3°), *not* a naive sum of heterogeneous per-stage errors (you can't add degrees across an eye tracker, an IMU, and a photogrammetry mesh). The stage chips are shown as independent reported figures; the composite is the real measured integrated result. Keep it that way if you edit — a computed cumulative "budget" would overclaim.
+The "Gaze in world" node shows the **one published end-to-end integrated measurement** (Matthis/Muller ±1° calibrated / ±2–3° walking), *not* a naive sum of the per-stage errors (you can't add degrees across an eye tracker, an IMU, and a photogrammetry mesh). The upstream stage numbers are shown as independent reported figures; the composite is the real measured integrated result. Keep it that way if you edit — a computed cumulative "budget" would overclaim.

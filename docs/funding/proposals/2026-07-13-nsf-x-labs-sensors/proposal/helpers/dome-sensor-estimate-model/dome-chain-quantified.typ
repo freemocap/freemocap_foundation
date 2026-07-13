@@ -49,7 +49,7 @@
 
 #let dome-chain-quantified-figure = [#figure(
   fit-to-width(diagram(
-    spacing: (6.0mm, 3.2mm),
+    spacing: (6.0mm, 3.8mm),
     node-outset: 0pt,
 
     // ── left desiderata (true facts) ──

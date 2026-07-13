@@ -128,7 +128,7 @@
 #include "sections/1-mission.typ"
 #pagebreak()
 #include "helpers/figure-page.typ"
-
+#pagebreak()
 #include "sections/2-technology-landscape.typ"
 #pagebreak()
 #include "sections/3-outcomes.typ"

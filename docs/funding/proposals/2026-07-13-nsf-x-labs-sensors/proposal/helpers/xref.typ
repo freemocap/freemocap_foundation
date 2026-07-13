@@ -44,6 +44,7 @@
   if kind == "redundant" { rgb("#ff000055") } else if kind == "clarity" { rgb("#e8a33d66") } else { rgb("#1e6fff55") }
 }
 
+
 #let flag(kind: "redundant", body) = {
   if DRAFT_MODE {
     highlight(fill: flag-color(kind), body)
@@ -62,8 +63,8 @@
   if DRAFT_MODE {
     block(
       width: 100%,
-      fill: rgb("#e9f7ef"),
-      stroke: (left: 2.5pt + rgb("#1f9d55")),
+      fill: rgb("#9accb0"),
+      stroke: (left: 2.5pt + rgb("#70c796")),
       inset: (x: 0.6em, y: 0.5em),
       radius: 1pt,
       breakable: true,
