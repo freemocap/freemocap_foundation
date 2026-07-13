@@ -28,8 +28,8 @@
 // block, so it stays inside the page margins wherever this figure is placed.
 #let fit-to-width(body) = layout(size => {
   let w = measure(body).width
-  let s = if w > 0pt { calc.min(1, size.width / w) } else { 1 }
-  scale(s, body, origin: top + left, reflow: true)
+  let s = if w > 0pt { calc.min(1.0, size.width / w) } else { 1.0 }
+  scale(x: s, y: s, origin: top + left, reflow: true, body)
 })
 
 #let dome-chain-figure = figure(
