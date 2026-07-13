@@ -10,7 +10,7 @@
 // The narrow sidebar look comes from a #box inside the figure body — the
 // figure container is invisible, so only the compact box is seen.
 #let collaborator-figure = [
-  #set text(size: 7.5pt, hyphenate: false)
+  #set text(size: 7pt, hyphenate: false)
 
   #let rule-thick = 0.8pt + rgb("#333")
   #let rule-thin  = 0.4pt + rgb("#666")
