@@ -33,7 +33,7 @@
 #let milestones-figure = {
   // Scoped so the em-based column widths match the standalone layout,
   // regardless of the surrounding document's font size.
-  set text(size: 10pt, font: "Libertinus Serif")
+  set text(size: 9pt, font: "Libertinus Serif")
   [#figure(
   placement: top,
   table(
