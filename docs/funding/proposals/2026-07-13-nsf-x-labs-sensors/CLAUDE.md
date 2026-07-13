@@ -12,11 +12,13 @@ The working thesis (see the strategic briefing in `notes/`): pitch FreeMoCap not
 
 Per project instructions, Claude is an **observer and advisor, not a writer**. Do NOT edit the core proposal documents or their prose (`proposal/**/*.typ`, the outline, the briefing). Claude structures, plans, and reviews the proposal from the granting agency's perspective. Meta/guidance files like this `CLAUDE.md` are fair game when the user asks.
 
+**Exception (approved 2026-07-13): structural markup only.** Claude may add non-prose markup directly into `proposal/**/*.typ` — Typst `<label>` anchors on headings/figures/tables/personnel entries, cross-reference helper calls (`#skp()`, `#collab()`, `@label`) that replace placeholder tags like `[Ref-Collab-MH/KB]`, and `#flag(kind: "redundant" | "verbose")[...]` review-mark wrappers (see `proposal/helpers/xref.typ`) paired with `// NOTE:` comments. None of this changes a word of prose — it wraps, labels, and annotates existing text. Actually rewriting/cutting/tightening prose (including inside a `#flag()` wrapper) is still off-limits; that's the user's call. `#flag()` is gated on `DRAFT_MODE` (now in `helpers/shared.typ`) so review marks disappear automatically in the submission-ready compile.
+
 ## Writing workflow
 
 The main document is `proposal/main.typ`. It pulls in sections from `proposal/sections/` via `#include`.
 
-**CRITICAL: Always invoke the Typst skill before writing or editing any `.typ` file.** This is a Typst project — the skill documents parameter ownership (`leading` is `par`, not `text`; `raw` doesn't take `size`), common mistakes, and the full API surface. You must have it loaded before touching Typst code.
+**CRITICAL: Always invoke the Typst skill before writing or editing any `.typ` file.** This is a Typst project — the skill documents parameter ownership (`leading` is `par`, not `text`; `raw` doesn't take `size`), common mistakes, and the full API surface. You must have it loaded before touching Typst code. (Note: as of 2026-07-13 no such skill was installed in the working session — `typst-cheetsheet.typ`/`.pdf` at the repo root is the fallback reference, and there's no `typst` binary or network access in the sandbox to self-verify compiles either. Any session without the skill or a compiler should say so and ask the user to `typst compile` locally rather than assume correctness.)
 
 Compile to PDF with:
 
@@ -36,18 +38,25 @@ typst watch proposal/main.typ
 proposal/
   main.typ                        — page setup, title block, includes sections
   sections/
-    0-mission.typ                 — Mission                              (renders as §1)
-    1-technology-landscape.typ    — Technology Landscape                 (renders as §2)
+    1-mission.typ                 — Mission                              (renders as §1)
+    2-technology-landscape.typ    — Technology Landscape                 (renders as §2)
     3-outcomes.typ                — Outcomes                             (renders as §3)
-    2-personnel.typ               — Senior/Key Personnel Qualifications  (renders as §4)
-    4-team-capabilities.typ       — Team Capabilities Statement          (renders as §5)
+    4-personnel.typ               — Senior/Key Personnel Qualifications  (renders as §4)
+    5-team-capabilities.typ       — Team Capabilities Statement          (renders as §5)
+  helpers/
+    shared.typ                    — small typography helpers + DRAFT_MODE toggle
+    xref.typ                      — cross-ref (#skp, #collab) + #flag() review-mark helpers
+    figure-page.typ               — assembles the figure/table page after §1
+    collaborator-network.typ, templates/milestones-matrix.typ,
+    dome-sensor-estimate-model/dome-chain-compact.typ — the 2 figures + 2 tables
+  FMCF-NSF-XLABS.bib              — bibliography (Typst `#bibliography()` + `@cite-key`)
 ```
 
 Each section file contains its own heading and content. The `#include` directive in Typst works like pasting the file's content inline — section files inherit page/text settings from `main.typ` and don't need their own `#set` rules.
 
-Note the ordering quirk: heading numbers come from `#set heading(numbering: "1.")` and follow **include order in `main.typ`**, not the numeric filename prefix. `main.typ` includes them as 0, 1, **3, 2**, 4 — so `3-outcomes.typ` is included before `2-personnel.typ`, which is why Outcomes renders as §3 and Personnel as §4. The filename prefixes are out of sync with render order; don't trust them.
+Note the ordering quirk: heading numbers come from `#set heading(numbering: "1.")` and follow **include order in `main.typ`**, not the numeric filename prefix. As of 2026-07-13 the filenames and include order both run 1→5 in section order (this used to be out of sync — 3-outcomes.typ included before 2-personnel.typ — but the files have since been renumbered to match; if you see a mismatch again, trust include order in `main.typ`, not the filename).
 
-All five section files are currently **TODO stubs** — each holds the solicitation's prompt text plus a `// TODO` comment, no real content yet. The substantive material lives in the outline and briefing (below). No BibTeX file exists yet; per project plan, citations should be collected into a `.bib` file and cited through Typst's standard bibliography mechanism.
+All five section files have substantive draft content as of 2026-07-13 (not stubs) — see the sections themselves. Author TODOs and redundancy/verbosity notes are marked inline as `// NOTE:` comments and `#flag()` highlights (yellow-vs-blue in draft compiles); `helpers/collaborator-network.typ` has a known open item (collaborator "AS" cited in Mission has no matching table row — table has "BD" instead). A bibliography exists at `proposal/FMCF-NSF-XLABS.bib`, cited via `#bibliography(...)` in `main.typ` and `@cite-key` inline.
 
 ## Reference materials
 NOTE - All PDFs have a markdown port alongside them
