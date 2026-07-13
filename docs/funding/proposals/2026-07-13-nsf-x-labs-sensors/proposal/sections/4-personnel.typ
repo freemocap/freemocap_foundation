@@ -4,13 +4,11 @@
 
 = Senior/Key Personnel <sec-personnel>
 
-Under the NSF X-Labs model, Phase 0 is the runway for members to transition to full-time before Phase 1. The PI and CSO are already full-time on FreeMoCap; the others commit to full-time by Phase 1.
-
 *Jonathan Matthis, PhD — President / PI.* Founded and maintains FreeMoCap; two decades measuring the full perception–action loop. Left a tenure-track professorship (Human Movement Neuroscience, Northeastern) because it could not support the integrated tool-building this work requires. NEI NIH K99/R00 recipient (EY028229), with a publication record spanning the full loop, from outdoor gaze-and-gait to real-world retinal-input reconstruction. <skp-JSM>
 
 *NR — Chief Executive Officer.* Technology-sector engineering leader and startup co-founder, recruited to run the organization so the PI can focus on the technical Mission. Staff Platform Software Engineer at Rapid7; co-founded and scaled MailLift, a venture-backed API startup. Brings the leadership and operations capacity to build FreeMoCap into an autonomous, independent X-Lab. <skp-NR>
 
-*EI — Chief Technology Officer.* Enterprise software architect (~20 years experience in Tech industry, engineer to Principal Architect / CTO) and FreeMoCap's CTO since 2021, essentially since founding. Concurrent CTO at Chorus Innovations; former Principal Architect at Unqork; distributed-systems and data-engineering depth (Python, Node.js, PostgreSQL, Spark; RDF/SPARQL). Ensures enterprise-grade architecture and the calibrated, semantically-unified data backbone the instrument requires. Represents a skillset not present in academic science. <skp-EI>
+*EI — Chief Technology Officer.* Enterprise software architect (~20 years experience in Tech industry, engineer to Principal Architect / CTO) and FreeMoCap's CTO since 2021, essentially since founding. Concurrent CTO at Chorus Innovations; former Principal Architect at Unqork; distributed-systems and data-engineering depth. Ensures enterprise-grade architecture and the calibrated, semantically-unified data backbone the instrument requires. Represents a skillset not present in academic science. <skp-EI>
 
 *AC, PhD — Chief Scientific Officer.* Dissertation validated FreeMoCap against research-grade optical motion capture (Qualisys), demonstrating clinically valid kinematics from commodity hardware. Expertise in clinical tool validation, bench-to-bedside development, neuroprosthetics, and brain imaging; leads DOME-S development and clinical dissemination. <skp-AC>
 
