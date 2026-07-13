@@ -120,7 +120,7 @@
     edge((5, 1.45), (5, 3.9), "->"), edge((5, 2.7), (5, 3.9), "->"),
   )),
   kind: image, // supplement inherited from main.typ's set-figure-supplements ("Fig.") for consistency with prose
-  caption: [#set text(size: 7pt); *The #smallcaps[Dome] measurement chain.* Each sensor transduces a true fact into signal; the chain derives, fuses, and composes estimates whose channels are #text(fill: ok)[● measured] or #text(fill: inf)[◐ inferred under a prior], and projects (Π) them onto the *retinal input* and *muscle activation* that drive the nervous system. The metrological target: drive retinal-input error low enough to *predict neural activity in marmoset visual cortex / superior colliculus* — a ground-truth test no existing system can pose.],
+  caption: [*The #smallcaps[Dome] measurement chain.* Each sensor transduces a true fact into signal; the chain derives, fuses, and composes estimates whose channels are #text(fill: ok)[● measured] or #text(fill: inf)[◐ inferred under a prior], and projects (Π) them onto the *retinal input* and *muscle activation* that drive the nervous system. The metrological target: drive retinal-input error low enough to *predict neural activity in marmoset visual cortex / superior colliculus* — a ground-truth test no existing system can pose.],
 ) <fig-dome-chain>]
 
 // Rendered only when this file is compiled on its own. When the proposal

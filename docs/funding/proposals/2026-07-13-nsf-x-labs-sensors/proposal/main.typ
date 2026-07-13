@@ -11,7 +11,7 @@
 // Lives in helpers/shared.typ (not here) so section files and
 // helpers/xref.typ's #flag() review-marks read the same single toggle.
 
-#import "helpers/shared.typ": DRAFT_MODE
+#import "helpers/shared.typ": DRAFT_MODE, Domes
 #import "helpers/xref.typ": set-figure-supplements
 
 // ── Draft-only content definitions ──
@@ -96,18 +96,27 @@
 // Fig. N / Table N supplements for @label refs (see helpers/xref.typ)
 #show: set-figure-supplements
 
+// Figure and table captions — 9pt, only the label bolded ("Fig. 1:" / "Table 1:").
+// The figure.caption element carries supplement + numbering + separator + body;
+// we set the base size and bold only the supplement and resolved number.
+#show figure.caption: it => {
+  set text(size: 9pt)
+  text(weight: "bold")[#it.supplement]
+  context text(weight: "bold")[#counter(figure.where(kind: it.kind)).display(it.numbering)]
+  it.separator
+  it.body
+}
+
 // ── Title Block ──
 
-#block(above: 0pt, below: 0.28em)[
+#block(width: 100%, above: 0pt, below: 0.28em)[
   #align(center)[
-    // #text(size: 12pt, weight: "bold", hyphenate: false)[Complete Empirical Capture of the Agent/Environment Interaction to create unified science of sensorimotor control]
-    #text(size: 12pt, weight: "bold", hyphenate: false)[Building a unified science of Natural Behavior with Densely Overlapping Measurement Environments [DOMEs]]
+    #text(size: 12pt, weight: "bold", hyphenate: false)[Building a Unified Science of Natural Behavior\ with Densely Overlapping Measurement Environments [#Domes]]
     #v(0.1em)
-    #text(size: 11pt)[FreeMoCap Foundation, Inc.]
+    #text(size: 12pt)[FreeMoCap Foundation, Inc.]
     #v(0.1em)
-    #text(size: 11pt)[
+    #text(size: 12pt)[
       Written Proposal to the NSF X-Labs Initiative  
-      // Topic: Scientific Instrumentation for Sensing and Imaging
     ]
   ]
   #v(0.1em)
@@ -127,5 +136,9 @@
 #include "sections/4-personnel.typ"
 #pagebreak()
 #include "sections/5-team-capabilities.typ"
-#pagebreak()
-#bibliography("FMCF-NSF-XLABS.bib", style: "nature") 
+
+
+// ── References Cited (dense, small font — references count toward the 8-pg limit) ──
+#set text(size: 7.5pt)
+#set par(leading: 0.5em, spacing: 0.2em, first-line-indent: 0pt)
+#bibliography("FMCF-NSF-XLABS.bib", style: "nature", title: [])

@@ -73,7 +73,7 @@
     table.hline(stroke: 0.9pt + ink),
   ),
   kind: table, supplement: [Table],
-  caption: [#set text(size: 7pt); Maturity ladder (TRL): Concept 2 · PoC 3 · Breadboard 4 · Prototype 5–6 · Validated 7 · Operational 8–9 (hardware analogue of PoC→MVP→α→β→release). Org rows = operational deliverables. ✓ = in place pre-award; #Dome-Animals cells = per-species level. Each Progress Milestone needs a quantitative exit criterion (FOA §9.2). Stages illustrative.],
+  caption: [Technology Readiness Level (TRL): Concept (2) · PoC (3) · Breadboard (4) · Prototype (5–6) · Validated (7) · Operational (8–9) — hardware analogue of PoC→MVP→alpha→beta→release. Org rows = operational deliverables. ✓ = in place pre-award; #Dome-Animals cells = per-species level. Each Progress Milestone needs a quantitative exit criterion (FOA §9.2). Stages illustrative.],
   ) <tbl-milestones>]
 }
 
