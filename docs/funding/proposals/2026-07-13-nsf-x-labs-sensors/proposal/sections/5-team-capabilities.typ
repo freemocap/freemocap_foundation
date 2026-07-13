@@ -31,6 +31,7 @@ Building the #Dome demands expertise no single faculty could assemble: the work 
   ],
 )
  that sets organizational direction. A Community Grants Program and Developer Fund sustain the open-source network and double as a testbed for community engagement and consensus-seeking mechanisms.
+ 
 *A proven model.* FreeMoCap has already proven this operating model - over 15,000 users across 152 countries, ~10,000 GitHub stars, and over 3,500 Discord members.  It is an open-source markerless motion-capture instrument, built and maintained outside academia, scoped to the measurement itself with an obsessive focus on usability and refusing to claim any research domain — and that refusal is precisely what let it become a commons rather than one lab's tool. he #Dome applies the same measurement-scoped, master-built, open, full-time-maintained model to the far larger target of the complete interaction loop — a scale reachable only with the dedicated, autonomous, milestone-based funding the X-Labs program exists to provide.
 
 
