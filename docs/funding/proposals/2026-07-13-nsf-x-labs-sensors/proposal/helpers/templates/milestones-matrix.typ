@@ -71,7 +71,7 @@
     table.hline(stroke: 0.9pt + ink),
   ),
   kind: table, supplement: [Table],
-  caption: [Maturity ladder (TRL): Concept (2) · PoC (3) · Breadboard (4) · Prototype (5–6) · Validated (7) · Operational (8–9); organization rows show operational deliverables. ✓ = in place pre-award. Each Phase 1 Progress Milestone carries a quantitative exit criterion (FOA §9.2).],
+  caption: [Maturity ladder (TRL): Concept (2) · PoC (3) · Breadboard (4) · Prototype (5–6) · Validated (7) · Operational (8–9); organization rows show operational deliverables. ✓ = in place pre-award],
   ) <tbl-milestones>]
 }
 
