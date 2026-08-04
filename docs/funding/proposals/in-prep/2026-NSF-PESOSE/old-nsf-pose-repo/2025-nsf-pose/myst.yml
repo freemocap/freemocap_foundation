@@ -1,0 +1,19 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: f536ab54-0659-4f15-a7cf-2e3c048d9840
+  title: FreeMoCap Foundation 2024 NSF POSE Proposal
+  short_title: FMC-NSF-POSE-2024
+  description: Repository of information related to the 2024 NSF POSE proposal from the FreeMoCap Foundation
+  keywords: ["freemocap, nsf, pose, proposal, 2024"]
+  authors: [Skelly FreeMoCap, <info@freemocap.org>]
+  github: https://github.com/jonmatthis/2024-nsf-pose
+  # To autogenerate a Table of Contents, run "myst init --write-toc"
+
+
+
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png

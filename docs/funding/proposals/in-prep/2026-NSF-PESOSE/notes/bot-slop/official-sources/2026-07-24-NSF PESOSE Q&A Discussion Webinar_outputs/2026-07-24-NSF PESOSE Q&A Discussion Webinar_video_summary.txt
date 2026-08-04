@@ -1,0 +1,209 @@
+## SOURCE INFORMATION
+--------------------------------------------------
+Source Type: YouTube Video
+URL: https://www.youtube.com/watch?v=wpuK5eV4t8k
+Video ID: wpuK5eV4t8k
+--------------------------------------------------
+
+# PSOS Program Overview and Q A 
+
+Title slug: psos-program-overview-and-q-a
+
+
+## One Sentence Summary
+This webinar provides an overview of the PSOS program, covering Q&A format, ecosystem maturity, sustainability, team composition, international collaboration, and proposal eligibility for open source projects, alongside details on upcoming informational sessions.
+
+## Executive Summary
+The PSOS program webinar introduces its Q&A format, prioritizing programmatic questions and deferring instructional ones. It outlines Track 1 and Track 2 funding based on ecosystem maturity, emphasizing publicly available, open-source projects addressing societal needs. Discussions extend to comprehensive sustainability beyond finances, optimal team makeup, and rules for international collaboration. The webinar also clarifies open-source definitions, differentiates I-Corps for PSOS from its commercial counterpart, stresses the importance of security and privacy in proposals, and provides guidance on team size and aligning projects with national needs. Finally, it addresses eligibility for mature ecosystems, the distinction between single assets and broader ecosystems, and upcoming informational webinars and reviewer opportunities.
+
+## Topics Detailed Summary
+The PSOS program webinar begins by welcoming attendees to a Q&A session, emphasizing a focus on programmatic and strategic questions, with instructional queries directed to future webinars. It introduces an ecosystem maturity map, differentiating Track 1 ($300,000 for nascent ecosystems) from Track 2 (for more mature, self-sustaining ecosystems). Both tracks require publicly available, preferably open-source projects addressing societal or national needs. Sustainability is defined broadly, encompassing meaningful problems, organizational structure, maintainer well-being, technical updates, and robust governance, not just financial viability. Team makeup can be distributed across organizations, with clear roles for PIs and co-PIs, and team size must be justified based on project scope and growth goals. International collaborators are welcome, but NSF funds cannot directly flow to them. The program clarifies that open-source definitions extend beyond software to hardware and platforms, focusing on intellectual merit and community impact, rather than just standards. It distinguishes I-Corps for PSOS, which targets ecosystem building, from I-Corps for small businesses focused on commercialization. Security and privacy are critical considerations for all proposals, especially for Track 3, which can apply existing security techniques if their relevance and impact are justified, particularly with emerging technologies like AI. Proposals for mature open-source ecosystems must demonstrate expansion into sustainable communities with external contributors and governance, clearly differentiating proposed work from current operations. The program prioritizes ecosystem development over single asset development, although single assets can be eligible if they demonstrate broader impacts and long-term sustainability. Projects with dependencies on non-open source software require evidence of collaboration with proprietary software owners. NSF takes a broad view of open-source ecosystems, encouraging projects from most STEM fields, but requires framing them within R&D, avoiding overlaps with agencies like NIH for medical solutions. Projects targeting government users are acceptable but must demonstrate broader impact. Upcoming webinars are scheduled for new proposers and proposal preparation, and individuals are encouraged to become PSOS reviewers for insight into the evaluation process.
+
+## Complete Topic Outline
+### Webinar Introduction and Q&A Format
+> An overview of the PSOS Program webinar, outlining the Q&A-centric format and how questions will be managed, distinguishing between programmatic and instructional inquiries.
+- Welcome and Program Overview
+  - Welcome to the PSOS Program webinar.
+  - Introduced as the program director for PSOS.
+  - Thanking attendees for joining the Q&A session.
+
+- Q&A Session Strategy
+  - Session designed for Q&A largely.
+  - Reed will go through the Q&A box, call, and triage questions.
+  - Focus on programmatic and strategic questions (conceptual in nature).
+  - Instructional type questions (e.g., proposal submission, budget, eligibility) to be addressed in separate webinars or through the mailbox.
+
+- Resources and Contact
+  - Program page and QR code for accessing mailbox and other resources.
+
+### Ecosystem Maturity and Funding Tracks
+> Explanation of ecosystem maturity levels and how they relate to Track 1 and Track 2 funding within the PSOS program, including common requirements for both.
+- Ecosystem Map Overview
+  - Map illustrating ecosystem maturity, from nascent to open ecosystem.
+  - Overlaid asset or tool on top of this map.
+  - Target is an open ecosystem.
+
+- Track 1 Characteristics
+  - Bracketed where Track 1 would fit on the map.
+  - Track 1 projects are $300,000.
+  - These are newer ecosystems, perhaps tools not fully self-sustaining or mature yet.
+
+- Track 2 Characteristics
+  - As you move to the right on the map, it represents Track 2.
+  - Track 2 ecosystems have plans in place, a more mature tool, and more mature thinking.
+  - Heading towards self-sustainability, which NSF is looking for.
+
+- Common Requirements for Track 1 & 2
+  - Both tracks require a project that is already publicly available.
+  - Should have an artifact around it.
+  - Preference for projects available under an open-source license.
+  - Products should be oriented around meeting a societal or national need.
+  - Ability to articulate plans and rationale in detail, specific to the technology or domain, not just generalities.
+
+### Project Sustainability and Team Composition
+> Discussion on various aspects of project sustainability beyond just finances, and the importance of team composition, roles, and guidelines for international collaborations.
+- Beyond Financials
+  - Sustainability is not solely about funding or generating revenue.
+  - It's the capacity to continue the effort being pursued.
+
+- Key Dimensions of Sustainability
+  - Meaningful Problem: Attracting organizations and communities.
+  - Organization: Leadership and execution of essential functions.
+  - Maintainer Well-Being: Preventing overextension of efforts, promoting documentation, transparency, and mentoring.
+  - Independent of Lead Institution: Building a legacy beyond the initial group.
+  - Technical: Keeping assets updated with technology changes and ecosystem evolutions.
+  - Governance: Roles, decision-making, and conflict resolution.
+
+- Team Composition
+  - Questions about team makeup and roles (e.g., co-PI, different roles).
+  - Flexibility for teams to be distributed across organizations.
+
+- Roles and Responsibilities
+  - Roles as they relate to award execution and administrative functions.
+  - Importance of defining who does what in the ecosystem and governance structure.
+  - Responsibilities of a PI or co-PI for an NSF award, including institutional requirements and additional duties.
+
+- International Collaboration
+  - International collaborators are welcome.
+  - NSF award money cannot directly flow to international collaborators.
+  - Funding an international collaborator to travel to a workshop: not allowed if it implies direct funding.
+  - Licensing software from a company outside the US for technical work: requires further detail and evaluation.
+
+- Team Size and Justification
+  - Responsibilities around the award itself and the scope of work.
+  - Sustainability goals and the kind of work that needs to be done.
+  - Desired growth targets for the user community (e.g., 75% growth by year one requires a bigger team or more organizations).
+  - Starting point of the project: Track two projects often have larger teams due to existing involvement.
+  - Convince NSF and reviewers why the selected team size is appropriate.
+  - Justify growth targets (e.g., why a 10% or 5% community growth is appropriate versus a 50% growth proposed by other teams).
+  - The team size should be appropriate for the discipline and project, not just a random number.
+  - The whole package must be put together, considering where the project is starting, where it's going, and why.
+
+### Open Source Ecosystems and I-Corps
+> Clarification of open-source definitions, the distinction between I-Corps for small businesses and PSOS, and the crucial role of security and privacy in proposals.
+- Defining Open Source
+  - Not about developing particular standards or specifications.
+  - Focuses on intellectual merit and knowledge advancement.
+  - Serving communities within and beyond technical domains.
+
+- Distinction from Raw Data Uploads
+  - Uploading raw data alone is not an open-source ecosystem.
+  - Questions what intellectual knowledge is advanced by raw data uploads.
+  - Uploading data with models can support ecosystem building.
+
+- I-Corps for Small Businesses
+  - Primary goal is commercialization.
+  - Focus on customer discovery for commercial purposes.
+
+- I-Corps for PSOS
+  - Primary goal is ecosystem building, not just commercialization.
+  - Broader focus on maintainers, users, and contributors.
+  - Syllabus and work tailored to the PSOS program's ecosystem-building objectives.
+
+- General Importance of Security and Privacy
+  - Need to convince reviewers and NSF why the asset matters.
+  - Data management security plan is essential.
+  - Crucial for sensitive data, e.g., biomedical field, software, or data-related projects.
+
+- Track 3 Specifics on Security
+  - Focus on broader classes of vulnerabilities, not a continuation of Track 2.
+  - Does not have to be novel security research.
+  - Requires convincing reviewers of the relevance and impact of chosen techniques, especially in light of new technologies like AI.
+
+- For-Profit Collaborators
+  - For-profit companies can collaborate, but the primary purpose cannot be solely making money.
+  - Ecosystem building for NSF is not about solely making money; otherwise, focus on SBIR.
+
+### Open Source Ecosystem Maturity and Proposal Eligibility
+> Discussion on criteria for open source project proposals, distinguishing between single assets and broader ecosystems, and emphasizing sustainability, broader impacts, and collaboration.
+- Maturity of Ecosystems
+  - Mature ecosystems with many industry members can form a strong foundation for a PESOS proposal.
+  - Projects must clearly describe how they will expand into a sustainable, broader open source community with external contributors and governance.
+  - Applicants need to ascertain appropriateness for awards given their ecosystem's maturity.
+
+- Asset vs. Ecosystem
+  - Distinguishing between bringing forward a new asset and transforming an organization to support it.
+  - Proposals should address how new users will be acquired, knowledge advanced, and broader impacts achieved.
+  - If the proposal focuses on a new asset, it needs to demonstrate an opportunity to open up new areas and advance knowledge.
+
+- Proposal Justification
+  - Reviewers will ask about the difference between current operations and the proposed work.
+  - The proposal must be distinctly different intellectually and in terms of broader impacts to warrant an award.
+
+- Single Asset vs. Suite of Products
+  - Cases can be made for both a single open source asset/tool or a suite of products forming an ecosystem.
+  - The critical question is how the proposal will ensure long-term sustainability and advancement of knowledge.
+  - Proponents must argue for broader impacts beyond their immediate domain or demonstrate novelty.
+
+- Sufficiency of a Single Asset
+  - If focusing on one asset, explain why it is sufficient for the proposed goals.
+  - Consider whether starting with one or two assets and expanding is a viable strategy.
+
+- NSF Program Differentiation
+  - NSF has other programs for technology development or single software programs (assets), like infrastructure programs.
+  - PESOS does not fund pure development; it focuses on the open source ecosystem realm, including governance, maintainers, and users.
+
+- Dependencies on Non-Open Source Software
+  - If an open source product depends on licensed or non-open source software, it can still be eligible for a PESOS project.
+  - A collaborator letter is expected, demonstrating outreach and joint effort with the entity owning the proprietary software.
+  - Lack of demonstrated collaboration or effort to work with dependencies can lead to proposal rejection.
+
+### Open Source Ecosystems and Funding Nuances
+> Details on the broad view NSF takes on open-source ecosystems, funding considerations for specific domains, and informational resources for proposers and reviewers.
+- Broad View of NSF
+  - NSF takes a broad view on what an open source ecosystem and its assets could be.
+  - Not strictly confining people to software.
+  - Wide acceptance of most domains, as long as it comes out of traditional R&D or STEM fields.
+
+- Framing Proposals for NSF
+  - Importance of framing proposals within NSF's R&D or STEM context.
+  - Avoiding framing proposals in terms of medical solutions, which might be better suited for NIH.
+  - Focus on the technology itself and how it moves the field forward (e.g., biology advancement).
+
+- Biomedical Field Considerations
+  - Biomedical field proposals should focus on the underlying technology rather than medical solutions.
+  - Risk of proposals feeling like NIH submissions if framed for medical solutions.
+  - NSF looks for technology's fundamental form and its field-forwarding potential.
+
+- Government-Focused Projects
+  - Open source ecosystems with government partners or users are not precluded.
+  - Concerns arise if the only target is government, as it might be seen as too narrow.
+  - Proposers should demonstrate broader audience and impact beyond just government.
+
+- Security Tools in Open Source (Track 3)
+  - Question: Do security tools applied in Track 3 have to be open source or can they be non-open source?
+  - Reviewers will question using non-open source, licensed solutions within an open source context.
+  - Potential problems arise if closed or licensed solutions introduce further issues beyond vulnerability.
+
+- Upcoming Webinars and Reviewer Opportunities
+  - Scheduling office hours on August 5th for new proposers or those unfamiliar with research.gov.
+  - Content will be mechanical, focusing on site navigation and requirements.
+  - Led by Stephanie Yee, a seasoned supporter of research.gov.
+  - Webinar on August 11th dedicated to proposal preparation.
+  - Will cover I-team structures and budget reasonableness for reviewers.
+  - Encourages attendance, especially for those new to proposing in the TIP program.
+  - Encouragement to become a PSOS reviewer for insights into the process.
+  - Reviewers gain understanding of how proposals are evaluated with real examples.
+  - Eligibility for reviewers depends on submission deadlines (e.g., cannot review if submitting for September 1st, but can for March if past the first round).
+
+

@@ -1,0 +1,370 @@
+TRANSCRIPT: 2026-07-08-Introduction to NSF PESOSE program
+============================================================
+Source: https://www.youtube.com/watch?v=HidXRi7Wa3g
+
+
+Karen Bakunst, ESA, Dr., Roama, R.
+ESA, Dr. Herby H.
+ESA, Dr. Herby H.
+ESA, Dr. Herby H.
+ESA, Dr. Herby H.
+ESA, Dr. Herby H.
+ESA, Dr. Herby H.
+ESA, Dr. Herby H.
+ESA, Dr. Erwin Ganjannatti, for joining us, and he's going to kick off and lay the foundation
+for the discussion today.
+So I'm going to turn that over to Erwin, and thank you very much in advance.
+Erwin Ganjannatti, ESA, Dr. Herby H. Well, thanks very much, Florence.
+And good afternoon, everybody, or good morning, depending on where you're located or when you
+might be listening to this webinar after the fact as well.
+As Florence mentioned, my name is Erwin Ganchanani, and I have the pleasure and the honor of serving as the NSF Assistant Directorate for Technology, Innovation and Partnerships. So I help lead the TIP directorate here at the National Science Foundation. And along with Florence and the rest of the team, it's my pleasure to welcome you to this webinar today, where we have an opportunity to talk about
+This is a still new program. It's sort of newly launched program pathways to enable secure open source e-learning, really integrating tools together as a focusing agent as we think about this particular pathway for translation going forward.
+What I thought I would do is take just a couple of minutes to provide some context for why this program and why now. And I thought I would start from the focusing lens of the TIP Directorate and its mission within the National Science Foundation as a starting point.
+Dr.
+And then I will hand the floor back over to Florence to lead the rest of the Webinar and dive into the details of the program itself.
+So as many of you may know the TIP Directorate of the National Science Foundation is still somewhat new.
+We were stood up a few years back as part of the CHIPS and Science Act of 2022 with the specific mission of of doing three key things.
+Number one, to be able to accelerate science and technology to the market and to impact at the end of the day.
+Expected, Nr. 2, to be able to grow a competition ready workforce across a range of key technology areas from artificial intelligence and the future of intelligence to thinking about quantum phenomena to thinking about advanced biotechnological capabilities and beyond.
+Expected, Nr. 3,0, and really trying to help prepare that workforce across a range of different types of technologies and also a range of different types of jobs.
+Expected terms, everything from bachelor's degree or pre-bachelors degree all the way up to a Ph.D. or post Ph.D. going forward.
+And then the third piece of the TIP mission space in addition to accelerating tech to the market in addition to growing a competition ready workforce has always been about trying to be able to do everything that I just said in every corner of the country recognizing that there is tremendous talent and there tremendous technological potential in every corner of the country and we have an opportunity to be able to invest and be able to lift up that potential for the benefit of U competitiveness for the long term
+Expected, M.J. P.M. So, it is in that space, in that mission space, where a program like PISOS really fits in, and in particular, I'll highlight the fact that that first element of our mission of trying to be able to accelerate tech to the market, for many years now, the NSF has led the rest of the federal government to a large extent with our implementation of the Small Business Innovation Research, or SBIR program.
+Expected, M.D. This is a program that we helped pilot for the rest of the federal government back in the 1970s and 1980s, and today it is a program that is made available by multiple agencies across the federal government in various implementations to be able to drive deep tech ventures to the point of commercial readiness and ultimately adoption in the market space.
+Well, that's one particular pathway. If you think about the outputs of basic science and you think about the ways in which basic science can have that impact, the notion of taking a research result and progressing it into the marketplace through a startup, ultimately leading to a larger sized company or a merger or acquisition or something to that effect, that's one potential pathway that exists in the lineage around going from lab to market.
+Expected, M.D.A. But part of TIPS mission space for the better part of our existence has really been to try to contemplate what are the various other pathways that offer researchers and students the opportunity to be able to take scientific breakthroughs, technological results emanating from research and start to move those forward into impactful outcomes.
+And so a few years back, TIP specifically established the POSE program, Pathways for Open Source Ecosystems, and then a year or so ago, stood up SafeOSC, really focusing specifically on the security of open source ecosystems.
+And today with this webinar, we're pleased to be able to introduce PISOS, which is an integration of those two efforts, really thinking about this additional translational pathway, not startups and small businesses, but thinking about how
+outputs of research could potentially become open sourced could potentially cultivate an entire open source ecosystem one that needs to have a foundation in security as well but a secure open source ecosystem that could then in turn cultivate further innovation and potentially lend itself to down the road other spinoffs startups small businesses other types of outlets that could germinate as a result of the work that being done in these open source ecosystem environments
+Expected, and so that's really at the core, if you will, of the motivation for why PISOX, trying to address sort of Congress's clarion call of having a unit within NSF that helps to accelerate research into the marketplace and into impactful outcomes, and recognizing that there's not a singular pathway to being able to do so, but there are in fact multiple pathways, and one of those is around open source ecosystems and the adoption of technologies in this way.
+Expected, M.D. I think we recognize that to be able to do this effectively, we need to be able to provide resourcing. We also need to be able to provide training and support to help researchers who may have not done this before be able to identify ways, new ways to be able to do so going forward. And so that's really at the core of this initiative.
+I want to emphasize that we care deeply, not just about the technology that might be progressing forward along this pathway, but we also care very much about the ecosystem that we are trying to be able to foster.
+How do we bring together a vibrant set of stakeholders beyond the initial research group that may have had the concept for an open source product?
+How do we bring together a much broader ecosystem to be able to foster that continued innovation, that continued advancement of that technology, that capability, that model, that simulation, whatever the case may be in terms of the open source product that we're looking to create an ecosystem around going forward.
+And then the final thing that I will say is about this program in particular is we're also very interested in welcoming a variety of different types of proposers, types of organizations.
+Expected M who have an interest in taking ideas from the lab and into an open source ecosystem So welcoming submissions for example from non entities to NSF So yes if you a faculty member at an institution of higher education very much welcome proposals to this program but also welcome proposals from nonprofits and even for profits as well that may be contemplating ways in which you could potentially progress along this particular lineage as we think about the various translational pathways to be able to take ideas from the lab and into an impactful output or impactful outcome state
+So I hope that gives you a sense for why PISOS, why we're excited about this program, how it fits into the typical mission space, and more broadly how it fits into the NSF mission space of not only advancing the frontiers of science and tech, but also helping to realize that science and tech on a day to day basis for the benefit of the economy,
+for the benefit of the nation's competitiveness in the long term.
+Before I close, I want to take just a moment to acknowledge everybody who has made this program possible, going all the way back to the inception of the POSE program many years ago.
+I want to especially thank our colleagues from the Computer Information Science and Engineering and Geosciences Directorates who have worked really closely with us
+in the, in, to support this last cycle in preparation for the relaunch of the PISOS program.
+Expected, M.D. But I also want to thank our colleagues from all across NSF, all the directorates and offices. This is truly an all of NSF effort at the end of the day, and it is something that I think we could not do without their support, but also their subject matter expertise as we field proposals from every corner of the science and engineering enterprise in response to this program and try to make the best decisions in terms of developing a strong, robust award portfolio at the end of the day.
+I also want to just give a personal shout out to the folks within the TIP directory who have been helping to lead this work instrumental to it. You're going to hear from Florence here in just a moment as she walks you through the details of the program and helps answer questions that you all may have.
+But I also want to thank Carol Bessel, the recently retired section head of the Pathways for Translation section within TIP who's been helping to oversee this effort. Also, Ashley Easley, Reid Sherman, Kenya Lara,
+Shani Sanderson and Katherine Weatherly for all of their efforts, not just in the program formulation, design formulation and now implementation, but also in efforts like this, bringing you all together as part of this webinar to be able to introduce the program and answer questions that you may have as well.
+So with that, my part here is done. Again, thank you all very much for your interest in this program. It's great to see such a robust response even just on this webinar. We're very much looking forward to the proposals that you all will write.
+right to augment, complement, grow the portfolio that we've already had the opportunity to fund through POSE and SAFE-OSC over the last few years.
+
+Robust response even just on this webinar. We're very much looking forward to the proposals that you all were write to augment, complement, grow the portfolio that we've already had the opportunity to fund through POSE and SAFE OSE over the last few years. And we're very much looking forward to continuing to cultivate sort of this lab-to-impact progression that we want to see realized through programs like PISO's as we go forward. So, Florence, with that, I'll hand it back over to you.
+Thanks very much, Erwin.
+Okay, we're going to switch out on the slides.
+For those that are just joining us, if you have a question, I think we have the Q&A pane up.
+Please feel free to put your questions in the pane if we don't get through all of those.
+We'll certainly have an opportunity to talk in more detail about some other questions.
+I'm going to pick up where Erwin left off.
+I'm going to walk you through how we're going to use the time today.
+Dereemii, FreeMoCap, SkellyForge, OpieCap, SkellyForge, DereemiiEyeVive, CQFL, OPEVPE, OPEVAT.
+FreeMoCap, SCEM, SCEM, SE-TEC.
+Vee CPE, SCEM, B-SCEM, DereemiiEDIizk, SBE FISTS.
+YYOUGEN TABLEN, DereemiiEDIT, SEC.
+ETTST-HERRADERSFELD, STYLE.
+ETTST-THE ETTST-THE BATERBAU CHANGNATTE.
+ETTST-THE MEN, NOTIFIES.
+ETTST-THE MEN, NOTIFIES.
+ETTST THEM, NOTIFIES.
+BEGS.
+Expected, BNDR, MPR, SVGT, ENERIALIST, TELLUS BOEFDAHED TEXER EDFORDS, EXPECTFUL COMPLETE SITE, A PEGIARRAGY, DESBAS, YIMOI CLINIC, AND SODIAN VIMPTEES IT.
+ELIZABETH CHASKAB, TELLUS LOPEFDAH, ACCOUNDS OF SEDUAL AND AFFECTION VIRESN'T AGETIFIC PERCEDBER, YANG!
+ELIZABETH CHASKAB, ON THE INFRAME VIRESN'T A FEIT OF ALL.
+and the other.
+And I think there are a lot of questions around proposal preparation.
+We want to separate those out from the broader questions.
+In the interim, I want to encourage you, next slide, if you've got questions between now
+and the second webinar, please feel free to email those to the PSOS at NSF.gov mailbox.
+There is a generic phone number, which we do check.
+Chances are though you're going to have a better look if you put your Q&A in the PSOS
+Pseudice mailbox So the Q pane is open today Please put your questions in there If you don get an answer today feel free to send it to the mailbox We do our best to get those answered before the second session If not we have a third session So plenty of time to get your questions answered So next slide So I mentioned I going to walk you through the agenda and here where we headed today First we going to do a quick overview of the PSOS program scope I going to break down each of the three tracks I going to talk about funding levels measures of success eligibility requirements and required activities such as I for PSOS
+07 006 002 003 008 003 00hZ 006 005 00h0006 007 006 006 005 007 007 004 00b0010 008 005 007 007 006 001 007 008 005 007 009 008 007 007 005 007 006 009 007 007 008 And then we're going to walk through some tips and strategies to strengthen your submissions if you're interested in proposing to this program, or those pitfalls that we've seen through experience, and after that we'll open the floor for your questions.
+Okay, next slide.
+So.
+Before we jump into the program itself I wanted to provide a little background and I think Erin covered this quite a bit.
+Rho, OpenCV, OpenCV is a way that amplifies innovation. So it's more than just the software. It's more than just the code repository. It's a managed and deliberately developed community with governance, security practices, users contribution and computer contribution pipelines. So we want you to hear that. You'll hear us say it over and over again. This is not just about a technology or a product.
+As Erwin mentioned, NSF has been a leader in open source ecosystem. And I've listed a few here just to give you a sampling across the agency. And at the end, I'll have a slide on these, a couple of samples, not the only ones, but we wanted to just again provide a sampling. And some of this has been around since 2013 or even sooner. So we've got Cyverse out of the Biological Sciences Directorate.
+Expected, we have the Molecular Science Software Institution out of the Mathematical Physical Sciences Directorate, we have Open Science Framework out of Social and Behavioral Economics, and then Open Source Ecosystem for Hydrological Education Research and Operations out of the Geosciences. So you can see that for a long time NSF has had a leadership in the Open Source Ecosystem.
+and ECEEIC.
+POSE advances that work and continues, as Erwin would say, this innovation, acceleration,
+this lab to market, and by strengthening and securing open source ecosystem,
+it furthers the research in this area and the national effort So next slide So a bit of the overview of the PSOS program If you not familiar with the numbering or you can find it you can search on nsf 26506
+If you search on pose or safe OSC, you're going to get a screen that says it's been archived, so you want to be looking at PSOS.
+Expected terms.
+We talked a little bit about this.
+So Pistos is about the creation of the managing organizations for ecosystem with governance,
+distributed development, user communities, and across academia, industry, and government.
+We want you to hear this piece about the managing organization and these other elements.
+And while we also support the translation of these research products into safe and sustainable
+Ecosystems. We also recognize they have to be towards a national societal challenge. So think big.
+And lastly, we want you to think about what those open source tools are and think about them in a broader context. It's not just software. It could be hardware. It could be machine learning models, languages, and data platforms.
+Expected terms, O.D.S. They're designed to be shared and they're designed to be publicly available and modifiable by the public, by the community. So these are not research products that are developed by a single entity or a single individual. Next slide.
+Nia
+We haven't talked about this yet but I want to mention if you didn't see our Dear Colleague letter, 26015.
+This year we introduced and we highlighted our interest in receiving proposals around AI agent protocol ecosystems.
+So as we mentioned, if you're familiar with AI agents, these are capabilities that rely on, they go, they extend beyond simple chat interfaces.
+Menae Czajunasca, SkellyThracker, RTMPose, Ngo, Gow, TK, Dsgt.
+SkellyTha, RR.T.
+Dsgt.
+SZT.
+SZT.
+SZT.
+SZT.
+SZT.
+SZT.
+
+SZT.
+SZT.
+SZT.
+SZT.
+SZT.
+SZT.
+SZT.
+SZT.
+SZT.
+SZT.
+SZT.
+SZT.
+SZT.
+
+SZT.
+SZT.
+this Dear Colleague letter would be processed just like the rest of the PSOS proposals Next slide please So this is just a visual picture but sometimes it easier to see this visually than us just talking So on the left hand side of the screen as Erwin mentioned this early on is NSF has a long history of generating research products and research tools
+We even have a history of developing open source products through scientists, engineers, educators. And out of that effort we have products.
+PSOS is that bridge between those activities and building ecosystems. So if we look to the right of the screen, this is what PSOS is enabling. And I want you to focus on not only the open source product, but all of those elements around it.
+the governance structures, the documentation related to all of these elements. Continue to need the scientists, engineers, and educators to be a part of this. You'll need onboarding processes. You have a developer community, in theory. You have external users. You have a developer community and distributed development activities. Defect management, and of course, security.
+So piece of is about enabling this ecosystem, enabling the building of this ecosystem around this open source product. It is not this activity on the left hand side, which we often get submissions for. So if you're thinking about if you're a scientist or engineer, you've got a product and you've recently made it open source, that's not going to be enough. I want to pause on this for a minute. Give you guys a chance to really sit and look at what we're talking about.
+Andrea Pardo, okay, next Andrea Pellegrini, NSF, MNF, So I'm going to say it again, slightly different pieces is not the development open source artifacts tools or products.
+Andrea Pellegrini, MSF, MNF, So if you're planning to develop a tool or product and it's Open Source and stuff has other programs that are related to this infrastructure and we mentioned some of this size has some of this some of our other.
+Andrea Pellegrini, MSCPU logo, director, it's fun this kind of work.
+PSOS is bigger than this. We're also not designed to fund well-resourced open source communities and ecosystems. This is about how to use the money to catalyze the activities, how to use the little bit of money that NSF has to catalyze this work in building those ecosystems.
+
+Expected, SRF, Expected, SkllyT, MS, S&T,.
+Expected, Yix MeleeForge, COMPOSYT, ICH, MAA FACHS, T-ZEK, SXX, SMBL PRAaDRIZEK, NUPEC, MAUR, and LOZ, Expected, SSA, PROBABLY, SOME PROOF OF THE COUNTRY.
+Expected terms I can't really but consider it.
+She mentioned the issues as well around the social media and really like digital media platforms.
+It is all about providing digital resources.
+For example, these folks don't like AI or AI, she said, I have the power of making money which applies to Dheema.
+Where that cost of consumer finance.
+and lastly, if you're already well established and you're making money, we believe that you're already well on your way and it's not for PISO as well.
+So next slide.
+So we talked a little bit about having three tracks and if you're familiar with POSE and you're familiar with SAFE OSC, I'm going to try to trace it back so you understand where PISO sets.
+Epsos sets. It's basically a relaunch of the two programs. Much has not changed. So track one is about scoping and planning, or that establishment of an open source ecosystem. This is for teams that are beginning of their ecosystem journey. So if you're building a governance structure, you've got plans to think about how your licensing, you know how you want to do it, or you're building that plan.
+You're not sure how you're going to do your community pathways, but you're planning on that already. You have documentation or plans or timelines for how you're going to build that documentation and your foundational operations.
+So if you have a product already and you preparing to grow that ecosystem and you have plans around that you haven quite figured out all the places where you need to be you belong with Track 1 Track 2 is about establishing and expanding a sustainable ecosystem And this is based on your Track 1 typically is what did you scope what did you plan and how are you going to now establish what you propose to do and expand it beyond your original thinking
+And most importantly, Track 3 is not a continuation of Track 2. So I want to make sure that this is well understood. Track 3 is almost a standalone in and of itself. It's about a focus on safety, security, and privacy of a mature ecosystem. It does not have to be one that perhaps you're proposing that you've developed yourself or that your team has developed.
+and SkellyCamp, and planning. It's about that ecosystem discovery. Do you know who your customers are? Do you know who your users are? How are you going to find your developers? How are you going to launch? All of those things are about ecosystem discovery. It's about understanding what your organizational and governance models might look like. Not only just understanding, but exploring and planning for one. Your infrastructure, what is that architecture that you're going to be using? Where's your repository going to be? What is your product going to be? What's your product going to be?
+What is your product going to be? How are these things going to connect? This is about planning. And lastly, but most importantly, it's about that community building. Bringing users to your community doesn't happen passively. It's an active process. How are you going to bring people on board? How are you going to get their attention? If you build it, how will you get them to come? So this is about planning. It's about building a blueprint for building that open source ecosystem.
+Next slide Track 2 Track 2 then is taking track 1 taking those plans and building those out It actually establishing an ecosystem You got organizational models or governance models that you plan for Annette KeeleyForge SDR M That you laid out a timeline for Now it time to organize and establish those
+Annette KeeleyForge, SDR, M.J. & The same with how are you going to develop and integrate and deploy your infrastructure. One and done right. It's not one and done. Of course, you're going to have to plan for continuous development in the open in the public space.
+Expected terms, you've got a long-term strategy that you proposed or you thought about in your track one, if you propose for that, and your community building. So it's about moving that forward and not just planning for it, but actually executing against that. And the last piece is sustainability goals and thinking about how are you going to measure or evaluate how you're doing. Sustainability is not just about the money. Sustainability, you've got to have a pipeline, a continuous pipeline of user
+developers, maintainer. So sustainability, I want you to think about it as all those other elements
+that we've been talking about, especially the human elements, the contributors, the users,
+the maintain. How are you going to keep them coming to your site and wanting to help and maintain that?
+That's as much about the sustainability as the finances are. So having a plan for that and then
+and then beginning to execute on that. And you have two years to do that. Next slide. And then track three. This is about the improvement, the safety, security, and privacy from an existing OSC and its products. So if you were to look at the solicitation, we talk about a mature OSC, it's not likely going to be an OSC that's coming out of a track one, perhaps likely not an OSC coming out of a track two. So if you're thinking about
+Expected terms, you've got a track two that's finishing up and you want to extend something into track three, probably not the route to go.
+Expected terms, it's probably not mature enough, it may or may not be wide enough, it's not a hard line, but probably not that.
+Expected terms, we're thinking about interoperability, scalability and security.
+Expected terms, I want to talk a little bit about, I'm sure that everybody's thinking about the money and the awards.
+and track one So not a lot of changes no changes actually from the POS and SAFE OSC So 300 per award It a one year award Well depending upon funds and availability up to 30 awards Track 2 is a million and a half per award approximately 10
+And Track 3 is about a million and a half as well, approximately 10.
+So you'll notice we talk about approximate numbers.
+It's dependent on funds availability, as well as the quality of the proposals.
+And so by merging these programs, it does give us a chance to put some money or move money around where its best place. So we're always looking at the portfolio management aspect of this, but so we talk about up to 30 awards. It doesn't mean they're always be 30.
+Next slide.
+A couple of important notes. If you're not paying attention or you haven't thought about this, you didn't see this in the solicitation. So we talk about these experiential activities.
+If you happen to be recommended for an award for Track 1 or Track 2, you must participate in the what we call the Experiential Activities I-Corps for PSOS.
+So if you thought about I-Corps, you've heard about it before. This one has been modified and tailored for this program. There are some waivers if you've been in a Track 1, you've done this already, so.
+So if you're submitting to NSF, we would encourage you to collaborate with multiple entities. However, we just need one lead organization. All other entities that are collaborating would have to submit as a subaward.
+And then lastly, this is an interesting piece, if you probably didn't see this, is about the PI eligibility.
+So under PSOLs, the PI is really dependent on the submitting organization. And why do we do that? Meaning that in some capacity, you either have to be working or formally associated with the submitting organization. We need this kind of relationship because you have to have the proper authority, responsibility,
+
+Expected Perserty, MediaPie, Gisela Payne, Ph.D. for a, a, a MHS
+Erwin talked about this. If you're from a traditional IHE or institution of higher education, two or four years, we welcome you. Welcome you back. This is just abbreviated text from the solicitation. We welcome nonprofits, non-academic institutions. In particular, we're very interested. We run the gambit, interested in everything from a museum to research laboratories, professional societies. So we're very, very broad in our thinking about who can submit.
+For-profit organizations as well, including small businesses and state and local governments are also welcome. And then lastly, tribal nations. There's a particular federal law that an American Indian or Alaska Native tribe, Banned Nation, Pueblo, Village, or Community, all welcome and eligible to submit. And we get this last question a lot. Other federal agency, FFRDCs or federally funded research and development centers,
+Expected, OAP, C%&PG, G-PFPE, SOM&PG, G-PFPE, SOM&PG, OMPO, EXP.
+And I would encourage you to go to the NSF Proposal Guide, The Proposal and Policy Guide that we call P-A-P-P-G. And we could talk about that more if you belong in one of these camps and you're interested.
+So out of the gates you are generally eligible, but there's some details that we have to go over before we can just accept a proposal.
+Expected terms.
+Okay, deadlines.
+Upcoming deadline for this fiscal year is September 1st.
+It's an annual deadline, meaning every year thereafter.
+It's the first Tuesday in September, and that may shift a little bit.
+But this year it's September 1st.
+Our second deadline then is in March, 2027.
+Expected Cc735 A TCF OLS DNEX Expected Expected E TREECTS E TREECTS METI TREEE A TCF Expected E TREEE BORGE IT IS AN AN UNED STATE SIFT TREEE BORGE IT IS AN AN UL DEADLINE Expected is going to possibly move around a little bit but it the first Tuesday in March Expected So annual deadlines first one coming is September 1 we going to accept all three tracks
+Expected, In that proposal deadline.
+Expected, So if you're thinking about submitting deadline is approaching soon.
+Expected, Next slide.
+Christina- So how do you think about your success or impact and if you were possibly heard what Orlan was saying.
+Christina- He's talking about how do you measure the success of your open source ecosystem. This isn't about
+Christina- How do you assess the health of your ecosystem, but how do you measure the impact of your open source ecosystem and we're just going to give you a few here.
+Expected terms that you could think about as you write up your evaluation plan or you think about how you want to understand how your ecosystem is doing.
+So we think about it through discovery and innovation, things like data sets that have been established or expanded, startups, new technologies or techniques established.
+We think about, of course, the STEM education and workforce, participants and if they're hired into a STEM field and research infrastructure, new infrastructure that's built.
+I want to emphasize this is not about the health of your ecosystem. This is about how to measure the impact of that ecosystem once it's established. How do you anticipate thinking about its impact? These are not the only ones. These are the ones that we offer up, certainly in the solicitation. If you've got questions or ideas, certainly welcome to ask those kinds of questions in the Q&A today or in the mailbox.
+Expected, Degas, NB. Next.
+Expected, Degas, NB. We're getting into some of the proposal things, but I do want to mention this because this comes as a surprise. We don't want you to be thinking about this.
+Expected, Degas, NB. thinking about a phase two or track two and then be surprised. So you must, must, must have a pointer to an existing publicly available open source product. That's a minimum.
+Expected terms, you know, it's a minimum. So if you're thinking about a track one, you need this link. You also need this for a track two obviously that's a much more mature ecosystem. It's already in many ways on its way.
+You have to talk about the status the current status not only on the product development but the rest of the ecosystem the ecosystem itself So you must talk about
+Expected Termsha, SkellyCam, SkellyCam, The dissemination that publicly available piece. The user base and the contributor base to name a few. That's the details about your ecosystem. Not just about the product, which we get a lot of proposals that do that.
+Expected Termsha, SkellyCam, SkellyCam, SkellyCam, wanna hear about what's a problem you're trying to solve.
+Kelly Fertigly, SkellyTratath, R1M, CTD, R1M, CTD, R1M, CTD, R1M, CTD, R1M, CTD, R4M, CTD, R1M, CTD, R1M, CTD, R1M, CTD, R2M, CTD, R1M, CTD, R1, CTD, R1M, CTD, R1M, CTD, R1M, CTD, R2M, CTD, R2M, CTD, R1M, CTD, R1M, CTD, R1M, CTD, R1M, CTD, R3M, CTD, R2M, CTD, R1M, CTD, R1M, CTD, R1M, CTD, R1M, CTD, R1M, CTD, R1M, CTD, R2M, CTD, R
+about the team and you need a strong justification for why your team is best positioned to build this ecosystem. Next slide.
+Okay, this is what I call the strength in submissions. These are common pitfalls that we see in proposals.
+The first one is, and these are Track 1 and Track 2, if you remember, we're talking about
+Expected terms and the work that we have, the project is about building an ecosystem, that blueprint and establishing that ecosystem, which is track two, you need to make a strong case this is really an issue of significant societal or national importance. You may have a very interesting research product, but how does this translate to the bigger picture? Why does society care about it? Why does the nation care about it?
+So, what are your vision? How are you going to sustain the open source ecosystem? Remember our discussion around how are you going to onboard users? How are you going to get their attention two years down the road when this isn't the shiny new open source ecosystem? How are you going to continue to have those contributors? How are you going to get data maintainers that want to do this, perhaps not being paid? Maybe they'll be paid something. How's that all going to work? So what's your vision about the sustaining piece?
+This last piece is the recruitment strategy for your new contributors How are you going to grow your user base This doesn happen passively So how are you going to bring new contributors continuously to the system and how are you going to grow that user base Very very deliberate kinds of actions And lastly on this is be specific in your planning and evaluation So as you write up your proposal if you just write generically
+and we'll get into this in webinar three a little bit
+to give you some examples, we need you to be very, very specific.
+What are those milestones you're trying to meet?
+And what are those actions?
+More than just a very general set of activities,
+like planning, evaluating, those are too general.
+And this is more than just the cyber technology.
+So if you've got a platform, it's got to go beyond that.
+As I mentioned, the recruitment strategy.
+How are you going to keep those new users coming?
+How are you going to get contributors, et cetera?
+So next slide.
+Continuing on this thought process, as I mentioned,
+I duplicate this because it's so important to us,
+is about the recruitment strategy for retaining those contributors and the sustainability piece.
+Thinking about your licensing approach and having details around that is important.
+And building and testing your infrastructure. It's not good enough to say I have a platform,
+but you need to think about how are you going to build it beyond where you are today into tomorrow?
+How are you going to test that infrastructure? And then how are you going to work with the quality control
+and security of new content as it's developed, as it's added. So these are track one, track two, just a sampling of what I would call the points of strength. So these are pitfalls if you don't do this. These are things that we see over and over again that don't necessarily get talked about or don't get addressed. It's not the entire list. It's a frequently observed list.
+So, next slide. So, I want to call this out. This is especially important. And it's a recommendation because we see that oftentimes teams will go it alone. What do I mean by that? If you're an IHE and you're a PI and a co-PI, traditional research faculty, and you look at this long list of activities and you say to yourself, how in the world am I going to do this? How do I build all these pieces?
+You need to get other groups involved. And I want to put a plug in for these what we call intermediary or backbone organizations. They're out there, lots of these, and their job is to sustain open source ecosystems.
+
+pieces. You need to get other groups involved. And I want to put a plug in for these what we call intermediary or backbone organizations. They're out there, lots of these, and their job is to sustain open source ecosystem. They do this a variety of things, training and governance, sponsorship, community building. They know how to do this. They're experts in the field. I've listed a few here. If you don't recognize your names,
+Expected, L.A.P. It's because oftentimes they're in the background working it's that silent army of people that are moving these activities along.
+Expected, L.A.P. So take a look. These are a sampling. You can find dozens of these groups, but I want to put a plug in this.
+Expected, L.A.P. Don't go this alone and use the expertise that's out there. That's going to save you a whole lot of headache. They have built in expertise and people in these groups to understand how to do this ecosystem building.
+So if you're trying to do it alone, you're probably taking the harder route and it's going to slow you down. So call out to a couple of these groups. I just randomly picked them for a range of things. The carpentries, this is about community-led training and coding and data and research computing. They develop instructors in local communities so they understand how to work with the communities. NUMFocus, another one, they provide fiscal sponsorship, governance support, fundraising, community services.
+Expected, Numbi, Jupiter, Pandas, the Software Freedom Conservancy, fiscal sponsorship, legal services, license compliance, and nonprofit management, and the Open Source Collective provides financial infrastructure and fundraising support.
+So, put a big plug in here for here, so your submission is going to be much stronger if you reach out to these kinds of groups, rather than keeping it within your small group if you're not experienced.
+if you're not experienced in this ecosystem realm. Next slide. I'm going to try and wrap up. We have about four minutes so that I can get to Q&A. And lastly, track three. And remember, this is about the vulnerabilities. So your proposal is going to be much stronger. If you can think about the vulnerability landscape, you need to talk about that, right, for not only the OSC that you've picked, but its products. You have to have a plan for addressing those critical vulnerabilities.
+So not just solving it but you got to talk about what your planning is around that Similar to Track one and track two what is the testing infrastructure and what are your plans on building that or using it or extending it if you have it already
+Expected, M.J.L.S. And then, like the other tracks be very specific about what your milestones are and your evaluation plan to assess where you are and the progress of your work.
+Expected, M.J.L.S. Next slide.
+Expected, M.J.L.S. So a couple of plugs.
+Let's get engaged with NSF PSOS. No other better way to learn what it really is about. We have a barcode we really want to hear about if you have any open source ecosystems that you want to tell us about for some reason. Not necessarily just your submission, but if you've got something you really want to tell us about, let us know.
+We are actively thinking about an open source conference. If you're interested, we want to hear that as well. So please scan the QR code. Let us know if you're interested in that open source conference or an open source conference. Next slide.
+Alright, I'll try to summarize what they probably have as a professional student.
+Are not part of the program full of content in the program would not be available online.
+Of course, you're going to put a plug-in for being a reviewer.
+If you have never reviewed for NSF or you have but not for this program, we could always use reviewers.
+You can't sign up to be a reviewer. However, you can still sign up. You just can't be in this next round. Potentially, depending upon how quickly I can get things processed, you may not be able to participate in the following round. But nothing stops you or nothing's going to happen automatically. So I would encourage you, if you have any interest, please sign up for being a reviewer. We've got a form behind this. It helps us understand where you'd best fit in the panels as repulsors come in.
+And by the way this year we added some additional tagging So if you belong in that group of the governance the data maintainers the users and contributors please sign up We are absolutely going to include those individuals with that kind of experience in these proposals We want that first hand perspective not just the technology designers and OSC product developers We want to have that broader representation on the panels So next slide
+And with that, I want to thank you. And again, you can scan this QR code. It's available. It's going to talk about PSOS, a bit about what I covered today, and more details, traditional solicitation.
+Expected, M.D., and it's 1.44. So I promised to give 15 minutes to the Q&A and my colleague Reed is on the line as well as another colleague Marlon so they're going to help pull those questions forward. So what do we have in the way of questions? Reed, do you want to start us off?
+Expected, MediaPier, M.D.A. Yes, hello. Yeah, there are about 70, 80 questions in the Q&A. So various members of the team have been going in and typing answers. There are still many that we haven't gotten to. I'm trying to pick out an example for you to answer live.
+Alan D. There's a question about foreign collaborations that are generally allowed as long as NSF funds do not support activities abroad.
+Alan D. And the question is,
+Alan D. Open source code at the center of potential proposal has been developed jointly with colleagues at universities abroad. How can those foreign collaborators participate meaningfully and benefit from the project without receiving NSF funds?
+Expected, and would their involvement require any change in ownership, governance rights, or management control for a PISA's proposal?
+So the fundamental, or I think the most basic policy statement around having international collaborators is that no NSF money can flow directly to those entities.
+So either directly through the award through the original lead institution or subawards This doesn mean that that should affect your governance structures It all depends And I going to get to my colleague Solchuk who has raised his hand But the guidance that we had in the past is no money shall flow from NSF to those foreign entities This should not affect or this has no bearing in our opinion on how you run your governance structure That really purely up to those entities But Solchuk do you want to add some comments around that
+Solchuk Roshin, Ph.D.: Yes. I want to also add, can you hear me? Okay. Can you guys hear me? Okay, great.
+Solchuk Roshin, Ph.D.: This is also regulated by the universities or the organization's policies or the state policies. So in addition to NSF, you also need to check your
+Expected...
+Expected...
+Expected...
+Expected...
+Expected...
+Expected...
+Eythan Patrice, Mature, Mature, Mature, Mature, Mature, Mature, Mature, Mature, Mature, Mature, Mature, Mature, Mature, Mature, Mature, Mature, Mature, Mature, Mature, Mature, Mature, Mature, Mature, Mature, Mature, M!
+Expected...
+Expected, Txas versus California. So you will also need to. And then NSF expects you as the PIs to check with your institution's regulations as well and abide by those regulations.
+Yeah, thanks for that, Silchuk. And oftentimes I won't say this explicitly, but it's always the case that there's the NSF policies and then overlaid on top of that is your institution's business policies that may be more restrictive.
+that's what we're talking about. So from an NSF perspective, as long as the money is not flowing to those entities, we're fine. But that doesn't mean actually your state or your local policies and processes may accept those as well. So you want to do a two step. I think the question that was about how can you meaningfully participate if we're not paying you? Well, we know with open source ecosystems, not everybody gets paid. It doesn't mean that you can't participate. It just means that the money can't flow from the NSF perspective. So
+I can't speak to every different governance structure, but I'm sure there's many, many that have arranged for these interactions, these international interactions that involve contributions or involve maintenance through somebody from an international entity. I imagine attendance at a workshop, for example, could be a way that you can meaningfully participate without getting money directly from NSO.
+So what else do we have in the way of questions?
+Yeah, so another question that's in the Q&A is, is an ecosystem for developing an open technical standard that is supported by standards developing organization, sorry, that is supported by a standards developing organization, a good fit for PISOS?
+So this is an interesting question. We've gotten this before. On the surface, I'm just going to answer it a very general way.
+
+that is supported by standards developing organization, sorry, that is supported by a standards developing organization, a good fit for PSOS?
+So this is an interesting question. We've gotten this before. On the surface, I'm just going to answer it a very general way. The answer is no. This is not a standards development activity. We understand, remember, this is about everything around a particular platform, a particular product in and of itself.
+And I understand there's lots of arguments about whether a standard in and of itself is a product. At least for now, we're not interpreting it in that way. It doesn't mean that standards aren't an important or necessary aspect of an open source ecosystem or can even be a part of that. It's just not the central theme right now. So this is not a standards development program or it's not a standards program as well. So not an SDO, SOO activity or the product development.
+Brittney Merrilelebe- There have been a few questions about the fact that funding is intended for eco system development rather than tool development and, you know, questions around how much tool development or tool evolution would be allowed in such a proposal.
+development and questions around how much tool development or tool evolution would be allowed in such a proposal. So one question says, I have an open source project that requires a mechanism for developing and distributing plug-in style software components for a core product. The core product needs to be evolved in order to be sustainable. Would that development be supported in a PZS proposal?
+So the general answer is yes. We understand that this integration, this development, especially as your ecosystems build, you get more developers, more maintainers. Your platform or your product has to grow and has to develop. The percentage or the amount of money, that's really we don't have a hard and fast, you know, it's an X percentage. It's really on a case by case basis. I'd say a general rule of thumb. If you get anywhere above 15%, 20%, we're going to start questioning that.
+Expected terms and how to grow but it a case basis But really good point is integration evolution of those products is necessary right especially as you growing And so I would say if you got this you want to make the case using this particular with the challenges of development and also ideas about how to implement the process of the work done that is working out for each individual of these organizations
+The problem is, if you apply to the development of and use technology, and understand which is the first thing that we're going to implement these two systems.
+The final steps to the development of the blockchain and the blockchain and the organization we're going to take a look at...
+The rule is we don't have one. Like many things, it's really dependent on the context.
+There have also been a handful of questions around sort of choosing the right track and maturity level. So, for instance, do Track 1 and Track 2 proposals need to have a safety, security, privacy angle?
+And then another question about that track two seems like there's a sweet spot of maturity that's targeted and how you how much of an ecosystem, how what level of maturity is then too mature to get even a track two proposal.
+Right, so let's start with the maybe the first one. Yes, absolutely. Safety, security and privacy lens. Absolutely. So think about your data management plan, best practices.
+Expected, Nsf. So explicitly in all Nsf proposals, unless otherwise specified, you do have to speak to that data management. That's going to include safety and security.
+Expected, Nsf. Right? That's just a necessary part of the open source ecosystem. And certainly if you're working in the software realm, you'd be remiss not having that.
+Expected, Nsf. Maturity level, when do you cap out of being a type two, I think is the question, is what maturity is to mature.
+So again, not a hard and fast rule but if you've already got a well-funded ecosystem that's humming along, probably not.
+If you can't make the case of why the NSF money is going to catalyze your ecosystem, then probably not going to be funded.
+It doesn't mean you can't come in and I can't try. But you want to think about the proposal funding. The million and a half.
+Expected CbEaN, RTMPose, MD, GNU, DequityCam, CDMIs, BLSS, DGECAM, ACTUV, OBS, SKEllyCAM, TDMS, CTSMC, CzA, NCVIN, SNS, FGM, NEEEUW.
+Expected CbEaN, RTMP OBS, SKEllyCAM, CTSMC, SDMS, DREFEND, CHIJKOF, OBS, ZMEK, SKEllyCAM.
+So long and time again.
+Do you want to submit a track 2 you want to submit to track 1 to that so that a track 21 But you know that a new add to that Do not have to submit that good to track 2 First you need to submit a track 1 to the track so you don necessarily need to submit funded and then you want to submit to attract to DheepSiekin SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp SkerllyCamp
+Expected.
+But the other model that the Expected is not necessarily a good thing and the model that the MSF can get you've been attending the same company.
+You've attracted all kinds of entities.
+It'd be a hard case to make where NSF could catalyze.
+It doesn't mean you can't.
+It just means that the probability is fairly low that you be able to make that strong case.
+So think about where that money could be used to catalyze it.
+Expected terms, and the other thing that we have to do is to make sure that the students will support it or recommend supporting it. It's all about the kind of case that you make and extending the same given more time to extend sustainability is not a strong case in and of itself.
+Next question.
+So there are also a handful of questions about the letters of collaboration requirements, you know, and who makes a good submitter of a letter of collaboration. For instance, could they be
+ESA, on the screen how are we seeing.
+I'm feeling that no students, I don't think they have to say it's important to know actually the student leadership so to on the media I think maybe more you can see up on many, many people are going to live in.
+Dianne Keonglews, Dianne Keonglew, FeeMoeEX, Dianne Keonglew, Opey, Dianne Keonglew, who is that this right and it's not a problem at that.
+that are actively engaged in your ecosystem.
+So asking a friend to write a collaboration letter
+is probably not gonna go anywhere.
+So think about who you're asking, what role do they play?
+What role do you intend that group to play?
+And how do you convince the reviewers and NSF
+that that relationship is adequately developed
+or that you understand what that relationship is?
+and it's just not somebody that says, yeah, I like that open source, that idea.
+So it's about the relationship.
+Is an individual able to speak to that and what role they might play or how they support it?
+So general letters of support, not helpful at all.
+It's about collaboration.
+What role does that individual what are they going to play in the bigger ecosystem And a generic user probably difficult to sell that that really a helpful contribution or justification for making a case for the ecosystem
+There are also some questions about the September deadline, March deadline, whether the expected number of awards is for the entire fiscal year or just for the first year.
+deadline and whether, yeah, and how the awards are spread out over the two submission deadlines in the year.
+Yeah, I'm going to answer this very broadly. And then if you attend the third webinar or the fourth webinar, depending upon how many of these Q&A sessions, the totals are for the entire fiscal year. How that works in terms of portfolio balance, we can talk about when we get into this proposal processing and asking questions around that.
+But let's just say you can imagine that what a challenge this presents, right? Having a set of proposals in September, you want to get that review, and then you get another one coming up. And you don't have the benefit of sitting on all those proposals. So there's a bit of juggling that we do and processes for how do we think about the portfolio and how do we manage over two timelines or two deadlines that are over almost eight months total. So it is for the whole year, total amounts.
+and TxEy, MediaPier, RR.
+And then a few people have also asked about getting in touch with program officers to discuss their particular ideas and whether they would be a good fit for a particular track.
+So just felt that that's a good question to address before we close today.
+Yeah. The PSOS mailbox, and please bear with us.
+You know, I think we've done our best to try to answer all those.
+If you put it in the PSOS mailbox, please, please, please make your subject line meaningful because we are able to track things down much faster if we understand what the email is about. But when we get one line subject or one word subject lines or we get some really obtuse statement, we can't help you. If you put it in the mailbox, we have a working group and we do talk about proposals or questions that come up kind of collectively.
+But bear with us, especially with the end of the fiscal year, we're scrambling to get all the questions. We're going through those now if we haven't answered one before.
+
+Expected, MD, We have a working group and we do talk about proposals or questions that come up kind of collectively, but bear with us. Especially with the end of the fiscal year we're scrambling
+Expected, MD, To get all the questions. We're going through those now if we haven't answered one before. If it's project specific, in other words you're going to lay out your whole project and you want our opinion on it.
+OrskellyCam.com
+If you have an award with us already, we're still answering those kinds of questions, but if you want us to look at your proposal, and go through the whole thing, or, you know, an abbreviated description, that's going to be a little bit hard.
+But if you have particular questions, we can get into those, and certainly the Q&A session, usually attendings find those very helpful.
+So we have one minute Let me just put a plug in I think that all the questions we going to take So we have the Q inbox thanks Reid So we going to go through that inbox We going to prepare for the second webinar We have not laid out the date It probably going to be before July 15 so that we leave plenty of time for teams that are proposing If we get a huge response or questions that we can answer through that period we have another one We schedule another one And certainly we have this third webinar fourth webinar on proposal preparation The fourth webinar we going to talk about that process somebody was asking about How does it work Who reviews my proposal What about this portfolio balancing How do I think about my
+budget. All of those little details, the letters of collaboration, what should they look like? Why did I get rejected the last time? This is going to be a very mechanical question. So I'm looking at it's two o'clock. We promised an hour and we're at that hour, top of the hour. And at this point, I think we're going to end the webinar. Be on the lookout. You have the QR codes now. It'll take us a couple days to get this webinar posted. But stay in touch via the PISAS mailbox. We will answer it.
+Expected.
+Just be patient and be on the lookout for those other webinar dates and thanks to everyone
+for joining.
+I hope you learned something about the program and this was helpful.
+So, thanks very much!

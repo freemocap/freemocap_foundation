@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&ast;POSE&colon; PHASE II&colon; The Free Motion Capture &lpar;FreeMoCap&rpar; Project&ast;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+/* From extension foam.foam-vscode */
+.foam-placeholder-link {
+  color: var(--vscode-editorWarning-foreground);
+  cursor: default;
+}
+
+.foam-note-link,
+.foam-attachment-link {
+  color: var(--vscode-textLink-foreground);
+}
+
+.foam-tag {
+  color: var(--vscode-editorLineNumber-foreground);
+}
+
+.foam-cyclic-link-warning {
+  background-color: var(--vscode-editorError-background);
+  color: var(--vscode-editorError-foreground);
+}
+
+.embed-container-note {
+  padding: 0.5em;
+  margin: 1.5em 0;
+  border: 1px solid var(--vscode-editorLineNumber-foreground);
+}
+
+.embed-container-attachment {
+  padding: 0.25em;
+  margin: 1.5em 0;
+  text-align: center;
+  border: 1px solid var(--vscode-editorLineNumber-foreground);
+}
+
+.embed-container-image {
+  margin: auto;
+  padding: 0.25em;
+  text-align: center;
+}
+
+/* From extension marp-team.marp-vscode */
+#__marp-vscode {
+  all: revert;
+}
+
+/* Override VS Code default CSS rules reverting to initial
+   https://github.com/microsoft/vscode/blob/master/src/vs/workbench/contrib/webview/browser/pre/main.js#L53 */
+body.marp-vscode {
+  padding: 0;
+}
+
+body.marp-vscode img {
+  max-width: unset;
+  max-height: unset;
+}
+
+body.marp-vscode a,
+body.marp-vscode a:hover,
+body.marp-vscode code {
+  color: unset;
+}
+
+body.marp-vscode blockquote {
+  background: unset;
+  border-color: unset;
+}
+
+@media screen {
+  body.marp-vscode {
+    overflow-y: scroll;
+  }
+
+  #__marp-vscode [data-marp-vscode-slide-wrapper] {
+    margin: 20px;
+  }
+
+  #__marp-vscode svg[data-marpit-svg] {
+    box-shadow: 0 5px 10px rgb(0 0 0 / 25%);
+    display: block;
+    margin: 0;
+  }
+
+  /* Based on https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+  #code-csp-warning {
+    background-color: #444;
+    box-shadow: 1px 1px 1px rgb(0 0 0 / 25%);
+    color: white;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    margin: 16px;
+    padding: 6px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+    word-wrap: break-word;
+  }
+
+  #code-csp-warning:hover {
+    text-decoration: none;
+    background-color: #007acc;
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 25%);
+  }
+}
+
+@media print {
+  body.marp-vscode #code-csp-warning {
+    display: none;
+  }
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-dark">
+            <h1 id="pose-phase-ii-the-free-motion-capture-freemocap-project"><em>POSE: PHASE II: The Free Motion Capture (FreeMoCap) Project</em></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Gap/Need/Hero statements</p>
+<h2 id="intellectual-merit">Intellectual Merit</h2>
+<p>How we will advance knowledge</p>
+<h2 id="broader-impacts">Broader Impacts</h2>
+<p>How we will help the world</p>
+<h2 id="context-of-the-ose">Context of the OSE</h2>
+<h3 id="current-context">Current Context</h3>
+<h4 id="technogical-context">Technogical context</h4>
+<ul>
+<li>Capacities
+<ul>
+<li>Cutting Edge (Established methods)</li>
+<li>Bleeding Edge (Promising advances)</li>
+<li>Likely futures</li>
+</ul>
+</li>
+<li>Related projects
+<ul>
+<li>Michael Black</li>
+<li>R. James Cotton</li>
+<li>MMPose</li>
+<li>Deeplabcut</li>
+<li>etc</li>
+</ul>
+</li>
+</ul>
+<h4 id="social-context">Social context</h4>
+<ul>
+<li>Corporate mistrust</li>
+<li>Privacy violations</li>
+<li>Worker/social exploitation</li>
+<li>Economic Disparity -&gt; Access Disparity (and many many other disparities)</li>
+</ul>
+<h4 id="ethical-context">Ethical context</h4>
+<ul>
+<li>Risk of future corporate conglomoration of technology</li>
+<li>Need for decentralized systems
+<ul>
+<li>Clowdstrike outages</li>
+<li>Openpose dead-project status</li>
+</ul>
+</li>
+<li>Rise of AI
+<ul>
+<li>Likelihood of future violations</li>
+<li>Need for fast development of FOSS tools before corpo tech dominates</li>
+</ul>
+</li>
+<li>Need for decentralized user-directed  FOSS projects
+<ul>
+<li>With accompanying  organizational <strong>structures to support</strong></li>
+</ul>
+</li>
+<li>Inaccessiblity of science and technogy
+<ul>
+<li>Growing Gaps
+<ul>
+<li>(See NSF Strategic plans)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="the-problem-of-universities">The problem of universities</h5>
+<ul>
+<li>Exclusionary by design</li>
+<li>Ever hungry corporate engine driven by student debt
+<ul>
+<li>Tuition room and board</li>
+<li>~60% Overhead charges</li>
+</ul>
+</li>
+<li>'Higher Education as a filter' \cite{arrow1970}
+<ul>
+<li>&quot;Purpose of education is to let purchasers of labor know the value prop of a student&quot;
+<ul>
+<li>🤢 🤮</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The 'banking model' of education (perjorative) \cite{friere1967}
+<ul>
+<li>Education as a transactional process of certification</li>
+</ul>
+</li>
+<li>Current systems of academic research and education:
+<ul>
+<li>...does not reward necessary activites to build and sustain an OSE</li>
+<li>...is not equipped to address present and rising societal needs and challenges</li>
+</ul>
+</li>
+</ul>
+<h5 id="on-gardens-and-cottages">On gardens and cottages</h5>
+<ul>
+<li>Need for interoperable research and communication methods,
+<ul>
+<li>'Cottage Industry' model is siloed, inefficient,</li>
+<li>'Garden Ecosystem' for development of self-supportive ecosystem (like 3-sisters from Braiding Sweetgrass)</li>
+</ul>
+</li>
+<li>The problem of publication (<a href="http://neural-reckoning.org/video_metascience_peer_review.html">Dan Goodman stuff</a>)</li>
+<li>The story of Grease Pencil</li>
+</ul>
+<h3 id="need-and-gap">Need and Gap</h3>
+<ul>
+<li>
+<p>Current model not fit for present and future needs</p>
+</li>
+<li>
+<p>Need alternative models, organizations, infrastructures for science and education</p>
+<ul>
+<li>Generative and self sustaining
+<ul>
+<li>Von Neumann machine - Sustainibility through replicability</li>
+</ul>
+</li>
+<li>As Autonomous As Possible (allow the fewest to do the most)</li>
+<li>Topic/software/hardware agnostic</li>
+<li>Multi-scale adaptable, extensible, maintainable, and replicable [SEP]</li>
+</ul>
+</li>
+<li>
+<p>Two Loops theory of social progress</p>
+<ul>
+<li>Not saying we should burn it all to the ground
+<ul>
+<li>It's already burning</li>
+</ul>
+</li>
+<li>We need to build a better ship
+<ul>
+<li>&amp; f-ing ASAP plz thx</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="objectives-and-long-term-vision">Objectives and Long term vision</h2>
+<h3 id="aspirational-goals">Aspirational Goals</h3>
+<ul>
+<li>Make FreeMoCap the best motion capture option available at any price
+<ul>
+<li>Bench mark agaist modern gold-standard techniques and proprietary softwares [Validation], [Diagnostics]</li>
+<li>&quot;We define the floor&quot;</li>
+</ul>
+</li>
+<li>Maximize accessibility
+<ul>
+<li>&quot;We follow a “Universal Design” development philosophy, with the goal of creating a system that serves the needs of a professional research scientist while remaining intuitive to a 13-year-old with no technical training and no outside assistance.&quot; (<a href="http://freemocap.org">freemocap.org</a>)</li>
+</ul>
+</li>
+<li>Community co-ownership and self-governance
+<ul>
+<li>[BDFaSPoT]</li>
+</ul>
+</li>
+<li>Covert Education
+<ul>
+<li>[Anti-paradox of active user]</li>
+<li>&quot;Using the thing teaches you how it works</li>
+<li>[WYLTKM]-Bot</li>
+</ul>
+</li>
+</ul>
+<h2 id="potential-broader-impacts">Potential Broader Impacts</h2>
+<p>The long term potential of a generative plan is difficult to constrain</p>
+<ul>
+<li><strong>Meager success:</strong>
+<ul>
+<li>New useful tool</li>
+<li>Small body of research</li>
+<li>Education tools and strategy</li>
+</ul>
+</li>
+<li><strong>Expected outcomes:</strong>
+<ul>
+<li>Support and sustain the growing community of <code>freemocap</code> users, loosely organized around a shared love of the measurement, investigation, analysis, and expression of human and animal movement (broadly construed)</li>
+<li>Sustainable organization and vibrant ecosystem existing as a proof-of-concept alternative organizational approach to broadscale academic research, education, and training</li>
+</ul>
+</li>
+<li><strong>Idealist future:</strong>
+<ul>
+<li>Iterative solutions on 'project-scale' strategy produces a vibrant ecosystem of ecosystem which fundamentally changes the face of education and scientific research.</li>
+</ul>
+</li>
+</ul>
+<h2 id="guiding-principles">Guiding Principles</h2>
+<h3 id="universal-design">Universal Design</h3>
+<ul>
+<li>&quot;When anyone can use it, everyone benefits&quot;</li>
+<li>Same tool for 0XP as for professional</li>
+<li>&quot;The [aspirational goal] of creating a system that serves the needs of a professional research scientist while remaining intuitive to a 13-year-old with no technical training and no outside assistance&quot;</li>
+<li><strong>Sustainability through accessibility</strong>
+<ul>
+<li>The key to sustainability is a growing, active, diverse, and vibrant userbase</li>
+<li>Universal design attracts the widest possible userbase</li>
+</ul>
+</li>
+</ul>
+<h3 id="universal-access">Universal Access</h3>
+<ul>
+<li><strong>Maximize access to maximize impact</strong>
+<ul>
+<li>Free software, so econimically maximum possible userbase</li>
+<li>Quick as possible route from &quot;Just heard of this&quot; to &quot;Oh look, a skeleton!&quot;
+<ul>
+<li>minimize 'time to skelly' [TTS]</li>
+<li>Inside out education
+<ul>
+<li>Greased rail to the good stuff</li>
+<li>Educational routes from their towards whichever sub-field draws the user [Plot-hook-strategy]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Education focus</strong>
+<ul>
+<li>Core design built around:
+<ul>
+<li>Progressive Disclosure [WYLTKM]-bot</li>
+<li>Modern best practices</li>
+<li>Empirically measured user workflow data
+<ul>
+<li>[SkellyBot-Local]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>to avoid [paradox of the active user]
+<ul>
+<li>[User-State-Model-Trajectory-Control]</li>
+</ul>
+</li>
+<li>foster <strong>long term user relationships</strong> []</li>
+<li>encourage community engagement
+<ul>
+<li>Push user-student into 'zone of proximal development'</li>
+<li>Provide easy access to resources (AI, static, community)</li>
+</ul>
+</li>
+<li>(see <strong>AI Simulacrum Pseudo Mentorship</strong>[AiSPM])</li>
+<li>Covert education:
+<ul>
+<li>Using the thing should teach you how it works</li>
+<li>[ZoPD] &amp; [WYLTKM]-bot</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Maintain a True Minimum</strong>
+<ul>
+<li><strong>Hardware</strong>
+<ul>
+<li>Understand and maintain an option to run with the barest, most generic, and lowest-possible cost hardware,</li>
+<li>Focus and maintain a [generic hardware] pipeline as the core path
+<ul>
+<li>Specialized tools (e.g. sterocam, eye trackiner, emg, forceplates) and proprietary options (e.g. iPhone, Basler/FLIR cameras, etc) added via plug-in system</li>
+<li>Developed by FMC-C and/or upon [client] request</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Software</strong>
+<ul>
+<li>Maintain and understand requirements for different outcomes (specific to defined use cases)
+<ul>
+<li>Minimal requirements (to get a viable output)</li>
+<li>Recommended requirements
+<ul>
+<li>Default default (for first-timers)</li>
+<li>Per use case
+<ul>
+<li>Max speed (e.g. real-time, long, high-res, high-fps recordings)</li>
+<li>Max accuracy (e.g. scientists, clincians, artistic/atheltic performance)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Maximum requirements
+<ul>
+<li>Specs beyond which you won't see an improvement in results</li>
+<li>Determined by understand technical bottlenecks</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>(see <strong>Evaluation/Diagnostics</strong>)</li>
+</ul>
+</li>
+<li><strong>Cost</strong>
+<ul>
+<li>Methods to avoid price-barrier for paid aspects of [FMC-F] Activities (see <span class='foam-tag'>#no</span> artificial scarcity, # revenue streams)</li>
+<li>[HumbleBundleModel] - Sliding scale pay options
+<ul>
+<li>Recommended cost relative to break-even.</li>
+<li>Give user option to allocate overage to different programs/departments
+<ul>
+<li>(by necessity, the recommendations will be followed if at all possible, adjustments may be made to ensure long term stability of the FMC-Org.</li>
+<li>Its kinda like a voting system, but with money)</li>
+<li>Support for:
+<ul>
+<li>New features</li>
+<li>Specific projects</li>
+<li>Scholarship/community grants program</li>
+<li>Unspecified</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Users requesting at-or-below cost must submit a request, which can be evaluated and supported via the 'communal support' scholarship/money bucket [CommunityGrantSystem]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="no-artificial-scarcity">No artificial scarcity</h3>
+<ul>
+<li><strong>&quot;Knowledge is free, labor is unbelievable expensive&quot;</strong></li>
+<li>Anything that can be duplicated infinitely is free for everyone
+<ul>
+<li>Software</li>
+<li>Documentation</li>
+<li>Static documentation/tutorial/educational material, etc</li>
+</ul>
+</li>
+<li>Anything that is finite (or costs us money) can be charged, e.g.:
+<ul>
+<li><strong>Human labor</strong>
+<ul>
+<li>Service models
+<ul>
+<li>Setup/planning</li>
+<li>Dedicated technical support</li>
+</ul>
+</li>
+<li>Custom Software</li>
+</ul>
+</li>
+<li><strong>Cloud Services (SkellyCloud)</strong>
+<ul>
+<li>Offer 'free' tier, tie to open finances, allow community to set primary constants relative to a fixed % of the [FMC-F] annual budget</li>
+<li>Server side processing
+<ul>
+<li>Mocap data</li>
+<li>AI LLM</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Cloud storage</strong></li>
+<li><strong>Camera hardware</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="community-focus">Community Focus</h3>
+<ul>
+<li>Emphasize that the core of the FMC-P is the community of users</li>
+<li>The software artifacts are the fruit of the garden</li>
+<li>Develop lateral connections, encourage growth, exploration, community support</li>
+</ul>
+<h3 id="aggressively-open-source">Aggressively open source</h3>
+<ul>
+<li><strong>&quot;The open source community <em>is</em> what the scientific community pretends to be&quot;</strong></li>
+<li>FOSS as a matter of moral imperative centered on the premises of Univerisal Design and Universal Access
+<ul>
+<li>Identification of strategic advantage within the contexts of FOSS being the 'right thing to do'</li>
+<li>See &quot;why open source misses the point&quot;</li>
+</ul>
+</li>
+<li>Encourage conversations around moral and ethical contexts of current context of the project and society at large</li>
+<li><strong>Morality without Zealotry</strong>
+<ul>
+<li>We have our conversations clearly, but do not exclude those who misalign provided they aren't operating in opposition to our values</li>
+<li>More about being aware, explicit, and intentional around moral and ethical decisions</li>
+<li>Encourage and allow non-FOSS aligned activities through the <code>For-Profit</code> entity via B2B connections with external and spin-off entitities
+<ul>
+<li>Charge according to degree of mis-alignment with core values</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="the-freemocap-project-fmc">The FreeMoCap Project (FMC)</h2>
+<p>Table 1 - (Items below crossed with <code>current</code>, <code>in development</code>, <code>planned</code>)</p>
+<h3 id="artifacts">Artifacts</h3>
+<h4 id="freemocap-softwares">FreeMoCap Software(s)</h4>
+<ul>
+<li>Core FreeMoCap Software(s) (FMC-Core)
+<ul>
+<li>Fully integrated FOSS platform for Laser Skeleton research/recording
+<ul>
+<li>Fully-body mocap
+<ul>
+<li>realtime, animator and/or science focus</li>
+</ul>
+</li>
+<li>Face mesh tracking</li>
+<li>3d gaze and eye tracking
+<ul>
+<li>Webcam eye tracker</li>
+<li>Plugin support for Pupil labs</li>
+<li>VR/HMD support</li>
+</ul>
+</li>
+<li>Integrated laser skeleton
+<ul>
+<li>Matthis papers</li>
+</ul>
+</li>
+<li>Analysis and visualization suite
+<ul>
+<li>Blender, threeJS, R-studio support, skellymetrics reports</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Can also serve as a generic Computer Vision platform
+<ul>
+<li>via recombination of other plugins around <code>skellycam</code> package</li>
+</ul>
+</li>
+<li>Composed of various sub-skelly repos, each of which:
+<ul>
+<li>Can operate in a standalone format or as plug-in to core software</li>
+<li>Matches general architecture and CI/CD structure of parent <code>freemocap</code> software, including:
+<ul>
+<li>Standalone GUI/CLI</li>
+<li><code>.github/workflows/</code>: CI/CD via GH Actions, including testing, diagnostics, etc</li>
+<li><code>README.md</code>: Minimally must including ##H2 headings for <code>Description, Installation, Useage</code></li>
+<li><code>api</code>: FastAPI endpoints</li>
+<li><code>docs</code>: A documentation folder.</li>
+<li><code>examples</code>: Example code and scripts for standard use cases</li>
+<li><code>templates</code>: Template for add-on/plug-in</li>
+</ul>
+</li>
+<li>Notables:
+<ul>
+<li>SkellyCam (cameras)</li>
+<li>SkellyTracker (2d tracking)</li>
+<li>SkellyForge (3d reconstruction)</li>
+<li>SkellyViewer (Viusualization and Observability)</li>
+<li>SkellyBlender (Animation output via Blender addon)</li>
+<li>SkellyMetrics (Analysis pipelines and 'report' building)</li>
+<li>SkellyBot (AI and LLM support)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="documentation-and-educational-material">Documentation and Educational material</h4>
+<ul>
+<li>Providing best-available educational materials, tutorials, and demos for related areas (link to existing educational material for general topics, focus on our specific use case)
+<ul>
+<li>Tech (e.g. Computer vision, Cameras, CNNs, etc)</li>
+<li>Math (e.g. Linear algebra, timeseries analysis, computational geometry, kinematic/ kinetic analysis)</li>
+<li>Visualization (e.g. data visualization, animation, video game development, etc)</li>
+<li>Science (e.g. human/animal movement, perception/action, etc )</li>
+</ul>
+</li>
+<li>Static Docs
+<ul>
+<li><a href="http://freemocap.org/documentation">freemocap.org/documentation</a></li>
+<li>Tutorials</li>
+<li>Recorded lectures and live streams</li>
+</ul>
+</li>
+<li>AI-assisted documentation
+<ul>
+<li>SkellyBot
+<ul>
+<li>Lives on <a href="http://freemocap.org">freemocap.org</a> chat</li>
+<li>Lives in Community server (summonable, requests consent before interacting with new users)</li>
+<li>Lives in local app (either connect to existing API via API key, run a local model, or use the [FMC-F] SkellyModel endpoint (requires account))</li>
+<li>See AI-assisted-psuedo-mentorship</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="datasets-and-derived-models">Datasets and Derived Models</h4>
+<ul>
+<li>See `[FMC-F]/Revenue/Federated and co-op datasets and models</li>
+</ul>
+<h3 id="the-freemocap-community-fmc-c">The FreeMoCap Community (FMC-C)</h3>
+<ul>
+<li>Broad and deep user base, integrating
+<ul>
+<li>User/Developers</li>
+<li>Scientist/Artists</li>
+<li>Student/Expert</li>
+</ul>
+</li>
+<li>Develop active social community space where users can share progress and ask questions
+<ul>
+<li>Currently - Discord server</li>
+<li>Eventually moving to Matrix/Element server w/ Discord/Slack bridge</li>
+</ul>
+</li>
+<li>Nurture long term user support, actively encourage growth via semi-automated interactions with software and community spaces</li>
+<li>The FreeMoCap Community userbase comprises the following heavily overlapping sub-communities:
+<ul>
+<li><strong>Researcher community</strong>:  Researchers centered around integerated 'Laser Skeleton' research (Gestalt of vision + motor is greater than the sum of its parts), including sub-specialties of theory-driven and applied/clinical investigations.</li>
+<li><strong>Developer community</strong>:  Software developers and technologists dedicated to the long term stability and development of the main artifactual vehicles of the FMC-OSE</li>
+<li><strong>User community</strong> of technically and geographically diverse set of end user communities dedicated to the specialized domains and cross-disciplinary bridges asscociated with the broad domain of topics, fields, and methods associated with the FMC-P.</li>
+<li>Metrics - Prism/Pokemon power chart of community composition, noting specialists relative to generalists
+<ul>
+<li>tie to <code>Working in Public</code> 'toys', 'stadiums', 'clubs', 'federations' (goal is federations)</li>
+<li>We are a 'stadium' that wants to be a <code>stratified federation</code> (i.e. federation with XP Levels)</li>
+</ul>
+</li>
+<li>** Types/motivations of Users**
+<ul>
+<li>Students: Want to learn</li>
+<li>Artists:  Want to create</li>
+<li>Scientists: Want to understand</li>
+<li>Clinicians: Want to heal</li>
+<li>Engineers: Want to build</li>
+<li>Athletes/Performers: Want to perform</li>
+</ul>
+</li>
+<li><strong>Intellectual Content Creators</strong>
+<ul>
+<li>Software developer
+<ul>
+<li>Core</li>
+<li>Visualization</li>
+<li>Analysis</li>
+</ul>
+</li>
+<li>Creator Users
+<ul>
+<li>Artistic
+<ul>
+<li>Animation</li>
+<li>Video Games</li>
+<li>Performance (dance, athletics)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Educator Users
+<ul>
+<li>Science teachers
+<ul>
+<li>Scientific and clinical underpinnnings</li>
+<li>Physics, computational geometry</li>
+</ul>
+</li>
+<li>Tech teachers
+<ul>
+<li>Camera technology</li>
+<li>Computer vision (ML-based and classical)</li>
+<li>Applied technologies (motion capture, eye tracking)</li>
+</ul>
+</li>
+<li>Coaches, trainers, physical therapists
+<ul>
+<li>Use to teach the recorded patient about their movement to improver performance assist in a clinical rehabilitation, assessment, or diagnosis.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Community helpers
+<ul>
+<li>Moderation</li>
+<li>Troubleshooting and technical support</li>
+<li>Encouraging newcomers</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>OS Community building components:
+<ul>
+<li>recruitment</li>
+<li>motivation</li>
+<li>mentoring</li>
+<li>managing</li>
+<li>mediating disputes</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="the-freemocap-foundation-fmc-f">The FreeMoCap Foundation ([FMC-F])</h3>
+<ul>
+<li>Economically self-sustaining combination research/software development institute</li>
+</ul>
+<h4 id="organization">Organization</h4>
+<ul>
+<li>Non-profit (primary) organization handles 'charitable activities'
+<ul>
+<li><code>FreeMoCap Foundation, Inc.</code>
+<ul>
+<li>Federally recognized 501c3 IRS certified public charity</li>
+<li>Incoporated as non-profit corporation in Massachusetts</li>
+<li>Board:
+<ul>
+<li>President, Clerk, Treasurer</li>
+</ul>
+</li>
+<li>C-Suite:
+<ul>
+<li>CEO, COO, CTO, CFO</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Follow bylaws, mission, etc laid out in Articles of Incorporation</li>
+</ul>
+</li>
+<li>For-profit organization handles other activitites
+<ul>
+<li>Handles anything not covered by IRS definition of Charitable Activities</li>
+<li><code>SkellyTech, LLC.</code>
+<ul>
+<li>Will convert to C-corp as appropriate</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="governance">Governance</h4>
+<ul>
+<li>Crib <code>numpy</code>'s notes</li>
+<li>Follow Open Finances and Open Everything procedures (e.g. Backyard Brains)
+<ul>
+<li><strong>&quot;Sustainability through trust, trust through transparency&quot;</strong></li>
+</ul>
+</li>
+<li>Benevolent Dictator for a Set Period of Time (BDFaSPoT) Model
+<ul>
+<li>Like the classic <code>Benevolent Dictator for Life</code>(BDFL) model, but transitions to community-DAO style management over multi-year, tailorable timespan
+<ul>
+<li>Retains flexibility and adaptability needed in a projects' early stage, before a cohesive group identity and organizing infrastructure has developed</li>
+<li>Allows controlled transition plan to more community-driven, decentralized model</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Transition plan based on relative weighting of Board vs Community voting on key elements (see below)
+<ul>
+<li>Present: 100% Board (No operating mechanisms that allow for direct community input)</li>
+<li>Eventual: 50% Board, 50% Community ([FMC-F] President is tie-breaker)
+<ul>
+<li>In case of true deadlock FMC-C can Hard Fork, but lets hope it doesn't come to that</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Staged transition to reliance on Community guidance to set various core computational constants (of increasing risk)
+<ul>
+<li>Community collaboration spotlight winners (Eurovision style voting of 'members', i.e. people with &gt;0XP)
+<ul>
+<li>Develop and test basic mechanisms of community voting
+<ul>
+<li>Associated management of communication, moderation, etc</li>
+</ul>
+</li>
+<li>Timeline: Immediate</li>
+</ul>
+</li>
+<li>Decisions related to [Skelly Enhancement Proposals]
+<ul>
+<li>Touches core software artifacts</li>
+<li>Timeline: Early proposal period</li>
+</ul>
+</li>
+<li>Community Free tier for cloud services
+<ul>
+<li>Touches organization finances</li>
+<li>Timeline: Late proposal period (optimistic)</li>
+</ul>
+</li>
+<li>(Later) Salary Base Blocks, overhead rates, Co-op dataset/model management
+<ul>
+<li>Touches coreorganization operations</li>
+<li>Timeline: Beyond proposal scope</li>
+</ul>
+</li>
+</ul>
+</li>
+<li></li>
+</ul>
+<h4 id="responsibilities">Responsibilities:</h4>
+<ul>
+<li>Support and development for core software(s)</li>
+<li>Support Research in related fields (including training, mentorship, and grant support)
+<ul>
+<li>Neuroscience (human and non-human)
+<ul>
+<li>Motor control (mocap)</li>
+<li>Visual/oculomotor neuroscience (eye tracking)</li>
+<li>Developmental studies</li>
+</ul>
+</li>
+<li>Biomechanics</li>
+<li>Applied clinical research
+<ul>
+<li>Injury rehabilitation</li>
+<li>Gait and posture</li>
+<li>Age-related</li>
+<li>Developmental</li>
+</ul>
+</li>
+<li>Robotics</li>
+<li>etc</li>
+</ul>
+</li>
+<li>Manage annual workshop and conference
+<ul>
+<li><code>FreeMoCamp</code> is like summer camp, hackathon, workshop, education/training focus</li>
+<li><code>FreeMoCon</code> more of a conference vibe</li>
+<li>Pair them up, so <code>FreeMoCamp</code> runs during the week and leads straight into <code>FreeMoCon</code> on the weekend</li>
+</ul>
+</li>
+<li>Handle security, privacy of data, codebase, and user info</li>
+<li>Pay salaries of a core set of maintainer/developers</li>
+<li>Offer contract work to the FreeMoCap Community</li>
+<li>Manage finances
+<ul>
+<li>see (Revenue Streams)</li>
+<li>Things covered under 'charitable activities' IRS definition are handled by [FMC-F]</li>
+<li>Non-charitable activities handled by subsidiary for-profit (Skellytech)</li>
+</ul>
+</li>
+</ul>
+<h4 id="licensing-model">Licensing Model</h4>
+<ul>
+<li>AGPLv3 for all repos owned by [FMC-F]oundation
+<ul>
+<li>&quot;Its a dart frog party, and everyone is invited!&quot;</li>
+<li>AGPLv3 as protection from exploitation by proprietary softwares</li>
+<li>reference 'open source misses the point'</li>
+</ul>
+</li>
+<li>Exclusive sub-licensing rights to SkellyTech
+<ul>
+<li>SkellyTech handles B2B license agreement, whereby we offer software using non-AGPLv3 license
+<ul>
+<li>Cost dependent on 'distance' from AGPLv3 (AGPL -&gt; GPL -&gt; LGPL -&gt; Apache/MIT -&gt; ... -&gt; Proprietary)</li>
+</ul>
+</li>
+<li>Can offer sub-license agreement for existing software, or to create custom software solutions</li>
+</ul>
+</li>
+</ul>
+<h2 id="proposed-actvitities">Proposed actvitities</h2>
+<p>Activities to bring us from current status towards the Ideal Perfect status described above</p>
+<h3 id="ecosystem-establishment-and-growth">Ecosystem establishment and Growth</h3>
+<h4 id="user-engagementeducation">User Engagement/Education</h4>
+<ul>
+<li>Model User as a dynamic trajectory though the &gt;3d space with axes:
+<ul>
+<li>User vs Developer</li>
+<li>Scientist vs Artist</li>
+<li>Novice vs Expert</li>
+<li>also - any definable vector
+<ul>
+<li><code>Mentorship</code> vector
+<ul>
+<li>Defined as another user's UserStateVector (USV)</li>
+</ul>
+</li>
+<li><code>Community</code> vector
+<ul>
+<li>Defined as median USV of users within a given community (with XP level &gt; <code>threshold</code>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Use rigid milestones, stochastic user-matching, and AI-analysis to determine each users's 'Status' relative to each sub-topic, sub-skill, sub-community:
+<ul>
+<li>Proficiency [P]</li>
+<li>Interest [I]</li>
+<li>Experience [E]</li>
+</ul>
+</li>
+<li>Mis-matches between P, I define 'gentle pressure' vectors</li>
+<li>Constant gentle pressure to increase <code>E</code> via:
+<ul>
+<li>Using more advanced methods</li>
+<li>Gamifying improvement metric outputs (see <code>validation</code> and <code>diagnostics</code>)</li>
+<li>Diving deeper into technical and scientific underpinnnings</li>
+</ul>
+</li>
+<li>PID controller with stochastic noise encouraging exploration into 'zones of proximal development' (ZoPD)</li>
+</ul>
+</li>
+</ul>
+<h4 id="ai-mediated-pseudo-mentorship-support-skellybot">AI-mediated pseudo mentorship support (SkellyBot)</h4>
+<ul>
+<li>AI modeled to provide a SIMULATION of real human support</li>
+<li>Explicitly AI at all times, intended to provide infinitely duplicable simulation of replicable text based emotional labor</li>
+<li>100% transparancy to user re:
+<ul>
+<li>Data available</li>
+<li>Derived information (i.e. UserStatus)</li>
+<li>Computations, processes, prompts, etc</li>
+</ul>
+</li>
+<li>Offer user direct control (i.e. they can explicity alter and edit their core data model to generate different support behavior from the AI)
+<ul>
+<li>e.g. let them directly tell the machine their interests, expertise, etc</li>
+</ul>
+</li>
+<li>SkellyBot sub-personas:
+<ul>
+<li>Onboarding-Bot
+<ul>
+<li>Goals:
+<ul>
+<li>Primary: Introduce new users to software
+<ul>
+<li>Onboarding tutorials</li>
+<li>WYLTKM-bot</li>
+<li>RTFM-bot</li>
+</ul>
+</li>
+<li>Secondary: Encourage engagement with community
+<ul>
+<li>Community Server spaces</li>
+<li>Community Activitities</li>
+<li>FreeMoCamp/Con</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ReadTheManualBot (RTFM-bot)
+<ul>
+<li>Goals:
+<ul>
+<li>Primary: Help them learn and run the software</li>
+<li>Secondary: Avoid 'paradox of active user' (offer quicker paths to victory)</li>
+</ul>
+</li>
+<li>RAG model
+<ul>
+<li>Docs (FreeMoCap Technical Docs)</li>
+<li>Logs (User current and past logs, Github Issues, Server <code>Help Requests</code> channel)</li>
+<li>Images (e.g. from cameras, videos, or screenshots)</li>
+<li>Data (<code>npy</code>, <code>csv</code>, <code>sql</code>, <code>json</code>, with helper readers)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>WouldYouLikeToKnowMoreBot (WYLTKM-Bot)
+<ul>
+<li>RAG model
+<ul>
+<li>Docs (FreeMoCap Educational Docs, blog, YT transcripts, Server chat records)</li>
+<li>Wikipedia</li>
+<li>Search Engine Request (SerPAPI)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="community-building">Community Building</h3>
+<h4 id="annual-workshopconference-freemocampcon-">Annual Workshop/Conference: FreeMoCamp/Con 💀⛺</h4>
+<ul>
+<li>FreeMoCamp: workshop/hackathon/training focus</li>
+<li>FreeMoCon: Confrence style, talks, showing off</li>
+<li>Inspirations:
+<ul>
+<li>Neuromatch (for virtual component)</li>
+<li>Cold spring harbor (short term research project/workshop timeline)</li>
+<li>Get an example of a hackathon from the Endurance crew</li>
+</ul>
+</li>
+<li>In person &amp; Virtual
+<ul>
+<li>Held at YMCA summer camp, or similar
+<ul>
+<li>All inclusive ticket - lodging and food handled by summer camp facilities</li>
+</ul>
+</li>
+<li>Online component via dedicated Element space (with Slack/Discord bridges)</li>
+<li>ANYONE can view all online materials, and follow along activities (encouraging conversationin public server)</li>
+<li>Paid online participants may engage directly in the dedicated event space, and will get direct engagement with folks at the in-person event (for troubleshooting/planning/etc)</li>
+<li>Pricing
+<ul>
+<li>Corpo pricing -&gt;  100% standard price (Set high enough to make the lowest pay tiers make sense)</li>
+<li>Academic pricing -&gt; 50% standard price</li>
+<li>Community members (defined by badges and community participation) -&gt; 25% Standard price</li>
+<li>Additional <strong>STEEP</strong> discounts and scholarship programs for students, educators, researchers, artists, etc
+<ul>
+<li>Minimum price w/o scholarship = break-even price per participant</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Combination hackathon, training workshop, and scientific conference on 'fully body movement research'</li>
+</ul>
+</li>
+<li>Participants in teams
+<ul>
+<li>Plan and collect a data set</li>
+<li>Analyze and present results</li>
+<li>Encourage collaboration and data sharing between teams</li>
+<li>Offer training/presentation 'tracks' for
+<ul>
+<li>Data collection
+<ul>
+<li>Understand and use the core software</li>
+</ul>
+</li>
+<li>Data analysis
+<ul>
+<li>Analyze and computationally model data</li>
+</ul>
+</li>
+<li>Data visualization (and animation/art)
+<ul>
+<li>Create visualizations and animations from freemocap data</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="community-challenges">Community Challenges</h4>
+<ul>
+<li>Offer a prompt for a kind of movement/activity to record
+<ul>
+<li>Community works to record the best entry, submitted via Discord/Element/Freemocap.org
+<ul>
+<li>Community votes in 'Eurovision style'
+<ul>
+<li>i.e. each member has a fixed number of voting points to distribute among entries</li>
+<li>Maybe <strong>Badges</strong> provide additional voting points?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="gamified-documentationsoftware-training">Gamified documentation/software training</h2>
+<ul>
+<li>Offer <strong>Badges</strong> and stuff in discord for milestones, i.e.
+<ul>
+<li>First contact - open the software</li>
+<li>First record - Anything recorded</li>
+<li>First success - Successful recording</li>
+<li>e.g. also calibration, data analysis, PR, etc</li>
+</ul>
+</li>
+<li>Apply badges in Discord/Element server (associated with a <code>freemocap.org</code> account?)
+<ul>
+<li>Badges offer ability to send 'top level' messages to otherwise view-only channels (i.e technical spaces)
+<ul>
+<li>Anyone can create a <strong>thread</strong> from a top-level message though</li>
+<li>The idea would be to create spaces where higher XP folk can talk about complicated stuff without distraction [WorkingInPublic]</li>
+<li>But also LowerXP folk can still see the conversations and ask questions (Maybe make it easy to summon SkellyBot to explain a message/conversation 🤔)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="organization-and-governance">Organization and Governance</h3>
+<ul>
+<li>Build administrative infrastructure
+<ul>
+<li>Financial planning and forecasting</li>
+<li>Legal definitions, B2B contracts, Co-op Datasets &amp; Model ownership and dividend payouts.</li>
+</ul>
+</li>
+<li>Developing Standard Operating Procedures
+<ul>
+<li>Operational</li>
+<li>Organizational</li>
+</ul>
+</li>
+<li>Establish Core maintainer actvitites
+<ul>
+<li>Build team from relevant expertise</li>
+</ul>
+</li>
+<li>Develop <code>Skelly Enhancement Proposal</code> system</li>
+</ul>
+<h3 id="continuous-development-integration-evaluation-model">Continuous Development, Integration, Evaluation Model</h3>
+<h4 id="development">Development</h4>
+<ul>
+<li>
+<p>Core:</p>
+<ul>
+<li>Architecture</li>
+<li>Functionality</li>
+<li>Observability</li>
+<li>Usability</li>
+<li>Accessibility</li>
+</ul>
+</li>
+<li>
+<p>Bug Fixing</p>
+<ul>
+<li>GH Issues and Comminity server</li>
+<li>Encourage newcomers to assist with:
+<ul>
+<li>Triage</li>
+<li>RTFM requests</li>
+<li>Sleuthing</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Roadmaps</p>
+<ul>
+<li>Skelly Enhancement Proposals (SEP's)
+<ul>
+<li>Like PEP system</li>
+<li>Post in public forum (GH Discussion board? Bridge/sync with Community space)</li>
+<li>Topics
+<ul>
+<li>Core</li>
+<li>Feature request</li>
+<li>Quality of Life request</li>
+<li>Protocol change request (i.e. style guide, naming conventions)</li>
+<li>Data model change</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Add-on support</p>
+<ul>
+<li>Plug-in system
+<ul>
+<li>Alternative to an existing core sub-skelly package
+<ul>
+<li>Must interoperate with existing architecture invisibly</li>
+</ul>
+</li>
+<li>Additional add-on extending core functionality
+<ul>
+<li>Extends functionality from existing API</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Templates provided per-sub-skelly-repo
+<ul>
+<li>Maintain consistent style-guide and consistent naming standards</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="integration">Integration</h4>
+<ul>
+<li>Automated versioning/release cycle</li>
+<li><code>Git flow</code> version control model <code>CONTRIBUTING.md</code></li>
+<li>Backwards compatibility, deprecation and Long Term Support (LTS) versions</li>
+</ul>
+<h4 id="evalution">Evalution</h4>
+<h5 id="automated-testing-framework">Automated Testing framework</h5>
+<ul>
+<li>Quick tests on commit to PR</li>
+<li>Full tests on merge to <code>main</code></li>
+<li>Testing for:
+<ul>
+<li>stability (unit tests)</li>
+<li>security (e.g. dependabot),</li>
+<li>replicability (e.g. test datasets)</li>
+</ul>
+</li>
+</ul>
+<h5 id="validation-framwork">Validation framwork</h5>
+<ul>
+<li>Is the core tool providing accurate measurements of world?</li>
+<li>External Validation
+<ul>
+<li>Against 'Gold Standard' marker-based mocap (e.g. Qualisys)</li>
+<li>Ideally using standard mocap validation techniques from clinical biomechanics (ISB?)</li>
+</ul>
+</li>
+<li>Internal Validation
+<ul>
+<li>Validation within a given dataset via error residuals,i.e.
+<ul>
+<li>Reprojection error (2d tracker validation)</li>
+<li>Rigid body correction residuals (3d data validation)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Provide tutorials for running internal validation studies, providing both onboarding training, providing data/user confidence, and optionally getting them to offer their data/results to a 'community validation' datapool (see also, (Fed/Coop Datasets and Models))</li>
+</ul>
+<h5 id="diagnostic-framework">Diagnostic framework</h5>
+<ul>
+<li>Automated system to measure perforamnce (speed, stability) on standard hardware/task benchmarks
+<ul>
+<li>Involves the standard <code>test</code> pipelines, but with the scale of the test data pumped up</li>
+</ul>
+</li>
+<li>Minimal requirements to maximize accessibility
+<ul>
+<li>Understanding and clearly defining 'minimum  specs' to achieve viable output</li>
+<li>Strive to decrease these minimums while remining mindful of trade-offs</li>
+<li>Minimum reqs also define max speed, relevant to realtime applications</li>
+</ul>
+</li>
+<li>High-water marks and benchmarks
+<ul>
+<li>What is the best performance possible with unconstrained time and resources?
+<ul>
+<li>Speed (real-time processing)
+<ul>
+<li>FPS on standardized PCs at Min, Rec, Max setttings</li>
+</ul>
+</li>
+<li>Accuracy (scientific applications)
+<ul>
+<li>Validation score on Min, Rec, Max settings</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="sustainability">Sustainability</h3>
+<h4 id="definitions-strategies-goals-and-metrics">Definitions, Strategies, Goals, and Metrics</h4>
+<h6 id="community-growth-metrics">Community growth metrics</h6>
+<ul>
+<li>
+<p>Raw numbers (more users is good)</p>
+</li>
+<li>
+<p>Community make-up</p>
+<ul>
+<li>Topics of interest</li>
+<li>Expertise and background</li>
+<li>Demographics
+<ul>
+<li>Young appeal - Good for education and outreach goals</li>
+<li>Older reach - Good for professional appeal/software quality</li>
+<li>Geography -  Global distribution and spread should match popultion density</li>
+<li>Racial/economic/gender distributions should match population statistics</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Individual user trajectories</p>
+<ul>
+<li>Minimize 'bounce' (Single pings)</li>
+<li>Maximize 'velocity' (<code>extracted user growth</code> non-stagnant, e.g. <code>anti-paradox-of-active-user</code> protocols)</li>
+</ul>
+</li>
+</ul>
+<h6 id="organizational-stabilty-metrics">Organizational stabilty metrics</h6>
+<ul>
+<li>Ten-year plan milestone:
+<ul>
+<li>Calculate forecasts based on various optimistic/realistic/pessimistic parameters</li>
+<li>MILESTONE(S): 10 year operational window at each level</li>
+</ul>
+</li>
+</ul>
+<h4 id="sustainability-plan-a-virtue-ethics-approach">Sustainability plan: a virtue ethics approach</h4>
+<h5 id="sustainability-through-quality"><strong>&quot;Sustainability through quality&quot;</strong></h5>
+<ul>
+<li>Generic validation metrics should be strictly monotonically increasing
+<ul>
+<li>i.e. global measure of 'goodness' of mocap data should ALWAYS increase over time (see <code>Validation</code>)</li>
+</ul>
+</li>
+</ul>
+<h5 id="sustainability-through-replicability"><strong>&quot;Sustainability through replicability&quot;</strong></h5>
+<ul>
+<li>Maintain organizational documents, Standard Operating Procedures (SOPs), and eductional outreach to encourage others to create organizations with similar stucture to [FMC-F]</li>
+<li>Good for other people from wildly different domains (not relevant to [FMC-F] mission)</li>
+<li>Could spawn sub-orgs from with [FMC-F] (optionally existing within [FMC-F] umbrella, either as non-profit or for-profit org)</li>
+</ul>
+<h5 id="sustainability-through-revenue"><strong>Sustainability through revenue</strong></h5>
+<p>Other big FOSS orgs - Patchwork financials</p>
+<h6 id="revenue-streams">Revenue streams</h6>
+<ul>
+<li>Federated/Co-op models and datasets
+<ul>
+<li>Federated datasets
+<ul>
+<li>e.g. Users able to 'donate' their data, while retaining ownership (earning divdends)</li>
+</ul>
+</li>
+<li>ML/AI model(s)
+<ul>
+<li>Train our own CNN Tracker and LLM via 'Federated learning' scheme</li>
+<li>Architecture allows any user to train/fine-tune the FMC Base Models using their private data, OPTIONALLY contribute updated model weights to the FMC-Org (e.g. see <a href="https://flower.ai"><code>Flower</code></a>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>For Profit sub-entity
+<ul>
+<li><code>Skellytech, LLC</code>
+<ul>
+<li>B2B connections and sub-licensing of:
+<ul>
+<li>Core-software</li>
+<li>Derivative models (co-op data ownership)</li>
+</ul>
+</li>
+<li>Any arrangement that does not fall under the 'charitable activities' allowed by 501c3 guidelines</li>
+</ul>
+</li>
+<li>Spin-off companies (FreeMoCap as tech incubator)
+<ul>
+<li>Incubator support for FMCF member/students who want to start businesses or organizations based on freemocap related technology and tools</li>
+<li>Offer umbrella support (we support them with our org infrastructure, e.g. grant support), or</li>
+<li>Launchpad support (pathway to independence)</li>
+<li>Offer exit (any time) and re-entry (if possoible) mechanisms</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Manage grants, both for org (e.g. NSF POSE) and individual research grants for members of FMCF (e.g. R01's and F32's)
+<ul>
+<li>Offering extremly low overhead costs, relative to universities. e.g. 10-15%</li>
+</ul>
+</li>
+<li>Selling hardware/cameras
+<ul>
+<li>first, dropship standard cameras and packages (low-to-high quality)</li>
+<li>later, develop custom cameras (including education focused cameras)</li>
+</ul>
+</li>
+<li>Donation drives
+<ul>
+<li>Direct donation pushes</li>
+<li>Ask for addon donation on checkout when purchasing other stuff (Humble Bundle model)</li>
+</ul>
+</li>
+<li>Clients (Contracting from FMC community)
+<ul>
+<li>Custom code/software</li>
+<li>Project planning and consultation</li>
+<li>Technical support</li>
+<li>Direct teaching/training</li>
+</ul>
+</li>
+<li>Annual Workshop (FreeMoCamp)</li>
+<li>Annual Conference (FreeMoCon)</li>
+<li>Server-side processing
+<ul>
+<li>Processing users' data using high-end hardware (more than they are likely to have available)</li>
+<li>AI/LLM application useage</li>
+</ul>
+</li>
+<li>Cloud data storage</li>
+</ul>
+<h3 id="security-and-privacy">Security and Privacy</h3>
+<ul>
+<li>Fully offline local processing option
+<ul>
+<li>Users can always run totally dark in no-internet environments</li>
+</ul>
+</li>
+<li>Google Cloud Platform for secrets management
+<ul>
+<li>Following industry standard based on Google Cloud Platform recommendations</li>
+</ul>
+</li>
+<li>Matrix homeserver for privacy, security, consistency
+<ul>
+<li>Affiliate with large and vibrant open source community around the <code>Matrix</code> specification
+<ul>
+<li>Let them figure out the encryption/security/privacy stuff</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Full instruction set on how to duplicate infrastructure with documentation and tutorials</li>
+</ul>
+
+            
+            <script async type="text/javascript">
+/* From extension marp-team.marp-vscode */
+(()=>{var U=Object.defineProperty;var d=($,E)=>U($,"name",{value:E,configurable:!0});(()=>{var $={676:(w,b,g)=>{w.exports=g(185)},185:(w,b)=>{"use strict";var g;g={value:!0};const x={h1:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"1"},style:"display: block; font-size: 2em; margin-block-start: 0.67em; margin-block-end: 0.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h2:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"2"},style:"display: block; font-size: 1.5em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h3:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"3"},style:"display: block; font-size: 1.17em; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h4:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"4"},style:"display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h5:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"5"},style:"display: block; font-size: 0.83em; margin-block-start: 1.67em; margin-block-end: 1.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h6:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"6"},style:"display: block; font-size: 0.67em; margin-block-start: 2.33em; margin-block-end: 2.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},span:{proto:()=>HTMLSpanElement},pre:{proto:()=>HTMLElement,style:"display: block; font-family: monospace; white-space: pre; margin: 1em 0; --marp-auto-scaling-white-space: pre;"}},k="data-marp-auto-scaling-wrapper",u="data-marp-auto-scaling-svg",c="data-marp-auto-scaling-container",T=class T extends HTMLElement{constructor(){super(),this.svgPreserveAspectRatio="xMinYMid meet";const s=d(i=>([n])=>{const{width:e,height:t}=n.contentRect;this[i]={width:e,height:t},this.updateSVGRect()},"t");this.attachShadow({mode:"open"}),this.containerObserver=new ResizeObserver(s("containerSize")),this.wrapperObserver=new ResizeObserver((...i)=>{s("wrapperSize")(...i),this.flushSvgDisplay()})}static get observedAttributes(){return["data-downscale-only"]}connectedCallback(){var s,i,n,e,t;this.shadowRoot.innerHTML=`
+<style>
+  svg[${u}] { display: block; width: 100%; height: auto; vertical-align: top; }
+  span[${c}] { display: table; white-space: var(--marp-auto-scaling-white-space, nowrap); width: max-content; }
+</style>
+<div ${k}>
+  <svg part="svg" ${u}>
+    <foreignObject><span ${c}><slot></slot></span></foreignObject>
+  </svg>
+</div>
+    `.split(/\n\s*/).join(""),this.wrapper=(s=this.shadowRoot.querySelector(`div[${k}]`))!==null&&s!==void 0?s:void 0;const o=this.svg;this.svg=(n=(i=this.wrapper)===null||i===void 0?void 0:i.querySelector(`svg[${u}]`))!==null&&n!==void 0?n:void 0,this.svg!==o&&(this.svgComputedStyle=this.svg?window.getComputedStyle(this.svg):void 0),this.container=(t=(e=this.svg)===null||e===void 0?void 0:e.querySelector(`span[${c}]`))!==null&&t!==void 0?t:void 0,this.observe()}disconnectedCallback(){this.svg=void 0,this.svgComputedStyle=void 0,this.wrapper=void 0,this.container=void 0,this.observe()}attributeChangedCallback(){this.observe()}flushSvgDisplay(){const{svg:s}=this;s&&(s.style.display="inline",requestAnimationFrame(()=>{s.style.display=""}))}observe(){this.containerObserver.disconnect(),this.wrapperObserver.disconnect(),this.wrapper&&this.wrapperObserver.observe(this.wrapper),this.container&&this.containerObserver.observe(this.container),this.svgComputedStyle&&this.observeSVGStyle(this.svgComputedStyle)}observeSVGStyle(s){const i=d(()=>{const n=(()=>{const e=s.getPropertyValue("--preserve-aspect-ratio");return e?e.trim():`x${(({textAlign:t,direction:o})=>{if(t.endsWith("left"))return"Min";if(t.endsWith("right"))return"Max";if(t==="start"||t==="end"){let a=o==="rtl";return t==="end"&&(a=!a),a?"Max":"Min"}return"Mid"})(s)}YMid meet`})();n!==this.svgPreserveAspectRatio&&(this.svgPreserveAspectRatio=n,this.updateSVGRect()),s===this.svgComputedStyle&&requestAnimationFrame(i)},"e");i()}updateSVGRect(){var s,i,n,e,t,o,a;let p=Math.ceil((i=(s=this.containerSize)===null||s===void 0?void 0:s.width)!==null&&i!==void 0?i:0);const h=Math.ceil((e=(n=this.containerSize)===null||n===void 0?void 0:n.height)!==null&&e!==void 0?e:0);this.dataset.downscaleOnly!==void 0&&(p=Math.max(p,(o=(t=this.wrapperSize)===null||t===void 0?void 0:t.width)!==null&&o!==void 0?o:0));const f=(a=this.svg)===null||a===void 0?void 0:a.querySelector(":scope > foreignObject");if(f?.setAttribute("width",`${p}`),f?.setAttribute("height",`${h}`),this.svg&&(this.svg.setAttribute("viewBox",`0 0 ${p} ${h}`),this.svg.setAttribute("preserveAspectRatio",this.svgPreserveAspectRatio),this.svg.style.height=p<=0||h<=0?"0":""),this.container){const _=this.svgPreserveAspectRatio.toLowerCase();this.container.style.marginLeft=_.startsWith("xmid")||_.startsWith("xmax")?"auto":"0",this.container.style.marginRight=_.startsWith("xmi")?"auto":"0"}}};d(T,"s");let r=T;const m=d((l,{attrs:s={},style:i})=>class extends l{constructor(...n){super(...n);for(const[e,t]of Object.entries(s))this.hasAttribute(e)||this.setAttribute(e,t);this.attachShadow({mode:"open"})}static get observedAttributes(){return["data-auto-scaling"]}connectedCallback(){this._update()}attributeChangedCallback(){this._update()}_update(){const n=i?`<style>:host { ${i} }</style>`:"";let e="<slot></slot>";const{autoScaling:t}=this.dataset;t!==void 0&&(e=`<marp-auto-scaling exportparts="svg:auto-scaling" ${t==="downscale-only"?"data-downscale-only":""}>${e}</marp-auto-scaling>`),this.shadowRoot.innerHTML=n+e}},"o");let v;const j=Symbol();let C;const z="marpitSVGPolyfill:setZoomFactor,",A=Symbol(),D=Symbol(),W=d(()=>{const l=navigator.vendor==="Apple Computer, Inc.",s=l?[B]:[],i={then:n=>(l?(async()=>{if(C===void 0){const e=document.createElement("canvas");e.width=10,e.height=10;const t=e.getContext("2d"),o=new Image(10,10),a=new Promise(p=>{o.addEventListener("load",()=>p())});o.crossOrigin="anonymous",o.src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%20viewBox%3D%220%200%201%201%22%3E%3CforeignObject%20width%3D%221%22%20height%3D%221%22%20requiredExtensions%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%20style%3D%22width%3A%201px%3B%20height%3A%201px%3B%20background%3A%20red%3B%20position%3A%20relative%22%3E%3C%2Fdiv%3E%3C%2FforeignObject%3E%3C%2Fsvg%3E",await a,t.drawImage(o,0,0),C=t.getImageData(5,5,1,1).data[3]<128}return C})().then(e=>{n?.(e?[B]:[])}):n?.([]),i)};return Object.assign(s,i)},"h");let H,O;function B(l){const s=typeof l=="object"&&l.target||document,i=typeof l=="object"?l.zoom:l;window[D]||(Object.defineProperty(window,D,{configurable:!0,value:!0}),document.body.style.zoom=1.0001,document.body.offsetHeight,document.body.style.zoom=1,window.addEventListener("message",({data:e,origin:t})=>{if(t===window.origin)try{if(e&&typeof e=="string"&&e.startsWith(z)){const[,o]=e.split(","),a=Number.parseFloat(o);Number.isNaN(a)||(O=a)}}catch(o){console.error(o)}}));let n=!1;Array.from(s.querySelectorAll("svg[data-marpit-svg]"),e=>{var t,o,a,p;e.style.transform||(e.style.transform="translateZ(0)");const h=i||O||e.currentScale||1;H!==h&&(H=h,n=h);const f=e.getBoundingClientRect(),{length:_}=e.children;for(let F=0;F<_;F+=1){const S=e.children[F];if(S.getScreenCTM){const y=S.getScreenCTM();if(y){const I=(o=(t=S.x)===null||t===void 0?void 0:t.baseVal.value)!==null&&o!==void 0?o:0,Z=(p=(a=S.y)===null||a===void 0?void 0:a.baseVal.value)!==null&&p!==void 0?p:0,Y=S.children.length;for(let R=0;R<Y;R+=1){const N=S.children[R];if(N.tagName==="SECTION"){const{style:q}=N;q.transformOrigin||(q.transformOrigin=`${-I}px ${-Z}px`),q.transform=`scale(${h}) matrix(${y.a}, ${y.b}, ${y.c}, ${y.d}, ${y.e-f.left}, ${y.f-f.top}) translateZ(0.0001px)`;break}}}}}}),n!==!1&&Array.from(s.querySelectorAll("iframe"),({contentWindow:e})=>{e?.postMessage(`${z}${n}`,window.origin==="null"?"*":window.origin)})}d(B,"u");function P({once:l=!1,target:s=document}={}){const i=function(n=document){if(n[A])return n[A];let e=!0;const t=d(()=>{e=!1,delete n[A]},"i");Object.defineProperty(n,A,{configurable:!0,value:t});let o=[],a=!1;(async()=>{try{o=await W()}finally{a=!0}})();const p=d(()=>{for(const h of o)h({target:n});a&&o.length===0||e&&window.requestAnimationFrame(p)},"o");return p(),t}(s);return l?(i(),()=>{}):i}d(P,"v"),H=1,O=void 0;const G=P,M=Symbol(),L=d((l=document)=>{if(typeof window>"u")throw new Error("Marp Core's browser script is valid only in browser context.");if(((e=document)=>{const t=window[j];t||customElements.define("marp-auto-scaling",r);for(const o of Object.keys(x)){const a=`marp-${o}`,p=x[o].proto();v!=null||(v=!!document.createElement("div",{is:"marp-auto-scaling"}).outerHTML.startsWith("<div is")),v&&p!==HTMLElement?t||customElements.define(a,m(p,{style:x[o].style}),{extends:o}):(t||customElements.define(a,m(HTMLElement,x[o])),e.querySelectorAll(`${o}[is="${a}"]`).forEach(h=>{h.outerHTML=h.outerHTML.replace(new RegExp(`^<${o}`,"i"),`<${a}`).replace(new RegExp(`</${o}>$`,"i"),`</${a}>`)}))}window[j]=!0})(l),l[M])return l[M];const s=P({target:l}),i=d(()=>{s(),delete l[M]},"n"),n=Object.assign(i,{cleanup:i,update:()=>L(l)});return Object.defineProperty(l,M,{configurable:!0,value:n}),n},"y");b.browser=L,g=L,g=G}},E={};function V(w){var b=E[w];if(b!==void 0)return b.exports;var g=E[w]={exports:{}};return $[w](g,g.exports,V),g.exports}d(V,"__webpack_require__");var J={};(()=>{"use strict";var w=V(676);function b(){let u,c;const r=d(()=>{const m=document.getElementById("__marp-vscode"),v=!!m;u!==v?(document.body.classList.toggle("marp-vscode",v),v?c=(0,w.browser)():(c?.cleanup(),c=void 0),u=v):v&&c?.update(),u?(m&&g(m),x()):k()},"updateCallback");window.addEventListener("load",()=>window.setTimeout(r,100)),window.addEventListener("vscode.markdown.updateContent",r),r()}d(b,"preview");const g=d(u=>{u.querySelectorAll("[is]").forEach(c=>{if(c.nodeName.includes("-")||document.createElement(c.nodeName).constructor!==c.constructor)return;const{outerHTML:m}=c;c.outerHTML=m,console.debug("[marp-vscode] Custom element has been upgraded forcibly:",m.slice(0,m.indexOf(">")+1||void 0))})},"forceUpgradeCustomElements"),x=d(()=>{const u=document.querySelectorAll("style:not(#__marp-vscode-style,#_defaultStyles,[data-marp-vscode-body])"),c=document.querySelectorAll('link[rel="stylesheet"][href]:not([href*="marp-vscode"])');u.forEach(r=>{r.closest("#__marp-vscode")||(r.dataset.marpVscodeBody=r.textContent??"",r.textContent="")}),c.forEach(r=>{if(r.closest("#__marp-vscode"))return;const{href:m}=r;r.dataset.marpVscodeHref=m,r.removeAttribute("href")})},"removeStyles"),k=d(()=>{const u=document.querySelectorAll("style[data-marp-vscode-body]"),c=document.querySelectorAll("link[data-marp-vscode-href]");u.forEach(r=>{r.textContent=r.dataset.marpVscodeBody||"",delete r.dataset.marpVscodeBody}),c.forEach(r=>{r.href=r.dataset.marpVscodeHref||"",delete r.dataset.marpVscodeHref})},"restoreStyles");b()})()})();})();
+
+</script>
+
+        </body>
+        </html>
