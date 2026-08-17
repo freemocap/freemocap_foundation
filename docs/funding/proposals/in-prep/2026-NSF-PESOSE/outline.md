@@ -11,11 +11,14 @@
 - FreeMoCap is free and open-source
 - FreeMoCap has been used for research across multiple areas already (link to things that have used it), has been integrated and validated/characterized using multiple pose estimation software (link to my dissertation?), and used for mocap of ferrets.
 - Additionally, our 1.0 software has garnered a large number of existing users/adopters (github stars, discord forum member count)
-- As we move onto the 2.0 software, we continue to work on the product - but the best version of this product needs a far more developed ecosystem around it to allow for community contributions and growth. The next stage, supported by Track 1, focuses on developing ecosystem structures required for supported and sustained growth. 
+- As we move onto the 2.0 software, we continue to work on the product - but the best version of this product needs a far more developed ecosystem around it to allow for community contributions and growth. The next stage, supported by Track 1, focuses on developing ecosystem structures required for supported and sustained growth.
+
+> JON - Needs a Gap statement, both for freemocap as tech and also for what we do with the money 
 
 # Ecosystem Discovery: _Define strategies to assess the need for the innovation, justify why an OSE is the right approach, and identify potential users and developers._
 *The need for innovation*: 
 - There are existing options for researchers (OpenCap, Pose2Sim, PosePipe), but are often optimized around narrower workflows (only humans), hardware assumptions, model choices etc. 
+     - JON - Also mention the animation/commercial stuff (Rokoko, Move AI, Meshcapade)
 - Researchers/users keep needing to reinvent the wheel to make a workflow that works for them if it isn't covered by these existing categories. These tend to be lab-only workflows that can't be used by others, hindering reproducibility
 - There is a need for a modular, extensible workflow that can be adapted specifically to user needs and their available resources [note - this bullet and the two above it were previously in the opening, but moved it here to be under the *need* section.]
 
