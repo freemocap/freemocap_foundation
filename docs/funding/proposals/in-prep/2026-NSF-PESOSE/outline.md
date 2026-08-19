@@ -42,6 +42,8 @@
     - Computer vision devs of new pose estimation software that want a platform for their work to reach new users
     - Game, AR/VR developers
 
+-- game design stuff can be linked to perception/action research? mention ARGP
+
 *why is the ecosystem still nascent?*
 - User adoption has grown much faster than the contributer/maintainer base, and development/architecture knowledge is still largely contained within the core dev team
 - People can use the technology, but there are not clear pathways to contribute back
@@ -78,7 +80,7 @@
     - Pose estimation models as an example: outside developers could integrate new models through a defined interface that could reach users without requiring the core team to directly implement every model
 
 - Governance
-    - How makes the major technical decisions? Clarify what the domain of each role (maintainers vs. core team) is.
+    - How makes the major technical decisions? Clarify what the domain of each role (maintainers vs. core team) is. (PEP stuff)
 
 
 # Risk Analysis/Security Plan
@@ -94,13 +96,16 @@
 - Transparent methods
     - For each set of data, users should be able to see all of the factors that went into producing that dataset, including FMC version, tracker/model and version, calibration methods, filters/settings, hardware configuration etc. for the urposes of security and reproducibility
 
+- Build user profiles to persist over time? microcredentials that you've worked through tutorials (aka maintaing logins user profiles in context of security)
+
+- Plan for a world with a local AI that can help with workflow stuff 
 
 # Community Building
 
 - Currently, FreeMoCap maintains an active community of over 10,000 users. 
     - This space is intentionally structured so that users can both ask and answer questions without relying on the core development time
     - A weekly community call provides a regular venue for project updates directly to the users, along with feedback/discussion of needs
-    - This gives FreeMoCap an existing foundation for community growth
+    - This gives FreeMoCap an existing foundation for community growth [discuss star count here]
 
 - Track 1 will be used to test small-scale education and engagement models
     - Develop and pilot educational/community resources on a smaller scale
@@ -111,4 +116,5 @@
 - We would use these to develop a scalable education/community model into more guided curriculums, instructor materials, guided projects, workshops, tutorials. etc. 
 - Long term, we would explore the development of a larger educational conference or community meeting to bring together users/developrs/educators/researchers
     - Track 1 pilots would help determine what the content of the event should actually contain and how it could be more beneficial to audiences. 
+- Give space for community contributions to matter (404 pages, server games/competitions)
 
