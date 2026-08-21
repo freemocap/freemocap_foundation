@@ -41,12 +41,12 @@
 // Broader Impacts and Prior Support last — reviewers expect them there.
 // -----------------------------------------------------------------------------
 
-#include "parts/01-need-and-framing.typ"
-#include "parts/02-product-status.typ"
-#include "parts/03-ecosystem-discovery.typ"
-#include "parts/04-organization-governance.typ"
-#include "parts/05-risk-security.typ"
-#include "parts/06-community-building.typ"
-#include "parts/07-milestones-evaluation.typ"
-#include "parts/08-broader-impacts.typ"
-#include "parts/09-prior-nsf-support.typ"
+#include "sections/01-need-and-framing.typ"
+#include "sections/02-product-status.typ"
+#include "sections/03-ecosystem-discovery.typ"
+#include "sections/04-organization-governance.typ"
+#include "sections/05-risk-security.typ"
+#include "sections/06-community-building.typ"
+#include "sections/07-milestones-evaluation.typ"
+#include "sections/08-broader-impacts.typ"
+#include "sections/09-prior-nsf-support.typ"
