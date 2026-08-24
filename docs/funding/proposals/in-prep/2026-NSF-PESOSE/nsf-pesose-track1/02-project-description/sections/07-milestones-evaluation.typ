@@ -1,119 +1,46 @@
-// PART 7 — Milestones and Evaluation.  Page budget: ~0.75
-//
-// Serves Track 1 criterion (d): "a specific, actionable list of milestones and
-// evaluation plan." Also PAPPG merit review element 3, which asks whether the
-// plan "incorporate[s] a mechanism to assess success."
-//
-// WHY THIS IS A STANDALONE SECTION RATHER THAN DISTRIBUTED
-//
-// Criterion (d) says "list." A panelist scoring it is filling in a box; if the
-// milestones are scattered across four content areas they have to assemble the
-// list themselves, and reviewer assembly work costs you points. A table is
-// also cheaper in space than the same content as prose, because prose needs
-// framing sentences that a table row does not.
-//
-// Note that NSF already split these for you: "metrics for long-term success"
-// is listed inside the Organization and Governance content area, while
-// milestones and evaluation appear only as a review criterion. So ecosystem
-// metrics live in Part 4; the milestone list lives here.
-//
-// The four content-area parts still each close with ONE sentence naming their
-// own output. That keeps activity and output adjacent where the reviewer is
-// already reading, and stops those sections reading as pure intention.
-//
-// THE "VERIFIED BY" COLUMN IS THE POINT
-//
-// Every row must have an output someone OTHER than the team can check. This is
-// where most Track 1 proposals get marked down. "Team assesses progress
-// quarterly" is not verifiable. "Governance model reviewed by three
-// maintainers of comparable OSEs" is. Filling this column is a forcing
-// function — if you cannot name an external verifier for a row, the milestone
-// is probably too vague to be actionable.
-//
-// The content below is ILLUSTRATIVE. Replace it, but keep the shape: every row
-// dated, owned, and externally checkable.
-
-#import "../../lib/nsf.typ": budget, note
-
-#budget("~0.75 page")
+#show table: set par(justify: false)
 
 = Milestones and Evaluation Plan
 
-// Table body stays at 11pt. PAPPG II.C.2.a permits sub-10pt type only for
-// equations, figures, and table/diagram CAPTIONS — not for table contents.
-// Shrinking this table to fit more rows is a compliance risk, not a shortcut.
-// #table(
-//   columns: (auto, 1.35fr, 1.35fr, 1fr),
-//   align: (center + horizon, left, left, left),
-//   stroke: 0.5pt,
-//   inset: 5pt,
-//   table.header(
-//     [*Qtr*], [*Milestone*], [*Output artifact*], [*Verified by*],
-//   ),
 
-//   [Q1],
-//   [Participate in I-Corps for PESOSE; instrument baseline user and contributor
-//    metrics],
-//   [Cohort completion; baseline metrics report],
-//   [I-Corps instructors; advisory group],
+#table(
+  columns: (auto, 1.6fr, 1.25fr),
+  inset: 3pt,
+  table.header(
+    [*Qtr*], [*Milestone / Deliverable*], [*Evaluation*],
+  ),
 
-//   [Q1--Q2],
-//   [Ecosystem discovery interviews across research, clinical, and education
-//    segments],
-//   [Segmented demand assessment, with the case for or against an OSE],
-//   [Advisory group review],
+  [Q1],
+  [Complete I-Corps for PESOSE; establish baseline ecosystem metrics],
+  [Cohort completion confirmed by I-Corps instructors],
 
-//   [Q2],
-//   [Comparative review of governance and licensing models in adjacent scientific
-//    OSEs],
-//   [Governance landscape memo with candidate models],
-//   [Two external OSE maintainers],
+  [Q1--Q2],
+  [Stakeholder discovery; prioritized user and contributor barrier map],
+  [Coverage of target stakeholder groups and recurring barriers confirmed by interviewed participants],
 
-//   [Q3],
-//   [Draft governance model, contribution process, and deliberate licensing
-//    analysis],
-//   [Draft governance and licensing documents, publicly posted],
-//   [Three maintainers of comparable OSEs],
+  [Q2],
+  [Develop candidate governance, contributor, and stewardship models],
+  [Compared against discovery findings and reviewed by experienced OSE maintainers],
 
-//   [Q3],
-//   [Threat modeling for the ecosystem, including the privacy surface of
-//    human-subject video],
-//   [Risk register and draft security and release process],
-//   [External security reviewer],
+  [Q2--Q3],
+  [Define core-versus-extension model and contribution, maintenance, licensing, and review requirements],
+  [Validated against the extension types identified in discovery; reviewed by maintainers of projects operating extension systems],
 
-//   [Q4],
-//   [Pilot the contribution and onboarding path with first-time external
-//    contributors],
-//   [Onboarding documentation; count of merged first-time contributions],
-//   [Contributors themselves, via structured debrief],
+  [Q3],
+  [Security and data-quality scoping; prototype automated benchmarking and regression suite],
+  [Suite detects known differences in output across trackers and versions; risks mapped to controls and reviewed externally],
 
-//   [Q4],
-//   [Consolidate into the OSE scoping and sustainability plan],
-//   [Final scoping plan, including post-grant maintenance funding options],
-//   [Advisory group; external readers],
-// )
+  [Q3],
+  [Pilot education and onboarding approaches with partner organizations],
+  [Formats assessed through participant feedback and observed barriers],
+
+  [Q4],
+  [Integrate findings into final governance, sustainability, community, and implementation roadmap],
+  [Governance model and contribution process documented at a level of detail sufficient for someone outside the core team to follow without consultation],
+)
 
 == Evaluation
 
-// The distinction worth drawing explicitly: milestones measure whether the
-// work happened; evaluation measures whether what we produced is CREDIBLE.
-// Track 1's deliverable is a plan, so "we finished the plan" is not evidence
-// the plan is any good. Say how you will know the difference.
-//
-// Suggested three moves, kept tight:
-//   1. Leading indicators tracked throughout (contributor funnel, issue
-//      response latency, user segment reach) versus the Q1 baseline.
-//   2. External review as the primary credibility test — named categories of
-//      reviewer, not vague "community feedback."
-//   3. A falsifiability statement. NSF's own Ecosystem Discovery language asks
-//      teams to "justify why an OSE is the right approach," which implies
-//      discovery could conclude otherwise. Committing to report that honestly
-//      if it happens signals rigor and costs you nothing — a negative
-//      discovery finding is a legitimate Track 1 outcome, and reviewers know
-//      it.
+Track 1 success will be evaluated by: 1. Documentation of governance roles, contributor pathways, and software architecture, assessed by whether contributors outside the core team can act on them without consultation; 2. Educational and onboarding materials, assessed through participant outcomes in pilot sessions; 3. A framework for developing, maintaining and reviewing community extensions, assessed through limited pilot implementations of the proposed extension process. Each will be revised in response to stakeholder interviews before incorporation into the final ecosystem plan.
 
-// TODO: leading indicators against the Q1 baseline.
-// TODO: who reviews the final plan, and against what standard.
-// TODO: one sentence on reporting a negative discovery finding honestly.
 
-#note[criterion (d) — is every row in the table checkable by an outsider?]

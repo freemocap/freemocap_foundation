@@ -42,3 +42,9 @@ Track 1 will address this gap by: (1) identifying and characterizing FreeMoCap's
 == Team Qualifications
 The FreeMoCap team is well positioned to address this transition because it combines scientific and engineering expertise with more than five years of direct experience developing and maintaining the software, supporting its user community, and responding to the technical and organizational challenges that arise as the project grows. The FreeMoCap Foundation was incorporated as a nonprofit organization in XXXX to support long-term stewardship of the project, promoting its core values of advancing  research, and promoting technological and scientific accessibility and education.
 #note[is every claim here a fact about today, with no plans mixed in?]
+
+
+#figure(
+  image("../../figures/overview_v1.png", width: 70%),
+caption: [Placeholder. Rough sketch of what I'm thinking. A - graphic to do overview of subskellies and show how it works. B-D: examples of freemocap data, getting less and less 'standard' from left to right (i.e., human, then human with prosthetic, then non-human)]
+) <fig-overview>

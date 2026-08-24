@@ -31,7 +31,7 @@
 
 = Organization and Governance
 
-The FreeMoCap Foundation was incorporated as a 501c3 in XXXX and holds stewardship of the projection's main repositories. Track 1 will be used to compare and evaluate models of how authority and responsibility should be distributed beyond the Foundation as the ecosystem grows. 
+The FreeMoCap Foundation was incorporated as a 501(c)(3) in XXXX and holds stewardship of the projection's main repositories. Track 1 will be used to compare and evaluate models of how authority and responsibility should be distributed beyond the Foundation as the ecosystem grows. 
 
 == Governance scoping 
 
@@ -49,10 +49,14 @@ Support for this model requires clear organization, governance and security prac
 
 == Licensing
 
-The FreeMoCap software and its component repositories are currently licensed under the AGPL. This choice reflects the central premise of the proposed ecosystem: improvements to shared scientific infrastracture are most valuable when they return to the broader community. The AGPL ensures that improvements to publicly funded infrastructure remain avaialble to anyone using the software, building upwards instead of apart. The FreeMoCap Foundation also retains the ability to offer alternative licensing terms for organiziation whose intended use is incompatible with the AGPL, providng a potential sustainability mechanism - keeping the OSE freely availabe while commercial licensing can generate resources to support maintence and further stewardship. 
+The FreeMoCap software and its component repositories are licensed under the AGPL. This choice reflects the central premise of the proposed ecosystem: improvements to publicly funded infrastracture are most valuable when they return to the broader community. The FreeMoCap Foundation also retains the ability to offer alternative licensing terms for organiziation whose intended use is incompatible with the AGPL, providng a potential sustainability mechanism - keeping the OSE freely availabe while commercial licensing can generate resources for maintenance and stewardship. 
 
 
-#note[criterion (b) — would a skeptic believe this survives without us?]
+== Long-term Sustainability
+
+Discussions with contributors and experienced open-source maintainers during Ecosystem Discovery will shape governance structures that reduce dependence on a small core team, allowing the ecosystem to be community-driven while remaining stewarded by the FreeMoCap Foundation. In parallel, the Foundation will evaluated a diversified model fo financial sustainability, including alternative commercial licensing, standardized hardware kits, training and support services, institutional partnerships, and continued grant funding. Ultimately, we aim for sustainability to come from diversification, with an ecosystem that does not depend on a single maintainer, and an organization that does not depend on a single source of support. 
+
+
 
 // -----------------------------------------------------------------------------
 // CLOSING OUTPUT SENTENCE — one sentence, no heading, naming what this section

@@ -32,12 +32,10 @@ FreeMoCap depends on a stack of computer vision and machine learning libraries. 
 == Data Quality
 Scientific investment and trust must have the basis of scientific data quality. Changes to pose-estimation models, calibration, reconstruction, filtering, or other pipeline components can alter scientific outputs even when the software continues to function correctly. Track 1 will scope diagnostic, testing, and benchmarking infrastructure for detecting such changes, including comparison against reference datasets, documentation of expected performance, and regression testing across software versions and supported configurations. We will also define the metadata needed to trace an output dataset to the software versions, models, processing parameters, and other relevant configuration choices used to produce it.
 
-#note[named program priority; do not treat as boilerplate]
-
+[input ISO/Imatest collaboration here potentially]
 // -----------------------------------------------------------------------------
 // CLOSING OUTPUT SENTENCE — one sentence, no heading, naming what this section
 // produces. Keeps activity and output adjacent so the section does not read as
 // pure intention, without duplicating the milestone table in Part 7.
 // Must correspond to a row in that table.
 // -----------------------------------------------------------------------------
-// TODO: "This activity yields a risk register and a draft security and release process, reviewed externally."
