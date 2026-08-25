@@ -24,8 +24,8 @@
 // Track 1 supports planning, NOT product development. Ongoing refactor work
 // belongs here as evidence of active maintenance, never in the work plan.
 
-#import "../../lib/nsf.typ": budget, note
-#import "../../lib/refs.typ": c
+#import "../../template/nsf.typ": budget, note
+#import "../../template/refs.typ": c
 
 #budget("~1.0 page")
 

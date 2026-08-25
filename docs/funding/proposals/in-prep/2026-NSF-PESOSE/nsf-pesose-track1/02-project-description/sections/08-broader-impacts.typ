@@ -11,8 +11,8 @@
 // data sets established or expanded, new technologies or techniques
 // established, participants hired into a STEM field, new infrastructure built.
 
-#import "../../lib/nsf.typ": budget, note
-#import "../../lib/nsf.typ": broader-impacts
+#import "../../template/nsf.typ": budget, note
+#import "../../template/nsf.typ": broader-impacts
 
 #budget("~0.5 page")
 

@@ -30,7 +30,7 @@
 //   (d) A specific, actionable list of milestones and an evaluation plan
 // =============================================================================
 
-#import "../lib/nsf.typ": nsf-doc, DRAFT
+#import "../template/nsf.typ": nsf-doc, DRAFT
 
 #show: nsf-doc.with(page-limit: 7, draft: DRAFT)
 

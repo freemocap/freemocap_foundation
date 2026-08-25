@@ -13,8 +13,8 @@
 // of page one that this is a proposal about building an organization, not
 // about writing software.
 
-#import "../../lib/nsf.typ": budget, note
-#import "../../lib/refs.typ": c
+#import "../../template/nsf.typ": budget, note
+#import "../../template/refs.typ": c
 
 #budget("~1.0 page")
 

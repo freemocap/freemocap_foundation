@@ -25,7 +25,7 @@
 // that you understand the problem well enough to be worth funding. Put it
 // early in this section rather than letting a reviewer discover it.
 
-#import "../../lib/nsf.typ": budget, note
+#import "../../template/nsf.typ": budget, note
 
 #budget("~1.0 page")
 

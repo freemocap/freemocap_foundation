@@ -19,7 +19,7 @@
 // IF NEITHER PI NOR ANY CO-PI QUALIFIES: delete this file and remove its
 // #include from main.typ. Do not include an empty section.
 
-#import "../../lib/nsf.typ": budget, prior-support
+#import "../../template/nsf.typ": budget, prior-support
 
 #budget("~0.5-1.0 page — NOT the 5 pages PAPPG allows")
 

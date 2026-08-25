@@ -11,7 +11,7 @@
 //
 
 
-#import "../../lib/nsf.typ": budget, note
+#import "../../template/nsf.typ": budget, note
 
 #budget("~0.75 page")
 
