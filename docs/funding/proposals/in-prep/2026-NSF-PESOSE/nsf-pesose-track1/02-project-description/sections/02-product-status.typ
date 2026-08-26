@@ -38,6 +38,6 @@ FreeMoCap has been adopted across research applications including reaching and g
 User adoption has outpaced growth of the maintainer base. Much of the architectural and operational knowledge needed to contribute to the core pipeline remains concentrated within a core development team, while contributor onboarding and technical knowledge decentralization remains immature. 
 
 == Team Qualifications
-The FreeMoCap team combines scientific and engineering expertise with more than five years of direct experience developing the software, supporting its community, and managing the technical and organizational challenges associated with its growth. The FreeMoCap Foundation was incorporated as a nonprofit organization in XXXX to provide a long-term institutional home for stewardship of the project. Track 1 support will be used to better characterize the project's users and contributors and translate those findings into governance, contribution, and stewardship structures designed for long-term ecosystem growth.
+The FreeMoCap team combines scientific and engineering expertise with more than five years of direct experience developing the software, supporting its community, and managing the technical and organizational challenges associated with its growth. The FreeMoCap Foundation was incorporated as a nonprofit organization in XXXX to provide a long-term institutional home for stewardship of the project. 
 
 

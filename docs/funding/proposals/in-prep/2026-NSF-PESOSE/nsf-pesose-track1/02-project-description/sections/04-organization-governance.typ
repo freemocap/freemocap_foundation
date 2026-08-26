@@ -26,35 +26,50 @@
 // early in this section rather than letting a reviewer discover it.
 
 #import "../../template/nsf.typ": budget, note
+#import "../../template/refs.typ": c
 
 #budget("~1.0 page")
 
 = Organization and Governance
 
-The FreeMoCap Foundation was incorporated as a 501(c)(3) in XXXX and holds stewardship of the projection's main repositories. Track 1 will be used to compare and evaluate models of how authority and responsibility should be distributed beyond the Foundation as the ecosystem grows. 
+The FreeMoCap Foundation was incorporated as a 501(c)(3) in XXXX and holds stewardship of the projection's main repositories. The Foundation provides long-term stewardship of the project, but the structures needed to distribute technical authority, maintenance responsibility, and decision-making across a broader contributor community remain underdeveloped.
 
-== Governance scoping 
+Eghbal #c("eghbal2020") distinguishes open-source projects by the growth of their user and contributor bases, with FreeMoCap exhibiting the pattern of a _stadium_ - a project with high user growth and low contributor growth, with the audience then depending on the work of a few people. Track 1 will scope the transition toward a _federation_, in which user and contributor bases grow together and technical knowledge, responsibility, and authority are distributed across the ecosystem.
 
-Track 1 will evaluate models used by comparable scientific and creative open-source projects, among them Python's PEP process, which separates a steering council holding final authority from a core team of trusted contributors and editors, against FreeMoCap's structure and scale. Interviews with maintainers of mature open-source projects during ecoystem discovery will be used to compare and evaluate different governance models. 
+== Governance Scoping
 
-[some other stuff here detailing more of the specifics of decision making/how authority is distributed, not sure what to put, will return to this]
+Federated projects require the distribution of decision-making and knowledge such that it does not depend on any one person. Python's PEP process is on example, in which an elected steering council, trusted core contributors and editors, and a formal proposal process distribute technical authority across the community. We aim to evaluate such models against FreeMoCap's structure and scale, using interviews with maintainers of mature open-source projects during Ecosystem Discovery to supply the candidate models. 
 
 == Distributed infrastructure and community extensions
 
-FreeMocap is currently organized as a series of repositories separated by responsibility, and this modular architecture provides an opportunity of separate shared infrastructure of motion capture from domain-specific elements required by particular users. For example, the `skellytracker` interface defines a pathway to implement alternative pose-estimation models into the broader motion capture workflow. This is particularly important as the models commonly used in markerless motion capture software are trained on standard human datasets and do not generalize to atypical morphologies, nonhuman subjects, or other specialized use cases, leaving each group to recreate a motion capture workflow for their use independently.
+A more federated model requires distributed technical knowledge, and the ability for contributors to extend the software without the core team implementing each addition. FreeMoCap's existing modular architecture provides a technical basis for this: for example, the `skellytracker` interface defines a pathway for alternative pose-estimation
+models to enter the workflow without modification to the shared pipeline. This is crucial for adapting to domain specific research as there is no single adequate pose estimation model — the algorithms in common use are trained on standard human datasets, and the requirements of biomechanical measurement differ from those the models were built for
+#c("seethapathiMovementScienceNeeds2019").
 
-A community extension system would allow that integration work to be completed once and then reused. A researcher who has integrated a model best suited to a particular population could make it available to others facing the same need, while a computer vision researcher publishing a new method could translate their research to a much broader audience who might otherwise lack the technical knowledge to implement it. In this model, FreeMoCap would maintain the shared workflow, while domain experts could contribute specialized capabilities through defined interfaces. 
-
-Support for this model requires clear organization, governance and security practices. Track 1 will examine what review and quality standards extensions should meet, how approved extensions should be packaged and distriubted, and how maintenance responsibilities should be divided between extension maintainers and core developers. These decisions will be informed by interviews conducted during ecosystem discovery with maintainers of mature open-source projects that already support community extension systems, as well as FreeMoCap users and researchers that can help define the documentation, interfaces, and technical knowledge required to develop and use such extensions. This work will produce a set of contribution, maintenance and review patterns that can guide not only pose-estimation extensions, but other community developed capabilities as well, such as biomechanical analyses. 
+A community extension system would allow that work to be done once and reused,
+and would let a researcher publishing a new method reach users who would
+otherwise lack the expertise to implement it. Track 1 will examine what review
+and quality standards extensions must meet, how they are packaged and
+distributed, and how maintenance responsibility divides between extension and
+core maintainers - informed by interviews with maintainers of projects already
+operating extension systems. The resulting patterns would apply to other
+community-developed capabilities, such as biomechanical analyses.
 
 == Licensing
 
-The FreeMoCap software and its component repositories are licensed under the AGPL. This choice reflects the central premise of the proposed ecosystem: improvements to publicly funded infrastracture are most valuable when they return to the broader community. The FreeMoCap Foundation also retains the ability to offer alternative licensing terms for organiziation whose intended use is incompatible with the AGPL, providng a potential sustainability mechanism - keeping the OSE freely availabe while commercial licensing can generate resources for maintenance and stewardship. 
+FreeMoCap and its component repositories are licensed under the AGPLv3+, on the
+premise that improvements to publicly funded infrastructure are most valuable
+when they return to the broader community. The Foundation retains the ability to
+offer alternative terms to organizations whose intended use is incompatible with
+the AGPL, keeping the software freely available while generating resources for
+maintenance and stewardship.
 
 
 == Long-term Sustainability
-
-Discussions with contributors and experienced open-source maintainers during Ecosystem Discovery will shape governance structures that reduce dependence on a small core team, allowing the ecosystem to be community-driven while remaining stewarded by the FreeMoCap Foundation. In parallel, the Foundation will evaluated a diversified model fo financial sustainability, including alternative commercial licensing, standardized hardware kits, training and support services, institutional partnerships, and continued grant funding. Ultimately, we aim for sustainability to come from diversification, with an ecosystem that does not depend on a single maintainer, and an organization that does not depend on a single source of support. 
+The governance structures scoped above are sustainability meant to maintain the FreeMoCap ecosystem with a distributed contributor base, beyond changes in the core development team. In parallel, the Foundation will evaluate a
+diversified model for financial sustainability, including alternative
+commercial licensing, standardized hardware kits, training and support
+services, institutional partnerships, and continued grant funding.
 
 
 
