@@ -16,8 +16,20 @@
 
 #budget("~0.5 page")
 
+Quantitative movement analysis is often rebuilt within individual research or
+application domains, limiting the reach of both the software and the expertise
+used to create it. A sustainable FreeMoCap ecosystem can instead turn
+specialized adaptations into shared infrastructure: a contribution developed
+for one community can become available to others rather than being recreated
+independently. This increases the return on public investment in scientific
+software while creating pathways for expertise to move across fields. A method
+developed by a computer-vision researcher can reach users who could not
+implement it themselves; an animation workflow can inform tools useful to
+researchers or clinicians; and scientific advances can become accessible to
+artists, educators, students, and hobbyists.
 
 = Broader Impacts
-Quantitative movement analysis is currently organized such that a researcher who needs to track something outside the scope of existing tools must build their own pipeline. These pipelines rarely translate beyond the environment they were created in. With the establishment of a sustainable, secure ecosystem, an adaptation built once can become available to everyone, increasing the return on public investment in scientific software. FreeMoCap reaches a multitude of communities outside of just biomechanics. By connecting this communities within a shared framework, we can create pathways for the translation of expertise. A contribution made by an animator can improve software for a clinician; a method published by a computer vision researcher can reach users who may have never implemented it themselves. 
+Quantitative movement analysis is often rebuilt within individual research or application domains, rarely translating beyond the environment it was created in. A sustainable FreeMoCap ecosystem can instead turn specialized adaptations into shared infrastructure, increasing the return on public investment in scientific software while creating pathways for expertise to move across fields. A contribution made by an animator can improve the software for researchers and clinicians, and scientific advancements can become accessible to artists, educators, students and hobbyists. 
 
-Realizing this process requires more than openly available software. A community-driven ecosystem depends on the distrubution of knowledge. The educational activities piloted under this project will help develop and test the materials needed to help users will different technical backgrounds enter the ecosystem and progress toward independent use, and if desired, contribution. By pairing extensible technical infrastructure with accessible pathways for learning and participation, FreeMoCap can broaden not only who is able to use quantitative movement tools, but also who is able to help shape and extend them
+In a fully developed ecosystem, the same software can serve a thirteen-year-old with a webcam and a research laboratory measuring clinical populations. However, this can only be made possible if users can engage with the software at their own expertise level. The educational activities piloted under this proposal will help develop and test materials for users of differing technical backgrounds to progress towards independent software use, and where desired, contribution. Furthermore, a mature OSE can help a user understand how a pixel on an image can become a 3D point in space with the software, rather than just operating it. By pairing extensible infrastructure with education and cross-domain participation, FreeMoCap, supported by a developed ecosystem, can broaden not only who has access to quantitative measurement tools, but also who is able to understand, adapt, and help shape them. 
+
