@@ -28,7 +28,7 @@
 // edit.
 // =============================================================================
 
-#import "../lib/nsf.typ": nsf-doc, DRAFT
+#import "../template/nsf.typ": nsf-doc, DRAFT
 
 #show: nsf-doc.with(page-limit: 2, draft: DRAFT)
 
