@@ -28,35 +28,49 @@
 // =============================================================================
 
 #let REFERENCES = (
-  // -------------------------------------------------------------------------
-  // [1] THE PRODUCT POINTER — required by NSF 26-506 for all PESOSE proposals.
-  // Cite this early in the Project Description, ideally in the opening
-  // paragraph. Keep it as entry #1 so it is trivially findable by reviewers.
-  // -------------------------------------------------------------------------
   (
-    key: "freemocap",
-    entry: [
-      FreeMoCap Foundation. _FreeMoCap: A free, open-source markerless motion
-      capture application._ Software repository.
-      https://github.com/freemocap/freemocap
-    ],
+    key: "cherianOpensourceDevelopmentValidation2026",
+    entry: [Cherian, A. T. Open-Source Development and Validation of a Low-Cost Markerless System for Quantitative Motion Analysis. 2026.],
   ),
-
-  // -------------------------------------------------------------------------
-  // Add further entries below. PAPPG II.D.2.e requires, for each reference:
-  // all author names in publication order, article and journal title, book
-  // title, volume, page numbers, and year. URL optional.
-  //
-  // This section has no page limit — but it must contain bibliographic
-  // citations ONLY. Do not smuggle explanatory parentheticals in here to
-  // dodge the 7-page limit; PAPPG explicitly forbids that.
-  // -------------------------------------------------------------------------
   (
-    key: "example2024",
-    entry: [
-      Lastname, A. B., and Otherperson, C. D. Title of the paper.
-      _Journal Name_, 12(3):101–118, 2024.
-    ],
+    key: "dariciLowcostMarkerlessMotion2026",
+    entry: [Darici, O., Cabak, C., Wong, J. D. A Low-Cost Markerless Motion Capture System to Automate Functional Gait Assessment: Feasibility Study. _PLOS ONE_, 21(6):e0346606, 2026. https://doi.org/10.1371/journal.pone.0346606],
+  ),
+  (
+    key: "eghbal2020",
+    entry: [Eghbal, N. Working in Public: The Making and Maintenance of Open Source Software. 2020.],
+  ),
+  (
+    key: "landaEvaluatingIdleAnimation2026",
+    entry: [Landa, E. A., Lazkano, E., Rodriguez, I., Rodriguez-Moreno, I., Irigoien, I. Evaluating Idle Animation Believability: A User Perspective. _Computer Animation and Virtual Worlds_, 37(3):e70116, 2026. https://doi.org/10.1002/cav.70116],
+  ),
+  (
+    key: "mazroueiCatchingSmallBalls2026",
+    entry: [Mazrouei, A., Ekladuce, Y., Ryait, H., Mohajerani, M., Karl, J. M., Whishaw, I. Q. Catching Small Balls with a Power Grip and Large Balls with a Precision Grip: Distinct Roles for the Reach and Grasp. _Experimental Brain Research_, 244(3):38, 2026. https://doi.org/10.1007/s00221-025-07223-4],
+  ),
+  (
+    key: "minogueValidationFreetoUseMarkerless2025",
+    entry: [Minogue, J. P., Napierala, M., Lowe, B., Drazan, J. F. Validation of Free-to-Use, Markerless Motion Capture for Field Based Measurements of Sagittal Plane Kinematics. Software repository. 2025. https://doi.org/10.2139/ssrn.5089509],
+  ),
+  (
+    key: "nunnariDGSFabeln1MultiAngleParallel2024",
+    entry: [Nunnari, F., Avramidis, E., España-Bonet, C., González, M., Hennes, A., Gebhard, P. DGS-Fabeln-1: A Multi-Angle Parallel Corpus of Fairy Tales between German Sign Language and German Text. _Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)_, pp. 4847–4857, 2024.],
+  ),
+  (
+    key: "orrMULTICOLLABASLAffectiveComputing2024",
+    entry: [Orr, H., Peechatt, M., Alm, C. O. MULTICOLLAB-ASL: Towards Affective Computing for the Deaf Community. _Proceedings of the 26th International ACM SIGACCESS Conference on Computers and Accessibility_, pp. 1–5, 2024. https://doi.org/10.1145/3663548.3688500],
+  ),
+  (
+    key: "peechattMULTICOLLABMultimodalCorpus2024",
+    entry: [Peechatt, M., Alm, C. O., Bailey, R. MULTICOLLAB: A Multimodal Corpus of Dialogues for Analyzing Collaboration and Frustration in Language. _Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)_, pp. 11713–11722, 2024.],
+  ),
+  (
+    key: "queenFreeMoCapFreeOpen2024",
+    entry: [Queen, P., Cherian, A., Trent, W., Endurance, I., Matthis, J. S. FreeMoCap: A Free, Open Source Markerless Motion Capture System. Software repository. 2024. https://doi.org/10.5281/zenodo.7233714],
+  ),
+  (
+    key: "nunez-lisboaUnderstandingGaitAlterations2024",
+    entry: [Núñez-Lisboa, M., Echeverría, K., Willems, P. A., Ivanenko, Y., Lacquaniti, F., Dewolf, A. H. Understanding Gait Alterations: Trunk Flexion and Its Effects on Walking Neuromechanics. _Journal of Experimental Biology_, 227(19):jeb249307, 2024. https://doi.org/10.1242/jeb.249307],
   ),
 )
 

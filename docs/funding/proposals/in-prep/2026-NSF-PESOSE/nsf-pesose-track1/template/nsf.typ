@@ -117,6 +117,8 @@
     text(size: 11pt, weight: "bold", it.body),
   )
 
+  show figure.caption: set text(size: 9pt)
+
   // Tighter lists than Typst's default, which is generous for a page-limited
   // document.
   set list(indent: 1em, spacing: 0.6em, marker: [•])
