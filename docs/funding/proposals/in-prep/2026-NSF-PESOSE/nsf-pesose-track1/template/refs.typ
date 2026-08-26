@@ -29,6 +29,10 @@
 
 #let REFERENCES = (
   (
+    key: "aitkenPatientPerceivedFeasibilityImplementing2026",
+    entry: [Aitken, H. D., Holt, J. B., Westermann, R. W., Elkins, J. M., Vanorny, D. A., Crawmer, J. T., Gregory, E. S., Velasquez-Marin Mohr, S., Rich, C. M., Goetz, J. E. Patient-Perceived Feasibility of Implementing OpenCap Smartphone-Based Motion Capture Technology to Remotely Assess Musculoskeletal Movement in Individuals with Orthopedic Disorders Presenting to a Rural Midwestern Tertiary Center. _Frontiers in Digital Health_, 8, 2026. https://doi.org/10.3389/fdgth.2026.1870758],
+  ),
+  (
     key: "cherianOpensourceDevelopmentValidation2026",
     entry: [Cherian, A. T. Open-Source Development and Validation of a Low-Cost Markerless System for Quantitative Motion Analysis. 2026.],
   ),
