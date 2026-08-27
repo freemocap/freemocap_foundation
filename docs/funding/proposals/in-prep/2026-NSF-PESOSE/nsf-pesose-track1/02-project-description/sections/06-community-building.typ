@@ -17,18 +17,39 @@
 
 = Community Building
 
-The FreeMoCap Foundation maintains an active Discord community of over 3,000 members, structured to allow users to ask and answer questions without relying on the core development team. The core team also hosts a weekly community call that provides a regular venue for project updates, user feedback, technical discussion, and interaction with potential contributors. These activities provide an established foundation for community engagement. However, rapid FreeMoCap user growth in 2026 (@fig-star-chart) increased the need for educational and engagement models needed to support a susbtantially larger community.
+The FreeMoCap Foundation maintains an active Discord community of more than
+4,000 members, structured so that users can ask and answer questions without
+relying exclusively on the core development team. The core team also hosts a
+weekly community call for project updates, user feedback, technical discussion,
+and interaction with potential contributors. These activities provide an
+established foundation for community engagement, but rapid user growth in 2026
+(@fig-star-chart) has increased the need for education and participation models
+that can scale beyond direct interaction with maintainers.
 
 #figure(
-  image("../../figures/star-history.png", width: 70%), caption: [Github star chart]
+  image("../../figures/star-history.png", width: 50%), caption: [Github star chart]
 ) <fig-star-chart>
 
-This work is also continuous with the contributor problem examined in Ecosystem Discovery. Educational materials are not only user support, they are also mechanisms by which to decentralize architectural knowledge of the FreeMoCap software and support contributor entry into the pipeline. 
+Community building is therefore part of the transition from a stadium to a
+federated ecosystem. A larger contributor base only reduces dependence on the
+core team if users and contributors have enough knowledge to act independently;
+otherwise, growth simply shifts effort toward support, review, and correction.
+Track 1 will develop and pilot educational pathways at three levels: introductory
+materials for general users; intermediate and domain-specific resources for
+scientific, technical, creative, and educational applications; and separate
+developer documentation covering software architecture, contribution workflows,
+testing, and maintenance responsibilities.
 
-Track 1 will pilot scalable approaches to user education and community particupation. These include hands-on classes and workshops developed with partner organizations, including Artisan's Asylum and The Possible Zone, as well as the creation of tutorials, guided projects, and other educational resources that can be reused by the broader community. These pilots will identify which formats are most effective for different audiences, where learners encounter technical and knowledge barriers, and what materials can be made available at scale for for instruction. 
+These materials will be piloted through hands-on classes and workshops with
+partner organizations, including The Possible Zone, and through tutorials and guided projects made available to the broader community. Pilots will identify where learners encounter conceptual or technical barriers, which formats work best for different audiences, and what knowledge can be transferred without direct core-team instruction. 
 
-Track 1 will also scope mechanisms for community contribution and participation that do not require coding. These may include calls for community-created artwork and visualizations, challenges, shared examples, and other participatory activities that allow users to contribute domain expertise and creative work to the broader ecosystem. These activities will test whether visible, low-barrier forms of participation can deepen engagement and create additional pathways toward sustained contribution.
-
-The resulting materials will inform a scalable community-education model of documentation, curricula, tutorials and contribution pathways that can support a growing user base. Longer-term, these pilots will move towards establishing and hosting a larger community meeting or conference consisting of users, developers, educators, and researchers making use of the software, with potential support from a subsequent Track 2 application. 
+Track 1 will also test low-barrier forms of community participation that do not
+require software development, including community-created visualizations,
+artwork, examples, challenges, and other ways for users to contribute domain
+expertise. Together, these activities will inform a scalable education and
+onboarding model that supports progression from user, to informed participant,
+to sustained contributor. Longer term, the resulting model could inform a
+larger FreeMoCap community meeting or conference bringing together users,
+developers, educators, and researchers as part of a subsequent Track 2 effort.
 
 

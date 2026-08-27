@@ -20,22 +20,29 @@
 // that you know the landscape.
 
 #import "../../template/nsf.typ": budget, note
+#import "../../template/refs.typ": c
 
 #budget("~0.75 page")
 
 = Risk Analysis and Security Plan
 
-The FreeMoCap workflow is entirely run on a user's own computer. Therefore, all generated data belongs solely to that user and is never passed through any cloud-based or other remote software, which is a substantial advantage for user privacy, researcher privacy with human subjects, and any clinical work. 
+FreeMoCap processes video and derived movement data locally on the user's computer, avoiding the need to transmit or store potentially sensitive recordings on a remote service. This is particularly relevant for research and clinical applications involving identifiable human-subject video. Recent work examining OpenCap illustrates the implementation challenge: although its cloud-based workflow incorporates HIPAA-compliant safeguards, only 71.7-82.8% of surveyed patients reported being comfortable sharing video recordings for remote analysis, and authors identified storage, transmission, unauthorized access, and secondary use as important considerations for clinical adoption #c("aitkenPatientPerceivedFeasibilityImplementing2026"). FreeMoCap's local architecture avoids this cloud data-transfer surface, while introducing its own security requirements as the project becomes more extensible and community-driven.
 
-FreeMoCap depends on a stack of computer vision and machine learning libraries. The community extension system proposed above would also introduce addition third-party code. Track 1 will assess the software against the best practices provided by the Open Source Security Foundation and will scope the review and approval controls needed to guard against malicious or inadvertently unsafe contributions for an extension system. 
+The software depends on a stack of computer vision and machine learning libraries. The community extension system proposed above would also introduce addition third-party code. Track 1 will assess the software against the best practices provided by the Open Source Security Foundation and will scope the review and approval controls needed to guard against malicious or inadvertently unsafe contributions for an extension system. 
 
 == Data Quality
-Scientific investment and trust must have the basis of scientific data quality. Changes to pose-estimation models, calibration, reconstruction, filtering, or other pipeline components can alter scientific outputs even when the software continues to function correctly. Track 1 will scope diagnostic, testing, and benchmarking infrastructure for detecting such changes, including comparison against reference datasets, documentation of expected performance, and regression testing across software versions and supported configurations. We will also define the metadata needed to trace an output dataset to the software versions, models, processing parameters, and other relevant configuration choices used to produce it.
+Community investment and trust in the software must have the basis of data integrity. Changes to pose-estimation models, calibration, reconstruction, filtering, or other pipeline components can alter scientific outputs even when the software continues to function correctly. Track 1 will therefore scope diagnostic, regression-testing, benchmarking, and provenance requirements, including comparison against reference datasets and metadata sufficient to trace outputs to software versions, models, processing parameters, and acquisition configurations. Camera characteristics are also part of the measurement chain; collaboration with Imatest LLC, whose work includes ISO/TC 42 standards activity on image-information content, will inform how imaging-system limitations can be characterized, reported, and made visible to users.
 
-[input ISO/Imatest collaboration here potentially]
-// -----------------------------------------------------------------------------
-// CLOSING OUTPUT SENTENCE — one sentence, no heading, naming what this section
-// produces. Keeps activity and output adjacent so the section does not read as
-// pure intention, without duplicating the milestone table in Part 7.
-// Must correspond to a row in that table.
-// -----------------------------------------------------------------------------
+== Identity and telemetry
+
+Structures under consideration for the ecosystem introduce additional surfaces
+that Track 1 will scope. Recognizing contributor and user
+progression may require authenticated accounts, and the project will evaluate
+established delegated-authorization approaches such as OAuth 2.0 with guidance
+from its industry mentor. Understanding the user base likewise depends on
+usage telemetry, and any such collection would be designed to minimize what is
+gathered and retained, consistent with the local-first principle above.
+
+Together this work will produce a risk register, draft extension review and
+release controls, and a benchmarking and provenance specification.
+

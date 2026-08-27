@@ -14,8 +14,8 @@
 // Project Description automatically.
 // =============================================================================
 
-#import "../lib/nsf.typ": nsf-doc, DRAFT
-#import "../lib/refs.typ": render-references
+#import "../template/nsf.typ": nsf-doc, DRAFT
+#import "../template/refs.typ": render-references
 
 #show: nsf-doc.with(page-limit: none, draft: DRAFT)
 

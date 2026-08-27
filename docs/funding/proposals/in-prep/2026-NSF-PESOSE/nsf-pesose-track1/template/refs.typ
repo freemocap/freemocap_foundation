@@ -28,35 +28,85 @@
 // =============================================================================
 
 #let REFERENCES = (
-  // -------------------------------------------------------------------------
-  // [1] THE PRODUCT POINTER — required by NSF 26-506 for all PESOSE proposals.
-  // Cite this early in the Project Description, ideally in the opening
-  // paragraph. Keep it as entry #1 so it is trivially findable by reviewers.
-  // -------------------------------------------------------------------------
   (
-    key: "freemocap",
-    entry: [
-      FreeMoCap Foundation. _FreeMoCap: A free, open-source markerless motion
-      capture application._ Software repository.
-      https://github.com/freemocap/freemocap
-    ],
+    key: "aitkenPatientPerceivedFeasibilityImplementing2026",
+    entry: [Aitken, H. D., Holt, J. B., Westermann, R. W., Elkins, J. M., Vanorny, D. A., Crawmer, J. T., Gregory, E. S., Velasquez-Marin Mohr, S., Rich, C. M., Goetz, J. E. Patient-Perceived Feasibility of Implementing OpenCap Smartphone-Based Motion Capture Technology to Remotely Assess Musculoskeletal Movement in Individuals with Orthopedic Disorders Presenting to a Rural Midwestern Tertiary Center. _Frontiers in Digital Health_, 8, 2026. https://doi.org/10.3389/fdgth.2026.1870758],
   ),
-
-  // -------------------------------------------------------------------------
-  // Add further entries below. PAPPG II.D.2.e requires, for each reference:
-  // all author names in publication order, article and journal title, book
-  // title, volume, page numbers, and year. URL optional.
-  //
-  // This section has no page limit — but it must contain bibliographic
-  // citations ONLY. Do not smuggle explanatory parentheticals in here to
-  // dodge the 7-page limit; PAPPG explicitly forbids that.
-  // -------------------------------------------------------------------------
   (
-    key: "example2024",
-    entry: [
-      Lastname, A. B., and Otherperson, C. D. Title of the paper.
-      _Journal Name_, 12(3):101–118, 2024.
-    ],
+    key: "cherianOpensourceDevelopmentValidation2026",
+    entry: [Cherian, A. T. Open-Source Development and Validation of a Low-Cost Markerless System for Quantitative Motion Analysis. 2026.],
+  ),
+  (
+    key: "cimorelliPortableInclinicVideobased2022",
+    entry: [Cimorelli, A., Patel, A., Karakostas, T., Cotton, R. J. Portable In-Clinic Video-Based Gait Analysis: Validation Study on Prosthetic Users. Software repository. pp. 2022.11.10.22282089, 2022. https://doi.org/10.1101/2022.11.10.22282089],
+  ),
+  (
+    key: "cottonPosePipeOpenSourceHuman2022",
+    entry: [Cotton, R. J. PosePipe: Open-Source Human Pose Estimation Pipeline for Clinical Research. Software repository. 2022. https://doi.org/10.48550/arXiv.2203.08792],
+  ),
+  (
+    key: "dariciLowcostMarkerlessMotion2026",
+    entry: [Darici, O., Cabak, C., Wong, J. D. A Low-Cost Markerless Motion Capture System to Automate Functional Gait Assessment: Feasibility Study. _PLOS ONE_, 21(6):e0346606, 2026. https://doi.org/10.1371/journal.pone.0346606],
+  ),
+  (
+    key: "eghbal2020",
+    entry: [Eghbal, N. Working in Public: The Making and Maintenance of Open Source Software. 2020.],
+  ),
+  (
+    key: "landaEvaluatingIdleAnimation2026",
+    entry: [Landa, E. A., Lazkano, E., Rodriguez, I., Rodriguez-Moreno, I., Irigoien, I. Evaluating Idle Animation Believability: A User Perspective. _Computer Animation and Virtual Worlds_, 37(3):e70116, 2026. https://doi.org/10.1002/cav.70116],
+  ),
+  (
+    key: "matsumotoThreedimensionalMarkerlessMotion2025",
+    entry: [Matsumoto, J., Kaneko, T., Kimura, K., Blanco Negrete, S., Guo, J., Suda-Hashimoto, N., Kaneko, A., Morimoto, M., Nishimaru, H., Setogawa, T., Go, Y., Shibata, T., Nishijo, H., Takada, M., Inoue, K. i. Three-Dimensional Markerless Motion Capture of Multiple Freely Behaving Monkeys toward Automated Characterization of Social Behavior. _Science Advances_, 11(26):eadn1355, 2025. https://doi.org/10.1126/sciadv.adn1355],
+  ),
+  (
+    key: "mazroueiCatchingSmallBalls2026",
+    entry: [Mazrouei, A., Ekladuce, Y., Ryait, H., Mohajerani, M., Karl, J. M., Whishaw, I. Q. Catching Small Balls with a Power Grip and Large Balls with a Precision Grip: Distinct Roles for the Reach and Grasp. _Experimental Brain Research_, 244(3):38, 2026. https://doi.org/10.1007/s00221-025-07223-4],
+  ),
+  (
+    key: "minogueValidationFreetoUseMarkerless2025",
+    entry: [Minogue, J. P., Napierala, M., Lowe, B., Drazan, J. F. Validation of Free-to-Use, Markerless Motion Capture for Field Based Measurements of Sagittal Plane Kinematics. Software repository. 2025. https://doi.org/10.2139/ssrn.5089509],
+  ),
+  (
+    key: "needhamDevelopmentEvaluationFully2022",
+    entry: [Needham, L., Evans, M., Wade, L., Cosker, D. P., McGuigan, M. P., Bilzon, J. L., Colyer, S. L. The Development and Evaluation of a Fully Automated Markerless Motion Capture Workflow. _Journal of Biomechanics_, 144:111338, 2022. https://doi.org/10.1016/j.jbiomech.2022.111338],
+  ),
+  (
+    key: "nunnariDGSFabeln1MultiAngleParallel2024",
+    entry: [Nunnari, F., Avramidis, E., España-Bonet, C., González, M., Hennes, A., Gebhard, P. DGS-Fabeln-1: A Multi-Angle Parallel Corpus of Fairy Tales between German Sign Language and German Text. _Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)_, pp. 4847–4857, 2024.],
+  ),
+  (
+    key: "orrMULTICOLLABASLAffectiveComputing2024",
+    entry: [Orr, H., Peechatt, M., Alm, C. O. MULTICOLLAB-ASL: Towards Affective Computing for the Deaf Community. _Proceedings of the 26th International ACM SIGACCESS Conference on Computers and Accessibility_, pp. 1–5, 2024. https://doi.org/10.1145/3663548.3688500],
+  ),
+  (
+    key: "pagnonPose2SimEndtoEndWorkflow2022",
+    entry: [Pagnon, D., Domalain, M., Reveret, L. Pose2Sim: An End-to-End Workflow for 3D Markerless Sports Kinematics—Part 2: Accuracy. _Sensors_, 22(7), 2022. https://doi.org/10.3390/s22072712],
+  ),
+  (
+    key: "peechattMULTICOLLABMultimodalCorpus2024",
+    entry: [Peechatt, M., Alm, C. O., Bailey, R. MULTICOLLAB: A Multimodal Corpus of Dialogues for Analyzing Collaboration and Frustration in Language. _Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)_, pp. 11713–11722, 2024.],
+  ),
+  (
+    key: "queenFreeMoCapFreeOpen2024",
+    entry: [Queen, P., Cherian, A., Trent, W., Endurance, I., Matthis, J. S. FreeMoCap: A Free, Open Source Markerless Motion Capture System. Software repository. 2024. https://doi.org/10.5281/zenodo.7233714],
+  ),
+  (
+    key: "seethapathiMovementScienceNeeds2019",
+    entry: [Seethapathi, N., Wang, S., Saluja, R., Blohm, G., Kording, K. P. Movement Science Needs Different Pose Tracking Algorithms. Software repository. 2019.],
+  ),
+  (
+    key: "uhlrichOpenCapHumanMovement2023",
+    entry: [Uhlrich, S. D., Falisse, A., Kidziński, Ł., Muccini, J., Ko, M., Chaudhari, A. S., Hicks, J. L., Delp, S. L. OpenCap: Human Movement Dynamics from Smartphone Videos. _PLOS Computational Biology_, 19(10):e1011462, 2023. https://doi.org/10.1371/journal.pcbi.1011462],
+  ),
+  (
+    key: "yangEvaluationCameraConfigurations2025",
+    entry: [Yang, D., Jung, E. S. Evaluation of Camera Configurations of OpenPose-based 3D Motion Capture System for Construction Tasks. _Measurement_, 247:116826, 2025. https://doi.org/10.1016/j.measurement.2025.116826],
+  ),
+  (
+    key: "nunez-lisboaUnderstandingGaitAlterations2024",
+    entry: [Núñez-Lisboa, M., Echeverría, K., Willems, P. A., Ivanenko, Y., Lacquaniti, F., Dewolf, A. H. Understanding Gait Alterations: Trunk Flexion and Its Effects on Walking Neuromechanics. _Journal of Experimental Biology_, 227(19):jeb249307, 2024. https://doi.org/10.1242/jeb.249307],
   ),
 )
 
