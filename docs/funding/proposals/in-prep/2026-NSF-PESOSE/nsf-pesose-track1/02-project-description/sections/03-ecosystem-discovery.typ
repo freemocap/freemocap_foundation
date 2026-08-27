@@ -21,17 +21,40 @@
 
 == Need for Innovation
 
-Existing commercial (Theia3D, Move.ai, Rokoko, Meshcapade) and  open-source (OpenCap#c("uhlrichOpenCapHumanMovement2023"), Pose2Sim#c("pagnonPose2SimEndtoEndWorkflow2022"), PosePipe#c("cottonPosePipeOpenSourceHuman2022")) markerless motion capture tools demonstrate substantial demand, but differ in accessibility, licensing, extensibility and intended user communities. That domain-specific workflows continue to be developed independently in research laboratories #c("matsumotoThreedimensionalMarkerlessMotion2025", "yangEvaluationCameraConfigurations2025", "needhamDevelopmentEvaluationFully2022", "cimorelliPortableInclinicVideobased2022") indicates that existing systems do not meet these needs.  Track 1 will test the central FreeMoCap ecosystem strategy: that a singular modular ecosystem can support both accessible general use and domain-specific extension at once, rather than requiring a separate tool per community. 
+Existing commercial (Theia3D, Move.ai, Rokoko, Meshcapade) and  open-source (OpenCap#c("uhlrichOpenCapHumanMovement2023"), Pose2Sim#c("pagnonPose2SimEndtoEndWorkflow2022"), PosePipe#c("cottonPosePipeOpenSourceHuman2022")) markerless motion capture tools demonstrate substantial demand, but differ in accessibility, licensing, extensibility and intended user communities. The continued development of domain-specific workflows in individual research laboratories #c("matsumotoThreedimensionalMarkerlessMotion2025", "yangEvaluationCameraConfigurations2025", "needhamDevelopmentEvaluationFully2022", "cimorelliPortableInclinicVideobased2022") indicates that researchers with specialized requirements still build substantial portions of this infrastructure independently.
+
+Our Track 1 scoping will test the premise underlying this proposal: *the repeated rebuilding of motion capture pipelines is not solely a software problem, but an ecosystem failure. *Solving it requires documentation, contribution pathways, technical interfaces, and governance structures that make extending shared infrastructure the easier path than rebuilding it from scratch.
+
 
 == Necessity of an OSE approach
-FreeMoCap's existing community provides early evidence that an OSE can convert individual expertise into shared infrastructure for the the broader user community. Users have already become contributors in areas including animation, UI design, and pose estimation architecture, bringing domain expertise outside the core development team into the project. These transitions have occurred informally, however, without a defined pathway from user to contributor. Several contributors who have successfully entered the project have remained engaged over time, motivating Track 1 investigation of whether the bottleneck lies in entry rather than retention. Track 1 will identify how to formalize the onboarding, documentation, contribution and governance structures needed to make that transition repeatable and less dependent on involvement from the core team. 
+FreeMoCap's existing community provides early evidence that an OSE can convert
+individual expertise into shared infrastructure for the broader user community.
+Users have already become contributors in areas including animation, UI design,
+and pose-estimation architecture, bringing domain expertise from outside the
+core development team into the project, for the benefit of all users. However, these transitions occurred informally and have depended heavily on direct interaction with
+the core team.
+
+Creating a repeatable path into the ecosystem first requires understanding who
+is trying to use, teach, extend, or contribute to FreeMoCap, what technical
+knowledge each group needs, and where the current software and documentation
+fail to support them independently. 
 
 == Stakeholder discovery
-Although telemetry points to over 15k users, our current understanding of the FreeMoCap community is drawn from users who contact us directly or participate in community channels. Our proposed work will combine analysis of the existing community, surveys, and the I-Corps for PESOSE stakeholder-discovery process to systematically characterize five main stakeholder groups: researchers across application domains; educators and students using the software for instruction; creative and technical users in animation and related fields; current and prospective contributors; maintainers of existing and mature open-source projects. 
+Although telemetry indicates more than 15,000 users, our current understanding of the FreeMoCap community is drawn primarily from users who contact us directly or participate in existing community channels. Some applications have emerged outside the domains we originally anticipated. For example, computational-linguistics researchers have adopted FreeMoCap in published work without any prior interaction with the core team. This motivates a broader discovery effort aimed not only at known users, but also at understanding unexpected communities, what drew them to the platform, and what would support sustained or broader adoption within those communities.
 
-Discovery will be structured around three outputs. First, a cross-domain needs assessment identifying how different communities use FreeMoCap, what draws them to the platform, and which specialized capabilities or workflow adaptations would support broader adoption within those fields.Where a requirement recurs across unrelated domains it is a candidate for the shared core; where it appears in only one, it defines an extension. The distribution of these requirements is the direct test of whether a single modular ecosystem can serve communities this varied. Second, a user and contributor knowledge assessment identifying what technical understanding is required to use, teach, and modify FreeMoCap; which of that knowledge remains tacit or undocumented; and what documentation, educational, and onboarding resources are needed for users and contributors to operate independently of the core team. Third, a set of candidate governance and extension architectures for evaluation in the Organization and Governance work, informed by maintainers of comparable open-source projects.
+Our proposed work will combine analysis of existing community activity, community-wide surveys, and the I-Corps for PESOSE stakeholder-discovery process to characterize four user populations drawn from observed use: researchers across application domains; educators and students; creative and technical users in animation and related fields; and current and prospective contributors. We will also interview maintainers of mature open-source projects, not as FreeMoCap users, but as a source of comparative evidence on how successful ecosystems structure contribution, governance, and extension.
 
-Together, these outputs will provide the evidence base for the governance, security, community-building, and sustainability decisions developed in the subsequent Track 1 work.
+Discovery will produce three assessments, each addressing one condition under
+which extending shared infrastructure becomes easier than rebuilding it.
+
+1) A cross-domain needs assessment: how different communities use
+FreeMoCap, what brought them to it, and what their work requires that the
+shared pipeline does not yet provide. 
+
+2) A knowledge assessment: what users must understand to operate the software, what contributors must understand to modify it, which of that knowledge remains undocumented, and what forms of documentation or instruction would allow people to participate without direct access to the core team.
+
+3) A comparative ecosystem review: how mature open-source projects of comparable scale structure contribution, extension, and decision-making, and how those structures perform as projects grow. These findings will supply candidate models for evaluation in Organization and Governance and inform the security, community-building, and sustainability work that follows.
+
 
 
 // TODO: discovery activities, segments, and what each produces.

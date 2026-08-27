@@ -16,18 +16,6 @@
 
 #budget("~0.5 page")
 
-Quantitative movement analysis is often rebuilt within individual research or
-application domains, limiting the reach of both the software and the expertise
-used to create it. A sustainable FreeMoCap ecosystem can instead turn
-specialized adaptations into shared infrastructure: a contribution developed
-for one community can become available to others rather than being recreated
-independently. This increases the return on public investment in scientific
-software while creating pathways for expertise to move across fields. A method
-developed by a computer-vision researcher can reach users who could not
-implement it themselves; an animation workflow can inform tools useful to
-researchers or clinicians; and scientific advances can become accessible to
-artists, educators, students, and hobbyists.
-
 = Broader Impacts
 Quantitative movement analysis is often rebuilt within individual research or application domains, rarely translating beyond the environment it was created in. A sustainable FreeMoCap ecosystem can instead turn specialized adaptations into shared infrastructure, increasing the return on public investment in scientific software while creating pathways for expertise to move across fields. A contribution made by an animator can improve the software for researchers and clinicians, and scientific advancements can become accessible to artists, educators, students and hobbyists. 
 
