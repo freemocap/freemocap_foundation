@@ -29,7 +29,7 @@
 
 #budget("~1.0 page")
 
-= Current State of the Product and Community
+= Current State of the Software and Community
 
 FreeMoCap, distributed through Github and a standalone desktop installer, has over 10,0000 Github stars, telemetry indicating over 15,000 users across 153 countries, and a community forum with over 4,000 members. The software is organized as interoperating repositories separated by domain: `skellycam` for camera synchronization and recording, `skellytracker` as a modular interface for pose estimation, `skellyforge` for calibration, reconstruction, and post-processing, and `freemocap_blender_addon` for export to Blender. 
 
@@ -37,7 +37,7 @@ FreeMoCap has been adopted across research applications including reaching and g
 
 #figure(
   image("../../figures/data.png", width:100%),
-  caption: [FreeMoCap applications from standard human biomechanics to specialized movement-analysis use cases. A. Lower-extremity joint-angle comparison and statistical parametric mapping against Qualisys marker-based motion capture across multiple pose-estimation backends. B. Custom DeepLabCut integration for tracking a prosthetic user. C. Extension to non-human locomotion and neural-behavioral research. ]
+  caption: [FreeMoCap applications from standard human biomechanics to specialized movement-analysis use cases. A. Lower-extremity joint-angle comparison and statistical parametric mapping against Qualisys marker-based motion capture across multiple pose-estimation backends. B. Custom DeepLabCut integration for tracking a prosthetic user. C. Extension to ferret locomotion and neural-behavioral research in collaboration with *[BEN'S LAB NAME HERE]* ]
 )
 
 User adoption has outpaced growth of the maintainer base. Much of the architectural and operational knowledge needed to contribute to the core pipeline remains concentrated within a core development team, while contributor onboarding and technical knowledge decentralization remains immature. 

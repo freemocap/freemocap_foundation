@@ -32,28 +32,29 @@
 
 = Organization and Governance
 
-The FreeMoCap Foundation was incorporated as a 501(c)(3) in XXXX and holds stewardship of the projection's main repositories. The Foundation provides long-term stewardship of the project, but the structures needed to distribute technical authority, maintenance responsibility, and decision-making across a broader contributor community remain underdeveloped.
-
-Eghbal #c("eghbal2020") distinguishes open-source projects by the growth of their user and contributor bases, with FreeMoCap exhibiting the pattern of a _stadium_ - a project with high user growth and low contributor growth, with the audience then depending on the work of a few people. Track 1 will scope the transition toward a _federation_, in which user and contributor bases grow together and technical knowledge, responsibility, and authority are distributed across the ecosystem.
+In _Working in Public_, Nadia Eghbal #c("eghbal2020") distinguishes open-source projects by the growth of their user and contributor bases. FreeMoCap currently resembles a _stadium_: high user growth with comparatively low contributor growth, leaving a large community dependent on a small maintainer base. *Track 1 will build on that foundation by scoping the transition toward a _federation_, in which user and contributor bases grow together and technical knowledge, responsibility, and authority are distributed across the ecosystem.*
 
 == Governance Scoping
 
-Federated projects require the distribution of decision-making and knowledge such that it does not depend on any one person. Python's PEP process is on example, in which an elected steering council, trusted core contributors and editors, and a formal proposal process distribute technical authority across the community. We aim to evaluate such models against FreeMoCap's structure and scale, using interviews with maintainers of mature open-source projects during Ecosystem Discovery to supply the candidate models. 
+Federated projects require the distribution of decision-making and knowledge such that it does not depend on any one person. Python's PEP process is one example, in which an elected steering council, trusted core contributors and editors, and a formal proposal process distribute technical authority across the community. We aim to evaluate such models against FreeMoCap's structure and scale, using interviews with maintainers of mature open-source projects during Ecosystem Discovery to supply the candidate models. 
 
 == Distributed infrastructure and community extensions
 
-A more federated model requires distributed technical knowledge, and the ability for contributors to extend the software without the core team implementing each addition. FreeMoCap's existing modular architecture provides a technical basis for this: for example, the `skellytracker` interface defines a pathway for alternative pose-estimation
-models to enter the workflow without modification to the shared pipeline. This is crucial for adapting to domain specific research as there is no single adequate pose estimation model — the algorithms in common use are trained on standard human datasets, and the requirements of biomechanical measurement differ from those the models were built for
-#c("seethapathiMovementScienceNeeds2019").
+A federated model requires distributed technical knowledge and the ability for
+contributors to extend the software without the core team implementing each
+addition. FreeMoCap's modular architecture provides a technical basis for this:
+the `skellytracker` interface defines a pathway for alternative pose-estimation
+models to enter the workflow without modification to the shared pipeline. That
+pathway matters because no single pose-estimation model is adequate across
+subjects. The algorithms in common use are trained on standard human datasets,
+and the requirements of biomechanical measurement differ from those the models
+were built to satisfy #c("seethapathiMovementScienceNeeds2019").
 
-A community extension system would allow that work to be done once and reused,
-and would let a researcher publishing a new method reach users who would
-otherwise lack the expertise to implement it. Track 1 will examine what review
-and quality standards extensions must meet, how they are packaged and
-distributed, and how maintenance responsibility divides between extension and
-core maintainers - informed by interviews with maintainers of projects already
-operating extension systems. The resulting patterns would apply to other
-community-developed capabilities, such as biomechanical analyses.
+A community extension, in this context, is code written and maintained by
+someone outside the core team that runs against a published interface without
+altering the shared pipeline. A researcher whose subjects fall outside existing models could implement a tracker against a documented interface rather than assembling an
+entire pipeline around it, and the result would be available to everyone facing
+the same problem, while a computer-vision researcher publishing a new method could reach users who would otherwise lack the expertise to implement it. Track 1 will define the review, distribution, maintenance, and responsibility structures required for this model, informed by projects already operating extension ecosystems. The resulting framework could support other community-developed capabilities, including biomechanical analyses.
 
 == Licensing
 
@@ -61,15 +62,11 @@ FreeMoCap and its component repositories are licensed under the AGPLv3+, on the
 premise that improvements to publicly funded infrastructure are most valuable
 when they return to the broader community. The Foundation retains the ability to
 offer alternative terms to organizations whose intended use is incompatible with
-the AGPL, keeping the software freely available while generating resources for
+the AGPLv3+, keeping the software freely available while generating resources for
 maintenance and stewardship.
 
-
 == Long-term Sustainability
-The governance structures scoped above are sustainability meant to maintain the FreeMoCap ecosystem with a distributed contributor base, beyond changes in the core development team. In parallel, the Foundation will evaluate a
-diversified model for financial sustainability, including alternative
-commercial licensing, standardized hardware kits, training and support
-services, institutional partnerships, and continued grant funding.
+The FreeMoCap Foundation was incorporated as a 501(c)(3) to provide an institutional home for the project, and the governance structures scoped above are intended to give that home a distributed contributor base rather than a dependence on any particular maintainer. In parallel, the Foundation will evaluate a diversified model for financial sustainability, including alternative commercial licensing, standardized hardware kits, training and support services, institutional partnerships, and continued grant funding.
 
 
 
