@@ -17,7 +17,12 @@
 
 = Community Building
 
-The FreeMoCap Foundation maintains an active Discord community of more than
+Community building is therefore part of the transition from a stadium to a
+federated ecosystem. *A larger contributor base only reduces dependence on the
+core team if users and contributors have enough knowledge to act independently;
+otherwise, growth simply shifts effort toward support, review, and correction.*
+
+The FreeMoCap Foundation maintains an active Discord community forum of more than
 4,000 members, structured so that users can ask and answer questions without
 relying exclusively on the core development team. The core team also hosts a
 weekly community call for project updates, user feedback, technical discussion,
@@ -30,18 +35,14 @@ that can scale beyond direct interaction with maintainers.
   image("../../figures/star-history.png", width: 50%), caption: [Github star chart]
 ) <fig-star-chart>
 
-Community building is therefore part of the transition from a stadium to a
-federated ecosystem. A larger contributor base only reduces dependence on the
-core team if users and contributors have enough knowledge to act independently;
-otherwise, growth simply shifts effort toward support, review, and correction.
-Track 1 will develop and pilot educational pathways at three levels: introductory
-materials for general users; intermediate and domain-specific resources for
+Track 1 will develop and pilot educational pathways at three levels: *introductory
+materials* for general users; *intermediate and domain-specific resources* for
 scientific, technical, creative, and educational applications; and separate
-developer documentation covering software architecture, contribution workflows,
+*developer documentation* covering software architecture, contribution workflows,
 testing, and maintenance responsibilities.
 
 These materials will be piloted through hands-on classes and workshops with
-partner organizations, including The Possible Zone, and through tutorials and guided projects made available to the broader community. Pilots will identify where learners encounter conceptual or technical barriers, which formats work best for different audiences, and what knowledge can be transferred without direct core-team instruction. 
+partner organizations, including The Possible Zone and the Artisans Asylum, and through tutorials and guided projects made available to the broader community. Pilots will identify where learners encounter conceptual or technical barriers, which formats work best for different audiences, and what knowledge can be transferred without direct core-team instruction. 
 
 Track 1 will also test low-barrier forms of community participation that do not
 require software development, including community-created visualizations,
