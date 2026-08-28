@@ -17,7 +17,7 @@
 
 = Community Building
 
-Community building is therefore part of the transition from a _stadium_ to a
+Community building is a critical part of the transition from a _stadium_ to a
 _federation_ ecosystem. *A larger contributor base only reduces dependence on the
 core team if users and contributors have enough knowledge to act independently;
 otherwise, growth simply shifts effort toward support, review, and correction.*
@@ -35,11 +35,7 @@ that can scale beyond direct interaction with maintainers.
   image("../../figures/star-history.png", width: 50%), caption: [Github star chart]
 ) <fig-star-chart>
 
-Track 1 will develop and pilot educational pathways at three levels: *introductory
-materials* for general users; *intermediate and domain-specific resources* for
-scientific, technical, creative, and educational applications; and separate
-*developer documentation* covering software architecture, contribution workflows,
-testing, and maintenance responsibilities.
+Track 1 will develop and pilot accessible educational and participation pathways at three levels: *introductory materials* for general users; *intermediate and domain-specific resources* for scientific, technical, creative, and educational applications; and separate *developer documentation* covering software architecture, contribution workflows, testing, and maintenance responsibilities.
 
 These materials will be piloted through hands-on classes and workshops with
 partner organizations, including The Possible Zone and Artisans Asylum, and through tutorials and guided projects made available to the broader community. Pilots will identify where learners encounter conceptual or technical barriers, which formats work best for different audiences, and what knowledge can be transferred without direct core-team instruction. 

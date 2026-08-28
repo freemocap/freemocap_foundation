@@ -20,9 +20,9 @@
 
 = Vision and Need
 
-Although the methods behind motion capture are well documented, researchers must often rebuild the infrastructure that assembles them into a usable measurement system when existing tools do not fit their needs. Commercial marker-based motion capture systems offer sophisticated general-purpose measurement, but remain costly and closed to modification. Newer markerless systems, driven by advances in computer vision, have lowered those barriers but are often built around the needs and assumptions of particular fields. Researchers working outside those assumptions (for instance, anyone measuring a non-human animal) are left to assemble their own motion-capture pipelines, implementing the same underlying components each time: video synchronization, camera calibration, pose estimation, 3D reconstruction, post-processing, and analysis. Rebuilding this infrastructure across projects duplicates technical effort and dilutes public research investment in software that is difficult to maintain, reproduce, or transfer beyond the environment in which it was developed.
+Although the methods behind motion capture are well documented, researchers must often rebuild the infrastructure that assembles them into a usable measurement system when existing tools do not fit their needs. Commercial marker-based motion capture systems offer sophisticated general-purpose measurement, but remain costly and closed to modification. Newer markerless systems, driven by advances in computer vision, have lowered those barriers but are often built around the needs and assumptions of particular fields. Researchers working outside those assumptions (for instance, anyone measuring a non-human animal) are left to assemble their own motion-capture pipelines, implementing the same underlying components each time: video synchronization, camera calibration, pose estimation, 3D reconstruction, post-processing, and analysis. Rebuilding this infrastructure across projects duplicates technical effort and reduces the return on public research investment in software that is difficult to maintain, reproduce, or transfer beyond the environment in which it was developed.
 
-*There is therefore a need for shared infrastructure that allows specialized motion capture adaptations developed by one community to be contributed back and reused by others, which requires defined stewardship and governance as much as software.*
+*There is therefore a need for accessible, shared research infrastructure that allows specialized motion capture adaptations developed by one community to be contributed back and reused by others, which requires defined stewardship and governance as much as software.*
 
 FreeMoCap #c("queenFreeMoCapFreeOpen2024") provides an existing technical foundation for this model. Maintained by the FreeMoCap Foundation, FreeMoCap is
 free and open-source software that transforms synchronized video from
@@ -31,12 +31,5 @@ modular workflow (@fig-overview). This proposal requests Track 1 support to *sco
 
 #figure(
   image("../../figures/overview_v2.png", width: 100%),
-caption: [The FreeMoCap workflow and its component repositories. (A) Synchronized video from consumer-grade USB webcams (skellycam) is processed through camera calibration and 3D reconstruction (skellyforge) and modular pose estimation (skellytracker), producing 3D motion trajectories for downstream analysis or animation export. Separation of the pipeline by domain allows individual components to be modified or replaced independently. (B) Reconstructed 3D trajectories alongside the source camera views.]
+caption: [The FreeMoCap workflow and its component repositories (blue). (A) Synchronized video from consumer-grade USB webcams (skellycam) is processed through camera calibration and 3D reconstruction (skellyforge) and modular pose estimation (skellytracker), producing 3D motion trajectories for downstream analysis or animation export. Separation of the pipeline by domain allows individual components to be modified or replaced independently. (B) Reconstructed 3D trajectories alongside the source camera views.]
 ) <fig-overview>
-
-// TODO: open with the unmet need. One or two sentences.
-// TODO: name the product with an in-line citation, e.g. #c("freemocap")
-// TODO: state the spine claim: working product, missing organization,
-//       twelve months of scoping produces the plan.
-
-#note[criterion (a) — is the need unmet, and is that stated in plain terms?]

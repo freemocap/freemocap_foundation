@@ -3,44 +3,60 @@
 = Milestones and Evaluation Plan
 
 
-#table(
-  columns: (auto, 1.6fr, 1.25fr),
-  inset: 3pt,
-  table.header(
-    [*Qtr*], [*Milestone / Deliverable*], [*Evaluation*],
-  ),
+#block(
+  breakable: false,
+  [
+    #{
+      set par(
+        justify: false,
+      )
 
-  [Q1],
-  [Complete I-Corps for PESOSE; establish baseline ecosystem metrics],
-  [Cohort completion confirmed by I-Corps instructors],
+      table(
+        columns: (2.5em, 1.55fr, 1.15fr),
 
-  [Q1--Q2],
-  [Stakeholder discovery; prioritized user and contributor barrier map],
-  [Coverage of target stakeholder groups and recurring barriers confirmed by interviewed participants],
+        // More vertical breathing room inside each cell
+        inset: (x: 2pt, y: 2.5pt),
 
-  [Q2],
-  [Develop candidate governance, contributor, and stewardship models],
-  [Compared against discovery findings and reviewed by experienced OSE maintainers],
+        stroke: 0.4pt,
 
-  [Q2--Q3],
-  [Define core-versus-extension model and contribution, maintenance, licensing, and review requirements],
-  [Validated against the extension types identified in discovery; reviewed by maintainers of projects operating extension systems],
+        table.header(
+          [*Qtr*],
+          [*Milestone / Deliverable*],
+          [*Evaluation*],
+        ),
 
-  [Q3],
-  [Security and data-quality scoping; prototype automated benchmarking and regression suite],
-  [Suite detects known differences in output across trackers and versions; risks mapped to controls and reviewed externally],
+        [Q1],
+        [Complete I-Corps for PESOSE; establish baseline ecosystem metrics],
+        [Completion confirmed by I-Corps instructors],
 
-  [Q3],
-  [Pilot education and onboarding approaches with partner organizations],
-  [Formats assessed through participant feedback and observed barriers],
+        [Q1--Q2],
+        [Stakeholder discovery; prioritized user and contributor barrier map],
+        [Target groups covered; recurring barriers confirmed],
 
-  [Q4],
-  [Integrate findings into final governance, sustainability, community, and implementation roadmap],
-  [Governance model and contribution process documented at a level of detail sufficient for someone outside the core team to follow without consultation],
+        [Q2],
+        [Develop candidate governance, contributor, and stewardship models],
+        [Compared with discovery findings and reviewed by OSE maintainers],
+
+        [Q2--Q3],
+        [Define extension contribution, maintenance, licensing, and review requirements],
+        [Tested against discovered extension needs; external OSE review],
+
+        [Q3],
+        [Security/data-quality scoping; prototype benchmarking and regression suite],
+        [Known output differences detected; risks mapped to controls],
+
+        [Q3],
+        [Pilot education and onboarding with partner organizations],
+        [Participant feedback and observed barriers],
+
+        [Q4],
+        [Integrate findings into governance, sustainability, community, and implementation roadmap],
+        [Processes usable without direct core-team consultation],
+      )
+    }
+  ],
 )
-
 == Evaluation
-
-Track 1 success will be evaluated by: 1. Documentation of governance roles, contributor pathways, and software architecture, assessed by whether contributors outside the core team can act on them without consultation; 2. Educational and onboarding materials, assessed through participant outcomes in pilot sessions; 3. A framework for developing, maintaining and reviewing community extensions, assessed through limited pilot implementations of the proposed extension process. Each will be revised in response to stakeholder interviews before incorporation into the final ecosystem plan.
+Track 1 success will be evaluated by: (1) documented governance roles, contributor pathways, and software architecture, assessed by whether contributors outside the core team can act on them without direct consultation; (2) educational and onboarding materials, assessed through pilot participant performance and observed barriers; and (3) a framework for developing, reviewing, distributing, and maintaining community extensions, assessed through limited pilots of the proposed extension process. Each output will be revised in response to stakeholder feedback before incorporation into the final ecosystem plan.
 
 
