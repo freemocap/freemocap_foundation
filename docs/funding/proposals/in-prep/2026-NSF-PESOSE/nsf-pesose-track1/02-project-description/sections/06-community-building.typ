@@ -17,8 +17,8 @@
 
 = Community Building
 
-Community building is therefore part of the transition from a stadium to a
-federated ecosystem. *A larger contributor base only reduces dependence on the
+Community building is therefore part of the transition from a _stadium_ to a
+_federation_ ecosystem. *A larger contributor base only reduces dependence on the
 core team if users and contributors have enough knowledge to act independently;
 otherwise, growth simply shifts effort toward support, review, and correction.*
 
@@ -28,9 +28,9 @@ relying exclusively on the core development team. The core team also hosts a
 weekly community call for project updates, user feedback, technical discussion,
 and interaction with potential contributors. These activities provide an
 established foundation for community engagement, but rapid user growth in 2026
-(@fig-star-chart) has increased the need for education and participation models
+(@fig-star-chart) *has increased the need for education and participation models
 that can scale beyond direct interaction with maintainers.
-
+*
 #figure(
   image("../../figures/star-history.png", width: 50%), caption: [Github star chart]
 ) <fig-star-chart>
@@ -42,7 +42,7 @@ scientific, technical, creative, and educational applications; and separate
 testing, and maintenance responsibilities.
 
 These materials will be piloted through hands-on classes and workshops with
-partner organizations, including The Possible Zone and the Artisans Asylum, and through tutorials and guided projects made available to the broader community. Pilots will identify where learners encounter conceptual or technical barriers, which formats work best for different audiences, and what knowledge can be transferred without direct core-team instruction. 
+partner organizations, including The Possible Zone and Artisans Asylum, and through tutorials and guided projects made available to the broader community. Pilots will identify where learners encounter conceptual or technical barriers, which formats work best for different audiences, and what knowledge can be transferred without direct core-team instruction. 
 
 Track 1 will also test low-barrier forms of community participation that do not
 require software development, including community-created visualizations,
