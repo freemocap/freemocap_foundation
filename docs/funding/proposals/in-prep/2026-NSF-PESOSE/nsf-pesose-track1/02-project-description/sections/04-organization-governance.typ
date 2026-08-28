@@ -32,7 +32,7 @@
 
 = Organization and Governance
 
-In _Working in Public_, Nadia Eghbal #c("eghbal2020") distinguishes open-source projects by the growth of their user and contributor bases. FreeMoCap currently resembles a _stadium_: high user growth with comparatively low contributor growth, leaving a large community dependent on a small maintainer base. *Track 1 will build on that foundation by scoping the transition toward a _federation_, in which user and contributor bases grow together and technical knowledge, responsibility, and authority are distributed across the ecosystem.*
+_Working in Public_ #c("eghbal2020") distinguishes open-source projects by the growth of their user and contributor bases. FreeMoCap currently resembles a _stadium_: high user growth with comparatively low contributor growth, leaving a large community dependent on a small maintainer base. *Track 1 will build on that foundation by scoping the transition toward a _federation_, in which user and contributor bases grow together and technical knowledge, responsibility, and authority are distributed across the ecosystem.*
 
 == Governance Scoping
 
@@ -66,7 +66,7 @@ the AGPLv3+, keeping the software freely available while generating resources fo
 maintenance and stewardship.
 
 == Long-term Sustainability
-The FreeMoCap Foundation was incorporated as a 501(c)(3) to provide an institutional home for the project, and the governance structures scoped above are intended to give that home a distributed contributor base rather than a dependence on any particular maintainer. In parallel, the Foundation will evaluate a diversified model for financial sustainability, including alternative commercial licensing, standardized hardware kits, training and support services, institutional partnerships, and continued grant funding.
+The FreeMoCap Foundation was incorporated as a IRS certified 501(c)(3) public charity to provide an institutional home for the project, and the governance structures scoped above are intended to give that home a distributed contributor base rather than a dependence on any particular maintainer. In parallel, the Foundation will evaluate a diversified model for financial sustainability, including alternative commercial licensing, standardized hardware kits, training and support services, institutional partnerships, and continued grant funding.
 
 
 

@@ -37,12 +37,12 @@ FreeMoCap has been adopted across research applications including reaching and g
 
 #figure(
   image("../../figures/data.png", width:100%),
-  caption: [FreeMoCap applications from standard human biomechanics to specialized movement-analysis use cases. A. Lower-extremity joint-angle comparison and statistical parametric mapping against Qualisys marker-based motion capture across multiple pose-estimation backends. B. Custom DeepLabCut integration for tracking a prosthetic user. C. Extension to ferret locomotion and neural-behavioral research in collaboration with *[BEN'S LAB NAME HERE]* ]
+  caption: [FreeMoCap applications from standard human biomechanics to specialized movement-analysis use cases. A. Lower-extremity joint-angle comparison and statistical parametric mapping against Qualisys marker-based motion capture across multiple pose-estimation backends. B. Custom DeepLabCut integration for tracking a prosthetic user. C. Extension to ferret locomotion and neural-behavioral research in collaboration with the Scholl Lab, CU Denver Anschutz]
 ) <fig-data>
 
-However, user adoption has outpaced growth of the maintainer base. Much of the architectural and operational knowledge needed to contribute to the core pipeline remains concentrated within a core development team, while contributor onboarding and technical knowledge decentralization remains immature. 
+While users adoption has grown, it has outpaced the growth of the maintainer base. Much of the architectural and operational knowledge needed to contribute to the core pipeline remains concentrated within a core development team, while contributor onboarding and technical knowledge decentralization remains immature. 
 
 == Team Qualifications (we could combine with long term sustainabilty section below if that makes more sense)
-The FreeMoCap team combines scientific and engineering expertise with more than five years of direct experience developing the software, supporting its community, and managing the technical and organizational challenges associated with its growth. The FreeMoCap Foundation was incorporated as a nonprofit organization in XXXX to provide a long-term institutional home for stewardship of the project. 
+The FreeMoCap team combines scientific and engineering expertise with more than five years of direct experience developing the software, supporting its community, and managing the technical and organizational challenges associated with its growth. 
 
 
