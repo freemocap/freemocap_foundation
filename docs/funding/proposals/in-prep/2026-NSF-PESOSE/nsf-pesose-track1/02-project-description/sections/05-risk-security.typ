@@ -26,23 +26,16 @@
 
 = Risk Analysis and Security Plan
 
-FreeMoCap processes video and derived movement data locally on the user's computer, avoiding the need to transmit or store potentially sensitive recordings on a remote service. This is particularly relevant for research and clinical applications involving identifiable human-subject video. Recent work examining OpenCap illustrates the implementation challenge: although its cloud-based workflow incorporates HIPAA-compliant safeguards, only 71.7-82.8% of surveyed patients reported being comfortable sharing video recordings for remote analysis, and authors identified storage, transmission, unauthorized access, and secondary use as important considerations for clinical adoption #c("aitkenPatientPerceivedFeasibilityImplementing2026"). FreeMoCap's local architecture avoids this cloud data-transfer surface, while introducing its own security requirements as the project becomes more extensible and community-driven.
+Video-based motion capture creates inherent privacy concerns because identifiable recordings must be captured and processed. These concerns can themselves become a barrier to adoption: recent work on OpenCap found that patients remained concerned about video sharing, storage, and access despite HIPAA-compliant cloud safeguards #c("aitkenPatientPerceivedFeasibilityImplementing2026"). FreeMoCap avoids this cloud-data surface by processing video and derived data locally, without requiring a network connection, allowing sensitive recordings to remain under the user's direct control.
 
-The software depends on a stack of computer vision and machine learning libraries. The community extension system proposed above would also introduce addition third-party code. Track 1 will assess the software against the best practices provided by the Open Source Security Foundation and will scope the review and approval controls needed to guard against malicious or inadvertently unsafe contributions for an extension system. 
+Local processing, however, does not eliminate software-security risk. FreeMoCap depends on a substantial stack of computer-vision, machine-learning, and scientific-computing libraries, and the proposed community extension system would introduce additional third-party code into the processing environment. Track 1 will assess FreeMoCap against security standards maintained by the Open Source Security Foundation (OpenSSF), which provides established criteria and certification pathways for secure open-source development. This assessment will identify gaps and the requirements needed to reach an appropriate certification level, informing both a project security roadmap and the review, approval, and release controls needed to guard against malicious or inadvertently unsafe community extensions.
 
-== Data Quality
-Community investment and trust in the software must have the basis of data integrity. Changes to pose-estimation models, calibration, reconstruction, filtering, or other pipeline components can alter scientific outputs even when the software continues to function correctly. Track 1 will therefore scope diagnostic, regression-testing, benchmarking, and provenance requirements, including comparison against reference datasets and metadata sufficient to trace outputs to software versions, models, processing parameters, and acquisition configurations. Camera characteristics are also part of the measurement chain; collaboration with Imatest LLC, whose work includes ISO/TC 42 standards activity on image-information content, will inform how imaging-system limitations can be characterized, reported, and made visible to users.
+== Data Integrity
+While the fidelity of FreeMoCap-produced data has been and continues to be validated, the integrity of that data (i.e., that modifications to the software do not silently alter the measurements it produces) is an ecosystem responsibility. Track 1 will scope stage-specific integrity checks across the processing pipeline, with expected outputs tracked across software versions. These may include calibration checks against known board geometry; 2D pose-estimation consistency; 3D reconstruction metrics such as positional differences, smoothness, and jerk; comparisons against reference datasets; and checks before and after each post-processing operation so that the effect of filtering or other transformations is explicitly measured rather than assumed. Camera characteristics are also part of the measurement chain; collaboration with Imatest LLC, whose work includes ISO/TC 42 standards activity on image-information content, will inform how imaging-system limitations can be characterized, reported, and made visible to users.
 
-== Identity and telemetry
+== Identity and Telemetry
+Potential ecosystem features such as contributor recognition, authenticated accounts, and usage telemetry introduce additional privacy and security considerations. Track 1 will scope approaches that minimize collected data and preserve FreeMoCap's local-first principles, including evaluation of established authorization approaches such as OAuth 2.0 for account-based features. The project's industry mentor, Endurance Idehen, will advise this work, including authentication, authorization, telemetry, and related security controls.
 
-Structures under consideration for the ecosystem introduce additional surfaces
-that Track 1 will scope. Recognizing contributor and user
-progression may require authenticated accounts, and the project will evaluate
-established delegated-authorization approaches such as OAuth 2.0 with guidance
-from its industry mentor. Understanding the user base likewise depends on
-usage telemetry, and any such collection would be designed to minimize what is
-gathered and retained, consistent with the local-first principle above.
+Together, these activities will produce a risk register, draft extension review and release controls, and a data-integrity and security roadmap.
 
-Together this work will produce a risk register, draft extension review and
-release controls, and a benchmarking and provenance specification.
 
