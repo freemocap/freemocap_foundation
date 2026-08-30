@@ -32,7 +32,7 @@
 
 = Organization and Governance
 
-_Working in Public_ #c("eghbal2020") distinguishes open-source projects by the growth of their user and contributor bases. FreeMoCap currently resembles a _stadium_: high user growth with comparatively low contributor growth, leaving a large community dependent on a small maintainer base. *Track 1 will build on that foundation by scoping the transition toward a _federation_, in which user and contributor bases grow together and technical knowledge, responsibility, and authority are distributed across the ecosystem.*
+_Working in Public_ #c("eghbal2020"), an analysis of open-source maintenance and sustainability,  distinguishes open-source projects by the growth of their user and contributor bases. FreeMoCap currently resembles a _stadium_: high user growth with comparatively low contributor growth, leaving a large community dependent on a small maintainer base. *Track 1 will build on that foundation by scoping the transition toward a _federation_, in which user and contributor bases grow together and technical knowledge, responsibility, and authority are distributed across the ecosystem.*
 
 == Governance Scoping
 
@@ -43,9 +43,7 @@ Federated projects require the distribution of decision-making and knowledge suc
 A federated model requires distributed technical knowledge and the ability for
 contributors to extend the software without the core team implementing each
 addition. FreeMoCap's modular architecture provides a technical basis for this:
-the `skellytracker` interface defines a pathway for alternative pose-estimation
-models to enter the workflow without modification to the shared pipeline. That
-pathway matters because no single pose-estimation model is adequate across
+the `skellytracker` interface provides an open interface through which AI-based pose-estimation models developed by different groups can interoperate with a shared scientific workflow without modification to the underlying pipeline. This interface matters because no single pose-estimation model is adequate across
 subjects. The algorithms in common use are trained on standard human datasets,
 and the requirements of biomechanical measurement differ from those the models
 were built to satisfy #c("seethapathiMovementScienceNeeds2019").
@@ -54,7 +52,7 @@ A community extension, in this context, is code written and maintained by
 someone outside the core team that runs against a published interface without
 altering the shared pipeline. A researcher whose subjects fall outside existing models could implement a tracker against a documented interface rather than assembling an
 entire pipeline around it, and the result would be available to everyone facing
-the same problem, while a computer-vision researcher publishing a new method could reach users who would otherwise lack the expertise to implement it. Track 1 will define the review, distribution, maintenance, and responsibility structures required for this model, informed by projects already operating extension ecosystems. The resulting framework could support other community-developed capabilities, including biomechanical analyses.
+the same problem, while an AI method published by a computer-vision researcher can be translated into a reusable scientific workflow for users who would otherwise lack the technical expertise to implement it. Track 1 will define the review, distribution, maintenance, and responsibility structures required for this model, informed by projects already operating extension ecosystems. The resulting framework could support other community-developed capabilities, including biomechanical analyses.
 
 == Licensing
 
@@ -66,7 +64,7 @@ the AGPLv3+, keeping the software freely available while generating resources fo
 maintenance and stewardship.
 
 == Long-term Sustainability
-The FreeMoCap Foundation was incorporated as a IRS certified 501(c)(3) public charity to provide an institutional home for the project, and the governance structures scoped above are intended to give that home a distributed contributor base rather than a dependence on any particular maintainer. In parallel, the Foundation will evaluate a diversified model for financial sustainability, including alternative commercial licensing, standardized hardware kits, training and support services, institutional partnerships, and continued grant funding.
+The FreeMoCap Foundation was incorporated as an IRS-recognized 501(c)(3) public charity to provide an institutional home for the project, and the governance structures scoped above are intended to give that home a distributed contributor base rather than a dependence on any particular maintainer. In parallel, the Foundation will evaluate a diversified model for the long-term sustainability of this research infrastructure, including alternative commercial licensing, standardized hardware kits, training and support services, institutional partnerships, and continued grant funding. SkellyTech, LLC, a separate for-profit entity associated with the project, provides an additional pathway for commercial services and other revenue-generating activities that may support the long-term sustainability of the ecosystem.
 
 
 
