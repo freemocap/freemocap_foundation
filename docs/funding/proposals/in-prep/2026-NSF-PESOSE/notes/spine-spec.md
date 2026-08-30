@@ -516,15 +516,15 @@ session.
 
 ## 9. Open decisions (consolidated)
 
-| ID | Question | Where |
-|---|---|---|
-| V-1 | How to refer to V2's release status in rendered text ("alpha" / "initial release" / no status) | §4 |
-| V-2 | Include the one-sentence AI-agent/NSF-26-015 hook? §2 or §8? | §4 |
-| S-1 | Situation paragraph sketch — register, length, five-area enumeration | §6 |
-| S-2 | Citation appetite (eghbal only / +stat / +one more) | §7 |
-| S-3 | Accept strengthened cuts list | §8 |
-| S-4 | Letters-of-collaboration referencing convention (`#collab()` vs prose) | map §2 |
-| S-5 | 2024 POSE award received? (decides Part 9 prior-support) | parked |
+| ID | Question | Where | Status |
+|---|---|---|---|
+| V-1 | How to refer to V2's release status in rendered text ("alpha" / "initial release" / no status) | §4 | resolved — "currently in alpha" per Jon's spine edit |
+| V-2 | Include the one-sentence AI-agent/NSF-26-015 hook? §2 or §8? | §4 | resolved — YES, in §2 (chunk B2) |
+| S-1 | Situation paragraph sketch — register, length, five-area enumeration | §6 | open — revised sketch (why-now fix) comes back in chunk A6 |
+| S-2 | Citation appetite (eghbal only / +stat / +one more) | §7 | resolved — CITATION RULE: suggestions in `//` comments only; Jon validates into Zotero/bib |
+| S-3 | Accept strengthened cuts list | §8 | open — surfaces at chunk B4 |
+| S-4 | Letters-of-collaboration referencing convention (`#collab()` vs prose) | map §2 | open — surfaces at chunk B4 |
+| S-5 | 2024 POSE award received? (decides Part 9 prior-support) | parked | open |
 
 ---
 

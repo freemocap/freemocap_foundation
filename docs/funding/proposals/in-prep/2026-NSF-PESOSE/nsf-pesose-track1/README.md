@@ -105,6 +105,12 @@ no marker. Everything above disappears from the PDF when `build.sh` runs
 without `draft`, and every section file already imports from
 `template/nsf.typ`, so opting in is one extra name in the existing import.
 
+Text lifecycle during integration work: `#suggestion` (proposed, green,
+vanishes in submission builds) → `#new` (accepted-and-tracked, light-blue
+block in draft builds, **unwraps to plain prose in submission builds**) →
+plain prose (settled). Proposed citations appear as `//` comments only until
+validated into Zotero/the bib — never rendered.
+
 ## What the compliance layer handles for you
 
 - Fonts, size, and line density (PAPPG II.C.2): New Computer Modern at 11pt with

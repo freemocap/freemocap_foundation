@@ -371,3 +371,26 @@
     )[#body]
   }
 }
+
+// #new(note: [..])[..] — newly integrated text: a #suggestion that Jon has
+// accepted (and possibly edited) during an audit pass. Tracked with a
+// light-blue block in draft builds so every spine-introduced passage stays
+// visible until the final cleanup sweep; unlike #suggestion, it UNWRAPS to
+// plain prose in the submission build — accepted text IS the proposal, so a
+// submission build is always valid while #new markers are still present.
+// Lifecycle: #suggestion (proposed, green) -> #new (accepted, blue, tracked)
+// -> plain prose (settled). `note:` is a source-only annotation.
+#let new(note: none, body) = {
+  if DRAFT {
+    block(
+      width: 100%,
+      fill: rgb("#cfe0f5"),
+      stroke: (left: 2.5pt + rgb("#7aa7d9")),
+      inset: (x: 0.6em, y: 0.5em),
+      radius: 1pt,
+      breakable: true,
+    )[#body]
+  } else {
+    body
+  }
+}
