@@ -25,8 +25,8 @@ The available tools demonstrate substantial demand for accessible markerless mot
 
 Our Track 1 scoping will test the premise underlying this proposal: *repeated rebuilding of motion-capture pipelines is an ecosystem failure, as starting over is often easier than extending shared infrastructure.* Track 1 will determine what documentation, contribution pathways, technical interfaces, and governance structures are needed to reduce barriers to extending and contributing to shared research infrastructure.
 
-== Necessity of an OSE approach
-FreeMoCap's existing community provides early evidence that an OSE can convert
+== Necessity of an open-source ecosystem approach
+FreeMoCap's existing community provides early evidence that an open-source ecosystem can convert
 individual expertise into shared infrastructure for the broader user community.
 Users have already become contributors in areas including animation, UI design,
 and pose-estimation architecture, bringing domain expertise from outside the
