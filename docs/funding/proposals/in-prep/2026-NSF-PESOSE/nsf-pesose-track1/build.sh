@@ -57,7 +57,7 @@ mkdir -p "$OUT"
 # -----------------------------------------------------------------------------
 SECTIONS=(
   "submission-components/project-summary.typ|ProjectSummary|1"
-  "02-project-description/main.typ|ProjectDescription|7"
+  "02-project-description/project-description.typ|ProjectDescription|7"
   "03-references-cited/main.typ|ReferencesCited|0"
   "submission-components/budget-justification.typ|BudgetJustification|5"
   "submission-components/facilities-equipment-other-resources.typ|FacilitiesEquipmentOtherResources|0"

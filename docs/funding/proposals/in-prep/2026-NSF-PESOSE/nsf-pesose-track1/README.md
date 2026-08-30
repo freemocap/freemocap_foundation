@@ -15,9 +15,10 @@ NSF uploads each proposal section as a **separate PDF** through Research.gov.
 So this is not one document with chapters — it is several independent documents
 sharing a compliance layer. `build.sh` emits one PDF per section into `out/`.
 
-The one place "write separately, then combine" applies is the Project
-Description: nine part files in `02-project-description/parts/` that
-`main.typ` includes in order, producing a single 7-page PDF.
+The one place "write separately, then combine" used to apply was the Project
+Description; as of 2026-08-30 it is a single file,
+`02-project-description/project-description.typ` (the per-part guidance
+comments live inline above each section heading), producing one 7-page PDF.
 
 ## Layout
 
