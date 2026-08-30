@@ -68,15 +68,15 @@
 // about writing software.
 
 
-#budget("~1.0 page")
+
 
 = Vision and Need
-#suggestion([I feel like we could find a stronger hook to start with at the first sentence...])
+//I feel like we could find a stronger hook to start with at the first sentence...
 Although the methods behind camera based motion capture are well documented, researchers must often rebuild the infrastructure to assemble them into a usable measurement system when existing tools do not fit their needs. Commercial marker-based motion capture systems offer sophisticated general-purpose measurement, but remain costly and closed to modification. Newer markerless systems, driven by advances in AI/ML based computer vision, have lowered those barriers but are often built around the needs and assumptions of particular fields. Researchers working outside those assumptions (for instance, anyone measuring a non-human animal) are left to learn and implement components common to multi-camera markerless motion capture systems themselves. These include video recording and synchronization, camera calibration to recover each camera's position and optical parameters, 2D pose estimation using AI models to locate anatomical keypoints, 3D reconstruction by triangulating those keypoints across camera views, and post-processing and analysis. #flag(kind:"clarity")[Rebuilding this infrastructure across projects duplicates technical effort and reduces the return on public research investment in software that is difficult to maintain, reproduce, or transfer beyond the environment in which it was developed.]
 
 #flag(kind:"verbose")[*There is therefore a need for accessible, shared research infrastructure that allows specialized motion capture adaptations developed by one community to be contributed back and reused by others, requiring defined stewardship and governance as much as software.*]
 
-#suggestion([This bolded statement is a good sentiment, but its too verbose and wordy for the text blob here. I'm also ware of hanging the WHOLE grant off this claim - its a good point, but there's much much more thats good about freemocap aside from just allowing others to avoid duplicating effort. I think basing the whole proposal on a claim like this sells us short])
+//This bolded statement is a good sentiment, but its too verbose and wordy for the text blob here. I'm also ware of hanging the WHOLE grant off this claim - its a good point, but there's much much more thats good about freemocap aside from just allowing others to avoid duplicating effort. I think basing the whole proposal on a claim like this sells us short])
 
 
 FreeMoCap #c("queenFreeMoCapFreeOpen2024") provides an existing technical foundation for this model. Maintained by the FreeMoCap Foundation, FreeMoCap is free and open-source software that transforms synchronized video from consumer-grade cameras into research-grade 3D motion-capture data through a modular workflow (@fig-overview). This proposal requests Track 1 support to scope the organizational and infrastructure requirements needed to *transition FreeMoCap from an open-source project maintained by a small core team into a secure, sustainable, community-driven ecosystem.* //NOTE - clarity - we use the word "freemocap" too many times in this short paragraph. Can probably make this punchier
@@ -116,7 +116,7 @@ FreeMoCap #c("queenFreeMoCapFreeOpen2024") provides an existing technical founda
 // belongs here as evidence of active maintenance, never in the work plan.
 
 
-#budget("~1.0 page")
+
 
 = Current State of the Software and Community
 
@@ -161,7 +161,7 @@ The FreeMoCap team combines scientific and engineering expertise with more than 
 // sure the budget carries salary for the 3-5 person team.
 
 
-#budget("~0.75 page")
+
 
 = Ecosystem Discovery
 
@@ -232,7 +232,7 @@ shared pipeline does not yet provide.
 // early in this section rather than letting a reviewer discover it.
 
 
-#budget("~1.0 page")
+
 
 = Organization and Governance
 // I want to elevate the reference to this book to a higher level, and use its claims as an organizing spine for the proposal as a whole. Things like the users-vs-dev structure described here, but also her commentary on the various poisons and challenges ofFOSS projects ("prob of low quality help", "scope creep") help motivate our activities as targets to assuage them ("low quality help" -> docs, upskilling, interviews to build tools that let people auto-align, ai-assist learning and RTFM/PEBKAC errors to de-load troubleshooting labor, etc. "Scope creep" -> Community Extensions system (like others use) we build the core and the interfaces, community can build their own plugins targetting sub-skellies, ui, or core software - lets users take advantage of new stuff faster, tests code/etc in practice without adding to the labor of the core devs, we can pull in popular/high-performing plug-ins after they have proven themselves as community plugins (like Blender does with,e.g., Grease Pencil and Rigify - started as add-ons, eventually pulled in as core functionality) ). We should find a way to pull that conversation up EARLY in the proposal, and then reference into it throughout the rest of the sections.
@@ -305,7 +305,7 @@ The FreeMoCap Foundation was incorporated as an IRS-recognized 501(c)(3) public 
 // that you know the landscape.
 
 
-#budget("~0.75 page")
+
 
 = Risk Analysis and Security Plan
 
@@ -337,7 +337,7 @@ Together, these activities will produce a risk register, draft extension review 
 
 
 
-#budget("~0.75 page")
+
 
 = Community Building
 
@@ -458,7 +458,7 @@ Track 1 success will be evaluated by: (1) documented governance roles, contribut
 // established, participants hired into a STEM field, new infrastructure built.
 
 
-#budget("~0.5 page")
+
 
 = Broader Impacts
 In a fully developed ecosystem, the same software can serve a thirteen-year-old with a webcam and a research laboratory measuring clinical populations. A contribution made by an animator can improve the software for researchers and clinicians, and scientific advancements can become accessible to artists, educators, students and hobbyists.  A sustainable FreeMoCap ecosystem can turn specialized adaptations into shared infrastructure, increasing the return on public investment in scientific software while creating pathways for expertise to move across fields.
@@ -496,7 +496,7 @@ The educational activities piloted under this proposal will help develop and tes
 //
 //#import "../../template/nsf.typ": budget, prior-support
 //
-//#budget("~0.5-1.0 page — NOT the 5 pages PAPPG allows")
+//
 //
 //#prior-support(
 //  award-number: [TODO],
