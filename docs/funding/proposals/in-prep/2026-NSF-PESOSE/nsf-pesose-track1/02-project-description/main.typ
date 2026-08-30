@@ -6,8 +6,9 @@
 // Must include a "Broader Impacts" heading on its own line.
 //
 // Build:
-//   typst compile --input draft=true main.typ   # with page counter + notes
-//   typst compile main.typ                      # submission build
+//   typst watch main.typ                        # live preview (draft is the default)
+//   typst compile --input draft=false main.typ  # submission build
+//   ./build.sh final                            # all sections, submission mode
 //
 // THE SPINE — every sentence in this file should be load-bearing for:
 //

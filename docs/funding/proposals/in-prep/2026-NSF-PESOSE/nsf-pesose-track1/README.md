@@ -56,12 +56,53 @@ move space between sections deliberately rather than by accident.
 ./build.sh           # clean submission PDFs in out/
 ```
 
-Draft mode is driven by `--input draft=true` rather than a variable you edit, so
-you cannot accidentally submit a build with draft artifacts. Draft footers sit in
-the margin, which PAPPG forbids for proposer-supplied content — that is why they
-only exist in draft mode.
+Draft mode is the template's **default** (`DRAFT = true` in `template/nsf.typ`),
+so plain compiles and Tinymist VS Code previews show the draft artifacts —
+footer, notes, flags, suggestions, budget markers, and a thin frame around the
+6.5in x 9in text block marking the PAPPG 1-inch margin boundary (anything
+crossing that line is either a margin violation or a draft artifact) — with no
+command-line flags while you write. The only way to produce a submission-clean
+PDF is an explicit `--input draft=false`, which `build.sh` always supplies in
+final mode:
 
-To work on one section: `typst watch --input draft=true 02-project-description/main.typ`
+```bash
+./build.sh draft                       # draft artifacts on (explicit)
+./build.sh                             # submission build — draft artifacts forcibly off
+typst watch 02-project-description/main.typ   # live preview, draft mode
+typst compile --input draft=false 02-project-description/main.typ  # manual submission build
+```
+
+Draft footers sit in the margin, which PAPPG forbids for proposer-supplied
+content — that is why they only exist in draft mode.
+
+### Review marks (`flag` / `suggestion`)
+
+Ported from the NSF X-Labs proposal (`helpers/xref.typ` there, now living in
+`template/nsf.typ` here, gated on the same CLI-driven `DRAFT` flag). They keep
+the author's voice and any drafted-by-assistant voice separable at a glance in
+the draft compile:
+
+- `#flag(kind: "redundant")[..]` — red highlight: says what content elsewhere
+  already says; candidate to cut + cross-reference instead.
+- `#flag(kind: "verbose")[..]` — blue highlight: right idea, too wordy;
+  candidate to tighten, not necessarily delete.
+- `#flag(kind: "clarity")[..]` — amber highlight: hard to understand. The
+  original words are **never** touched — a reword can flip meaning. Put the
+  proposed rewrite in an adjacent `#suggestion[..]` block and let the author
+  compare.
+- `#flag(kind: "awk")[..]` — pink highlight: understandable but clumsy —
+  awkward phrasing, clunky rhythm. Candidate to smooth while keeping the
+  meaning; pair with a `#suggestion[..]` when a rewrite exists.
+- `#suggestion(note: [..])[..]` — green block of newly drafted prose. The
+  `note:` argument is source-only (kept in the `.typ`, never rendered). In a
+  submission build a suggestion renders **nothing**, so it can never ship
+  un-integrated; a flag passes its text through untouched, because a flag is
+  a review mark, not a change.
+
+Mechanical fixes (unambiguous typos, broken markup) are still edited directly,
+no marker. Everything above disappears from the PDF when `build.sh` runs
+without `draft`, and every section file already imports from
+`template/nsf.typ`, so opting in is one extra name in the existing import.
 
 ## What the compliance layer handles for you
 
@@ -75,6 +116,11 @@ To work on one section: `typst watch --input draft=true 02-project-description/m
 - `c("key")` gives in-line citations that stay numbered consistently with the
   separate References Cited PDF — which is how you point at the FreeMoCap repo
   without putting a URL in the Project Description
+- Figure captions render at 9pt, and table text may be shrunk below 10pt, under
+  the explicit PAPPG 24-1 II.C.2.a exemption for "mathematical formulas or
+  equations, figures, tables, or diagram captions". That list is exhaustive:
+  footnotes, references, and body prose are **not** exempt and must stay at the
+  full 11pt (Computer Modern). Figures/tables still count toward page limits.
 
 `build.sh` additionally fails the build on page-limit overruns and URLs in the
 Project Description, and prints the embedded fonts so a silent font substitution

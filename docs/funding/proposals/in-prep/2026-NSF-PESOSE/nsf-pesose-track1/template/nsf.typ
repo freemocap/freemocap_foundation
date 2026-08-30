@@ -53,6 +53,28 @@
 #let PAR_SPACING = 0.95em
 
 // ---------------------------------------------------------------------------
+// draft-margin-box — draft-only frame around the text area (PAPPG II.C.2.c:
+// 1-inch margins on all sides, nothing of yours in the margin). On US Letter
+// with 1-inch margins the text block is exactly 6.5in x 9in, so this draws a
+// thin line around it: in a draft compile, anything crossing that line is
+// either a margin violation (PAPPG can bounce the proposal for it) or a draft
+// artifact that must not ship. Draft footers live BELOW the line, in the
+// margin, by design. Vanishes in submission builds. Ported from the X-Labs
+// proposal's main.typ (same color, same geometry).
+// ---------------------------------------------------------------------------
+#let draft-margin-box = place(
+  top + left,
+  dx: 1in,
+  dy: 1in,
+  rect(
+    width: 6.5in,
+    height: 9in,
+    fill: none,
+    stroke: .5pt + rgb("#7e7eba"),
+  ),
+)
+
+// ---------------------------------------------------------------------------
 // nsf-doc — wrap every section document in this.
 //
 //   page-limit: integer or none
@@ -66,8 +88,12 @@
 //                forbids for proposer-supplied information)
 //       false -> clean, submission-ready output
 //
-//   Set draft via the CLI so you never forget to turn it off:
-//       typst compile --input draft=true 02-project-description/main.typ
+//   Draft mode is the DEFAULT (see DRAFT below), so plain compiles and
+//   Tinymist previews always show draft artifacts. The ONLY way to get a
+//   submission-clean PDF is an explicit --input draft=false, which build.sh
+//   always supplies:
+//       ./build.sh                  # submission build
+//       typst compile --input draft=false main.typ   # manual submission build
 // ---------------------------------------------------------------------------
 #let nsf-doc(
   page-limit: none,
@@ -96,6 +122,7 @@
     } else {
       none
     },
+    background: if draft { draft-margin-box },
   )
 
   set text(font: BODY_FONT, size: BODY_SIZE, lang: "en")
@@ -117,6 +144,20 @@
     text(size: 11pt, weight: "bold", it.body),
   )
 
+  // figure.caption — 9pt is legal under the explicit PAPPG 24-1 II.C.2.a
+  // exemption: "A font size of less than 10 points may be used for
+  // mathematical formulas or equations, figures, tables, or diagram captions
+  // and when using a Symbol font to insert Greek letters or special
+  // characters." That list is EXHAUSTIVE — footnotes and reference text are
+  // NOT exempt, so do not shrink those. NSF 26-506 adds no font rules of its
+  // own; it defers to "the PAPPG version in effect on the proposal's due
+  // date". Table cell text may also drop below 10pt (same exemption), e.g.
+  //   #text(size: 9.5pt, table(...))
+  // — worth doing on wide tables like the milestones matrix. Figure and
+  // table content still counts against the page limit, and PAPPG warns that
+  // small fonts are "grounds for return without review" when used on BODY
+  // text — the exemption is for captions/tables/figures only, not a license
+  // to shrink prose.
   show figure.caption: set text(size: 9pt)
 
   // Tighter lists than Typst's default, which is generous for a page-limited
@@ -204,16 +245,24 @@
 }
 
 // ---------------------------------------------------------------------------
-// DRAFT — global flag, read from the command line so it is impossible to
-// accidentally leave draft artifacts in a submission build:
+// DRAFT — global draft-mode flag, DEFAULT ON, with CLI override:
 //
-//     typst compile --input draft=true  02-project-description/main.typ   # draft
-//     typst compile                     02-project-description/main.typ   # final
+//     ./build.sh                                     # draft build
+//     ./build.sh final                               # submission build (forces draft off)
+//     typst compile main.typ                         # draft (default)
+//     typst compile --input draft=false main.typ     # submission
 //
-// Every part file can `#import "../lib/nsf.typ": DRAFT, note` and get the
-// same value without threading it through function arguments.
+// Draft is the default so that plain compiles and Tinymist VS Code previews
+// render the draft artifacts (footer, notes, flags, suggestions, budget
+// markers) with zero command-line ceremony while writing. The override
+// exists so a submission build can never accidentally contain them: build.sh
+// always passes --input draft=false in final mode, so a clean PDF can only
+// come from an explicit, deliberate command.
+//
+// Every part file can `#import "../template/nsf.typ": DRAFT, note` and get
+// the same value without threading it through function arguments.
 // ---------------------------------------------------------------------------
-#let DRAFT = sys.inputs.at("draft", default: "false") == "true"
+#let DRAFT = sys.inputs.at("draft", default: "true") != "false"
 
 // ---------------------------------------------------------------------------
 // note — draft-only inline note for TODOs and open questions. Renders nothing
@@ -238,5 +287,77 @@
       width: 100%,
       text(size: 8pt, fill: rgb("#8a5a00"))[page budget: #pages],
     )
+  }
+}
+
+// ---------------------------------------------------------------------------
+// REVIEW MARKS — ported from the NSF X-Labs proposal's helpers/xref.typ
+// (2026-07-13), gated here on the CLI-driven DRAFT flag instead of that
+// repo's hand-edited DRAFT_MODE, so a submission build can never contain
+// them regardless of what anyone forgets to flip.
+//
+// The two helpers encode an authorship discipline — keep the author's voice
+// and any assistant's voice separable at a glance in the draft compile:
+//
+//   * Mechanical fixes (unambiguous typos, broken markup) are edited
+//     directly, no marker.
+//   * Grammar/clarity/word-choice issues NEVER touch the original text:
+//     wrap it in #flag(kind: "clarity")[..] and put any proposed rewrite in
+//     an adjacent #suggestion[..]. A reword can flip meaning — that call
+//     stays with the author, who compares the two and picks.
+//   * New drafted prose goes in #suggestion(note: [..])[..] — a green block
+//     in draft, and NOTHING in a submission build, so it can never ship
+//     un-integrated.
+//   * Passages to cut or tighten are wrapped in #flag(kind: "redundant" |
+//     "verbose")[..] plus a `// NOTE:` explaining the call — the wrapped
+//     text survives untouched in the submission build because a flag is a
+//     review mark, not a change.
+//
+// flag kinds (first three same palette as X-Labs, so muscle memory carries
+// over; "awk" added here):
+//   "redundant" -> red   (says what content elsewhere already says —
+//                         candidate to cut + cross-reference instead)
+//   "verbose"   -> blue  (right idea, wordier than it needs to be —
+//                         candidate to tighten, not necessarily duplicate)
+//   "clarity"   -> amber (hard to understand — grammar / punctuation /
+//                         unclear meaning; original words left untouched;
+//                         pair with an adjacent #suggestion holding the
+//                         rewrite)
+//   "awk"       -> pink  (understandable but clumsy — awkward phrasing,
+//                         clunky rhythm, words fighting the reader; the
+//                         meaning survives but the sentence fights back.
+//                         Candidate to smooth; pair with #suggestion when
+//                         a rewrite exists)
+// ---------------------------------------------------------------------------
+#let flag-color(kind) = {
+  if kind == "redundant" { rgb("#ff000055") }
+  else if kind == "clarity" { rgb("#e8a33d66") }
+  else if kind == "awk" { rgb("#d364c766") }
+  else { rgb("#1e6fff55") }
+}
+
+#let flag(kind: "redundant", body) = {
+  if DRAFT {
+    highlight(fill: flag-color(kind), body)
+  } else {
+    body
+  }
+}
+
+// #suggestion(note: [..])[..] — drafted prose. Renders as a green block in
+// draft builds, visually distinct from author prose, and vanishes entirely
+// in the submission build. `note:` is a SOURCE-ONLY annotation (rationale /
+// pointer) kept in the .typ but NOT rendered — carried over unchanged from
+// the X-Labs behavior decided there on 2026-07-13.
+#let suggestion(note: none, body) = {
+  if DRAFT {
+    block(
+      width: 100%,
+      fill: rgb("#9accb0"),
+      stroke: (left: 2.5pt + rgb("#70c796")),
+      inset: (x: 0.6em, y: 0.5em),
+      radius: 1pt,
+      breakable: true,
+    )[#body]
   }
 }
