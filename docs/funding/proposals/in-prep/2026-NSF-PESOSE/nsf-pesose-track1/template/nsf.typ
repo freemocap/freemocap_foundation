@@ -144,21 +144,31 @@
     text(size: 11pt, weight: "bold", it.body),
   )
 
-  // figure.caption — 9pt is legal under the explicit PAPPG 24-1 II.C.2.a
-  // exemption: "A font size of less than 10 points may be used for
-  // mathematical formulas or equations, figures, tables, or diagram captions
-  // and when using a Symbol font to insert Greek letters or special
-  // characters." That list is EXHAUSTIVE — footnotes and reference text are
-  // NOT exempt, so do not shrink those. NSF 26-506 adds no font rules of its
-  // own; it defers to "the PAPPG version in effect on the proposal's due
-  // date". Table cell text may also drop below 10pt (same exemption), e.g.
-  //   #text(size: 9.5pt, table(...))
-  // — worth doing on wide tables like the milestones matrix. Figure and
-  // table content still counts against the page limit, and PAPPG warns that
-  // small fonts are "grounds for return without review" when used on BODY
-  // text — the exemption is for captions/tables/figures only, not a license
-  // to shrink prose.
-  show figure.caption: set text(size: 9pt)
+  // figure.caption — styled as a visibly distinct caption block: smaller
+  // font, tighter leading, inset from both margins, block-justified.
+  //
+  // Legality (PAPPG 24-1 II.C.2.a exemption, verified 2026-08): "A font size
+  // of less than 10 points may be used for mathematical formulas or
+  // equations, figures, tables, or diagram captions and when using a Symbol
+  // font to insert Greek letters or special characters." That list is
+  // EXHAUSTIVE — footnotes and reference text are NOT exempt, so do not
+  // shrink those. NSF 26-506 adds no font rules of its own; it defers to
+  // "the PAPPG version in effect on the proposal's due date".
+  //
+  // The six-lines-per-inch rule (II.C.2.b: baselines >= 12pt) has NO
+  // small-text carve-out, so caption leading is set in ABSOLUTE terms to
+  // hold ~12.3pt baselines at 8.5pt: cap-height of 8.5pt CM is ~6pt, so
+  // 0.75em leading lands just over the 12pt floor (~5.8 lines/inch vs the
+  // 6-line ceiling). Do not reduce leading here without redoing that math.
+  show figure.caption: it => align(center, block(
+    width: 85%,
+    breakable: true,
+    {
+      set text(size: 8.5pt)
+      set par(justify: true, leading: 0.75em, spacing: 0.5em, first-line-indent: 0pt)
+      it
+    },
+  ))
 
   // Tighter lists than Typst's default, which is generous for a page-limited
   // document.

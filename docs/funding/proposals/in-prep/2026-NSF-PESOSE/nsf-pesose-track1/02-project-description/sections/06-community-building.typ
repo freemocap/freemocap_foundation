@@ -31,9 +31,7 @@ established foundation for community engagement, but rapid user growth in 2026
 (@fig-star-chart) *has increased the need for education and participation models
 that can scale beyond direct interaction with maintainers.
 *
-#figure(
-  image("../../figures/star-history.png", width: 50%), caption: [Github star chart]
-) <fig-star-chart>
+#include "../floats/fig-star-chart.typ"
 
 Track 1 will develop and pilot accessible educational and participation pathways at three levels: *introductory materials* for general users; *intermediate and domain-specific resources* for scientific, technical, creative, and educational applications; and separate *developer documentation* covering software architecture, contribution workflows, testing, and maintenance responsibilities.
 

@@ -40,12 +40,7 @@ FreeMoCap is used across several distinct communities, including researchers, ed
 
 //ALSO IN GENERAL - there are a number of places in this proposal where we reference things that should reference to our letters of collaboration (e.g. Scholl Lab) - need to come up with a good system for doing that, like a naming convention or something to reference the letters from this text? 
 
-#figure(
-  image("../../figures/data.png", width:100%),
-  caption: [FreeMoCap applications from standard human biomechanics to specialized movement-analysis use cases. A. Lower-extremity joint-angle comparison and statistical parametric mapping against Qualisys marker-based motion capture across multiple pose-estimation backends. B. Custom DeepLabCut integration for tracking a lower-limb prosthesis user. C. Extension to ferret locomotion and neural-behavioral research in collaboration with the Scholl Lab, CU Denver Anschutz] // NOTE - (B) should reference SkellyClicker repo
-) <fig-data>
-
-// We should move the figures into their own files, and then include them in these text-based documents
+#include "../floats/fig-data.typ"
 
 While user adoption has grown, it has outpaced the growth of the maintainer base. Much of the architectural and operational knowledge needed to contribute to the core pipeline remains concentrated within a core development team, while contributor onboarding and technical knowledge decentralization remains immature. 
 // Good thoughts in this paragraph, but could be made punchier. We should try to tie this into the global "problem of low quality help" described in Eghbal's book - we have a TON of people who WANT to (a) use the tool, and (b) help develop the tool - BUT the project is so complex its hard to onboard them. Need to solve this problem both to serve users adn onboard developers and build easy routes for users to upskill, self-align, trnsition from user to developer, etc. 

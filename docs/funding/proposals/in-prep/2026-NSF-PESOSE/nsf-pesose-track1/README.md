@@ -116,11 +116,14 @@ without `draft`, and every section file already imports from
 - `c("key")` gives in-line citations that stay numbered consistently with the
   separate References Cited PDF — which is how you point at the FreeMoCap repo
   without putting a URL in the Project Description
-- Figure captions render at 9pt, and table text may be shrunk below 10pt, under
-  the explicit PAPPG 24-1 II.C.2.a exemption for "mathematical formulas or
+- Figure captions render at 8.5pt, inset from both margins and block-justified
+  so they read as captions; table text may be shrunk below 10pt, all under the
+  explicit PAPPG 24-1 II.C.2.a exemption for "mathematical formulas or
   equations, figures, tables, or diagram captions". That list is exhaustive:
   footnotes, references, and body prose are **not** exempt and must stay at the
-  full 11pt (Computer Modern). Figures/tables still count toward page limits.
+  full 11pt (Computer Modern). The six-lines-per-inch ceiling (II.C.2.b) has NO
+  small-text carve-out, so caption leading is already set at the ~12pt-baseline
+  floor. Figures/tables still count toward page limits.
 
 `build.sh` additionally fails the build on page-limit overruns and URLs in the
 Project Description, and prints the embedded fonts so a silent font substitution
