@@ -53,7 +53,7 @@ Track 1 will define the review, distribution, maintenance, and responsibility st
 == Licensing
 
 FreeMoCap and its component repositories are licensed under the AGPLv3+.  Because so much of the landscape of closed-source motion capture operates behind proprietary servers, the AGPLv3+ is the only standard license whose terms would stop a closed-source competitor from running `FreeMoCap` behind a server endpoint while charging users for access.
-Because the Foundation holds the rights to the codebase, it can also offer alternative terms to organizations whose intended use is incompatible with the AGPLv3+ — keeping the software freely available to everyone else while generating resources for maintenance and stewardship. 
+Because the Foundation holds the rights to the codebase, it can also offer alternative terms to organizations whose intended use is incompatible with the AGPLv3+, keeping the software freely available to everyone else while generating resources for maintenance and stewardship. 
 
 == Long-term Sustainability
 

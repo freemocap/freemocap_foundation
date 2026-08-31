@@ -29,6 +29,10 @@
 
 #let REFERENCES = (
   (
+    key: "aitkenPatientPerceivedFeasibilityImplementing2026",
+    entry: [Aitken, H. D., Holt, J. B., Westermann, R. W., Elkins, J. M., Vanorny, D. A., Crawmer, J. T., Gregory, E. S., Velasquez-Marin Mohr, S., Rich, C. M., Goetz, J. E. Patient-Perceived Feasibility of Implementing OpenCap Smartphone-Based Motion Capture Technology to Remotely Assess Musculoskeletal Movement in Individuals with Orthopedic Disorders Presenting to a Rural Midwestern Tertiary Center. _Frontiers in Digital Health_, 8, 2026. https://doi.org/10.3389/fdgth.2026.1870758],
+  ),
+  (
     key: "cherianOpensourceDevelopmentValidation2026",
     entry: [Cherian, A. T. Open-Source Development and Validation of a Low-Cost Markerless System for Quantitative Motion Analysis. 2026.],
   ),
@@ -47,6 +51,10 @@
   (
     key: "eghbal2020",
     entry: [Eghbal, N. Working in Public: The Making and Maintenance of Open Source Software. 2020.],
+  ),
+  (
+    key: "illich1979",
+    entry: [Illich, I. Tools for Conviviality. 1979.],
   ),
   (
     key: "landaEvaluatingIdleAnimation2026",
@@ -73,6 +81,10 @@
     entry: [Nunnari, F., Avramidis, E., España-Bonet, C., González, M., Hennes, A., Gebhard, P. DGS-Fabeln-1: A Multi-Angle Parallel Corpus of Fairy Tales between German Sign Language and German Text. _Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)_, pp. 4847–4857, 2024.],
   ),
   (
+    key: "obukhovHybridVerificationMethod2026",
+    entry: [Obukhov, A., Mayorov, N., Teselkin, D., Dedov, D., Shiltsyn, M. A Hybrid Verification Method for an Actuated Lower-Limb Exoskeleton Based on Mathematical and Simulation Analyses. _Robotics_, 15(9):166, 2026. https://doi.org/10.3390/robotics15090166],
+  ),
+  (
     key: "orrMULTICOLLABASLAffectiveComputing2024",
     entry: [Orr, H., Peechatt, M., Alm, C. O. MULTICOLLAB-ASL: Towards Affective Computing for the Deaf Community. _Proceedings of the 26th International ACM SIGACCESS Conference on Computers and Accessibility_, pp. 1–5, 2024. https://doi.org/10.1145/3663548.3688500],
   ),
@@ -91,6 +103,10 @@
   (
     key: "seethapathiMovementScienceNeeds2019",
     entry: [Seethapathi, N., Wang, S., Saluja, R., Blohm, G., Kording, K. P. Movement Science Needs Different Pose Tracking Algorithms. Software repository. 2019.],
+  ),
+  (
+    key: "star1989",
+    entry: [Star, S. L., Griesemer, J. R. Institutional Ecology, `Translations' and Boundary Objects: Amateurs and Professionals in Berkeley's Museum of Vertebrate Zoology, 1907-39. _Social Studies of Science_, 19(3):387–420, 1989. https://doi.org/10.1177/030631289019003001],
   ),
   (
     key: "uhlrichOpenCapHumanMovement2023",
