@@ -17,23 +17,7 @@
 
 
 = Community Building
-// SOFT-TOUCH (2026-08-30): the opening sentence is the reader's third encounter
-// with stadium->federation (§1 defines it, §4 restates it, here again), and it
-// still carries definitional weight — both terms italicized — that §1 now owns.
-// Flagged, not cut. Proposed: drop to a plain echo ("Community building is where
-// that transition actually happens.") and let the bolded sentence after it, which
-// is this section's real claim, carry the paragraph.
-//
-// FIG PLACEMENT: §1 now forward-references @fig-star-chart for its growth-curve
-// argument, but the figure is included here, several pages later. Recommend
-// moving the `#include "../floats/fig-star-chart.typ"` line below up into §1 and
-// letting this section reference it backwards. One line moved; your call, so it
-// is left in place.
-
-#flag(kind: "redundant")[Community building is a critical part of the transition from a _stadium_ to a
-_federation_ ecosystem.] *A larger contributor base only reduces dependence on the
-core team if users and contributors have enough knowledge to act independently;
-otherwise, growth simply shifts effort toward support, review, and correction.*
+A larger contributor base only reduces dependence on the core team if users and contributors have enough knowledge to act independently; otherwise, growth simply shifts effort toward support, review, and correction.
 
 The FreeMoCap Foundation maintains an active Discord community forum of more than
 4,000 members, structured so that users can ask and answer questions without
@@ -42,8 +26,8 @@ weekly community call for project updates, user feedback, technical discussion,
 and interaction with potential contributors. These activities provide an
 established foundation for community engagement, but rapid user growth in 2026
 (@fig-star-chart) *has increased the need for education and participation models
-that can scale beyond direct interaction with maintainers.
-*
+that can scale beyond direct interaction with maintainers.*
+
 #include "../floats/fig-star-chart.typ"
 
 Track 1 will develop and pilot accessible educational and participation pathways at three levels: *introductory materials* for general users; *intermediate and domain-specific resources* for scientific, technical, creative, and educational applications; and separate *developer documentation* covering software architecture, contribution workflows, testing, and maintenance responsibilities.

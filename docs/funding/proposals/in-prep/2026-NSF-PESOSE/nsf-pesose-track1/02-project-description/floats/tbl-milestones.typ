@@ -26,7 +26,7 @@
           [*Evaluation*],
         ),
 
-        [Q1],
+        [Q1--Q2],
         [Complete I-Corps for PESOSE; establish baseline ecosystem metrics],
         [Completion confirmed by I-Corps instructors],
 

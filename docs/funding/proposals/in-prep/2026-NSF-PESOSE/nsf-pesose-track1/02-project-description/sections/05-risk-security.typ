@@ -34,14 +34,7 @@ Secure and trustworthy research infrastructure also requires addressing software
 == Data Integrity
 While the fidelity of FreeMoCap-produced data has been and continues to be validated, *preserving the integrity of that data (i.e., that modifications to the software do not silently alter the measurements it produces) is an ecosystem responsibility*. Track 1 will scope stage-specific integrity checks across the processing pipeline, with expected outputs tracked across software versions. These may include calibration checks against known board geometry, 2D pose-estimation consistency, 3D reconstruction metrics such as positional differences, smoothness, and jerk, comparisons against reference datasets, and checks before and after each post-processing operation so that the effect of filtering or other transformations is explicitly measured. Camera characteristics are also part of the measurement chain. Collaboration with Imatest LLC, whose work includes ISO/TC 42 standards activity on image-information content, will inform how imaging-system limitations can be characterized, reported, and made visible to users.
 
-// SOFT-TOUCH (2026-08-30): §1 promises a validation and benchmarking methodology
-// "that other laboratories can replicate." Data Integrity above scopes the checks
-// but not the replicable-by-others half — the only place in §3–§8 where §1 makes
-// a promise the body does not keep. One sentence closes it; proposed as the last
-// sentence of the Data Integrity paragraph above (before "Camera characteristics"
-// if you prefer it mid-paragraph).
-#suggestion(note: [§5 — the replication half of §1's validation promise. One sentence, appended to Data Integrity.])[
-Because these are the same checks an outside laboratory would need in order to trust the software on its own data, Track 1 will also scope how the methodology is packaged and communicated, so that other groups can reproduce our validation on their own hardware and subjects and contribute the results back as community validation. ]
+Because these are the same checks an outside laboratory would need in order to trust the software on its own data, Track 1 will also scope how the methodology is packaged and communicated, so that other groups can reproduce our validation on their own hardware and subjects and contribute the results back as community validation. 
 
 == Identity and Telemetry
 Potential ecosystem features such as contributor recognition, authenticated accounts, and usage telemetry introduce additional privacy and security considerations. Track 1 will scope approaches that minimize collected data and preserve FreeMoCap's local-first principles, including evaluation of established authorization approaches such as OAuth 2.0 for account-based features. The project's industry mentor, Endurance Idehen, will advise this work, including authentication, authorization, telemetry, and related security controls.

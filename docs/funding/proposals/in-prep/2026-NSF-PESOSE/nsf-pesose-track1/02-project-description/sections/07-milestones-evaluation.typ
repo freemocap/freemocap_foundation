@@ -5,14 +5,24 @@
 #include "../floats/tbl-milestones.typ"
 
 == Evaluation
-Track 1 success will be evaluated by: (1) documented governance roles, contributor pathways, and software architecture, assessed by whether contributors outside the core team can act on them without direct consultation; (2) educational and onboarding materials, assessed through pilot participant performance and observed barriers; and (3) a framework for developing, reviewing, distributing, and maintaining community extensions, assessed through limited pilots of the proposed extension process. Each output will be revised in response to stakeholder feedback before incorporation into the final ecosystem plan.
-// SOFT-TOUCH (2026-08-30): §1 promises five scoping areas; this list evaluates
-// three. Criterion (d) is the one reviewers score most mechanically, so the
-// mismatch is worth closing. Both additions below already have milestone rows in
-// the table above (Q3 benchmarking, Q4 sustainability roadmap) — this extends the
-// list to match, it does not introduce new work.
-#suggestion(note: [§7 — items (4) and (5), to be inserted before "Each output will be revised...". Wording mirrors §1's five plain phrases.])[
-(4) a documented validation and benchmarking methodology, assessed by whether an independent laboratory can reproduce our accuracy checks on its own hardware and recordings; and (5) a sustainability model, assessed by review of its revenue and maintenance assumptions against the demand evidence gathered during discovery. ]
+// COMPACTION (2026-08-31): the paragraph below is flagged rather than cut. It
+// re-enumerates, in prose, commitments the milestone table above already carries
+// in its Evaluation column — and it does so on a different axis (by output
+// rather than by quarter), which is why merging the two tables would force
+// repetition instead of removing it.
+//
+// Proposed replacement: floats/tbl-evaluation.typ, one row per scoping area
+// named in Part 1, at 9.5pt (legal — PAPPG 24-1 II.C.2.a exempts tables). It
+// covers five areas where the prose covered three, and still occupies less
+// vertical space, because a table drops the connective grammar prose needs.
+// Only the final sentence survives as prose, below the table.
+#flag(kind: "verbose")[Track 1 success will be evaluated by: (1) documented governance roles, contributor pathways, and software architecture, assessed by whether contributors outside the core team can act on them without direct consultation; (2) educational and onboarding materials, assessed through pilot participant performance and observed barriers; and (3) a framework for developing, reviewing, distributing, and maintaining community extensions, assessed through limited pilots of the proposed extension process. Each output will be revised in response to stakeholder feedback before incorporation into the final ecosystem plan.]
+
+#suggestion(note: [Replaces the flagged paragraph. Five rows keyed to Part 1's scoping areas, so a reviewer checking criterion (d) against Part 1's promises reads down one column. Retains the stakeholder-revision sentence as prose since it applies to every row.])[
+#include "../floats/tbl-evaluation.typ"
+
+Each output will be revised in response to stakeholder feedback before incorporation into the final ecosystem plan. ]
+(4) a documented validation and benchmarking methodology, assessed by whether an independent laboratory can reproduce our accuracy checks on its own hardware and recordings; and (5) a sustainability model, assessed by review of its revenue and maintenance assumptions against the demand evidence gathered during discovery. 
 
 
 
