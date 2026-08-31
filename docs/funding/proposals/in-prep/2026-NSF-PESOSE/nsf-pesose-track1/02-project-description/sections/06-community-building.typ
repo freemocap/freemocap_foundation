@@ -30,7 +30,7 @@ that can scale beyond direct interaction with maintainers.*
 
 Track 1 will develop and pilot accessible educational and participation pathways at three levels: *introductory materials* for general users; *intermediate and domain-specific resources* for scientific, technical, creative, and educational applications; and separate *developer documentation* covering software architecture, contribution workflows, testing, and maintenance.
 
-These materials will be piloted through hands-on classes and workshops with partner organizations, including The Possible Zone and Artisans Asylum, and through tutorials and guided projects made available to the broader community. Pilots will identify where learners encounter conceptual or technical barriers, which formats work best for different audiences, and what knowledge can be transferred without direct core-team instruction.
+These materials will be piloted through hands-on classes and workshops with partner organizations, including The Possible Zone and Artisans Asylum, and through classroom use with collaborators at San José State University, where FreeMoCap is already being used in digital-media instruction. These pilots will identify where learners encounter conceptual or technical barriers, which formats work best for different audiences, what reproducible hardware setups classroom deployment requires, and what knowledge can be transferred without direct core-team instruction.
 
 Track 1 will also test low-barrier forms of community participation that do not  require software development, including community-created visualizations, artwork, examples, challenges, and other ways for users to contribute domain expertise. 
 
