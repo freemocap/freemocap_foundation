@@ -35,7 +35,7 @@
 
 == Governance Scoping
 
-Healthy open source ecosystems employ methods to distribute decision-making and knowledge such that it does not depend on any one person. The Python Enhancement Proposal (PEP) process whereby upcoming software changes are announced and discussed via public Request For Comments (RFC)'s that invite community input but (critically) does not gate progress on strict consensus. NumPy and SciPy run comparable processes (NEP and SEP, respectively) for stakeholder-facing transparancy. What these share is a way of keeping consequential decisions visible and open to comment without making every decision wait on consensus. As our project grows, we will adopt these established patterns into our own ecosystem, shaped appropriately for the landscape revealed in the proposed scoping activities. 
+Healthy open source ecosystems employ methods to distribute decision-making and knowledge such that it does not depend on any one person. The Python Enhancement Proposal (PEP) process whereby upcoming software changes are announced and discussed via public Request For Comments (RFC)'s that invite community input but (critically) does not gate progress on strict consensus. NumPy and SciPy run comparable processes (NEP and SEP, respectively) for stakeholder-facing transparancy. What these share is a way of keeping consequential decisions visible and open to comment without making every decision wait on consensus. Track 1 will determine how these patterns should be adapted for a project of FreeMoCap's scale, shaped by the community landscape revealed through ecosystem discovery.
 
 
 == Distributed infrastructure and community plug-ins
