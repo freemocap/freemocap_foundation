@@ -128,19 +128,24 @@
   set text(font: BODY_FONT, size: BODY_SIZE, lang: "en")
   set par(justify: true, leading: LEADING, spacing: PAR_SPACING, first-line-indent: 0pt)
 
+  // Inline `code` spans otherwise render in Typst's default monospace
+  // (DejaVu Sans Mono), which is NOT on the PAPPG II.C.2.a permitted list and
+  // will fail a font check. Courier New is permitted, minimum 10pt.
+  show raw: set text(font: "Courier New", size: 10pt)
+
   // Headings: unnumbered, bold, tight. NSF reviewers skim on structure, so
   // headings should be visually obvious but must not eat vertical space.
   set heading(numbering: none)
   show heading.where(level: 1): it => block(
-    above: 1.1em, below: 0.55em,
+    above: 0.8em, below: 0.4em,
     text(size: 11.5pt, weight: "bold", it.body),
   )
   show heading.where(level: 2): it => block(
-    above: 0.9em, below: 0.45em,
+    above: 0.65em, below: 0.35em,
     text(size: 11pt, weight: "bold", style: "italic", it.body),
   )
   show heading.where(level: 3): it => block(
-    above: 0.7em, below: 0.3em,
+    above: 0.5em, below: 0.25em,
     text(size: 11pt, weight: "bold", it.body),
   )
 

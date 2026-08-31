@@ -239,8 +239,16 @@ head1 "EMBEDDED FONTS  (PAPPG II.C.2.a)"
 echo "  Permitted: Arial, Courier New, Palatino Linotype, Times New Roman,"
 echo "             Computer Modern family."
 if command -v pdffonts >/dev/null 2>&1; then
+  # Only sections WE build. Third-party PDFs dropped into out/ (letters of
+  # collaboration, authored by external people in Word or Google Docs) are
+  # exempt: NSF 26-506 states PESOSE letters "do not have to conform to the
+  # standard format specified in the PAPPG."
   for pdf in "$OUT"/*.pdf; do
     [ -e "$pdf" ] || continue
+    case "$(basename "$pdf")" in
+      _*) printf '  %s--  %s %-40s %sskipped (third-party letter, exempt)%s\n' \
+            "$C_DIM" "$C_RST" "$(basename "$pdf")" "$C_DIM" "$C_RST"; continue ;;
+    esac
     fonts=$(pdffonts "$pdf" 2>/dev/null | awk 'NR>2 {print $1}' \
             | sed 's/^[A-Z]\{6\}+//' | sort -u)
     printf '  %s--  %s %s\n' "$C_DIM" "$C_RST" "$(basename "$pdf")"
