@@ -28,10 +28,16 @@
 // =============================================================================
 
 #let REFERENCES = (
-  (
-    key: "queenFreeMoCapFreeOpen2024",
-    entry: [Queen, P., Cherian, A., Trent, W., Endurance, I., Matthis, J. S. FreeMoCap: A Free, Open Source Markerless Motion Capture System. Software repository. 2024. https://doi.org/10.5281/zenodo.7233714],
-  ),
+(
+  key: "matthisFreeMoCapFreeOpen2026",
+  entry: [
+    Matthis, J. S., Queen, P., Cherian, A., Wirth, T., Idehen, E.
+    FreeMoCap: A Free, Open Source Markerless Motion Capture System.
+    Zenodo, 2026.
+    #link("https://doi.org/10.5281/zenodo.22131400")
+    #link("https://github.com/freemocap/freemocap")
+  ],
+),
   (
     key: "cherianOpensourceDevelopmentValidation2026",
     entry: [Cherian, A. T. Open-Source Development and Validation of a Low-Cost Markerless System for Quantitative Motion Analysis. 2026.],
