@@ -21,18 +21,7 @@
 = Ecosystem Discovery
 
 == Need for Innovation
-A variety of motion capture tools currently exist, but each is built around particular assumptions about users, domains, hardware, or deployment. // CUT CANDIDATE (2026-08-31) — est. ~4 lines. BIGGEST SINGLE SAVING AVAILABLE.
-// Part 1 already makes this argument in one sentence ("existing markerless tools
-// are often built around the needs of particular fields and locked into preset
-// workflows or specific hardware"). This paragraph then re-makes it at length with
-// six product names and four citations.
-// What actually earns its space here: (a) the OpenCap operational constraints,
-// because they are concrete and unlike ours, and (b) the final clause with its
-// citation cluster, because "labs are still rebuilding this themselves" is the
-// evidence for the premise in the next paragraph. The six-product roll-call in
-// between is the cuttable part — naming two exemplars instead of six loses
-// nothing a reviewer needs.
-#flag(kind: "verbose")[Commercial systems include biomechanics-focused platforms such as Theia3D and animation/production tools such as Move.ai and Rokoko, while open-source alternatives such as OpenCap #c("uhlrichOpenCapHumanMovement2023"), Pose2Sim #c("pagnonPose2SimEndtoEndWorkflow2022"), and PosePipe #c("cottonPosePipeOpenSourceHuman2022") are largely centered on clinical applications of human biomechanics. These systems also impose different operational constraints: Theia3D relies on expensive hardware, while OpenCap's standard workflow depends on supported iOS devices, necessary log-in screens,  and remote cloud processing. The continued development of domain-specific workflows in individual research laboratories #c("matsumotoThreedimensionalMarkerlessMotion2025", "yangEvaluationCameraConfigurations2025", "needhamDevelopmentEvaluationFully2022", "cimorelliPortableInclinicVideobased2022") indicates that researchers with specialized requirements still build substantial portions of this infrastructure independently.]
+A variety of motion capture tools currently exist, but each is built around particular assumptions about users, domains, hardware, or deployment. Commercial systems include biomechanics-focused platforms such as Theia3D and animation/production tools such as Move.ai and Rokoko, while open-source alternatives such as OpenCap #c("uhlrichOpenCapHumanMovement2023"), Pose2Sim #c("pagnonPose2SimEndtoEndWorkflow2022"), and PosePipe #c("cottonPosePipeOpenSourceHuman2022") are largely centered on clinical applications of human biomechanics. These systems also impose different operational constraints: Theia3D relies on expensive hardware, while OpenCap's standard workflow depends on supported iOS devices, necessary log-in screens,  and remote cloud processing. The continued development of domain-specific workflows in individual research laboratories #c("matsumotoThreedimensionalMarkerlessMotion2025", "yangEvaluationCameraConfigurations2025", "needhamDevelopmentEvaluationFully2022", "cimorelliPortableInclinicVideobased2022") indicates that researchers with specialized requirements still build substantial portions of this infrastructure independently.
 
 Our Track 1 scoping will test the premise that the *repeated rebuilding of motion-capture pipelines is an ecosystem failure*, as researchers looking for extensible tools often find that building from scratch easier than extending shared infrastructure. Track 1 will determine what documentation, contribution pathways, technical interfaces, and governance structures are needed to reduce barriers to extending and contributing to shared research infrastructure.
 
@@ -61,9 +50,9 @@ which extending shared infrastructure becomes easier than rebuilding it.
 FreeMoCap, what brought them to it, and what their work requires that the
 shared pipeline does not yet provide. 
 
-2) *Knowledge assessment*: what users must understand to operate the software, what contributors must understand to modify it, which of that knowledge remains undocumented, and what forms of documentation or instruction would allow people to participate without direct access to the core team.
+1) *Knowledge assessment*: what users must understand to operate the software, what contributors must understand to modify it, which of that knowledge remains undocumented, and what forms of documentation or instruction would allow people to participate without direct access to the core team.
 
-3) *Comparative ecosystem review*: how mature open-source projects of comparable or larger scale structure contribution, extension, and decision-making, and how those structures perform as projects grow. These findings will supply candidate models for evaluation in Organization and Governance and inform the security, community-building, and sustainability work that follows.
+2) *Comparative ecosystem review*: how mature open-source projects of comparable or larger scale structure contribution, extension, and decision-making, and how those structures perform as projects grow. These findings will supply candidate models for evaluation in Organization and Governance and inform the security, community-building, and sustainability work that follows.
 
 
 

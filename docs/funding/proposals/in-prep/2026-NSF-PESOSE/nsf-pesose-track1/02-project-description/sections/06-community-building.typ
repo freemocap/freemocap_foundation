@@ -23,23 +23,25 @@ The FreeMoCap Foundation maintains an active Discord community forum of more tha
 relying exclusively on the core development team. The core team also hosts a
 weekly community call for project updates, user feedback, technical discussion,
 and interaction with potential contributors. These activities provide an
-established foundation for community engagement, but rapid user growth in 2026
-(@fig-star-chart) *has increased the need for education and participation models
+established foundation for community engagement, but rapid user growth in 2026  *has increased the need for education and participation models
 that can scale beyond direct interaction with maintainers.*
 
 
-#grid(
-  columns: (.8fr, 1fr),
-  column-gutter: 1.1em,
-  align: (left + top, left + top),
-  include "../floats/fig-star-chart.typ",
-  [
+// #grid(
+//   columns: (.8fr, 1fr),
+//   column-gutter: 1.1em,
+//   align: (left + top, left + top),
+//   include "../floats/fig-star-chart.typ",
+//   [
+//       ],
+// )
+
     Track 1 will develop and pilot accessible educational and participation pathways at three levels: *introductory materials* for general users; *intermediate and domain-specific resources* for scientific, technical, creative, and educational applications; and separate *developer documentation* covering software architecture, contribution workflows, testing, and maintenance responsibilities.
 
     These materials will be piloted through hands-on classes and workshops with
     partner organizations, including The Possible Zone and Artisans Asylum, and through tutorials and guided projects made available to the broader community. Pilots will identify where learners encounter conceptual or technical barriers, which formats work best for different audiences, and what knowledge can be transferred without direct core-team instruction.
 
-    Track 1 will also test low-barrier forms of community participation that do not
+    Track 1 will also test low-barrier forms of community participation that do not  
 require software development, including community-created visualizations,
 artwork, examples, challenges, and other ways for users to contribute domain
 expertise. 
@@ -48,8 +50,6 @@ onboarding model that supports progression from user, to informed participant,to
  Longer term, the resulting model could inform a
 larger FreeMoCap community meeting or conference bringing together users, developers, educators, and researchers as part of a subsequent Track 2 effort.
 
-  ],
-)
 
 
 
