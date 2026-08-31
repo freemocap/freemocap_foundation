@@ -1,58 +1,36 @@
-#import "../../template/nsf.typ": budget, note, flag, suggestion, new, broader-impacts
-#import "../../template/refs.typ": c
-
 // PART 1 — Need and framing.  Page budget: ~1.0
 //
 // Serves Track 1 criterion (a): a societal or national need not currently
 // being adequately addressed.
 //
-// This is where the accessibility argument goes, and it is your strongest
-// single asset: a lab that cannot afford a six-figure marker-based system can
-// run FreeMoCap on consumer cameras. State it in one or two sentences — do not
-// write a literature review of motion capture. Criterion (a) asks whether the
-// need is real and unmet, not whether you know the field.
-//
-// Land the spine claim explicitly and early. Reviewers should know by the end
-// of page one that this is a proposal about building an organization, not
-// about writing software.
+// SPINE NOTE: this version is organized around the v2 spine (notes/spine-spec.md):
+// successful, vibrant adoption -> inflection point -> solid understanding of
+// users and landscape -> foundation for the next phase. The previous version
+// (built around the duplication-of-effort premise) is preserved at git 159ca54.
 
-
+#import "../../template/nsf.typ": budget, note, flag, suggestion, new, broader-impacts
+#import "../../template/refs.typ": c
 
 
 = Vision and Need
-//I feel like we could find a stronger hook to start with at the first sentence...
 
-// ── A2 CANDIDATE HOOKS (pick one / edit freely; delete rejects + this banner after audit) ──
-// Each candidate REPLACES ONLY the first sentence of the paragraph below
-// ("Although the methods behind camera based motion capture are well
-// documented, researchers must often rebuild ... when existing tools do not
-// fit their needs."); the rest of the paragraph continues from "Commercial
-// marker-based motion capture systems offer ...".
-#new[
-Quantitative measurement of body movement underpins numerous fields of scientific inquiry, including musculoskeletal biomechanics, perceptuomotor neuroscience, and humanoid robotics, as well as areas of technical artistic expression such as 3d animation and video game design. ]
+FreeMoCap #c("queenFreeMoCapFreeOpen2024") is a free and open-source software system that transforms synchronized video from consumer-grade cameras into research-grade three-dimensional motion-capture data (@fig-overview). Built and maintained by the FreeMoCap Foundation since 2021, it has grown organically into a vibrant, successful project with a global community of at 15,000 individual users representing both students and high ranking profession researchers,  educators, and artists across more than 150 countries.
+
+The project's broad adoption and continued growth reveals the real and unmet need that FreeMoCap answers. Quantitative movement measurement underpins work across biomechanics, neuroscience, rehabilitation, and animation, yet the instrumentation required to obtain it has remained out of reach for most of the people who need it. Conventional marker-based systems are accurate but costly, and existing markerless tools are often built around the needs of particular fields and locked into preset workflows or specific hardware. By running on consumer-grade cameras and following established patterns for the development and management of free-and-open-source software (FOSS), FreeMoCap provides a validated, research-grade measurement tool appropriate for both high level research laboratories, as well as classrooms, garage labs, and basement mocap studios #c("cherianOpensourceDevelopmentValidation2026").
 
 
+FreeMoCap now sits at an critical inflection point in its growth curve [FIg - GH Stars growth]. As is common for mid-scale FOSS projects, our user count has grown far faster than its maintainer base, a community pattern that Nadia Eghbal's seminal exploration of the landscape of open source software _Working In Public_ refers to as a "Stadium" #c("eghbal2020", page NNN). The growth is exciting, but improperly managed we may become crushed under the weight of our early success if we fail to build the appropraite organizational and community infrastrcuture necessary to transition into a "Federation" community pattern representing a healthy balance of user and developer growth #c("eghbal2020", page NNN). 
 
-Commercial marker-based motion capture systems offer sophisticated general-purpose measurement, but remain costly and closed to modification. Newer markerless systems, driven by advances in AI/ML based computer vision, have lowered those barriers but are often built around the needs and assumptions of particular fields. Researchers working outside those assumptions (for instance, anyone measuring a non-human animal) are left to learn and often end up re-implementing components common to multi-camera markerless motion capture systems, such as video recording and synchronization, camera calibration, AI-based 2D pose estimation, 3D reconstruction, and post-processing.
+At time of writing, we are currently in the `alpha` phase of the transition into the v2 architecture, which represent a full-from-scratch-refactor of the FreeMoCap software which aims to meet the technical needs of the next phase of our growth. The new archtireure
 
-
-#new[
-These components include video recording and synchronization, camera calibration, AI-based 2D pose estimation, 3D reconstruction, and post-processing. ]
-
-#suggestion[
-Rebuilding this infrastructure across projects duplicates technical effort and reduces the public return on research software that is difficult to maintain, reproduce, or transfer. ]
-// ── end A4 ──
-
-#flag(kind:"verbose")[*There is therefore a need for accessible, shared research infrastructure that allows specialized motion capture adaptations developed by one community to be contributed back and reused by others.*]
+ 
 
 
-FreeMoCap #c("queenFreeMoCapFreeOpen2024") provides an existing technical foundation for this model. Maintained by the FreeMoCap Foundation, FreeMoCap is free and open-source software that transforms synchronized video from consumer-grade cameras into research-grade 3D motion-capture data through a modular workflow (@fig-overview). This proposal requests Track 1 support to scope the organizational and infrastructure requirements needed to *transition FreeMoCap from an open-source project maintained by a small core team into a secure, sustainable, community-driven ecosystem.* //NOTE - clarity - we use the word "freemocap" too many times in this short paragraph. Can probably make this punchier
+The software's recent full rebuild (V2, currently in alpha) — separating the project into domain-specific repositories with a shared internal structure, moving to a client/server architecture, and shipping as a one-click professional desktop application — has lowered the technical cost of contribution. What remains is organizational: the structures built around the software now will determine whether user growth converts into long-term development, maintenance, and growth of the ecosystem.
+
+//  identifies as the common structure of mid-scale open source projects — and, because we see primarily the users who come to us, our understanding of who our users are and what the surrounding landscape looks like is incomplete. Building the foundation for the project's next phase of life appropriately requires a solid understanding of both.
 
 
-// ── A6 SITUATION PARAGRAPH — the §1 anchor. If accepted, it REPLACES the final sentence of the paragraph above ("This proposal requests Track 1 support to scope..."), which says the same thing without the evidence. V2 guardrail respected: V2 appears as evidence/motivation only. Citations used: eghbal2020 — already in the bib and cited in Part 4, no new entry needed. ──
-#suggestion(note: [A6 — the anchor paragraph; standing condition (stadium + self-selected knowledge) then the V2 decision window, then the five scoping areas. Mark up freely.])[
-FreeMoCap's community has grown far faster than its maintainer base. Eghbal #c("eghbal2020") describes this structure — high user growth, low contributor growth, and maintenance knowledge concentrated in a small core team — as the "stadium," and documents it as the common structure of mid-scale open source projects rather than a project-specific failure. The stadium shape carries two costs for FreeMoCap: our picture of the community is incomplete, because we see primarily the users who come to us; and the knowledge required to use, teach, and extend the system remains concentrated in the core team, so potential contributors cannot participate without direct access to us. The software's recent full rebuild (V2, currently in alpha) — separating the project into domain-specific repositories with a shared internal structure, moving to a client/server architecture, and shipping as a one-click professional desktop application — has lowered the technical cost of contribution and opened a decision point: the organizational structures built around the software now will determine whether user growth converts into a sustainable, community-driven ecosystem. The scoping activities supported by this proposal therefore target five areas: the community landscape and its needs; documentation and upskilling pathways that convert user interest into contributor capacity; governance practices that create transparency and productive communication between core maintainers and the wider community; a validation and benchmarking methodology that other laboratories can replicate; and a sustainability model for the maintenance the software will require. ]
-// ── end A6 ──
+This proposal requests Track 1 support to scope, in preparation for Track 2, the foundation for that next phase: the community landscape and its needs; documentation and upskilling pathways that convert user interest into contributor capacity; governance practices that create transparency and productive communication between the core maintainers and the wider community; a validation and benchmarking methodology that other laboratories can replicate; and a sustainability model for the maintenance the software will require. The aim is a global-scale, self-sustaining project with a significant effect on the landscape of the research areas it touches.
 
 #include "../floats/fig-overview.typ"
-
