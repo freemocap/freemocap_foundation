@@ -2,8 +2,7 @@
 # =============================================================================
 # build.sh — compile every proposal section and run compliance checks.
 #
-#   ./build.sh          submission build (clean PDFs into out/)
-#   ./build.sh draft    draft build (page counters, notes, budget markers)
+#   ./build.sh          compile every section into out/
 #
 # NSF uploads each section as its own separate PDF, so this produces one PDF
 # per section rather than a single combined document.
@@ -15,21 +14,15 @@
 
 set -uo pipefail
 
-MODE="${1:-final}"
 OUT="out"
 FAIL=0
 
 # --root . : typst otherwise sandboxes reads to the input file's parent
 # directory, which breaks every `../template/` import. Run from repo root.
-# Draft mode is the template's default; the final build passes draft=false
-# explicitly so a submission PDF can never contain draft artifacts.
-if [ "$MODE" = "draft" ]; then
-  TYPST_ARGS=(--root . --input draft=true)
-  echo ">>> DRAFT build — do NOT submit these files"
-else
-  TYPST_ARGS=(--root . --input draft=false)
-  echo ">>> SUBMISSION build"
-fi
+# Draft artifacts are controlled by the DRAFT constant in template/nsf.typ,
+# which is hard-coded false. There is no build-time switch.
+TYPST_ARGS=(--root .)
+echo ">>> BUILD"
 
 # Find a Typst binary. Plain `typst` covers macOS/Linux/Windows shells; under
 # WSL only the Windows install is visible, via interop. Override with
@@ -169,8 +162,4 @@ if [ "$FAIL" -ne 0 ]; then
   echo ">>> BUILD HAS COMPLIANCE FAILURES — see above"
   exit 1
 fi
-if [ "$MODE" = "draft" ]; then
-  echo ">>> draft build OK — rerun without 'draft' before submitting"
-else
-  echo ">>> submission build OK — PDFs in $OUT/"
-fi
+echo ">>> build OK — PDFs in $OUT/"

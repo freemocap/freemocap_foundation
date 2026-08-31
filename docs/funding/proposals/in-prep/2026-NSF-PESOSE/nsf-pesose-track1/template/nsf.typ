@@ -255,24 +255,20 @@
 }
 
 // ---------------------------------------------------------------------------
-// DRAFT — global draft-mode flag, DEFAULT ON, with CLI override:
+// DRAFT — global draft-mode flag. Hard-coded, no CLI input.
 //
-//     ./build.sh                                     # draft build
-//     ./build.sh final                               # submission build (forces draft off)
-//     typst compile main.typ                         # draft (default)
-//     typst compile --input draft=false main.typ     # submission
+// false: draft artifacts (footer, notes, flags, suggestions, budget markers)
+//        render as NOTHING. Every compile is submission-clean — plain `typst
+//        compile`, Tinymist preview, and ./build.sh all produce the same PDF.
 //
-// Draft is the default so that plain compiles and Tinymist VS Code previews
-// render the draft artifacts (footer, notes, flags, suggestions, budget
-// markers) with zero command-line ceremony while writing. The override
-// exists so a submission build can never accidentally contain them: build.sh
-// always passes --input draft=false in final mode, so a clean PDF can only
-// come from an explicit, deliberate command.
+// Flip to true only to read the annotations while writing, and flip it back
+// before building anything you intend to upload. A draft footer sits in the
+// page margin, which PAPPG II.C.2.c forbids for proposer-supplied content.
 //
 // Every part file can `#import "../template/nsf.typ": DRAFT, note` and get
 // the same value without threading it through function arguments.
 // ---------------------------------------------------------------------------
-#let DRAFT = sys.inputs.at("draft", default: "true") == "false"
+#let DRAFT = false
 
 // ---------------------------------------------------------------------------
 // note — draft-only inline note for TODOs and open questions. Renders nothing
