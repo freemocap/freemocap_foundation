@@ -21,51 +21,24 @@
 = Ecosystem Discovery
 
 == Need for Innovation
-// note - weak start - begining a section with "the available tools" is too swuishy. 
-// SOFT-TOUCH (2026-08-30): resolves the "weak start" note above. §1 now opens
-// on the community and on what we do not know about it, so §3 no longer has to
-// establish demand from scratch — it has to say why discovery is the activity.
-// The suggestion below sits IN FRONT of the existing paragraph; that paragraph
-// then continues unchanged as the supporting landscape survey.
-#suggestion(note: [§3 opener — one sentence, added not substituted. Turns the competitor survey into evidence for a claim rather than the section's opening move.])[
-Characterizing that landscape is the first task of this proposal, and the tools already in use are the clearest available evidence of the demand it has to account for. ]
+A variety of motion capture tools currently exist, but each is built around particular assumptions about users, domains, hardware, or deployment. Commercial systems include biomechanics-focused platforms such as Theia3D and animation/production tools such as Move.ai and Rokoko, while open-source alternatives such as OpenCap #c("uhlrichOpenCapHumanMovement2023"), Pose2Sim #c("pagnonPose2SimEndtoEndWorkflow2022"), and PosePipe #c("cottonPosePipeOpenSourceHuman2022") are largely centered on clinical applications of human biomechanics. These systems also impose different operational constraints: Theia3D relies on expensive hardware, while OpenCap's standard workflow depends on supported iOS devices, necessary log-in screens,  and remote cloud processing. The continued development of domain-specific workflows in individual research laboratories #c("matsumotoThreedimensionalMarkerlessMotion2025", "yangEvaluationCameraConfigurations2025", "needhamDevelopmentEvaluationFully2022", "cimorelliPortableInclinicVideobased2022") indicates that researchers with specialized requirements still build substantial portions of this infrastructure independently.
 
-The available tools demonstrate substantial demand for accessible markerless motion capture, but each is built around particular assumptions about users, domains, hardware, or deployment. Commercial systems include biomechanics-focused platforms such as Theia3D and animation/production tools such as Move.ai and Rokoko, while open-source alternatives such as OpenCap #c("uhlrichOpenCapHumanMovement2023"), Pose2Sim #c("pagnonPose2SimEndtoEndWorkflow2022"), and PosePipe #c("cottonPosePipeOpenSourceHuman2022") are largely centered on clinical applications of human biomechanics. These systems also impose different operational constraints: Theia3D relies on expensive hardware, while OpenCap's standard workflow depends on supported iOS devices, necessary log-in screens,  and remote cloud processing. The continued development of domain-specific workflows in individual research laboratories #c("matsumotoThreedimensionalMarkerlessMotion2025", "yangEvaluationCameraConfigurations2025", "needhamDevelopmentEvaluationFully2022", "cimorelliPortableInclinicVideobased2022") indicates that researchers with specialized requirements still build substantial portions of this infrastructure independently.
-
-Our Track 1 scoping will test #flag(kind: "redundant")[the premise underlying this proposal]: *repeated rebuilding of motion-capture pipelines is an ecosystem failure, as starting over is often easier than extending shared infrastructure.* Track 1 will determine what documentation, contribution pathways, technical interfaces, and governance structures are needed to reduce barriers to extending and contributing to shared research infrastructure.
-// SOFT-TOUCH: only the FRAMING WORDS are flagged, not the claim. §1's spine is
-// now the stadium/knowledge-deficit argument, so duplication-of-effort is no
-// longer "the premise underlying this proposal" — it is one premise the
-// discovery tests. Proposed swap: "will test a premise this proposal rests on:"
-// or simply "will test whether:". This is your own note below, actioned.
-// See above about the "premise of this proposal" languauge - we DO want to hit the 'duplication of effort' thing strongly, but we dont want to hang the ENTIRE proposal off of it.
+Our Track 1 scoping will test the premise that the *repeated rebuilding of motion-capture pipelines is an ecosystem failure*, as researchers looking for extensible tools often find that building from scratch easier than extending shared infrastructure. Track 1 will determine what documentation, contribution pathways, technical interfaces, and governance structures are needed to reduce barriers to extending and contributing to shared research infrastructure.
 
 
 == Necessity of an open-source ecosystem approach
-FreeMoCap's existing community provides early evidence that an open-source ecosystem can convert
-individual expertise into shared infrastructure for the broader user community.
+FreeMoCap has exsited as a FOSS project since its inception in 2021, the nature of the project is fundamentally coupled to the open source ethos and cannot exist in any other form without losing its identity. FreeMoCap's existing community provides early evidence that an open-source ecosystem can convert individual expertise into shared infrastructure for the broader user community.
 Users have already become contributors in areas including animation, UI design,
 and pose-estimation architecture, bringing domain expertise from outside the
-core development team into the project, for the benefit of all users. However, these transitions occurred informally and have depended heavily on direct interaction with
-the core team. Creating a repeatable path into the ecosystem first requires understanding *who* is trying to use, teach, extend, or contribute to FreeMoCap, *what* technical knowledge each group needs, and *where* the current software and documentation
-fail to support them independently. 
+core development team into the project, for the benefit of all users. However, these transitions occurred informally and have depended heavily on direct interaction with the core team. Creating a repeatable path into the ecosystem first requires understanding *who* is trying to use, teach, extend, or contribute to FreeMoCap, *what* technical knowledge each group needs, and *where* the current software and documentation fail to support them independently. 
 
 == Stakeholder discovery
-//See above - need to get th ereal numvbers here, or even betterm put key numbers as KPI's in a table and reference it
-
-// SOFT-TOUCH: this is now the reader's second encounter — §1's load-bearing
-// paragraph makes the same point, at length, as the reason the proposal exists.
-// Biggest single saving available in this pass. Proposed: compress to a callback
-// clause ("Because that understanding is drawn primarily from users who contact
-// us directly, ...") and spend the reclaimed space on the discovery activities
-// below, which are this section's actual job and are currently the thinner half.
-//the general thought of this section ("we only know the users that made the effort to seek us out") is strong, but could be made clearer. 
-#flag(kind: "redundant")[Although telemetry indicates more than 15,000 users, our current understanding of the FreeMoCap community is drawn primarily from users who contact us directly or participate in existing community channels.] Some applications have emerged outside the domains we originally anticipated. For example, computational-linguistics researchers have adopted FreeMoCap in published work #c("orrMULTICOLLABASLAffectiveComputing2024","peechattMULTICOLLABMultimodalCorpus2024", "nunnariDGSFabeln1MultiAngleParallel2024") without any prior interaction with the core team. This motivates a broader discovery effort aimed not only at known users, but also at understanding unexpected communities, what drew them to the platform, and what would reduce barriers to sustained and broader adoption.
+Our current understanding of the FreeMoCap community is drawn primarily from users who contact us directly or participate in existing community channels. Some applications have emerged outside the domains we originally anticipated. For example, computational-linguistics researchers have adopted FreeMoCap in published work #c("orrMULTICOLLABASLAffectiveComputing2024","peechattMULTICOLLABMultimodalCorpus2024", "nunnariDGSFabeln1MultiAngleParallel2024") without any prior interaction with the core team. This motivates a broader discovery effort aimed not only at known users, but also at understanding unexpected communities, what drew them to the platform, and what would reduce barriers to sustained and broader adoption.
 
 // SOFT-TOUCH: leaving this one alone — the XP-ladder material is new content,
 // not an alignment tweak, and it feeds §6's education pathways. Yours to write.
 // re-org this section around the bolded terms. Also, some concept of consideration of XP ladders within each domain (i.e. low XP and high XP versions of each of our user-types)
-Our proposed work will combine analysis of existing community activity, community-wide surveys, and the I-Corps for PESOSE stakeholder-discovery process to characterize four user populations reflecting the communities already observed around FreeMoCap: (1) *researchers* across application domains, (2) *educators* and *students*, (3) *creative* and technical users in animation and related fields, and (4) current and prospective *contributors*. We will also interview maintainers of mature open-source projects, not as FreeMoCap users, but as a source of comparative evidence on how successful ecosystems structure contribution, governance, and extension. Discovery will produce three assessments, each addressing one condition under
+Our proposed work will combine analysis of existing community activity, community-wide surveys, and the I-Corps for PESOSE stakeholder-discovery process to characterize four user populations reflecting the communities already observed around FreeMoCap: (1) *researchers* using FreeMoCap as part of scientific projects, (2) *educators* building FreeMoCap-based teaching materials, (3) *technical artists* working in 3d animation and related fields, and (4) current and prospective *contributors*. We will also interview maintainers of mature open-source projects,  as a source of comparative evidence on how successful ecosystems structure contribution, governance, and extension. Discovery will produce three assessments, each addressing one condition under
 which extending shared infrastructure becomes easier than rebuilding it.
 
 1) *Cross-domain needs assessment*: how different communities use
