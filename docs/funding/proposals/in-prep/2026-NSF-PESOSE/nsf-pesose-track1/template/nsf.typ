@@ -272,7 +272,7 @@
 // Every part file can `#import "../template/nsf.typ": DRAFT, note` and get
 // the same value without threading it through function arguments.
 // ---------------------------------------------------------------------------
-#let DRAFT = sys.inputs.at("draft", default: "true") != "false"
+#let DRAFT = sys.inputs.at("draft", default: "true") == "false"
 
 // ---------------------------------------------------------------------------
 // note — draft-only inline note for TODOs and open questions. Renders nothing

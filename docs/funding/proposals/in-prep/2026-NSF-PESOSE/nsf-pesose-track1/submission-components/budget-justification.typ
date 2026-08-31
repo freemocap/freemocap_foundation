@@ -31,8 +31,8 @@ person).
 - *Functional title / SOC:* Computer and Information Research Scientist
   (SOC 15-1221); BLS OEWS reference:
   #link("https://www.bls.gov/oes/current/oes151221.htm")[bls.gov/oes/current/oes151221.htm]
-- *Salary rate:* \$100,000/year; *Effort:* 12.0 calendar months;
-  *Requested:* \$100,000
+- *Salary rate:* \$75,000/year; *Effort:* 12.0 calendar months;
+  *Requested:* \$75,000
 - *Responsibilities:* Overall scientific and organizational direction of the
   project. Leads governance scoping (comparison and evaluation of
   stewardship models), the risk-analysis and security plan, and the
@@ -56,7 +56,7 @@ person).
 
 = Other Personnel (Line B)
 
-== Paul Mathis — Operations Lead
+== Paul Matthis — Operations Lead
 - *Functional title / SOC:* Network and Computer Systems Administrator
   (SOC 15-1244); BLS OEWS reference:
   #link("https://www.bls.gov/oes/current/oes151244.htm")[bls.gov/oes/current/oes151244.htm]
@@ -67,8 +67,7 @@ person).
   (GitHub Actions), project web services, and the Google Cloud Platform
   environment hosting project telemetry, including the provenance and
   data-quality instrumentation scoped in the Risk Analysis and Security Plan.
-  Provides logistics support for the community education pilots. The
-  remaining effort continues on unfunded Foundation operations.
+  Provides logistics support for the community education pilots. 
 
 = Fringe Benefits (Line C)
 
@@ -83,8 +82,8 @@ service before finalizing]
 
 = Equipment (Line D)
 
-No equipment is requested. Equipment requests are not permitted for Track 1
-proposals.
+No equipment is requested. 
+//Equipment requests are not permitted for Track 1 proposals.
 
 = Travel (Line E)
 

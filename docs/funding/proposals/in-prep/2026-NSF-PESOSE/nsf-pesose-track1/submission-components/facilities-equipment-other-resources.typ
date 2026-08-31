@@ -42,7 +42,7 @@ operates at scale:
   openness: a private core-maintainer channel for internal coordination, the
   open Discord community for user support and discussion, and fully public
   channels — a YouTube channel, Twitch live streams, and social media
-  accounts on X/Twitter and Bluesky — for announcements and public-facing
+  accounts on Twitter and Bluesky — for announcements and public-facing
   content.
 
 This layered communications structure is itself a resource for the proposed
@@ -71,5 +71,3 @@ required to develop or validate it. Web hosting and telemetry services run on
 Google Cloud Platform space provided in-kind through the Google for
 Nonprofits program.
 
-#note[academic collaborators named vaguely here — if any individual partner is
-specifically promised, they need a matching letter of collaboration]
