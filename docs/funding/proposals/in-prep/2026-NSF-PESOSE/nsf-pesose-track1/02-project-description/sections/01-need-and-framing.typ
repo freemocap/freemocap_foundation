@@ -31,13 +31,10 @@ FreeMoCap now sits at a critical inflection point in its growth curve (@ fig-sta
 The growth is exciting, but dangerous. If growth in the user base continues to outpaces its maintainers, the growing weight of support runs the risk over overwhelming the core maintainers. Sustaining the project through this period requires building the organizational and community infrastructure that supports a transition toward what Eghbal calls a "Federation,"  a pattern representinga healthy balance of user and contributor growth, allowing technical knowledge and responsibility to be distributed across the community. 
 
 
-
-
 Our technical infrastructure is strong, but our understanding of the landscape of our community of users is limited. Beyond basic in-app telemetry and our experience interacting with the small percentage of users that explicitly seek us out, we do not have a reliable account of who our users are, what their needs are, and how our current infrastructure is failing to meet them. As we transition into the next phase of our development, it is critical that we develop a clear undestanding of our users so that we can align our technical roadmap, organizational structure, and community infrastructure with the actual needs, applications, and challenges of our actual stakeholders
 
 
 This proposal requests Track 1 support to scope the foundation for that next phase: the community landscape and its needs; documentation and upskilling pathways that convert user interest into contributor capacity; governance practices that create transparency and productive communication between the core maintainers and the wider community; a validation and benchmarking methodology that other laboratories can replicate; and a sustainability model for the maintenance the software will require.
 
- The aim is an enterprise-grade, global-scale,  self-sustaining project which can act as a Boundary Object c("star1989") between each of the constituent disciplines that intersect at the careful recording of human and animal movement, and a convivial tool c("illich1979")that users from all backgrounds and levels of expertise can master, adapt, and direct toward their own ends 
 
 #include "../floats/fig-overview.typ"

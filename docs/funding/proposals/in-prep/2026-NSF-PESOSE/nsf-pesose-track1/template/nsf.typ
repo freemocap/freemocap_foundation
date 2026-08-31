@@ -49,7 +49,7 @@
 // Do not reduce LEADING below 0.40em without re-checking: that is where you
 // start approaching the 12pt floor.
 // ---------------------------------------------------------------------------
-#let LEADING = 0.62em
+#let LEADING = 0.57em
 #let PAR_SPACING = 0.95em
 
 // ---------------------------------------------------------------------------

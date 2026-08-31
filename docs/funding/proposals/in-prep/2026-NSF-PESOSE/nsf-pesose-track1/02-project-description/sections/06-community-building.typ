@@ -28,21 +28,51 @@ established foundation for community engagement, but rapid user growth in 2026
 (@fig-star-chart) *has increased the need for education and participation models
 that can scale beyond direct interaction with maintainers.*
 
-#include "../floats/fig-star-chart.typ"
+// FIGURE + TEXT SIDE BY SIDE (2026-08-31) — pattern from the X-Labs proposal's
+// proposal/sections/5-team-capabilities.typ.
+//
+// Typst has no native text-wrap-around-figure. The working substitute is a
+// #grid: the figure (image stacked over its caption, entirely normal) goes in a
+// narrow column, and the body text that would otherwise have been pushed below
+// it goes in the other. The figure occupies a block of the page instead of a
+// full-width horizontal stripe, and prose fills the space beside it.
+//
+// TUNING — the only two knobs:
+//   * `columns:` ratio below governs how wide the figure is. The image is
+//     portrait (roughly 4:5), so a narrower figure column gets TALLER, and needs
+//     more text beside it to stay balanced. 0.42fr is a starting point.
+//   * which paragraphs go in the text cell. Two are in there now. If the figure
+//     runs taller than the text, pull the third paragraph in as well; if the
+//     text overruns the figure, push one back out below the grid.
+//
+// `align: (left + top, left + top)` keeps both columns starting at the same
+// baseline. Without it the figure centers itself vertically against the text.
+#grid(
+  columns: (1fr, 1fr),
+  column-gutter: 1.1em,
+  align: (left + top, left + top),
+  include "../floats/fig-star-chart.typ",
+  [
+    Track 1 will develop and pilot accessible educational and participation pathways at three levels: *introductory materials* for general users; *intermediate and domain-specific resources* for scientific, technical, creative, and educational applications; and separate *developer documentation* covering software architecture, contribution workflows, testing, and maintenance responsibilities.
 
-Track 1 will develop and pilot accessible educational and participation pathways at three levels: *introductory materials* for general users; *intermediate and domain-specific resources* for scientific, technical, creative, and educational applications; and separate *developer documentation* covering software architecture, contribution workflows, testing, and maintenance responsibilities.
+    These materials will be piloted through hands-on classes and workshops with
+    partner organizations, including The Possible Zone and Artisans Asylum, and through tutorials and guided projects made available to the broader community. Pilots will identify where learners encounter conceptual or technical barriers, which formats work best for different audiences, and what knowledge can be transferred without direct core-team instruction.
 
-These materials will be piloted through hands-on classes and workshops with
-partner organizations, including The Possible Zone and Artisans Asylum, and through tutorials and guided projects made available to the broader community. Pilots will identify where learners encounter conceptual or technical barriers, which formats work best for different audiences, and what knowledge can be transferred without direct core-team instruction. 
-
-Track 1 will also test low-barrier forms of community participation that do not
+    Track 1 will also test low-barrier forms of community participation that do not
 require software development, including community-created visualizations,
-artwork, examples, challenges, and other ways for users to contribute domain
-expertise. Together, these activities will inform a scalable education and
+artwork, examples, 
+
+  ],
+)
+challenges, and other ways for users to contribute domain
+expertise. 
+Together, these activities will inform a scalable education and
 onboarding model that supports progression from user, to informed participant,
 to sustained contributor. Longer term, the resulting model could inform a
 larger FreeMoCap community meeting or conference bringing together users,
 developers, educators, and researchers as part of a subsequent Track 2 effort.
+
+
 
 
 
