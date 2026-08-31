@@ -48,7 +48,7 @@ that can scale beyond direct interaction with maintainers.*
 // `align: (left + top, left + top)` keeps both columns starting at the same
 // baseline. Without it the figure centers itself vertically against the text.
 #grid(
-  columns: (1fr, 1fr),
+  columns: (.8fr, 1fr),
   column-gutter: 1.1em,
   align: (left + top, left + top),
   include "../floats/fig-star-chart.typ",
@@ -60,17 +60,18 @@ that can scale beyond direct interaction with maintainers.*
 
     Track 1 will also test low-barrier forms of community participation that do not
 require software development, including community-created visualizations,
-artwork, examples, 
+artwork, examples, challenges, and other ways for users to contribute domain
+expertise. 
+Together, these activities will inform a scalable education and
+onboarding model that supports progression from user, to informed participant,to sustained contributor.
+ Longer term, the resulting model could inform a
+larger FreeMoCap community meeting or conference bringing together users, developers, educators, and researchers as part of a subsequent Track 2 effort.
 
   ],
 )
-challenges, and other ways for users to contribute domain
-expertise. 
-Together, these activities will inform a scalable education and
-onboarding model that supports progression from user, to informed participant,
-to sustained contributor. Longer term, the resulting model could inform a
-larger FreeMoCap community meeting or conference bringing together users,
-developers, educators, and researchers as part of a subsequent Track 2 effort.
+
+
+
 
 
 

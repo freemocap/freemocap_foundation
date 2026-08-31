@@ -37,9 +37,7 @@ While the fidelity of FreeMoCap-produced data has been and continues to be valid
 Because these are the same checks an outside laboratory would need in order to trust the software on its own data, Track 1 will also scope how the methodology is packaged and communicated, so that other groups can reproduce our validation on their own hardware and subjects and contribute the results back as community validation. 
 
 == Identity and Telemetry
-Potential ecosystem features such as contributor recognition, authenticated accounts, and usage telemetry introduce additional privacy and security considerations. Track 1 will scope approaches that minimize collected data and preserve FreeMoCap's local-first principles, including evaluation of established authorization approaches such as OAuth 2.0 for account-based features. The project's industry mentor, Endurance Idehen, will advise this work, including authentication, authorization, telemetry, and related security controls.
-
-Together, these activities will produce a risk register, draft extension review and release controls, and a data-integrity and security roadmap.
+Potential ecosystem features such as contributor recognition, authenticated accounts, and usage telemetry introduce additional privacy and security considerations. Track 1 will scope approaches that minimize collected data and preserve FreeMoCap's local-first principles, including evaluation of established authorization approaches such as OAuth 2.0 for account-based features. The project's industry mentor, Endurance Idehen, will advise this work, including authentication, authorization, telemetry, and related security controls. Together, these activities will produce a risk register, draft extension review and release controls, and a data-integrity and security roadmap.
 
 
 

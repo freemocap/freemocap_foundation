@@ -41,11 +41,11 @@ The project is organized as a polyrepo - the core functionality of the applicati
 FreeMoCap is used across several distinct communities, including researchers, educators and students, creative and technical users, and software contributors. Published use of FreeMoCap spans reaching and grasping biomechanics #c("mazroueiCatchingSmallBalls2026"), gait analysis #c("nunez-lisboaUnderstandingGaitAlterations2024"), computational linguistics #c("orrMULTICOLLABASLAffectiveComputing2024","peechattMULTICOLLABMultimodalCorpus2024", "nunnariDGSFabeln1MultiAngleParallel2024"), and animation #c("landaEvaluatingIdleAnimation2026"). Independent validation studies have reported agreement with marker-based motion capture across several movement tasks #c("dariciLowcostMarkerlessMotion2026", "minogueValidationFreetoUseMarkerless2025"), while our own work #c("cherianOpensourceDevelopmentValidation2026") has characterized gait and balance performance, demonstrated integration of multiple pose-estimation backends, and extended the workflow to non-human locomotion (@fig-data).
 
 
-#include "../floats/fig-data.typ"
+
 
 Although we have made great strides to onboarding new contributors, much of the  architectural and operational knowledge needed to contribute to the core pipeline remains concentrated within a core development team, and contributor onboarding and technical knowledge decentralization remains immature. The scoping activities supported in this proposal will help us to increase the sophistication and reach of our onboarding and upskilling mechanisms be helping us strategically shape our efforts in alignment with our actual community.
 
-
+#include "../floats/fig-data.typ"
 == Team Qualifications
 The FreeMoCap team represents decades of individual scientific and engineering expertise,  with more than five years of direct experience developing the FreeMoCap software specifically, including supporting its community, and managing the technical and organizational challenges associated with its growth. 
 // The wording here is a bit awkward and kind of undersells us - the PROJECT is five years old, the team itself has much more XP than that. The PI has 20 years XP in mocap and camera based tools for the study of human perceptomotor research, Aaron has close to a decade, the PROJECT is over 5 years old. 

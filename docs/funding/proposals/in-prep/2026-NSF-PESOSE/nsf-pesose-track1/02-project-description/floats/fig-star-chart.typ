@@ -9,5 +9,6 @@
 // here — `width: 100%` means "fill my column", whatever the grid gives it.
 #figure(
   image("../../figures/2026-08-31-fmc-map-and-gh-stars.png", width: 100%),
-  caption: [A. Geographic distribution of FreeMoCap use. B. Cumulative GitHub stars on the core repository since first public release, passing 10,000 in 2026.]
+  caption: [A. Geographic distribution of FreeMoCap use. B. Cumulative GitHub stars on the core repository since first public release. Following an initial period of rapid growth, we intentionally stopped making public posts and instead focused on building the Discord community in April 2022, resulting in a long period of slow growth driven entirely by organic search and word-of-mouth. The spike beginning in Jan 2026 represents the moment when we resumed public social media posting.]
 ) <fig-star-chart>
+
