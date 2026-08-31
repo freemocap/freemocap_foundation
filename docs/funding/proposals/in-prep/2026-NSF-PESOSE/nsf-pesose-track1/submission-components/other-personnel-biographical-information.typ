@@ -102,11 +102,15 @@ line entirely if there are none to list]
 //     covers postdoctoral associates, other professionals, and students. This
 //     budget has exactly one such person.
 //
-// NOTE ON A RELATED DISCLOSURE: Paul Matthis and Jonathan Samir Matthis share a
-// surname. Nothing in the PAPPG or NSF 26-506 requires disclosing a family
-// relationship between project personnel in this document, and this scaffold
-// does not assume one exists. If one does, the place it can matter is the
-// organizational conflict-of-interest and compensation-reasonableness posture
-// of a small nonprofit, not this document. Raise it with your SPO/AOR rather
-// than resolving it here.
+// FAMILY RELATIONSHIP — CONFIRMED: Paul Matthis is the PI's brother.
+//
+// Do NOT disclose that in this document. Nothing in the PAPPG or NSF 26-506
+// requires disclosing a family relationship among project personnel here, and
+// this document IS visible to reviewers. Volunteering it raises a question the
+// panel has no role in answering.
+//
+// The disclosure belongs in the PI's COA Table 2 (family — brother), which is
+// a Single Copy Document that reviewers never see. The compensation-
+// reasonableness side is an organizational governance matter.
+// See supporting-docs/related-party-note.md.
 // =============================================================================
