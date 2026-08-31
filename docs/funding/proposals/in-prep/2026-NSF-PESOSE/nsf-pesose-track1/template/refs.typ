@@ -33,18 +33,19 @@
   entry: [
     Matthis, J. S., Queen, P., Cherian, A., Wirth, T., Idehen, E.
     FreeMoCap: A Free, Open Source Markerless Motion Capture System.
-    Zenodo, 2026.
-    #link("https://doi.org/10.5281/zenodo.22131400")
-    #link("https://github.com/freemocap/freemocap")
+    Zenodo, 2026. #link("https://doi.org/10.5281/zenodo.22131400").
+    Software repository: #link("https://github.com/freemocap/freemocap")
   ],
 ),
   (
     key: "cherianOpensourceDevelopmentValidation2026",
-    entry: [Cherian, A. T. Open-Source Development and Validation of a Low-Cost Markerless System for Quantitative Motion Analysis. 2026.],
+    // Metadata read off the dissertation title page. Permanent handle confirmed
+    // by the author; the NU repository file is neu:ms425z58z.
+    entry: [Cherian, A. T. Open-Source Development and Validation of a Low-Cost Markerless System for Quantitative Motion Analysis. PhD dissertation, Department of Bioengineering, Northeastern University, Boston, MA, 2026. https://hdl.handle.net/2047/D20859645],
   ),
   (
     key: "eghbal2020",
-    entry: [Eghbal, N. Working in Public: The Making and Maintenance of Open Source Software. 2020.],
+    entry: [Eghbal, N. Working in Public: The Making and Maintenance of Open Source Software. Stripe Press, 2020.],
   ),
   (
     key: "mazroueiCatchingSmallBalls2026",
@@ -80,7 +81,7 @@
   ),
   (
     key: "minogueValidationFreetoUseMarkerless2025",
-    entry: [Minogue, J. P., Napierala, M., Lowe, B., Drazan, J. F. Validation of Free-to-Use, Markerless Motion Capture for Field Based Measurements of Sagittal Plane Kinematics. Software repository. 2025. https://doi.org/10.2139/ssrn.5089509],
+    entry: [Minogue, J. P., Napierala, M., Lowe, B., Drazan, J. F. Validation of Free-to-Use, Markerless Motion Capture for Field Based Measurements of Sagittal Plane Kinematics. _SSRN Electronic Journal_, preprint 5089509, 2025. https://doi.org/10.2139/ssrn.5089509],
   ),
   (
     key: "uhlrichOpenCapHumanMovement2023",
@@ -88,15 +89,15 @@
   ),
   (
     key: "pagnonPose2SimEndtoEndWorkflow2022",
-    entry: [Pagnon, D., Domalain, M., Reveret, L. Pose2Sim: An End-to-End Workflow for 3D Markerless Sports Kinematics—Part 2: Accuracy. _Sensors_, 22(7), 2022. https://doi.org/10.3390/s22072712],
+    entry: [Pagnon, D., Domalain, M., Reveret, L. Pose2Sim: An End-to-End Workflow for 3D Markerless Sports Kinematics—Part 2: Accuracy. _Sensors_, 22(7):2712, 2022. https://doi.org/10.3390/s22072712],
   ),
   (
     key: "cottonPosePipeOpenSourceHuman2022",
-    entry: [Cotton, R. J. PosePipe: Open-Source Human Pose Estimation Pipeline for Clinical Research. Software repository. 2022. https://doi.org/10.48550/arXiv.2203.08792],
+    entry: [Cotton, R. J. PosePipe: Open-Source Human Pose Estimation Pipeline for Clinical Research. arXiv preprint arXiv:2203.08792, 2022. https://doi.org/10.48550/arXiv.2203.08792],
   ),
   (
     key: "matsumotoThreedimensionalMarkerlessMotion2025",
-    entry: [Matsumoto, J., Kaneko, T., Kimura, K., Blanco Negrete, S., Guo, J., Suda-Hashimoto, N., Kaneko, A., Morimoto, M., Nishimaru, H., Setogawa, T., Go, Y., Shibata, T., Nishijo, H., Takada, M., Inoue, K. i. Three-Dimensional Markerless Motion Capture of Multiple Freely Behaving Monkeys toward Automated Characterization of Social Behavior. _Science Advances_, 11(26):eadn1355, 2025. https://doi.org/10.1126/sciadv.adn1355],
+    entry: [Matsumoto, J., Kaneko, T., Kimura, K., Blanco Negrete, S., Guo, J., Suda-Hashimoto, N., Kaneko, A., Morimoto, M., Nishimaru, H., Setogawa, T., Go, Y., Shibata, T., Nishijo, H., Takada, M., Inoue, K.-i. Three-Dimensional Markerless Motion Capture of Multiple Freely Behaving Monkeys toward Automated Characterization of Social Behavior. _Science Advances_, 11(26):eadn1355, 2025. https://doi.org/10.1126/sciadv.adn1355],
   ),
   (
     key: "yangEvaluationCameraConfigurations2025",
@@ -107,16 +108,16 @@
     entry: [Needham, L., Evans, M., Wade, L., Cosker, D. P., McGuigan, M. P., Bilzon, J. L., Colyer, S. L. The Development and Evaluation of a Fully Automated Markerless Motion Capture Workflow. _Journal of Biomechanics_, 144:111338, 2022. https://doi.org/10.1016/j.jbiomech.2022.111338],
   ),
   (
-    key: "cimorelliPortableInclinicVideobased2022",
-    entry: [Cimorelli, A., Patel, A., Karakostas, T., Cotton, R. J. Portable In-Clinic Video-Based Gait Analysis: Validation Study on Prosthetic Users. Software repository. pp. 2022.11.10.22282089, 2022. https://doi.org/10.1101/2022.11.10.22282089],
+    key: "cimorelliValidationPortableInclinic2024",
+    entry: [Cimorelli, A., Patel, A., Karakostas, T., Cotton, R. J. Validation of Portable In-Clinic Video-Based Gait Analysis for Prosthesis Users. _Scientific Reports_, 14:3840, 2024. https://doi.org/10.1038/s41598-024-53217-7],
   ),
   (
     key: "seethapathiMovementScienceNeeds2019",
-    entry: [Seethapathi, N., Wang, S., Saluja, R., Blohm, G., Kording, K. P. Movement Science Needs Different Pose Tracking Algorithms. Software repository. 2019.],
+    entry: [Seethapathi, N., Wang, S., Saluja, R., Blohm, G., Kording, K. P. Movement Science Needs Different Pose Tracking Algorithms. arXiv preprint arXiv:1907.10226, 2019. https://doi.org/10.48550/arXiv.1907.10226],
   ),
   (
     key: "aitkenPatientPerceivedFeasibilityImplementing2026",
-    entry: [Aitken, H. D., Holt, J. B., Westermann, R. W., Elkins, J. M., Vanorny, D. A., Crawmer, J. T., Gregory, E. S., Velasquez-Marin Mohr, S., Rich, C. M., Goetz, J. E. Patient-Perceived Feasibility of Implementing OpenCap Smartphone-Based Motion Capture Technology to Remotely Assess Musculoskeletal Movement in Individuals with Orthopedic Disorders Presenting to a Rural Midwestern Tertiary Center. _Frontiers in Digital Health_, 8, 2026. https://doi.org/10.3389/fdgth.2026.1870758],
+    entry: [Aitken, H. D., Holt, J. B., Westermann, R. W., Elkins, J. M., Vanorny, D. A., Crawmer, J. T., Gregory, E. S., Velasquez-Marin Mohr, S., Rich, C. M., Goetz, J. E. Patient-Perceived Feasibility of Implementing OpenCap Smartphone-Based Motion Capture Technology to Remotely Assess Musculoskeletal Movement in Individuals with Orthopedic Disorders Presenting to a Rural Midwestern Tertiary Center. _Frontiers in Digital Health_, 8:1870758, 2026. https://doi.org/10.3389/fdgth.2026.1870758],
   ),
 )
 
@@ -177,10 +178,25 @@
 // ---------------------------------------------------------------------------
 // render-references — used by 03-references-cited/main.typ.
 // ---------------------------------------------------------------------------
+// Reference lists read badly as justified prose: the long DOIs cannot be
+// hyphenated, so justification opens rivers of whitespace. Ragged right avoids
+// that. The hanging indent pulls every continuation line clear of the [N]
+// label so entries are visually separable at a glance, and the block spacing
+// puts real air between them.
+#let REF_LABEL_WIDTH = 2.4em
+
+// A two-column grid rather than a box plus par(hanging-indent:) — the set rule
+// does not reach the entry content, so the indent silently does not happen.
+// The grid enforces the alignment structurally.
 #let render-references() = {
+  set par(justify: false, leading: 0.5em)
   for (i, r) in REFERENCES.enumerate() {
-    block(above: 0.5em, below: 0.5em)[
-      #box(width: 2.2em)[\[#(i + 1)\]] #r.entry
+    block(above: 0.8em, below: 0.8em, breakable: true)[
+      #grid(
+        columns: (REF_LABEL_WIDTH, 1fr),
+        gutter: 0pt,
+        [\[#(i + 1)\]], r.entry,
+      )
     ]
   }
 }

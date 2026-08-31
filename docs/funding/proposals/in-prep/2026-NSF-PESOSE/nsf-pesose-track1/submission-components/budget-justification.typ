@@ -73,7 +73,7 @@ test — NSF wrote "by the submission deadline" only in the IHE paragraph. The
 W-2 transition must nonetheless be real before the period of performance
 begins; the award cannot fund the eligibility it depends on.]
 
-== Jonathan Matthis — Principal Investigator
+== Jonathan Samir Matthis — Principal Investigator
 - *Functional title / SOC:* Computer and Information Research Scientist
   (SOC 15-1221); BLS OEWS reference:
   #link("https://www.bls.gov/oes/current/oes151221.htm")[bls.gov/oes/current/oes151221.htm]
@@ -129,7 +129,8 @@ directs proposers to budget salary support sufficient to accommodate it.
 #note[VERIFY against SciENcv Current & Pending before submission: the
 cumulative NSF person-month commitment for each senior/key person across all
 active and pending proposals must be internally consistent with the months
-requested here (Matthis 8.0, Cherian 9.0). That leaves 4.0 and 3.0 months of
+requested here (Jonathan Samir Matthis 8.0, Cherian 9.0). That leaves 4.0 and
+3.0 months of
 headroom respectively — do not let another pending proposal push either
 person past 12.0 in the year.]
 
@@ -262,8 +263,9 @@ different budget lines and are gathered here for review:
 
 Salary support for the Technical and Entrepreneurial Leads' I-Corps effort is
 carried on Line A and excluded from the \$8,500 above to avoid
-double-counting. The training team is the Technical Lead (Matthis),
-Entrepreneurial Lead (Cherian), and Industry Mentor (Dahen) — three
+double-counting. The training team is the Technical Lead (Jonathan Samir
+Matthis),
+Entrepreneurial Lead (Cherian), and Industry Mentor (Idehen) — three
 individuals, meeting the requirement that Track 1 teams budget for at least
 three and no more than five. No gifts, meals, marketing expenses, or survey
 tools are requested.
@@ -341,7 +343,7 @@ documentation, facilitation, and assessment — not product feature development.
 The balance of the work is carried by the Research Infrastructure Engineer on
 Line B, whose effort was increased for that purpose.
 
-*I-Corps Industry Mentor — \$3,000.* Endurance Dahen, an experienced
+*I-Corps Industry Mentor — \$3,000.* Endurance Idehen, an experienced
 open-source ecosystem leader, serves as Industry Mentor on the I-Corps for
 PESOSE training team. NSF's I-Corps guidance requires a few hours per week
 across the training window in addition to program meetings; the request
