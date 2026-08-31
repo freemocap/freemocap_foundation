@@ -11,12 +11,13 @@
       set par(
         justify: false,
       )
+      set text(size: 9.5pt)
 
       table(
         columns: (2.5em, 1.55fr, 1.15fr),
 
         // More vertical breathing room inside each cell
-        inset: (x: 2pt, y: 2.5pt),
+        inset: (x: 3pt, y: 2pt),
 
         stroke: 0.4pt,
 
