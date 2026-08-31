@@ -1,3 +1,6 @@
+#import "../../template/nsf.typ": budget, note, flag, suggestion, new, broader-impacts
+#import "../../template/refs.typ": c
+
 // PART 4 — Organization and Governance.  Page budget: ~1.0
 //
 // One of the four mandated Track 1 content areas:
@@ -25,53 +28,38 @@
 // that you understand the problem well enough to be worth funding. Put it
 // early in this section rather than letting a reviewer discover it.
 
-#import "../../template/nsf.typ": budget, note
-#import "../../template/refs.typ": c
 
-#budget("~1.0 page")
+
 
 = Organization and Governance
 
-_Working in Public_ #c("eghbal2020"), an analysis of open-source maintenance and sustainability,  distinguishes open-source projects by the growth of their user and contributor bases. FreeMoCap currently resembles a _stadium_: high user growth with comparatively low contributor growth, leaving a large community dependent on a small maintainer base. *Track 1 will build on that foundation by scoping the transition toward a _federation_, in which user and contributor bases grow together and technical knowledge, responsibility, and authority are distributed across the ecosystem.*
-
 == Governance Scoping
 
-Federated projects require the distribution of decision-making and knowledge such that it does not depend on any one person. Python's PEP process is one example, in which an elected steering council, trusted core contributors and editors, and a formal proposal process distribute technical authority across the community. We aim to evaluate such models against FreeMoCap's structure and scale, using interviews with maintainers of mature open-source projects during Ecosystem Discovery to supply the candidate models. 
+Healthy open source ecosystems employ methods to distribute decision-making and knowledge such that it does not depend on any one person. The Python Enhancement Proposal (PEP) process whereby upcoming software changes are announced and discussed via public Request For Comments (RFC)'s that invite community input but (critically) does not gate progress on strict consensus. NumPy and SciPy run comparable processes (NEP and SEP, respectively) for stakeholder-facing transparancy. What these share is a way of keeping consequential decisions visible and open to comment without making every decision wait on consensus. As our project grows, we will adopt these established patterns into our own ecosystem, shaped appropriately for the landscape revealed in the proposed scoping activities. 
 
-== Distributed infrastructure and community extensions
 
-A federated model requires distributed technical knowledge and the ability for
-contributors to extend the software without the core team implementing each
-addition. FreeMoCap's modular architecture provides a technical basis for this:
-the `skellytracker` interface provides an open interface through which AI-based pose-estimation models developed by different groups can interoperate with a shared scientific workflow without modification to the underlying pipeline. This interface matters because no single pose-estimation model is adequate across
-subjects. The algorithms in common use are trained on standard human datasets,
-and the requirements of biomechanical measurement differ from those the models
-were built to satisfy #c("seethapathiMovementScienceNeeds2019").
+== Distributed infrastructure and community plug-ins
 
-A community extension, in this context, is code written and maintained by
-someone outside the core team that runs against a published interface without
-altering the shared pipeline. A researcher whose subjects fall outside existing models could implement a tracker against a documented interface rather than assembling an
-entire pipeline around it, and the result would be available to everyone facing
-the same problem, while an AI method published by a computer-vision researcher can be translated into a reusable scientific workflow for users who would otherwise lack the technical expertise to implement it. Track 1 will define the review, distribution, maintenance, and responsibility structures required for this model, informed by projects already operating extension ecosystems. The resulting framework could support other community-developed capabilities, including biomechanical analyses.
+FreeMoCap's modular architecture provides a technical basis for community plug-in.  Because the component repositories are organized around fixed domains  — cameras, calibration, image analysis, reconstruction — rather than around any particular model or library, a new pose-estimation method can be adopted without disturbing the rest of the pipeline. For example, the `skellytracker` architecture exposes an open interface through which AI-based pose-estimation models developed by different groups can interoperate with a shared scientific workflow without modification to the underlying pipeline (@fig-data A) This interface matters because no single pose-estimation model is adequate across alsubjects. The algorithms in common use are trained on standard human datasets,and the requirements of biomechanical measurement differ from those the models were built to satisfy #c("seethapathiMovementScienceNeeds2019").
+
+
+A *community plug-in*, in this context, is code written and maintained by someone outside the core team that runs against a published interface without altering the shared pipeline. A researcher whose subjects fall outside existing models could implement a tracker against a documented interface rather than assembling an entire pipeline around it, and the result would be available to everyone facing the same problem, while an AI-tracking method published by a computer-vision researcher can be translated into a reusable scientific workflow for users who would otherwise lack the technical expertise to implement it.
+
+A community plug-in system are a classic protection against "scope creep" - the ecosystem can grow in capability without the core team absorbing the maintenance of every addition, and users can adopt new capabilities without waiting for the core maintainers to implement them.  Extensions that prove useful additions through community use can be pulled into the core. Community plug-ins allow for a sepration between the development of the core architecture (on availble to high level developers and trusted contributors), and softer, lower-stakes context of plug-in development. 
+
+Track 1 will define the review, distribution, maintenance, and responsibility structures required for this Community Extensions model, informed by projects already operating plug-in ecosystems and the needs and preferences of the members of our community who are likely to participate. 
+
+
 
 == Licensing
 
-FreeMoCap and its component repositories are licensed under the AGPLv3+, on the
-premise that improvements to publicly funded infrastructure are most valuable
-when they return to the broader community. The Foundation retains the ability to
-offer alternative terms to organizations whose intended use is incompatible with
-the AGPLv3+, keeping the software freely available while generating resources for
-maintenance and stewardship.
+FreeMoCap and its component repositories are licensed under the AGPLv3+.  Because so much of the landscape of closed-source motion capture operate behind proprietary servers, the AGPLv3+ is the only standard license whose terms would stop a closed-source competitor from running `FreeMoCap` behind a server endpoint while charging users for access.
+Because the Foundation holds the rights to the codebase, it can also offer alternative terms to organizations whose intended use is incompatible with the AGPLv3+ — keeping the software freely available to everyone else while generating resources for maintenance and stewardship. 
 
 == Long-term Sustainability
-The FreeMoCap Foundation was incorporated as an IRS-recognized 501(c)(3) public charity to provide an institutional home for the project, and the governance structures scoped above are intended to give that home a distributed contributor base rather than a dependence on any particular maintainer. In parallel, the Foundation will evaluate a diversified model for the long-term sustainability of this research infrastructure, including alternative commercial licensing, standardized hardware kits, training and support services, institutional partnerships, and continued grant funding. SkellyTechnologies, LLC, a separate for-profit entity associated with the project, provides an additional pathway for commercial services and other revenue-generating activities that may support the long-term sustainability of the ecosystem.
+
+The FreeMoCap Foundation was incorporated as an IRS-recognized 501(c)(3) public charity to provide an institutional home for the project. In parallel, the Foundation will evaluate a diversified model for the long-term sustainability of this research infrastructure, including alternative commercial licensing, standardized hardware kits geared towards students, with higher end software targetting more resourced labs, training and support services, institutional partnerships, and continued grant funding. SkellyTechnologies, LLC, a separate for-profit entity associated with the project, provides an additional pathway for commercial services, SBIR/STTV proposals, B2B agreements, and other profit-seeking activities that may support the long-term sustainability of the ecosystem.
 
 
 
-// -----------------------------------------------------------------------------
-// CLOSING OUTPUT SENTENCE — one sentence, no heading, naming what this section
-// produces. Keeps activity and output adjacent so the section does not read as
-// pure intention, without duplicating the milestone table in Part 7.
-// Must correspond to a row in that table.
-// -----------------------------------------------------------------------------
-// TODO: "This work produces draft governance and licensing documents, posted publicly and reviewed by maintainers of comparable OSEs."
+

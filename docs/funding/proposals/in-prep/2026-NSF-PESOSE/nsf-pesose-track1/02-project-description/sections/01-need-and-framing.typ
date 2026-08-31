@@ -3,33 +3,35 @@
 // Serves Track 1 criterion (a): a societal or national need not currently
 // being adequately addressed.
 //
-// This is where the accessibility argument goes, and it is your strongest
-// single asset: a lab that cannot afford a six-figure marker-based system can
-// run FreeMoCap on consumer cameras. State it in one or two sentences — do not
-// write a literature review of motion capture. Criterion (a) asks whether the
-// need is real and unmet, not whether you know the field.
+// SPINE NOTE: this version is organized around Jon's 2026-08-30 rewrite:
+// successful, vibrant adoption -> inflection point -> solid understanding of
+// users and landscape -> foundation for the next phase.
 //
-// Land the spine claim explicitly and early. Reviewers should know by the end
-// of page one that this is a proposal about building an organization, not
-// about writing software.
+// 01/02 BOUNDARY (this pass): §1 argues the NEED and names the decision the
+// project faces. §2 is the EVIDENCE REGISTER — numbers, architecture, published
+// use, team. Anything here that is a fact about the software's current build
+// belongs in §2. The two V2 paragraphs are flagged below for relocation; a
+// compressed replacement that keeps only the inflection-point argument is
+// proposed in their place.
 
-#import "../../template/nsf.typ": budget, note
+#import "../../template/nsf.typ": budget, note, flag, suggestion, new, broader-impacts
 #import "../../template/refs.typ": c
 
-#budget("~1.0 page")
 
 = Vision and Need
 
-Although the methods behind motion capture are well documented, researchers must often rebuild the infrastructure to assemble them into a usable measurement system when existing tools do not fit their needs. Commercial marker-based motion capture systems offer sophisticated general-purpose measurement, but remain costly and closed to modification. Newer markerless systems, driven by advances in computer vision, have lowered those barriers but are often built around the needs and assumptions of particular fields. Researchers working outside those assumptions (for instance, anyone measuring a non-human animal) are left to learn and implement components common to multi-camera markerless motion capture systems themselves. These include video recording and synchronization, camera calibration to recover each camera's position and optical parameters, 2D pose estimation using AI models to locate anatomical keypoints, 3D reconstruction by triangulating those keypoints across camera views, and post-processing and analysis. Rebuilding this infrastructure across projects duplicates technical effort and reduces the return on public research investment in software that is difficult to maintain, reproduce, or transfer beyond the environment in which it was developed.
+FreeMoCap #c("queenFreeMoCapFreeOpen2024") is a free and open-source markerless motion capture software system that produces research-grade full body kinematic data from generic cameras (@fig-overview). Built and maintained by the FreeMoCap Foundation since 2021, it has grown organically into a vibrant, successful project with a global community of students and professional researchers, educators, and artists distributed across more than 150 countries. 
 
-*There is therefore a need for accessible, shared research infrastructure that allows specialized motion capture adaptations developed by one community to be contributed back and reused by others, requiring defined stewardship and governance as much as software.*
+The project's broad adoption and continued growth reveals the real and unmet need that FreeMoCap answers. Quantitative movement measurement underpins work across biomechanics, neuroscience, rehabilitation, and animation, yet the instrumentation required to obtain it remains out of reach for most of the people who need it. Conventional marker-based systems are accurate but costly, and existing markerless tools are often built for the needs of particular fields and locked into preset workflows or specific hardware. By running on consumer-grade cameras and following established patterns for the development and management of free-and-open-source-software (FOSS), FreeMoCap provides a validated, research-grade measurement tool appropriate for both high level research laboratories, as well as classrooms, garage labs, and basement mocap studios #c("cherianOpensourceDevelopmentValidation2026").
 
-FreeMoCap #c("queenFreeMoCapFreeOpen2024") provides an existing technical foundation for this model. Maintained by the FreeMoCap Foundation, FreeMoCap is
-free and open-source software that transforms synchronized video from
-consumer-grade cameras into research-grade 3D motion-capture data through a
-modular workflow (@fig-overview). This proposal requests Track 1 support to *scope the organizational and infrastructure requirements needed to transition FreeMoCap from an open-source project maintained by a small core team into a secure, sustainable, community-driven ecosystem.* 
 
-#figure(
-  image("../../figures/overview_v2.png", width: 100%),
-caption: [The FreeMoCap workflow and its component repositories (blue). (A) Synchronized video from consumer-grade USB webcams (skellycam) is processed through camera calibration and 3D reconstruction (skellyforge) and modular pose estimation (skellytracker), producing 3D motion trajectories for downstream analysis or animation export. Separation of the pipeline by domain allows individual components to be modified or replaced independently. (B) Reconstructed 3D trajectories alongside the source camera views.]
-) <fig-overview>
+FreeMoCap now sits at a critical inflection point in its growth curve. As is common for mid-scale FOSS projects, our user count has grown far faster than its maintainer base, a community pattern that Nadia Eghbal's seminal exploration of the landscape of open source software _Working In Public_ refers to as a "Stadium" #c("eghbal2020") - many users relying on the output of a proportionally tiny team of developers. If growth in the user base continues to outpace its maintainers, the growing weight of support runs the risk over overwhelming the core team. Sustaining the project through this period requires building the organizational and community infrastructure that supports a transition toward what Eghbal calls a "Federation,"  a pattern representing a healthy balance of user and contributor growth, allowing technical knowledge and responsibility to be distributed across the community. 
+
+#include "../floats/fig-overview.typ"
+
+Our technical infrastructure is strong, but our understanding of the landscape of our community of users is limited. Beyond basic in-app telemetry and our experience interacting with the relatively small percentage of users that explicitly speak up in our public forums, we do not have a reliable account of who our users are, what their needs are, and how our current infrastructure is failing to meet them. As we transition into the next phase of our development, it is critical that we develop a clear undestanding of our users so that we can align our technical roadmap, organizational structure, and community infrastructure with the actual needs, applications, and challenges of our primary stakeholders.
+
+This proposal requests Track 1 support to scope the foundation for future growth: understanding our *community landscape* and its needs; developing *documentation and upskilling pathways* that convert user interest into contributor capacity; governance practices that create *transparency and productive communication* between the core maintainers and the wider community; a *validation and benchmarking methodology* that other laboratories can replicate; and a *sustainability model* for the maintenance the software will require.
+
+
+

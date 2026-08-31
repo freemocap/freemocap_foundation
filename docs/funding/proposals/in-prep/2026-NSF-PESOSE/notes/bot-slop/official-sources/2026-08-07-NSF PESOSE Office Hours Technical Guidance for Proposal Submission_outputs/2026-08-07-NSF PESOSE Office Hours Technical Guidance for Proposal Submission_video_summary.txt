@@ -1,0 +1,223 @@
+## SOURCE INFORMATION
+--------------------------------------------------
+Source Type: YouTube Video
+URL: https://www.youtube.com/watch?v=1F9D6mzqvLQ
+Video ID: 1F9D6mzqvLQ
+--------------------------------------------------
+
+# NSF Proposal Submission Logistics 
+
+Title slug: nsf-proposal-submission-logistics
+
+
+## One Sentence Summary
+This webinar provides a comprehensive guide to the technical aspects of submitting proposals to the National Science Foundation (NSF) via Research.gov, detailing registration processes, role assignments, document requirements, and key submission tips and deadlines.
+
+## Executive Summary
+This webinar, led by Stephanie Yee, offers essential logistics for submitting proposals to the NSF, particularly for the PISO solicitation. It covers crucial steps like SAM.gov and Research.gov registration, assigning roles such as PI and AOR, and understanding sub-recipient requirements. The session highlights the preference for Research.gov over Grants.gov and advises on document preparation, including Science CV, and outlines specific formatting and collaboration guidelines. Emphasizing early preparation and system navigation, the webinar aims to streamline the proposal submission process.
+
+## Topics Detailed Summary
+The webinar provides a detailed guide to NSF proposal submission, primarily focusing on Research.gov for its custom-built application and comprehensive features. A critical initial step for all applicants is organization registration with SAM.gov, which involves obtaining a UEI number and completing full registration, recommended 15 business days in advance. Following SAM.gov, organizations must register with Research.gov and assign crucial roles: Administrator, Principal Investigator (PI), and Authorized Organizational Representative (AOR). Sub-recipient organizations only require a UEI number, with options for full SAM.gov registration or manual addition via the Research.gov service desk. 
+
+The session highlights document preparation, particularly for senior key personnel, requiring four documents per person, two of which must be generated from Science CV (an NIH-hosted system), necessitating extra time (10 business days prior to the deadline). New features include an integrated web-form for data management plans. Solicitation-specific requirements, such as mandatory 'other supplementary documents' (e.g., letters of collaboration), are stressed, along with strict font and line spacing guidelines. 
+
+The webinar explicitly advises against using Grants.gov for NSF proposals due to missing forms and complexities, strongly advocating for Research.gov as the end-to-end solution. It clarifies that a single person can hold multiple roles (AOR, PI) within smaller organizations, and every individual needs a unique NSF-ID for system access. The process for administrators to register organizations and assign roles in Research.gov is detailed, emphasizing the 30-minute processing time for role assignments and the importance of early completion. 
+
+Common errors and validation checks are discussed, distinguishing between red (mandatory fix) and yellow (advisory) warnings. The importance of sharing the proposal immediately after creation is underscored to facilitate collaboration and notify AORs. The webinar concludes with distinctions between collaborative proposals, collaborators, and letters of collaboration, noting that only a single proposal submission with collaborating organizations is permitted for this solicitation. Attendees are directed to submit detailed questions via email, and information on future webinars covering proposal preparation, budgeting, and a program overview is provided.
+
+## Complete Topic Outline
+### NSF Proposal Submission Logistics Overview
+> An introduction to the webinar for PSOs on submitting proposals to the NSF, outlining the presenter's role and the scope of topics to be covered.
+- Welcome and Purpose
+  - Welcome to the US National Science Foundation webinar for PSOS.
+  - Focus on logistics for submitting proposals, creating accounts, and getting roles for NSF.
+
+- Speaker Introduction and Role
+  - Stephanie Yee, from the office of the Chief Information Officer.
+  - Point person between IT service desk, developers, and program.
+
+- Webinar Scope and Key Topics
+  - Mainly on the technical piece of submitting a proposal to NSF, complementing program webinars.
+  - Key topics include pure logistics, pre-proposal steps, highlights of complex sections, newer sections, and solicitation-specific requirements.
+  - Also covers Grants.gov and how to get help.
+
+- PISO Solicitation Deadline
+  - Applying to 26-506, the PISO solicitation.
+  - Deadline: September 1st, Tuesday, 5 PM submitters local time.
+
+### Grant Application Systems and Requirements
+> Overview of the primary systems involved in grant applications, including SAM.gov, Research.gov, and Grants.gov, and their respective roles, along with document preparation and specific solicitation requirements.
+- Submission Options
+  - Two main options for submission: Research.gov side or Grants.gov side.
+  - Grants.gov users have an additional registration step.
+
+- System Distinctions
+  - SAM.gov is a federal-wide system for doing business with the federal government, not NSF.
+  - Research.gov is the core website for NSF business and organization registration.
+  - Grants.gov is an optional third step for NSF proposals; Research.gov is the recommended end-to-end solution.
+
+- Registration Requirements
+  - Must register organization with SAM.gov first.
+  - Then register organization and roles (PI, co-PIs) in Research.gov.
+  - Grants.gov requires additional registration steps if chosen.
+
+- Senior Key Personnel Documents
+  - Four required documents for each senior key personnel (PI, co-PIs).
+  - Two documents must be obtained from Science CV.
+  - Science CV is hosted by NIH, requires a different login, and is not an NSF system.
+  - Requires extra time due to potential technical difficulties; recommend starting 10 business days before the deadline.
+
+- Data Management Plan
+  - New integrated web form instead of a file upload.
+  - Meant to be flexible with user-defined fields.
+
+- Solicitation Specific Requirements
+  - Separately submitted collaborative proposals are not allowable.
+  - Optional for most NSF proposals, but mandatory for this solicitation: Other Supplementary Documents.
+  - Requires letters of collaboration and a list of project personnel, collaborators, and partner organizations.
+  - Recommend tabular format but caution against violating page size limits.
+  - Project description page format requirements vary by track (e.g., track one vs. track three); applicants are responsible for compliance.
+
+- Proposal Formatting and Upload
+  - Specific font families: Arial, Choreo, New, or Palatino, Linotype of 10 or larger.
+  - Not more than six lines of text per vertical one inch of space.
+  - LaTeX users: Test documents early and often; utilize the provided GitHub site for templates and testing.
+
+### NSF Registration and Role Management
+> Details the process for organizations and individuals to register with NSF, manage roles for administrators and PIs, and clarifies subaward structures and other related questions for proposal submission.
+- NSF-ID Requirement
+  - Every person needs a unique NSF-ID with a unique email address.
+  - Takes less than a minute to obtain an NSF-ID.
+
+- Organizational Registration (Admin's Role)
+  - After SAM.gov registration, admin goes to NSF 'My Profile' > 'Organizations and Roles' > 'View My Roles'.
+  - Add a new role via 'add a new role' link, focusing on 'add and manage organizations'.
+  - Enter the UEI number to search for and register the organization.
+  - Confirm organizational details like time zone and address.
+  - Organization becomes registered at NSF after submission.
+
+- Admin's Role in Assigning Roles
+  - Admin can give out roles to employees.
+  - Recommended for admin to perform all steps for complete control.
+  - Admin clicks 'View My Users' (only visible to administrators).
+  - Add user by clicking 'Add User', searching for the person, and clicking 'Continue'.
+
+- Assigning Specific Roles
+  - A popup shows available roles (e.g., PI, AOR).
+  - Multiple roles can be assigned to one person (e.g., PI and AOR).
+  - Roles take up to 30 minutes to apply across the system.
+  - Emphasizes completing role assignments well in advance of deadlines.
+
+- PI Role for Proposal Initiation
+  - The PI is the only role that can start a proposal.
+  - Having the PI role grants access to 'prepare and submit proposal' link.
+  - To create a new record, select 'full proposal'.
+  - If 'full proposal' is grayed out, it indicates the absence of the PI role.
+
+- Subaward Structure and Limits
+  - Subaward organizations only need a UEI number.
+  - If not fully registered, subaward organizations must contact research.gov to be manually added to the system.
+  - There is no limit on the number of subaward organizations that can be added to a proposal.
+
+- Indirect Cost Rates and Standards
+  - Questions on indirect cost rates, FAR, and UG should be sent to the PSOS mailbox for a fuller response.
+
+- New Performer Review vs. NSF Registration
+  - Clarification that 'New Performer Review' is different from the discussed NSF registration process.
+  - New Performer Review relates to having awards and will be covered in a separate webinar.
+
+### Proposal Submission Details and Tips
+> Guides users through the initial steps of preparing a proposal, emphasizing crucial validation checks, managing personnel and subawards, and handling data management plans.
+- Initial Setup
+  - Step 1: Select the funding opportunity (e.g., 26-506).
+  - Step 2: Review where to apply (read-only section).
+  - Step 3: Select proposal type (default 'research').
+  - Step 4: Enter proposal details and type, including a 'test title' for illustration.
+
+- Error Correction
+  - Mistakes in any of the first four steps (except title) require restarting the proposal.
+  - The title is the only changeable field after initial setup.
+
+- Uploads and Compliance
+  - Main proposal section uploads with required fields.
+  - Compliance status indicated by green checkmarks or red X's.
+
+- Error and Warning System
+  - Left-hand side provides 'proposal actions' like printing, forwarding, submitting.
+  - The 'check errors and warning button' shows mandatory fixes for submission.
+  - Red errors must be corrected.
+  - Yellow warnings are advisories and do not prevent submission but recommend a double-check.
+
+- Adding Subawardees
+  - Subawardees don't need full registration but can be fully registered or have a UEI number manually added by NSF research.gov.
+  - Searching for subawardees shows organizations with full registration or those manually added.
+
+- Adding Personnel
+  - CoPIs, senior key personnel, or other authorized users can be added.
+  - Personnel can be added by NSF IDs, emails, or name.
+  - A common issue is not finding people because they may not have provisioned roles yet.
+
+- Project Description
+  - Largest part of the proposal, either 7 or 15 pages depending on the track.
+  - Validations check for page limits but do not 'read' the proposal title to know the track.
+  - Strictly no URLs allowed to prevent bypassing page limits, including hidden links or text containing 'www' or 'HTTP'.
+
+- Data Management Plan
+  - A web-form field, self-intuitive to follow instructions.
+  - Users define their own data products; no predefined fields for this solicitation, unlike some others.
+  - Provides flexibility for users to define values like 'test product'.
+
+- Early Sharing
+  - Initially, only the creator knows the proposal exists.
+  - Recommended practice is to share the proposal immediately after creation.
+  - Sharing notifies the AOR office and authorized users via email, allowing them to update, edit, or modify.
+
+### Collaboration Guidelines and Platform Choice
+> Clarifies the differences between collaborative proposals, collaborators, and letters of collaboration, details the allowed proposal submission types, and provides guidance on how to find Authorized Organizational Representatives (AORs) and leverage Research.gov versus Grants.gov for submissions.
+- Distinction of Terms
+  - Collaborative proposal: an arrangement where all submissions are equal, without a lead organization.
+  - Collaborator: an arrangement with the project or group submitting the proposal, indicating a relationship to the project.
+  - Letter of collaboration: a formal expression of one's role with the project, with details to be covered in another webinar.
+
+- Proposal Submission Types
+  - Not allowed: Collaborative set where multiple organizations each submit their own proposal with separate IDs.
+  - Allowed: A single proposal where one organization submits, potentially working with other organizations, but under one proposal number.
+
+- Role and Decision-Making of AOR
+  - The AOR makes decisions regarding the feasibility and allowability of proposals.
+  - For small nonprofits, the owner might be the AOR.
+  - For academic institutions, decisions are typically made by a sponsored research office.
+
+- Finding the AOR
+  - Instructions on locating the AOR when sharing a proposal within the system.
+  - Recommendation to contact R.gov at NSF if the AOR cannot be identified through the system.
+
+- Research.gov Advantages
+  - Research.gov is completely self-contained, allowing users to remain within its environment.
+  - Eliminates the need to use Grants.gov for submission.
+
+- Grants.gov Disadvantages and Warnings
+  - Most NSF proposals are not submitted through Grants.gov due to its complexity.
+  - Many required forms for NSF are not available in Grants.gov.
+  - If using Grants.gov, allocate at least five business days for submission.
+  - Avoid submitting on the day of the proposal deadline via Grants.gov due to multiple processing steps and potential need for corrections in Research.gov.
+
+### Webinar Conclusion and Future Resources
+> Covers the concluding remarks of the webinar, including instructions for questions and announcements of future resources and sessions.
+- Question Submission and Follow-up
+  - Detailed questions should be submitted to the PSOS mailbox (PSOS at nsf.gov).
+  - Submitting via email ensures right references and allows for back and forth communication.
+
+- Availability of Resources
+  - Webinar slides will be posted on the PSOS website within a couple of days.
+  - The webinar recording will also be available, along with past webinar recordings.
+
+- Upcoming Webinars
+  - One upcoming webinar will cover proposal preparation, budget, and letters of collaboration.
+  - Another upcoming webinar will be a more generic and broad overview of the program due to many questions.
+
+- Acknowledgements
+  - Thanks given to Stephanie for a fantastic session and good participation.
+  - Thanks to everybody who attended and encouragement to continue submitting questions.
+
+

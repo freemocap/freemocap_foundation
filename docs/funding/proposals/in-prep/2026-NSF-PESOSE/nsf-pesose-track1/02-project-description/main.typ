@@ -1,34 +1,53 @@
 // =============================================================================
 // PROJECT DESCRIPTION — NSF 26-506 Track 1
+// Single-file layout retired 2026-08-30: back to main.typ + sections/ + floats/.
+// All per-part guidance comments live in their section files.
+// =============================================================================
 //
 // HARD LIMIT: 7 pages. Figures, charts, and tables all count.
-// No URLs anywhere in this document (use `c("key")` from lib/refs.typ).
+// No URLs anywhere in this document (use `c("key")` from template/refs.typ).
 // Must include a "Broader Impacts" heading on its own line.
 //
 // Build:
-//   typst compile --input draft=true main.typ   # with page counter + notes
-//   typst compile main.typ                      # submission build
+//   typst watch main.typ                        # live preview (draft is the default)
+//   typst compile --input draft=false main.typ  # submission build
+//   ./build.sh final                            # all sections, submission mode
 //
-// THE SPINE — every sentence in this file should be load-bearing for:
+// THE SPINE (v2 — see notes/spine-spec.md):
 //
-//   "FreeMoCap is already a working product with real users; what does not
-//    exist yet is the organization that would let it survive independent of
-//    its current maintainers — and twelve months of scoping is what produces
-//    the credible plan for that organization."
+//   FreeMoCap is a validated measurement instrument with an organically
+//   growing community of users spanning students/professionals and
+//   artists/researchers. Its maintainer base has not grown symmetrically:
+//   in Eghbal's terms, the project has the structure of a "stadium" — high
+//   user growth, stagnant maintainer growth — the common structure of
+//   mid-scale open source projects, not a project-specific failure. The
+//   software's recent full rebuild (V2, in alpha) — polyrepo separation,
+//   client/server architecture, one-click professional desktop installer —
+//   lowered the technical cost of contribution and creates the decision
+//   window: what remains is organizational rather than technical. Track 1
+//   funds the scoping and discovery, in service of Track 2, of five areas:
+//   community landscape and needs (Part 3); documentation and
+//   contributor-upskilling pathways (Part 6); governance and contribution
+//   practices (Part 4); validation and benchmarking methodology (Part 5);
+//   sustainability model (Part 4).
 //
-// The sentence-level test, in priority order:
-//   1. Does this make the ECOSYSTEM more believable, or just the SOFTWARE
-//      more impressive? (Cut the latter.)
-//   2. Is this existing evidence, or planned activity? Never blur them.
-//   3. Which Track 1 review criterion does this serve? If none, cut it.
+// TONE RULES: no branded constructs; no dramatized stakes; declarative,
+// evidence-first; stadium/federation vocabulary defined once, cited once,
+// used sparingly; honest about limitations without self-flagellation.
 //
-// The four Track 1 review criteria this document is graded against:
-//   (a) Convincing case that the OSE addresses a societal or national need
-//       not currently being adequately addressed
-//   (b) Clear long-term vision for sustaining the OSE
-//   (c) Recruitment strategy for new contributors and for growing the userbase
-//   (d) A specific, actionable list of milestones and an evaluation plan
-// =============================================================================
+// V2 GUARDRAIL: Track 1 funds planning, not product development. V2 appears
+// only as evidence of active maintenance and motivation for organizational
+// scoping — never as funded work.
+//
+// CITATION RULE: proposed citations appear as // comments only. Nothing
+// enters the rendered text or the .bib until Jon validates it in Zotero.
+//
+// TEXT LIFECYCLE: #suggestion (proposed, green) -> #new (accepted, blue,
+// tracked) -> plain prose (settled).
+//
+// The sentence-level test stays subordinate: (1) ecosystem-believable, not
+// software-impressive; (2) evidence vs. planned activity, never blurred;
+// (3) which Track 1 criterion does it serve.
 
 #import "../template/nsf.typ": nsf-doc, DRAFT
 
@@ -49,6 +68,4 @@
 #include "sections/06-community-building.typ"
 #include "sections/07-milestones-evaluation.typ"
 #include "sections/08-broader-impacts.typ"
-// #include "sections/09-prior-nsf-support.typ"
-
 

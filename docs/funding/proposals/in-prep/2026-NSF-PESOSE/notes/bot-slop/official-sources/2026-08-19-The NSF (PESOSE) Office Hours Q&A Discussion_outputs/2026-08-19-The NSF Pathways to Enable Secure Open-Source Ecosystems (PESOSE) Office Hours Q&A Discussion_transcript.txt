@@ -1,0 +1,715 @@
+TRANSCRIPT: 2026-08-19-The NSF Pathways to Enable Secure Open-Source Ecosystems (PESOSE) Office Hours Q&A Discussion
+============================================================
+Source: https://www.youtube.com/watch?v=Yvqb1tsBSEk
+
+
+So welcome everybody. I see that we just opened up the webinar, so we'll give it a minute to get everybody on and we'll jump into the Q&A.
+If you're here for PSOS, you're in the right place. If you're not, feel free to drop out.
+And what we're going to do today is an open mic. However, we're going to start with some certain topics. So if you've been on some of my previous webinars, the last one we had about 3 hours. We won't have 3 hours today, but we will have a solid hour and a half. So we're going to try to move through this quickly.
+And I have my colleague, PD colleague, Marlon Pierce is on the line, so he's going to help us with Q&A. I'm going to ask that you put those in the Q&A queue. To the extent that we can get to everybody, we will. If not, I'm going to start just sending responses kind of in mass on some common questions we get.
+Expected, M.D.S. So I am going to ask, do we have a critical mass of questions in the Q&A box, Marlin?
+Well, how are you doing that? I want to remind everybody of the mailbox. You've got questions, generic ones, or very, very specific ones.
+Expected terms, and I think I'm going to start with the other one.
+I'm going to ask you to do is if you have a question, raise your hand.
+We're going to start with something other than iCore.
+I got a lot of questions the last time we used about 50% of our time on iCore.
+We will get to the next one.
+and I think we have a question that we have to do with the technology or something more focused on the project itself. So if you've got a question, please raise your hand and then I'll call on you. We're going to ask you to do one question per person and then I'll just keep cycling those through. So do we have anybody with a question? You want to raise your hand and come off mic?
+And Ross your name popped up So Ross want to help us with your question Yeah can you hear me If you could speak up a little bit the sound is a little bit low All right I just gonna yeah I just talk louder Is this better
+It is.
+All right, all right. So we have a hardware OSP, and we are planning to organize some build workshops.
+So basically having researchers come out and get hands on and actually build up some of the hardware.
+Richard Schindler, RR Dapurgo, SkellyForest, M.W.P.: We were wondering if we would be able to use some of the funds to subsidize some of the hardware costs for those workshops and or subsidize the travel of researchers.
+Elizabeth Petroffi, M.D.: yeah so let me ask let me answer your broad question, we get this a lot good. This is not a program for R&D.
+Elizabeth Petroffi, M.D.: So any kind of research and development is a no, it's a strong no for this program.
+Jennifer Morintho, E.J.: However, it's all about framing. If that building the hardware or touching the hardware as part of building the ecosystem, it's an engagement like a hackathon, have at it. That's absolutely appropriate. Participant support is what you're asking about in the NSF clearance. that is permissible.
+Jennifer Morintho, The one exception to that is you may not support through the NSF funds international engagements either on the proposal or through workshops.
+So you'd have to find another mechanism to support individuals if they want to participate. So more broadly, international participants in terms of paying from the award is not permissible, nor is a member of the team. They can still be and participate. You would just have to find other mechanisms to do that. Okay. Yes, we're going to follow up on that. Just quickly, we're going to be really fierce because we only have an hour and a half today. So quickly. Understood. Yes. So,
+If I heard you correctly, so these are the hardware is something that the participants themselves would be purchasing. And the idea was that the workshop would be more of like a training. Is a training okay?
+So remember, this is about building an ecosystem.
+Right.
+And building developers, contributors, governance structures, strategies, depending upon if you're track one or track two. So it's all about framing.
+Expected terms.
+Expected terms you can see the data which is an example so it a really good So you want to think about this Ross and how you frame I hope that helps Okay Yep
+Brian, you have your hand up.
+Okay, I'm unmuted. Great. So we have an open data set, and that data set allows you to connect people to research and companies so that you can actually traverse the ground. So there's a bunch of reference IDs.
+Expected, and the data sets in particular in the proposal is there anything specific that we should make sure that we include. Like should we be including a link to the data assets themselves, a schema, a data dictionary? I'm just kind of wondering like what's best practices there.
+Erin O' Yes, a couple of things. You're building an open source ecosystem. You are required, everybody online, you are required to show a link to your asset. That is required. Please read the solicitation.
+Expected, R1.
+So that actually tells you where to put that link.
+Expected, R1.
+Most of the time for track one, depending upon how mature the system is or the asset, reviewers
+won't be digging deep into it and commenting on it other than if you bill yourself as a
+mature ecosystem and they get into the link and they don't see it or their activity doesn't
+reflect that, that could be a problem.
+I will say data sets in and of themselves is not good enough.
+you have to talk about the intellectual merit of that asset or that product. So if you're not familiar with the NSF review criteria, please look at those. So what is it about this data set? How is it going to be advancing knowledge? What are the broader impacts that come out of that? So this is not a data set effort. They're not prohibited, but in the context of building an open source ecosystem,
+Expected, Ds. What we want to know is how important is that data set? How is it going to move intellectual knowledge forward? What's unique about this? What technology communities does it serve? Hope that helps. Brian?
+Brian F. Yes. Yep. Thank you.
+Expected, Ds. OK. Thanks, David. David disappeared, so I'm going to... Nicholas.
+Hello Yes Nicholas and then I see David hand up so we circle back after you done Yes please Nicholas Eisner Your question Nicholas Eisner Yes so we have a Nicholas Eisner Software system
+Nicholas Eisner- That is used. I'm just wondering the scope of the ecosystem.
+Nicholas Eisner- And I request the next rule for
+Nicholas Eisner- Hello. I was wondering what the
+Nicholas Eisner- Sorry, there's a little thing.
+The scope of the ecosystem. So we have one GitHub that is software that's creating systems that other people use. And then we also have other GitHub's software that we're working on that is connected. They're not the same GitHub repository. So is it okay to have multiple repositories that are under this whole ecosystem? Because I mean, the ecosystem is sort of this way.
+So we have a specific one GitHub repository, but there are many connections into it that we are also a part of.
+So we're agnostic on how many get connected. You have to sell the reviewers in NSF that the ecosystem you're building and the assets you're bringing forward make sense.
+So it's not about the number of products. It's about the technology. How are you going to advance the intellectual merit of this?
+of this? How are you going to advance knowledge? What's the broader impacts? So data and data platforms in and of themselves, and just a database that gets presented in that or a piece of software, is not for this program. It's about building that ecosystem, the data maintainers, the contributors, the governance structures, everything around it that will help the effort that you're trying to execute be self-sustaining.
+Expected, Nsf. So it's really about how you present that to NSF. You must, as part of the proposal, you must speak to the maturity of your ecosystem.
+Expected, Nsf. You must speak to the maturity of the asset or assets. If you've got multiple assets, you want to convince the reviewers there's some synergy or there's some reason, or maybe they're working on multiple pathways.
+If you try to sell a mature ecosystem with these multiple sets and there's no governance structure or strategy to deal with these multiple assets, then that's going to be a problem. So the answer is we don't have any bounds. You define what the bound is or the scope, you convince the reviewers that it makes sense,
+
+Expected terms and the RDA SISD.
+If you want to build a structure or strategy to deal with these multiple assets then that's going to be a problem so the answer is we don't have any bounds you define what the bound is or the scope.
+Expected terms and the RDA SISD.
+Expected terms that here, I can see several reasons that you might have multiple assets but there must be an underlying theme or objective for pulling these things together and bringing all these contributors and maintainers etc together.
+Lisa Thompson, Orpheus, Deseweiler, M you're scanning the Q&A for us. Are you seeing any kind of common theme while we wait for others who want to raise your hand?
+March-Lol, Well, this is my four questions of course but we're going to take those or you're going to take those in a minute.
+Expected, MediaPie, ChArUco, Ops, DeepSem, SkellyTracker, Tt.
+to this question again.
+And I did attend last week.
+Thank you for that as well.
+So this is like a follow-up question from last week.
+So again, we're a Track 1 proposal from an academic institution.
+The issue with the asset, the core technology that is going to be enclosed in this open source
+ecosystem is that the technology, a lot of the core development was done by developers
+at an FFRDC.
+And so I understand that there's some stipulations for getting FFRDCs involved as funded
+collaborators. Some key elements that I think they would be essential at is identifying security gaps and addressing security gaps, as well as the open source licensing element, because they are a core contributor. Institutional requirements at their institution would require them to be involved in the licensing part and other potential governance aspects of the open source ecosystem. And so I understand that one of the stipulations is that if they're considered a
+Doce if this is considered a special project there might be exceptional circumstances that would allow for their involvement Obviously they can leave this so that not the intention but the intention here would be to have some kind of a special circumstance allowing them to be a funded collaborator contributor Expected pardewiddy ESPE amanda and K
+Vs.
+This is what David is asking.
+Here is what you want to do.
+You think about the money flow.
+How will they get paid?
+This is going for NSF.
+Why?
+NSF can't be using funds to support something that their institution or a government agency
+is funding through that institution.
+NSF has FFRDC, so we can't be double funding things.
+So the reason why you ask you to send us an email and tell us the details is because it's very hard to know to explain or give you a yes or likely without seeing the details.
+So what I would encourage you guys to do if you have an FFRDC, you want to get them engaged, there's some very specific limitations on that.
+So go to the solicitation, it talks about their participation as a co-PI senior personnel.
+If they don't fall into that category and they bring a special skill set, you need to tell us about that. Why would you go to the FFRDC to do this? Why them? And then let us know about that and then we can give you a read on it.
+So that's the logic and thinking around that is what special skill set are they bringing to the table that you wouldn't otherwise be able to get? And then how does the money flow? How do you expect to compensate them?
+either directly through the award or there was some other mechanism. For them to get involved in any other piece of this, ecosystem building, we don't have a problem with that, especially if they're not one of those key positions. Does that help, David?
+That helps a lot. I'm just curious too, in that line of communication logic that you recommended, should we copy the FFRDC individuals, those co-PI principles?
+No just send it to us and then if we need you know at some point if we get far enough in the process we reach out to the FFRDC if we need to But the point is you really need to demonstrate to the government why you going to a federally funded research and development center to get a set of skills Right That the crux of the issue and potential overlap and funding that the government entities could have
+Expected, thank you.
+STEIANG KONISIPEI- All right.
+Expected, Xu Li or Li Zhu?
+Xu Li-Zu, can you hear me?
+Yeah, I have a question about my project. It's Track 3 security. So we are trying to build a tool actually helping the open source community to detect the bugs. So my question is about hardware and the workshop. We also think about those two options. But hardware we are thinking about to run in our system to automatically detect those bugs and actually tell the developers, okay, you have those bugs.
+We feel it's actually better to run our systems because they may not have the hardware to run our approach.
+So we wonder if the hardware can be budgeted.
+The second question is also about the workshop.
+So we are thinking about having the workshop just to hopefully have the OSS developers and the communities to learn more about building a secured OSS software.
+So we wonder if this can be supported by this funding.
+That's my question.
+Expected, MediaPierre J. So this is a bit of answer broadly. So everybody can hear about this. If you want to purchase infrastructure.
+Expected, MediaPierre J. You really need to make the case for that, right? Because this isn't an infrastructure building in the traditional sense.
+Expected, MediaPierre J. Where we're interested in buying computers and computer systems, we understand that there needs to be infrastructure for testing and sandboxes, etc.
+Expected, MediaPierre J. So you're gonna have to make a strong case for it. It's always about balance.
+RTMPose, Co-GNB, OX, DinePreendo, RTMPose, DinePtreet, RTMP, OX, DinePtreet, RTMPose, DinePtreet, RTMPose, MD, YO and DinePtreet.
+RTMPose, DinePtreet, RTMPose, DinePtreet, RTMPose, DinePtreet, RTMPose, DinePtreet, RTMPose, DinePtreet, RTMPose, DinePtreet, RTMPose, DinePtreet, RTMPose, P.J.D. RTMP, S&P, SL&R, MT.D, RTMP!
+RTMPose, P.J.D. RTMP, S&P, PLUS, DinePtreet, RTMP.
+LITER, RTMPose, OPS, DerePtex, MediaPie, NessiePtre, RCC.
+Expected S-CaLam, SkellyForge, SDR, RTMPise, RECK, JioX.
+Expected S-CaLam, Ski-JayForge, SXX.
+Expected S SZP Expected S Ski S Expected S S S S S Expected S S Expected S S We are talking about time Everything we do is about impact so when you solving your problems you want to be thinking about what current problem are you solving What are you going to convince NSF that problem has some applicability and a broad reach in the community I hope that helps And then the workshop and training I would say
+Expected your overall experience.
+Expected your overall experience.
+You've got to convince us that that activity that you want to do, which is teaching as I hear it, this learnings, has something to do with what you're supposed to be doing in the Track 3.
+Which is solving vulnerabilities. I could make the case. I can see that you could make the case.
+But it's all about framing. So you want to think about how does that learning directly impact the work that you're trying to do or accomplish.
+Expected.
+Expected.
+Expected.
+I want to make sure it's not just framed as a separate activity happening to teach people how to do cybersecurity.
+That won't really be received well.
+You have to connect it back to the objective of the award.
+Does it help, Shu?
+Yeng-Yung-Yung-Yung-Mae, your hand is up.
+Yeng-Yung-Yung-Yung-Mae, your hand is up.
+Expected, M.M.M.A. Your hand is up.
+Expected, M.M.M.A. All right.
+Expected, M.M.M.A. I have two questions related to the budgeting.
+Expected, M.M.M.A. So I've heard that you're saying that you can budget like expense up to 30K,
+Expected, M.M.M.M.A. and I was proposing that, okay, the PI and the Co-PI have some salary.
+Expected, M.M.M.A. Is it okay to budget additional compensation for anyone who participate in the I-Corp training?
+because I've envisioned not all of my co-PI will participate in iCorp training. Is that correct?
+Yes. So I'm going to make this more general for everybody on the phone. So if you are proposing and you've never attended iCorp training, you have the opportunity to fund up to $30,000 of your budget and set it aside for compensation.
+Jennifer Crissingale, OSU.
+Bola Obechich, OK?
+Ctharulph Thomas, OK It can be zero. It can be one dollar. It can be thirty thousand.
+Dina Romp희, You can you can include as many people as you want in that, but we're going to limit you to 30 K. I would just say, be carefully your budgets.
+If you're consuming all of your budgets in ICORE training
+Dina Romp희, Or you're taking away from some other activities that could be a problem.
+You want to think about your strategies. How are you compensating people, the core people that make sense, that are going to be around for continuity purposes? In some cases,
+
+LORINDA WATEROVASERON, RTMPose, MIA CAHUEV de la FDFWOUS, DGDDRUS, MIA CAHUEV de la FDFWOUS, A LEVEL OF PIRAL GALAVATE SO BASED INCREDIENTS, MAGICRAVOR ROADS, FLYM DO CBE CONVERSATIONS TO ORGANIZATIONS OR ABLE TO LET ME FURCHRICE CHANGED WITH THE BEST SHIPTERS WERE OUR STRATEGIES.
+LORINDA WATERON, FLYM CLOSED CAP, OTHER RATE EXCIT, SOMEBODY MOUNTAIN LIVES TO MAKE SUCCER FRIMLEY AND APPLAIN.
+LORINDA WATERON, FLYM CLOADER AND PHYMPL, OUTSUNABLE PIS.
+Kim!
+Sgayak, JSEY, STAN, GXD!
+E,NC, GXD!
+SHZGAZE KLEAGAN TORCHFITS!
+do UbiWuWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUEEWWUWUWUWUWUWUWUWUWUWUWUWUWUHUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUJEW WUJUEWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWUWAWUWUWUWUWUWUWUWUWUWU
+Ex begged, D'Ari, Tsa, Akina, Cahida, Llees of course Cp.
+Ex wanted to take it Exor and that is our model that we know where today and CEO of course CpE was really is that we learn today.
+Anna Gonzalez-Werroor, ECG.
+Anna Gonzalez-Werro, ECG.
+Anna Gonzalez-Werro, ECG.
+Anna Gonzalez-Werro, ECG.
+Anna Gonzalez-Werro, ECG.
+Anna Gonzalez-Werro, ECG.
+Anna Gonzalez-Werro, ECG.
+Anna Gonzalez-Werro, ECG.
+Anna Gonzalez-Werro, ECG.
+Anna Gonzalez-Werro, ECG.
+Anna Gonzalez-Werro, ECG.
+Anna Gonzalez-Werro, ECG.
+Anna Gonzalez-Werro, ECG.
+Anna Gonzalez-Werro, ECG.
+Anna Gonzalez-Werro, ECG.
+Anna Gonzalez-Werro, ECG.
+Anna Gonzalez-Werro, ECG.
+Anna Gonzalez-Werro, ECG.
+just for compensation, right? Up to 30,000?
+Eika Taylor Tseo – Up to 30K! Right. So a reviewer means you're going to ask you look at the
+entire team and the entire effort. We have situations where PI and co-PIs get compensated,
+but the rest of the team doesn't. That's not a great look on your budget. So encourage
+everybody to look at your budgets. When you're compensating some groups and not the other,
+that can look negative. You want to ask yourself, why am I compensating these individuals and
+why are these other ones not getting compensated Yeah yeah But my problem right now is my local budgeting people is like I want to put like a 25k or 30k for the I training Dreep Dseep Cytrell Miller back or talking
+If you can bring a program.
+R
+EIkoCap, SkallyGook, Ending, SkallyGuyBw, OtskellyMGW.
+EIkoCap, Skihy,m-, EIP-GO, MA'IC.
+
+and resources to enhance data science education. And we have an AI component that we're building out to hopefully allow teachers with no data science experience themselves to better orient themselves to the material and also hopefully to repurpose and subset and filter data sets to be more meaningful to their location or for their students. And I was just wondering, we have already started building the platform, but we are thinking of going track one, just because we're
+because we're in the very early stages of this.
+And I was wondering if this is a good avenue to go.
+So I'm going to use this, I hope you won't mind, to help others hear what I'm saying.
+Because you have... So how would you describe in a simple sentence,
+what is the maturity level of your ecosystem from nascent to mature?
+I would say adolescent.
+It's in the middle or is it nascent?
+or is it?
+I would say, I guess I would say like the number of resources on the platform because we are testing with teachers currently to see that like they are helpful in the way that they're formatted is nascent, but the platform itself is built.
+It's just like awaiting more content development, I suppose.
+Okay, so your product or your asset is somewhere in the middle. It's not a mature one. How about your ecosystem? Where is that?
+EgoSystem is I would say like elementary school. We have a set of data fellows and teachers that are working with us to help build out content and data set.
+Okay so you want to think about the language for everybody to hear me You want to use open source language who are your contributors or who are your maintainers do you ever governance structure do you have an onboarding
+J. Do you have a link to an open source product, you have to have that so get on github get on get lab whatever you can and put it out there, it has to be for this program.
+Expected, Mcha, for every day of the year.
+So what I'm hearing too is, and you guys will hear me say this a lot, it's about how you frame your technology.
+What is the value add? What would NSF say? What would you tell NSF and its reviewers about the intellectual merit of your technology?
+So the output may be a data set, but what's the intellectual merit around that?
+How would you convince NSF and its reviewers that this is at the highest quality and it's going to move an entire field or beyond that forward if you can get this ecosystem built?
+So it's about framing your ecosystem and the story that you're telling.
+So from what you're telling me, it's hard for me to really know what the technology is. I hear you talking about a product. I hear you talking about education.
+What I don't hear is the intellectual merit of this.
+So you want to think about how you might frame this. Like, is there a discipline that it would serve? Is it a workflow? Is it an algorithm that's going to help move the science and education workflow along?
+Okay, great. Thank you.
+Uh huh so, Ross, I know we've had your hand up, I'm gonna ask if somebody else and then we'll
+come back to you Ross of others. Sounds good. Anybody else. I can't see beyond Ross, so I'm
+gonna ask somebody just to kind of jump in. I can't see the others. I can't see your names,
+Thomas, Thomas has a question. Okay, thank you. Thank you Ashley, Thomas? Yeah, I'm Thomas
+Thomas Navarro. Do you hear me?
+Yes, we can hear you, Thomas.
+Okay, yeah. I have just completed two patents, one of them on April the 30th of 2026 and the other one on June 26th of 2026.
+And I can also my website is supersymmetry and I can move payloads in a gravitational field with eccentric mass revolving about a center axis So with the Higgs field we can use the Higgs field to move payloads in outer space because the Higgs field is what gives mass its properties
+Expected, L.A. So I'm putting in for a project pitch and I just want to see if this is something I could be helped with. I can send you a copy of the project pitch if you'd like.
+Well, let me see if I can get to this. Do you have an ecosystem that, do you have a managing organization? Do you think, are you thinking about how are you going to move this technology forward?
+Expected, I hear a project, what I don't hear is an ecosystem.
+So, yes, basically, being that I have the patents, I'm on solid ground. So at this point, to just need to move forward with some funding opportunities to get this process started.
+I have all the models, and I have a working, functioning, experimental proof.
+So I'm on solid ground with that. So that's the reason I'm in this meeting is to check and see. Like I said, I'm submitting a project pitch to the National Science Foundation, but I just need to go ahead and see if you can be of any help to me.
+So Thomas, maybe you could put something in the Q&A and we can get back to you. What I think I'm hearing is that you've got a strong piece of technology. What I'm not hearing though, and we may need to try to match you up with the managing organization, is what your vision is, what the problem you want to solve and how you're going to build an ecosystem around that.
+Expected, MediaPierre, M.D., R.J. B. Yeah, basically we can upgrade the power plants to helium-3 fusion reactors because with my system we can go ahead and do the HE-3 lunar mining, asteroid mining, satellite maintenance, satellite upgrades because that can move payloads in outer space with electrical energy rather than rockets. So we're upgrading the entire process.
+So let's get your Q&A in, like if you can give us that information.
+
+payloads in outer space with electrical energy rather than rockets. So we're upgrading the entire process.
+So let's get your Q&A, if you can give us that information and remind me that you did this.
+And then maybe we can have an offline conversation about trying to get you with a group to build an ecosystem. Because as you're currently sharing it, I'm not sure we're going to get you there.
+Expected and CSKA, L.I.: So one of the other things is starting to look up on their mindsets.
+Expected, M.D.A.R. Yeah, thank you, Thomas.
+Expected, M.D.A.R. Yeah, hi, I'm actually a proxy for Sarita. She had to do some emergency travel, but she submitted a question. This is a continuation of a discussion from the last webinar, which was very helpful.
+Expected, M.G.A.R.D. But um Sarita's thinking about her open source ecosystem and it has been taken up. There are multiple existing funded projects with other collaborators. There's been some industry related awards that are using the system as well, and so she really wanted to make sure that she was clarifying for those letters that need to be written.
+Expected, M.D. where the and I think Marlin answered already a little bit, but the idea of like where do you draw the line on relationship to the proposing team. So the quick example that she relayed to me was
+Expected, M.D. if she's PI on another grant that is leveraging that system to reach a goal, can sub awardees on that if they aren't part of the proposing team write letters for this proposal?
+Okay. Let me try to answer generically for anybody that's listening. Letters of collaboration, I want to remind you this is not letters of support. So the purpose of a letter of collaboration is not to demonstrate or express your support or weigh in on the project, anything like that.
+Right That is a letter of support So if you read it and it sounds like they endorsing your project you need to remove it and start over The purpose of the letter of collaboration is to demonstrate to NSF and its reviewers that those individuals are invested in the project in some manner Okay Yeah And they will tell us what that manner is The question you asking is the requirement that the collaborators not be a part of the team
+Correct.
+Right. So think about it in this way generically. And you have to design where that scope is, where that boundary is. But ask yourself if it passes a sniff test.
+test. Does it sound like somebody that is on your project is basically saying, I'm supporting your project? Right? So if there's sub award on the current project, or they're getting funding, it starts to skate along the lines like saying that the people that are proposing are the ones that are collaborating. So you want some distance between those groups.
+Okay?
+How much distance? That's a judgment call. But I would say, and without me seeing it, I would say that when it starts to get into contractual relationships, most certainly if it's another project, there might be enough distance. Right?
+Okay.
+Expected.
+Susan J. Peney, if you want to be on thinking how much distance is there between the person that is saying I'm collaborating and the current project, and how are they contributing.
+Susan J. Peney, How are they contributing to the project, not maybe some downstream product, we want to know that they have some contribution to the open source ecosystem that's being built.
+Eric O' Okay, appreciate that and I know, I think she followed up with an email too so.
+Ssanta? Yes. I think you're up next. Yes. Thank you for doing this. I have one question. Does this
+salutation require a pointer to the existing publicly available open source product and make it bigger and more accessible to people and people can contribute to that?
+and if that is the case, it appears to me is more of a large-scale cyber infrastructure type development. And in that context, what type of intellectual merit is important?
+Okay let me try to break this down for everybody The purpose of providing a link to NSF and the reviewers is it gives the reviewer and NSF some information on what actually is either being built or has been built Expected M the extent of your assets and the tools that you be using and how active that is how active the community is is really condition of the status of your open source ecosystem
+Kelli Cahanda-Lockup, Ogas , A-Lockup, Me, A-Lockup, OBS, DeepSame , Dead in short term term that we got our team here on our team here next year and so if you come to NSF and you write a proposal and say I have a very mature ecosystem, and the reviewer logs in and they see get lab and they see two contributors.
+Kelli Cahanda-Lockup, OBS, DT or they dig a little deeper and they see that there's been no activity in five years. That's going to be a hard sell and the data doesn't support what the words are saying.
+Kelli Cahanda-Lockup, OBS, Mictorian, U.S. Okay, it's up to you to sell to NSF how big that ecosystem should be.
+Expected. Some ecosystems, especially nascent ones, could be very small. But what we want to hear is what you're thinking around the trajectory. Where do you want to go with it? How big should it be? And how do you know that? What's the rationale for that? So you know more than we will about how big that ecosystem should be eventually. What is your strategy to figure that out and where you are? So you're going to tell us the maturity level of your ecosystem and the maturity level of your ecosystem.
+the quality level of your product or your asset. You're gonna come out and tell us in that proposal and then the link is going to give the one resource for the reviewers and NSF to look at. So that's just gonna be a sanity check to say if it's a nascent ecosystem. A, does it exist? Is it open source? That's a first requirement. Great. If it is and they said it's a nascent ecosystem, then fine and then the reviewers will move on to see what kind of strategies where the group is.
+I missed the other piece, though. Susanto, what was the other part of your question?
+So, for example, like, so in that case, what type of intellectual merit is important, right? So if there is an existing very good Open Source software product and I am transitioning to an even bigger tool which is publicly available and can be done simulation on, you know, on the web browser, so make it like a cyber-imprisoner.
+Structure What type of intellectual merit
+Structure What type of intellectual merit is important?
+I would encounter you to go back and look at the NSF merit
+Regieal criteria Making something bigger or more active in and of itself Especially if it framed that way is probably not gonna be received well by the reviewers You really have to say what is the Oveneis Deree Dereefsario TGefroy TGefroy MediaPtre EqBenz MediaPear Endnover TGefroy Endnover TGefroy Endnover TGefroy Dereefsario HWCAS MediaPtre KaFZR TGefroy IqBezD OMA
+Eid, IqB.A, QCqW, Dereefsario, QCW, Dereef, GFW, OZFG, 1FB, Nega.
+Kim Kigo Ocampo, Obring, CTR, RTMP, OXO, Dessertl A, RUN WADE, CTRD DRCHWOMOKED, SLIDE 2, 0-5-05-Five, CEB-AB-R, CTR, RTMPPE, CRPAP, CHG19 ZET-ELMPTE, SLIDE 2, 0-6-5-Five, CH2.
+Kim Kigo Ocampo, Dessertl A, RUN WADE, 3-GIGET, SLIDE 2, 0-6-5-Five, MESA, RUN IN DETERN BELIN, SLIDE 3, 0-5-Five, LR-V.
+Anna Voelthakil-FreeMajuku, DTW, ObeyLafari, WXEA, DTW, OPSK-TW.
+Anna Voelthakil-FreeMajuku, DTW, OBSK-MarioTL.
+Anna Voelthakil-FreeMajuku, DTW.
+Anna Voelthakil-FreeMajuku, DTW.
+Anna Voelthakil-FreeMajuku, DTW.
+Anna Voelthakil-FreeMajuku, DTW.
+Anna Voelthakil-Feed-It.
+Anna Voelthakil-FreeMajuku, DTW.
+Anna Voelthakil-FreeMajuku, DTW.
+Anna Voelthakil-FreeMajuku, DTW.
+Dorana Sankarpovichak, Mester0, NTAP-St."
+Sato, only say that, of course.
+Sato how you write that is and kind of, if you have more information from Santo.
+Like, Sato how you can send your own process, we have written and follow your goal and also
+Sato how Kifu and EBSA and Sintayano.
+Most of the information books and content should have set for one and say or do not want
+directly put your own process so your work has been set up to the beginning of the process
+Expected, ChL.
+J. R.V.A.
+Skiyomi Kaur, Thank you so much for this session.
+In our particular case, we are developing a large data sharing platform for biomedical data
+that that's in the open for folks to put on and and search and find biomedical data.
+It's used by thousands of people monthly so that the ecosystem that's using and
+and DyePs, DEMM, OBS.
+Rossiano?
+Rossiano?
+James Neom, J.D.: And by the data, you know i'm and there's got a lot of data and this is about your data you've you've got and using an example of data only are based on your data and data on data for data for a specific data.
+Rossiano?
+Rossiano?
+Rossiano?
+Rosario?
+Rossiano?
+Rossiano?
+Rossiano?
+Rossiano?
+Rossiano?
+Rossiano?
+Rossiano?
+Rossiano?
+Rossiano?
+Rossiano?
+Rossiano?
+Rossiano?
+Rossiano?
+Rossiano?
+Rossiano?
+Rossiano?
+Rossiano?
+Rossian?
+Rossiano?
+Expected, Open Source, should be available to a broad set of users, contributors and maintainers, and you define who that is. Who is your target audience?
+
+Expected, everyone, as you think about your ecosystem.
+Expected, if it's open source right should be available to a broad set of users contributors maintainers.
+Expected, and you define who that is, who is your target audience and why, who is your I don't want to say customer, but who is your primary stakeholder.
+Expected, So you may have a large set of users, but your contributor community and you're maintaining.
+Expected terms, and the community may be small. So it's up to you to define and tell us and tell the reviewers who is in that broader stakeholder, who are you trying to reach?
+And then if you're satisfied with your contributing community and the size of that, and you're satisfied with your maintaining community, you can say that and you can defend that.
+Expected terms. But drawing a line around the scope, you want to think about what broad impacts that you want to have. I imagine that, and we just talked to somebody where I said size in and of itself really is not a good selling point. So it's possible you might have a small ecosystem, but reviewers eventually going to say, why is that a legitimate thing to have? How are you going to have broader impacts? Are you going to be the only group that has this ecosystem?
+and the other thing that we have to do is to get a piece of information. Well, why? Right? So it's a little bit hard to, I think, tell you to put the ecosystem. I would say, think about your stakeholders. Who are they? Who are you trying to reach? What's your vision? Long-term vision. And then back yourself into and say, where do I want to start? And it sounds like within your company, you have a start, right? But it's like deciding. That's the whole purpose of a track one, is to try to help you figure out how to properly scope that.
+Expected, Lombard, EX, and the SBA.
+Expected and Icobs.
+Expected and Icobs.
+Expected and Icobs would say you've got to talk to your potential community.
+Expected that feedback is going to come back and look at it.
+Expected and ICobs.
+Expected Eichord is going to give you that opportunity to have that conversation in a very structured way So if you don know who your stakeholders are the broader ecosystem and how big you want to make it it probably a track one that you in By track two you should know what that ecosystem is and what you think it is right And as information comes in you may broaden that you may narrow it
+So I hope that helps a little bit.
+Thanks.
+It does.
+Okay.
+Okay, Ross, you've had your hand up, but I can't see anybody else, or somebody else.
+Yes, Ross, and I can see the hand.
+So, if you can't see, just let me know, and I'm happy to tell you who's next.
+SkellyCamin, Okay, we're gonna have Ross and then you let me know. Ashley. If you could, thanks. Yes, thank you. Yeah, yeah, Thanks, Lawrence. Can you still hear me? Awesome. Yeah. So just some real quick background. I am an ask question about kind of where the lines are around development for some context.
+On our project. We are an NSF funded project for robot heart. A open robot hardware and open robot software.
+Expected terms and we have sort of community expressed interest in taking existing software modules from contributors in our ecosystem, and trying to integrate those software modules with the hardware.
+And so we were wondering if PESO's funds can be used to fund research internships to support people integrating their software modules within the ecosystem.
+Does that constitute development or is that a supportive process?
+That sounds more like R&D to me, I'll be honest. So we recognize, I will say, that as you're building out some of the IT pieces, the platforms or integrating software for contributors or tools that you're building, that there's some level of that to get it out into the community.
+Right, so let's say you're a mature ecosystem, or you're on the cusp.
+and
+you've got a piece in an order to make that component more accessible as your ecosystem grows, you have to do a little bit of development improvement, the program would support that. But what I'm hearing from you is there's some interest in integrating these things and there has to be some research around it and that sure sounds like R&D to us rather than ecosystem building.
+Okay, understood. Thank you.
+And that's it.
+Mm-hmm.
+Alexander?
+I see your hand up, Alexander.
+Thank you.
+I had one question about website support but I asked that in chat got an answer Thank you very much My other question is could you say a bit more about the training that we would provide to the project for current and potential user bases So what exactly can we cover there Is it like facilities I think you spoke some to the nature of paying for
+Expected, RR, and RR, and RR, and RR, and RR, and RR.
+Expected, RR, and RR, and RR, and RR, and RR, so I think there are a lot of questions about
+what we should expect to include in the proposal for that section of funding.
+Thank you.
+Yeah, because I don't know what groups are thinking about, track one is about developing
+the strategies.
+Right?
+That's what it's about.
+How are you going to get this ecosystem?
+Who's your target?
+What's your timeline to get there? Who do you see as maintainers, contributors? That's around planning and scoping. We've got a lot of questions around where do I build my ecosystem, where does it start, where does it stop? That's a track one.
+Training then, by the time you get to a track two or close to that, you should already sort of have a sense of where there are needs in the ecosystem.
+Expected terms, including Kix
+Expected terms, Expected terms.
+So if you want to build, let's say, part of it is that you know you need to be heavy in the maintainers, and you need some training around that, that would be perfectly fine, but it's got to be targeted towards building the ecosystem, not training about the technology.
+All right, so there could be. I could see where contributors or users might want to understand how that technology is used and you might want to do that as part of your stakeholder engagement. You might want to go out to a workshop.
+All right, and you say to everybody, Hey, we'd love to see you be part of our contributors or users. We need to show you a little bit about how it all works. You could frame that as training.
+But if you're talking about you want to sit groups of students down to show them how to use the system so that long term they can move their research forward that's probably outside the bounds of what we would support.
+Speaker 1 Okay thank you. So just in the quick follow up if I may be.
+So the support, the focus of those trainings then is to help users in the community contribute back to the ecosystem, not
+and not just hey here how you use the ecosystem That right It about building that ecosystem It about right And depends on how what the tool is what the technology is what the status of the ecosystem is justifying why that necessary I could see a lot of reasons why you might have a very new technology that very nascent and that it so new that getting potential users involved is necessary or quote
+Rob Calue, Co-AZracker, JacellyState, DL, LV O, T-P-P-eels E, T-P-P-P-H, E-T-P-P-V-O, T-F-E-P-E-L-T
+So I had a question about the participation of FFRDCs. I have sent an email a few days back. We are trying for Track 2, and we have a co-PI, who is a FFRDC, and collaborator also. Both are being sub-awardees.
+Expected time. We wanted to know now. The thing is that the FFRDCs would prefer to have a little better resolution on
+Expected Meade, M.W.O.C. If they can participate
+Expected Meade, M.W.O.C. So I'm not sure what is the way to get that confirmation. I have sent an email with some details about what their participation is going to be
+Our other issue is that we are...we have to kind of wrap up the proposal in a little bit ahead of time before the first September deadline. So, I was just wondering what kind of information you could give us.
+Yeah, both of them have a very unique contribution to this. And, yeah, so that's pretty much my question, yeah.
+Yeah, so generically, in 2N, I think maybe you were exchanging an email with me. It may have been you, somebody else with the same. So for anybody that has an FFRDC, a pretential participant, first things first is to send us an email, send me an email, copy me on the PSOS.
+
+Expected, MediaPierre, M.D.A.: directly into and I think maybe you were exchanging an email with me and may have been you somebody else with the same so for anybody that has an FFR DC a potential participant.
+Expected, M.D.A.: First things first is to send send us an email send me an email copy me on the pieces mailbox.
+Expected, M.D.A.: Yes, I did.
+Expected, M.D.A.: Okay, be very clear about what the unique skills or skill sets that they were bringing to the project.
+Expected, M.D.A.: yeah.
+Rannanet. And then I can have this other dialog about, but go back and look at the solicitation for me, please, in advance of that. And look at who's eligible. And what roles and the constraints between those. So, that's what we're doing is constantly looking at what are the requirements? What is the skill set they're bringing in the effort on the project?
+Ruthie Tyson, FyDee & TRIANDA SR. Raya & TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. TREAWG. T
+Expected for everybody, send the email.
+Expected for the mailbox, you put it in the chat, I'm just going to go and do mass emails.
+And I will just answer everybody with one email.
+Expected for everybody with the mailbox.
+I won't get into the details about your particular project, but I will answer the questions around eligibility, the information that I need to see, and anything else related.
+Expected Twena, GioTi, Dr. Michael Syed as well.
+We will see there is one of the things we are going to do for the system, but the system for the system is different and then that doesn't vary, just so much.
+So if we can add to each other, we would, we would increase our value from all at one time and are fully responsible for our students.
+Expected, M.D.S.F. Raymond. Jeff, you're the floor is yours.
+Hello I currently the chief scientist at NSF STC Thank you for your support We have a software product and knock on software products that via regular sort of research and distribution within the center participants and their collaborators we built up quite a bit of an ecosystem already However it not actively managed
+Dukesuk, SkellyTracker, MTMXFG, OPEX.
+It is a research tool that is not to have the research tool but to have it turned into something like a QA, QC industry tool.
+Ecosystem already is good. My concern is that we haven't been able to generate the bandwidth to do anything like probe industry interest. Is I-Cor meant to do that or are those conversations something that should have happened months ago?
+Expected, MediaPier, R.S. Okay, good question. So you don't have to answer this, but I would just use your example for everybody on the phone to help you think through this. You want to ask yourself, what is the problem that we're trying to solve? How does the technology support that problem? Where are we today with regard to our open source ecosystem? And where do we want to be long term? Given what you're asking, what you describe, I think you're a
+track one. Because if you have not started talking to industry and if you're they're a part of your stakeholders for all of our technologies we believe industry should be a part of that conversation. So if you haven't had those conversations you're probably not a mature ecosystem.
+Expected terms, and I-Core, the reason for that is that's a structured learning activity that all of our awardees will go through
+Expected terms to help them learn how to organize these interactions and these questions and then how to take that information and use it to help you scope and plan So if you haven done that and then you probably in the early stages of scoping and planning your ecosystem You probably not a totally nascent because it sounds like you have users you have contributors but what I can hear what I not hearing necessarily is is this open source Is it open Have you thought about what your long vision is
+and how you will go about your strategies for meeting that long-term vision so you can be self-sustaining. So I would say that you're probably a Track 1, Scoping and Planning. I-Corps would be part of the training and the learnings. If you're awarded, that's a necessary, that's a condition of the award.
+Did I answer your question? I was a little long-winded because I want others to hear this more generically. So did that help?
+Expected, M.D.: Yeah, well, I know that we're definitely track one and we we at least within the universities that we operate in, we have a sense of who our research users are and how they're going to use that.
+Expected, M.D.: In other veins, we do our our research and our development and scaling, but we've got a really large open source repository. I was mostly concerned about whether or not as a track one we needed to have had all of our conversation.
+Chris & CoolyCam, the research community that actually is able to establish that area as far as a public health center, whether it is someone who can or no longer be around the corner, they are one of the things you need to do.
+Chris & This is the best part of that.
+Chris & We would love to answer you in your hand i'm so sorry i'd love to hear my phone number, but I don't say this one.
+Research Community. I say only, but I shouldn't say it like that. If you plan on serving the research community and you don't want to do commercialization or go outside of commercialization, you've got to make a case for that. How will you move this innovation forward? How will you have broader impacts given your focus?
+So for everyone, as you think about your long-term vision, the stakeholders that you're serving, you really want to think about what that trajectory looks like, why does it look like that, and how do you know that it should look like that?
+So we not going to tell you what best but our reviewers might question if you trying to make the case for broad impacts and when you bring an answer I going to ask
+LeAZiens, CsArtSense, OBS, Dere Ziens, CsArtSense, OBS, CsArtSense, OBS.
+CsArtSense, OBS, DereZiens, OBS, DereZiens, CsArtSense, OBS, DereZiens, OBS.
+so you don't have to have that all ironed out. But I would say to everybody on the phone, please, please, please. If you haven't ever talked to anybody in industry, you should be doing that.
+Because number one, you got to tell us a little bit about who you think your industry mentor might be or the community or the domain you might be picking. Then if you get awarded, then you want to have that relationship, you want to have that relationship built.
+Expectedler, RTMP, SEA, Deskog, SkellyTracker, RTMP, NERDURS, MUSEU SPVATSREIT, CRPTON, AL DATEY FRAORDERS, MCMAFARE, ROTRED CAPMENT BELIEVE THE STATE AROUND THE WORLD STATED.
+ESEEN, ENJOY BASED OR DEPRENDER MOVING PRESS, FACE, AT LEAST WOMES, STATE AROUND THE WORLD STAGE.
+ESEEN, ENJOY BASED AND STATE AROUND THE WORLD STATE AROUND THE WORLD STATE IT.
+ESEEN, ENJOY BASED AND FIFTH AND ALSO REFLECTION EVERYBODY SHOULD BE.
+1. BASED AND RAPID.
+Can you hear me? Yes, we can hear you. Yeah, I had a question, I think related to what you're trying to say in the actual proposal when we're trying to describe. So we're track one and we're trying to describe our stakeholders who is in our ecosystem. I remember you mentioned in the past, I think it was office hour, how we need to structure our proposal. So you prefer to have like the taglines like ecosystem discovery,
+Expected terms, that is an idea that we need to facilitate a state of access.
+Media Peské, The School of Education.
+Media Peské, Do you still want that in the proposal?
+Media Peské, Do you still want that?
+Media Peské, Do you still want that in the proposal?
+Media Peské, Do you still want that in the proposal?
+Media Peské, Do you still want that in the proposal, and are we allowed to describe I-CORE separate of those, or should that be included within those paragraphs?
+I'm trying to organize the information organized in the fashion it is because number one it helps us go through those faster but we know if you have those sections you will think about those kinds of things.
+Number two, if you want to talk about I-Corps I would say to everybody if you re a Track 2 and you took I-Corps you must talk about your Learnings.
+
+have those sections you'll think about those kinds of things. Number two, if you want to talk about I-Corps, I would say to everybody if you're a Track 2 and you took I-Corps, you must talk about your learnings.
+Okay, so if you're a Track 2 and you've already taken I-Corps as part of this program or POSE, you must talk about your learnings.
+It is not sufficient to say I did 100 interviews. That is telling us what you did, which we know already because that's what the curriculum requires. What we really want to know is what did you do and how did you use that information to inform how you move forward. So what were your lessons learned?
+If you are track one and you've never submitted and you're a track two or sorry you've never attended iCore telling us what the solicitation says or regurgitating it is not needed. You don't need to tell us you're going to do interviews. We know that already. What we want to hear though is your strategies for doing interviews as you know them today.
+Expected terms.
+So, if you say, we're going to go to workshops and we're going to do interviews, we want to
+see more detail around that.
+These are the workshops we think we're going to go to and this is why.
+This is why we know this is a state-of-the-art workshop in the country around this topic.
+We believe we can get a foothold if we get interviews during that.
+Kristoffer, MD, MSCI, RECOUS, DIP, EASY, MIA, I, M, TCHX, RGRK, DEPT, EASY, M, B, RIC.
+Kristoffer, MD, IT, M.D.: P
+Kristoffer, MD, ESC, RECOUS, DEPT, EASY, M, RIP, EASY, M, O, PORT, EASY, M, DISK, RECOUS, DEPT, EASY, M,M, ROPAT, ED, I, M, FURT, EASE, M, RIC, B, FIT, EASY, M, RIC.
+So make it tailored to your proposal when you're thinking in those details.
+So I'll come back to this I-Corp piece in like 10 minutes, because I know we got lots of questions around that.
+Until then we have Saad, did I say that correct? I'm sure I didn't. Ashley, is that who's next?
+Yes.
+Thank you so much. So we're planning to submit a proposal for a Track 1 project,
+Kyle Eierle, OSSieker, SkallyForge, SkillyTorpe, NLBOTO, OEXSENTIO.
+Kyle Eierle OSSieker R So the product Kyle Eierle OSSieker R And we trying to understand how to use the governance portion of the of the of the of the funds so the product that we have right now is currently managed by a nonprofit but the intellectual property of the product is across multiple universities So can we use the funds to pay for legal work community meetings administrative effort to kind of create an independent managing organization or a fiscally sponsored project Or what would you recommend is the kind of most effective use of the governance portion of the proposal
+ERNST- Okay, good questions. Track one is for YOU to determine right, that's the scoping and planning and strategies.
+ERNST- Right, so you want to have dialogues right with those groups. In a track one, I'd really be cautious about starting to move out with making decisions and bringing groups together to start to make decisions around
+ERNST- Legal, for example. Now if you want to develop a strategy and you want to have somebody in there to help you
+RGP, Ops, Degrees, and Degrees, and Degrees, and Degrees, and Degrees, and Degrees, and Degrees, and Degrees.
+If you have to discuss that strategy, that's different. Be careful on legal fees because in 2CFR 200, which is the governing regulations for financial assistance awards, there are some restrictions on legal fees, but your business office should be able to tell you what that is.
+Track one is about developing your strategies and scoping your ecosystem. You're asking me about governance. There's lots of different structures for governing bodies, but remember, your governance
+and DskellySameRoll.
+Ecosystems are as co-eco-system.
+Ecosystems are as co-eco-systems, and there's all these elements around governance.
+It's not just IP.
+How are decisions made?
+Who gets to make those decisions?
+Is there voting?
+How many votes?
+So the governance piece is very, very broad.
+The different stakeholders you have involved, the different entities are going to play in it.
+to identify all of our stakeholders.
+We're going to start with this group.
+We're going to have five meetings,
+and we're going to bring an expert in, as an example.
+That's a strategy to help you get there.
+It's not the actual answer.
+So we're not looking for you to have an answer
+unless you're closer to a mature ecosystem, a Track 2,
+in which case you should be able to talk about
+what that governance structure is and why.
+Did that help at all?
+It does but I think I a bit confused by how much we should kind of run events with people to understand more about the ideal governance versus actually putting things in place Tseusel O fun for students of other students but they still hanging out
+ExpectedDent.
+And if you've still got some sort of background, they think they're trying to,
+want to help to keep the environment and all of them, as people know need help,
+in their, in their organization are you?
+Oh, no, but a lot more.
+I am trying to get.
+Expected terms.
+How much are the different people, who are the ones who are new?
+You are totally nascent.
+Are you moving towards a mature?
+That's going to define how much activity you put for stakeholder engagement or stakeholder
+identification.
+So it's up to you to determine what that is.
+Gail Speedzziak, MD, I would say if you're a track one,
+Gail Speedzziak, MD, it sounds like you sort of have an idea.
+Gail Speedzziak, MD, So I would ask you,
+Gail Speedzziak, MD, why would you want to put a lot of money
+Gail Speedzziak, MD, into holding events.
+Gail Speedzziak, MD, Unless you see a trajectory,
+Gail Speedzziak, MD, You want to build your ecosystem in one year
+Gail Speedzziak, MD, and you want to grow at 100 times.
+Gail Speedzziak, MD, That's why you want to start doing these things,
+Gail Speedzziak, MD, right?
+you could make the case and you could do it, but your timeline is going to dictate how much of this you do and where you put your money.
+So I can't really tell you how much money because I don't, you know, I'm not in your conversations. I don't know enough the details. You have to determine what your trajectory is.
+And how does that play along with how you want to do these stakeholder engagements?
+So if I may, like we're trying to recruit more contributors as part of growing the open source ecosystem.
+But the idea would be that those contributors will want to have a say in the long term direction of the product as well.
+So my sense is that we would need to run meetings with these contributors to say how do they want this organization governed?
+What say do they get into this? So that's part of my framing around running these events.
+Okay Is that on the right track of the expectation here It sure is I mean I seen some people that say we going to just put a stake in the sand We going to go with this subset of users We going to draft the governance structure using those And then you know in six months as we get further along we have we build it out but we won put a hard governance structure in We just have the minimum while we trying to plan But I think your point that where you guys want to be I don think it flawed in you thinking Larry Paxton Okay thank you Janis Bickerson Yeah but the rationale is important so I think you raise that So you rationale around why do you want to hold these activities
+Janis Bickerson, And it's a strategy, right. It may or may not, that strategy may or may not involve so
+Janis Bickerson, The purpose of the track one is to lay out your strategies.
+And the rationale for those strategies, as best as you know them today.
+. OK. If it changes, it changes.
+. You have that flexibility with the budget.
+Thank you.
+Uh-huh. Aurelia?
+Tashkani, Hello, I have a question about the type of ecosystem building activities that can be funded, specifically a mentorships that are supported by crowdfunding.
+I'll give you an example. Linux foundation has a mentorship platform that creates crowdfunding to sponsor mentees
+Expected terms, around a specific open source project.
+Expected terms, especially for nascent ecosystem, don't always get found by a crowd easily.
+Expected terms, my question, can we fund from our award?
+Expected, and we contribute to the crowdfunding budget for specific mentorship program around the open source software that we are moving forward to the ecosystem.
+So I'm not following how that works, so I'm going to have a little hard time understanding how the money flow. So what exactly does the money, if you were to spend it in this way, what does it buy you?
+It buys timelines because if it's like a sponsored, like if it's a paid internship to do a project on the software like advanced, for example, security features or close specific security gaps, it will be done on a timeline right within three weeks, within six weeks, within two months.
+
+Expected, and the software like advanced. For example, security features, so close specific security gaps. It will be done on a timeline right within three weeks within six weeks within two months. Otherwise, it can be stretched in time on volunteer time in undetermined amount of time.
+And I may be misunderstanding us, but it's sure sounds like there's an existing project. Do you want to use some of the award funds to have somebody on that project to accelerate what they're doing? And I would say that if I'm understanding that correctly, the answer is probably no. You got an ecosystem that you're building around your own technology. And the money that you're spending should extend further that effort.
+MediaPierta, OTMP, OBS, DeepSaele Co- Let me clarify. I want to leverage that crowdfunding platform to accelerate the open source built by my organization I see got it and they have a crowdfunding that encourages better access to top applicants that are interested in advancing open source projects.
+MediaPierta, OTMP, OBS, D' versus P.O.A. volunteer.
+So what I'm hearing is you're probably going to have to convince the reviewers that by funding, contributing to this crowdfunding, that number one, there's a direct link back to your ecosystem and that you and your group actually has some say over it.
+Right? It is your open source ecosystem.
+Expected time, FreeMoCa, ACCOUNDA.
+PASTE AYKENDROW WANTESON, BASTE AYKENDROW WANTESON, DEECE BILEW, ADVENTURAL WANTESON, SUBSTANT TOO, DO YOU KNOW YOU THAT LOOK FORWARD TO THEM?
+MediaPierre, RRWC, Nt.
+The primary concern I think is going to be the extent to which you can really oversee and have some say in what that crowdfunding is. There's going to be some questions about are you just sending money over to a group that may or may not do what you need them to do for your project. So there'll be questions about
+the efficacy of that and whether you can really lean on that. But, you know, propose it.
+Caroline That that would be the question I think and then the extent to which the reviewers can really follow how this works in terms of oversight and ecosystem and the governance etc The operational components
+Thank you.
+Uh-huh.
+Edward.
+All right. Thank you, Florence, for educating us.
+I'm hoping you can hear me.
+Yes, we can hear you, Edward.
+So, we are building an early stage ecosystem. I am going to describe it as a nascent and it
+involves multiple components. Say there are four components coming together. We intend to
+open source three of those four components. Do you see any concerns or is that...
+So I think we're being asked the question again, if you have a nascent ecosystem or you
+just have an ecosystem that has three or four assets, is there any problem with that? The
+answer is no. But you do have to help the reviewers understand what is the problem you're trying
+and Expected.
+How are you bringing them together to meet your short-term and long-term vision?
+So, having a group of unrelated projects is probably going to be a hard sell, but there
+must be some relationship between all of these products.
+And how is it that your work, by bringing these together, is going to move knowledge forward?
+Peter and Tom for an MPM, O.K.S, and L.C., who says the process of bringing this together is going to move knowledge forward. There's intellectual merit. So there isn't a problem with bringing multiple products or assets along the storytelling gets a little bit more complicated, but certainly, if you can tell that story, there isn't a problem. I just imagine, if you got a lot of products to be careful when you're telling
+TtfEKrnage TtfEKrnage SkellyBawErego TtofEKrnage RtfEKrnage SkallyBawEresgo GaaKrkktktfchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchchch Thank you for your patience Can you hear me now
+Hi, David.
+Hi. We are looking at a Track 1 project.
+I can hardly hear you, David. Could you speak up a little bit?
+Okay. Can you hear me now?
+A little bit. Yeah, just talk loud. Yeah.
+Okay, I'll hold the mic close to my face. Perfect. That's excellent.
+We are working on developing a scientific software that has been developed and maintained by a federal agency. It exists on GitHub, but it's written in Fortran 77, the number of contributors to it like I'm one that's not in the Federal Service is maybe one other. Otherwise, the agency that maintains it has kind of a pretty tight lockdown on who can actually contribute to it.
+So we are interested in having a community governance model evolve for this software so that the state agencies and private sector users can contribute to the maintenance of the software longer term.
+One of the things I'm struggling with right now is what the contributors would be to this, that we would have letters of contributors, because the only people that are able to contribute through this bottleneck right now are collaborators on the proposal.
+So, you know, no one else can contribute code. So I'm kind of wondering, are we too nascent to qualify as nascent for this? Or is there is not having anyone who's not associated with the product who has contributed code to the open source ecosystem still acceptable?
+So you you've presented a big hurdle that I think you need to think really kind of ponder is you said some things that really throw up a red flag for me.
+that you put in a lot of information about just how you watch a lot.
+Well, with cloud air it, and Keeley, thank you so much for taking me a pleasure and thank you so much for starting this next one.
+Beth Seidma, Meldre, Cinect.
+Henshark, Meldre, CFO, This is locked down by the other federal agency that's the first thing that really raises some red flags for me.
+What is the long term vision and would your managing organization for this ecosystem have the authority long term to move this into the open source that it can be more broadly available.
+it may be a difficult sell to NSF that in fact this ecosystem is anything more than a way to fix a piece of software or bring it up to date for another federal agency So you see the dilemma that you in Yeah yeah The users that we have in mind are industry and state agency not federal agency And what we seeing is that the federal agency that maintains the software is unable to engage users unable to accept community contributions And so what we started to see is that
+L
+the function of it.
+Yes. So David, I think that would be necessary because to your point, if you forked it, that's great. Right? So you already are moving out there. So it does sound
+like you will have the authority to do what you need to.
+For the letters of collaboration, if you've already forked it and you've got groups working on it, do you have anybody outside of your direct ecosystem that's able to ...
+No. So right now we've been hoping to commit changes to the official repository.
+And so there's only two or three other people that have gone through that before. We are also the people who have forked and started developing on our own branches and things like that, too. So there's not other people that have contributed code to the software before that we could point to.
+So, David, could you put your a little bit of the information in there just to remind me as I go scan the number of questions and stuff? Let me see if I can circle back. There's some many more questions I have, but it's going to be too hard to get through in the next 10 minutes. Thanks, David.
+Expected, Mannyu, you have your hand up.
+Hi, thank you so much for taking my question. And I also read Q&A and I know it's partly covered, but I'm still a little bit confused with the 30,000 I-Corp budget.
+I assume that personnel wouldn't count towards it because if personnel, including the IM, counts towards it, then it will go over 30,000 very quickly.
+and I wonder what would, a related question is that I know discovery interview for those we should not give out gifts or anything like that, then would stipend be, participant stipend be acceptable?
+And if I were to select a subgroup that do more in-depth feedback or some testing, some documentation,
+
+Expected, MediaPier, Nguyen, SkellyTurong, OBS, Degs, or anything like that, then would stipend be participant stipend be acceptable and if I were to select a subgroup that do more in depth.
+Expected, MediaPier, Nguyen, SkellyTurong, OBS, Degs, feedback or some testing some documentation and stuff like that would would the can I budget for it and would it count towards the 30,000 and I the last part will be travel like, for example, traveling to conferences to do.
+Expected, MNCV, TxR Corp. And I think there were more of 10% of those interviews like that, is that also count towards that 30,000? Is there any other training fees that I should budget? And so that's all the question all the time.
+Elizabeth Bergstrom- Yes, so you ask a lot of questions around I-Corps. I'm just going to pivot to that. Okay. I want to clarify something for everyone. Your budget is your budget. It's how you want to spend
+Expected terms and then you can labor towards that effort to meet that either Track 1 or Track 2. I-Core is just one activity in your budget.
+Expected terms. And the activity involves three people up to four or five. It involves somebody who has a role of the technology, technical lead, somebody that has a role of entrepreneur lead and somebody that is a mentor, an industry mentor.
+Expected terms, D.C. A.D. that effort and what it involves to attend the coursework, which is seven weeks, approximately one day per week. It doesn't mean you're in class for one day, it just means they've spread the amount of effort when they do estimates and they say, if you're doing all these interviews like we asked you to it's probably going to take you up to one day a week.
+Expected, Dr.
+Expected, CahillieSanice, SkellyForge, RRWO, IT'S COEST, THE HANDSETTING, EXCLEMENT SAYING, AND THE TECHNICAL MEETING WILL BE.
+E, A P P A P H E C R T E T E Y O N E R CH E A T E P E Y O N E F E R E .
+E E A M O E F E E T E AND SET T L A G E O E N E Y T I N E E O F M I E M E E O F M E Y T W E Y A R E C A
+W E E O U E Y C R E F E E E O H E Y E M E R T E Y T E W E T E Y W E N A
+L Expected Dweeb OBS and Expected Dweeb OBS and Expected Dweeb OBS and Expected Dweeb OBS and Expected Dweeb OBS and Expected Dweeb OBS and Dweeb and ChArUco OBS and Expected Dweeb OBS and Dweeb and Expected Dweeb OBS and EyekaRUco OBS and Expected Dweeb OBS and Expected Dweeb OBS and Expected Dweeb OBS and Expected Dweeb OBS and Expected Dweeb OBS and Expected Dweeb OBS and EyekaRUco OBS and EyekaRUco OBS and EyekaRUco OBS and E and EyekaRUco OBS and EneekaRUco OBS and Eyeka
+Eczema, Ops, DeepSesek, CysnyRanta, TNPC, SZF, PSC, SZFG, OBS, CLBB and EVAN KEST, DODRAKER MAAAW.
+And I think we have the same thing with time for each program but be in the Ysakirta space or are we gonna have an I Corps, who work on I Corps and are we gonna do what I we just wanna use that.
+Ski-Way she's a parent of the I-Corps Institute really working with that I-Corps Institute.
+Ski-Way she's a parent of state, WIFE and PPA member of the program.
+Ski-Way she's a parent of state of state of state of state of state of state in which those are the best I-Corps Institute in its content, for those co-hosts of our leadership team.
+Ski-Way she's a student at four in particular.
+Ski-Way she's a participant in the project level and so that there are some really the best other components that the program's be in the company.
+Ski-Way she's a student at four in the U-CORP Institute in their business.
+Expected terms, then can we budget participant costs? Is that also considered as labor?
+It's under participant support.
+And it's allowed?
+Yes.
+Thank you.
+I would, for anybody else that's left on the phone, please take a close look at it. There's only a few items that are not allowed in this program.
+Expected terms. Your framing is going to be important when you get to if you're recommended for an award, but we can hash that out later.
+Okay we down to we may be down to the last few people I don have any more hands that are raised so that good It 323 Alexander is jumped on raised his hand
+Alexander.
+Alexander Tisner, O, To make sure I followed that correctly. The
+Kyle Perlman, RDMP S.D.A. They have their two months full time per year maximum allotment and then if they need to attend the i-core training because they haven't previously done so it is not the case that that i-core training through that as portion of that $30,000 that can be allotted to it is in addition to the two FTEs, right? It has to be included in the two FTEs.
+Expected and Dekuva, QA, OpenCV, Ops, DbMT, RRB, OOPS, DbMT, RR, Db, OOPS, DbMT, RR, DbMT, RR, Db, AYV, CbE.
+Expected, Rb, Db, Ops, all the components of the Curement and ScellyForge.
+So I don't think we have a limit on the two month look a little closer at the solicitation. So unlike the standard NSF quote grants that's governed by the NSF PPPG, I think we lift that requirement.
+Laura Lovellner and Laura Kimball, McCormick, Misha Peeble, Anne.
+Laura Kimball, Lyleae Kompanyo, She, who's the best member's job of playing, and we'll get into the work of your budget and what roles or individuals going to be playing, what are the responsibilities? and then you ought to be thinking about I Corp as part of that.
+Laura Kimball, Lyleae Kemp Gauze, Ph.D., There's going to be a lot of overlap, so when you get into your budget and you look at labor, for example, and you get into the justification.
+Laura Kimball, Lyleae Kemp Gauze, Ph.D., You might have I Corp training, sort of allocate some time towards that right? but when we look at the bottom line and NSF goes through and says, wait a minute.
+Expected terms, you know, half the money is going towards I-Corps. That's going to be a problem, right, if you're a Track 1 because we told you up to 30,000 we can allocate. But the things that we kind of see for that are travel to workshops for customer discovery,
+Expected terms, time to attend the trainings, or time, let's say, you're using a graduate student, a long-term graduate student to help make phone calls or whatever it is that you're going to do.
+You are allowed to purchase some tools some survey tools I believe What you not allowed to do is market right So if you out there trying to market your OSE that not permissible But if you out there trying to engage stakeholders it a fine line and it how you write that So it how you break down your labor cost within that total budget but it should include ICor and approximately no more than should be focused solely on ICor activities
+Did that help, Alexander? I have a feeling that did not help that.
+Alexander Wolff, sort of. To be clear, we're looking at a Track 2 proposal here.
+Deree Bale, I have not previously completed that training, so I was just trying to clarify exactly how I see in a previous answer and I'd previously read that for a key personnel.
+Deree Bale, That it was limited to FTE per person per year and I was just trying to figure out how we would be worried that maybe this was going to cut in too much to other responsibilities.
+Tess A.D. Right, I think maybe i'll look back and i'll answer anything in the Q amp a I don't think they're listen there limited by the two month traditional.
+Expected terms and a new policy with the M&A.
+Expected terms, or the PEPG.
+Expected terms, if the PEPG needs to be a salary cap for the NSF PAPPG, the policy and procedures guidelines govern a general R&D proposal.
+Expected terms, we know in tip bars are slightly different.
+Expected terms, we have deviations from those, and if you look in the solicitation, it should speak to that.
+Sean O' Okay, thank you very much.
+Expected terms, I will check.
+Expected terms, thanks, Alexander.
+Jai Ho, I know that we're going to raise it quickly, and then we're going to close this out, and then I'll...yes, Young-Mei.
+Yeah, I'm still having a question about this I Corp. So you just answered someone saying you can actually pay for the participants. Is that means like if I ask someone to do interview with me, I can pay for their labor?
+Expected, MediaPier, M.D.S.A.: Am I understanding correct?
+Expected, M.D.S.A.: So young may maybe we should have this via email because a participant support, it has a definite has a definition.
+Expected, M.D.S.A.: In the NSF parlance, I want to make sure that we're not mixing language on this. So why don't you send something in the Q and A.
+Expected, M.D.S.: I sent you an email. Okay.
+Expected, M.D.S.A.: Yes, that would be great. Okay, anybody else that hasn't asked a question, we have like three minutes.
+Expected, M.D.S.A.: I know, Alexander, you've asked a question, right? I want to see anybody else still on the phone that has not asked a question, please step up.
+SkellyForge, Ssaya, you've asked a question. Anybody else?
+Syaad Sajidh and Jolly, they haven't asked one.
+Hi, can you hear me?
+Yes.
+Okay, great. Yeah, I just wanted to ask about the fit for Track 2 for the proposal that we're putting down. So we have an infrastructure
+
+Expected, MediaPierre, SkellyTracker, R&J.
+Hi, can you hear me?
+Yes.
+Okay, great. Yeah, I just wanted to ask about the fit for track two for the proposal that we're putting down. So we have an infrastructure that we've pirated internally and it's relatively mature. We have several partner organizations, but now we're looking to expand this and also create an interoperable system where other library systems can connect and, you know,
+ExSash, I'm not sure at the left-hand side of it.
+The top one, EXSage metadata.
+We've started developing this on GitHub.
+There are a few contributors.
+Just wanted to understand if this fits the Track 2 maturity level.
+ANJALEE BRONDOCKIMAAROZA- So, what I'm not hearing, Anjali,
+but you'll have to answer this for yourself, is if you don't have a governance structure
+to that governance structure.
+I'm hearing that you have some contributors.
+If you don't have things like strategies for onboarding
+or getting maintainers and growing that contributors,
+you're probably not a track two.
+Okay Even if we have Yeah maybe in the middle they should just try to and you know be sure
+Finder Kinkawa, SkallyCam, Thanks.
+Finder Kinkawa, SkallyCam, SkallyCam, ESP.
+Finder Kinkawa, SkallyCam, SKAllyCam, SKAllyCam, SKAllyCam, SKAllyCam, SKAllyChan, CSU QEW, NER.
+Finder Kinkawa, SKAllyCam, SKAllyCam, SKAllyCam, SKAllyCam, SKAllyCam, SKAllyCam, SKAllyCam,
+so you've got to have all of the pieces around it and understand where you want to be heading and the extent to which all of those groups have had those conversations. So it does sound like maybe you're further along on a track one. But you should already have a strategy for your governance to have conversations around this. You should have a strategy for growing, not just you, but the entire ecosystem.
+Expected terms.
+Expected terms.
+.
+But if you haven't had those conversations or you don't have a strategy, then I would guess that you're probably just a little more mature in the track one.
+Your products are mature but your ecosystem is not quite there.
+OK, thank you so much.
+Of course.
+All right I know we have one more hand and then I going to I going to have to log us off and then encourage everybody to put their Q the last question and then I just do a quick close for everyone Thank you so much So I heard you mention a couple times that kind of a restriction on R funding and our primary stakeholder for our product are researchers And so how do we clarify that the goal is to get researchers to contribute to the product not to further R work
+Expected, SkellyTracker, MS. I want to make sure that that is not kind of misunderstood as doing more research, but instead it's contributing to building this ecosystem.
+Expected, SkellyTurk, Ski- I think the way you just described it very simply is you can start with that.
+Expected, Ski- Right if the source of your stakeholders are those R and D faculty or other, you can say it like that.
+Expected, Ski- You know, a source of a major source of stakeholders is this group because they bring energy.
+and Ex to the table, to the conversation. However, the goal isn't to do R&D, but rather
+to get their voice to the table, on the table. But she said it, I think, more simply. So it
+doesn't have to be fancy, but I do think it's worth just saying it so that the reviewer doesn't
+get confused.
+But then can we also claim the intellectual merit and broader impact of the research of the researchers who are then contributing to our OSP I would say the technology that you dealing with What is the product that you have coming out of this and what do you want to do with that thing right by building an open source ecosystem So people are going to be contributing to that product right And how is that going to move the knowledge forward So the early research by the time it gets to you it should be coming out of that R into some sort of platform or product
+Dougherty, M.D.: Of course, I want to thank everybody for spending the hour and a half. This is the last webinar will have you have the QR code. Please send any kind of questions. Bear with me. I'm going to try to bundle these into more generic ones.
+Dougherty, M.D.: So that I can get them out. If your email is on there, I can bundle it quickly into that. I will have less and less time though to have those one on ones that I've been having over the summer with many groups. So I'm sorry that I can't do that with everyone. I don't know if you're going to have these questions.
+Expected, Marelin, it's just me right now and Marlin as well helping out on panels, but we will try to get those emails out. So thanks again for showing up and questions really, really good. I hope these webinars have helped you. Thank you very much. Bye bye.

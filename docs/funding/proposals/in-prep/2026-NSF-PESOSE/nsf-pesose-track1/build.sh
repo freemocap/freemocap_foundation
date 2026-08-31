@@ -19,12 +19,30 @@ MODE="${1:-final}"
 OUT="out"
 FAIL=0
 
+# --root . : typst otherwise sandboxes reads to the input file's parent
+# directory, which breaks every `../template/` import. Run from repo root.
+# Draft mode is the template's default; the final build passes draft=false
+# explicitly so a submission PDF can never contain draft artifacts.
 if [ "$MODE" = "draft" ]; then
-  TYPST_ARGS=(--input draft=true)
+  TYPST_ARGS=(--root . --input draft=true)
   echo ">>> DRAFT build — do NOT submit these files"
 else
-  TYPST_ARGS=()
+  TYPST_ARGS=(--root . --input draft=false)
   echo ">>> SUBMISSION build"
+fi
+
+# Find a Typst binary. Plain `typst` covers macOS/Linux/Windows shells; under
+# WSL only the Windows install is visible, via interop. Override with
+# TYPST=/path/to/typst ./build.sh if yours lives elsewhere.
+if command -v typst >/dev/null 2>&1; then
+  TYPST=typst
+elif command -v typst.exe >/dev/null 2>&1; then
+  TYPST=typst.exe
+elif [ -x "/mnt/c/Users/$USER/.cargo/bin/typst.exe" ]; then
+  TYPST="/mnt/c/Users/$USER/.cargo/bin/typst.exe"
+else
+  echo ">>> typst not found — install it or set TYPST=/path/to/typst"
+  exit 1
 fi
 
 mkdir -p "$OUT"
@@ -33,28 +51,30 @@ mkdir -p "$OUT"
 # Section table: source path | output name | page limit (0 = no limit)
 #
 # Output names follow the section names Research.gov uses, so the upload step
-# is unambiguous. Add or remove rows as your package firms up.
+# is unambiguous. Add or remove rows as your package firms up. Rows for files
+# that do not exist yet are skipped with a note, so a row doubles as a
+# reminder of what is still missing from the package.
 # -----------------------------------------------------------------------------
 SECTIONS=(
-  "01-project-summary/main.typ|ProjectSummary|1"
+  "submission-components/project-summary.typ|ProjectSummary|1"
   "02-project-description/main.typ|ProjectDescription|7"
   "03-references-cited/main.typ|ReferencesCited|0"
-  "04-budget-justification/main.typ|BudgetJustification|5"
-  "05-facilities/main.typ|FacilitiesEquipmentOtherResources|0"
-  "07-personnel-list/main.typ|ListOfProjectPersonnel|0"
-  "09-mentoring-plan/main.typ|MentoringPlan|1"
+  "submission-components/budget-justification.typ|BudgetJustification|5"
+  "submission-components/facilities-equipment-other-resources.typ|FacilitiesEquipmentOtherResources|0"
+  "submission-components/personnel-collaborators-list.typ|ListOfProjectPersonnel|0"
 )
 
-# Per-person Synergistic Activities and each Letter of Collaboration are
-# copy-per-instance files. Anything matching these globs gets built too.
-for f in 06-synergistic-activities/*.typ; do
+# Per-person Synergistic Activities are copy-per-instance files (the unprefixed
+# synergistic-activities.typ is the copy-me template, not a build target).
+# Anything matching these globs gets built too.
+for f in submission-components/synergistic-activities-*.typ; do
   [ -e "$f" ] || continue
-  case "$f" in *TEMPLATE*) continue ;; esac
   base=$(basename "$f" .typ)
+  base="${base#synergistic-activities-}"
   SECTIONS+=("$f|SynergisticActivities-${base}|1")
 done
 
-for f in 08-letters/*.typ; do
+for f in submission-components/letters/*.typ; do
   [ -e "$f" ] || continue
   case "$f" in *TEMPLATE*) continue ;; esac
   base=$(basename "$f" .typ)
@@ -81,7 +101,7 @@ for row in "${SECTIONS[@]}"; do
   fi
 
   pdf="$OUT/${name}.pdf"
-  if ! typst compile "${TYPST_ARGS[@]}" "$src" "$pdf" 2>"$OUT/.err"; then
+  if ! "$TYPST" compile "${TYPST_ARGS[@]}" "$src" "$pdf" 2>"$OUT/.err"; then
     echo "  FAIL     $src"
     sed 's/^/             /' "$OUT/.err"
     FAIL=1

@@ -1,3 +1,6 @@
+#import "../../template/nsf.typ": budget, note, flag, suggestion, new, broader-impacts
+#import "../../template/refs.typ": c
+
 // PART 2 — Current status of the open-source product.  Page budget: ~1.0
 //
 // REQUIRED by NSF 26-506 for all PESOSE proposals. The solicitation asks for
@@ -24,25 +27,27 @@
 // Track 1 supports planning, NOT product development. Ongoing refactor work
 // belongs here as evidence of active maintenance, never in the work plan.
 
-#import "../../template/nsf.typ": budget, note
-#import "../../template/refs.typ": c
 
-#budget("~1.0 page")
+
 
 = Current State of the Software and Community
 
-FreeMoCap, distributed through Github and a standalone desktop installer (freemocap-dot-org-slash-download), has over 10,000 Github stars, telemetry indicating over 15,000 users across 153 countries, and a community forum with over 4,000 members. The software is organized as interoperating repositories separated by domain: `skellycam` for camera synchronization and recording, `skellytracker` as a modular interface for pose estimation, `skellyforge` for calibration, 3D reconstruction, and post-processing, and `freemocap_blender_addon` for export to Blender. 
+//Could condense/remove first paragraph?
+The FreeMoCap codebase is hosted in a collection of public GitHub repositories under the `freemocap` organization (`github-dot-com-slash-freemocap`), built and tested through automated CI/CD pipelines, and distributed as a cross-platform OS-certified standalone desktop application via installers hosted through our website (`freemocap-dot-org-slash-download`).
 
-FreeMoCap is used across several distinct communities, including researchers, educators and students, creative and technical users, and software contributors. Published use of FreeMoCap spans reaching and grasping biomechanics #c("mazroueiCatchingSmallBalls2026"), gait analysis #c("nunez-lisboaUnderstandingGaitAlterations2024"), computational linguistics #c("orrMULTICOLLABASLAffectiveComputing2024","peechattMULTICOLLABMultimodalCorpus2024", "nunnariDGSFabeln1MultiAngleParallel2024"), and animation #c("landaEvaluatingIdleAnimation2026"). Independent validation studies have reported agreement with marker-based motion capture across several movement tasks #c("dariciLowcostMarkerlessMotion2026", "minogueValidationFreetoUseMarkerless2025"), while our own work #c("cherianOpensourceDevelopmentValidation2026") has characterized gait and balance performance, demonstrated integration of multiple pose-estimation backends, and extended the workflow to non-human locomotion (@fig-data).
+The project is organized as a polyrepo - the core functionality of the application is split across domain-scoped constituent sub-repositories — `skellycam` for camera synchronization and recording, `skellytracker` as a modular interface for pose estimation, `skellyforge` for calibration, 3D reconstruction, and kinematic analysis, and `freemocap_blender_addon` for export to Blender (and other animation softwares) (@fig-overview). Each sub-repository  represents a independently functional codebase, follows the same internal layout, so that documentation, tests, and entry points sit in the same place in every repository.  This self-similar structure assists development, while also making the full codebase substantially easier to teach, to learn, and to navigate with AI coding assistants. A contributor with expertise in one domain can work inside a single component without holding the whole system in mind. 
 
-#figure(
-  image("../../figures/data.png", width:100%),
-  caption: [FreeMoCap applications from standard human biomechanics to specialized movement-analysis use cases. A. Lower-extremity joint-angle comparison and statistical parametric mapping against Qualisys marker-based motion capture across multiple pose-estimation backends. B. Custom DeepLabCut integration for tracking a lower-limb prosthesis user. C. Extension to ferret locomotion and neural-behavioral research in collaboration with the Scholl Lab, CU Denver Anschutz]
-) <fig-data>
+#include "../floats/fig-data.typ"
 
-While user adoption has grown, it has outpaced the growth of the maintainer base. Much of the architectural and operational knowledge needed to contribute to the core pipeline remains concentrated within a core development team, while contributor onboarding and technical knowledge decentralization remains immature. 
+FreeMoCap is used across several distinct communities, including , athletes, clinicians, educators and students, technical artists, and general technologists. Published use of FreeMoCap spans reaching and grasping biomechanics #c("mazroueiCatchingSmallBalls2026"), gait analysis #c("nunez-lisboaUnderstandingGaitAlterations2024"), computational linguistics #c("orrMULTICOLLABASLAffectiveComputing2024","peechattMULTICOLLABMultimodalCorpus2024", "nunnariDGSFabeln1MultiAngleParallel2024"), and animation #c("landaEvaluatingIdleAnimation2026"). Independent validation studies have reported agreement with marker-based motion capture across several movement tasks #c("dariciLowcostMarkerlessMotion2026", "minogueValidationFreetoUseMarkerless2025"), while our own work #c("cherianOpensourceDevelopmentValidation2026") has characterized gait and balance performance, demonstrated integration of multiple pose-estimation backends, and extended the workflow to non-human locomotion (@fig-data).
+
+
+Although we have made great strides in bringing in new contributors, much of the  architectural and operational knowledge needed to contribute to the core pipeline remains concentrated within a core development team, and contributor onboarding and technical knowledge decentralization remains immature. The scoping activities supported in this proposal will help us to increase the sophistication and reach of our onboarding and upskilling mechanisms be helping us strategically shape our efforts in alignment with our actual community.
+
 
 == Team Qualifications
-The FreeMoCap team combines scientific and engineering expertise with more than five years of direct experience developing the FreeMoCap software, supporting its community, and managing the technical and organizational challenges associated with its growth. 
+The FreeMoCap team represents decades of individual scientific and engineering expertise,  with more than five years of direct experience developing the FreeMoCap software specifically, including supporting its community, and managing the technical and organizational challenges associated with its growth. 
+// The wording here is a bit awkward and kind of undersells us - the PROJECT is five years old, the team itself has much more XP than that. The PI has 20 years XP in mocap and camera based tools for the study of human perceptomotor research, Aaron has close to a decade, the PROJECT is over 5 years old. 
+
 
 
