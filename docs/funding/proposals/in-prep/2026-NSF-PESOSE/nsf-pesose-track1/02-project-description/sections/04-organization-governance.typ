@@ -62,9 +62,7 @@ NumPy and SciPy run comparable processes for stakeholder-facing transparancy. Wh
 
 == Distributed infrastructure and community extensions
 
-A federated model requires distributed technical knowledge and the ability for
-contributors to extend the software without the core team implementing each
-addition. FreeMoCap's modular architecture provides a technical basis for this, for example, the `skellytracker` interface provides an open interface through which AI-based pose-estimation models developed by different groups can interoperate with a shared scientific workflow without modification to the underlying pipeline. This interface matters because no single pose-estimation model is adequate acrosssubjects. The algorithms in common use are trained on standard human datasets,and the requirements of biomechanical measurement differ from those the modelswere built to satisfy #c("seethapathiMovementScienceNeeds2019").
+FreeMoCap's modular architecture provides a technical basis for community extension, for example, the `skellytracker` interface provides an open interface through which AI-based pose-estimation models developed by different groups can interoperate with a shared scientific workflow without modification to the underlying pipeline. This interface matters because no single pose-estimation model is adequate acrosssubjects. The algorithms in common use are trained on standard human datasets,and the requirements of biomechanical measurement differ from those the modelswere built to satisfy #c("seethapathiMovementScienceNeeds2019").
  Because the component repositories are organized around fixed domains  — cameras, calibration, image analysis, reconstruction — rather than around any particular model or library, a new pose-estimation method can be adopted without disturbing the rest of the pipeline. 
 
 
@@ -81,16 +79,11 @@ Track 1 will define the review, distribution, maintenance, and responsibility st
 == Licensing
 
 FreeMoCap and its component repositories are licensed under the AGPLv3+, the most aggressively open source license available.  Because so much of the landscape of closed-source motion capture operate behind proprietary servers, the AGPLv3+ is the only standard license whose terms would stop a closed-source competitor from running `FreeMoCap` behind a server endpoint while charging users for access.
-As such, the AGPLv3+ license ensures that a service built on FreeMoCap returns its improvements to the community. Because the Foundation holds the rights to the codebase, it can also offer alternative terms to organizations whose intended use is incompatible with the AGPLv3+ — keeping the software freely available to everyone else while generating resources for maintenance and stewardship. 
+Because the Foundation holds the rights to the codebase, it can also offer alternative terms to organizations whose intended use is incompatible with the AGPLv3+ — keeping the software freely available to everyone else while generating resources for maintenance and stewardship. 
 
 == Long-term Sustainability
-// SOFT-TOUCH: §1 promises "a sustainability model." This paragraph lists
-// mechanisms without the principle that organizes them — your free-vs-paid rule
-// (infinitely duplicable -> free: software, docs, tutorials; everything else
-// costs: labor, hardware, server-side processing and storage). One sentence in
-// front of the existing list would make it a model rather than an inventory.
-// Not drafting it — it is your formulation and reads better in your words.
-The FreeMoCap Foundation was incorporated as an IRS-recognized 501(c)(3) public charity to provide an institutional home for the project, and the governance structures scoped above are intended to give that home a distributed contributor base rather than a dependence on any particular maintainer. In parallel, the Foundation will evaluate a diversified model for the long-term sustainability of this research infrastructure, including alternative commercial licensing, standardized hardware kits geared towards students, with higher end software targetting more resourced labs, training and support services, institutional partnerships, and continued grant funding. SkellyTechnologies, LLC, a separate for-profit entity associated with the project, provides an additional pathway for commercial services, SBIR/STTV proposals, and other revenue-generating activities that may support the long-term sustainability of the ecosystem.
+
+The FreeMoCap Foundation was incorporated as an IRS-recognized 501(c)(3) public charity to provide an institutional home for the project. In parallel, the Foundation will evaluate a diversified model for the long-term sustainability of this research infrastructure, including alternative commercial licensing, standardized hardware kits geared towards students, with higher end software targetting more resourced labs, training and support services, institutional partnerships, and continued grant funding. SkellyTechnologies, LLC, a separate for-profit entity associated with the project, provides an additional pathway for commercial services, SBIR/STTV proposals, and other revenue-generating activities that may support the long-term sustainability of the ecosystem.
 
 
 

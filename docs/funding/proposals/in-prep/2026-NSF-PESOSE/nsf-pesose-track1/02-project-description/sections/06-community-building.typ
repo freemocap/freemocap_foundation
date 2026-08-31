@@ -17,7 +17,6 @@
 
 
 = Community Building
-A larger contributor base only reduces dependence on the core team if users and contributors have enough knowledge to act independently; otherwise, growth simply shifts effort toward support, review, and correction.
 
 The FreeMoCap Foundation maintains an active Discord community forum of more than
 4,000 members, structured so that users can ask and answer questions without
@@ -28,25 +27,7 @@ established foundation for community engagement, but rapid user growth in 2026
 (@fig-star-chart) *has increased the need for education and participation models
 that can scale beyond direct interaction with maintainers.*
 
-// FIGURE + TEXT SIDE BY SIDE (2026-08-31) — pattern from the X-Labs proposal's
-// proposal/sections/5-team-capabilities.typ.
-//
-// Typst has no native text-wrap-around-figure. The working substitute is a
-// #grid: the figure (image stacked over its caption, entirely normal) goes in a
-// narrow column, and the body text that would otherwise have been pushed below
-// it goes in the other. The figure occupies a block of the page instead of a
-// full-width horizontal stripe, and prose fills the space beside it.
-//
-// TUNING — the only two knobs:
-//   * `columns:` ratio below governs how wide the figure is. The image is
-//     portrait (roughly 4:5), so a narrower figure column gets TALLER, and needs
-//     more text beside it to stay balanced. 0.42fr is a starting point.
-//   * which paragraphs go in the text cell. Two are in there now. If the figure
-//     runs taller than the text, pull the third paragraph in as well; if the
-//     text overruns the figure, push one back out below the grid.
-//
-// `align: (left + top, left + top)` keeps both columns starting at the same
-// baseline. Without it the figure centers itself vertically against the text.
+
 #grid(
   columns: (.8fr, 1fr),
   column-gutter: 1.1em,
