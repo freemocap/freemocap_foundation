@@ -8,8 +8,9 @@
 // letter-of-collaboration writer), subawardees, postdocs, and project-level
 // advisory committee members. NSF staff use this for reviewer selection.
 //
-// GAPS — organizations marked [TBD] are not stated in any source document in
-// this repo. Fill them before submitting; do not leave [TBD] in the PDF.
+// All organizations resolved. Idehen from his LinkedIn profile (employer only;
+// title not shown publicly). Scholl from his CU Anschutz faculty page.
+// Casals and Scott confirmed independent by the PI.
 // =============================================================================
 
 #import "../template/nsf.typ": nsf-doc, DRAFT, note
@@ -17,8 +18,10 @@
 #show: nsf-doc.with(page-limit: none, draft: DRAFT,
   title: [List of Project Personnel, Collaborators, and Partner Organizations])
 
+#set text(hyphenate: false)
+
 #table(
-  columns: (1.5fr, 1.7fr, 1.4fr),
+  columns: (1.15fr, 2fr, 1.35fr),
   inset: 5pt,
   align: left + top,
   table.header([*Full Name*], [*Organization(s)*], [*Role in the Project*]),
@@ -32,7 +35,7 @@
   [Paul Matthis], [FreeMoCap Foundation, Inc., Boston, MA],
     [Research Infrastructure Engineer (Other Personnel)],
 
-  [Endurance Idehen], [[TBD]],
+  [Endurance Idehen], [Chorus Innovations, Austin, TX],
     [I-Corps for PESOSE Industry Mentor (funded consultant)],
 
   [David Bayus], [San José State University, CADRE Laboratory for New Media,
@@ -47,19 +50,19 @@
   [Sarah Kerr], [Imatest LLC, Boulder, CO],
     [Collaborator; letter of collaboration],
 
-  [Andres Casals], [[TBD]],
+  [Andres Casals], [Independent, Rio de Janeiro, Brazil],
     [Contributor; letter of collaboration],
 
-  [Dominic Scott], [[TBD]],
+  [Dominic Scott], [Independent, Toronto, Canada],
     [Contributor; letter of collaboration],
 
   [Pooya Moradi Motlagh], [Independent, Rome, Italy],
     [Contributor; letter of collaboration],
 
-  [Ben Scholl], [[TBD]],
+  [Benjamin Scholl], [University of Colorado Anschutz, Department of
+    Physiology and Biophysics, Aurora, CO],
     [Collaborator; letter of collaboration],
 )
 
 #note[Cross-check before submission: every letter-of-collaboration writer
-appears above, and every name above also appears in the PI's COA Table 4.
-Resolve all [TBD] organizations.]
+appears above, and every name above also appears in the PI's COA Table 4.]

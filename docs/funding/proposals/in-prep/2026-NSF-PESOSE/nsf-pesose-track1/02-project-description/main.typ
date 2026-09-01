@@ -68,4 +68,3 @@
 #include "sections/06-community-building.typ"
 #include "sections/07-milestones-evaluation.typ"
 #include "sections/08-broader-impacts.typ"
-

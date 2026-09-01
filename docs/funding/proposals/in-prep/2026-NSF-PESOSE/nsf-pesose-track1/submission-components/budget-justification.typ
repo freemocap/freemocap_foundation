@@ -73,7 +73,7 @@ test — NSF wrote "by the submission deadline" only in the IHE paragraph. The
 W-2 transition must nonetheless be real before the period of performance
 begins; the award cannot fund the eligibility it depends on.]
 
-== Jonathan Samir Matthis — Principal Investigator
+== Jonathan Samir Matthis • Principal Investigator
 - *Functional title / SOC:* Computer and Information Research Scientist
   (SOC 15-1221); BLS OEWS reference:
   #link("https://www.bls.gov/oes/current/oes151221.htm")[bls.gov/oes/current/oes151221.htm]
@@ -88,7 +88,7 @@ begins; the award cannot fund the eligibility it depends on.]
   ecosystem-discovery interviewing across the training window. The remaining
   4 months of his effort continue on unfunded Foundation activities.
 
-== Aaron Cherian — co-Principal Investigator
+== Aaron Cherian • co-Principal Investigator
 - *Functional title / SOC:* Software Developer (SOC 15-1252); BLS OEWS
   reference:
   #link("https://www.bls.gov/oes/current/oes151252.htm")[bls.gov/oes/current/oes151252.htm]
