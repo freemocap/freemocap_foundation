@@ -128,19 +128,24 @@
   set text(font: BODY_FONT, size: BODY_SIZE, lang: "en")
   set par(justify: true, leading: LEADING, spacing: PAR_SPACING, first-line-indent: 0pt)
 
+  // Inline `code` spans otherwise render in Typst's default monospace
+  // (DejaVu Sans Mono), which is NOT on the PAPPG II.C.2.a permitted list and
+  // will fail a font check. Courier New is permitted, minimum 10pt.
+  show raw: set text(font: "Courier New", size: 10pt)
+
   // Headings: unnumbered, bold, tight. NSF reviewers skim on structure, so
   // headings should be visually obvious but must not eat vertical space.
   set heading(numbering: none)
   show heading.where(level: 1): it => block(
-    above: 1.1em, below: 0.55em,
+    above: 0.8em, below: 0.4em,
     text(size: 11.5pt, weight: "bold", it.body),
   )
   show heading.where(level: 2): it => block(
-    above: 0.9em, below: 0.45em,
+    above: 0.65em, below: 0.35em,
     text(size: 11pt, weight: "bold", style: "italic", it.body),
   )
   show heading.where(level: 3): it => block(
-    above: 0.7em, below: 0.3em,
+    above: 0.5em, below: 0.25em,
     text(size: 11pt, weight: "bold", it.body),
   )
 
@@ -255,24 +260,20 @@
 }
 
 // ---------------------------------------------------------------------------
-// DRAFT — global draft-mode flag, DEFAULT ON, with CLI override:
+// DRAFT — global draft-mode flag. Hard-coded, no CLI input.
 //
-//     ./build.sh                                     # draft build
-//     ./build.sh final                               # submission build (forces draft off)
-//     typst compile main.typ                         # draft (default)
-//     typst compile --input draft=false main.typ     # submission
+// false: draft artifacts (footer, notes, flags, suggestions, budget markers)
+//        render as NOTHING. Every compile is submission-clean — plain `typst
+//        compile`, Tinymist preview, and ./build.sh all produce the same PDF.
 //
-// Draft is the default so that plain compiles and Tinymist VS Code previews
-// render the draft artifacts (footer, notes, flags, suggestions, budget
-// markers) with zero command-line ceremony while writing. The override
-// exists so a submission build can never accidentally contain them: build.sh
-// always passes --input draft=false in final mode, so a clean PDF can only
-// come from an explicit, deliberate command.
+// Flip to true only to read the annotations while writing, and flip it back
+// before building anything you intend to upload. A draft footer sits in the
+// page margin, which PAPPG II.C.2.c forbids for proposer-supplied content.
 //
 // Every part file can `#import "../template/nsf.typ": DRAFT, note` and get
 // the same value without threading it through function arguments.
 // ---------------------------------------------------------------------------
-#let DRAFT = sys.inputs.at("draft", default: "true") == "false"
+#let DRAFT = false
 
 // ---------------------------------------------------------------------------
 // note — draft-only inline note for TODOs and open questions. Renders nothing

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/freemocap_foundation.iml" filepath="$PROJECT_DIR$/.idea/freemocap_foundation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/freemocap-foundation.iml" filepath="$PROJECT_DIR$/.idea/freemocap-foundation.iml" />
     </modules>
   </component>
 </project>

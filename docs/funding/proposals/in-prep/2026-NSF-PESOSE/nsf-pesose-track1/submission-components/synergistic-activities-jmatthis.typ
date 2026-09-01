@@ -1,12 +1,12 @@
 // =============================================================================
-// SYNERGISTIC ACTIVITIES — Jonathan D. Matthis
+// SYNERGISTIC ACTIVITIES — Jonathan Samir Matthis
 // 1 page max; up to 5 distinct examples (PAPPG II.D.2.h(iv)).
 // Merge with Cherian's into ONE PDF for the portal upload.
 // =============================================================================
 
 #import "../template/nsf.typ": nsf-doc, DRAFT
 
-#show: nsf-doc.with(page-limit: 1, draft: DRAFT, title: [Synergistic Activities — Jonathan D. Matthis])
+#show: nsf-doc.with(page-limit: 1, draft: DRAFT, title: [Synergistic Activities — Jonathan Samir Matthis])
 
 + *Development and open distribution of accessible research tooling.*
   Created and maintains FreeMoCap, a free, open-source markerless motion
