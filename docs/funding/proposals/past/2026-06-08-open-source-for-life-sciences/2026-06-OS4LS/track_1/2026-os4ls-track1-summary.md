@@ -3,7 +3,7 @@
 
 ---
 
-Life is movement, and the ability to one's body comfortably through the world is central to an individual's experience and quality of life. As such, the ability to record and analyze high quality empirically grounded measurements of full body human movement is essential to our ability to provide the standard of care necessary to ensure health throughout the entire life span.
+Life is movement, and the ability to move one's body comfortably through the world is central to an individual's experience and quality of life. As such, the ability to record and analyze high quality empirically grounded measurements of full body human movement is essential to our ability to provide the standard of care necessary to ensure health throughout the entire life span.
 
 ## Gap
 
@@ -11,7 +11,7 @@ Despite how centrality of human movement to the health across the lifespan, our 
 
 Traditional motion capture methods involve extremely high cost, specialized marker-based motion capture systems that can cost from  tens to hundreds of thousands of dollars to build a research quality full body motion capture lab. 
 
-Even though there are new technologies coming online that will allow us to do marker less motion capture using standard cameras, the development of this technology follows the old pattern, following a reliance on ether proprietary camera hardware or expensive token-based subscriptions (requiring thousands of dollars a year and disincentivizing exploration). 
+Even though there are new technologies coming online that will allow us to do marker less motion capture using standard cameras, the development of this technology follows the old pattern, following a reliance on either proprietary camera hardware or expensive token-based subscriptions (requiring thousands of dollars a year and disincentivizing exploration). 
 
 ## Goal
 A markerless motion capture system capable of providing research grade estimates of full body kinematics at minimal cost could reshape the landscape of human-centered health science and perceptual motor neuroscience. The goal of the FreeMoCap Project is to build exactly that system and support the community of users (students, researchers, athletes, and artists) that has grown around it. 

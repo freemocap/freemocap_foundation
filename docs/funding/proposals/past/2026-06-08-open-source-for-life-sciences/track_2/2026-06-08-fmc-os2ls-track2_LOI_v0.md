@@ -4,13 +4,13 @@
 
 The FreeMoCap Foundation's Track 1 proposal describes our flagship software (freemocap) and its potential impact on the landscape of human-centered biomedical research. 
 
-Our development of the FreeMoCap project has been structured around a poly-repo enforced separation of concerns whereby the different functional domains are split across individual repositories with a perscriptive naming structure: `skelly[domain]`, informally dubbed the 'sub-skelly network' after the logo and mascot of our company Skelly FreeMoCap. 
+Our development of the FreeMoCap project has been structured around a poly-repo enforced separation of concerns whereby the different functional domains are split across individual repositories with a prescriptive naming structure: `skelly[domain]`, informally dubbed the 'sub-skelly network' after the logo and mascot of our company Skelly FreeMoCap. 
 
-The principle sub-skelly repos are designed to provide isolated, semi-standalone developer environment to build the core functional pieces of the FreeMoCap software - `skellycam` for synchronized multi-camera streaming and recording, `skellytracker` for both traditional and AI/ML based image analysis, `skellyforge` for 3d capture volume calibration and kinematic reconstruction, and `skellyblender` for exporting basic trajectories to the animation software (such as Blender)
+The principal sub-skelly repos are designed to provide isolated, semi-standalone developer environment to build the core functional pieces of the FreeMoCap software - `skellycam` for synchronized multi-camera streaming and recording, `skellytracker` for both traditional and AI/ML based image analysis, `skellyforge` for 3d capture volume calibration and kinematic reconstruction, and `skellyblender` for exporting basic trajectories to the animation software (such as Blender)
 
-In addition, we also maintain a number of smaller scope utility repos to handle key sub-functionalities, such as `skellylogs` for a high-observability logging sytem, `skellypings` for Google cloud based user telemetry, etc. 
+In addition, we also maintain a number of smaller scope utility repos to handle key sub-functionalities, such as `skellylogs` for a high-observability logging system, `skellypings` for Google cloud based user telemetry, etc. 
 
-Each principle sub-skelly repository is designed provide their own interface, documentation, and API that can be used independently of the project as a whole. SkellyCam provide a synchronized multicamera streaming/recording UI, etc (see https://github.com/freemocap for a partial list of all the code repositories supported by the FreeMoCap Foundation). 
+Each principal sub-skelly repository is designed to provide their own interface, documentation, and API that can be used independently of the project as a whole. SkellyCam provide a synchronized multicamera streaming/recording UI, etc (see https://github.com/freemocap for a partial list of all the code repositories supported by the FreeMoCap Foundation). 
 
 
 #### Gap 

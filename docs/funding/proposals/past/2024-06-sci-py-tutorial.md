@@ -25,7 +25,7 @@ FreeMoCap is a free, open-source markerless motion capture software dedicated to
 Tutorial Goals: Through this tutorial, participants will:
 
 - Understand the role and capabilities of FreeMoCap within the motion capture ecosystem.
-- Learn how to install and setup FreeMoCap to start collecting motion capture data.
+- Learn how to install and set up FreeMoCap to start collecting motion capture data.
 - Master conducting motion capture using webcams, including connecting, calibrating cams, and processing data through FreeMoCap's GUI.
 - Learn how to operate Blender to visualize FreeMoCap 3D data effectively
 - Acquire skills to analyze the resultant 3D data for motion analyses
@@ -43,7 +43,7 @@ Documentation: https://freemocap.github.io/documentation/index_md.html
 
 ## Pre-requisite Skills
 
-*A list of prerequisite skills expected of attendees, so that participants can chose level appropriate tutorials. This content will be shown publicly.*
+*A list of prerequisite skills expected of attendees, so that participants can choose level appropriate tutorials. This content will be shown publicly.*
 
 Anyone interested in motion capture is welcome. General familiarity with using pip for package installation and running Python scripts is helpful, but is not required. Our tutorial is designed to accommodate attendees of all skill levels.
 
@@ -51,7 +51,7 @@ Anyone interested in motion capture is welcome. General familiarity with using p
 
 *A more detailed outline of the tutorial content, including the duration of each part and exercise sessions. Please include a description of how you plan to make the tutorial hands-on.*
 
-### Part I: Introducing and Installation FreeMoCap (1hr)
+### Part I: Introducing and Installing FreeMoCap (1hr)
 
 - Introduction to FreeMoCap
 
@@ -128,7 +128,7 @@ In your terminal, run `pip install freemocap` to install from PyPI. If you run i
 
 4. Run FreeMoCap
 
-If all of the steps above were successful, you can `freemocap` in your terminal and a GUI will pop up!
+If all of the steps above were successful, you can run `freemocap` in your terminal and a GUI will pop up!
 
 We also have a detailed version of these instructions in our documentation: https://freemocap.github.io/documentation/installation.html
 
