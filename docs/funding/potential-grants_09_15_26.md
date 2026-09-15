@@ -166,3 +166,6 @@ Applicants outside Europe can apply, but proposals from outside Horizon Europe c
 
 ### Potential FreeMoCap angle
 Another case where we fit extremely will. We could easily adapt the PESOSE proposal to this. The only issue is that they state European applicants have priority, and to make their donors happy, non-European projects should still have a 'European dimension' (aka impact in Europe). I think we can make it work - because we have users in Europe, and we can specifically point to Jonathan Nillsson and Gibbet Games as an example of that impact. 
+
+## 6. Convergence FRO
+https://www.convergentresearch.org/
