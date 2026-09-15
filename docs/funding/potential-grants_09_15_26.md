@@ -61,6 +61,7 @@ For example:
 - Demonstrating harmonization using existing FreeMoCap/Qualisys datasets and potentially an external rehabilitation dataset
 
 This one is interesting, don't know if its the best fit - and I think requires some more effort than all the others here. But also has ESI considerations, so we would have some advantage if we applied for it
+
 ---
 
 ## 3. Humanity AI Open Call
