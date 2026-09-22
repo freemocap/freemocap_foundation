@@ -1,14 +1,14 @@
 
-Title:
+## Title:
 
-Contact:
+## Contact:
 
-Research Team:
+## Research Team:
 
-Proposal Type
+## Proposal Type
 Data STACHE 
 
-Project Overview:
+## Project Overview:
 _500 words_
 Quantitative movement data are widely used in rehabilitation research to characterize gait, balance, motor performance, and changes in function over time. However, biomechanical datasets are often difficult to combine or reuse because motion-capture systems and analysis pipelines differ in how they represent time-series measurements, metadata, coordinate systems, anatomical landmarks, derived measures, and processing history. These differences limit the ability to aggregate movement datasets across studies and technologies.
 
@@ -18,7 +18,7 @@ We will work with the DAPR Resource Core to map participant, trial, task, and bi
 
 The project will produce a harmonized, documented representation of the existing gait and balance datasets together with reusable mappings and guidance for representing similar biomechanical datasets. The resulting resource will provide a practical test case for incorporating movement time-series data into the DAPR ecosystem and support future aggregation of rehabilitation datasets collected using different motion-capture and movement-analysis technologies.
 
-DAPR Resources and Relevance
+## DAPR Resources and Relevance
 _200 words_
 This project would use consultation and harmonization support from the DAPR Resource Core to identify appropriate existing data standards, map study variables into the evolving DAPR framework, and develop new DAPR data terms where biomechanical time-series concepts are not yet adequately represented. Guidance would also be valuable for determining how complex longitudinal signals and their associated metadata should be structured for future integration with DAPR infrastructure.
 
