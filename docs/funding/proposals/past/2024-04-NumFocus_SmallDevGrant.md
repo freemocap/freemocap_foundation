@@ -29,7 +29,7 @@ By introducing multi-person tracking, researchers will be able to analyze group 
 	No more than 400 words (2,500 characters max)
   
 
-Support for multi-person tracking will be a major feature upgrade for FreeMoCap. It will help meet the demonstrated needs of our users, and help prevent the loss of potential users who require this feature. It will also allow use to utilize the full capabilities of the machine learning models we have already implemented. 
+Support for multi-person tracking will be a major feature upgrade for FreeMoCap. It will help meet the demonstrated needs of our users, and help prevent the loss of potential users who require this feature. It will also allow us to utilize the full capabilities of the machine learning models we have already implemented. 
 
 Adding multi-person tracking to FreeMoCap will also benefit the scientific ecosystem by providing an easy to use, low cost, research grade motion capture solution that supports tracking multiple people.
 
@@ -48,11 +48,11 @@ The money will cover developer payment of 200 hours of work at $25 per hour.
 
 ## Timeline of Deliverables:This question is required.
 Please include specific timelines showing when you will achieve the proposed work:
-The work will be conducted over two months and a half months at 20 hours per week for 10 weeks.
+The work will be conducted over two and a half months at 20 hours per week for 10 weeks.
 
 
 ## Please list the name(s) of the person(s) who will be carrying out the work and a short statement (approximately 1 sentence) of why they are qualified.This question is required.:
-The work will be conducted by Philip Queen, a software dveloper who is already a primary contributor to FreeMoCap and has developed major features for the project.
+The work will be conducted by Philip Queen, a software developer who is already a primary contributor to FreeMoCap and has developed major features for the project.
 
 
 ## How will someone be identified to carry out the work? This question is required.:
