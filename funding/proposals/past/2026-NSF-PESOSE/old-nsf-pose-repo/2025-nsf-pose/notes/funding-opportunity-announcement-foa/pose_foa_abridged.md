@@ -1,4 +1,4 @@
-# Extracted Key Info from [FOA](./../../2024_NSF_POSE_foa_nsf23556.pdf)
+# Extracted Key Info from [FOA](../../2024_NSF_POSE_foa_nsf23556.pdf)
 
 ## DUE DATE - 👉**5 Sept 2024** 👈 
 - First Thursday of September 
@@ -238,7 +238,7 @@ ___
     -  The **specific societal or national need(s)** that the OSE will address, and 
     -  Anticipated broader impacts of the OSE.
 
-- **Budget stuff** (See [page 10 of FOA PDF](./../../2024_NSF_POSE_foa_nsf23556.pdf))
+- **Budget stuff** (See [page 10 of FOA PDF](../../2024_NSF_POSE_foa_nsf23556.pdf))
 
 ### Supplementary Documents
 

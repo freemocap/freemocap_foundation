@@ -1,6 +1,6 @@
 # Proposal Checklist
 
-from [PAPPG](/notes/nsf_proposal_and_award_policies_and_procedures_guide.pdf) Exhibit II-1 (Page 101 II-63)
+from [PAPPG](/docs/notes/nsf_proposal_and_award_policies_and_procedures_guide.pdf) Exhibit II-1 (Page 101 II-63)
 
 - [ ]  General:
   - [ ] The proposer has an active and valid SAM registration and a valid UEI.

@@ -1,6 +1,6 @@
 # Document Formatting Notes
 
-Instructions pulled from [NSF PAPPG (rule book)](/notes/nsf_proposal_and_award_policies_and_procedures_guide.pdf)
+Instructions pulled from [NSF PAPPG (rule book)](/docs/notes/nsf_proposal_and_award_policies_and_procedures_guide.pdf)
 
 ## Main Formatting rules in PAPPG - Part 1 - Chapter II - Section D.2
 
@@ -21,7 +21,7 @@ Instructions pulled from [NSF PAPPG (rule book)](/notes/nsf_proposal_and_award_p
     1. Mentoring Plan (if applicable)
     1. Data Management and Sharing Plan
 
-- [Additional proposal specific instructions](/notes/funding-opportunity-announcement-foa/pose_foa_abridged.md#solicitation-specific-submission-checklist)
+- [Additional proposal specific instructions](/docs/notes/funding-opportunity-announcement-foa/pose_foa_abridged.md#solicitation-specific-submission-checklist)
 ___
 
 ## Project Description Details
