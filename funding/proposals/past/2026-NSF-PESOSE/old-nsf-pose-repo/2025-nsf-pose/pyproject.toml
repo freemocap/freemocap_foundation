@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "2024-nsf-pose"
+version = "0.1.0"
+description = "FreeMoCap NSF POSE Proposal"
+authors = ["Skelly FreeMoCap <info@freemocap.org>"]
+license = "AGPLv3+"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8, <4"
+mkdocs-material = "^9.5.28"
+mystmd = "^1.2.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

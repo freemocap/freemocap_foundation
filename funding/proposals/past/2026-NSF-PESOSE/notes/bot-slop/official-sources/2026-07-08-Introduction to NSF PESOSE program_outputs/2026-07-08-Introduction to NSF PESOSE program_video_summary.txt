@@ -1,0 +1,197 @@
+## SOURCE INFORMATION
+--------------------------------------------------
+Source Type: YouTube Video
+URL: https://www.youtube.com/watch?v=HidXRi7Wa3g
+Video ID: HidXRi7Wa3g
+--------------------------------------------------
+
+# PISOS Program Overview and Open Source Ecosystems 
+
+Title slug: pisos-program-overview-and-open-source-ecosystems
+
+
+## One Sentence Summary
+The webinar introduces the NSF's PISOS program, detailing its mission to accelerate technology to market through secure open-source ecosystems, outlining its three tracks, funding, eligibility, and common pitfalls, and emphasizing the importance of collaboration and community engagement.
+
+## Executive Summary
+Erwin Ganchanani from NSF's TIP directorate introduces the PISOS program, aimed at accelerating technology to market by fostering secure open-source ecosystems and a competition-ready workforce. The program is structured into three tracks, from planning nascent ecosystems to securing mature ones, with varying funding levels. It emphasizes cultivating comprehensive ecosystems with governance, security, and community engagement, rather than just developing products. The webinar also details eligibility, upcoming deadlines, methods for measuring impact, and common proposal pitfalls, while stressing the crucial role of intermediary organizations and reviewer participation.
+
+## Topics Detailed Summary
+The webinar begins with an introduction to the PISOS program by Erwin Ganchanani, Assistant Directorate for Technology, Innovation and Partnerships at the National Science Foundation. PISOS, which integrates previous POSE and SafeOSC efforts, aims to accelerate technology to market by enabling secure open source ecosystems, developing a competition-ready workforce, and fostering innovation across the country. It serves as an alternative translation pathway to traditional startups, focusing on cultivating entire ecosystems rather than just technology. The program is open to diverse proposers including faculty, non-profits, and for-profits.
+
+Florence then details the scope of the PISOS program, emphasizing that an Open Source Ecosystem (OSE) is a comprehensively managed community including governance, security, users, and contribution pipelines, not merely software. NSF has a long history of supporting open source initiatives, and PSOS builds upon this by strengthening and securing OSEs to address national challenges. It funds the creation and management of organizations for ecosystems, not the development of open-source artifacts, and explicitly encourages proposals focusing on AI agent protocol ecosystems. The program also clarifies that open source tools broadly include hardware, machine learning models, languages, and data platforms.
+
+PSOS is structured into three distinct tracks. Track 1, "scoping and planning," is for nascent ecosystems, focusing on governance, licensing, documentation, and foundational operations. Track 2, "establishing and expanding a sustainable ecosystem," builds on Track 1's plans to execute governance models, develop infrastructure, and build community, emphasizing sustainability beyond financial aspects. Track 3, "safety, security, and privacy of a mature ecosystem," is a standalone track for established OSEs, focusing on interoperability, scalability, and security. Track 1 offers $300,000 for one year, while Tracks 2 and 3 offer $1.5 million each. Mandatory participation in Experiential Activities I-Corps for PSOS is required for Track 1 and 2 awardees.
+
+Eligibility for proposals is broad, encompassing traditional academic institutions, nonprofits, for-profit organizations, and tribal nations. Upcoming deadlines are September 1st annually and March 2027. The program stresses measuring the *impact* of open-source ecosystems (e.g., discovery, innovation, STEM education) rather than just their health. Key proposal requirements include an existing publicly available open-source product and detailed descriptions of the ecosystem's status, user base, and contributor base. Common pitfalls include failing to articulate societal importance, lacking a clear sustainability vision, inadequate recruitment strategies for contributors, and generic planning.
+
+The discussion highlights the critical role of intermediary organizations like The Carpentries and NumFocus in providing expertise for training, governance, and community building, recommending collaboration to enhance proposals and ensure sustainability. For Track 3, proposals must address the vulnerability landscape and critical vulnerability plans, including testing infrastructure. Finally, the NSF encourages individuals to become reviewers to ensure diverse representation on panels. The program also clarifies that while foreign collaborations are welcome, NSF funds cannot directly flow to foreign entities, and that PSOS is not intended for standards development but can support limited tool evolution within ecosystem development.
+
+## Complete Topic Outline
+### Introduction to the PISOS Program and TIP Directorate Mission
+> Erwin Ganchanani from the NSF's TIP directorate introduces the PISOS program, outlining its mission to accelerate technology to market, grow a competition-ready workforce, and foster innovation nationwide, particularly through open source ecosystems.
+- PISOS Program Introduction
+  - Erwin Ganchanani, NSF Assistant Directorate for Technology, Innovation and Partnerships, welcomes attendees.
+  - Introduces PISOS as a 'pathways to enable secure open source e-learning, really integrating tools together' program.
+  - PISOS integrates previous POSE and SafeOSC efforts.
+
+- TIP Directorate Mission
+  - TIP Directorate established as part of the CHIPS and Science Act of 2022.
+  - Mission 1: Accelerate science and technology to market and impact.
+  - Mission 2: Grow a competition-ready workforce across key technology areas (AI, quantum, biotechnology).
+  - Mission 3: Invest and lift up technological potential in every corner of the country.
+
+- PISOS as a Translational Pathway
+  - PISOS offers an alternative to traditional commercialization via SBIR program.
+  - Focuses on taking research results into secure open source ecosystems.
+  - Aims to foster further innovation and potential future spin-offs or startups from open source environments.
+  - Emphasizes cultivating the ecosystem around the technology.
+
+- Program Scope and Inclusivity
+  - Care deeply about technology progression and fostered ecosystem.
+  - Seeking to bring together vibrant stakeholders beyond the initial research group.
+  - Welcomes diverse proposers: faculty, non-profits, and for-profits.
+  - Aims to progress ideas from the lab into an open source ecosystem lineage.
+
+- Acknowledgements and Future Outlook
+  - Thanks to contributors from Computer Information Science and Engineering and Geosciences Directorates.
+  - Appreciation for all-of-NSF effort across directorates and offices.
+  - Anticipates robust proposals to augment and grow the portfolio.
+
+### Understanding PSOS Program Scope and Open Source Ecosystems
+> This segment provides an overview of the PSOS program scope, emphasizing the creation and management of open-source ecosystems, distinguishing it from mere product development, and highlighting NSF's long-standing history in supporting open source initiatives.
+- Webinar Introduction and Agenda
+  - Florence takes over from Erwin to outline the agenda.
+  - Agenda includes PSOS program scope, tracks, funding, success measures, eligibility, and required activities.
+
+- Understanding Open Source Ecosystems (OSE)
+  - OSE is more than just software or a code repository; it's a managed and deliberately developed community.
+  - Includes governance, security practices, user contributions, and computer contribution pipelines.
+  - Not just about a technology or a product.
+
+- NSF's Role in Open Source
+  - NSF has been a leader in open source since 2013 or earlier.
+  - Examples include Cyverse, Molecular Science Software Institution, Open Science Framework, Open Source Ecosystem for Hydrological Education Research and Operations.
+  - POSE advances existing work, focusing on innovation acceleration and lab-to-market progression, strengthening and securing OSEs for national efforts.
+
+- PSOS Program Overview (NSF 26506)
+  - Focuses on creation and management of organizations for ecosystems with governance and distributed development.
+  - Engages academia, industry, and government to translate research products into safe and sustainable ecosystems.
+  - Broad interpretation of Open Source Tools: includes hardware, machine learning models, languages, and data platforms.
+  - PSOS is about enabling ecosystem building, not developing open source artifacts or funding well-resourced communities.
+  - Visualized as a bridge between research products and comprehensive ecosystems (governance, documentation, developer community, users, defect management, security).
+
+- AI Agent Protocol Ecosystems
+  - Dear Colleague Letter (26015) highlighted interest in AI agent protocol ecosystems.
+  - AI Agents have capabilities extending beyond simple chat interfaces.
+
+### Understanding PSOS Program Tracks and Funding
+> This section details the three distinct tracks of the PSOS program, their objectives, target audiences, and funding structures, along with key requirements for participation and collaboration.
+- PSOS Program Overview
+  - Relaunch of two programs: POSE and SAFE OSC, with much of the structure remaining unchanged.
+  - Comprises three distinct tracks for ecosystem development.
+
+- Track 1: Scoping and Planning
+  - Objective: establishment of an open source ecosystem for teams at the beginning of their journey.
+  - Key Focus Areas: governance structure, licensing, community pathways, documentation, foundational operations, ecosystem discovery, organizational models, infrastructure planning, community building strategies.
+
+- Track 2: Establishing and Expanding
+  - Objective: establishing and expanding a sustainable ecosystem based on plans from Track 1.
+  - Implementation and Growth: organizing governance models, developing infrastructure, continuous development in the open, executing long-term strategy, active community building, sustainability goals and metrics (beyond just finances).
+
+- Track 3: Safety, Security, and Privacy
+  - Objective: improvement of safety, security, and privacy for a mature ecosystem.
+  - Nature of the Track: standalone, not a continuation of Track 2, intended for existing, mature OSCs.
+  - Key Considerations: interoperability, scalability, security.
+
+- Funding and Requirements
+  - Award Details: Track 1: $300,000 (one-year, up to 30 awards); Track 2: $1.5 million (approx. 10 awards); Track 3: $1.5 million (approx. 10 awards).
+  - Mandatory Activities: Track 1 and 2 awardees must participate in Experiential Activities I-Corps for PSOS (tailored program, waivers available).
+  - Collaboration and Eligibility: encouragement for collaboration, one lead organization with others as subawards, PI eligibility tied to submitting organization.
+
+### Open Source Ecosystem Discussion: Eligibility, Impact, and Pitfalls
+> This section covers eligibility for funding, upcoming deadlines, methods to measure the impact of an open source ecosystem, key requirements for proposals, and common pitfalls to avoid during submission.
+- Proposal Eligibility
+  - Eligible Institutions: Traditional IHEs, nonprofits, non-academic institutions, professional societies, for-profit organizations, state and local governments, tribal nations, other federal agencies, FFRDCs (refer to NSF Proposal Guide).
+
+- Proposal Deadlines
+  - Annual deadline: September 1st (first Tuesday in September).
+  - Second deadline: March 2027 (first Tuesday in March).
+
+- Measuring Ecosystem Impact
+  - Focus on measuring impact of the open source ecosystem, not just its health.
+  - Key Impact Metrics: discovery and innovation (datasets, startups, new technologies), STEM education and workforce (participant hiring), research infrastructure (new infrastructure built).
+
+- Proposal Requirements
+  - Must have a pointer to an existing publicly available open source product (minimum for Track 1 and Track 2).
+  - Describe current status of product development and broader ecosystem (dissemination, user base, contributor base).
+
+- Common Proposal Pitfalls
+  - Lack of Societal Importance: failure to make a strong case for significant societal or national importance.
+  - Sustainability Vision: absence of a clear vision for sustaining the OSE.
+  - Recruitment Strategy: missing or inadequate strategy for new contributors and users.
+  - Specific Planning & Evaluation: generic planning, lack of specific milestones and actions, focus beyond just cyber technology to human elements.
+  - Technical and Operational Details: unclear recruitment for retention, licensing, infrastructure building/testing, quality control, security.
+  - Collaboration: recommendation to involve intermediary or backbone organizations.
+
+### Intermediary Organizations, Vulnerability, and Engagement with PSOS
+> This segment emphasizes the crucial role of collaborating with intermediary or backbone organizations for open source ecosystem sustainability, discusses vulnerability assessment and testing infrastructure, and encourages engagement with NSF PSOS, particularly through reviewer participation.
+- Intermediary Organizations in Open Source
+  - Role and Benefits: Sustain OSEs, provide expertise in training, governance, sponsorship, and community building; act as a 'silent army'.
+  - Examples: The Carpentries, NUMFocus, Software Freedom Conservancy, Open Source Collective.
+  - Recommendation: Collaborate with these groups to leverage expertise and strengthen submissions.
+
+- Track 3: Vulnerability Landscape
+  - Proposal Requirements: Address vulnerability landscape for OSC and products, include plan for critical vulnerabilities, outline testing infrastructure (building, using, extending), be specific about milestones and evaluation plans.
+
+- Engaging with NSF PSOS
+  - Learning and Contribution: Learn more via QR code, share info on OSEs, express interest in an open source conference.
+  - Reviewer Opportunities: Sign up to be a reviewer, encouraged for those with experience in governance, data maintainers, users, and contributors, aiming for broader representation.
+
+- International Collaborations
+  - NSF Policy: No NSF money can flow directly to foreign entities.
+  - Additional Regulations: Applicants must check institutional and state policies.
+  - Meaningful Participation: Foreign collaborators can participate without direct NSF funds (e.g., contributions, maintenance, workshop attendance).
+
+- Open Technical Standards and PISOS
+  - Acknowledged as an interesting and recurring question; initial response is general.
+
+### Program Questions and Funding Specifics
+> This section addresses common questions about the PSOS program, including funding for tool development versus ecosystem development, criteria for track eligibility, the importance of collaboration letters, and details about submission deadlines and program officer communication.
+- PSOS Program Scope Clarification
+  - PSOS is not a standards development activity, even though standards are important for open source ecosystems.
+  - Focus remains on platform and product development.
+
+- Funding for Tool Development
+  - Primarily for ecosystem development, but limited tool evolution (up to 15-20% of budget) can be supported.
+  - Higher percentages require strong justification.
+
+- Track Eligibility and Maturity Levels
+  - Safety, security, and privacy must be addressed in all Track 1 and Track 2 proposals.
+  - For Track 2, projects should not be overly mature or well-funded; NSF funding should act as a catalyst.
+  - Submitting a Track 1 is not a prerequisite for Track 2.
+
+- Letters of Collaboration
+  - Must demonstrate active engagement from entities within the ecosystem, not just general support.
+  - Reviewers need to be convinced of adequately developed relationships.
+
+- Submission Deadlines and Communication
+  - Two submission deadlines: September and March, with awards covering the entire fiscal year.
+  - Contact program officers via the PSOS mailbox with meaningful subject lines for efficient responses.
+
+### Webinar Q&A and Future Plans
+> This segment discusses the handling of proposals and questions, outlines plans for upcoming webinars, and details the process for reviewing proposals and managing budgets, concluding the current webinar.
+- Proposal and Question Handling
+  - Working group collectively discusses proposals and questions, but currently overwhelmed due to fiscal year end.
+  - Can answer specific questions, especially for existing awardees, but reviewing entire project proposals is challenging.
+
+- Upcoming Webinars and Follow-up
+  - Unaddressed questions from Q inbox will inform a second webinar, anticipated before July 15th.
+  - A third or fourth webinar will focus on proposal preparation, including review process, portfolio balancing, budget, and collaboration letters.
+
+- Webinar Conclusion and Next Steps
+  - Current webinar concluding after one hour.
+  - Attendees advised to look out for posted content and future webinar dates.
+  - Stay in touch via the PISAS mailbox.
+
+

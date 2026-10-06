@@ -1,0 +1,135 @@
+## SOURCE INFORMATION
+--------------------------------------------------
+Source Type: YouTube Video
+URL: https://www.youtube.com/watch?v=Yvqb1tsBSEk
+Video ID: Yvqb1tsBSEk
+--------------------------------------------------
+
+# Webinar Q&A on PSOS Ecosystems Funding and Governance 
+
+Title slug: webinar-q-a-on-psos-ecosystems-funding-and-governance
+
+
+## One Sentence Summary
+This webinar Q&A clarifies funding eligibility for PSOS ecosystems, distinguishes between R&D and ecosystem building, outlines requirements for open data sets and software, discusses FFRDC involvement, budgeting for I-Corp and hardware, and emphasizes governance and community engagement.
+
+## Executive Summary
+The webinar addresses key aspects of PSOS (Platform for Scientific Open Software) ecosystems, emphasizing that funding is for ecosystem building, not direct R&D. It clarifies requirements for open data sets and software systems in proposals, stressing intellectual merit and broader impacts. The discussion also covers the intricacies of FFRDC involvement, budgeting for hardware and I-Corp training, and the critical role of governance, community contributions, and mentorship in fostering sustainable open-source ecosystems. Participants are guided on effectively framing their technology and ecosystem maturity for NSF funding.
+
+## Topics Detailed Summary
+The webinar begins by clarifying that PSOS funding is for 'ecosystem building' rather than direct Research and Development (R&D). Activities like hardware building or hackathons are acceptable if framed as engagement. Participant support, including travel, is allowed, but international engagements are not. Proposals for open data sets and software systems must include links to assets, articulate their 'intellectual merit' and 'broader impacts', and demonstrate ecosystem maturity, including governance, maintainers, and contributors. For Federally Funded Research and Development Centers (FFRDCs), NSF cannot double-fund projects, so detailed justifications for unique skills and clear compensation mechanisms are required. Hardware purchases need strong justification, while I-Corp training can be budgeted up to $30,000, though it shouldn't consume the entire budget. Fair compensation for all team members is crucial for budgeting. A data science education platform is evaluated as 'adolescent' in product maturity and 'elementary school' in ecosystem maturity, highlighting the need for defined open-source language, contributors, and governance. Framing technology for funding requires emphasizing intellectual merit and ecosystem development, not just the product. Letters of collaboration differ from letters of support; collaborators must be invested in the project but not part of the proposing team, contributing directly to the ecosystem. Open-source projects need publicly available links to demonstrate activity and maturity, with intellectual merit going beyond just making a project 'bigger'. Funding supports ecosystem building activities, not R&D, with training aimed at fostering contributions and engagement rather than mere technology usage for individual research. I-Corp is a structured learning activity for scoping and planning ecosystems, with Track 2 applicants needing to show 'learnings' and Track 1 'strategies'. Funding for governance in Track 1 focuses on developing strategies for legal aspects, decision-making, and stakeholder engagement, rather than direct implementation. Crowdfunding for open-source projects is discussed, with concerns about oversight and direct linkage to the applicant's ecosystem. Nascent ecosystems with multiple components are acceptable if they clearly articulate problem-solving and knowledge advancement. Challenges arise when transitioning federal agency software to open-source, particularly regarding community contributions, governance authority, and avoiding the perception of merely fixing software for another agency. Finally, budgeting for I-Corp training, participant stipends, and travel is clarified, emphasizing that I-Corp is an activity within the budget and typically involves a seven-week coursework, with a caution against over-allocating funds to it, especially for Track 1 projects. Track 2 maturity demands robust governance and contributor strategies, not just product maturity, and researchers' roles should be framed as contributing to product development and ecosystem building, not just their own research.
+
+## Complete Topic Outline
+### PSOS Funding Scope and Eligibility
+> Clarification on what activities are funded under the PSOS program, distinguishing between R&D and ecosystem building, and guidelines for participant support and international engagements.
+- R&D vs. Ecosystem Building
+  - PSOS is not for Research and Development (R&D); direct R&D activities are not funded.
+  - Activities like building hardware or hackathons are acceptable if framed as 'building the ecosystem' or 'engagement'.
+
+- Workshop Subsidies and Participant Support
+  - Funds can be used to subsidize hardware costs for workshops and researcher travel.
+  - Participant support is permissible under NSF clearance.
+
+- International Engagements
+  - NSF funds cannot support international engagements, either for proposers or workshop participants.
+  - Alternative mechanisms must be found to support international individuals.
+
+### Proposal Requirements for Open Assets
+> Guidelines for presenting open data sets and software systems in proposals, focusing on intellectual merit, broader impacts, and ecosystem development.
+- Open Data Sets
+  - Proposals are required to include a link to the open data set asset.
+  - Data sets alone are not sufficient; intellectual merit and broader impacts must be discussed.
+  - Proposers need to explain how the data set advances knowledge, its uniqueness, and the technology communities it serves.
+
+- Open Software Systems (GitHub Repositories)
+  - Multiple GitHub repositories are permissible, but the overall ecosystem must make sense to reviewers.
+  - Focus is on advancing intellectual merit and broader impacts, not just the number of products.
+  - Proposals must address the maturity of the ecosystem, including data maintainers, contributors, and governance structures.
+  - Reviewers must be convinced of the synergy and strategy for managing multiple assets.
+
+### FFRDC Involvement and Budgeting
+> Considerations for involving Federally Funded Research and Development Centers (FFRDCs) and general budgeting advice for hardware and training.
+- FFRDC Involvement in NSF Proposals
+  - NSF cannot use funds to support something an FFRDC's institution or government agency is already funding.
+  - Proposers must demonstrate why an FFRDC is needed and what special skill set they bring.
+  - Need to explain how the FFRDC collaborators will be paid.
+  - Send an email to the program with details about their participation for confirmation.
+
+- Budgeting for Hardware and Training
+  - Strong case needed for purchasing infrastructure/hardware.
+  - Budgeting for I-Corp training is allowed, up to $30,000.
+  - Additional compensation for participants in I-Corp training is permissible.
+  - Training activities must be directly related to the project's objectives.
+  - Caution against consuming the entire budget for I-Corp training.
+
+- Project Budgeting and Compensation
+  - Ensure all team members are compensated, not just PI and co-PIs.
+  - Unequal compensation can create a 'negative look' on the budget.
+
+### Ecosystem Definition and Maturity
+> Guidelines for defining the scope and stakeholders of an open-source ecosystem, assessing its maturity, and the expectations for Track 1 and Track 2 projects.
+- Defining the Ecosystem
+  - Importance of defining who the target audience, contributors, and maintainers are.
+  - Applicants must define and justify who they are trying to reach.
+  - Size alone is not a good selling point; broader impacts are crucial.
+
+- Open Source Ecosystem Maturity and Trajectory
+  - Proposals should link to existing publicly available open-source products to show activity.
+  - Proposers must articulate the maturity level of their ecosystem and its desired trajectory.
+  - Simply making something 'bigger or more active' is not sufficient for intellectual merit.
+
+- Project Proposal Maturity (Track 1 vs. Track 2)
+  - Track 2 requires a governance structure, strategies for onboarding and growing maintainers and contributors.
+  - Product maturity alone is insufficient for Track 2 if ecosystem development and governance are lacking.
+  - Track 1 implies early stages of scoping and planning, even with existing users/contributors.
+
+### I-Corps and Governance in Ecosystem Building
+> Detailed expectations for I-Corps participation, funding for governance structures, and the role of mentorship programs in open-source ecosystems.
+- I-Corps Participation Expectations
+  - Track 2 applicants must discuss 'learnings' from I-Corps, not just activities.
+  - Track 1 applicants should detail specific 'strategies for doing interviews' and workshop plans.
+  - I-Corps is a structured learning activity for awardees to organize interactions and scope/plan their ecosystem.
+
+- Funding Governance in Track 1 Projects
+  - Track 1 is for 'scoping and planning and strategies,' not for making definitive decisions or implementing final structures.
+  - Funds can be used to develop strategies and have dialogues with groups regarding governance.
+  - Caution advised on direct legal fees due to restrictions in 2CFR 200.
+  - Governance is broad, encompassing IP, decision-making, voting, and stakeholder involvement.
+
+- Funding Mentorship Programs and Crowdfunding
+  - Question about funding mentorships supported by crowdfunding platforms (e.g., Linux Foundation).
+  - Need to convince reviewers of a direct link between crowdfunding and the applicant's ecosystem, ensuring oversight and control.
+
+### Federal Agency Software and Open Source
+> Challenges and considerations for transitioning scientific software maintained by a federal agency into a community-governed open-source project.
+- Software Background and Current State
+  - Scientific software developed and maintained by a federal agency, often with limited external contributors due to tight agency control.
+  - Interest in evolving a community governance model for state agencies and private sector users.
+
+- Red Flags and Dilemmas
+  - Concerns about the software being 'locked down' by a federal agency.
+  - Questioning the long-term vision and authority to move the software into a truly open-source state.
+  - Dilemma: is it an ecosystem build or just fixing software for another federal agency?
+
+- Path Forward
+  - Forking the software as a potential solution to gain authority and enable development.
+  - Continued concern about the lack of external code contributors for collaboration letters.
+
+### Budgeting and I-Corps Training Specifics
+> Detailed guidance on budget allocation for I-Corps, participant stipends, and travel within the program's financial framework.
+- Budget Allocation Flexibility
+  - The budget is flexible, and spending priorities are key, with I-Corps being one activity.
+  - Participant support (stipends) is allowed.
+  - Travel to conferences and for customer discovery is permitted.
+
+- I-Corps Program Details
+  - I-Corps involves three to five people (technical lead, entrepreneur lead, industry mentor).
+  - Coursework is approximately seven weeks, one day per week.
+  - Time to attend training is permitted.
+
+- Budgetary Considerations for I-Corps
+  - Clarification on whether I-Corp training counts towards the $30,000 limit.
+  - Over half the money going towards I-Corps could be a problem for Track 1 proposals.
+  - Approximately no more than a certain percentage should be focused solely on I-Corps activities.
+
+

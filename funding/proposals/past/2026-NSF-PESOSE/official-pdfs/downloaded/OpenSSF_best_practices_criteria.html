@@ -1,0 +1,2192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <title>BadgeApp</title>
+  <link rel="icon" type="image/x-icon" href="https://www.bestpractices.dev/assets/favicon-f098b7364af46f181ea6b6d164e21494cbdb923eb9707491086ed622020f588f.ico" />
+  <link rel="stylesheet" href="https://www.bestpractices.dev/assets/application-d2ae50cb28b8f5d3363e8dece8cfff048cf81d9d7107895af50e12fdb772bd7e.css" media="all" />
+  <script src="https://www.bestpractices.dev/assets/application-c7d66b9fa97e00fe3dbc4daba96202084860018276dbe2964ae2c4921730cbcb.js" defer="defer"></script>
+    <link rel="preload" href="https://www.bestpractices.dev/assets/application-d2ae50cb28b8f5d3363e8dece8cfff048cf81d9d7107895af50e12fdb772bd7e.css" as="style" type="text/css">
+    <link rel="preload" href="https://www.bestpractices.dev/assets/application-c7d66b9fa97e00fe3dbc4daba96202084860018276dbe2964ae2c4921730cbcb.js" as="script"
+      type="application/javascript">
+    <link rel="preload" href="https://www.bestpractices.dev/assets/fa-regular-400-f7d5b48f588ee15e226c466c10f22b54a58d717af356b5f4229781c212236af0.woff2" as="font"
+      type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.bestpractices.dev/assets/cci-logo-header-908e3148b64204804cbd3d915216a6716e12f09512e8892f1580db3344060bbc.png" as="image" type="image/png">
+  <link rel="alternate" type="application/atom+xml" title="OpenSSF Best Practices BadgeApp Updated Projects" href="/en/feed" />
+  <link rel="publisher" href="https://www.linuxfoundation.org/" />
+       <link rel="alternate" hreflang="en" href="https://www.bestpractices.dev/en/criteria" />
+       <link rel="alternate" hreflang="zh-CN" href="https://www.bestpractices.dev/zh-CN/criteria" />
+       <link rel="alternate" hreflang="es" href="https://www.bestpractices.dev/es/criteria" />
+       <link rel="alternate" hreflang="fr" href="https://www.bestpractices.dev/fr/criteria" />
+       <link rel="alternate" hreflang="de" href="https://www.bestpractices.dev/de/criteria" />
+       <link rel="alternate" hreflang="ja" href="https://www.bestpractices.dev/ja/criteria" />
+       <link rel="alternate" hreflang="pt-BR" href="https://www.bestpractices.dev/pt-BR/criteria" />
+       <link rel="alternate" hreflang="ru" href="https://www.bestpractices.dev/ru/criteria" />
+       <link rel="alternate" hreflang="sw" href="https://www.bestpractices.dev/sw/criteria" />
+       <link rel="alternate" hreflang="x-default" href="https://www.bestpractices.dev/criteria" />
+</head>
+<body>
+<header class='navbar navbar-fixed-top navbar-inverse nav-color'>
+  <div class='container-fluid container_padding'>
+    <nav>
+      <div class="navbar-header"><a id="logo" class="navbar-brand" href="/en">OpenSSF Best Practices</a><div class="navbar-progress-collapsed"></div><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsingRightNav" aria-label="Toggle collapsible navigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button></div>
+
+      <div class="collapse navbar-collapse" id="collapsingRightNav">
+
+      <ul class='nav navbar-nav navbar-right'>
+        <li class="navbar-progress-expanded"></li>
+        
+        <li><a id="projects_page" href="/en/projects"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;Projects</a></li>
+
+          <li><a href="/en/signup"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Sign Up</a></li>
+          <li><a href="/en/login"><i class="fa fa-sign-in-alt" aria-hidden="true"></i>&nbsp;Login</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <span class="fa fa-language fa-lg" title="Choose locale"></span>
+            <b class="caret"></b></a>
+          <ul class="dropdown-menu reverse-dropdown">
+              <li><a href="https://www.bestpractices.dev/en/criteria">English (en)</a></li>
+              <li><a href="https://www.bestpractices.dev/zh-CN/criteria">Chinese (Simplified) / 中文（简体） (zh-CN)</a></li>
+              <li><a href="https://www.bestpractices.dev/es/criteria">Spanish / Español (es)</a></li>
+              <li><a href="https://www.bestpractices.dev/fr/criteria">French / Français (fr)</a></li>
+              <li><a href="https://www.bestpractices.dev/de/criteria">German / Deutsch (de)</a></li>
+              <li><a href="https://www.bestpractices.dev/ja/criteria">Japanese / 日本語 (ja)</a></li>
+              <li><a href="https://www.bestpractices.dev/pt-BR/criteria">Brazilian Portuguese / Portugues do Brasil (pt-BR)</a></li>
+              <li><a href="https://www.bestpractices.dev/ru/criteria">Russian / Русский (ru)</a></li>
+              <li><a href="https://www.bestpractices.dev/sw/criteria">Swahili / Kiswahili (sw)</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+
+    </nav>
+  </div>
+</header>
+
+  <div class="container container_margins">
+  <div class="row">
+<div class="col-xs-12">
+<h1>FLOSS Best Practices Criteria (All Levels)</h1>
+<p> This is the set of best practices for Free/Libre and Open Source Software (FLOSS) projects to achieve the Open Source Security Foundation (OpenSSF) Best Practices badges at the passing, silver, and gold badge levels. You can show this list with <a href="/en/criteria">just the criteria</a> or with <a href="/en/criteria?details=true&rationale=true">additional information</a>. You may also view just the <a href="/en/criteria/0">passing</a>, <a href="/en/criteria/1">silver</a>, and <a href="/en/criteria/2">gold</a> criteria, as well as <a href="/en/criteria_stats">criteria statistics</a>.
+<p> See <a href="/en/criteria_discussion">criteria discussion</a> for more information about these criteria.
+
+<h2>Passing</h2>
+
+<h3>Basics</b></h3>
+<h4>Basic project website content</h4>
+<ul>
+<li id='0.description_good'>
+The project website MUST succinctly describe what the software does (what problem does it solve?).
+
+
+
+
+
+
+<sup>[<a href="#0.description_good">description_good</a>]</sup>
+<li id='0.interact'>
+The project website MUST provide information on how to: obtain, provide feedback (as bug reports or enhancements), and contribute to the software.
+
+
+
+
+
+
+<sup>[<a href="#0.interact">interact</a>]</sup>
+<li id='0.contribution'>
+The information on how to contribute MUST explain the contribution process (e.g., are pull requests used?)
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#0.contribution">contribution</a>]</sup>
+<li id='0.contribution_requirements'>
+The information on how to contribute SHOULD include the requirements for acceptable contributions (e.g., a reference to any required coding standard).
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#0.contribution_requirements">contribution_requirements</a>]</sup>
+</ul>
+<h4>FLOSS license</h4>
+<ul>
+<li id='0.floss_license'>
+The software produced by the project MUST be released as FLOSS.
+
+
+
+
+
+
+<sup>[<a href="#0.floss_license">floss_license</a>]</sup>
+<li id='0.floss_license_osi'>
+It is SUGGESTED that any required license(s) for the software produced by the project be <a href="https://opensource.org/licenses">approved by the Open Source Initiative (OSI).</a>
+
+
+
+
+
+
+<sup>[<a href="#0.floss_license_osi">floss_license_osi</a>]</sup>
+<li id='0.license_location'>
+The project MUST post the license(s) of its results in a standard location in their source repository.
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#0.license_location">license_location</a>]</sup>
+</ul>
+<h4>Documentation</h4>
+<ul>
+<li id='0.documentation_basics'>
+The project MUST provide basic documentation for the software produced by the project.
+
+
+{N/A justification}
+
+
+
+<sup>[<a href="#0.documentation_basics">documentation_basics</a>]</sup>
+<li id='0.documentation_interface'>
+The project MUST provide reference documentation that describes the external interface (both input and output) of the software produced by the project.
+
+
+{N/A justification}
+
+
+
+<sup>[<a href="#0.documentation_interface">documentation_interface</a>]</sup>
+</ul>
+<h4>Other</h4>
+<ul>
+<li id='0.sites_https'>
+The project sites (website, repository, and download URLs) MUST support HTTPS using TLS.
+
+
+
+
+
+
+<sup>[<a href="#0.sites_https">sites_https</a>]</sup>
+<li id='0.discussion'>
+The project MUST have one or more mechanisms for discussion (including proposed changes and issues) that are searchable, allow messages and topics to be addressed by URL, enable new people to participate in some of the discussions, and do not require client-side installation of proprietary software.
+
+
+
+
+
+
+<sup>[<a href="#0.discussion">discussion</a>]</sup>
+<li id='0.english'>
+The project SHOULD provide documentation in English and be able to accept bug reports and comments about code in English.
+
+
+
+
+
+
+<sup>[<a href="#0.english">english</a>]</sup>
+<li id='0.maintained'>
+The project MUST be maintained.
+
+
+
+
+
+
+<sup>[<a href="#0.maintained">maintained</a>]</sup>
+</ul>
+<h3>Change Control</b></h3>
+<h4>Public version-controlled source repository</h4>
+<ul>
+<li id='0.repo_public'>
+The project MUST have a version-controlled source repository that is publicly readable and has a URL.
+
+
+
+
+
+
+<sup>[<a href="#0.repo_public">repo_public</a>]</sup>
+<li id='0.repo_track'>
+The project's source repository MUST track what changes were made, who made the changes, and when the changes were made.
+
+
+
+
+
+
+<sup>[<a href="#0.repo_track">repo_track</a>]</sup>
+<li id='0.repo_interim'>
+To enable collaborative review, the project's source repository MUST include interim versions for review between releases; it MUST NOT include only final releases.
+
+
+
+
+
+
+<sup>[<a href="#0.repo_interim">repo_interim</a>]</sup>
+<li id='0.repo_distributed'>
+It is SUGGESTED that common distributed version control software be used (e.g., git) for the project's source repository.
+
+
+
+
+
+
+<sup>[<a href="#0.repo_distributed">repo_distributed</a>]</sup>
+</ul>
+<h4>Unique version numbering</h4>
+<ul>
+<li id='0.version_unique'>
+The project results MUST have a unique version identifier for each release intended to be used by users.
+
+
+
+
+
+
+<sup>[<a href="#0.version_unique">version_unique</a>]</sup>
+<li id='0.version_semver'>
+It is SUGGESTED that the <a href="https://semver.org">Semantic Versioning (SemVer)</a> or <a href="https://calver.org/" >Calendar Versioning (CalVer)</a> version numbering format be used for releases. It is SUGGESTED that those who use CalVer include a micro level value.
+
+
+
+
+
+
+<sup>[<a href="#0.version_semver">version_semver</a>]</sup>
+<li id='0.version_tags'>
+It is SUGGESTED that projects identify each release within their version control system. For example, it is SUGGESTED that those using git identify each release using git tags.
+
+
+
+
+
+
+<sup>[<a href="#0.version_tags">version_tags</a>]</sup>
+</ul>
+<h4>Release notes</h4>
+<ul>
+<li id='0.release_notes'>
+The project MUST provide, in each release, release notes that are a human-readable summary of major changes in that release to help users determine if they should upgrade and what the upgrade impact will be. The release notes MUST NOT be the raw output of a version control log (e.g., the "git log" command results are not release notes). Projects whose results are not intended for reuse in multiple locations (such as the software for a single website or service) AND employ continuous delivery MAY select "N/A".
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#0.release_notes">release_notes</a>]</sup>
+<li id='0.release_notes_vulns'>
+The release notes MUST identify every publicly known run-time vulnerability fixed in this release that already had a CVE assignment or similar when the release was created. This criterion may be marked as not applicable (N/A) if users typically cannot practically update the software themselves (e.g., as is often true for kernel updates). This criterion applies only to the project results, not to its dependencies. If there are no release notes or there have been no publicly known vulnerabilities, choose N/A.
+
+
+{N/A justification}
+
+
+
+<sup>[<a href="#0.release_notes_vulns">release_notes_vulns</a>]</sup>
+</ul>
+<h3>Reporting</b></h3>
+<h4>Bug-reporting process</h4>
+<ul>
+<li id='0.report_process'>
+The project MUST provide a process for users to submit bug reports (e.g., using an issue tracker or a mailing list).
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#0.report_process">report_process</a>]</sup>
+<li id='0.report_tracker'>
+The project SHOULD use an issue tracker for tracking individual issues.
+
+
+
+
+
+
+<sup>[<a href="#0.report_tracker">report_tracker</a>]</sup>
+<li id='0.report_responses'>
+The project MUST acknowledge a majority of bug reports submitted in the last 2-12 months (inclusive); the response need not include a fix.
+
+
+
+
+
+
+<sup>[<a href="#0.report_responses">report_responses</a>]</sup>
+<li id='0.enhancement_responses'>
+The project SHOULD respond to a majority (&gt;50%) of enhancement requests in the last 2-12 months (inclusive).
+
+
+
+
+
+
+<sup>[<a href="#0.enhancement_responses">enhancement_responses</a>]</sup>
+<li id='0.report_archive'>
+The project MUST have a publicly available archive for reports and responses for later searching.
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#0.report_archive">report_archive</a>]</sup>
+</ul>
+<h4>Vulnerability report process</h4>
+<ul>
+<li id='0.vulnerability_report_process'>
+The project MUST publish the process for reporting vulnerabilities on the project site.
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#0.vulnerability_report_process">vulnerability_report_process</a>]</sup>
+<li id='0.vulnerability_report_private'>
+If private vulnerability reports are supported, the project MUST include how to send the information in a way that is kept private.
+
+{N/A allowed}
+
+
+{Met URL}
+
+<sup>[<a href="#0.vulnerability_report_private">vulnerability_report_private</a>]</sup>
+<li id='0.vulnerability_report_response'>
+The project's initial response time for any vulnerability report received in the last 6 months MUST be less than or equal to 14 days.
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.vulnerability_report_response">vulnerability_report_response</a>]</sup>
+</ul>
+<h3>Quality</b></h3>
+<h4>Working build system</h4>
+<ul>
+<li id='0.build'>
+If the software produced by the project requires building for use, the project MUST provide a working build system that can automatically rebuild the software from source code.
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.build">build</a>]</sup>
+<li id='0.build_common_tools'>
+It is SUGGESTED that common tools be used for building the software.
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.build_common_tools">build_common_tools</a>]</sup>
+<li id='0.build_floss_tools'>
+The project SHOULD be buildable using only FLOSS tools.
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.build_floss_tools">build_floss_tools</a>]</sup>
+</ul>
+<h4>Automated test suite</h4>
+<ul>
+<li id='0.test'>
+The project MUST use at least one automated test suite that is publicly released as FLOSS (this test suite may be maintained as a separate FLOSS project). The project MUST clearly show or document how to run the test suite(s) (e.g., via a continuous integration (CI) script or via documentation in files such as BUILD.md, README.md, or CONTRIBUTING.md).
+
+
+
+
+
+
+<sup>[<a href="#0.test">test</a>]</sup>
+<li id='0.test_invocation'>
+A test suite SHOULD be invocable in a standard way for that language.
+
+
+
+
+
+
+<sup>[<a href="#0.test_invocation">test_invocation</a>]</sup>
+<li id='0.test_most'>
+It is SUGGESTED that the test suite cover most (or ideally all) the code branches, input fields, and functionality.
+
+
+
+
+
+
+<sup>[<a href="#0.test_most">test_most</a>]</sup>
+<li id='0.test_continuous_integration'>
+It is SUGGESTED that the project implement continuous integration (where new or changed code is frequently integrated into a central code repository and automated tests are run on the result).
+
+
+
+
+
+
+<sup>[<a href="#0.test_continuous_integration">test_continuous_integration</a>]</sup>
+</ul>
+<h4>New functionality testing</h4>
+<ul>
+<li id='0.test_policy'>
+The project MUST have a general policy (formal or not) that as major new functionality is added to the software produced by the project, tests of that functionality should be added to an automated test suite.
+
+
+
+
+
+
+<sup>[<a href="#0.test_policy">test_policy</a>]</sup>
+<li id='0.tests_are_added'>
+The project MUST have evidence that the <a href="#test_policy">test_policy</a> for adding tests has been adhered to in the most recent major changes to the software produced by the project.
+
+
+
+
+
+
+<sup>[<a href="#0.tests_are_added">tests_are_added</a>]</sup>
+<li id='0.tests_documented_added'>
+It is SUGGESTED that this policy on adding tests (see <a href="#test_policy">test_policy</a>) be <em>documented</em> in the instructions for change proposals.
+
+
+
+
+
+
+<sup>[<a href="#0.tests_documented_added">tests_documented_added</a>]</sup>
+</ul>
+<h4>Warning flags</h4>
+<ul>
+<li id='0.warnings'>
+The project MUST enable one or more compiler warning flags, a "safe" language mode, or use a separate "linter" tool to look for code quality errors or common simple mistakes, if there is at least one FLOSS tool that can implement this criterion in the selected language.
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.warnings">warnings</a>]</sup>
+<li id='0.warnings_fixed'>
+The project MUST address warnings.
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.warnings_fixed">warnings_fixed</a>]</sup>
+<li id='0.warnings_strict'>
+It is SUGGESTED that projects be maximally strict with warnings in the software produced by the project, where practical.
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.warnings_strict">warnings_strict</a>]</sup>
+</ul>
+<h3>Security</b></h3>
+<h4>Secure development knowledge</h4>
+<ul>
+<li id='0.know_secure_design'>
+The project MUST have at least one primary developer who knows how to design secure software. (See ‘details’ for the exact requirements.)
+
+
+
+
+
+
+<sup>[<a href="#0.know_secure_design">know_secure_design</a>]</sup>
+<li id='0.know_common_errors'>
+At least one of the project's primary developers MUST know of common kinds of errors that lead to vulnerabilities in this kind of software, as well as at least one method to counter or mitigate each of them.
+
+
+
+
+
+
+<sup>[<a href="#0.know_common_errors">know_common_errors</a>]</sup>
+</ul>
+<h4>Use basic good cryptographic practices</h4>
+<ul>
+<li id='0.crypto_published'>
+The software produced by the project MUST use, by default, only cryptographic protocols and algorithms that are publicly published and reviewed by experts (if cryptographic protocols and algorithms are used).
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.crypto_published">crypto_published</a>]</sup>
+<li id='0.crypto_call'>
+If the software produced by the project is an application or library, and its primary purpose is not to implement cryptography, then it SHOULD only call on software specifically designed to implement cryptographic functions; it SHOULD NOT re-implement its own.
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.crypto_call">crypto_call</a>]</sup>
+<li id='0.crypto_floss'>
+All functionality in the software produced by the project that depends on cryptography MUST be implementable using FLOSS.
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.crypto_floss">crypto_floss</a>]</sup>
+<li id='0.crypto_keylength'>
+The security mechanisms within the software produced by the project MUST use default keylengths that at least meet the NIST minimum requirements through the year 2030 (as stated in 2012). It MUST be possible to configure the software so that smaller keylengths are completely disabled.
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.crypto_keylength">crypto_keylength</a>]</sup>
+<li id='0.crypto_working'>
+The default security mechanisms within the software produced by the project MUST NOT depend on broken cryptographic algorithms (e.g., MD4, MD5, single DES, RC4, Dual_EC_DRBG), or use cipher modes that are inappropriate to the context, unless they are necessary to implement an interoperable protocol (where the protocol implemented is the most recent version of that standard broadly supported by the network ecosystem, that ecosystem requires the use of such an algorithm or mode, and that ecosystem does not offer any more secure alternative). The documentation MUST describe any relevant security risks and any known mitigations if these broken algorithms or modes are necessary for an interoperable protocol.
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.crypto_working">crypto_working</a>]</sup>
+<li id='0.crypto_weaknesses'>
+The default security mechanisms within the software produced by the project SHOULD NOT depend on cryptographic algorithms or modes with known serious weaknesses (e.g., the SHA-1 cryptographic hash algorithm or the CBC mode in SSH).
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.crypto_weaknesses">crypto_weaknesses</a>]</sup>
+<li id='0.crypto_pfs'>
+The security mechanisms within the software produced by the project SHOULD implement perfect forward secrecy for key agreement protocols so a session key derived from a set of long-term keys cannot be compromised if one of the long-term keys is compromised in the future.
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.crypto_pfs">crypto_pfs</a>]</sup>
+<li id='0.crypto_password_storage'>
+If the software produced by the project causes the storing of passwords for authentication of external users, the passwords MUST be stored as iterated hashes with a per-user salt by using a key stretching (iterated) algorithm (e.g., Argon2id, Bcrypt, Scrypt, or PBKDF2). See also <a href="https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html">OWASP Password Storage Cheat Sheet</a>.
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.crypto_password_storage">crypto_password_storage</a>]</sup>
+<li id='0.crypto_random'>
+The security mechanisms within the software produced by the project MUST generate all cryptographic keys and nonces using a cryptographically secure random number generator, and MUST NOT do so using generators that are cryptographically insecure.
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.crypto_random">crypto_random</a>]</sup>
+</ul>
+<h4>Secured delivery against man-in-the-middle (MITM) attacks</h4>
+<ul>
+<li id='0.delivery_mitm'>
+The project MUST use a delivery mechanism that counters MITM attacks. Using https or ssh+scp is acceptable.
+
+
+
+
+
+
+<sup>[<a href="#0.delivery_mitm">delivery_mitm</a>]</sup>
+<li id='0.delivery_unsigned'>
+A cryptographic hash (e.g., a sha1sum) MUST NOT be retrieved over http and used without checking for a cryptographic signature.
+
+
+
+
+
+
+<sup>[<a href="#0.delivery_unsigned">delivery_unsigned</a>]</sup>
+</ul>
+<h4>Publicly known vulnerabilities fixed</h4>
+<ul>
+<li id='0.vulnerabilities_fixed_60_days'>
+There MUST be no unpatched vulnerabilities of medium or higher severity that have been publicly known for more than 60 days.
+
+
+
+
+
+
+<sup>[<a href="#0.vulnerabilities_fixed_60_days">vulnerabilities_fixed_60_days</a>]</sup>
+<li id='0.vulnerabilities_critical_fixed'>
+Projects SHOULD fix all critical vulnerabilities rapidly after they are reported.
+
+
+
+
+
+
+<sup>[<a href="#0.vulnerabilities_critical_fixed">vulnerabilities_critical_fixed</a>]</sup>
+</ul>
+<h4>Other security issues</h4>
+<ul>
+<li id='0.no_leaked_credentials'>
+The public repositories MUST NOT leak a valid private credential (e.g., a working password or private key) that is intended to limit public access.
+
+
+
+
+
+
+<sup>[<a href="#0.no_leaked_credentials">no_leaked_credentials</a>]</sup>
+</ul>
+<h3>Analysis</b></h3>
+<h4>Static code analysis</h4>
+<ul>
+<li id='0.static_analysis'>
+At least one static code analysis tool (beyond compiler warnings and "safe" language modes) MUST be applied to any proposed major production release of the software before its release, if there is at least one FLOSS tool that implements this criterion in the selected language.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#0.static_analysis">static_analysis</a>]</sup>
+<li id='0.static_analysis_common_vulnerabilities'>
+It is SUGGESTED that at least one of the static analysis tools used for the static_analysis criterion include rules or approaches to look for common vulnerabilities in the analyzed language or environment.
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.static_analysis_common_vulnerabilities">static_analysis_common_vulnerabilities</a>]</sup>
+<li id='0.static_analysis_fixed'>
+All medium and higher severity exploitable vulnerabilities discovered with static code analysis MUST be fixed in a timely way after they are confirmed.
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.static_analysis_fixed">static_analysis_fixed</a>]</sup>
+<li id='0.static_analysis_often'>
+It is SUGGESTED that static source code analysis occur on every commit or at least daily.
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.static_analysis_often">static_analysis_often</a>]</sup>
+</ul>
+<h4>Dynamic code analysis</h4>
+<ul>
+<li id='0.dynamic_analysis'>
+It is SUGGESTED that at least one dynamic analysis tool be applied to any proposed major production release of the software before its release.
+
+
+
+
+
+
+<sup>[<a href="#0.dynamic_analysis">dynamic_analysis</a>]</sup>
+<li id='0.dynamic_analysis_unsafe'>
+It is SUGGESTED that if the software produced by the project includes software written using a memory-unsafe language (e.g., C or C++), then at least one dynamic tool (e.g., a fuzzer or web application scanner) be routinely used in combination with a mechanism to detect memory safety problems such as buffer overwrites. If the project does not produce software written in a memory-unsafe language, choose "not applicable" (N/A).
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.dynamic_analysis_unsafe">dynamic_analysis_unsafe</a>]</sup>
+<li id='0.dynamic_analysis_enable_assertions'>
+It is SUGGESTED that the project use a configuration for at least some dynamic analysis (such as testing or fuzzing) which enables many assertions. In many cases these assertions should <i>not</i> be enabled in production builds.
+
+
+
+
+
+
+<sup>[<a href="#0.dynamic_analysis_enable_assertions">dynamic_analysis_enable_assertions</a>]</sup>
+<li id='0.dynamic_analysis_fixed'>
+All medium and higher severity exploitable vulnerabilities discovered with dynamic code analysis MUST be fixed in a timely way after they are confirmed.
+
+{N/A allowed}
+
+
+
+
+<sup>[<a href="#0.dynamic_analysis_fixed">dynamic_analysis_fixed</a>]</sup>
+</ul>
+<h2>Silver</h2>
+
+<h3>Basics</b></h3>
+<h4>Prerequisites</h4>
+<ul>
+<li id='1.achieve_passing'>
+The project MUST achieve a passing level badge.
+
+
+
+
+
+
+<sup>[<a href="#1.achieve_passing">achieve_passing</a>]</sup>
+</ul>
+<h4>Basic project website content</h4>
+<ul>
+<li id='1.contribution_requirements'>
+The information on how to contribute MUST include the requirements for acceptable contributions (e.g., a reference to any required coding standard).
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#1.contribution_requirements">contribution_requirements</a>]</sup>
+</ul>
+<h4>Project oversight</h4>
+<ul>
+<li id='1.dco'>
+The project SHOULD have a legal mechanism where all developers of non-trivial amounts of project software assert that they are legally authorized to make these contributions. The most common and easily-implemented approach for doing this is by using a <a href="https://developercertificate.org/">Developer Certificate of Origin (DCO)</a>, where users add "signed-off-by" in their commits and the project links to the DCO website. However, this MAY be implemented as a Contributor License Agreement (CLA), or other legal mechanism.
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#1.dco">dco</a>]</sup>
+<li id='1.governance'>
+The project MUST clearly define and document its project governance model (the way it makes decisions, including key roles).
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#1.governance">governance</a>]</sup>
+<li id='1.code_of_conduct'>
+The project MUST adopt a code of conduct and post it in a standard location.
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#1.code_of_conduct">code_of_conduct</a>]</sup>
+<li id='1.roles_responsibilities'>
+The project MUST clearly define and publicly document the key roles in the project and their responsibilities, including any tasks those roles must perform.  It MUST be clear who has which role(s), though this might not be documented in the same way.
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#1.roles_responsibilities">roles_responsibilities</a>]</sup>
+<li id='1.access_continuity'>
+The project MUST be able to continue with minimal interruption if any one person dies, is incapacitated, or is otherwise unable or unwilling to continue support of the project. In particular, the project MUST be able to create and close issues, accept proposed changes, and release versions of software, within a week of confirmation of the loss of support from any one individual. This MAY be done by ensuring someone else has any necessary keys, passwords, and legal rights to continue the project. Individuals who run a FLOSS project MAY do this by providing keys in a lockbox and a will providing any needed legal rights (e.g., for DNS names).
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#1.access_continuity">access_continuity</a>]</sup>
+<li id='1.bus_factor'>
+The project SHOULD have a "bus factor" of 2 or more.
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#1.bus_factor">bus_factor</a>]</sup>
+</ul>
+<h4>Documentation</h4>
+<ul>
+<li id='1.documentation_roadmap'>
+The project MUST have a documented roadmap that describes what the project intends to do and not do for at least the next year.
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#1.documentation_roadmap">documentation_roadmap</a>]</sup>
+<li id='1.documentation_architecture'>
+The project MUST include documentation of the architecture (aka high-level design) of the software produced by the project. If the project does not produce software, select "not applicable" (N/A).
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#1.documentation_architecture">documentation_architecture</a>]</sup>
+<li id='1.documentation_security'>
+The project MUST document what the user can and cannot expect in terms of security from the software produced by the project (its "security requirements").
+
+{N/A allowed}
+
+
+{Met URL}
+
+<sup>[<a href="#1.documentation_security">documentation_security</a>]</sup>
+<li id='1.documentation_quick_start'>
+The project MUST provide a "quick start" guide for new users to help them quickly do something with the software.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#1.documentation_quick_start">documentation_quick_start</a>]</sup>
+<li id='1.documentation_current'>
+The project MUST make an effort to keep the documentation consistent with the current version of the project results (including software produced by the project). Any <em>known</em> documentation defects making it inconsistent MUST be fixed. If the documentation is generally current, but erroneously includes some older information that is no longer true, just treat that as a defect, then track and fix as usual.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.documentation_current">documentation_current</a>]</sup>
+<li id='1.documentation_achievements'>
+The project repository front page and/or website MUST identify and hyperlink to any achievements, including this best practices badge, within 48 hours of public recognition that the achievement has been attained.
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#1.documentation_achievements">documentation_achievements</a>]</sup>
+</ul>
+<h4>Accessibility and internationalization</h4>
+<ul>
+<li id='1.accessibility_best_practices'>
+The project (both project sites and project results) SHOULD follow accessibility best practices so that persons with disabilities can still participate in the project and use the project results where it is reasonable to do so.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.accessibility_best_practices">accessibility_best_practices</a>]</sup>
+<li id='1.internationalization'>
+The software produced by the project SHOULD be internationalized to enable easy localization for the target audience's culture, region, or language. If internationalization (i18n) does not apply (e.g., the software doesn't generate text intended for end-users and doesn't sort human-readable text), select "not applicable" (N/A).
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.internationalization">internationalization</a>]</sup>
+</ul>
+<h4>Other</h4>
+<ul>
+<li id='1.sites_password_security'>
+If the project sites (website, repository, and download URLs) store passwords for authentication of external users, the passwords MUST be stored as iterated hashes with a per-user salt by using a key stretching (iterated) algorithm (e.g., Argon2id, Bcrypt, Scrypt, or PBKDF2). If the project sites do not store passwords for this purpose, select "not applicable" (N/A).
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.sites_password_security">sites_password_security</a>]</sup>
+</ul>
+<h3>Change Control</b></h3>
+<h4>Previous versions</h4>
+<ul>
+<li id='1.maintenance_or_update'>
+The project MUST maintain the most often used older versions of the product <em>or</em> provide an upgrade path to newer versions. If the upgrade path is difficult, the project MUST document how to perform the upgrade (e.g., the interfaces that have changed and detailed suggested steps to help upgrade).
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.maintenance_or_update">maintenance_or_update</a>]</sup>
+</ul>
+<h3>Reporting</b></h3>
+<h4>Bug-reporting process</h4>
+<ul>
+<li id='1.report_tracker'>
+The project MUST use an issue tracker for tracking individual issues.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.report_tracker">report_tracker</a>]</sup>
+</ul>
+<h4>Vulnerability report process</h4>
+<ul>
+<li id='1.vulnerability_report_credit'>
+The project MUST give credit to the reporter(s) of all vulnerability reports resolved in the last 12 months, except for the reporter(s) who request anonymity. If there have been no vulnerabilities resolved in the last 12 months, select "not applicable" (N/A).
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#1.vulnerability_report_credit">vulnerability_report_credit</a>]</sup>
+<li id='1.vulnerability_response_process'>
+The project MUST have a documented process for responding to vulnerability reports.
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#1.vulnerability_response_process">vulnerability_response_process</a>]</sup>
+</ul>
+<h3>Quality</b></h3>
+<h4>Coding standards</h4>
+<ul>
+<li id='1.coding_standards'>
+The project MUST identify the specific coding style guides for the primary languages it uses, and require that contributions generally comply with it.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#1.coding_standards">coding_standards</a>]</sup>
+<li id='1.coding_standards_enforced'>
+The project MUST automatically enforce its selected coding style(s) if there is at least one FLOSS tool that can do so in the selected language(s).
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.coding_standards_enforced">coding_standards_enforced</a>]</sup>
+</ul>
+<h4>Working build system</h4>
+<ul>
+<li id='1.build_standard_variables'>
+Build systems for native binaries MUST honor the relevant compiler and linker (environment) variables passed in to them (e.g., CC, CFLAGS, CXX, CXXFLAGS, and LDFLAGS) and pass them to compiler and linker invocations. A build system MAY extend them with additional flags; it MUST NOT simply replace provided values with its own. If no native binaries are being generated, select "not applicable" (N/A).
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.build_standard_variables">build_standard_variables</a>]</sup>
+<li id='1.build_preserve_debug'>
+The build and installation system SHOULD preserve debugging information if they are requested in the relevant flags (e.g., "install -s" is not used). If there is no build or installation system (e.g., typical JavaScript libraries), select "not applicable" (N/A).
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.build_preserve_debug">build_preserve_debug</a>]</sup>
+<li id='1.build_non_recursive'>
+The build system for the software produced by the project MUST NOT recursively build subdirectories if there are cross-dependencies in the subdirectories. If there is no build or installation system (e.g., typical JavaScript libraries), select "not applicable" (N/A).
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.build_non_recursive">build_non_recursive</a>]</sup>
+<li id='1.build_repeatable'>
+The project MUST be able to repeat the process of generating information from source files and get exactly the same bit-for-bit result. If no building occurs (e.g., scripting languages where the source code is used directly instead of being compiled), select "not applicable" (N/A).
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.build_repeatable">build_repeatable</a>]</sup>
+</ul>
+<h4>Installation system</h4>
+<ul>
+<li id='1.installation_common'>
+The project MUST provide a way to easily install and uninstall the software produced by the project using a commonly-used convention.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.installation_common">installation_common</a>]</sup>
+<li id='1.installation_standard_variables'>
+The installation system for end-users MUST honor standard conventions for selecting the location where built artifacts are written to at installation time.  For example, if it installs files on a POSIX system it MUST honor the DESTDIR environment variable. If there is no installation system or no standard convention, select "not applicable" (N/A).
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.installation_standard_variables">installation_standard_variables</a>]</sup>
+<li id='1.installation_development_quick'>
+The project MUST provide a way for potential developers to quickly install all the project results and support environment necessary to make changes, including the tests and test environment. This MUST be performed with a commonly-used convention.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.installation_development_quick">installation_development_quick</a>]</sup>
+</ul>
+<h4>Externally-maintained components</h4>
+<ul>
+<li id='1.external_dependencies'>
+The project MUST list external dependencies in a computer-processable way.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#1.external_dependencies">external_dependencies</a>]</sup>
+<li id='1.dependency_monitoring'>
+Projects MUST monitor or periodically check their external dependencies (including convenience copies) to detect known vulnerabilities, and fix exploitable vulnerabilities or verify them as unexploitable.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.dependency_monitoring">dependency_monitoring</a>]</sup>
+<li id='1.updateable_reused_components'>
+The project MUST either:
+<ol>
+<li> make it easy to identify and update reused externally-maintained components; <strong>or</strong></li>
+<li> use the standard components provided by the system or programming language.</li>
+</ol>
+Then, if a vulnerability is found in a reused component, it will be
+easy to update that component.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.updateable_reused_components">updateable_reused_components</a>]</sup>
+<li id='1.interfaces_current'>
+The project SHOULD avoid using deprecated or obsolete functions and APIs where FLOSS alternatives are available in the set of technology it uses (its "technology stack") and to a supermajority of the users the project supports (so that users have ready access to the alternative).
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.interfaces_current">interfaces_current</a>]</sup>
+</ul>
+<h4>Automated test suite</h4>
+<ul>
+<li id='1.automated_integration_testing'>
+An automated test suite MUST be applied on each check-in to a shared repository for at least one branch.  This test suite MUST produce a report on test success or failure.
+
+
+
+{Met justification}
+
+
+<sup>[<a href="#1.automated_integration_testing">automated_integration_testing</a>]</sup>
+<li id='1.regression_tests_added50'>
+The project MUST add regression tests to an automated test suite for at least 50% of the bugs fixed within the last six months.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.regression_tests_added50">regression_tests_added50</a>]</sup>
+<li id='1.test_statement_coverage80'>
+The project MUST have FLOSS automated test suite(s) that provide at least 80% statement coverage if there is at least one FLOSS tool that can measure this criterion in the selected language.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.test_statement_coverage80">test_statement_coverage80</a>]</sup>
+</ul>
+<h4>New functionality testing</h4>
+<ul>
+<li id='1.test_policy_mandated'>
+The project MUST have a formal written policy that as major new functionality is added, tests for the new functionality MUST be added to an automated test suite.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.test_policy_mandated">test_policy_mandated</a>]</sup>
+<li id='1.tests_documented_added'>
+The project MUST include, in its documented instructions for change proposals, the policy that tests are to be added for major new functionality.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.tests_documented_added">tests_documented_added</a>]</sup>
+</ul>
+<h4>Warning flags</h4>
+<ul>
+<li id='1.warnings_strict'>
+Projects MUST be maximally strict with warnings in the software produced by the project, where practical.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.warnings_strict">warnings_strict</a>]</sup>
+</ul>
+<h3>Security</b></h3>
+<h4>Secure development knowledge</h4>
+<ul>
+<li id='1.implement_secure_design'>
+The project MUST implement secure design principles (from "know_secure_design"), where applicable.  If the project is not producing software, select "not applicable" (N/A).
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.implement_secure_design">implement_secure_design</a>]</sup>
+</ul>
+<h4>Use basic good cryptographic practices</h4>
+<ul>
+<li id='1.crypto_weaknesses'>
+The default security mechanisms within the software produced by the project MUST NOT depend on cryptographic algorithms or modes with known serious weaknesses (e.g., the SHA-1 cryptographic hash algorithm or the CBC mode in SSH).
+
+{N/A allowed}
+
+{Met justification}
+
+
+<sup>[<a href="#1.crypto_weaknesses">crypto_weaknesses</a>]</sup>
+<li id='1.crypto_algorithm_agility'>
+The project SHOULD support multiple cryptographic algorithms, so users can quickly switch if one is broken. Common symmetric key algorithms include AES, Twofish, and Serpent. Common cryptographic hash algorithm alternatives include SHA-2 (including SHA-224, SHA-256, SHA-384 AND SHA-512) and SHA-3.
+
+{N/A allowed}
+
+{Met justification}
+
+
+<sup>[<a href="#1.crypto_algorithm_agility">crypto_algorithm_agility</a>]</sup>
+<li id='1.crypto_credential_agility'>
+The project MUST support storing authentication credentials (such as passwords and dynamic tokens) and private cryptographic keys in files that are separate from other information (such as configuration files, databases, and logs), and permit users to update and replace them without code recompilation. If the project never processes authentication credentials and private cryptographic keys, select "not applicable" (N/A).
+
+{N/A allowed}
+
+{Met justification}
+
+
+<sup>[<a href="#1.crypto_credential_agility">crypto_credential_agility</a>]</sup>
+<li id='1.crypto_used_network'>
+The software produced by the project SHOULD support secure protocols for all of its network communications, such as SSHv2 or later, TLS1.2 or later (HTTPS), IPsec, SFTP, and SNMPv3. Insecure protocols such as FTP, HTTP, telnet, SSLv3 or earlier, and SSHv1 SHOULD be disabled by default, and only enabled if the user specifically configures it. If the software produced by the project does not support network communications, select "not applicable" (N/A).
+
+{N/A allowed}
+
+{Met justification}
+
+
+<sup>[<a href="#1.crypto_used_network">crypto_used_network</a>]</sup>
+<li id='1.crypto_tls12'>
+The software produced by the project SHOULD, if it supports or uses TLS, support at least TLS version 1.2. Note that the predecessor of TLS was called SSL. If the software does not use TLS, select "not applicable" (N/A).
+
+{N/A allowed}
+
+{Met justification}
+
+
+<sup>[<a href="#1.crypto_tls12">crypto_tls12</a>]</sup>
+<li id='1.crypto_certificate_verification'>
+The software produced by the project MUST, if it supports TLS, perform TLS certificate verification by default when using TLS, including on subresources. If the software does not use TLS, select "not applicable" (N/A).
+
+{N/A allowed}
+
+{Met justification}
+
+
+<sup>[<a href="#1.crypto_certificate_verification">crypto_certificate_verification</a>]</sup>
+<li id='1.crypto_verification_private'>
+The software produced by the project MUST, if it supports TLS, perform certificate verification before sending HTTP headers with private information (such as secure cookies). If the software does not use TLS, select "not applicable" (N/A).
+
+{N/A allowed}
+
+{Met justification}
+
+
+<sup>[<a href="#1.crypto_verification_private">crypto_verification_private</a>]</sup>
+</ul>
+<h4>Secure release</h4>
+<ul>
+<li id='1.signed_releases'>
+The project MUST cryptographically sign releases of the project results intended for widespread use, and there MUST be a documented process explaining to users how they can obtain the public signing keys and verify the signature(s). The private key for these signature(s) MUST NOT be on site(s) used to directly distribute the software to the public. If releases are not intended for widespread use, select "not applicable" (N/A).
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.signed_releases">signed_releases</a>]</sup>
+<li id='1.version_tags_signed'>
+It is SUGGESTED that in the version control system, each important version tag (a tag that is part of a major release, minor release, or fixes publicly noted vulnerabilities) be cryptographically signed and verifiable as described in <a href="#signed_releases">signed_releases</a>.
+
+
+
+{Met justification}
+
+
+<sup>[<a href="#1.version_tags_signed">version_tags_signed</a>]</sup>
+</ul>
+<h4>Other security issues</h4>
+<ul>
+<li id='1.input_validation'>
+The project results MUST check all inputs from potentially untrusted sources to ensure they are valid (an *allowlist*), and reject invalid inputs, if there are any restrictions on the data at all.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.input_validation">input_validation</a>]</sup>
+<li id='1.hardening'>
+Hardening mechanisms SHOULD be used in the software produced by the project so that software defects are less likely to result in security vulnerabilities.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.hardening">hardening</a>]</sup>
+<li id='1.assurance_case'>
+The project MUST provide an assurance case that justifies why its security requirements are met. The assurance case MUST include: a description of the threat model, clear identification of trust boundaries, an argument that secure design principles have been applied, and an argument that common implementation security weaknesses have been countered.
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#1.assurance_case">assurance_case</a>]</sup>
+</ul>
+<h3>Analysis</b></h3>
+<h4>Static code analysis</h4>
+<ul>
+<li id='1.static_analysis_common_vulnerabilities'>
+The project MUST use at least one static analysis tool with rules or approaches to look for common vulnerabilities in the analyzed language or environment, if there is at least one FLOSS tool that can implement this criterion in the selected language.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.static_analysis_common_vulnerabilities">static_analysis_common_vulnerabilities</a>]</sup>
+</ul>
+<h4>Dynamic code analysis</h4>
+<ul>
+<li id='1.dynamic_analysis_unsafe'>
+If the software produced by the project includes software written using a memory-unsafe language (e.g., C or C++), then at least one dynamic tool (e.g., a fuzzer or web application scanner) MUST be routinely used in combination with a mechanism to detect memory safety problems such as buffer overwrites. If the project does not produce software written in a memory-unsafe language, choose "not applicable" (N/A).
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#1.dynamic_analysis_unsafe">dynamic_analysis_unsafe</a>]</sup>
+</ul>
+<h2>Gold</h2>
+
+<h3>Basics</b></h3>
+<h4>Prerequisites</h4>
+<ul>
+<li id='2.achieve_silver'>
+The project MUST achieve a silver level badge.
+
+
+
+
+
+
+<sup>[<a href="#2.achieve_silver">achieve_silver</a>]</sup>
+</ul>
+<h4>Project oversight</h4>
+<ul>
+<li id='2.bus_factor'>
+The project MUST have a "bus factor" of 2 or more.
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#2.bus_factor">bus_factor</a>]</sup>
+<li id='2.contributors_unassociated'>
+The project MUST have at least two unassociated significant contributors.
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#2.contributors_unassociated">contributors_unassociated</a>]</sup>
+</ul>
+<h4>Other</h4>
+<ul>
+<li id='2.copyright_per_file'>
+The project MUST include a copyright statement in each source file, identifying the copyright holder (e.g., the [project name] contributors).
+
+
+
+{Met justification}
+
+
+<sup>[<a href="#2.copyright_per_file">copyright_per_file</a>]</sup>
+<li id='2.license_per_file'>
+The project MUST include a license statement in each source file. This MAY be done by including the following inside a comment near the beginning of each file: <a href="https://spdx.dev/ids/#how"><tt>SPDX-License-Identifier: [SPDX license expression for project]</tt></a>.
+
+
+
+{Met justification}
+
+
+<sup>[<a href="#2.license_per_file">license_per_file</a>]</sup>
+</ul>
+<h3>Change Control</b></h3>
+<h4>Public version-controlled source repository</h4>
+<ul>
+<li id='2.repo_distributed'>
+The project's source repository MUST use a common distributed version control software (e.g., git or mercurial).
+
+
+
+{Met justification}
+
+
+<sup>[<a href="#2.repo_distributed">repo_distributed</a>]</sup>
+<li id='2.small_tasks'>
+The project MUST clearly identify small tasks that can be performed by new or casual contributors.
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#2.small_tasks">small_tasks</a>]</sup>
+<li id='2.require_2FA'>
+The project MUST require two-factor authentication (2FA) for developers for changing a central repository or accessing sensitive data (such as private vulnerability reports). This 2FA mechanism MAY use mechanisms without cryptographic mechanisms such as SMS, though that is not recommended.
+
+
+
+{Met justification}
+
+
+<sup>[<a href="#2.require_2FA">require_2FA</a>]</sup>
+<li id='2.secure_2FA'>
+The project's two-factor authentication (2FA) SHOULD use cryptographic mechanisms to prevent impersonation. Short Message Service (SMS) based 2FA, by itself, does NOT meet this criterion, since it is not encrypted.
+
+
+
+{Met justification}
+
+
+<sup>[<a href="#2.secure_2FA">secure_2FA</a>]</sup>
+</ul>
+<h3>Quality</b></h3>
+<h4>Coding standards</h4>
+<ul>
+<li id='2.code_review_standards'>
+The project MUST document its code review requirements, including how code review is conducted, what must be checked, and what is required to be acceptable.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#2.code_review_standards">code_review_standards</a>]</sup>
+<li id='2.two_person_review'>
+The project MUST have at least 50% of all proposed modifications reviewed before release by a person other than the author, to determine if it is a worthwhile modification and free of known issues which would argue against its inclusion
+
+
+
+{Met justification}
+
+
+<sup>[<a href="#2.two_person_review">two_person_review</a>]</sup>
+</ul>
+<h4>Working build system</h4>
+<ul>
+<li id='2.build_reproducible'>
+The project MUST have a <a href="https://reproducible-builds.org/">reproducible build</a>. If no building occurs (e.g., scripting languages where the source code is used directly instead of being compiled), select "not applicable" (N/A).
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#2.build_reproducible">build_reproducible</a>]</sup>
+</ul>
+<h4>Automated test suite</h4>
+<ul>
+<li id='2.test_invocation'>
+A test suite MUST be invocable in a standard way for that language.
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#2.test_invocation">test_invocation</a>]</sup>
+<li id='2.test_continuous_integration'>
+The project MUST implement continuous integration, where new or changed code is frequently integrated into a central code repository and automated tests are run on the result.
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#2.test_continuous_integration">test_continuous_integration</a>]</sup>
+<li id='2.test_statement_coverage90'>
+The project MUST have FLOSS automated test suite(s) that provide at least 90% statement coverage if there is at least one FLOSS tool that can measure this criterion in the selected language.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#2.test_statement_coverage90">test_statement_coverage90</a>]</sup>
+<li id='2.test_branch_coverage80'>
+The project MUST have FLOSS automated test suite(s) that provide at least 80% branch coverage if there is at least one FLOSS tool that can measure this criterion in the selected language.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#2.test_branch_coverage80">test_branch_coverage80</a>]</sup>
+</ul>
+<h3>Security</b></h3>
+<h4>Use basic good cryptographic practices</h4>
+<ul>
+<li id='2.crypto_used_network'>
+The software produced by the project MUST support secure protocols for all of its network communications, such as SSHv2 or later, TLS1.2 or later (HTTPS), IPsec, SFTP, and SNMPv3. Insecure protocols such as FTP, HTTP, telnet, SSLv3 or earlier, and SSHv1 MUST be disabled by default, and only enabled if the user specifically configures it. If the software produced by the project does not support network communications, select "not applicable" (N/A).
+
+{N/A allowed}
+
+{Met justification}
+
+
+<sup>[<a href="#2.crypto_used_network">crypto_used_network</a>]</sup>
+<li id='2.crypto_tls12'>
+The software produced by the project MUST, if it supports or uses TLS, support at least TLS version 1.2. Note that the predecessor of TLS was called SSL. If the software does not use TLS, select "not applicable" (N/A).
+
+{N/A allowed}
+
+{Met justification}
+
+
+<sup>[<a href="#2.crypto_tls12">crypto_tls12</a>]</sup>
+</ul>
+<h4>Secured delivery against man-in-the-middle (MITM) attacks</h4>
+<ul>
+<li id='2.hardened_site'>
+The project website, repository (if accessible via the web), and download site (if separate) MUST include key hardening headers with nonpermissive values.
+
+
+
+
+{Met URL}
+
+<sup>[<a href="#2.hardened_site">hardened_site</a>]</sup>
+</ul>
+<h4>Other security issues</h4>
+<ul>
+<li id='2.security_review'>
+The project MUST have performed a security review within the last 5 years. This review MUST consider the security requirements and security boundary.
+
+
+
+{Met justification}
+
+
+<sup>[<a href="#2.security_review">security_review</a>]</sup>
+<li id='2.hardening'>
+Hardening mechanisms MUST be used in the software produced by the project so that software defects are less likely to result in security vulnerabilities.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#2.hardening">hardening</a>]</sup>
+</ul>
+<h3>Analysis</b></h3>
+<h4>Dynamic code analysis</h4>
+<ul>
+<li id='2.dynamic_analysis'>
+The project MUST apply at least one dynamic analysis tool to any proposed major production release of the software produced by the project before its release.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#2.dynamic_analysis">dynamic_analysis</a>]</sup>
+<li id='2.dynamic_analysis_enable_assertions'>
+The project SHOULD include many run-time assertions in the software it produces and check those assertions during dynamic analysis.
+
+
+{N/A justification}
+{Met justification}
+
+
+<sup>[<a href="#2.dynamic_analysis_enable_assertions">dynamic_analysis_enable_assertions</a>]</sup>
+</ul>
+<h2>Baseline Level 1</h2>
+
+<h3>General</b></h3>
+<h4>Controls</h4>
+<ul>
+<li id='baseline-1.osps_ac_01_01'>
+When a user attempts to read or modify a sensitive resource in the project's authoritative repository, the system MUST require the user to complete a multi-factor authentication process.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_ac_01_01">osps_ac_01_01</a>]</sup>
+<li id='baseline-1.osps_ac_02_01'>
+When a new collaborator is added, the version control system MUST require manual permission assignment, or restrict the collaborator permissions to the lowest available privileges by default.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_ac_02_01">osps_ac_02_01</a>]</sup>
+<li id='baseline-1.osps_ac_03_01'>
+When a direct commit is attempted on the project's primary branch, an enforcement mechanism MUST prevent the change from being applied.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_ac_03_01">osps_ac_03_01</a>]</sup>
+<li id='baseline-1.osps_ac_03_02'>
+When an attempt is made to delete the project's primary branch, the version control system MUST treat this as a sensitive activity and require explicit confirmation of intent.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_ac_03_02">osps_ac_03_02</a>]</sup>
+<li id='baseline-1.osps_br_01_01'>
+When a CI/CD pipeline operates on untrusted metadata, those parameters MUST be sanitized and validated prior to use in the pipeline.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_br_01_01">osps_br_01_01</a>]</sup>
+<li id='baseline-1.osps_br_01_03'>
+When a CI/CD pipeline operates on untrusted code snapshots, it MUST prevent access to privileged CI/CD credentials and assets.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_br_01_03">osps_br_01_03</a>]</sup>
+<li id='baseline-1.osps_br_03_01'>
+When the project lists a URI as an official project channel, that URI MUST be exclusively delivered using encrypted channels.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_br_03_01">osps_br_03_01</a>]</sup>
+<li id='baseline-1.osps_br_03_02'>
+When the project lists a URI as an official distribution channel, that channel MUST be protected from adversary-in-the-middle attacks using cryptographically authenticated channels.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_br_03_02">osps_br_03_02</a>]</sup>
+<li id='baseline-1.osps_br_07_01'>
+The project MUST prevent the unintentional storage of unencrypted sensitive data, such as secrets and credentials, in the version control system.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_br_07_01">osps_br_07_01</a>]</sup>
+<li id='baseline-1.osps_do_01_01'>
+When the project has made a release, the project documentation MUST include user guides for all basic functionality.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_do_01_01">osps_do_01_01</a>]</sup>
+<li id='baseline-1.osps_do_02_01'>
+When the project has made a release, the project documentation MUST include a guide for reporting defects.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_do_02_01">osps_do_02_01</a>]</sup>
+<li id='baseline-1.osps_gv_02_01'>
+While active, the project MUST have one or more mechanisms for public discussions about proposed changes and usage obstacles.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_gv_02_01">osps_gv_02_01</a>]</sup>
+<li id='baseline-1.osps_gv_03_01'>
+While active, the project documentation MUST include an explanation of the contribution process.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_gv_03_01">osps_gv_03_01</a>]</sup>
+<li id='baseline-1.osps_le_02_01'>
+While active, the license for the source code MUST meet the OSI Open Source Definition or the FSF Free Software Definition.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_le_02_01">osps_le_02_01</a>]</sup>
+<li id='baseline-1.osps_le_02_02'>
+While active, the license for the released software assets MUST meet the OSI Open Source Definition or the FSF Free Software Definition.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_le_02_02">osps_le_02_02</a>]</sup>
+<li id='baseline-1.osps_le_03_01'>
+While active, the license for the source code MUST be maintained in the corresponding repository's LICENSE file, COPYING file, or LICENSE/ directory.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_le_03_01">osps_le_03_01</a>]</sup>
+<li id='baseline-1.osps_le_03_02'>
+While active, the license for the released software assets MUST be included in the released source code, or in a LICENSE file, COPYING file, or LICENSE/ directory alongside the corresponding release assets.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_le_03_02">osps_le_03_02</a>]</sup>
+<li id='baseline-1.osps_qa_01_01'>
+While active, the project's source code repository MUST be publicly readable at a static URL.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_qa_01_01">osps_qa_01_01</a>]</sup>
+<li id='baseline-1.osps_qa_01_02'>
+The version control system MUST contain a publicly readable record of all changes made, who made the changes, and when the changes were made.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_qa_01_02">osps_qa_01_02</a>]</sup>
+<li id='baseline-1.osps_qa_02_01'>
+When the package management system supports it, the source code repository MUST contain a dependency list that accounts for the direct language dependencies.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_qa_02_01">osps_qa_02_01</a>]</sup>
+<li id='baseline-1.osps_qa_04_01'>
+Projects with multiple repositories MUST document a list of codebases that are part of the project.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_qa_04_01">osps_qa_04_01</a>]</sup>
+<li id='baseline-1.osps_qa_05_01'>
+While active, the version control system MUST NOT contain generated executable artifacts.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_qa_05_01">osps_qa_05_01</a>]</sup>
+<li id='baseline-1.osps_qa_05_02'>
+While active, the version control system MUST NOT contain unreviewable binary artifacts.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_qa_05_02">osps_qa_05_02</a>]</sup>
+<li id='baseline-1.osps_vm_02_01'>
+While active, the project documentation MUST contain security contacts.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-1.osps_vm_02_01">osps_vm_02_01</a>]</sup>
+</ul>
+<h2>Baseline Level 2</h2>
+
+<h3>General</b></h3>
+<h4>Controls</h4>
+<ul>
+<li id='baseline-2.osps_ac_04_01'>
+When a CI/CD task is executed with no permissions specified, the CI/CD system MUST default the task's permissions to the lowest permissions granted in the pipeline.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-2.osps_ac_04_01">osps_ac_04_01</a>]</sup>
+<li id='baseline-2.osps_br_02_01'>
+When an official release is created, that release MUST be assigned a unique version identifier.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-2.osps_br_02_01">osps_br_02_01</a>]</sup>
+<li id='baseline-2.osps_br_04_01'>
+When an official release is created, that release MUST contain a descriptive log of functional and security modifications.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-2.osps_br_04_01">osps_br_04_01</a>]</sup>
+<li id='baseline-2.osps_br_05_01'>
+When a build and release pipeline ingests dependencies, it MUST use standardized tooling where available.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-2.osps_br_05_01">osps_br_05_01</a>]</sup>
+<li id='baseline-2.osps_br_06_01'>
+When an official release is created, that release MUST be signed or accounted for in a signed manifest including each asset's cryptographic hashes.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-2.osps_br_06_01">osps_br_06_01</a>]</sup>
+<li id='baseline-2.osps_do_06_01'>
+When the project has made a release, the project documentation MUST include a description of how the project selects, obtains, and tracks its dependencies.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-2.osps_do_06_01">osps_do_06_01</a>]</sup>
+<li id='baseline-2.osps_do_07_01'>
+The project documentation MUST include instructions on how to build the software, including required libraries, frameworks, SDKs, and dependencies.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-2.osps_do_07_01">osps_do_07_01</a>]</sup>
+<li id='baseline-2.osps_gv_01_01'>
+While active, the project documentation MUST include a list of project members with access to sensitive resources.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-2.osps_gv_01_01">osps_gv_01_01</a>]</sup>
+<li id='baseline-2.osps_gv_01_02'>
+While active, the project documentation MUST include descriptions of the roles and responsibilities for members of the project.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-2.osps_gv_01_02">osps_gv_01_02</a>]</sup>
+<li id='baseline-2.osps_gv_03_02'>
+While active, the project documentation MUST include a guide for code contributors that includes requirements for acceptable contributions.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-2.osps_gv_03_02">osps_gv_03_02</a>]</sup>
+<li id='baseline-2.osps_le_01_01'>
+While active, the version control system MUST require all code contributors to assert that they are legally authorized to make the associated contributions on every commit.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-2.osps_le_01_01">osps_le_01_01</a>]</sup>
+<li id='baseline-2.osps_qa_03_01'>
+When a commit is made to the primary branch, any automated status checks for commits MUST pass or be manually bypassed.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-2.osps_qa_03_01">osps_qa_03_01</a>]</sup>
+<li id='baseline-2.osps_qa_06_01'>
+Prior to a commit being accepted, the project's CI/CD pipelines MUST run at least one automated test suite to ensure the changes meet expectations.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-2.osps_qa_06_01">osps_qa_06_01</a>]</sup>
+<li id='baseline-2.osps_sa_01_01'>
+When the project has made a release, the project documentation MUST include design documentation demonstrating all actions and actors within the system.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-2.osps_sa_01_01">osps_sa_01_01</a>]</sup>
+<li id='baseline-2.osps_sa_02_01'>
+When the project has made a release, the project documentation MUST include descriptions of all external software interfaces of the released software assets.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-2.osps_sa_02_01">osps_sa_02_01</a>]</sup>
+<li id='baseline-2.osps_sa_03_01'>
+When the project has made a release, the project MUST perform a security assessment to understand the most likely and impactful potential security problems that could occur within the software.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-2.osps_sa_03_01">osps_sa_03_01</a>]</sup>
+<li id='baseline-2.osps_vm_01_01'>
+While active, the project documentation MUST include a policy for coordinated vulnerability disclosure (CVD), with a clear timeframe for response.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-2.osps_vm_01_01">osps_vm_01_01</a>]</sup>
+<li id='baseline-2.osps_vm_03_01'>
+While active, the project documentation MUST provide a means for private vulnerability reporting directly to the security contacts within the project.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-2.osps_vm_03_01">osps_vm_03_01</a>]</sup>
+<li id='baseline-2.osps_vm_04_01'>
+While active, the project documentation MUST publicly publish data about discovered vulnerabilities.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-2.osps_vm_04_01">osps_vm_04_01</a>]</sup>
+</ul>
+<h2>Baseline Level 3</h2>
+
+<h3>General</b></h3>
+<h4>Controls</h4>
+<ul>
+<li id='baseline-3.osps_ac_04_02'>
+When a job is assigned permissions in a CI/CD pipeline, the source code or configuration MUST only assign the minimum privileges necessary for the corresponding activity.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_ac_04_02">osps_ac_04_02</a>]</sup>
+<li id='baseline-3.osps_br_01_04'>
+CI/CD pipelines which accept trusted collaborator input MUST sanitize and validate that input prior to use in the pipeline.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_br_01_04">osps_br_01_04</a>]</sup>
+<li id='baseline-3.osps_br_02_02'>
+When an official release is created, all assets within that release MUST be clearly associated with the release identifier or another unique identifier for the asset.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_br_02_02">osps_br_02_02</a>]</sup>
+<li id='baseline-3.osps_br_07_02'>
+The project MUST define a policy for managing secrets and credentials used by the project. The policy should include guidelines for storing, accessing, and rotating secrets and credentials.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_br_07_02">osps_br_07_02</a>]</sup>
+<li id='baseline-3.osps_do_03_01'>
+When the project has made a release, the project documentation MUST contain instructions to verify the integrity and authenticity of the release assets.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_do_03_01">osps_do_03_01</a>]</sup>
+<li id='baseline-3.osps_do_03_02'>
+When the project has made a release, the project documentation MUST contain instructions to verify the expected identity of the person or process authoring the software release.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_do_03_02">osps_do_03_02</a>]</sup>
+<li id='baseline-3.osps_do_04_01'>
+When the project has made a release, the project documentation MUST include a descriptive statement about the scope and duration of support for each release.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_do_04_01">osps_do_04_01</a>]</sup>
+<li id='baseline-3.osps_do_05_01'>
+When the project has made a release, the project documentation MUST provide a descriptive statement when releases or versions will no longer receive security updates.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_do_05_01">osps_do_05_01</a>]</sup>
+<li id='baseline-3.osps_gv_04_01'>
+While active, the project documentation MUST have a policy that code collaborators are reviewed prior to granting escalated permissions to sensitive resources.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_gv_04_01">osps_gv_04_01</a>]</sup>
+<li id='baseline-3.osps_qa_02_02'>
+When the project has made a release, all compiled released software assets MUST be delivered with a software bill of materials.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_qa_02_02">osps_qa_02_02</a>]</sup>
+<li id='baseline-3.osps_qa_04_02'>
+When the project has made a release comprising multiple source code repositories, all subprojects MUST enforce security requirements that are as strict or stricter than the primary codebase.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_qa_04_02">osps_qa_04_02</a>]</sup>
+<li id='baseline-3.osps_qa_06_02'>
+While active, project's documentation MUST clearly document when and how tests are run.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_qa_06_02">osps_qa_06_02</a>]</sup>
+<li id='baseline-3.osps_qa_06_03'>
+While active, the project's documentation MUST include a policy that all major changes to the software produced by the project should add or update tests of the functionality in an automated test suite.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_qa_06_03">osps_qa_06_03</a>]</sup>
+<li id='baseline-3.osps_qa_07_01'>
+When a commit is made to the primary branch, the project's version control system MUST require at least one non-author human approval of the changes before merging.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_qa_07_01">osps_qa_07_01</a>]</sup>
+<li id='baseline-3.osps_sa_03_02'>
+When the project has made a release, the project MUST perform a threat modeling and attack surface analysis to understand and protect against attacks on critical code paths, functions, and interactions within the system.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_sa_03_02">osps_sa_03_02</a>]</sup>
+<li id='baseline-3.osps_vm_04_02'>
+While active, any vulnerabilities in the software components not affecting the project MUST be accounted for in a VEX document, augmenting the vulnerability report with non-exploitability details.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_vm_04_02">osps_vm_04_02</a>]</sup>
+<li id='baseline-3.osps_vm_05_01'>
+While active, the project documentation MUST include a policy that defines a threshold for remediation of SCA findings related to vulnerabilities and licenses.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_vm_05_01">osps_vm_05_01</a>]</sup>
+<li id='baseline-3.osps_vm_05_02'>
+While active, the project documentation MUST include a policy to address SCA violations prior to any release.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_vm_05_02">osps_vm_05_02</a>]</sup>
+<li id='baseline-3.osps_vm_05_03'>
+While active, all changes to the project's codebase MUST be automatically evaluated against a documented policy for malicious dependencies and known vulnerabilities in dependencies, then blocked in the event of violations, except when declared and suppressed as non-exploitable.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_vm_05_03">osps_vm_05_03</a>]</sup>
+<li id='baseline-3.osps_vm_06_01'>
+While active, the project documentation MUST include a policy that defines a threshold for remediation of SAST findings.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_vm_06_01">osps_vm_06_01</a>]</sup>
+<li id='baseline-3.osps_vm_06_02'>
+While active, all changes to the project's codebase MUST be automatically evaluated against a documented policy for security weaknesses and blocked in the event of violations except when declared and suppressed as non-exploitable.
+
+
+{N/A justification}
+
+{Met URL}
+
+<sup>[<a href="#baseline-3.osps_vm_06_02">osps_vm_06_02</a>]</sup>
+</ul>
+</div>
+</div>
+  </div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <small> <strong>Need help? Have a question? See a problem? Please <em><a href="https://github.com/ossf/best-practices-badge/issues" target="_blank" rel="noopener">file an issue</a></em>.</strong> Copyright © <a href="https://www.bestpractices.dev" target="_blank" rel="noopener">OpenSSF Best Practices Badge a Series of LF Projects, LLC</a>. For web site terms of use, trademark policy and other project policies please see <a href="https://lfprojects.org" target="_blank" rel="noopener">these policies</a>. For more information, see the websites of the <a href="https://openssf.org" target="_blank" rel="noopener">Open Source Security Foundation (OpenSSF)</a> and <a href="https://www.linuxfoundation.org/" target="_blank" rel="noopener">The Linux Foundation</a>. All Rights Reserved. Please see our <a href="https://www.linuxfoundation.org/privacy" target="_blank" rel="noopener">privacy policy</a>.</small></div>
+    <div class="col-xs-12 col-md-6">
+      <nav>
+        <ul>
+          <li><a href="https://openssf.org/"><img width="120" height="30" src="https://www.bestpractices.dev/assets/openssf_white-c8fa3e791f9ea5575fc5f6c856866b80330a3c4c419396a403dd69f65eea277a.svg" /></a></li>
+          <li><a href="https://www.linuxfoundation.org/"><img width="120" height="30" src="https://www.bestpractices.dev/assets/lf-footer-d5b1c60fb82510cd6c99c47cc9a1250d52401d4c507e04bfd3fc441a1723bbd9.png" /></a></li>
+          <!-- Link to Fastly is a condition for our use of their CDN services. -->
+          <li><a href="https://www.fastly.com/"><img width="45" height="17" alt="Fastly logo" src="https://www.bestpractices.dev/assets/fastly-logo-581e13cf9f0ecfc0faf74221b25cfe7728218faf86cda48c3e31cbd5216f9527.png" /></a></li>
+        </ul>
+      </nav>
+    </div>
+   </div>
+  </div>
+</footer>
+</body>
+</html>
