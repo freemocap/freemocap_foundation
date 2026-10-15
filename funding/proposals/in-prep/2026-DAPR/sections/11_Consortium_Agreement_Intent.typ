@@ -1,59 +1,91 @@
-// Edit the body below. This file also compiles as a standalone attachment.
-#import "../lib/styles.typ": grant, grant-table
-#import "../config.typ": project-title
-#import "../budget.typ": *
+// DAPR consortium agreement intent - standalone Foundation letterhead.
+// Set the two image paths below. Relative paths are resolved from this file.
+// Keep the signature image in a private, git-ignored folder.
+// Leave signature-path as none to sign the exported PDF separately.
 
-#let body = [
-= Consortium Agreement Intent
+#let letter-date = "15 October 2026"
+#let project-title = "Harmonizing FreeMoCap Movement Data for Rehabilitation Research"
+#let pi-name = "Aaron T. Cherian"
+#let support-period = "12 months from the approved project start date"
+#let direct-costs = "$31,000"
+#let indirect-costs = "$2,480"
+#let total-costs = "$33,480"
 
-\[PLACE ON FREEMOCAP FOUNDATION LETTERHEAD\]
+#let sender-name = "Jonathan Samir Matthis"
+#let sender-title = "President and CEO, FreeMoCap Foundation"
+#let reply-email = "jon@freemocap.org"
+#let logo-path = "../figs/freemocap-foundation-stars-logo.png"
+#let signature-path = none // Example: "private/signature.png"
 
-\[DATE\]
+#let muted = rgb("#666")
+#let accent = rgb("#2a2a2a")
+#let rule-color = rgb("#929191")
+
+#set document(title: "DAPR Consortium Agreement Intent", author: "FreeMoCap Foundation")
+#set page(paper: "us-letter", margin: 0.5in, numbering: none)
+#set text(font: "Arial", size: 11pt, fill: rgb("#222"), lang: "en", hyphenate: false)
+#set par(justify: false, leading: 0.35em, spacing: 0.8em, first-line-indent: 0pt)
+
+// Letterhead
+#grid(
+  columns: (1fr, auto), gutter: 0.2in, align: horizon,
+  [
+    #text(weight: "bold", fill: accent)[FreeMoCap Foundation, Inc.] \
+    #text(fill: muted)[A 501(c)(3) nonprofit organization]
+  ],
+  [#if logo-path != none { image(logo-path, width: 1.05in) }],
+)
+#v(0.4em)
+#line(length: 100%, stroke: 0.6pt + rule-color)
+#v(0.7em)
+
+#text(fill: muted)[#letter-date]
 
 DAPR Pilot Grant Program \
 University of Southern California
 
-Re: #project-title
+*Re: #project-title*
 
-Dear DAPR Pilot Grant Review Committee,
+Dear DAPR Pilot Grant Review Committee:
 
-On behalf of the FreeMoCap Foundation, I confirm the institution's intent to establish a formal consortium or
-subaward agreement with the University of Southern California if the above Data STACHE project is selected for
-funding.
+On behalf of the FreeMoCap Foundation, I confirm the Foundation's support for
+this application and its willingness to enter into a formal subaward or
+consortium agreement with the University of Southern California if the project
+is selected for funding.
 
-The proposed Principal Investigator is Aaron T. Cherian, \[CONFIRMED DEGREE AND APPOINTMENT\]. Jonathan Samir
-Matthis, PhD, President and CEO of the Foundation, will serve as mentor. These are the two individuals
-supported by the proposed budget. The performance period is \[START DATE\] through \[END DATE\], covering 12
-months. The collaborating institutions for this agreement are the University of Southern California and the
-FreeMoCap Foundation. The proposed request is #money(direct-costs) in direct costs and #money(indirect-costs)
-in indirect costs, totaling #money(total-request). Indirect costs use the program's 8% cap, subject to
-confirmation of the applicable base.
+*Principal Investigator:* #pi-name \
+*Collaborating institutions:* FreeMoCap Foundation and University of Southern California \
+*Period of support:* #support-period
 
-The proposed work will harmonize existing gait and balance validation datasets, incorporate the required
-metadata capture and export capability into FreeMoCap, and evaluate preservation and reuse of the resulting
-data. Outputs will include data, code, a dictionary and terminology mappings, and documentation. The
-Foundation intends to provide the administrative oversight needed to carry out the approved scope, manage
-project funds, meet reporting requirements, and comply with applicable research, data-management, and sharing
-obligations. Any required institutional review and data-access arrangements will be completed through the
-appropriate processes.
+#table(
+  columns: (1fr, 1fr, 1fr), align: (left, left, left),
+  inset: (x: 7pt, y: 5pt), stroke: 0.4pt + rule-color,
+  table.header([*Direct costs*], [*Indirect costs*], [*Total request*]),
+  [#direct-costs], [#indirect-costs], [#total-costs],
+)
 
-The Foundation will verify the PI's eligibility, appointment, research allocation, and required credentials
-and will approve the final personnel rates and budget before submission. If selected, we will work with USC to
-complete the formal agreement and resolve any required assurances, certifications, or supporting documentation
-before award activation. We understand that this letter indicates institutional intent and does not replace
-the executed agreement.
+The proposed project will harmonize existing FreeMoCap gait and balance
+validation datasets and incorporate metadata capture and harmonized exports
+into FreeMoCap. The Foundation will provide administrative oversight for the
+approved scope of work, manage project funds, and meet applicable reporting,
+research, data-management, and sharing requirements.
+
+If selected, the Foundation will work with USC to finalize the scientific,
+administrative, and financial arrangements and complete the formal agreement
+and any required assurances or certifications before award.
 
 Sincerely,
 
-\[AUTHORIZED SIGNING OFFICIAL NAME\] \
-\[TITLE\] \
-FreeMoCap Foundation \
-\[ADDRESS\] \
-\[EMAIL AND PHONE\]
-
-Signature: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \
-Date: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+#block(breakable: false)[
+  #if signature-path != none {
+    image(signature-path, width: 1.5in)
+  } else {
+    v(0.25in)
+    line(length: 2.4in, stroke: 0.5pt + rule-color)
+    v(0.15em)
+  }
+  #text(weight: "bold")[#sender-name] \
+  #text(fill: muted)[#sender-title] \
+  #link("mailto:" + reply-email)[#reply-email]
 ]
 
-#show: grant
-#body

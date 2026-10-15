@@ -1,12 +1,13 @@
 // Planning assumptions only: confirm effort, rates, fringe, and classification.
 // This file feeds the budget table and the numerical amounts in the prose.
 #let project-months = 12
-#let pi = (name: "Aaron T. Cherian", role: "PD/PI", effort: 0.30, annual-base: 60000)
-#let mentor = (name: "Jonathan S. Matthis", role: "Mentor", effort: 0.10, annual-base: 80000)
-#let fringe-rate = 0.15
+#let pi = (name: "Aaron T. Cherian", role: "PD/PI", effort: 17538 / 60000, annual-base: 60000)
+#let mentor = (name: "Jonathan S. Matthis", role: "Mentor", effort: 7795 / 80000, annual-base: 80000)
+#let fringe-components = (payroll: 0.0765, health: 0.0935, retirement: 0.03)
+#let fringe-rate = fringe-components.payroll + fringe-components.health + fringe-components.retirement
 #let indirect-rate = 0.08
 #let storage = 600
-#let computing = 500
+#let computing = 0
 
 #let months(person) = project-months * person.effort
 #let salary(person) = calc.round(person.annual-base * person.effort * project-months / 12)
@@ -35,3 +36,4 @@
   let fraction = calc.rem(cents, 100)
   str(int(calc.floor(cents / 100))) + "." + (if fraction < 10 { "0" } else { "" }) + str(fraction)
 }
+

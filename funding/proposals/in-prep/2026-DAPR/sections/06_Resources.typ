@@ -13,12 +13,11 @@ harmonized export capability available for supported FreeMoCap outputs. Familiar
 development process provides a practical basis for implementing the workflow and documenting how researchers
 can use it.
 
-Aaron T. Cherian, Chief Scientific Officer, is the proposed PI and will carry out data harmonization, metadata
+Aaron T. Cherian, PhD, is the proposed PI and will carry out data harmonization, metadata
 architecture, export implementation, checks, and documentation. His experience with markerless motion capture,
 gait and balance analysis, and comparisons among tracking methods will inform metadata selection and
 measurement definitions. He will coordinate DAPR consultation, lead evaluation, and develop dissemination and
-follow-on research plans. Final PI designation, credentials, and institutional eligibility must be documented
-in the application records.
+follow-on research plans. 
 
 Jonathan Samir Matthis, PhD, President and CEO of the FreeMoCap Foundation, will serve as project mentor. He
 will review measurement definitions and mappings, advise on metadata architecture and export design, and
@@ -36,7 +35,7 @@ institutional or collaborator resources will be documented explicitly before sub
 
 The data source is the public FreeMoCap validation release and analysis repository. It provides aligned
 trajectories from multiple pose-estimation backends and a marker-based reference, together with gait and
-balance analysis code. \[2\] The data and existing analyses will support harmonization in Aim 1 and provide
+balance analysis code. The data and existing analyses will support harmonization in Aim 1 and provide
 reference packages for evaluating the exporter in Aim 2. Measurements from the same trial will retain their
 relationship and method identities. According to the repository, the public release excludes raw videos and
 direct participant identifiers; institutional review will separately consider investigator familiarity with
@@ -72,13 +71,13 @@ consultation will address scope and receiving requirements. Intermediate review 
 mapping decisions, and representative exports. Final review will address study packages, limitations, and
 handoff or import procedures. Meeting dates and effort will be agreed with the Core.
 
-DAPR describes a Schema, Dictionary, Thesaurus, and MAPR mapping application. \[6\] Where appropriate, mapping
+DAPR describes a Schema, Dictionary, Thesaurus, and MAPR mapping application. Where appropriate, mapping
 tools may suggest candidate terms; the team will review definitions, units, and relationships before accepting
 a match. Broader or related concepts will remain distinguishable from exact mappings. Terms without an
 adequate match will retain clear definitions and be proposed for DAPR review.
 
 Existing resources, including Motion-BIDS, will inform how motion signals, channels, reference frames, and
-related metadata are represented. \[3,4\] Applicable conventions will be adopted and the scope of conformance
+related metadata are represented. Applicable conventions will be adopted and the scope of conformance
 documented. Additional metadata will remain explicit, with source links and a rationale for its inclusion.
 This will allow the export design to draw on established work while responding to the needs identified in the
 study inventory and DAPR consultation.
@@ -86,21 +85,13 @@ study inventory and DAPR consultation.
 The contribution to DAPR will include harmonized gait and balance datasets, reviewed mappings, a reusable
 export workflow, and an evaluation of the information needed for interpretation and reuse. If a central
 receiving interface is unavailable during the award, we will provide versioned packages and a documented
-handoff. Actual ingestion and acceptance of proposed terms will be recorded when completed.
+handoff. 
+
+Versioned releases and accompanying documentation will be archived in an established repository to preserve the pilot's outputs and support their continued use. Future maintenance and expansion will follow the project's established development processes.
 
 == Resource Stewardship and Career Development
 
-The PI and mentor will use monthly reviews and quarterly checkpoints to track implementation and evaluation.
-Matthis will provide scientific and technical guidance and support the PI's development of manuscript
-materials and follow-on research aims. Work with DAPR will develop expertise in rehabilitation terminology,
-data standards, and harmonization across studies. The evaluation will inform a methods manuscript and future
-research on movement-data sharing across rehabilitation cohorts and settings.
-
-The Foundation will be asked to identify a custodian for archived releases and a contact for corrections. The
-proposed support letter describes preservation of release links and discoverable documentation. The metadata
-and export integration changes will be submitted for review through the normal FreeMoCap contribution process,
-with a documented exporter available for the supported inputs. Archived versions will preserve the pilot's
-outputs while later maintenance and expansion follow the project's established processes.
+The PI and mentor will use monthly reviews and quarterly checkpoints to assess progress against the project aims and timeline and address implementation or evaluation challenges. Matthis will provide scientific and technical guidance and support the PI's development of manuscript materials and follow-on research aims. Collaboration with DAPR will develop the PI's expertise in rehabilitation terminology, data standards, and harmonization across studies.
 ]
 
 #show: grant

@@ -1,5 +1,4 @@
-// Edit the body below. This file also compiles as a standalone attachment.
-// Editable working transcription of PHS 398 categories; original filled form is in forms/.
+
 #import "../lib/styles.typ": grant, grant-table
 #import "../config.typ": project-title
 #import "../budget.typ": *
@@ -43,8 +42,7 @@ Proposed budget assumptions require institutional approval; see Budget Justifica
     table.cell(colspan: 8)[Inpatient care costs], [0],
     table.cell(colspan: 8)[Outpatient care costs], [0],
     table.cell(colspan: 8)[Alterations and renovations], [0],
-    table.cell(colspan: 8)[Other expenses: project storage and backup #money(storage)\;
-      computational validation #money(computing)], [#money(other-direct, symbol: false)],
+    table.cell(colspan: 8)[Other expenses: project storage and backup #money(storage)], [#money(other-direct, symbol: false)],
     table.cell(colspan: 8)[Consortium/contractual costs: direct costs], [0],
     table.cell(colspan: 8)[*Subtotal direct costs for initial budget period*], [*#money(direct-costs)*],
     table.cell(colspan: 8)[Consortium/contractual costs: facilities and administrative costs], [0],
@@ -58,3 +56,4 @@ Indirect costs are detailed in the Budget Justification. The requested indirect 
 
 #show: grant
 #body
+

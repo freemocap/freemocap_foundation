@@ -8,211 +8,85 @@
 
 #project-title
 
-Movement measurements are central to understanding walking and balance, yet their reuse across studies is
-limited by differences in data organization and measurement definitions. A variable called knee angle may
-reflect different landmarks, segment axes, or rotation sequences. Likewise, a trajectory may represent a
-surface marker, an estimated joint center, or a pose-estimation landmark. Pooling these measurements without
-their context can obscure physiological differences or mistake measurement differences for biological
-variation. Accessible systems such as FreeMoCap increase opportunities to collect movement data, making
-interoperable outputs and explicit provenance increasingly important.
+Movement measurements are central to understanding walking and balance, yet their reuse across studies is limited by differences in data organization and measurement definitions. A variable called knee angle may reflect different landmarks, segment axes, or rotation sequences. Likewise, a trajectory may represent a surface marker, an estimated joint center, or a pose-estimation landmark. Pooling these measurements without their context can obscure physiological differences or mistake measurement differences for biological variation. Accessible systems such as FreeMoCap increase opportunities to collect movement data, making interoperable outputs and explicit provenance increasingly important.
 
-FreeMoCap is free and open-source software for motion capture using accessible camera hardware. \[1\] Its
-potential reach creates an opportunity to make well-documented, harmonized outputs available to researchers at
-the point of export. Our validation work comparing pose-estimation backends with marker-based measurements
-provides experience with the methodological differences that affect gait and balance data. \[2\] This
-experience motivates preserving both the numerical measurements and the context needed to interpret them.
+FreeMoCap is a free and open-source markerless motion capture system that produces three-dimensional full-body kinematic data from consumer cameras @matthisFreeMoCapFreeOpen2026, with over 10,000 GitHub stars and at least 15,000 users across 153 countries. Published applications span reaching and grasping biomechanics @mazroueiCatchingSmallBalls2026, gait analysis @nunez-lisboaUnderstandingGaitAlterations2024a, and robotic exoskeleton design and verification @obukhovHybridVerificationMethod2026. Independent studies have evaluated FreeMoCap against marker-based motion capture for selected tasks and outcomes @dariciLowcostMarkerlessMotion2026 @minogueValidationFreetoUseMarkerless2025.
 
-The objective of this Data STACHE pilot is to harmonize existing gait and balance data with the DAPR framework
-and incorporate that harmonization into a reusable FreeMoCap export. We will work with the Resource Core to
-map relevant information to existing terminology and identify metadata needs for movement time series.
-Existing resources, including Motion-BIDS, will inform the representation and organization of the data.
-\[3-6\] Harmonization of the validation datasets will establish the requirements for software that other
-researchers can use with supported FreeMoCap recordings.
+This breadth of use creates an opportunity to make harmonized outputs available to researchers at the point of export. Our own validation work has characterized gait and balance measurements across multiple pose-estimation backends through comparison with marker-based measurements @cherianOpensourceDevelopmentValidation2026. This experience highlights the importance of preserving measurement definitions and processing history alongside numerical data, and provides existing datasets and analyses with which to develop and evaluate a shared representation.
 
-*Aim 1 Harmonize existing FreeMoCap gait and balance validation datasets.* We will inventory the study's
-movement measurements and the information needed to interpret them, including task context, measurement
-definitions, and acquisition and processing provenance. With DAPR consultation, we will establish a data
-dictionary and terminology mappings, draw on applicable standards, and document unresolved metadata needs. We
-will assemble harmonized datasets and evaluate preservation of numerical values and measurement meaning. The
-outcome will be documented gait and balance data packages that establish the representation and metadata
-requirements for the export.
+The objective of this Data STACHE pilot is to harmonize existing gait and balance data with the DAPR framework and incorporate that harmonization into a reusable FreeMoCap export. We will work with the Resource Core to map relevant information to existing terminology and identify metadata needs for movement time series. Existing resources, including Motion-BIDS, will inform the representation and organization of the data. \[3-6\] Harmonization of the validation datasets will establish the requirements for software that other researchers can use with supported FreeMoCap recordings.
 
-*Aim 2 Build the harmonized representation into a reusable FreeMoCap export.* We will implement the
-architecture needed to capture and retain relevant metadata during processing, connect researcher-supplied
-study context to recordings, and export numerical data with their definitions and provenance. Using the Aim 1
-datasets as a reference, we will evaluate exports across the supported tasks and processing methods, check
-handling of missing metadata, and demonstrate representative reuse. The outcome will be tested export software
-and documentation that enable other researchers to prepare DAPR-aligned outputs from supported FreeMoCap
-recordings.
+*Aim 1 Harmonize existing FreeMoCap gait and balance validation datasets.* We will inventory the study's movement measurements and the information needed to interpret them, including task context, measurement definitions, and acquisition and processing provenance. With DAPR consultation, we will establish a data dictionary and terminology mappings, draw on applicable standards, and document unresolved metadata needs. We will assemble harmonized datasets and evaluate preservation of numerical values and measurement meaning. The outcome will be documented gait and balance data packages that establish the representation and metadata requirements for the export.
 
-Within 12 months, the pilot will deliver harmonized gait and balance datasets, reviewed mappings, the export
-capability, and an evaluation report. Making this capability available through free and open-source software
-will establish a practical foundation for future multi-study harmonization. Findings will inform DAPR's work
-with movement time series and support a methods manuscript submission plan and follow-on research.
+*Aim 2 Build the harmonized representation into a reusable FreeMoCap export.* We will implement the architecture needed to capture and retain relevant metadata during processing, connect researcher-supplied study context to recordings, and export numerical data with their definitions and provenance. Using the Aim 1 datasets as a reference, we will evaluate exports across the supported tasks and processing methods, check handling of missing metadata, and demonstrate representative reuse. The outcome will be tested export software and documentation that enable other researchers to prepare DAPR-aligned outputs from supported FreeMoCap recordings.
+
+Within 12 months, the pilot will deliver harmonized gait and balance datasets, reviewed mappings, the export capability, and an evaluation report. Making this capability available through free and open-source software will establish a practical foundation for future multi-study harmonization. Findings will inform DAPR's work with movement time series and support plans for a methods manuscript and follow-on research.
 
 // Deliberate page break preserves the grant allocation.
 #pagebreak()
+
+
 = Research Strategy
-== Significance
+== Significance and Preliminary Work
 
-Movement measurements can help rehabilitation researchers characterize function, follow changes over time, and
-investigate differences in gait and balance. FreeMoCap's use of accessible cameras and open-source software
-creates opportunities for this work beyond laboratories with dedicated motion-capture infrastructure. \[1\]
-Investigators working in clinical settings could benefit from these capabilities, provided that the
-measurements can be interpreted in relation to the population, protocol, and method used to obtain them.
+FreeMoCap makes quantitative movement measurements accessible through consumer cameras and free, open-source software @matthisFreeMoCapFreeOpen2026.  Its use across research settings creates an opportunity to improve how movement data are documented and shared. For rehabilitation research, reuse requires information about the protocol, measurement definitions, and processing methods; familiar variable names alone do not establish comparability @jeungMotionBIDSExtensionBrain2024. 
 
-As more groups collect movement data, differences in their organization and documentation can limit the value
-of sharing. A familiar variable name does not establish a common measurement definition. Relevant context may
-remain in analysis code, a configuration file, or the original researcher's knowledge. Without that context,
-another investigator may be unable to distinguish a difference in movement from a difference in measurement.
-Harmonized exports can make such distinctions visible and reduce the need for each research group to
-reconstruct them independently.
+Analysis choices can affect the measurements being shared. For example, in gait, anthropometric model selection can alter estimated mediolateral and vertical center-of-mass motion @catenaDoesAnthropometricModel2017. In a 2025 ISB community consultation, 46% of respondents identified insufficient methodological detail as the biggest obstacle to comparing joint-motion data across research groups @DataSharingKinematic.  Preserving these details alongside numerical outputs would help researchers assess which measurements are suitable for reuse and comparison.
 
-Our validation work has examined FreeMoCap outputs from different pose-estimation backends alongside
-marker-based measurements of the same gait and balance trials. \[2\] This provides experience with the ways
-that tracking methods and subsequent calculations affect the resulting data. It also provides existing records
-and analyses for evaluating a shared representation. The proposed work will use that experience to determine
-which information should accompany an export and how it can be represented consistently for other researchers.
+Our gait and balance validation compares FreeMoCap outputs from MediaPipe, RTMPose, and ViTPose with Qualisys marker-based measurements @cherianOpensourceDevelopmentValidation2026. The gait comparisons in @fig-gait-validation illustrate how pose-estimation choices can affect derived movement measurements. Developing this validation workflow has also required us to specify anatomical definitions and joint-angle conventions that are not conveyed by the resulting numerical arrays. This experience provides a practical basis for identifying the metadata that should accompany shared movement data and for evaluating whether harmonized exports preserve that information. 
 
-DAPR provides a relevant framework through its rehabilitation schema, dictionary, mapping resources, and
-Resource Core consultation. Its published development priorities include infrastructure for time-series data
-from gait studies. \[5,6\] This pilot will connect FreeMoCap outputs with that framework while drawing on
-existing movement-data standards, including Motion-BIDS. \[3,4\] Harmonizing the existing datasets will
-establish requirements for a reusable export. Capturing the necessary metadata within FreeMoCap will help
-future researchers retain that information as data are generated.
+DAPR's development priorities include infrastructure for gait time series. \[CITE: DAPR\] This pilot will connect FreeMoCap outputs with DAPR's terminology and mapping resources, informed by applicable Motion-BIDS conventions @jeungMotionBIDSExtensionBrain2024. Harmonizing the existing data will establish metadata requirements; incorporating them into FreeMoCap will help other researchers retain that information during processing and export.
+
+#block[
+  #show figure.caption: set text(size: 10pt)
+  #show figure.caption: set par(leading: 1.5pt, spacing: 0pt)
+  #figure(
+    image("../figs/main_fig.png", width: 70%), gap: 5pt,
+    caption: [*Existing FreeMoCap gait validation.* Left: example reconstructions from three pose-estimation backends. Right: sagittal hip, knee, and ankle kinematics across five treadmill speeds (0.5-2.5 m/s), with Qualisys as the gray reference. Lower rows show statistical parametric mapping (SPM) t-statistics for comparisons with the reference. These comparisons motivate preserving tracking methods, measurement definitions, and processing history. \[CITE: Validation\]],
+  ) <fig-gait-validation>
+]
 
 == Approach
-=== Study design and existing data
+=== Study Design and Existing Data
 
-The project will use existing reconstructed movement data and associated study records from the FreeMoCap
-validation release, comprising six participants and 24 treadmill gait and standing balance trials. Aligned
-trajectories are available from MediaPipe, RTMPose, ViTPose, and Qualisys. \[2\] The gait and balance datasets
-provide different task contexts, while the tracking methods provide complementary measurements of shared
-trials. Participant, trial, and method identities will remain attached to the harmonized records.
+The project will use the existing FreeMoCap validation release, comprising six participants and 24 treadmill gait and standing balance trials, with aligned trajectories from MediaPipe, RTMPose, ViTPose, and Qualisys. Their different tasks and processing methods will support development and evaluation of a common representation; the reusable export will provide the route to future multi-study use. The scope includes reconstructed trajectories, available kinematic time series and summaries, and associated metadata. No new recruitment, video reconstruction, or pose-model training is required.
 
-These datasets come from one validation study. Their differing tasks, measurement definitions, and processing
-methods provide a practical basis for developing a common representation. The project's broader contribution
-to multi-study reuse will be the integration of this representation into FreeMoCap, allowing researchers using
-supported workflows to generate similarly documented exports for their own studies. The pilot will evaluate
-that capability using the existing gait and balance data.
+The validation study provides both shared movements observed through different measurement methods and distinct gait and balance task contexts. This combination allows us to evaluate whether a common representation preserves differences among methods while describing task-specific information consistently. Existing analysis code and configuration records will provide reference calculations and help identify metadata that FreeMoCap should retain systematically for future recordings.
 
-The initial scope is reconstructed trajectories, available kinematic time series and summaries, and the
-metadata needed to interpret them. We will select a manageable set of representative analyses supported by the
-source data. Source releases, eligible records, software versions, and permissions will be recorded before
-evaluation. The pilot requires no new participant recruitment, video reconstruction, or pose-model training.
+=== Aim 1: Harmonize Existing Gait and Balance Validation Datasets
 
-// Deliberate page break preserves the grant allocation.
-#pagebreak()
+In months 1-3, we will inventory the selected data and source records, document versions and permissions, and define representative reuse analyses. The dictionary will cover study and coded participant identifiers, sessions and trials, task conditions, measurement definitions, units, timing, coordinate frames, and acquisition and processing provenance. We will distinguish information available from the software workflow from context supplied through study records, and specify required and optional fields for each supported data type. Missing information will remain explicit.
+
+Metadata requirements will reflect the measurements being shared. Joint-angle records will describe segment definitions, anatomical axes, sign conventions, and the rotation sequence or projection method, referencing applicable ISB recommendations and documenting the conventions actually used @wuISBRecommendationDefinitions2002. For center-of-mass estimates, we will identify the anthropometric model and implemented parameters, including segment definitions, mass fractions, and relative segment COM locations @winterBiomechanicsMotorControl2009. Other records will identify the pose estimator, model and software versions, filtering, interpolation, and analysis intervals. These examples will guide a common metadata core with additional fields for particular measurements. Definitions and parameters will be machine-readable and linked to the relevant numerical outputs.
+
+With the DAPR Resource Core, we will review mappings to DAPR and established terminology, including NINDS or OMOP concepts where their definitions apply. Each mapping will retain the source definition, target identifier and version, and any transformation. Exact matches, matches requiring transformation, related concepts, and unresolved mappings will remain distinguishable. The PI and mentor will review mappings used in the demonstrations; missing concepts will be proposed to DAPR with definitions and examples. Motion-BIDS will inform applicable conventions for signals, channels, reference frames, and data organization, with versions, adopted conventions, and additional metadata documented explicitly.
+
+Consultation with the Resource Core will begin by confirming the initial scope and receiving requirements. Intermediate review will address the dictionary, mapping decisions, and representative exports; final review will address the completed packages, remaining limitations, and handoff or import procedures. Meeting dates and the extent of Core involvement will be agreed with DAPR.
+
+In months 3-5, we will assemble harmonized gait and balance packages that link numerical data, definitions, provenance, and source records through stable identifiers. Files will use documented, openly readable formats; Parquet is an option for numerical tables with linked metadata files. Original values and missingness will be preserved, and any unit or coordinate transformation will be explicit. Original timestamps, synchronized data, and waveforms normalized to a gait cycle will remain distinguishable.
+
+Evaluation will account for each selected source field as represented or excluded with a reason. Coverage will be reported by task, data type, and measurement method, distinguishing available information, recovered information, and unresolved gaps. Checks will assess identifiers, source links, dimensions, units, timing, and missing-value masks. Unchanged arrays must match exactly after lossless serialization; tolerances for explicit transformations will be fixed before evaluation using source precision and documented test cases. Representative analyses will test whether the attached definitions and inputs support reuse. By month 5, the packages, dictionary, mappings, and initial coverage and fidelity report will establish the reference representation for Aim 2.
+
 = Research Strategy Continued
-=== Aim 1 Harmonizing existing gait and balance data
+=== Aim 2: Build the Harmonized Representation into a Reusable FreeMoCap Export
 
-In months 1-3, we will inventory the validation datasets and identify the information a researcher needs to
-locate a recording, understand its measurements, and judge its suitability for an analysis. The core
-dictionary will cover study and participant identifiers, sessions or trials, task conditions, measurement
-definitions, units, and acquisition and processing provenance. It will distinguish metadata available from the
-processing workflow from context supplied through study records. Required and optional fields will be
-documented for each supported data type, with missing information represented explicitly.
+In months 5-9, we will incorporate the Aim 1 requirements into FreeMoCap's processing and export workflow. Recordings and derived measurements will be associated with versioned metadata records that retain relevant information through processing stages. Available software versions, pose-estimation settings, and processing parameters will be captured from supported workflows; measurement definitions and calculation settings will be linked to their outputs. Information recovered retrospectively in Aim 1 will identify what future recordings need to store systematically.
 
-The inventory will preserve distinctions consequential for interpretation. For example, joint-angle data may
-require segment definitions, anatomical axes, sign conventions, and a rotation sequence or projection method.
-A center-of-mass estimate may require a body-model reference and segment parameters. Other metadata describe
-the pose estimator, model and software versions, timing, coordinate frame, filtering, or interpolation. These
-examples will help identify a useful core and additional fields for particular measurements. Details will be
-retained in machine-readable form and linked to the data they describe.
+Researchers will supply context that software cannot infer, such as task conditions and protocol descriptions, through a documented recording or study manifest. The exporter will combine this context with stored processing metadata and produce harmonized numerical and metadata files. Checks will identify missing required fields, inconsistent descriptions, and unsupported data types. An export report will describe supported uses and unresolved gaps. Older recordings will retain missing provenance unless it can be recovered from a documented source.
 
-With the DAPR Resource Core, we will review candidate mappings to DAPR and relevant established terms,
-including NINDS or OMOP concepts where their definitions apply. Each mapping will record the source
-definition, target identifier and version, and any transformation. Direct equivalence, equivalence after
-transformation, broader or related concepts, and unresolved mappings will remain distinguishable. The PI and
-mentor will review mappings used in the demonstrations and document their decisions. Missing concepts will be
-proposed to DAPR with definitions and examples.
+In months 8-10, we will compare exports with the Aim 1 reference packages across supported gait and balance tasks and processing methods. Automated checks will assess numerical fidelity, identifiers, units, timing, measurement definitions, and provenance. Constructed test cases will evaluate metadata capture and propagation, researcher-supplied context, and handling of missing essential fields or incompatible definitions. Discrepancies will be investigated before release. Evaluation will distinguish file validity from sufficient documentation for a particular analysis.
 
-Existing standards will inform the design. We will assess Motion-BIDS conventions for organizing motion
-signals and describing channels and reference frames, adopt applicable conventions, and document the extent of
-conformance. \[3,4\] Additional metadata will be identified clearly and linked to the relevant records. DAPR
-consultation and the source inventory will guide what further description is needed. The dictionary and
-mapping records will identify the versions of standards and terminology used.
+Worked examples will reproduce selected analyses from exported data using documented environments and instructions. The PI will run them in a clean environment and compare results with native analyses using predefined tolerances. The mentor will review representative exports, instructions, and results for clarity and consistency with measurement definitions. A query example will select records by task and measurement descriptors while retaining method distinctions. Findings will guide revisions to the exporter and documentation, with release materials completed in months 10-12.
 
-In months 3-5, we will assemble harmonized gait and balance packages using the reviewed representation. Each
-package will connect numerical data, definitions, provenance, and source records through stable identifiers.
-Files will use documented, openly readable formats; Parquet is an option for numerical tables, with linked
-metadata files for detailed descriptions. Original values and missingness will be preserved, and any necessary
-unit or coordinate transformation will be explicit. Original timestamps, synchronized data, and waveforms
-normalized to a gait cycle will remain distinguishable.
+=== Rigor, Feasibility, and Responsibilities
 
-Evaluation will account for every selected source field as represented or excluded with a reason. Coverage
-will be reported by task, data type, and measurement method, distinguishing available information, information
-recovered from source records, and unresolved gaps. Structural checks will assess identifiers, source links,
-dimensions, units, timing, and missing-value masks. Unchanged numerical arrays must match exactly after
-lossless serialization; tolerances for explicit transformations will be fixed before evaluation from source
-precision and documented test cases. Representative analyses will test whether the attached definitions and
-inputs support reuse.
+Results will be descriptive and reported by task and measurement method, retaining shared participant and trial identities. Versioned source files, mappings, transformation parameters, and software environments will support reproducibility. Aaron T. Cherian will lead harmonization, metadata architecture, implementation, evaluation, and DAPR coordination. Jonathan Samir Matthis, PhD, President and CEO of the FreeMoCap Foundation, will provide mentorship and review of scientific assumptions, mappings, software design, and findings. Monthly meetings and checkpoints at months 3, 6, 9, and 12 will track progress.
 
-By month 5, Aim 1 will provide harmonized datasets, the dictionary and mappings, and an initial coverage and
-fidelity report. These materials will establish the reference representation and requirements for Aim 2.
-Information recovered retrospectively from analysis code or study records will identify what FreeMoCap should
-capture systematically for future recordings.
+The initial release will support defined FreeMoCap versions, data types, and metadata requirements established from the validation datasets. Tested changes will be submitted through FreeMoCap's normal review process. A documented exporter will remain runnable from an archived release if inclusion in the general application takes longer. Optional metadata and graphical interface enhancements may be deferred to protect core functionality.
 
-// Deliberate page break preserves the grant allocation.
-#pagebreak()
-= Research Strategy Continued
-=== Aim 2 Implementing metadata capture and reusable exports
+=== Limitations and Alternatives
 
-In months 5-9, we will incorporate the Aim 1 requirements into FreeMoCap's processing and export workflow. The
-architecture will associate recordings and derived measurements with versioned metadata records, retaining
-relevant information as data move through processing stages. Available software versions, pose-estimation
-settings, and processing parameters will be captured from the supported workflow. Measurement definitions and
-calculation settings will be linked to the outputs they describe. Metadata recovered during Aim 1 will guide
-which information needs persistent storage.
-
-Researchers will provide study context that software cannot infer, such as task conditions and protocol
-descriptions, through a documented recording or study manifest. The exporter will combine this context with
-stored processing metadata and produce the harmonized numerical and metadata files. Checks will identify
-required fields, inconsistent descriptions, and unsupported data types. An export report will describe
-supported uses and unresolved gaps. Older recordings with missing provenance will retain those gaps unless the
-information can be recovered from a documented source.
-
-In months 8-10, we will compare exports with the Aim 1 reference packages across the supported gait and
-balance tasks and processing methods. Automated checks will assess numerical fidelity, identifiers, units,
-timing, measurement definitions, and preservation of provenance. We will document discrepancies and
-investigate unexplained changes before release. Constructed test cases will check metadata capture and
-propagation, researcher-supplied context, and the handling of missing essential fields or incompatible
-definitions. This evaluation will distinguish file validity from sufficient documentation for a particular
-analysis.
-
-Worked examples will reproduce selected gait and balance analyses from exported data using documented
-environments and instructions. The PI will run these examples in a clean environment and compare results with
-the native analyses using predefined tolerances. The mentor will review representative exports, instructions,
-and results for clarity and consistency with measurement definitions. A query example will demonstrate
-selecting records by task and measurement descriptors while retaining method distinctions. Questions and
-discrepancies will be logged and used to revise the exporter and documentation.
-
-=== Rigor and feasibility
-
-Evaluation results will be descriptive and reported by task and measurement method, with shared participant
-and trial identities retained. Versioned source files, mappings, transformation parameters, and software
-environments will support reproducibility. The PI, Aaron T. Cherian, will lead harmonization, metadata
-architecture, export implementation, evaluation, and DAPR coordination. Jonathan Samir Matthis, PhD, President
-and CEO of the FreeMoCap Foundation, will serve as mentor, reviewing scientific assumptions, mapping
-decisions, software design, and evaluation findings. Monthly mentoring reviews and checkpoints at months 3, 6,
-9, and 12 will track progress.
-
-The initial release will support defined FreeMoCap versions, data types, and metadata requirements established
-from the validation datasets. Tested integration changes and a documented export interface will be released
-and submitted through FreeMoCap's normal software review process. The supported exporter will remain runnable
-from the archived release if inclusion in a general application release takes longer. Optional fields and
-graphical interface enhancements may be deferred to protect the core metadata and export functionality.
-
-=== Limitations and alternatives
-
-Missing source information will remain explicit, with supported uses specified accordingly. A shared
-representation will preserve meaningful differences between pose estimators and anatomical models. Evaluation
-within one validation study will establish performance for its supported data; transfer to independent cohorts
-and sites will require later assessment. DAPR consultation will guide terminology and receiving requirements,
-and unresolved terms will retain local definitions. If a central ingestion interface is unavailable, we will
-provide versioned packages, mappings, and a documented handoff. Clinical validity remains a question for the
-relevant measurement and population.
-
+Evaluation within one validation study will establish performance for its supported data; transfer to independent cohorts and sites will require later assessment. Missing information and meaningful differences among pose estimators and anatomical models will remain visible. DAPR consultation will guide terminology and receiving requirements, with local definitions retained for unresolved terms. If central ingestion is unavailable, we will provide versioned packages, mappings, and a documented handoff. Harmonized representation does not establish clinical validity or make different measurements interchangeable.
 // Deliberate page break preserves the grant allocation.
 #pagebreak()
 = Dissemination Sharing and Future Research Plan

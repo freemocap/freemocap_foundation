@@ -7,55 +7,31 @@
 #let body = [
 = Human Subjects Determination
 
-Project title: #project-title
+*Project title:* #project-title \
+*Principal Investigator:* Aaron T. Cherian \
+*Applicant Organization:* FreeMoCap Foundation
 
-Proposed PI: Aaron T. Cherian \[confirm credentials and eligible appointment\]
+== Proposed Activities and Data Source
 
-Original study: Northeastern University IRB approval \[INSERT ORIGINAL PROTOCOL NUMBER AND TITLE\]
+The project will use the publicly released FreeMoCap gait and balance validation dataset to develop and evaluate harmonized movement-data packages and a reusable FreeMoCap exporter. The participant-level inputs will consist of publicly available numerical trajectories, derived measurements, task descriptors, and associated study metadata. Software and methodological documentation will support the description of processing steps and measurement definitions.
 
-Status of the proposed secondary use: \[CONFIRM CLASSIFICATION AND REQUIRED DOCUMENTATION\]
+The original dataset was collected under Northeastern University IRB approval. Northeastern University will not participate in the proposed project. No new participants will be recruited or contacted, no new recordings will be collected, and no intervention or clinical trial is proposed.
 
-== Proposed Activities and Existing Approval
+== Proposed Exemption
 
-The project will use the existing FreeMoCap gait and balance validation dataset, originally collected under
-Northeastern University IRB approval. The proposed work will harmonize movement measurements with their
-definitions, study context, and processing history, then implement and evaluate a reusable FreeMoCap export.
-It will not recruit participants, collect new recordings, or introduce an intervention. No clinical trial is
-proposed.
+For application purposes, the PI proposes that the project qualifies for Exemption 4 under 45 CFR 46.104(d)(4)(i), concerning secondary research using publicly available information. The data were collected for an earlier validation study and are now publicly available for reuse. The proposed work will reorganize and document those data, evaluate the preservation of measurements and metadata during export, and develop reusable software. No additional nonpublic participant-level information will be obtained or incorporated into the project.
 
-The intended inputs are the publicly released numerical trajectories, available kinematic derivatives, task
-descriptors, and associated technical metadata. The original protocol and consent materials should be checked
-for the permissions relevant to this use and any additional sharing. The original approval documents the
-source study; its applicability to this Foundation-based project has not yet been confirmed.
+This exemption designation represents the PI's preliminary assessment for the application. A formal determination for the proposed Foundation-based project has not yet been obtained.
 
-== Identifiability and Data Access
+== Identifiability and Privacy Protections
 
-The released dataset omits direct participant identifiers. However, the PI retains access to records that
-connect participant codes to identities. The application therefore cannot state that the PI is unable to
-identify the participants. The proposed harmonization workspace and public exports will not include the
-linkage key, names, contact information, consent records, or identifiable source videos. Any technical
-metadata recovered from nonpublic records will be described explicitly in the access review.
+The public dataset omits direct participant identifiers. The PI retains access to information that can connect participant codes to identities; accordingly, this justification does not rely on an assertion that the PI cannot identify participants.
 
-The intended use of the public release and the PI's retained access to participant identities must both be
-considered when classifying the proposed secondary research. Public release and coded labels alone do not
-establish the appropriate classification for every use. OHRP guidance distinguishes research not involving
-human subjects from exempt and nonexempt human-subjects research. \[8\]
+Participant linkage keys, names, contact information, consent records, and identifiable source videos will not be included in the project's analytical workspace or public outputs. The project will not link the research data to participant identities or other private records. Data use and sharing will follow the permissions applicable to the source dataset.
 
-== Final Application Documentation
+== Confirmation Before Project Initiation
 
-Northeastern's Department of Human Research is the starting point for reviewing the proposed use in relation
-to the original protocol. The inquiry should identify the Foundation as the applicant institution, the data
-and metadata to be used, and the PI's access to participant identities. The responsible review process and any
-additional documentation will depend on that assessment.
-
-For research determined not to involve human subjects, DAPR requests a brief, study-specific justification
-explaining the basis. If the project involves human subjects, the applicable NIH documentation is required. A
-dated institutional determination should be cited or attached when one has actually been issued and is
-applicable; this draft does not represent that such a determination has been obtained.
-
-\[BEFORE SUBMISSION: Replace this working status with the confirmed classification and project-specific
-justification or applicable human-subjects documents. Include the relevant original protocol information and
-any actual determination reference.\]
+The Foundation will coordinate with DAPR to identify an appropriate independent authority to confirm the proposed classification and obtain any required determination or approval before beginning the funded secondary data analyses. The human subjects documentation will be updated to reflect that determination. Any proposed expansion to nonpublic participant data or new participant interaction will be assessed before implementation.
 ]
 
 #show: grant
