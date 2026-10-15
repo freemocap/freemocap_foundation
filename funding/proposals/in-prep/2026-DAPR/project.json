@@ -1,0 +1,69 @@
+{
+  "sections": [
+    {
+      "name": "01_Project_Summary",
+      "path": "sections/01_Project_Summary.typ"
+    },
+    {
+      "name": "02_Project_Narrative",
+      "path": "sections/02_Project_Narrative.typ"
+    },
+    {
+      "name": "03_Research_Plan",
+      "path": "sections/03_Research_Plan.typ"
+    },
+    {
+      "name": "04_Project_Timeline",
+      "path": "sections/04_Project_Timeline.typ"
+    },
+    {
+      "name": "05_Bibliography",
+      "path": "sections/05_Bibliography.typ"
+    },
+    {
+      "name": "06_Resources",
+      "path": "sections/06_Resources.typ"
+    },
+    {
+      "name": "07_Data_Management_and_Sharing_Plan",
+      "path": "sections/07_Data_Management_and_Sharing_Plan.typ"
+    },
+    {
+      "name": "08_Human_Subjects_Determination",
+      "path": "sections/08_Human_Subjects_Determination.typ"
+    },
+    {
+      "name": "09_Detailed_Budget",
+      "path": "sections/09_Detailed_Budget.typ"
+    },
+    {
+      "name": "10_Budget_Justification",
+      "path": "sections/10_Budget_Justification.typ"
+    },
+    {
+      "name": "11_Consortium_Agreement_Intent",
+      "path": "sections/11_Consortium_Agreement_Intent.typ"
+    },
+    {
+      "name": "12_New_Area_Justification",
+      "path": "sections/12_New_Area_Justification.typ"
+    },
+    {
+      "name": "13_Letter_of_Support",
+      "path": "sections/13_Letter_of_Support.typ"
+    },
+    {
+      "name": "14_Biosketch_Preparation",
+      "path": "preparation/14_Biosketch_Preparation.typ"
+    },
+    {
+      "name": "15_Completion_Notes",
+      "path": "preparation/15_Completion_Notes.typ"
+    }
+  ],
+  "masters": [
+    "main.typ",
+    "application.typ",
+    "preparation.typ"
+  ]
+}
