@@ -22,6 +22,8 @@
 #let rule-color = rgb("#929191")
 
 #set document(title: "DAPR Consortium Agreement Intent", author: "FreeMoCap Foundation")
+
+#let body = [
 #set page(paper: "us-letter", margin: 0.5in, numbering: none)
 #set text(font: "Arial", size: 11pt, fill: rgb("#222"), lang: "en", hyphenate: false)
 #set par(justify: false, leading: 0.35em, spacing: 0.8em, first-line-indent: 0pt)
@@ -88,4 +90,4 @@ Sincerely,
   #text(fill: muted)[#sender-title] \
   #link("mailto:" + reply-email)[#reply-email]
 ]
-
+]

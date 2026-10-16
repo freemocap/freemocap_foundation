@@ -11,10 +11,9 @@
 #import "sections/09_Detailed_Budget.typ" as section-09
 #import "sections/10_Budget_Justification.typ" as section-10
 #import "sections/11_Consortium_Agreement_Intent.typ" as section-11
-#import "sections/12_New_Area_Justification.typ" as section-12
-#import "sections/13_Letter_of_Support.typ" as section-13
-#import "preparation/14_Biosketch_Preparation.typ" as section-14
-#import "preparation/15_Completion_Notes.typ" as section-15
+#import "sections/13_Letter_of_Support.typ" as section-12
+#import "preparation/14_Biosketch_Preparation.typ" as section-13
+#import "preparation/15_Completion_Notes.typ" as section-14
 
 #show: grant
 
@@ -74,4 +73,3 @@
 
 #pagebreak()
 
-#section-15.body

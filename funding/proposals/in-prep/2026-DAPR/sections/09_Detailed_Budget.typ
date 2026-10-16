@@ -8,9 +8,9 @@
 
 *Direct costs only*
 
-Program Director/Principal Investigator: Aaron T. Cherian \[proposed PI\]
+Program Director/Principal Investigator: Aaron T. Cherian 
 
-Period: \[START DATE\] through \[END DATE\]
+Period: 12 months from the approved project start date; calendar dates to be established at award.
 
 Proposed budget assumptions require institutional approval; see Budget Justification.
 
