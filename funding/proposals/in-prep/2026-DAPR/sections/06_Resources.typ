@@ -26,10 +26,8 @@ reproducibility checks in a clean environment; mentor review will identify quest
 and documentation. The initial release will support defined FreeMoCap versions and data types, the existing
 gait and balance datasets, and representative analyses.
 
-Development will use existing computers and the team's repository workflow, with modest funds for storage and
-computational evaluation. Existing reconstructed data provide the necessary inputs. The project does not
-require new recording equipment, recruitment, or a model-training cluster. Any additional essential
-institutional or collaborator resources will be documented explicitly before submission.
+Development will use existing computers and the team's repository workflow, with modest funds for storage . Existing reconstructed data provide the necessary inputs. The project does not
+require new recording equipment or recruitment. 
 
 == Data and Computational Resources
 
@@ -37,28 +35,24 @@ The data source is the public FreeMoCap validation release and analysis reposito
 trajectories from multiple pose-estimation backends and a marker-based reference, together with gait and
 balance analysis code. The data and existing analyses will support harmonization in Aim 1 and provide
 reference packages for evaluating the exporter in Aim 2. Measurements from the same trial will retain their
-relationship and method identities. According to the repository, the public release excludes raw videos and
-direct participant identifiers; institutional review will separately consider investigator familiarity with
-participants.
+relationship and method identities. The public release excludes raw videos and
+direct participant identifiers.
 
 The gait and balance datasets belong to the same validation study and provide differing task contexts and
-measurement types for the pilot. Associated configurations, analysis code, and study records will help recover
+measurement types for the pilot. Associated configurations, analysis code, and protocol documentation will help recover
 available metadata and identify information that FreeMoCap should retain systematically. The final source
 inventory will document the release, eligible records, and permissions for use and sharing. Broader
 application across independent studies will be enabled by the reusable export and assessed in subsequent work.
 
 The implementation will add persistent metadata records and links through the supported FreeMoCap processing
 workflow, using documented, openly readable numerical and metadata formats with example loading and analysis
-code. Parquet is an available option for numerical tables, with linked files for detailed metadata and
-terminology mappings. Existing analysis code will provide reference calculations where supported. The package
+code. Numerical tables will use Parquet. Existing analysis code will provide reference calculations where supported. The package
 definitions will be independent of any one internal software library so that other researchers can inspect and
 use the exported data.
 
 Source files, working copies, metadata, and outputs will be connected through identifiers and checksums.
-Computation will focus on conversion, automated checks, and representative analyses using existing hardware
-and the budgeted allowance. Code, configurations, dependencies, and relevant source versions will be retained
-together. Public releases will be archived in an established repository; restricted working materials, if
-approved, will use institutional access controls.
+Computation will focus on conversion, automated checks, and representative analyses using existing hardware. Code, configurations, dependencies, and relevant source versions will be retained
+together. Public releases will be archived in an established repository.
 
 // Deliberate page break preserves the grant allocation.
 #pagebreak()
@@ -87,7 +81,7 @@ export workflow, and an evaluation of the information needed for interpretation 
 receiving interface is unavailable during the award, we will provide versioned packages and a documented
 handoff. 
 
-Versioned releases and accompanying documentation will be archived in an established repository to preserve the pilot's outputs and support their continued use. Future maintenance and expansion will follow the project's established development processes.
+Versioned releases and accompanying documentation will be archived in an established repository to preserve the pilot's outputs and support their continued use. The Foundation will maintain the exporter as part of FreeMoCap after the award.
 
 == Resource Stewardship and Career Development
 

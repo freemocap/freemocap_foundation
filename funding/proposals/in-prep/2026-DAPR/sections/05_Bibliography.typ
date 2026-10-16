@@ -5,13 +5,10 @@
 #let body = [
 = Bibliography
 
-#bibliography(
-  "../references.bib",
-  style: "vancouver",
-  title: none,
-  full: false,
-)
+#bibliography("../references.bib", 
+style: "elsevier-vancouver", 
+title: none, full:
+ false)
 ]
-
 #show: grant
 #body

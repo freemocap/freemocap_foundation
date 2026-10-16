@@ -18,7 +18,7 @@ travel, or clinical services. The accompanying PHS 398 Form Page 4 presents the 
 == Personnel
 
 *Principal Investigator Aaron T. Cherian.* Requested support is #fixed-two(months(pi)) calendar months, equivalent to #fixed-two(100 * pi.effort)% effort
-over 12 months. At a proposed annual salary base of #money(pi.annual-base), salary requested is
+over 12 months. At a proposed salary base of #money(pi.annual-base), salary requested is
 #money(salary(pi)). Provisional fringe at #percent(fringe-rate) adds #money(fringe(pi)), for a total of #money(personnel(pi)).
 The PI will carry out harmonization, metadata architecture, export implementation, automated checks, reuse
 demonstrations, and documentation. He will lead DAPR coordination, evaluation, manuscript preparation, and
@@ -41,15 +41,9 @@ implementation, evaluation, and release.
 The proposed #percent(fringe-rate) fringe rate comprises employer Social Security and Medicare contributions
 at #fixed-two(100 * fringe-components.payroll)%, an estimated health-insurance contribution of
 #fixed-two(100 * fringe-components.health)%, and an estimated retirement contribution of
-#fixed-two(100 * fringe-components.retirement)%, applied to requested salaries. Health and retirement
-contributions are planning estimates for benefits to be provided during the award.
+#fixed-two(100 * fringe-components.retirement)%, applied to requested salaries. 
 
-The budget assumes employee compensation for the funded work. Salary bases, employment arrangements,
-and benefit contributions require Foundation confirmation before submission; the proposed rate does not
-represent an established benefits policy. Charges will reflect allowable costs under the arrangements
-actually implemented. If either role remains contracted, its costs will be classified appropriately using an
-agreed scope and rate. The PI's grant effort is separate from the requirement that at least 25% of the PI's
-institutional appointment involve research.
+The personnel budget assumes employee compensation during the award, with fringe benefits estimated at 20% of requested salary.
 
 == Other Direct Costs
 
@@ -61,17 +55,7 @@ repository deposition will use available no-cost options where appropriate.
 
 == Indirect Costs and Budget Control
 
-Indirect costs are calculated at 8% of #money(direct-costs) in direct costs, yielding #money(indirect-costs)
-and a total request of #money(total-request). This calculation assumes the full direct-cost amount is an
-allowable base under the final agreement; the signing official will confirm the applicable base. There are no
-outgoing subawards in this proposed budget. Any change in personnel classification, approved rates, or
-allowable base will be reflected consistently in the detailed budget, this justification, and the
-consortium-intent letter before submission.
-
-The proposed direct costs will be reviewed at the six-month report and reconciled at close-out. No essential
-unconfirmed in-kind contribution is used to balance this budget. The project scope will remain limited to the
-existing gait and balance datasets, a defined set of movement-data types, metadata capture and export, and
-representative reuse demonstrations.
+Indirect costs are calculated at 8\% of \$31,000 in direct costs, yielding \$2,480 and a total request of \$33,480. Project expenditures will be reviewed at the six-month reporting checkpoint and reconciled at close-out.
 ]
 
 #show: grant

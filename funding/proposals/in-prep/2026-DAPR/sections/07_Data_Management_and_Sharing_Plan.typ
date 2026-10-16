@@ -27,7 +27,7 @@ No additional limitations to sharing the scientific data and associated metadata
 
 Yes.
 
-Public releases will contain only permitted, nonidentifying numerical data and metadata. Restricted working materials, if approved, will remain access controlled and will not be deposited publicly.
+Public releases will contain only permitted, nonidentifying numerical data and metadata. 
 
 *6.* In the table below, please list:
 
