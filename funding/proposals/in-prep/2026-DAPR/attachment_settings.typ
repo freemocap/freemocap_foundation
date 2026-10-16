@@ -8,8 +8,8 @@
   budget: (path: "attachments/budget.pdf", pages: 1, title: "Detailed budget"),
   consortium: (path: "attachments/consortium_agreement.pdf", pages: 1, title: "Consortium agreement intent"),
   aaron-biosketch: (path: "attachments/aaron_biosketch.pdf", pages: 4, title: "Aaron Cherian biosketch"),
-  // jon-biosketch: (path: "/attachments/jon_biosketch.pdf", pages: none, title: "Jonathan Matthis biosketch"),
-  // jon-support: (path: "/attachments/jon_support_letter.pdf", pages: none, title: "Jonathan Matthis letter of support"),
+  jon-biosketch: (path: "attachments/jon_biosketch.pdf", pages: 4, title: "Jonathan Matthis biosketch"),
+  jon-support: (path: "attachments/letter_of_support.pdf", pages: 1, title: "Jonathan Matthis letter of support"),
 )
 
 // To omit the optional support letter, replace its complete entry with:

@@ -38,7 +38,7 @@
 
 #attachment(attachments.consortium)
 #attachment(attachments.aaron-biosketch)
-// #attachment(attachments.jon-biosketch)
-// #if attachments.jon-support != none { attachment(attachments.jon-support) }
+#attachment(attachments.jon-biosketch)
+#attachment(attachments.jon-support)
 
 // No new-area justification, draft letters, biosketch preparation, or completion notes.
