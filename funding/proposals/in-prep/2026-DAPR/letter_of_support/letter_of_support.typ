@@ -1,17 +1,17 @@
-// DAPR consortium agreement intent - standalone Foundation letterhead.
+// DAPR mentor letter of support - standalone Foundation letterhead.
 // Set the two image paths below. Relative paths are resolved from this file.
 // Keep the signature image in a private, git-ignored folder.
 // Leave signature-path as none to sign the exported PDF separately.
 
-#let letter-date = "15 October 2026"
+#let letter-date = "16 October 2026"
 #let project-title = "Harmonizing FreeMoCap Movement Data for Rehabilitation Research"
-#let pi-name = "Aaron T. Cherian"
-#let support-period = "12 months from the approved project start date"
-#let direct-costs = "$31,000"
-#let indirect-costs = "$2,480"
-#let total-costs = "$33,480"
 
-#let sender-name = "Jonathan Samir Matthis"
+// Fill-ins for Jon to confirm before signing.
+// Set advisor-clause or academic-clause to "" to omit that clause entirely.
+#let worked-since = "2020"
+#let advisor-clause = ", including as his doctoral advisor"
+
+#let sender-name = "Jonathan Samir Matthis, PhD"
 #let sender-title = "President and CEO, FreeMoCap Foundation"
 #let reply-email = "jon@freemocap.org"
 #let logo-path = "../figs/freemocap-foundation-stars-logo.png"
@@ -21,7 +21,7 @@
 #let accent = rgb("#2a2a2a")
 #let rule-color = rgb("#929191")
 
-#set document(title: "DAPR Consortium Agreement Intent", author: "FreeMoCap Foundation")
+#set document(title: "DAPR Mentor Letter of Support", author: "FreeMoCap Foundation")
 
 #let body = [
 #set page(paper: "us-letter", margin: 0.5in, numbering: none)
@@ -50,31 +50,37 @@ University of Southern California
 
 Dear DAPR Pilot Grant Review Committee:
 
-On behalf of the FreeMoCap Foundation, I confirm the Foundation's support for
-this application and its willingness to enter into a formal subaward or
-consortium agreement with the University of Southern California if the project
-is selected for funding.
+I am writing to confirm my commitment to serve as mentor to Dr. Aaron Cherian
+on his proposed DAPR pilot project. I founded FreeMoCap and serve as President
+and CEO of the FreeMoCap Foundation. 
 
-*Principal Investigator:* #pi-name \
-*Collaborating institutions:* FreeMoCap Foundation and University of Southern California \
-*Period of support:* #support-period
+I have worked closely with Aaron since #worked-since#advisor-clause. His
+doctoral validation of FreeMoCap and his work as a core maintainer prepare him well
+for this project. Few early-career investigators combine a detailed
+understanding of how markerless measurements are produced with the software
+expertise to change how those measurements are recorded and shared. This
+project depends on both.
 
-#table(
-  columns: (1fr, 1fr, 1fr), align: (left, left, left),
-  inset: (x: 7pt, y: 5pt), stroke: 0.4pt + rule-color,
-  table.header([*Direct costs*], [*Indirect costs*], [*Total request*]),
-  [#direct-costs], [#indirect-costs], [#total-costs],
-)
+I will meet with Aaron monthly throughout the award, with formal checkpoints
+at months 3, 6, 9, and 12 and review relevant terminology mappings before they are used
+in the harmonized packages. I will also advise on the metadata architecture and
+on how the exporter integrates with the FreeMoCap processing pipeline. Finally,
+I will review representative exports, worked examples, and evaluation results
+for clarity and consistency.
 
-The proposed project will harmonize existing FreeMoCap gait and balance
-validation datasets and incorporate metadata capture and harmonized exports
-into FreeMoCap. The Foundation will provide administrative oversight for the
-approved scope of work, manage project funds, and meet applicable reporting,
-research, data-management, and sharing requirements.
+This project is also an important step in Aaron's development as an
+independent investigator. It extends his work on measurement validity into
+rehabilitation research, and working with DAPR's Resource Core will build his
+expertise in rehabilitation terminology and data standards. I will also advise
+him on the methods manuscript and on next steps after the pilot.
 
-If selected, the Foundation will work with USC to finalize the scientific,
-administrative, and financial arrangements and complete the formal agreement
-and any required assurances or certifications before award.
+On behalf of the Foundation, I confirm that Aaron will have full access to the
+FreeMoCap codebase, development infrastructure, and the validation dataset and
+analysis repository for this project. Software developed under the award will
+be reviewed and merged into FreeMoCap through our standard contribution process
+and maintained as part of the software after the award ends.
+
+I strongly support this application and look forward to working with Aaron on it.
 
 Sincerely,
 
@@ -91,3 +97,6 @@ Sincerely,
   #link("mailto:" + reply-email)[#reply-email]
 ]
 ]
+
+// Renders the letter when this file is compiled on its own; harmless if `body` is imported elsewhere.
+#body
