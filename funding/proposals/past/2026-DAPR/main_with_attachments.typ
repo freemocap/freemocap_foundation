@@ -16,6 +16,7 @@
 #let attachment(item) = include-pdf(item.path, pages: item.pages, title: item.title)
 #show: grant
 
+#set page(numbering: "1", number-align: center)
 #section-01.body
 #pagebreak(weak: true)
 #section-02.body

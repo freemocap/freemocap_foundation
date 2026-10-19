@@ -6,7 +6,7 @@
 = Bibliography
 
 #bibliography("../references.bib", 
-style: "elsevier-vancouver", 
+style: "ieee", 
 title: none, full:
  false)
 ]
