@@ -9,44 +9,48 @@ _
 
 ### _14 Please share the requested duration (in years) of your proposed work. Applicants may request a grant duration of up to three years._
 
-__2__
+__3__
 
 ### _15 What is the total funding amount you are requesting over the requested grant duration?_
-325,000
+250000
 
 
 ### _21 What problem is your proposal addressing, and how does it affect the community you seek to serve in particular? Please identify the community or communities in your response. MAX 200 WORDS_
-Artificial intelligence is creating new opportunities for education, research, and creative expression, but access to AI tools does not necessarily give people control over how those tools work. Many applications offer predetermined ways of interacting with AI, leaving educators with limited ability to adapt its behavior to their expertise and teaching goals, and learners with few opportunities to explore or influence the technology itself.
+Access to AI tools does not necessarily give educators and learners control over how those tools behave. Many applications prescribe how people interact with AI, leaving communities limited opportunities to adapt them to local expertise, creative goals, or learning needs.
 
-Our proposal focuses on U.S. educational communities spanning precollege STEAM and career-connected learning, university arts education, and language education and research. These communities have different interests and needs, from supporting student-led experimentation and creative projects to developing learning experiences informed by disciplinary expertise. Yet they face a common challenge: translating their own ideas and priorities into AI tools they can meaningfully shape.
+FreeMoCap (https://freemocap.org/) is free, open-source, AI-powered motion capture software that reconstructs 3D movement from camera recordings for animation, art, research, athletics, and education. Its users must learn camera setup, calibration, troubleshooting, and data interpretation to pursue their own projects. Language learners and educators face different challenges: obtaining conversational practice and feedback that reflect their goals, linguistic conventions, and teaching expertise. In both settings, effective AI assistance depends on knowledge and priorities specific to the communities using it, which generic applications may not adequately reflect.
 
-Our ongoing project SkellySpeak, an open-source conversational language-learning application, provides a concrete starting point for addressing this challenge. Its configurable learning content and tools for examining AI operations demonstrate how educational AI can be made more understandable and adaptable. We seek to extend this approach through collaboration with educators and learners, enabling communities to participate directly in shaping the technologies they use.
+Our proposal focuses on U.S. communities of precollege STEAM learners and educators, university artists and creative practitioners, and language speakers, teachers, and learners. We will develop SkellyBot for FreeMoCap users and SkellySpeak (https://github.com/freemocap/skellyspeak) for language learning as starting points for community-directed AI tools. Across these contexts, we seek to close the gap between access to AI and meaningful community influence over how it is designed and used.
 
 
 ### _22 Provide an overview of the proposal approach. What outcome does it aim to achieve, and why do you believe this approach will be effective?_
 
-FreeMoCap Foundation seeks to establish a sustained program developing open-source AI tools in collaboration with educational communities. Working with educators and learners in precollege STEAM, university arts education, and language education and research, we will identify priorities, collaboratively develop and refine software, and create resources that support continued participation. Rather than prescribing specific applications, we aim to let community needs and expertise guide development.
+Over three years, FreeMoCap Foundation will develop open-source AI tools with educational communities, beginning with SkellyBot and SkellySpeak.
 
-We have successfully applied this approach through FreeMoCap, our free, open-source motion capture platform. By combining accessible software with ongoing community participation, we have built a development process informed by the people who use it. Through weekly community calls, an active public Discord, and open development, users can propose ideas, contribute improvements, and influence the software's evolution.
+SkellyBot will become a desktop learning companion integrated with FreeMoCap. It will help users set up cameras, calibrate the capture system, troubleshoot problems, and understand their results. It will also explain the technical principles underlying these steps and help users apply the resulting data to their artistic, scientific, athletic, or educational projects.
 
-We aim to extend this approach to educational AI, beginning with SkellySpeak, our ongoing conversational language-learning project. Building on its existing capabilities, we will work with educators to explore new ways of configuring AI behavior, examining its operations, and adapting these tools to different educational contexts.
+SkellySpeak will provide conversational language practice, with speakers, teachers, and researchers shaping its linguistic foundations, learning content, and feedback.
 
-Funding will support dedicated software development, maintenance, and community collaboration, establishing a sustained program through which educators and learners can directly influence the AI tools developed for their use.
+Both applications will share internal AI dataflow graphs that organize information flow between AI operations, and a model-agnostic architecture supporting different AI models. Both will be free and open-source desktop applications, with interface design informed by community trials.
+
+We believe this approach will be effective because FreeMoCap already uses community-driven development. Through ongoing discussions and contributions, users help identify needs, shape priorities, and guide software improvements. We will extend this model to educational communities, giving participants a direct role in shaping both applications and their shared architecture.
+
+Funding will support development, maintenance, and community collaboration, producing practical applications and reusable components shaped by the people who use them.
 
 ### _23 Specify the role of community design and leadership. How will the community or communities you seek to serve lead, shape, or participate in the work? MAX 150 WORDS_
 
-Our approach builds on existing relationships with educational communities, including The Possible Zone in Boston for precollege STEAM and career-connected learning, San José State University's CADRE program for university arts education, and collaborators in language education and research.
+Our existing relationships provide concrete starting points for community leadership. The Possible Zone, a Boston nonprofit supporting STEAM and career exploration, can connect us with young learners and educators. At San José State University, digital media arts educator David Bayus uses FreeMoCap in teaching and has developed tools connecting motion capture to animation. Language educators and speakers, including collaborator Dr. Conor Quinn, will inform SkellySpeak's linguistic and educational direction.
 
-Community participation is already central to how we currently develop our flagship project, FreeMoCap. Through weekly community calls, public discussions, and open-source contributions, users can propose features and influence development priorities, with community suggestions having led to changes in the software.
+These communities will help set priorities before features are built, participate in design and testing, and evaluate whether the resulting tools meet their needs. We will use recurring discussions and a public development roadmap to document proposed changes, decisions, and revisions. FreeMoCap's established weekly calls, Discord, and open-source contributions offer an existing model for sustained participation.
 
-We will extend these practices to educational AI, inviting educators and learners to identify needs, propose applications, and help determine development priorities. Through recurring design discussions and hands-on experimentation, participants will help establish development priorities, evaluate implementations, and guide subsequent revisions. We will maintain a publicly documented development roadmap that reflects community decisions and provides opportunities for continued participation.
+Their expertise will shape both application-specific features and shared AI infrastructure, with opportunities for continued involvement as the software evolves.
 
 ### _24 Help us get to know you. What relevant background, experience, and/or relationships do you and any collaborators bring to this work?_
 
-FreeMoCap Foundation is a 501(c)(3) nonprofit dedicated to making advanced technologies accessible through open-source software, scientific research, and education. Our flagship is FreeMoCap (https://freemocap.org/): free, open-source motion capture software that uses inexpensive cameras and AI-based pose estimation to make sophisticated movement tracking available beyond specialized laboratories and studios.
+FreeMoCap Foundation is a 501(c)(3) nonprofit developing free, open-source technology for research, creativity, and education. Its flagship, FreeMoCap, makes motion capture accessible with inexpensive cameras and AI-based pose estimation. Used by more than 15,000 people across over 150 countries, with more than 10,000 GitHub stars, it helps artists, hobbyists, educators, and researchers pursue projects without specialized studios or laboratories.
 
-FreeMoCap has reached more than 15,000 users across 153 countries, with over 10,000 GitHub stars. Its community includes artists, animators, hobbyists, educators, and scientific researchers, each bringing different goals and applications to the software. Independent creators can capture movement for animation without expensive studio equipment, while researchers and educators can collect and analyze movement data using accessible hardware. Central to our approach is placing these capabilities directly in users' hands, giving them the freedom to experiment, adapt the technology, and pursue their own projects.
+Founder Jonathan Samir Matthis developed and iteratively designed SkellyBot across six semesters of his Northeastern University course, *The Neural Control of Real-World Human Movement*. Students discussed each lecture with the bot and connected the material to their own interests. Matthis found this enabled substantially more advanced undergraduate teaching while supporting individual exploration.
 
-The Foundation's founder, Jonathan Matthis, brings experience in scientific research, university teaching, and software development. Chief Scientific Officer Aaron Cherian contributes expertise in biomechanics research, scientific validation, and maintenance across the FreeMoCap software ecosystem.
+Our relationship with The Possible Zone has produced plans for a student workshop introducing motion capture, computer vision, and biomechanics. At San José State University, lecturer David Bayus (https://cadre.sjsu.edu/faculty/david-bayus.html) uses FreeMoCap in teaching and has developed an open-source Blender add-on connecting movement capture to animation.
 
-Through SkellySpeak and our relationships with educational communities, we are extending this approach to AI tools that people can understand, adapt, and help shape.
+Dr. Conor Quinn (https://mila.quebec/en/ai4humanity/applied-projects/first-languages-ai-reality), co-founder and lead linguist of First Languages AI Reality (FLAIR), an Indigenous-led language revitalization initiative, will help shape SkellySpeak's linguistic architecture and facilitate connections with language communities.
