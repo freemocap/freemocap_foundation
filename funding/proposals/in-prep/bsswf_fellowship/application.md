@@ -4,7 +4,7 @@ Aaron T. Cherian | Prepared October 28, 2026
 
 Working project: **Validating Scientific Pipelines with AI Components**
 
-This draft turns the proposed AI-pipeline validation project into the eight published application responses. It is a first draft for discussion, not a submitted application. Copy only the response paragraphs into the form; headings, counts, and editorial notes are not part of the responses.
+
 
 ## Application requirements
 
@@ -117,46 +117,3 @@ Reliability: Testing; Continuous Integration Testing; Reproducibility. Planning:
 *472 characters; maximum 500.*
 
 This project complements Myra Cohen’s work on scientific software testing and Victor Weeks’s work on validation in AI-assisted development. It focuses on AI models operating inside measurement pipelines. An interactive motion capture example will show how model choice, model size, and processing affect scientific measurements. The guide and companion code connect these comparisons to modular pipeline design, provenance, and validation with and without a reference system.
-
-## Editorial notes — not for the application form
-
-### What this draft commits to
-
-The central artifact is an illustrated guide with a small, runnable Python repository. It teaches validation of scientific pipelines that contain learned models. SkellyModels provides practical experience with shared representations and metadata; the fellowship activity does not depend on redesigning the entire package.
-
-The working example is a comparison of knee-angle time series from two existing pose-estimation pipelines with a marker-based reference. Choosing the two sources, trial subset, angle convention, and evaluation criteria remains part of refining the example. MediaPipe and RTMPose are a plausible starting pair from the work discussed, but the narrative does not commit to particular trackers.
-
-The scope is four lessons, one principal scientific example, synthetic inputs with deliberate faults, a report template, and an adaptation exercise. Camera acquisition, model training, and a new validation study are not prerequisites. The draft proposes reader feedback from at least three people, including someone outside biomechanics; no reviewer or collaborator has been confirmed.
-
-### Validation boundaries to preserve
-
-- The guide addresses the reasoning needed for end-to-end validation. The runnable scientific example begins with released reconstructed 3D trajectories. It does not independently retest video ingestion, calibration, pose inference, or reconstruction.
-- A common representation must retain scientifically relevant differences between sources. Mapping two points to the same label is not evidence that their definitions are equivalent.
-- A passing regression test shows stability relative to a baseline, not measurement validity. Reference comparisons and known-answer calculation tests answer different questions.
-- The marker-based reference is not assumed to be error-free. Alignment, timing, angle definitions, and the intended application must inform comparison criteria.
-- Source-model details and processing provenance will be recorded when available. Missing historical information must be identified rather than reconstructed as if known.
-- Comparisons between existing pipelines should not be described as isolating an AI model's causal effect when their upstream processing or output definitions differ.
-
-### Details to confirm before submission
-
-1. **Experience statements:** Confirm the current role wording and your preferred description of your contributions to FreeMoCap and SkellyModels. The draft uses the work described in our discussion; it does not claim formal testing credentials, prior teaching appointments, or organized workshops.
-2. **Example and scope:** Confirm that knee-angle time series are a suitable initial example, and that the proposed guide, repository, report, and reader review are a manageable commitment.
-3. **Support letter:** Your advisor's support is useful, but the published requirement specifies a supervisor letter. Confirm the appropriate signer in relation to the submitting institution.
-4. **Application materials:** Prepare or select the two-page CV and one-page support letter. They have not been drafted or attached here.
-5. **Maintenance and dissemination:** Confirm the appropriate public repository and the channels you can realistically use. Sharing through FreeMoCap and offering a BSSw article are proposed activities, not claims of an existing agreement.
-
-### Why this framing fits
-
-The FAQ emphasizes reusable public resources that improve scientific software productivity and sustainability. It also distinguishes the fellowship from funding ongoing package development or new research. This draft therefore centers on teaching and demonstrating practices through existing work.
-
-Myra Cohen's fellowship addresses scientific software testing, including configurable systems and cases without a known expected answer. Victor Weeks's 2026 project concerns validation in AI-assisted software development. This proposal draws a narrower distinction: learned models running within measurement pipelines, with explicit data meaning, provenance, and evaluation of downstream scientific outcomes. It does not claim that these practices are new inventions.
-
-## Sources
-
-- [2027 BSSw application requirements and timeline](https://bssw.io/pages/apply-for-the-bssw-fellowship-program)
-- [BSSw Fellowship FAQ: project fit, review criteria, and experience questions](https://bssw.io/pages/bssw-fellowship-faq)
-- [Myra Cohen: scientific software testing](https://bssw.io/fellows/myra-cohen)
-- [Victor Weeks: validation in AI-assisted development](https://bssw.io/fellows/victor-weeks)
-
-The requirements were checked against the public application page and FAQ. No authenticated application form was accessed and nothing was submitted.
-
