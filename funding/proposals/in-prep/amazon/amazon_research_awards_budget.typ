@@ -1,5 +1,5 @@
 #let project = "Benchmarking Visual Recovery from Incomplete Capture on Commodity Devices"
-#let foundation = "FreeMoCap Foundation"
+#let foundation = "FreeMoCap Foundation, Inc."
 #let cash = "$80,000"
 #let credits = "$25,000"
 #let ink = rgb("#173b43")
@@ -7,7 +7,7 @@
 
 #set document(title: "Budget — " + project, author: foundation)
 #set page(paper: "us-letter", margin: 1in, numbering: "1", header: align(right)[
-  #text(size: 9pt, fill: rgb("#465457"))[FreeMoCap Foundation  ·  Amazon Research Awards  ·  Budget]
+  #text(size: 9pt, fill: rgb("#465457"))[FreeMoCap Foundation, Inc.  ·  Amazon Research Awards  ·  Budget]
 ])
 #set text(font: "Calibri", size: 11pt, lang: "en")
 #set par(leading: 0.44em, spacing: 0.75em)
@@ -26,8 +26,8 @@
 #table(
   columns: (2.5fr, 2.35fr, 0.95fr), inset: 5pt, stroke: 0.4pt + rule,
   table.header([*Cost category*], [*Basis of estimate*], [*Amount*]),
-  [Scientific Co-PI — Aaron T. Cherian], [200 hours × \$100/hour], [\$20,000],
-  [Technical Co-PI — Jonathan Samir Matthis], [200 hours × \$100/hour], [\$20,000],
+  [Principal Investigator — Aaron T. Cherian], [200 hours × \$100/hour], [\$20,000],
+  [Co-Principal Investigator — Jonathan Samir Matthis], [200 hours × \$100/hour], [\$20,000],
   [Research Software Developer], [425 hours × \$80/hour], [\$34,000],
   [Commodity-device testing], [Computers, upgrades, cameras, and accessories], [\$4,000],
   [Dissemination and travel], [Research presentation and conference expenses], [\$2,000],
